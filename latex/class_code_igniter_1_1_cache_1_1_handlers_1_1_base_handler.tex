@@ -1,0 +1,162 @@
+\doxysection{Code\+Igniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}Base\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}{}\label{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}Base\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}Base\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab9d46f4c7f8d09bd4a3c8e617db8b1fb}{remember}} (string \$key, int \$ttl, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab27a631f8b63c1e67cbce698f2a6ff39}{delete\+Matching}} (string \$pattern)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a3035592e1f3a9c5fae2526334537b8b1}{initialize}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a68b00b3bcb364db019cb285570a44e38}{get}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_ae7a4125220b98b393d2dcbd22f71914e}{save}} (string \$key, \$value, int \$ttl=60)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a924d9f47143e6e3a2d6c20b14988024e}{delete}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a7f5232e23a472896dff5d77a350c7b62}{increment}} (string \$key, int \$offset=1)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a9e34f8332defbd0af86e02179417125e}{decrement}} (string \$key, int \$offset=1)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a990dbf526af1c647c8fa9ae18211d2fa}{clean}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_aa769017060f105fd5d64e7202014b6ee}{get\+Cache\+Info}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a54d5bd77af2587ceee4288909115b193}{get\+Meta\+Data}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_ab59f48828ea4194cf13feec4d5417b86}{is\+Supported}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_a7f5b8d4cdff86945769e6a231064f1d4}{validate\+Key}} (\$key, \$prefix=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_aab78c36dc9172889a23edc4deecd3ec4}{RESERVED\+\_\+\+CHARACTERS}} = \textquotesingle{}\{\}()/\textbackslash{}@\+:\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_afa3d27887c584621f8c29cf07e8b78ac}{MAX\+\_\+\+KEY\+\_\+\+LENGTH}} = PHP\+\_\+\+INT\+\_\+\+MAX
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_a7e158dbff29abbd14ca38eff5f436ab9}\label{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_a7e158dbff29abbd14ca38eff5f436ab9} 
+{\bfseries \$prefix}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for cache handling
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab27a631f8b63c1e67cbce698f2a6ff39}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}!deleteMatching@{deleteMatching}}
+\index{deleteMatching@{deleteMatching}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{deleteMatching()}{deleteMatching()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab27a631f8b63c1e67cbce698f2a6ff39} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::delete\+Matching (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{}\end{DoxyParamCaption})}
+
+Deletes items from the cache store matching a given pattern.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & Cache items glob-\/style pattern\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}never
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a5c28e52a8ebc67b270e20bad12592c80}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_a346c3ededae92fbb671638576cf5adc1}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_add2610039828cb1c39716cb59c37b0a5}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_a76dc7d723af0e16c94b3fc700681d591}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_af7869839db4889d3b86ab4400ce68da2}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a0de218e1349e8e2266bed1c93de5fa7d}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab9d46f4c7f8d09bd4a3c8e617db8b1fb}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}!remember@{remember}}
+\index{remember@{remember}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{remember()}{remember()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab9d46f4c7f8d09bd4a3c8e617db8b1fb} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::remember (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$ttl}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Get an item from the cache, or execute the given Closure and store the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache item name \\
+\hline
+int & {\em \$ttl} & Time to live \\
+\hline
+ & {\em Closure()} & mixed \$callback Callback return value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a4ed9700d0bc6826b04016a8a578da818}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ac0d94254e949384df809636c09268835}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_a7f5b8d4cdff86945769e6a231064f1d4}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}!validateKey@{validateKey}}
+\index{validateKey@{validateKey}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{validateKey()}{validateKey()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_a7f5b8d4cdff86945769e6a231064f1d4} 
+static Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::validate\+Key (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Validates a cache key according to PSR-\/6. Keys that exceed MAX\+\_\+\+KEY\+\_\+\+LENGTH are hashed. From \href{https://github.com/symfony/cache/blob/7b024c6726af21fd4984ac8d1eae2b9f3d90de88/CacheItem.php\#L158}{\texttt{ https\+://github.\+com/symfony/cache/blob/7b024c6726af21fd4984ac8d1eae2b9f3d90de88/\+Cache\+Item.\+php\#\+L158}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The key to validate \\
+\hline
+string & {\em \$prefix} & Optional prefix to include in length calculations\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & When \$key is not valid \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_afa3d27887c584621f8c29cf07e8b78ac}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}!MAX\_KEY\_LENGTH@{MAX\_KEY\_LENGTH}}
+\index{MAX\_KEY\_LENGTH@{MAX\_KEY\_LENGTH}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{MAX\_KEY\_LENGTH}{MAX\_KEY\_LENGTH}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_afa3d27887c584621f8c29cf07e8b78ac} 
+const Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::\+MAX\+\_\+\+KEY\+\_\+\+LENGTH = PHP\+\_\+\+INT\+\_\+\+MAX}
+
+Maximum key length. \Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_aab78c36dc9172889a23edc4deecd3ec4}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}!RESERVED\_CHARACTERS@{RESERVED\_CHARACTERS}}
+\index{RESERVED\_CHARACTERS@{RESERVED\_CHARACTERS}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{RESERVED\_CHARACTERS}{RESERVED\_CHARACTERS}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_aab78c36dc9172889a23edc4deecd3ec4} 
+const Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::\+RESERVED\+\_\+\+CHARACTERS = \textquotesingle{}\{\}()/\textbackslash{}@\+:\textquotesingle{}}
+
+Reserved characters that cannot be used in a key or tag. May be overridden by the config. From \href{https://github.com/symfony/cache-contracts/blob/c0446463729b89dd4fa62e9aeecc80287323615d/ItemInterface.php\#L43}{\texttt{ https\+://github.\+com/symfony/cache-\/contracts/blob/c0446463729b89dd4fa62e9aeecc80287323615d/\+Item\+Interface.\+php\#\+L43}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000010}{Deprecated}}]in favor of the Cache config \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Cache/\+Handlers/Base\+Handler.\+php\end{DoxyCompactItemize}

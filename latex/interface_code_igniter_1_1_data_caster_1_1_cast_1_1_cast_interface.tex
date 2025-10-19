@@ -1,0 +1,69 @@
+\doxysection{Code\+Igniter\textbackslash{}Data\+Caster\textbackslash{}Cast\textbackslash{}Cast\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_data_caster_1_1_cast_1_1_cast_interface}{}\label{interface_code_igniter_1_1_data_caster_1_1_cast_1_1_cast_interface}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Data\+Caster\textbackslash{}Cast\textbackslash{}Cast\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_code_igniter_1_1_data_caster_1_1_cast_1_1_cast_interface_adf395f825432e2d752038574c2b7ca13}{get}} (mixed \$value, array \$params=\mbox{[}$\,$\mbox{]}, ?object \$helper=null)
+\item 
+static \mbox{\hyperlink{interface_code_igniter_1_1_data_caster_1_1_cast_1_1_cast_interface_a0b63b5bf021e51eeaf3ec6c387c4d80f}{set}} (mixed \$value, array \$params=\mbox{[}$\,$\mbox{]}, ?object \$helper=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_data_caster_1_1_cast_1_1_cast_interface_adf395f825432e2d752038574c2b7ca13}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_data_caster_1_1_cast_1_1_cast_interface_adf395f825432e2d752038574c2b7ca13} 
+static Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Cast\+Interface\+::get (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?object}]{\$helper}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes a value from Data\+Source, returns its value for PHP.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & Data from database driver \\
+\hline
+ & {\em list$<$string$>$} & \$params Additional param \\
+\hline
+object | null & {\em \$helper} & Helper object. E.\+g., database connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed PHP native value 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_array_cast_a2a463a7ef1b93e9f76c972e473bf2be1}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Array\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_base_cast_a636775f3c1d87fcc215d60edd9bf6e35}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Base\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_boolean_cast_af5b7e5ca070b5264e216d7f27918e178}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Boolean\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_c_s_v_cast_a08625ae8033328de2eb41853ae681142}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+CSVCast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_datetime_cast_a2defc9fe0615a533c2189ff8c9a7c0dc}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Datetime\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_float_cast_aade45e0576df945ee7d99c07c6a4862b}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Float\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_int_bool_cast_a19ac85636a65e8140c64a1a7d7d65c76}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Int\+Bool\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_integer_cast_ac16fd7f3dbd0d033fa7055087fe2d4b2}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Integer\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast_a6839d997b601781b4df0b1dfce446393}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Json\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_timestamp_cast_a4698e756b5157eb383dd053388a928fd}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Timestamp\+Cast}}, and \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_u_r_i_cast_ad02e81be9c4fc8e49f2a140629685182}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+URICast}}.
+
+\Hypertarget{interface_code_igniter_1_1_data_caster_1_1_cast_1_1_cast_interface_a0b63b5bf021e51eeaf3ec6c387c4d80f}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface}!set@{set}}
+\index{set@{set}!CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}CastInterface}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_data_caster_1_1_cast_1_1_cast_interface_a0b63b5bf021e51eeaf3ec6c387c4d80f} 
+static Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Cast\+Interface\+::set (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?object}]{\$helper}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes a PHP value, returns its value for Data\+Source.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & PHP native value \\
+\hline
+ & {\em list$<$string$>$} & \$params Additional param \\
+\hline
+object | null & {\em \$helper} & Helper object. E.\+g., database connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Data to pass to database driver 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_array_cast_ae6bb1acd743d478d394cdf127cea69c7}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Array\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_base_cast_a0bcf34608d849d37061b9b9afe91f3eb}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Base\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_c_s_v_cast_adcbdb04278776ffcccbdb57deca5a80b}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+CSVCast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_datetime_cast_a68febcc428a7a3e798e12a1530c7f1e4}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Datetime\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_int_bool_cast_a99822e6e0d0b1306b0eb364fb68b5002}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Int\+Bool\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast_a760bff910604dd7359e2773c539dbe63}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Json\+Cast}}, \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_timestamp_cast_a1af9c4edd7fe5b3141745548457bb9aa}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Timestamp\+Cast}}, and \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_u_r_i_cast_a07dc63b0b36269256ca95cd4e29d6598}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+URICast}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Data\+Caster/\+Cast/Cast\+Interface.\+php\end{DoxyCompactItemize}

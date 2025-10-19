@@ -1,0 +1,134 @@
+\doxysection{Code\+Igniter\textbackslash{}Debug\textbackslash{}Timer Class Reference}
+\hypertarget{class_code_igniter_1_1_debug_1_1_timer}{}\label{class_code_igniter_1_1_debug_1_1_timer}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_timer_af66944c1ba22774c26a4511fecd08073}{start}} (string \$name, ?float \$time=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_timer_a2018e25874e4ea95e41924bce9e918fb}{stop}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_timer_ad0a47eaf3daa4d13df8809f398689ba3}{get\+Elapsed\+Time}} (string \$name, int \$decimals=4)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_timer_a31d9b1ac2f26c3a380ddf5aa51e0cef1}{get\+Timers}} (int \$decimals=4)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_timer_a78f4fb060f765146648941c800078b3a}{has}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_timer_a8f1de64c4de5c977fc167b9897091184}{record}} (string \$name, callable \$callable)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_timer_a5a164379c2b4b8e878abe5b5dbd2b49e}\label{class_code_igniter_1_1_debug_1_1_timer_a5a164379c2b4b8e878abe5b5dbd2b49e} 
+{\bfseries \$timers} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Timer
+
+Provides a simple way to measure the amount of time that elapses between two points.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Timer\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_timer_ad0a47eaf3daa4d13df8809f398689ba3}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}!getElapsedTime@{getElapsedTime}}
+\index{getElapsedTime@{getElapsedTime}!CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}}
+\doxysubsubsection{\texorpdfstring{getElapsedTime()}{getElapsedTime()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_timer_ad0a47eaf3daa4d13df8809f398689ba3} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Timer\+::get\+Elapsed\+Time (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{int}]{\$decimals}{ = {\ttfamily 4}}\end{DoxyParamCaption})}
+
+Returns the duration of a recorded timer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the timer. \\
+\hline
+int & {\em \$decimals} & Number of decimal places.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\texorpdfstring{$\vert$}{|}null Returns null if timer does not exist by that name. Returns a float representing the number of seconds elapsed while that timer was running. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_timer_a31d9b1ac2f26c3a380ddf5aa51e0cef1}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}!getTimers@{getTimers}}
+\index{getTimers@{getTimers}!CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}}
+\doxysubsubsection{\texorpdfstring{getTimers()}{getTimers()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_timer_a31d9b1ac2f26c3a380ddf5aa51e0cef1} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Timer\+::get\+Timers (\begin{DoxyParamCaption}\item[{int}]{\$decimals}{ = {\ttfamily 4}}\end{DoxyParamCaption})}
+
+Returns the array of timers, with the duration pre-\/calculated for you.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$decimals} & Number of decimal places \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_timer_a78f4fb060f765146648941c800078b3a}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}!has@{has}}
+\index{has@{has}!CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_timer_a78f4fb060f765146648941c800078b3a} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Timer\+::has (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Checks whether or not a timer with the specified name exists. \Hypertarget{class_code_igniter_1_1_debug_1_1_timer_a8f1de64c4de5c977fc167b9897091184}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}!record@{record}}
+\index{record@{record}!CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}}
+\doxysubsubsection{\texorpdfstring{record()}{record()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_timer_a8f1de64c4de5c977fc167b9897091184} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Timer\+::record (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{callable}]{\$callable}{}\end{DoxyParamCaption})}
+
+Executes callable and measures its time. Returns its return value if any.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the timer \\
+\hline
+ & {\em callable()} & mixed \$callable callable to be executed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_timer_af66944c1ba22774c26a4511fecd08073}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}!start@{start}}
+\index{start@{start}!CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_timer_af66944c1ba22774c26a4511fecd08073} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Timer\+::start (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{?float}]{\$time}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Starts a timer running.
+
+Multiple calls can be made to this method so that several execution points can be measured.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of this timer. \\
+\hline
+float | null & {\em \$time} & Allows user to provide time.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Timer 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_timer_a2018e25874e4ea95e41924bce9e918fb}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}!stop@{stop}}
+\index{stop@{stop}!CodeIgniter\textbackslash{}Debug\textbackslash{}Timer@{CodeIgniter\textbackslash{}Debug\textbackslash{}Timer}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_timer_a2018e25874e4ea95e41924bce9e918fb} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Timer\+::stop (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Stops a running timer.
+
+If the timer is not stopped before the timers() method is called, it will be automatically stopped at that point.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of this timer.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Timer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Debug/Timer.\+php\end{DoxyCompactItemize}

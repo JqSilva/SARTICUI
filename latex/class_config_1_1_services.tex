@@ -1,0 +1,66 @@
+\doxysection{Config\textbackslash{}Services Class Reference}
+\hypertarget{class_config_1_1_services}{}\label{class_config_1_1_services}\index{Config\textbackslash{}Services@{Config\textbackslash{}Services}}
+
+
+Inheritance diagram for Config\textbackslash{}Services\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Services\+:
+% FIG 1
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_ab55c32b6edbd4713d326d208b335b82b}{get}} (string \$key)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a3d3899d1006fd50a9ae484242373d25f}{set}} (string \$key, object \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a1ee6d7804652eab946b8fe05c752480c}{override}} (string \$key, object \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a2c60ecb4d1ad3ed8b8f1dc0778303839}{autoloader}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a3b5f7cf82431c1bf10e7ac3908d198be}{locator}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a980201a6a926bc13e2af9657e73c3041}{\+\_\+\+\_\+call\+Static}} (string \$name, array \$arguments)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_aa1f3de4acf0a9a3545783e3177ce0369}{service\+Exists}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a9a305a4dc0ee5fa906e5d8974c2e06ef}{reset}} (bool \$init\+Autoloader=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_acbe23e93fbcb3b2dacb880e496c70afc}{reset\+Single}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a11973f220d8da04aff60c0ec851a6b6b}{inject\+Mock}} (string \$name, \$mock)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_ae71b0a23a5f55f9418fd10f6efe20cbb}{get\+Shared\+Instance}} (string \$key,... \$params)
+\item 
+static {\bfseries build\+Services\+Cache} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$instances} = \mbox{[}$\,$\mbox{]}
+\item 
+static array {\bfseries \$factories} = \mbox{[}$\,$\mbox{]}
+\item 
+static {\bfseries \$mocks} = \mbox{[}$\,$\mbox{]}
+\item 
+static {\bfseries \$discovered} = false
+\item 
+static {\bfseries \$services} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Services Configuration file.
+
+Services are simply other classes/libraries that the system uses to do its job. This is used by \doxylink{namespace_code_igniter}{Code\+Igniter} to allow the core of the framework to be swapped out easily without affecting the usage within the rest of your application.
+
+This file holds any application-\/specific services, or service overrides that you might need. An example has been included with the general method format you should use for your service methods. For more examples, see the core Services file at system/\+Config/\+Services.\+php. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Services.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\doxysection{Code\+Igniter\textbackslash{}Throttle\textbackslash{}Throttler Class Reference}
+\hypertarget{class_code_igniter_1_1_throttle_1_1_throttler}{}\label{class_code_igniter_1_1_throttle_1_1_throttler}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Throttle\textbackslash{}Throttler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Throttle\textbackslash{}Throttler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_throttle_1_1_throttler_acda2502e3e735501f36d4273a47e817b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface}{Cache\+Interface}} \$cache)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_throttle_1_1_throttler_a027d808f6eb177e3a377830f140877b6}{get\+Token\+Time}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_throttle_1_1_throttler_a3e641fe58f12bf4f23b6d81324ea05c8}{remove}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_throttle_1_1_throttler_a97bb26baa6ee8d712e1a9f44e79c36df}{set\+Test\+Time}} (int \$\mbox{\hyperlink{class_code_igniter_1_1_throttle_1_1_throttler_ac74544ba1f4490d44ab5f45a0feb5015}{time}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_throttle_1_1_throttler_ac74544ba1f4490d44ab5f45a0feb5015}{time}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_throttle_1_1_throttler_interface}{Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_throttle_1_1_throttler_interface_ac7289739ed9e32224a9e708deb160ffd}{check}} (string \$key, int \$capacity, int \$seconds, int \$cost)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_a0b892c2603ae9a2b5879829a3e7eac4c}\label{class_code_igniter_1_1_throttle_1_1_throttler_a0b892c2603ae9a2b5879829a3e7eac4c} 
+{\bfseries \$cache}
+\item 
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_a603fca3e9bf9d32a9bdaab541e25a073}\label{class_code_igniter_1_1_throttle_1_1_throttler_a603fca3e9bf9d32a9bdaab541e25a073} 
+{\bfseries \$token\+Time} = 0
+\item 
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_a521ceb9be8498b4c986b0de4b5047579}\label{class_code_igniter_1_1_throttle_1_1_throttler_a521ceb9be8498b4c986b0de4b5047579} 
+{\bfseries \$prefix} = \textquotesingle{}throttler\+\_\+\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_a54fe409328646d6779346cbdf0cd82fd}\label{class_code_igniter_1_1_throttle_1_1_throttler_a54fe409328646d6779346cbdf0cd82fd} 
+{\bfseries \$test\+Time}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Throttler
+
+Uses an implementation of the Token Bucket algorithm to implement a "{}rolling window"{} type of throttling that can be used for rate limiting an API or any other request.
+
+Each "{}token"{} in the "{}bucket"{} is equivalent to a single request for the purposes of this implementation.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/Token_bucket}{\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+Token\+\_\+bucket}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_acda2502e3e735501f36d4273a47e817b}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_throttle_1_1_throttler_acda2502e3e735501f36d4273a47e817b} 
+Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface}{Cache\+Interface}}}]{\$cache}{}\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_a027d808f6eb177e3a377830f140877b6}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}!getTokenTime@{getTokenTime}}
+\index{getTokenTime@{getTokenTime}!CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}}
+\doxysubsubsection{\texorpdfstring{getTokenTime()}{getTokenTime()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_throttle_1_1_throttler_a027d808f6eb177e3a377830f140877b6} 
+Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+::get\+Token\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the number of seconds until the next available token will be released for usage. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_throttle_1_1_throttler_interface_af1742aab1e472522e8f8390c1de57dd7}{Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_a3e641fe58f12bf4f23b6d81324ea05c8}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}!remove@{remove}}
+\index{remove@{remove}!CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_throttle_1_1_throttler_a3e641fe58f12bf4f23b6d81324ea05c8} 
+Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+::remove (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The name of the bucket \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_a97bb26baa6ee8d712e1a9f44e79c36df}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}!setTestTime@{setTestTime}}
+\index{setTestTime@{setTestTime}!CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}}
+\doxysubsubsection{\texorpdfstring{setTestTime()}{setTestTime()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_throttle_1_1_throttler_a97bb26baa6ee8d712e1a9f44e79c36df} 
+Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+::set\+Test\+Time (\begin{DoxyParamCaption}\item[{int}]{\$time}{}\end{DoxyParamCaption})}
+
+Used during testing to set the current timestamp to use.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_throttle_1_1_throttler_ac74544ba1f4490d44ab5f45a0feb5015}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}!time@{time}}
+\index{time@{time}!CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler@{CodeIgniter\textbackslash{}Throttle\textbackslash{}Throttler}}
+\doxysubsubsection{\texorpdfstring{time()}{time()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_throttle_1_1_throttler_ac74544ba1f4490d44ab5f45a0feb5015} 
+Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+::time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the test time, defaulting to current.
+
+@\+TODO should be private 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Throttle/Throttler.\+php\end{DoxyCompactItemize}

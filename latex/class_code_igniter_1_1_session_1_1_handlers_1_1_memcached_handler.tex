@@ -1,0 +1,218 @@
+\doxysection{Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Memcached\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler}{}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Memcached\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Memcached\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a446349017c29342a967d32802a7a726d}{\+\_\+\+\_\+construct}} (Session\+Config \$config, string \$ip\+Address)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_af07b0bf574913a3b449e4266528ba57b}{open}} (\$path, \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a4de75a217148b9b9dcb8ebf5a958fd43}{read}} (\$id)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_ab828415bd80864cec9afadca2fc39276}{write}} (\$id, \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a83719f7034a17d3ab7cfd436b3836e78}{close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a1d4c287f24164b749cf235e8198dd9bc}{destroy}} (\$id)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a9cf169b0065e32239f3c0a96d05203d7}{gc}} (\$max\+\_\+lifetime)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a9ef294992f649852edbdb153bd035843}{lock\+Session}} (string \$session\+ID)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a78679e666fee9ded295dee5f142c37fa}{release\+Lock}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_aa22222decdb7468b5cbedaca3c2177dc}{destroy\+Cookie}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a2f5aa1f0b421ecb5b57e3c7fdfbf0e00}{fail}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a9b26a2b47d0cc4ef535f4aa2f991fad6}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a9b26a2b47d0cc4ef535f4aa2f991fad6} 
+{\bfseries \$memcached}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a79619b121f6cc241f04b76707f976986}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a79619b121f6cc241f04b76707f976986} 
+{\bfseries \$key\+Prefix} = \textquotesingle{}ci\+\_\+session\+:\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a8d420b64ebbf9c90d67b3b2ac62d5beb}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a8d420b64ebbf9c90d67b3b2ac62d5beb} 
+{\bfseries \$lock\+Key}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a622fd4d712a8468907ece581ca2bc46c}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a622fd4d712a8468907ece581ca2bc46c} 
+{\bfseries \$session\+Expiration} = 7200
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$fingerprint}
+\item 
+{\bfseries \$lock} = false
+\item 
+{\bfseries \$cookie\+Prefix} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Domain} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Path} = \textquotesingle{}/\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Secure} = false
+\item 
+{\bfseries \$cookie\+Name}
+\item 
+{\bfseries \$match\+IP} = false
+\item 
+{\bfseries \$session\+ID}
+\item 
+{\bfseries \$save\+Path}
+\item 
+{\bfseries \$ip\+Address}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Session handler using Memcache for persistence 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a446349017c29342a967d32802a7a726d}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a446349017c29342a967d32802a7a726d} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Session\+Config}]{\$config}{, }\item[{string}]{\$ip\+Address}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Session\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a83719f7034a17d3ab7cfd436b3836e78}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!close@{close}}
+\index{close@{close}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a83719f7034a17d3ab7cfd436b3836e78} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Closes the current session. \Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a1d4c287f24164b749cf235e8198dd9bc}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!destroy@{destroy}}
+\index{destroy@{destroy}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a1d4c287f24164b749cf235e8198dd9bc} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::destroy (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Destroys a session
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID being destroyed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a9cf169b0065e32239f3c0a96d05203d7}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!gc@{gc}}
+\index{gc@{gc}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{gc()}{gc()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a9cf169b0065e32239f3c0a96d05203d7} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::gc (\begin{DoxyParamCaption}\item[{}]{\$max\+\_\+lifetime}{}\end{DoxyParamCaption})}
+
+Cleans up expired sessions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+\_\+lifetime} & Sessions that have not updated for the last max\+\_\+lifetime seconds will be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int Returns the number of deleted sessions on success, or false on failure. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a9ef294992f649852edbdb153bd035843}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!lockSession@{lockSession}}
+\index{lockSession@{lockSession}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{lockSession()}{lockSession()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a9ef294992f649852edbdb153bd035843} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::lock\+Session (\begin{DoxyParamCaption}\item[{string}]{\$session\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Acquires an emulated lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$session\+ID} & Session ID \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a46bf0a22cb5a3507751080e9594548d6}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_af07b0bf574913a3b449e4266528ba57b}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!open@{open}}
+\index{open@{open}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_af07b0bf574913a3b449e4266528ba57b} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::open (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Re-\/initialize existing session, or creates a new one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path where to store/retrieve the session \\
+\hline
+string & {\em \$name} & The session name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a4de75a217148b9b9dcb8ebf5a958fd43}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!read@{read}}
+\index{read@{read}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a4de75a217148b9b9dcb8ebf5a958fd43} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::read (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Reads the session data from the session storage, and returns the results.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string Returns an encoded string of the read data. If nothing was read, it must return false. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a78679e666fee9ded295dee5f142c37fa}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_a78679e666fee9ded295dee5f142c37fa} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::release\+Lock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Releases a previously acquired lock 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a41a354b952a3b07bdac8b831bc51ec5b}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_ab828415bd80864cec9afadca2fc39276}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}!write@{write}}
+\index{write@{write}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}MemcachedHandler}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_memcached_handler_ab828415bd80864cec9afadca2fc39276} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler\+::write (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+Writes the session data to the session storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID \\
+\hline
+string & {\em \$data} & The encoded session data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Session/\+Handlers/Memcached\+Handler.\+php\end{DoxyCompactItemize}

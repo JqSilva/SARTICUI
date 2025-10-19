@@ -1,0 +1,127 @@
+\doxysection{Code\+Igniter\textbackslash{}Filters\textbackslash{}Invalid\+Chars Class Reference}
+\hypertarget{class_code_igniter_1_1_filters_1_1_invalid_chars}{}\label{class_code_igniter_1_1_filters_1_1_invalid_chars}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Invalid\+Chars\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Invalid\+Chars\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_invalid_chars_a2c99fbffc930158a7bf446c70e3485ef}{before}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \$arguments=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_invalid_chars_aa6cc346081e61856c50e7e38287603c0}{after}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, \$arguments=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_invalid_chars_a649e6d1cdb1fe56fa42cc4c1188d5e91}{check\+Encoding}} (\$value)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_invalid_chars_a28b783893bbd8f8b0ce304e300a52ac5}{check\+Control}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_invalid_chars_a02bf08dbe1d7e9bea3c6fc7829cd023d}\label{class_code_igniter_1_1_filters_1_1_invalid_chars_a02bf08dbe1d7e9bea3c6fc7829cd023d} 
+{\bfseries \$source}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_invalid_chars_ad7cb4847d20562586431d21cdae05863}\label{class_code_igniter_1_1_filters_1_1_invalid_chars_ad7cb4847d20562586431d21cdae05863} 
+{\bfseries \$control\+Code\+Regex} = \textquotesingle{}/\textbackslash{}A\mbox{[}\textbackslash{}r\textbackslash{}n\textbackslash{}t\mbox{[}\+:\texorpdfstring{$^\wedge$}{\string^}cntrl\+:\mbox{]}\mbox{]}\texorpdfstring{$\ast$}{*}\textbackslash{}z/u\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Invalid\+Chars filter.
+
+Check if user input data (\$\+\_\+\+GET, \$\+\_\+\+POST, \$\+\_\+\+COOKIE, php\+://input) do not contain invalid characters\+:
+\begin{DoxyItemize}
+\item invalid UTF-\/8 characters
+\item control characters except line break and tab code
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Invalid\+Chars\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_invalid_chars_aa6cc346081e61856c50e7e38287603c0}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}!after@{after}}
+\index{after@{after}!CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_invalid_chars_aa6cc346081e61856c50e7e38287603c0} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Invalid\+Chars\+::after (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+We don\textquotesingle{}t have anything to do here.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$\texorpdfstring{$\vert$}{|}null} & \$arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_a9d6d93f12b94b7b65258deb6f2b3d90e}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_filters_1_1_invalid_chars_a2c99fbffc930158a7bf446c70e3485ef}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}!before@{before}}
+\index{before@{before}!CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_invalid_chars_a2c99fbffc930158a7bf446c70e3485ef} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Invalid\+Chars\+::before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Check invalid characters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$\texorpdfstring{$\vert$}{|}null} & \$arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_abae5f86c1d0bef8b0b44652a7346b716}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_filters_1_1_invalid_chars_a28b783893bbd8f8b0ce304e300a52ac5}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}!checkControl@{checkControl}}
+\index{checkControl@{checkControl}!CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}}
+\doxysubsubsection{\texorpdfstring{checkControl()}{checkControl()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_invalid_chars_a28b783893bbd8f8b0ce304e300a52ac5} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Invalid\+Chars\+::check\+Control (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check for the presence of control characters except line breaks and tabs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_invalid_chars_a649e6d1cdb1fe56fa42cc4c1188d5e91}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}!checkEncoding@{checkEncoding}}
+\index{checkEncoding@{checkEncoding}!CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars@{CodeIgniter\textbackslash{}Filters\textbackslash{}InvalidChars}}
+\doxysubsubsection{\texorpdfstring{checkEncoding()}{checkEncoding()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_invalid_chars_a649e6d1cdb1fe56fa42cc4c1188d5e91} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Invalid\+Chars\+::check\+Encoding (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check the character encoding is valid UTF-\/8.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Filters/Invalid\+Chars.\+php\end{DoxyCompactItemize}

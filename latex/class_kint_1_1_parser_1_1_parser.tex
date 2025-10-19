@@ -1,0 +1,171 @@
+\doxysection{Kint\textbackslash{}Parser\textbackslash{}Parser Class Reference}
+\hypertarget{class_kint_1_1_parser_1_1_parser}{}\label{class_kint_1_1_parser_1_1_parser}\index{Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser_a962786d5beb2666fc545c6ce852e72a4}{\+\_\+\+\_\+construct}} (int \$depth\+\_\+limit=0, string \$caller=null)
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser_a186d7cb88fdcac6d271fd541bb52328d}{set\+Caller\+Class}} (string \$caller=null)
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_aaed2bdf38200ca771b313b4cc8d2bff7}\label{class_kint_1_1_parser_1_1_parser_aaed2bdf38200ca771b313b4cc8d2bff7} 
+{\bfseries get\+Caller\+Class} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser_adf0535c8d386253fa93aea72a17af9b9}{set\+Depth\+Limit}} (int \$depth\+\_\+limit=0)
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_ac056a537c0a5e92b8cfa8bc2328bf75c}\label{class_kint_1_1_parser_1_1_parser_ac056a537c0a5e92b8cfa8bc2328bf75c} 
+{\bfseries get\+Depth\+Limit} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser_ac4e09e7ac0e30a069a48f5765f4a46e2}{parse}} (\&\$var, \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$o)
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a9668e0b9b7a40f663ea1acd17b8d0fbe}\label{class_kint_1_1_parser_1_1_parser_a9668e0b9b7a40f663ea1acd17b8d0fbe} 
+{\bfseries add\+Plugin} (\mbox{\hyperlink{interface_kint_1_1_parser_1_1_plugin_interface}{Plugin\+Interface}} \$p)
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_ad2f5c7d07f57fab882668995c7399bfe}\label{class_kint_1_1_parser_1_1_parser_ad2f5c7d07f57fab882668995c7399bfe} 
+{\bfseries clear\+Plugins} ()
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_abc5dc3e5c3ea3dad207454160800ef34}\label{class_kint_1_1_parser_1_1_parser_abc5dc3e5c3ea3dad207454160800ef34} 
+{\bfseries halt\+Parse} ()
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a5d27561bdb93825f66e9b76f076a2638}\label{class_kint_1_1_parser_1_1_parser_a5d27561bdb93825f66e9b76f076a2638} 
+{\bfseries child\+Has\+Path} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_instance_value}{Instance\+Value}} \$parent, \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$child)
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser_a41b960a1c403da82cebd918e110198cf}{get\+Clean\+Array}} (array \$array)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_kint_1_1_parser_1_1_parser_a2f5ddf22504e94b4aaebd058cb7c7a62}{TRIGGER\+\_\+\+NONE}} = 0
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_abee34c382c442c99bfc998a9a0c8b664}\label{class_kint_1_1_parser_1_1_parser_abee34c382c442c99bfc998a9a0c8b664} 
+const {\bfseries TRIGGER\+\_\+\+BEGIN} = 1
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_aaf4f06dbc9faccbd43f2b15cc3a79558}\label{class_kint_1_1_parser_1_1_parser_aaf4f06dbc9faccbd43f2b15cc3a79558} 
+const {\bfseries TRIGGER\+\_\+\+SUCCESS} = 2
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a153e06e13c2a583894b7642febff9467}\label{class_kint_1_1_parser_1_1_parser_a153e06e13c2a583894b7642febff9467} 
+const {\bfseries TRIGGER\+\_\+\+RECURSION} = 4
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a5f4002f0a0925fa413faf05d8a38de77}\label{class_kint_1_1_parser_1_1_parser_a5f4002f0a0925fa413faf05d8a38de77} 
+const {\bfseries TRIGGER\+\_\+\+DEPTH\+\_\+\+LIMIT} = 8
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_af4b8002717486c5466f45ab517f4c575}\label{class_kint_1_1_parser_1_1_parser_af4b8002717486c5466f45ab517f4c575} 
+const {\bfseries TRIGGER\+\_\+\+COMPLETE} = 14
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a4cef7cc273981b44495a0ae056521786}\label{class_kint_1_1_parser_1_1_parser_a4cef7cc273981b44495a0ae056521786} 
+{\bfseries no\+Recurse\+Call} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a7bb50200fb4b32b8234ce63c2cabaf11}\label{class_kint_1_1_parser_1_1_parser_a7bb50200fb4b32b8234ce63c2cabaf11} 
+{\bfseries \$caller\+\_\+class}
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_abed5fc41bded03082b6adb85ed68e847}\label{class_kint_1_1_parser_1_1_parser_abed5fc41bded03082b6adb85ed68e847} 
+{\bfseries \$depth\+\_\+limit} = 0
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a90e05895b39efaa6843dfabeb5329954}\label{class_kint_1_1_parser_1_1_parser_a90e05895b39efaa6843dfabeb5329954} 
+{\bfseries \$marker}
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_ae3ea596dec26eaa00c818bee59c44d78}\label{class_kint_1_1_parser_1_1_parser_ae3ea596dec26eaa00c818bee59c44d78} 
+{\bfseries \$object\+\_\+hashes} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a1f27b614ed3f3eee74cadbdf1a822f48}\label{class_kint_1_1_parser_1_1_parser_a1f27b614ed3f3eee74cadbdf1a822f48} 
+{\bfseries \$parse\+\_\+break} = false
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a8c9202dfc9d354f9f4bdad216541187f}\label{class_kint_1_1_parser_1_1_parser_a8c9202dfc9d354f9f4bdad216541187f} 
+{\bfseries \$plugins} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a962786d5beb2666fc545c6ce852e72a4}\index{Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_parser_a962786d5beb2666fc545c6ce852e72a4} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+Parser\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int}]{\$depth\+\_\+limit}{ = {\ttfamily 0}, }\item[{string}]{\$caller}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$depth\+\_\+limit} & Maximum depth to parse data \\
+\hline
+?string & {\em \$caller} & Caller class name \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a41b960a1c403da82cebd918e110198cf}\index{Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}!getCleanArray@{getCleanArray}}
+\index{getCleanArray@{getCleanArray}!Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{getCleanArray()}{getCleanArray()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_parser_a41b960a1c403da82cebd918e110198cf} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+Parser\+::get\+Clean\+Array (\begin{DoxyParamCaption}\item[{array}]{\$array}{}\end{DoxyParamCaption})}
+
+Returns an array without the recursion marker in it.
+
+DO NOT pass an array that has had it\textquotesingle{}s marker removed back into the parser, it will result in an extra recursion
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & Array potentially containing a recursion marker\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Array with recursion marker removed 
+\end{DoxyReturn}
+\Hypertarget{class_kint_1_1_parser_1_1_parser_ac4e09e7ac0e30a069a48f5765f4a46e2}\index{Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}!parse@{parse}}
+\index{parse@{parse}!Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_parser_ac4e09e7ac0e30a069a48f5765f4a46e2} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+Parser\+::parse (\begin{DoxyParamCaption}\item[{\&}]{\$var}{, }\item[{\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}}}]{\$o}{}\end{DoxyParamCaption})}
+
+Parses a variable into a Kint object structure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \&\$var} & The input variable \\
+\hline
+Value & {\em \$o} & The base object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a186d7cb88fdcac6d271fd541bb52328d}\index{Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}!setCallerClass@{setCallerClass}}
+\index{setCallerClass@{setCallerClass}!Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{setCallerClass()}{setCallerClass()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_parser_a186d7cb88fdcac6d271fd541bb52328d} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+Parser\+::set\+Caller\+Class (\begin{DoxyParamCaption}\item[{string}]{\$caller}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the caller class. \Hypertarget{class_kint_1_1_parser_1_1_parser_adf0535c8d386253fa93aea72a17af9b9}\index{Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}!setDepthLimit@{setDepthLimit}}
+\index{setDepthLimit@{setDepthLimit}!Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{setDepthLimit()}{setDepthLimit()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_parser_adf0535c8d386253fa93aea72a17af9b9} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+Parser\+::set\+Depth\+Limit (\begin{DoxyParamCaption}\item[{int}]{\$depth\+\_\+limit}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Set the depth limit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$depth\+\_\+limit} & Maximum depth to parse data, 0 for none \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_kint_1_1_parser_1_1_parser_a2f5ddf22504e94b4aaebd058cb7c7a62}\index{Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}!TRIGGER\_NONE@{TRIGGER\_NONE}}
+\index{TRIGGER\_NONE@{TRIGGER\_NONE}!Kint\textbackslash{}Parser\textbackslash{}Parser@{Kint\textbackslash{}Parser\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{TRIGGER\_NONE}{TRIGGER\_NONE}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_parser_a2f5ddf22504e94b4aaebd058cb7c7a62} 
+const Kint\textbackslash{}\+Parser\textbackslash{}\+Parser\+::\+TRIGGER\+\_\+\+NONE = 0}
+
+Plugin triggers.
+
+These are constants indicating trigger points for plugins
+
+BEGIN\+: Before normal parsing SUCCESS\+: After successful parsing RECURSION\+: After parsing cancelled by recursion DEPTH\+\_\+\+LIMIT\+: After parsing cancelled by depth limit COMPLETE\+: SUCCESS \texorpdfstring{$\vert$}{|} RECURSION \texorpdfstring{$\vert$}{|} DEPTH\+\_\+\+LIMIT
+
+While a plugin\textquotesingle{}s get\+Triggers may return any of these 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/\+Parser/Parser.\+php\end{DoxyCompactItemize}

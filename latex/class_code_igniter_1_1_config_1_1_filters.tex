@@ -1,0 +1,144 @@
+\doxysection{Code\+Igniter\textbackslash{}Config\textbackslash{}Filters Class Reference}
+\hypertarget{class_code_igniter_1_1_config_1_1_filters}{}\label{class_code_igniter_1_1_config_1_1_filters}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Filters\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Filters\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_filters_a09024362a972b6edbd0b0c4e3945fe0d}{\$aliases}}
+\item 
+array \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_filters_ade16250988cc7cf903b7663db82f7985}{\$required}}
+\item 
+array \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_filters_a51d3359c5e5622de54a38f340c0c9609}{\$globals}}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_filters_a95e1c6d4d9b2e468afcf20ff00188dee}\label{class_code_igniter_1_1_config_1_1_filters_a95e1c6d4d9b2e468afcf20ff00188dee} 
+array {\bfseries \$methods} = \mbox{[}$\,$\mbox{]}
+\item 
+array \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_filters_a7b9ff654c9c3b03ca4300cfa28a81869}{\$filters}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Filters configuration 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_filters_a09024362a972b6edbd0b0c4e3945fe0d}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}!\$aliases@{\$aliases}}
+\index{\$aliases@{\$aliases}!CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{\$aliases}{\$aliases}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_filters_a09024362a972b6edbd0b0c4e3945fe0d} 
+array Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Filters\+::\$aliases}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'csrf'}\ \ \ \ \ \ \ \ \ \ =>\ CSRF::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'toolbar'}\ \ \ \ \ \ \ =>\ DebugToolbar::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'honeypot'}\ \ \ \ \ \ =>\ Honeypot::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'invalidchars'}\ \ =>\ InvalidChars::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'secureheaders'}\ =>\ SecureHeaders::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cors'}\ \ \ \ \ \ \ \ \ \ =>\ Cors::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'forcehttps'}\ \ \ \ =>\ ForceHTTPS::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'pagecache'}\ \ \ \ \ =>\ PageCache::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'performance'}\ \ \ =>\ PerformanceMetrics::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_config_1_1_filters_a7b9ff654c9c3b03ca4300cfa28a81869}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}!\$filters@{\$filters}}
+\index{\$filters@{\$filters}!CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{\$filters}{\$filters}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_filters_a7b9ff654c9c3b03ca4300cfa28a81869} 
+array Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Filters\+::\$filters = \mbox{[}$\,$\mbox{]}}
+
+List of filter aliases that should run on any before or after URI patterns.
+
+Example\+: \textquotesingle{}is\+Logged\+In\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}before\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}account/\texorpdfstring{$\ast$}{*}\textquotesingle{}, \textquotesingle{}profiles/\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}\mbox{]} \Hypertarget{class_code_igniter_1_1_config_1_1_filters_a51d3359c5e5622de54a38f340c0c9609}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}!\$globals@{\$globals}}
+\index{\$globals@{\$globals}!CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{\$globals}{\$globals}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_filters_a51d3359c5e5622de54a38f340c0c9609} 
+array Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Filters\+::\$globals}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'before'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'after'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_config_1_1_filters_ade16250988cc7cf903b7663db82f7985}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}!\$required@{\$required}}
+\index{\$required@{\$required}!CodeIgniter\textbackslash{}Config\textbackslash{}Filters@{CodeIgniter\textbackslash{}Config\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{\$required}{\$required}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_filters_ade16250988cc7cf903b7663db82f7985} 
+array Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Filters\+::\$required}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'before'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'forcehttps'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'pagecache'},\ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'after'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'pagecache'},\ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'performance'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'toolbar'},\ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Config/Filters.\+php\end{DoxyCompactItemize}

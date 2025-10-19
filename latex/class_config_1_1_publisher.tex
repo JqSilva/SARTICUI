@@ -1,0 +1,88 @@
+\doxysection{Config\textbackslash{}Publisher Class Reference}
+\hypertarget{class_config_1_1_publisher}{}\label{class_config_1_1_publisher}\index{Config\textbackslash{}Publisher@{Config\textbackslash{}Publisher}}
+
+
+Inheritance diagram for Config\textbackslash{}Publisher\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Publisher\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_config_1_1_publisher_a6e6398fbf67f2dd4a2e995e357c7155b}{\$restrictions}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_publisher}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Publisher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_publisher_a8e915cca7c11b48ab5bed770a25a6f87}{\$restrictions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_publisher}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Publisher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_publisher_a58038c62f7f006cb31b1d2b67982af41}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Publisher Configuration
+
+Defines basic security restrictions for the Publisher class to prevent abuse by injecting malicious files into a project. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_publisher_a6e6398fbf67f2dd4a2e995e357c7155b}\index{Config\textbackslash{}Publisher@{Config\textbackslash{}Publisher}!\$restrictions@{\$restrictions}}
+\index{\$restrictions@{\$restrictions}!Config\textbackslash{}Publisher@{Config\textbackslash{}Publisher}}
+\doxysubsubsection{\texorpdfstring{\$restrictions}{\$restrictions}}
+{\footnotesize\ttfamily \label{class_config_1_1_publisher_a6e6398fbf67f2dd4a2e995e357c7155b} 
+Config\textbackslash{}\+Publisher\+::\$restrictions}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ROOTPATH\ =>\ \textcolor{charliteral}{'*'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ FCPATH\ \ \ =>\ \textcolor{stringliteral}{'\#\(\backslash\).(s?css|js|map|html?|xml|json|webmanifest|ttf|eot|woff2?|gif|jpe?g|tiff?|png|webp|bmp|ico|svg)\$\#i'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Publisher.\+php\end{DoxyCompactItemize}

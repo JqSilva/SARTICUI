@@ -1,0 +1,138 @@
+\doxysection{Code\+Igniter\textbackslash{}View\textbackslash{}Cell Class Reference}
+\hypertarget{class_code_igniter_1_1_view_1_1_cell}{}\label{class_code_igniter_1_1_view_1_1_cell}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cell_ad62e0d61da111b3949e256729780d1fb}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface}{Cache\+Interface}} \$cache)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cell_ab1aa3e720991e4d0781f7c3fc92adf14}{render}} (string \$library, \$params=null, int \$ttl=0, ?string \$cache\+Name=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cell_aa6c49c3a8fe94a79dd42801efdaa131a}{prepare\+Params}} (\$params)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cell_a9d0ede911e4f73a50f2594d71456c0cb}{determine\+Class}} (string \$library)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cell_ac8e247243bd619ea0cd7abc7d511b8fa}{render\+Cell}} (Base\+Cell \$instance, string \$method, array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cell_aaa2bc7d735ccf7bfba29e689bd487689}{render\+Simple\+Class}} (\$instance, string \$method, array \$params, string \$class)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_cell_abc7205735c0807a635cbd010194cf33a}\label{class_code_igniter_1_1_view_1_1_cell_abc7205735c0807a635cbd010194cf33a} 
+{\bfseries \$cache}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Cell
+
+A simple class that can call any other class that can be loaded, and echo out it\textquotesingle{}s result. Intended for displaying small blocks of content within views that can be managed by other libraries and not require they are loaded within controller.
+
+Used with the helper function, it\textquotesingle{}s use will look like\+: \begin{DoxyVerb}    viewCell('\Some\Class::method', 'limit=5 sort=asc', 60, 'cache-name');
+\end{DoxyVerb}
+
+
+Parameters are matched up with the callback method\textquotesingle{}s arguments of the same name\+: \begin{DoxyVerb}    class Class {
+        function method($limit, $sort)
+    }
+\end{DoxyVerb}
+
+
+Alternatively, the params will be passed into the callback method as a simple array if matching params are not found. \begin{DoxyVerb}    class Class {
+        function method(array $params=null)
+    }
+\end{DoxyVerb}
+
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cell\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_view_1_1_cell_ad62e0d61da111b3949e256729780d1fb}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cell_ad62e0d61da111b3949e256729780d1fb} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cell\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface}{Cache\+Interface}}}]{\$cache}{}\end{DoxyParamCaption})}
+
+Cell constructor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_view_1_1_cell_a9d0ede911e4f73a50f2594d71456c0cb}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}!determineClass@{determineClass}}
+\index{determineClass@{determineClass}!CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{determineClass()}{determineClass()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cell_a9d0ede911e4f73a50f2594d71456c0cb} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cell\+::determine\+Class (\begin{DoxyParamCaption}\item[{string}]{\$library}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Given the library string, attempts to determine the class and method to call. \Hypertarget{class_code_igniter_1_1_view_1_1_cell_aa6c49c3a8fe94a79dd42801efdaa131a}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}!prepareParams@{prepareParams}}
+\index{prepareParams@{prepareParams}!CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{prepareParams()}{prepareParams()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cell_aa6c49c3a8fe94a79dd42801efdaa131a} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cell\+::prepare\+Params (\begin{DoxyParamCaption}\item[{}]{\$params}{}\end{DoxyParamCaption})}
+
+Parses the params attribute. If an array, returns untouched. If a string, it should be in the format "{}key1=value key2=value"{}. It will be split and returned as an array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,string$>$\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null} & \$params @phpstan-\/param array$<$string, string$>$\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}null \$params\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_view_1_1_cell_ab1aa3e720991e4d0781f7c3fc92adf14}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}!render@{render}}
+\index{render@{render}!CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cell_ab1aa3e720991e4d0781f7c3fc92adf14} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cell\+::render (\begin{DoxyParamCaption}\item[{string}]{\$library}{, }\item[{}]{\$params}{ = {\ttfamily null}, }\item[{int}]{\$ttl}{ = {\ttfamily 0}, }\item[{?string}]{\$cache\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Render a cell, returning its body as a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$library} & Cell class and method name. \\
+\hline
+ & {\em array$<$string,string$>$\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null} & \$params Parameters to pass to the method. \\
+\hline
+int & {\em \$ttl} & Number of seconds to cache the cell. \\
+\hline
+string | null & {\em \$cache\+Name} & Cache item name.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_view_1_1_cell_ac8e247243bd619ea0cd7abc7d511b8fa}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}!renderCell@{renderCell}}
+\index{renderCell@{renderCell}!CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{renderCell()}{renderCell()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cell_ac8e247243bd619ea0cd7abc7d511b8fa} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cell\+::render\+Cell (\begin{DoxyParamCaption}\item[{Base\+Cell}]{\$instance}{, }\item[{string}]{\$method}{, }\item[{array}]{\$params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}}
+
+Renders a cell that extends the Base\+Cell class. \Hypertarget{class_code_igniter_1_1_view_1_1_cell_aaa2bc7d735ccf7bfba29e689bd487689}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}!renderSimpleClass@{renderSimpleClass}}
+\index{renderSimpleClass@{renderSimpleClass}!CodeIgniter\textbackslash{}View\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{renderSimpleClass()}{renderSimpleClass()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cell_aaa2bc7d735ccf7bfba29e689bd487689} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cell\+::render\+Simple\+Class (\begin{DoxyParamCaption}\item[{}]{\$instance}{, }\item[{string}]{\$method}{, }\item[{array}]{\$params}{, }\item[{string}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}}
+
+Renders the non-\/\+Cell class, passing in the string/array params.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000014}{Todo}}]Determine if this can be refactored to use \$this-\/get\+Method\+Params().\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$instance} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+View/Cell.\+php\end{DoxyCompactItemize}

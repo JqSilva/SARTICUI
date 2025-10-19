@@ -1,0 +1,638 @@
+\doxysection{Code\+Igniter\textbackslash{}CLI\textbackslash{}CLI Class Reference}
+\hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i}{}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}CLI\textbackslash{}CLI\+:
+% FIG 0
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a27cbe3ddaefd766611384a38b0107338}{init}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_afe14aff7669fef97a584ac68af5d7afe}{input}} (?string \$prefix=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a26df6e6d1c3d7a6f2c8a50fe7c077ea1}{prompt}} (string \$field, \$options=null, \$validation=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_aa945fa9adf2d98fe088b60fc22cc9edc}{prompt\+By\+Key}} (\$text, array \$options, \$validation=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a0515cf42fc6721b5bb64f8cb5b77c4bd}{prompt\+By\+Multiple\+Keys}} (string \$text, array \$options)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a54585d9b95e5caf21b8e841294a5b798}{print}} (string \$text=\textquotesingle{}\textquotesingle{}, ?string \$foreground=null, ?string \$background=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a3a41e376cbecf572af926a9ca8c0c012}{write}} (string \$text=\textquotesingle{}\textquotesingle{}, ?string \$foreground=null, ?string \$background=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ac3fcb435f3373c915cb66bbaac101e4c}{error}} (string \$text, string \$foreground=\textquotesingle{}light\+\_\+red\textquotesingle{}, ?string \$background=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae1611317d5fa769577896d8fa433f582}{beep}} (int \$num=1)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a4192112192e5c014f927c6ef78f89756}{wait}} (int \$seconds, bool \$countdown=false)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a383e710e92cf795f47785b4dde0059dd}{is\+Windows}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a913fd198f337684f9af283086abca333}{new\+Line}} (int \$num=1)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a29794f284002df400c4f3e05cae054d3}{clear\+Screen}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_acb682d32446545d516cf21e46ec09eda}{color}} (string \$text, string \$foreground, ?string \$background=null, ?string \$format=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae6cdccc565431deb391687de454ccee7}{strlen}} (?string \$string)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a777848fe281c6ce02a6f34a55abbe52a}{stream\+Supports}} (string \$function, \$resource)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a625a159ab38d6f73d54f3a0795ec84c5}{has\+Color\+Support}} (\$resource)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6331db5b96bec1f96af1647211d4f3b1}{get\+Width}} (int \$default=80)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a8d35f107f4761d41ee01829cb96bd79b}{get\+Height}} (int \$default=32)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a51a1759c72ea6906a96da3d26a9a1f29}{generate\+Dimensions}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6f19dccf5e25ef4a8c11c83fc06dd53a}{show\+Progress}} (\$this\+Step=1, int \$total\+Steps=10)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a0019c0dea7fa9b3d76d3e266ca8b680c}{wrap}} (?string \$string=null, int \$max=0, int \$pad\+Left=0)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6a99b625685992de11fb754bc66feb76}{get\+URI}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_af551e16d612b3f6766c2b31477e51760}{get\+Segment}} (int \$index)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_aa827f71155ee9c4df2e0f6d7bd743279}{get\+Segments}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae36899daa03056d803aaae11e8d3b4b1}{get\+Option}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ad89686bd060f0988911c4b74cef2dc30}{get\+Options}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a80f3cdc8cf198bf786a694b8c8d84aaf}{get\+Option\+String}} (bool \$use\+Long\+Opts=false, bool \$trim=false)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a713c040a81088c80083d78c1996e86c2}{table}} (array \$tbody, array \$thead=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6aa4c7477d28d9c485358a9868dd5c9b}{set\+Input\+Output}} (\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_input_output}{Input\+Output}} \$io)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab818bbc948490fc47de407a18465c312}{reset\+Input\+Output}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a633e49429d5d7d5a87efce028a4d828f}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a633e49429d5d7d5a87efce028a4d828f} 
+static {\bfseries \$readline\+\_\+support} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a3cd8a90e12fefd4df32b8eed7b5c4a9c}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a3cd8a90e12fefd4df32b8eed7b5c4a9c} 
+static {\bfseries \$wait\+\_\+msg} = \textquotesingle{}Press any key to continue...\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab4aebe8714b5cc6f2fdedff4b8f173e8}{validate}} (string \$field, string \$value, \$rules)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a68440ec54bfdfda64053f19a5d8c843b}{parse\+Command\+Line}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a60608e82f119d4551e7254dafad35f66}{fwrite}} (\$handle, string \$string)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab99414492c6c5eee185bd84c968f35f2}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab99414492c6c5eee185bd84c968f35f2} 
+static {\bfseries \$initialized} = false
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a1cb7ded8f16d07a1b276e3542f0e38ca}{\$foreground\+\_\+colors}}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a3350c605805277196646c976a3bffcd9}{\$background\+\_\+colors}}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_acf7caf4f7a15e8308fd6f8c267cdb143}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_acf7caf4f7a15e8308fd6f8c267cdb143} 
+static {\bfseries \$segments} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a289f2dd3b51779e63fa73ea8372ce11d}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a289f2dd3b51779e63fa73ea8372ce11d} 
+static {\bfseries \$options} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_af2fa14452e69276ad3282d7d81ad88a4}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_af2fa14452e69276ad3282d7d81ad88a4} 
+static {\bfseries \$last\+Write}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_af4f4ff4fce6b98254da4a67014d36b93}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_af4f4ff4fce6b98254da4a67014d36b93} 
+static {\bfseries \$height}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_add88c675f199f02f3bd511fa0b7b226e}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_add88c675f199f02f3bd511fa0b7b226e} 
+static {\bfseries \$width}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_aac36a7b474d24531758f768de1ed32fe}\label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_aac36a7b474d24531758f768de1ed32fe} 
+static {\bfseries \$is\+Colored} = false
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_input_output}{Input\+Output}} \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab89c24311bcac62f67576b8515a7732a}{\$io}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Set of static methods useful for CLI request handling.
+
+Portions of this code were initially from the Fuel\+PHP Framework, version 1.\+7.\+x, and used here under the MIT license they were originally made available under. Reference\+: \href{http://fuelphp.com}{\texttt{ http\+://fuelphp.\+com}}
+
+Some of the code in this class is Windows-\/specific, and not possible to test using travis-\/ci. It has been phpunit-\/annotated to prevent messing up code coverage.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLITest 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae1611317d5fa769577896d8fa433f582}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!beep@{beep}}
+\index{beep@{beep}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{beep()}{beep()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae1611317d5fa769577896d8fa433f582} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::beep (\begin{DoxyParamCaption}\item[{int}]{\$num}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Beeps a certain number of times.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$num} & The number of times to beep\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a29794f284002df400c4f3e05cae054d3}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!clearScreen@{clearScreen}}
+\index{clearScreen@{clearScreen}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{clearScreen()}{clearScreen()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a29794f284002df400c4f3e05cae054d3} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::clear\+Screen (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Clears the screen of output
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_acb682d32446545d516cf21e46ec09eda}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!color@{color}}
+\index{color@{color}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_acb682d32446545d516cf21e46ec09eda} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::color (\begin{DoxyParamCaption}\item[{string}]{\$text}{, }\item[{string}]{\$foreground}{, }\item[{?string}]{\$background}{ = {\ttfamily null}, }\item[{?string}]{\$format}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the given text with the correct color codes for a foreground and optionally a background color.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & The text to color \\
+\hline
+string & {\em \$foreground} & The foreground color \\
+\hline
+string | null & {\em \$background} & The background color \\
+\hline
+string | null & {\em \$format} & Other formatting to apply. Currently only \textquotesingle{}underline\textquotesingle{} is understood\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The color coded string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ac3fcb435f3373c915cb66bbaac101e4c}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!error@{error}}
+\index{error@{error}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ac3fcb435f3373c915cb66bbaac101e4c} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::error (\begin{DoxyParamCaption}\item[{string}]{\$text}{, }\item[{string}]{\$foreground}{ = {\ttfamily \textquotesingle{}light\+\_\+red\textquotesingle{}}, }\item[{?string}]{\$background}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Outputs an error to the CLI using STDERR instead of STDOUT
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a60608e82f119d4551e7254dafad35f66}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!fwrite@{fwrite}}
+\index{fwrite@{fwrite}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{fwrite()}{fwrite()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a60608e82f119d4551e7254dafad35f66} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::fwrite (\begin{DoxyParamCaption}\item[{}]{\$handle}{, }\item[{string}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+While the library is intended for use on CLI commands, commands can be called from controllers and elsewhere so we need a way to allow them to still work.
+
+For now, just echo the content, but look into a better solution down the road.
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a51a1759c72ea6906a96da3d26a9a1f29}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!generateDimensions@{generateDimensions}}
+\index{generateDimensions@{generateDimensions}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{generateDimensions()}{generateDimensions()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a51a1759c72ea6906a96da3d26a9a1f29} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::generate\+Dimensions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Populates the CLI\textquotesingle{}s dimensions.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a8d35f107f4761d41ee01829cb96bd79b}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a8d35f107f4761d41ee01829cb96bd79b} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::get\+Height (\begin{DoxyParamCaption}\item[{int}]{\$default}{ = {\ttfamily 32}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Attempts to determine the height of the viewable CLI window. \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae36899daa03056d803aaae11e8d3b4b1}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!getOption@{getOption}}
+\index{getOption@{getOption}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae36899daa03056d803aaae11e8d3b4b1} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::get\+Option (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets a single command-\/line option. Returns TRUE if the option exists, but doesn\textquotesingle{}t have a value, and is simply acting as a flag.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}true\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ad89686bd060f0988911c4b74cef2dc30}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ad89686bd060f0988911c4b74cef2dc30} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::get\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the raw array of options found. \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a80f3cdc8cf198bf786a694b8c8d84aaf}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!getOptionString@{getOptionString}}
+\index{getOptionString@{getOptionString}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{getOptionString()}{getOptionString()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a80f3cdc8cf198bf786a694b8c8d84aaf} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::get\+Option\+String (\begin{DoxyParamCaption}\item[{bool}]{\$use\+Long\+Opts}{ = {\ttfamily false}, }\item[{bool}]{\$trim}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the options as a string, suitable for passing along on the CLI to other commands.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$use\+Long\+Opts} & Use \textquotesingle{}--\textquotesingle{} for long options? \\
+\hline
+bool & {\em \$trim} & Trim final string output? \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_af551e16d612b3f6766c2b31477e51760}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!getSegment@{getSegment}}
+\index{getSegment@{getSegment}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{getSegment()}{getSegment()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_af551e16d612b3f6766c2b31477e51760} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::get\+Segment (\begin{DoxyParamCaption}\item[{int}]{\$index}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an individual segment.
+
+This ignores any options that might have been dispersed between valid segments in the command\+:
+
+// segment(3) is \textquotesingle{}three\textquotesingle{}, not \textquotesingle{}-\/f\textquotesingle{} or \textquotesingle{}an\+Option\textquotesingle{} \begin{quote}
+php spark one two -\/f an\+Option three \end{quote}
+
+
+{\bfseries{IMPORTANT\+:}} The index here is one-\/based instead of zero-\/based.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_aa827f71155ee9c4df2e0f6d7bd743279}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!getSegments@{getSegments}}
+\index{getSegments@{getSegments}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{getSegments()}{getSegments()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_aa827f71155ee9c4df2e0f6d7bd743279} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::get\+Segments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the raw array of segments found. \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6a99b625685992de11fb754bc66feb76}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!getURI@{getURI}}
+\index{getURI@{getURI}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{getURI()}{getURI()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6a99b625685992de11fb754bc66feb76} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::get\+URI (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the command line string portions of the arguments, minus any options, as a string. This is used to pass along to the main \doxylink{namespace_code_igniter}{Code\+Igniter} application. \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6331db5b96bec1f96af1647211d4f3b1}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6331db5b96bec1f96af1647211d4f3b1} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::get\+Width (\begin{DoxyParamCaption}\item[{int}]{\$default}{ = {\ttfamily 80}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Attempts to determine the width of the viewable CLI window. \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a625a159ab38d6f73d54f3a0795ec84c5}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!hasColorSupport@{hasColorSupport}}
+\index{hasColorSupport@{hasColorSupport}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{hasColorSupport()}{hasColorSupport()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a625a159ab38d6f73d54f3a0795ec84c5} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::has\+Color\+Support (\begin{DoxyParamCaption}\item[{}]{\$resource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns true if the stream resource supports colors.
+
+This is tricky on Windows, because Cygwin, Msys2 etc. emulate pseudo terminals via named pipes, so we can only check the environment.
+
+Reference\+: \href{https://github.com/composer/xdebug-handler/blob/master/src/Process.php}{\texttt{ https\+://github.\+com/composer/xdebug-\/handler/blob/master/src/\+Process.\+php}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$resource} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a27cbe3ddaefd766611384a38b0107338}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!init@{init}}
+\index{init@{init}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a27cbe3ddaefd766611384a38b0107338} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Static "{}constructor"{}.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_afe14aff7669fef97a584ac68af5d7afe}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!input@{input}}
+\index{input@{input}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_afe14aff7669fef97a584ac68af5d7afe} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::input (\begin{DoxyParamCaption}\item[{?string}]{\$prefix}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get input from the shell, using readline or the standard STDIN
+
+Named options must be in the following formats\+: php index.\+php user -\/v --v -\/name=John --name=John
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$prefix} & You may specify a string with which to prompt the user. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a383e710e92cf795f47785b4dde0059dd}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!isWindows@{isWindows}}
+\index{isWindows@{isWindows}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{isWindows()}{isWindows()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a383e710e92cf795f47785b4dde0059dd} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::is\+Windows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+if operating system === windows
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000014}{Deprecated}}]4.\+3.\+0 Use {\ttfamily is\+\_\+windows()} instead \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a913fd198f337684f9af283086abca333}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!newLine@{newLine}}
+\index{newLine@{newLine}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{newLine()}{newLine()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a913fd198f337684f9af283086abca333} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::new\+Line (\begin{DoxyParamCaption}\item[{int}]{\$num}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Enter a number of empty lines
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a68440ec54bfdfda64053f19a5d8c843b}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!parseCommandLine@{parseCommandLine}}
+\index{parseCommandLine@{parseCommandLine}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{parseCommandLine()}{parseCommandLine()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a68440ec54bfdfda64053f19a5d8c843b} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::parse\+Command\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Parses the command line it was called from and collects all options and valid segments.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a54585d9b95e5caf21b8e841294a5b798}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!print@{print}}
+\index{print@{print}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a54585d9b95e5caf21b8e841294a5b798} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::print (\begin{DoxyParamCaption}\item[{string}]{\$text}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$foreground}{ = {\ttfamily null}, }\item[{?string}]{\$background}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Outputs a string to the CLI without any surrounding newlines. Useful for showing repeating elements on a single line.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a26df6e6d1c3d7a6f2c8a50fe7c077ea1}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!prompt@{prompt}}
+\index{prompt@{prompt}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{prompt()}{prompt()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a26df6e6d1c3d7a6f2c8a50fe7c077ea1} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::prompt (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{}]{\$options}{ = {\ttfamily null}, }\item[{}]{\$validation}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Asks the user for input.
+
+Usage\+:
+
+// Takes any input \$color = CLI\+::prompt(\textquotesingle{}What is your favorite color?\textquotesingle{});
+
+// Takes any input, but offers default \$color = CLI\+::prompt(\textquotesingle{}What is your favourite color?\textquotesingle{}, \textquotesingle{}white\textquotesingle{});
+
+// Will validate options with the in\+\_\+list rule and accept only if one of the list \$color = CLI\+::prompt(\textquotesingle{}What is your favourite color?\textquotesingle{}, array(\textquotesingle{}red\textquotesingle{},\textquotesingle{}blue\textquotesingle{}));
+
+// Do not provide options but requires a valid email \$email = CLI\+::prompt(\textquotesingle{}What is your email?\textquotesingle{}, null, \textquotesingle{}required\texorpdfstring{$\vert$}{|}valid\+\_\+email\textquotesingle{});
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & Output "{}field"{} question \\
+\hline
+ & {\em list$<$int\texorpdfstring{$\vert$}{|}string$>$\texorpdfstring{$\vert$}{|}string} & \$options String to a default value, array to a list of options (the first option will be the default value) \\
+\hline
+array | string | null & {\em \$validation} & Validation rules\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The user input 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_aa945fa9adf2d98fe088b60fc22cc9edc}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!promptByKey@{promptByKey}}
+\index{promptByKey@{promptByKey}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{promptByKey()}{promptByKey()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_aa945fa9adf2d98fe088b60fc22cc9edc} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::prompt\+By\+Key (\begin{DoxyParamCaption}\item[{}]{\$text}{, }\item[{array}]{\$options}{, }\item[{}]{\$validation}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+prompt(), but based on the option\textquotesingle{}s key
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$text} & Output "{}field"{} text or an one or two value array where the first value is the text before listing the options and the second value the text before asking to select one option. Provide empty string to omit \\
+\hline
+array & {\em \$options} & A list of options (array(key =\texorpdfstring{$>$}{>} description)), the first option will be the default value \\
+\hline
+array | string | null & {\em \$validation} & Validation rules\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The selected key of \$options 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a0515cf42fc6721b5bb64f8cb5b77c4bd}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!promptByMultipleKeys@{promptByMultipleKeys}}
+\index{promptByMultipleKeys@{promptByMultipleKeys}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{promptByMultipleKeys()}{promptByMultipleKeys()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a0515cf42fc6721b5bb64f8cb5b77c4bd} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::prompt\+By\+Multiple\+Keys (\begin{DoxyParamCaption}\item[{string}]{\$text}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This method is the same as prompt\+By\+Key(), but this method supports multiple keys, separated by commas.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & Output "{}field"{} text or an one or two value array where the first value is the text before listing the options and the second value the text before asking to select one option. Provide empty string to omit \\
+\hline
+array & {\em \$options} & A list of options (array(key =\texorpdfstring{$>$}{>} description)), the first option will be the default value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The selected key(s) and value(s) of \$options 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab818bbc948490fc47de407a18465c312}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!resetInputOutput@{resetInputOutput}}
+\index{resetInputOutput@{resetInputOutput}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{resetInputOutput()}{resetInputOutput()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab818bbc948490fc47de407a18465c312} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::reset\+Input\+Output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Testing purpose only
+
+@test\+Tag \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6aa4c7477d28d9c485358a9868dd5c9b}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!setInputOutput@{setInputOutput}}
+\index{setInputOutput@{setInputOutput}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{setInputOutput()}{setInputOutput()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6aa4c7477d28d9c485358a9868dd5c9b} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::set\+Input\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_input_output}{Input\+Output}}}]{\$io}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Testing purpose only
+
+@test\+Tag \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6f19dccf5e25ef4a8c11c83fc06dd53a}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!showProgress@{showProgress}}
+\index{showProgress@{showProgress}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{showProgress()}{showProgress()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a6f19dccf5e25ef4a8c11c83fc06dd53a} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::show\+Progress (\begin{DoxyParamCaption}\item[{}]{\$this\+Step}{ = {\ttfamily 1}, }\item[{int}]{\$total\+Steps}{ = {\ttfamily 10}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Displays a progress bar on the CLI. You must call it repeatedly to update it. Set \$this\+Step = false to erase the progress bar.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool | int & {\em \$this\+Step} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a777848fe281c6ce02a6f34a55abbe52a}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!streamSupports@{streamSupports}}
+\index{streamSupports@{streamSupports}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{streamSupports()}{streamSupports()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a777848fe281c6ce02a6f34a55abbe52a} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::stream\+Supports (\begin{DoxyParamCaption}\item[{string}]{\$function}{, }\item[{}]{\$resource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether the current stream resource supports or refers to a valid terminal type device.
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$resource} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae6cdccc565431deb391687de454ccee7}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!strlen@{strlen}}
+\index{strlen@{strlen}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{strlen()}{strlen()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ae6cdccc565431deb391687de454ccee7} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::strlen (\begin{DoxyParamCaption}\item[{?string}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the number of characters in string having encoded characters and ignores styles set by the color() function \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a713c040a81088c80083d78c1996e86c2}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!table@{table}}
+\index{table@{table}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{table()}{table()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a713c040a81088c80083d78c1996e86c2} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::table (\begin{DoxyParamCaption}\item[{array}]{\$tbody}{, }\item[{array}]{\$thead}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a well formatted table
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tbody} & List of rows \\
+\hline
+array & {\em \$thead} & List of columns\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab4aebe8714b5cc6f2fdedff4b8f173e8}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!validate@{validate}}
+\index{validate@{validate}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab4aebe8714b5cc6f2fdedff4b8f173e8} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::validate (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{string}]{\$value}{, }\item[{}]{\$rules}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Validate one prompt "{}field"{} at a time
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & Prompt "{}field"{} output \\
+\hline
+string & {\em \$value} & Input value \\
+\hline
+array | string & {\em \$rules} & Validation rules \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a4192112192e5c014f927c6ef78f89756}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!wait@{wait}}
+\index{wait@{wait}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a4192112192e5c014f927c6ef78f89756} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::wait (\begin{DoxyParamCaption}\item[{int}]{\$seconds}{, }\item[{bool}]{\$countdown}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Waits a certain number of seconds, optionally showing a wait message and waiting for a key press.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$seconds} & Number of seconds \\
+\hline
+bool & {\em \$countdown} & Show a countdown or not\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a0019c0dea7fa9b3d76d3e266ca8b680c}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!wrap@{wrap}}
+\index{wrap@{wrap}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a0019c0dea7fa9b3d76d3e266ca8b680c} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::wrap (\begin{DoxyParamCaption}\item[{?string}]{\$string}{ = {\ttfamily null}, }\item[{int}]{\$max}{ = {\ttfamily 0}, }\item[{int}]{\$pad\+Left}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes a string and writes it to the command line, wrapping to a maximum width. If no maximum width is specified, will wrap to the window\textquotesingle{}s max width.
+
+If an int is passed into \$pad\+\_\+left, then all strings after the first will pad with that many spaces to the left. Useful when printing short descriptions that need to start on an existing line. \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a3a41e376cbecf572af926a9ca8c0c012}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!write@{write}}
+\index{write@{write}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a3a41e376cbecf572af926a9ca8c0c012} 
+static Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::write (\begin{DoxyParamCaption}\item[{string}]{\$text}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$foreground}{ = {\ttfamily null}, }\item[{?string}]{\$background}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Outputs a string to the cli on its own line.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a3350c605805277196646c976a3bffcd9}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!\$background\_colors@{\$background\_colors}}
+\index{\$background\_colors@{\$background\_colors}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{\$background\_colors}{\$background\_colors}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a3350c605805277196646c976a3bffcd9} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::\$background\+\_\+colors\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'black'}\ \ \ \ \ \ =>\ \textcolor{stringliteral}{'40'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'red'}\ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'41'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'green'}\ \ \ \ \ \ =>\ \textcolor{stringliteral}{'42'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'yellow'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'43'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'blue'}\ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'44'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'magenta'}\ \ \ \ =>\ \textcolor{stringliteral}{'45'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cyan'}\ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'46'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'light\_gray'}\ =>\ \textcolor{stringliteral}{'47'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a1cb7ded8f16d07a1b276e3542f0e38ca}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!\$foreground\_colors@{\$foreground\_colors}}
+\index{\$foreground\_colors@{\$foreground\_colors}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{\$foreground\_colors}{\$foreground\_colors}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_a1cb7ded8f16d07a1b276e3542f0e38ca} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::\$foreground\+\_\+colors\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'black'}\ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'0;30'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'dark\_gray'}\ \ \ \ =>\ \textcolor{stringliteral}{'1;30'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'blue'}\ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'0;34'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'dark\_blue'}\ \ \ \ =>\ \textcolor{stringliteral}{'0;34'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'light\_blue'}\ \ \ =>\ \textcolor{stringliteral}{'1;34'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'green'}\ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'0;32'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'light\_green'}\ \ =>\ \textcolor{stringliteral}{'1;32'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cyan'}\ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'0;36'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'light\_cyan'}\ \ \ =>\ \textcolor{stringliteral}{'1;36'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'red'}\ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'0;31'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'light\_red'}\ \ \ \ =>\ \textcolor{stringliteral}{'1;31'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'purple'}\ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'0;35'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'light\_purple'}\ =>\ \textcolor{stringliteral}{'1;35'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'yellow'}\ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'0;33'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'light\_yellow'}\ =>\ \textcolor{stringliteral}{'1;33'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'light\_gray'}\ \ \ =>\ \textcolor{stringliteral}{'0;37'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'white'}\ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'1;37'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab89c24311bcac62f67576b8515a7732a}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}!\$io@{\$io}}
+\index{\$io@{\$io}!CodeIgniter\textbackslash{}CLI\textbackslash{}CLI@{CodeIgniter\textbackslash{}CLI\textbackslash{}CLI}}
+\doxysubsubsection{\texorpdfstring{\$io}{\$io}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_c_l_i_ab89c24311bcac62f67576b8515a7732a} 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_input_output}{Input\+Output}} Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+CLI\+::\$io = null\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Input and Output for CLI. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+CLI/CLI.\+php\end{DoxyCompactItemize}

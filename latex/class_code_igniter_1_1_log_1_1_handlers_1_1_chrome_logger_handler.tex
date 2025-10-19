@@ -1,0 +1,183 @@
+\doxysection{Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Chrome\+Logger\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler}{}\label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Chrome\+Logger\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Chrome\+Logger\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a0bc62b99c5e232d49dd35cde60cd189e}{\+\_\+\+\_\+construct}} (array \$config=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a2786dd4b788dc626a697fb3f53423c9a}{handle}} (\$level, \$message)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ab35b112b32afa3315f1fc267ac59cbbc}{send\+Logs}} (?\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \&\$response=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a00399835be424e54af0edf64d14fe90c}{can\+Handle}} (string \$level)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_ac1e40c030b4a48a0c7b160064301627f}{set\+Date\+Format}} (string \$format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_aea4dd2d4372dc882d8393387f65d4751}{VERSION}} = 1.\+0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a7da58e33d660df16c25b9610b059dce9}{format}} (\$object)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_af3b850cd64060b3ec080f221bcf22af1}\label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_af3b850cd64060b3ec080f221bcf22af1} 
+{\bfseries \$backtrace\+Level} = 0
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ae3e1d5ac9610224fbe1c161c97714efb}{\$json}}
+\item 
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a99267bc25d342771d7a285219a1885d0}\label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a99267bc25d342771d7a285219a1885d0} 
+{\bfseries \$header} = \textquotesingle{}X-\/Chrome\+Logger-\/Data\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ac1175fd069df1363acb369cd6beab4e7}{\$levels}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$handles}
+\item 
+{\bfseries \$date\+Format} = \textquotesingle{}Y-\/m-\/d H\+:i\+:s\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Chrome\+Logger\+Handler
+
+Allows for logging items to the Chrome console for debugging. Requires the Chrome\+Logger extension installed in your browser.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://craig.is/writing/chrome-logger}{\texttt{ https\+://craig.\+is/writing/chrome-\/logger}} 
+
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a0bc62b99c5e232d49dd35cde60cd189e}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a0bc62b99c5e232d49dd35cde60cd189e} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$config}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Constructor 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a4b0c021a3ee075b8d9bc11b0a28ecbd1}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a7da58e33d660df16c25b9610b059dce9}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}!format@{format}}
+\index{format@{format}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a7da58e33d660df16c25b9610b059dce9} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler\+::format (\begin{DoxyParamCaption}\item[{}]{\$object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts the object to display nicely in the Chrome Logger UI.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | int | object | string & {\em \$object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a2786dd4b788dc626a697fb3f53423c9a}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}!handle@{handle}}
+\index{handle@{handle}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a2786dd4b788dc626a697fb3f53423c9a} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler\+::handle (\begin{DoxyParamCaption}\item[{}]{\$level}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})}
+
+Handles logging the message. If the handler returns false, then execution of handlers will stop. Any handlers that have not run, yet, will not be run.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$level} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_a79691a9e971d9279225acc91d9f84e93}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Handler\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ab35b112b32afa3315f1fc267ac59cbbc}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}!sendLogs@{sendLogs}}
+\index{sendLogs@{sendLogs}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}}
+\doxysubsubsection{\texorpdfstring{sendLogs()}{sendLogs()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ab35b112b32afa3315f1fc267ac59cbbc} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler\+::send\+Logs (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \&}]{\$response}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Attaches the header and the content to the passed in request object.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ae3e1d5ac9610224fbe1c161c97714efb}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}!\$json@{\$json}}
+\index{\$json@{\$json}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}}
+\doxysubsubsection{\texorpdfstring{\$json}{\$json}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ae3e1d5ac9610224fbe1c161c97714efb} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler\+::\$json\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'version'}\ =>\ self::VERSION,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'columns'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'log'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'backtrace'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'type'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'rows'}\ =>\ [],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ac1175fd069df1363acb369cd6beab4e7}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}!\$levels@{\$levels}}
+\index{\$levels@{\$levels}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}}
+\doxysubsubsection{\texorpdfstring{\$levels}{\$levels}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_ac1175fd069df1363acb369cd6beab4e7} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler\+::\$levels\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'emergency'}\ =>\ \textcolor{stringliteral}{'error'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'alert'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'error'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'critical'}\ \ =>\ \textcolor{stringliteral}{'error'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'error'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'error'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'warning'}\ \ \ =>\ \textcolor{stringliteral}{'warn'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'notice'}\ \ \ \ =>\ \textcolor{stringliteral}{'warn'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'info'}\ \ \ \ \ \ =>\ \textcolor{stringliteral}{'info'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'debug'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'info'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_aea4dd2d4372dc882d8393387f65d4751}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}!VERSION@{VERSION}}
+\index{VERSION@{VERSION}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ChromeLoggerHandler}}
+\doxysubsubsection{\texorpdfstring{VERSION}{VERSION}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_aea4dd2d4372dc882d8393387f65d4751} 
+const Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler\+::\+VERSION = 1.\+0}
+
+Version of this library -\/ for Chrome\+Logger use. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Log/\+Handlers/Chrome\+Logger\+Handler.\+php\end{DoxyCompactItemize}

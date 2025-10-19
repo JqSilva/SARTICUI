@@ -1,0 +1,136 @@
+\doxysection{Code\+Igniter\textbackslash{}Debug\textbackslash{}Base\+Exception\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler}{}\label{class_code_igniter_1_1_debug_1_1_base_exception_handler}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Debug\textbackslash{}Base\+Exception\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Debug\textbackslash{}Base\+Exception\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_a33fc2d32536758006dbb4b7e7b910353}\label{class_code_igniter_1_1_debug_1_1_base_exception_handler_a33fc2d32536758006dbb4b7e7b910353} 
+{\bfseries \+\_\+\+\_\+construct} (Exceptions\+Config \$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_ae9533809c97fbcc529ca5e59cbec5316}{handle}} (Throwable \$exception, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, int \$status\+Code, int \$exit\+Code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_aef1ac620e2ab2c8ef2a94ae32695cf55}{collect\+Vars}} (Throwable \$exception, int \$status\+Code)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_a44e4f486c514ca6d22ed956506c8067c}{mask\+Sensitive\+Data}} (array \$trace, array \$keys\+To\+Mask, string \$path=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_aa83b4b4034c9db4217939e654b16cd19}{render}} (Throwable \$exception, int \$status\+Code, \$view\+File=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_a912721193977340a9b10d7710b5bc0fd}{describe\+Memory}} (int \$bytes)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_a27ee56033ce330e2b55fed0c51941f97}{highlight\+File}} (string \$file, int \$line\+Number, int \$lines=15)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Exceptions\+Config \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_a7542aba72e4b817eff368e1472eb7bfc}{\$config}}
+\item 
+int \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_aba4aa3db9e0fea2d61c92ab2e6122b1f}{\$ob\+Level}}
+\item 
+string \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_base_exception_handler_a1f2d8ffe420eb9490df29e1c8e530991}{\$view\+Path}} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides common functions for exception handlers, especially around displaying the output. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_aef1ac620e2ab2c8ef2a94ae32695cf55}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!collectVars@{collectVars}}
+\index{collectVars@{collectVars}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{collectVars()}{collectVars()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_aef1ac620e2ab2c8ef2a94ae32695cf55} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::collect\+Vars (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{, }\item[{int}]{\$status\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gathers the variables that will be made available to the view. \Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_a912721193977340a9b10d7710b5bc0fd}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!describeMemory@{describeMemory}}
+\index{describeMemory@{describeMemory}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{describeMemory()}{describeMemory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_a912721193977340a9b10d7710b5bc0fd} 
+static Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::describe\+Memory (\begin{DoxyParamCaption}\item[{int}]{\$bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Describes memory usage in real-\/world units. Intended for use with memory\+\_\+get\+\_\+usage, etc.
+
+@used-\/by app/\+Views/errors/html/error\+\_\+exception.\+php \Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_ae9533809c97fbcc529ca5e59cbec5316}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!handle@{handle}}
+\index{handle@{handle}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_ae9533809c97fbcc529ca5e59cbec5316} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::handle (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{int}]{\$status\+Code}{, }\item[{int}]{\$exit\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+The main entry point into the handler.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exception_handler_a28825da98b1addd70bfebad0435c346a}{Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exception\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_a27ee56033ce330e2b55fed0c51941f97}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!highlightFile@{highlightFile}}
+\index{highlightFile@{highlightFile}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{highlightFile()}{highlightFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_a27ee56033ce330e2b55fed0c51941f97} 
+static Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::highlight\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{int}]{\$line\+Number}{, }\item[{int}]{\$lines}{ = {\ttfamily 15}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Creates a syntax-\/highlighted version of a PHP file.
+
+@used-\/by app/\+Views/errors/html/error\+\_\+exception.\+php
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_a44e4f486c514ca6d22ed956506c8067c}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!maskSensitiveData@{maskSensitiveData}}
+\index{maskSensitiveData@{maskSensitiveData}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{maskSensitiveData()}{maskSensitiveData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_a44e4f486c514ca6d22ed956506c8067c} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::mask\+Sensitive\+Data (\begin{DoxyParamCaption}\item[{array}]{\$trace}{, }\item[{array}]{\$keys\+To\+Mask}{, }\item[{string}]{\$path}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mask sensitive data in the trace. \Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_aa83b4b4034c9db4217939e654b16cd19}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!render@{render}}
+\index{render@{render}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_aa83b4b4034c9db4217939e654b16cd19} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::render (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{, }\item[{int}]{\$status\+Code}{, }\item[{}]{\$view\+File}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Given an exception and status code will display the error to the client.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$view\+File} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_a7542aba72e4b817eff368e1472eb7bfc}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!\$config@{\$config}}
+\index{\$config@{\$config}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{\$config}{\$config}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_a7542aba72e4b817eff368e1472eb7bfc} 
+Exceptions\+Config Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::\$config\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{namespace_config}{Config} for debug exceptions. \Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_aba4aa3db9e0fea2d61c92ab2e6122b1f}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!\$obLevel@{\$obLevel}}
+\index{\$obLevel@{\$obLevel}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{\$obLevel}{\$obLevel}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_aba4aa3db9e0fea2d61c92ab2e6122b1f} 
+int Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::\$ob\+Level\hspace{0.3cm}{\ttfamily [protected]}}
+
+Nesting level of the output buffering mechanism \Hypertarget{class_code_igniter_1_1_debug_1_1_base_exception_handler_a1f2d8ffe420eb9490df29e1c8e530991}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}!\$viewPath@{\$viewPath}}
+\index{\$viewPath@{\$viewPath}!CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler@{CodeIgniter\textbackslash{}Debug\textbackslash{}BaseExceptionHandler}}
+\doxysubsubsection{\texorpdfstring{\$viewPath}{\$viewPath}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_base_exception_handler_a1f2d8ffe420eb9490df29e1c8e530991} 
+string Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Base\+Exception\+Handler\+::\$view\+Path = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+The path to the directory containing the cli and html error view directories. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Debug/Base\+Exception\+Handler.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,131 @@
+\doxysection{Code\+Igniter\textbackslash{}Debug\textbackslash{}Toolbar Class Reference}
+\hypertarget{class_code_igniter_1_1_debug_1_1_toolbar}{}\label{class_code_igniter_1_1_debug_1_1_toolbar}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_a1916c2ef30b218c2a8fb16142f2f9bc6}\label{class_code_igniter_1_1_debug_1_1_toolbar_a1916c2ef30b218c2a8fb16142f2f9bc6} 
+{\bfseries \+\_\+\+\_\+construct} (Toolbar\+Config \$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_a4dbeae11254352ce77214a4cff989bf1}{run}} (float \$start\+Time, float \$total\+Time, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_ad481dc1310c41c7ebee1d345adc2403e}{respond}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_a95ef5eb9debeb1063c921c2b8662f0ea}{render\+Timeline}} (array \$collectors, float \$start\+Time, int \$segment\+Count, int \$segment\+Duration, array \&\$styles)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_af19cbbb0dab5c139bf033605c0b24533}{render\+Timeline\+Recursive}} (array \$rows, float \$start\+Time, int \$segment\+Count, int \$segment\+Duration, array \&\$styles, int \&\$style\+Count, int \$level=0, bool \$is\+Child=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_a4c817af832ad09d1731cf886479d7bd5}{collect\+Timeline\+Data}} (\$collectors)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_a34dc03910e7b9ce722e978e920c39abd}{structure\+Timeline\+Data}} (array \$elements)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_aeb91abf90ed9a024b8fb71cfb968634e}{collect\+Var\+Data}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_a8481125244e5d7a0aecdd256c8d4c788}{round\+To}} (float \$number, int \$increments=5)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_aaf302c52261d558a5da2d1ac5457247d}{format}} (string \$data, string \$format=\textquotesingle{}html\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_a4e71b887877b1b115b585ad6c21fb123}\label{class_code_igniter_1_1_debug_1_1_toolbar_a4e71b887877b1b115b585ad6c21fb123} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_a5b3f346fb66b899c8d0e5b024b0c4148}\label{class_code_igniter_1_1_debug_1_1_toolbar_a5b3f346fb66b899c8d0e5b024b0c4148} 
+{\bfseries \$collectors} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Displays a toolbar with bits of stats to aid a developer in debugging.
+
+Inspiration\+: \href{http://prophiler.fabfuel.de}{\texttt{ http\+://prophiler.\+fabfuel.\+de}} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_a4c817af832ad09d1731cf886479d7bd5}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!collectTimelineData@{collectTimelineData}}
+\index{collectTimelineData@{collectTimelineData}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{collectTimelineData()}{collectTimelineData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_a4c817af832ad09d1731cf886479d7bd5} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::collect\+Timeline\+Data (\begin{DoxyParamCaption}\item[{}]{\$collectors}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a sorted array of timeline data arrays from the collectors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$collectors} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_aeb91abf90ed9a024b8fb71cfb968634e}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!collectVarData@{collectVarData}}
+\index{collectVarData@{collectVarData}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{collectVarData()}{collectVarData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_aeb91abf90ed9a024b8fb71cfb968634e} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::collect\+Var\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns an array of data from all of the modules that should be displayed in the \textquotesingle{}Vars\textquotesingle{} tab. \Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_aaf302c52261d558a5da2d1ac5457247d}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!format@{format}}
+\index{format@{format}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_aaf302c52261d558a5da2d1ac5457247d} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::format (\begin{DoxyParamCaption}\item[{string}]{\$data}{, }\item[{string}]{\$format}{ = {\ttfamily \textquotesingle{}html\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format output \Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_a95ef5eb9debeb1063c921c2b8662f0ea}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!renderTimeline@{renderTimeline}}
+\index{renderTimeline@{renderTimeline}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{renderTimeline()}{renderTimeline()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_a95ef5eb9debeb1063c921c2b8662f0ea} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::render\+Timeline (\begin{DoxyParamCaption}\item[{array}]{\$collectors}{, }\item[{float}]{\$start\+Time}{, }\item[{int}]{\$segment\+Count}{, }\item[{int}]{\$segment\+Duration}{, }\item[{array \&}]{\$styles}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Called within the view to display the timeline itself. \Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_af19cbbb0dab5c139bf033605c0b24533}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!renderTimelineRecursive@{renderTimelineRecursive}}
+\index{renderTimelineRecursive@{renderTimelineRecursive}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{renderTimelineRecursive()}{renderTimelineRecursive()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_af19cbbb0dab5c139bf033605c0b24533} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::render\+Timeline\+Recursive (\begin{DoxyParamCaption}\item[{array}]{\$rows}{, }\item[{float}]{\$start\+Time}{, }\item[{int}]{\$segment\+Count}{, }\item[{int}]{\$segment\+Duration}{, }\item[{array \&}]{\$styles}{, }\item[{int \&}]{\$style\+Count}{, }\item[{int}]{\$level}{ = {\ttfamily 0}, }\item[{bool}]{\$is\+Child}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Recursively renders timeline elements and their children. \Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_ad481dc1310c41c7ebee1d345adc2403e}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!respond@{respond}}
+\index{respond@{respond}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{respond()}{respond()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_ad481dc1310c41c7ebee1d345adc2403e} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::respond (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Inject debug toolbar into the response.
+
+@code\+Coverage\+Ignore
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_a8481125244e5d7a0aecdd256c8d4c788}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!roundTo@{roundTo}}
+\index{roundTo@{roundTo}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{roundTo()}{roundTo()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_a8481125244e5d7a0aecdd256c8d4c788} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::round\+To (\begin{DoxyParamCaption}\item[{float}]{\$number}{, }\item[{int}]{\$increments}{ = {\ttfamily 5}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rounds a number to the nearest incremental value. \Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_a4dbeae11254352ce77214a4cff989bf1}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_a4dbeae11254352ce77214a4cff989bf1} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::run (\begin{DoxyParamCaption}\item[{float}]{\$start\+Time}{, }\item[{float}]{\$total\+Time}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Returns all the data required by Debug Bar
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$start\+Time} & App start time \\
+\hline
+Incoming\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string JSON encoded data 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_toolbar_a34dc03910e7b9ce722e978e920c39abd}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}!structureTimelineData@{structureTimelineData}}
+\index{structureTimelineData@{structureTimelineData}!CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar@{CodeIgniter\textbackslash{}Debug\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{structureTimelineData()}{structureTimelineData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_toolbar_a34dc03910e7b9ce722e978e920c39abd} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Toolbar\+::structure\+Timeline\+Data (\begin{DoxyParamCaption}\item[{array}]{\$elements}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Arranges the already sorted timeline data into a parent =\texorpdfstring{$>$}{>} child structure. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Debug/Toolbar.\+php\end{DoxyCompactItemize}

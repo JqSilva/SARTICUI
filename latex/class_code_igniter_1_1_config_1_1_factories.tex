@@ -1,0 +1,171 @@
+\doxysection{Code\+Igniter\textbackslash{}Config\textbackslash{}Factories Class Reference}
+\hypertarget{class_code_igniter_1_1_config_1_1_factories}{}\label{class_code_igniter_1_1_config_1_1_factories}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_ae4ad8288a0e3298bb2903bd10152d5b6}{define}} (string \$component, string \$alias, string \$classname)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_a06fc39d40d235a55dd9fb7c6a8292543}{\+\_\+\+\_\+call\+Static}} (string \$component, array \$arguments)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_a678d3eb463f06036993b7bf41dd93e96}{get}} (string \$component, string \$alias)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_affe130bb9efed0d89439fda398356e95}{get\+Options}} (string \$component)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_a66f19c1d792e1c092d536177c588912d}{set\+Options}} (string \$component, array \$values)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_ad161b499cca818f3c446c2e05b6c8f9d}{reset}} (?string \$component=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_a2e863b82a4ec74ee334266c834e986d4}{inject\+Mock}} (string \$component, string \$alias, object \$instance)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_a96f907e27a300fb3960773a15dcf18d6}{get\+Basename}} (string \$alias)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_a38bcf92354df7a77eb737f7872c11792}{get\+Component\+Instances}} (string \$component)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_a1ccabffb3c503e38f4ad99dd21bbdcd2}{set\+Component\+Instances}} (string \$component, array \$data)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factories_a6fe938f25a3b32fb63dccb0bbe104ca7}{is\+Updated}} (string \$component)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factories for creating instances.
+
+Factories allow dynamic loading of components by their path and name. The "{}shared instance"{} implementation provides a large performance boost and helps keep code clean of lengthy instantiation checks.
+
+@method static Base\+Config\texorpdfstring{$\vert$}{|}null config(...\$arguments) @method static Model\texorpdfstring{$\vert$}{|}null models(string \$alias, array \$options = \mbox{[}\mbox{]}, ?Connection\+Interface \&\$conn = null) \begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_factories_a06fc39d40d235a55dd9fb7c6a8292543}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!\_\_callStatic@{\_\_callStatic}}
+\index{\_\_callStatic@{\_\_callStatic}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{\_\_callStatic()}{\_\_callStatic()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_a06fc39d40d235a55dd9fb7c6a8292543} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::\+\_\+\+\_\+call\+Static (\begin{DoxyParamCaption}\item[{string}]{\$component}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads instances based on the method component name. Either creates a new instance or returns an existing shared instance.
+
+\begin{DoxyReturn}{Returns}
+object\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_factories_ae4ad8288a0e3298bb2903bd10152d5b6}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!define@{define}}
+\index{define@{define}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{define()}{define()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_ae4ad8288a0e3298bb2903bd10152d5b6} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::define (\begin{DoxyParamCaption}\item[{string}]{\$component}{, }\item[{string}]{\$alias}{, }\item[{string}]{\$classname}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Define the class to load. You can {\itshape override} the concrete class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$component} & Lowercase, plural component name \\
+\hline
+string & {\em \$alias} & Class alias. See the \$aliases property. \\
+\hline
+class-\/string & {\em \$classname} & FQCN to be loaded \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_config_1_1_factories_a678d3eb463f06036993b7bf41dd93e96}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_a678d3eb463f06036993b7bf41dd93e96} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::get (\begin{DoxyParamCaption}\item[{string}]{\$component}{, }\item[{string}]{\$alias}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Simple method to get the shared instance fast. \Hypertarget{class_code_igniter_1_1_config_1_1_factories_a96f907e27a300fb3960773a15dcf18d6}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!getBasename@{getBasename}}
+\index{getBasename@{getBasename}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{getBasename()}{getBasename()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_a96f907e27a300fb3960773a15dcf18d6} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::get\+Basename (\begin{DoxyParamCaption}\item[{string}]{\$alias}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets a basename from a class alias, namespaced or not. \Hypertarget{class_code_igniter_1_1_config_1_1_factories_a38bcf92354df7a77eb737f7872c11792}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!getComponentInstances@{getComponentInstances}}
+\index{getComponentInstances@{getComponentInstances}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{getComponentInstances()}{getComponentInstances()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_a38bcf92354df7a77eb737f7872c11792} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::get\+Component\+Instances (\begin{DoxyParamCaption}\item[{string}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets component data for caching. \Hypertarget{class_code_igniter_1_1_config_1_1_factories_affe130bb9efed0d89439fda398356e95}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_affe130bb9efed0d89439fda398356e95} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::get\+Options (\begin{DoxyParamCaption}\item[{string}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the component-\/specific configuration
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$component} & Lowercase, plural component name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, bool\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_factories_a2e863b82a4ec74ee334266c834e986d4}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!injectMock@{injectMock}}
+\index{injectMock@{injectMock}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{injectMock()}{injectMock()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_a2e863b82a4ec74ee334266c834e986d4} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::inject\+Mock (\begin{DoxyParamCaption}\item[{string}]{\$component}{, }\item[{string}]{\$alias}{, }\item[{object}]{\$instance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Helper method for injecting mock instances
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$component} & Lowercase, plural component name \\
+\hline
+string & {\em \$alias} & Class alias. See the \$aliases property.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_factories_a6fe938f25a3b32fb63dccb0bbe104ca7}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!isUpdated@{isUpdated}}
+\index{isUpdated@{isUpdated}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{isUpdated()}{isUpdated()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_a6fe938f25a3b32fb63dccb0bbe104ca7} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::is\+Updated (\begin{DoxyParamCaption}\item[{string}]{\$component}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Whether the component instances are updated? \Hypertarget{class_code_igniter_1_1_config_1_1_factories_ad161b499cca818f3c446c2e05b6c8f9d}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!reset@{reset}}
+\index{reset@{reset}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_ad161b499cca818f3c446c2e05b6c8f9d} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::reset (\begin{DoxyParamCaption}\item[{?string}]{\$component}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resets the static arrays, optionally just for one component
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$component} & Lowercase, plural component name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_factories_a1ccabffb3c503e38f4ad99dd21bbdcd2}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!setComponentInstances@{setComponentInstances}}
+\index{setComponentInstances@{setComponentInstances}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{setComponentInstances()}{setComponentInstances()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_a1ccabffb3c503e38f4ad99dd21bbdcd2} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::set\+Component\+Instances (\begin{DoxyParamCaption}\item[{string}]{\$component}{, }\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets component data \Hypertarget{class_code_igniter_1_1_config_1_1_factories_a66f19c1d792e1c092d536177c588912d}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!CodeIgniter\textbackslash{}Config\textbackslash{}Factories@{CodeIgniter\textbackslash{}Config\textbackslash{}Factories}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factories_a66f19c1d792e1c092d536177c588912d} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factories\+::set\+Options (\begin{DoxyParamCaption}\item[{string}]{\$component}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes, stores, and returns the configuration for a specific component
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$component} & Lowercase, plural component name \\
+\hline
+array & {\em \$values} & option values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, bool\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} The result after applying defaults and normalization 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Config/Factories.\+php\end{DoxyCompactItemize}

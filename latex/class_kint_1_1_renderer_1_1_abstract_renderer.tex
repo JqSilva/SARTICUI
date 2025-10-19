@@ -1,0 +1,201 @@
+\doxysection{Kint\textbackslash{}Renderer\textbackslash{}Abstract\+Renderer Class Reference}
+\hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer}{}\label{class_kint_1_1_renderer_1_1_abstract_renderer}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+
+
+Inheritance diagram for Kint\textbackslash{}Renderer\textbackslash{}Abstract\+Renderer\+:
+% FIG 0
+
+
+Collaboration diagram for Kint\textbackslash{}Renderer\textbackslash{}Abstract\+Renderer\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_a59cd58c9ecb75b975eb06f280ca976ef}{set\+Call\+Info}} (array \$info)
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_a59dca3d3e2cc64e3017b7157cb8622cf}{get\+Call\+Info}} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_afc21d6ca3fa58c86566135e3043cf8b5}{set\+Statics}} (array \$statics)
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_a6f4df4c9af30d1b4832cc61d796a36a5}{get\+Statics}} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_a62ffca3004cb1d97fdb91d0f7b957ea1}{set\+Show\+Trace}} (bool \$show\+\_\+trace)
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_a171336d4ffb358e6db6f4872d94d0a18}{get\+Show\+Trace}} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_aa3234de92693c12972867c8344d4af72}{filter\+Parser\+Plugins}} (array \$plugins)
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_aac159f0c0d0356b06f9ba7d2da5fde6a}{pre\+Render}} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_a7215207472f4bdd833b05695836fa01c}{post\+Render}} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_ac6c1b4bf3613b60d8d7e013e8e0c8c40}{match\+Plugins}} (array \$plugins, array \$hints)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries render} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$o)
+\item 
+{\bfseries render\+Nothing} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a95c493212a77ae53413d6e307448000f}\label{class_kint_1_1_renderer_1_1_abstract_renderer_a95c493212a77ae53413d6e307448000f} 
+static {\bfseries sort\+Properties\+Full} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$a, \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$b)
+\item 
+static \mbox{\hyperlink{class_kint_1_1_renderer_1_1_abstract_renderer_aa0c12a46ed57517104f890a6fb95506a}{sort\+Properties}} (array \$contents, int \$sort)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a5d081e676617285b00cb674eec528ce5}\label{class_kint_1_1_renderer_1_1_abstract_renderer_a5d081e676617285b00cb674eec528ce5} 
+const {\bfseries SORT\+\_\+\+NONE} = 0
+\item 
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_aad7cec00b0541f41cc0b222f27c0b969}\label{class_kint_1_1_renderer_1_1_abstract_renderer_aad7cec00b0541f41cc0b222f27c0b969} 
+const {\bfseries SORT\+\_\+\+VISIBILITY} = 1
+\item 
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a76b82200fb2494e96fe018e80b899344}\label{class_kint_1_1_renderer_1_1_abstract_renderer_a76b82200fb2494e96fe018e80b899344} 
+const {\bfseries SORT\+\_\+\+FULL} = 2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a6580ff069768a8668ef59ad0643d3694}\label{class_kint_1_1_renderer_1_1_abstract_renderer_a6580ff069768a8668ef59ad0643d3694} 
+{\bfseries \$call\+\_\+info} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_ace1708dfa247976440aa83208e3c505d}\label{class_kint_1_1_renderer_1_1_abstract_renderer_ace1708dfa247976440aa83208e3c505d} 
+{\bfseries \$statics} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a339b66d46efbecacf76f80080ea35020}\label{class_kint_1_1_renderer_1_1_abstract_renderer_a339b66d46efbecacf76f80080ea35020} 
+{\bfseries \$show\+\_\+trace} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@psalm-\/type Plugin\+Map array\texorpdfstring{$<$}{<}string, class-\/string\texorpdfstring{$>$}{>}
+
+@psalm-\/consistent-\/constructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_aa3234de92693c12972867c8344d4af72}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!filterParserPlugins@{filterParserPlugins}}
+\index{filterParserPlugins@{filterParserPlugins}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{filterParserPlugins()}{filterParserPlugins()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_aa3234de92693c12972867c8344d4af72} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::filter\+Parser\+Plugins (\begin{DoxyParamCaption}\item[{array}]{\$plugins}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a59dca3d3e2cc64e3017b7157cb8622cf}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!getCallInfo@{getCallInfo}}
+\index{getCallInfo@{getCallInfo}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{getCallInfo()}{getCallInfo()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_a59dca3d3e2cc64e3017b7157cb8622cf} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::get\+Call\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a171336d4ffb358e6db6f4872d94d0a18}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!getShowTrace@{getShowTrace}}
+\index{getShowTrace@{getShowTrace}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{getShowTrace()}{getShowTrace()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_a171336d4ffb358e6db6f4872d94d0a18} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::get\+Show\+Trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a6f4df4c9af30d1b4832cc61d796a36a5}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!getStatics@{getStatics}}
+\index{getStatics@{getStatics}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{getStatics()}{getStatics()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_a6f4df4c9af30d1b4832cc61d796a36a5} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::get\+Statics (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_ac6c1b4bf3613b60d8d7e013e8e0c8c40}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!matchPlugins@{matchPlugins}}
+\index{matchPlugins@{matchPlugins}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{matchPlugins()}{matchPlugins()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_ac6c1b4bf3613b60d8d7e013e8e0c8c40} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::match\+Plugins (\begin{DoxyParamCaption}\item[{array}]{\$plugins}{, }\item[{array}]{\$hints}{}\end{DoxyParamCaption})}
+
+Returns the first compatible plugin available.
+
+@psalm-\/param Plugin\+Map \$plugins Array of hints to class strings @psalm-\/param string\mbox{[}\mbox{]} \$hints Array of object hints
+
+@psalm-\/return Plugin\+Map Array of hints to class strings filtered and sorted by object hints \Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a7215207472f4bdd833b05695836fa01c}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!postRender@{postRender}}
+\index{postRender@{postRender}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{postRender()}{postRender()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_a7215207472f4bdd833b05695836fa01c} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::post\+Render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_aac159f0c0d0356b06f9ba7d2da5fde6a}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!preRender@{preRender}}
+\index{preRender@{preRender}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{preRender()}{preRender()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_aac159f0c0d0356b06f9ba7d2da5fde6a} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::pre\+Render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a59cd58c9ecb75b975eb06f280ca976ef}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!setCallInfo@{setCallInfo}}
+\index{setCallInfo@{setCallInfo}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{setCallInfo()}{setCallInfo()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_a59cd58c9ecb75b975eb06f280ca976ef} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::set\+Call\+Info (\begin{DoxyParamCaption}\item[{array}]{\$info}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_a62ffca3004cb1d97fdb91d0f7b957ea1}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!setShowTrace@{setShowTrace}}
+\index{setShowTrace@{setShowTrace}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{setShowTrace()}{setShowTrace()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_a62ffca3004cb1d97fdb91d0f7b957ea1} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::set\+Show\+Trace (\begin{DoxyParamCaption}\item[{bool}]{\$show\+\_\+trace}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_afc21d6ca3fa58c86566135e3043cf8b5}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!setStatics@{setStatics}}
+\index{setStatics@{setStatics}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{setStatics()}{setStatics()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_afc21d6ca3fa58c86566135e3043cf8b5} 
+Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::set\+Statics (\begin{DoxyParamCaption}\item[{array}]{\$statics}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Kint\textbackslash{}\+Renderer\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_kint_1_1_renderer_1_1_abstract_renderer_aa0c12a46ed57517104f890a6fb95506a}\index{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}!sortProperties@{sortProperties}}
+\index{sortProperties@{sortProperties}!Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer@{Kint\textbackslash{}Renderer\textbackslash{}AbstractRenderer}}
+\doxysubsubsection{\texorpdfstring{sortProperties()}{sortProperties()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_renderer_1_1_abstract_renderer_aa0c12a46ed57517104f890a6fb95506a} 
+static Kint\textbackslash{}\+Renderer\textbackslash{}\+Abstract\+Renderer\+::sort\+Properties (\begin{DoxyParamCaption}\item[{array}]{\$contents}{, }\item[{int}]{\$sort}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sorts an array of Value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Value\mbox{[}$\,$\mbox{]} & {\em \$contents} & Object properties to sort\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/\+Renderer/Abstract\+Renderer.\+php\end{DoxyCompactItemize}

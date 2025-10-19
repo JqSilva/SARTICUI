@@ -1,0 +1,17 @@
+digraph "CodeIgniter\Session\Handlers\DatabaseHandler"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="CodeIgniter\\Session\l\\Handlers\\DatabaseHandler",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [id="edge5_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="CodeIgniter\\Session\l\\Handlers\\BaseHandler",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler.html",tooltip=" "];
+  Node3 -> Node2 [id="edge6_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="SessionHandlerInterface",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node4 [id="edge7_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="CodeIgniter\\Session\l\\Handlers\\Database\\MySQLiHandler",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_my_s_q_li_handler.html",tooltip=" "];
+  Node1 -> Node5 [id="edge8_Node000001_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="CodeIgniter\\Session\l\\Handlers\\Database\\Postgre\lHandler",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler.html",tooltip=" "];
+}

@@ -1,0 +1,207 @@
+\doxysection{Code\+Igniter\textbackslash{}Cookie\textbackslash{}Cookie\+Store Class Reference}
+\hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store}{}\label{class_code_igniter_1_1_cookie_1_1_cookie_store}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Cookie\textbackslash{}Cookie\+Store\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Cookie\textbackslash{}Cookie\+Store\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_ae920dcabe75da9035b1bbad6bc165d3d}{\+\_\+\+\_\+construct}} (array \$cookies)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_afe74194df2527984452a1fa7feac7424}{has}} (string \$name, string \$prefix=\textquotesingle{}\textquotesingle{}, ?string \$value=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_a2af4f99a83c697e733a92a7cdefd3299}{get}} (string \$name, string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_a8d8662f3ecf81999f93044b150bea216}{put}} (\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie}{Cookie}} \$cookie)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_ad476caad1b4315bd0902c4b083564f46}{remove}} (string \$name, string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_a95e63c22638ba0282a93fe770df2b0e1}{dispatch}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_aff8ebea5b8b0afb359143060d31d4421}{display}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_a358664de10412ad9e280749662c8e13b}{clear}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_aa46011b05b574f3447d6d57bf33597f7}{count}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_a2ab16daf223aa60c446cf01402b32a1c}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_a8976bcf880285b5cc6d3795b73b89218}{validate\+Cookies}} (array \$cookies)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_a7f166e60db5a97f3a9ee2041e189af69}{set\+Raw\+Cookie}} (string \$name, string \$value, array \$options)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_store_a35ac09f910678da16ca6d368b26335cf}{set\+Cookie}} (string \$name, string \$value, array \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_acd530e0877b1a2fdc616ac523e7fe0c9}\label{class_code_igniter_1_1_cookie_1_1_cookie_store_acd530e0877b1a2fdc616ac523e7fe0c9} 
+{\bfseries \$cookies} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Cookie\+Store object represents an immutable collection of {\ttfamily Cookie} value objects.
+
+\texorpdfstring{$<$}{<}string, Cookie\texorpdfstring{$>$}{>} \begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_ae920dcabe75da9035b1bbad6bc165d3d}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_ae920dcabe75da9035b1bbad6bc165d3d} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$cookies}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,Cookie$>$} & \$cookies\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Cookie\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_a358664de10412ad9e280749662c8e13b}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!clear@{clear}}
+\index{clear@{clear}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_a358664de10412ad9e280749662c8e13b} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clears the cookie collection. \Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_aa46011b05b574f3447d6d57bf33597f7}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!count@{count}}
+\index{count@{count}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_aa46011b05b574f3447d6d57bf33597f7} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Cookie count in this collection. \Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_a95e63c22638ba0282a93fe770df2b0e1}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_a95e63c22638ba0282a93fe770df2b0e1} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::dispatch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Dispatches all cookies in store.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000039}{Deprecated}}]Response should dispatch cookies. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_aff8ebea5b8b0afb359143060d31d4421}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!display@{display}}
+\index{display@{display}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_aff8ebea5b8b0afb359143060d31d4421} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all cookie instances in store.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, Cookie$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_a2af4f99a83c697e733a92a7cdefd3299}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_a2af4f99a83c697e733a92a7cdefd3299} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::get (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Retrieves an instance of {\ttfamily Cookie} identified by a name and prefix. This throws an exception if not found.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Cookie\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_a2ab16daf223aa60c446cf01402b32a1c}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_a2ab16daf223aa60c446cf01402b32a1c} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the iterator for the cookie collection.
+
+\begin{DoxyReturn}{Returns}
+Traversable$<$string, Cookie$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_afe74194df2527984452a1fa7feac7424}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!has@{has}}
+\index{has@{has}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_afe74194df2527984452a1fa7feac7424} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::has (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?string}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Checks if a {\ttfamily Cookie} object identified by name and prefix is present in the collection. \Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_a8d8662f3ecf81999f93044b150bea216}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!put@{put}}
+\index{put@{put}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_a8d8662f3ecf81999f93044b150bea216} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie}{Cookie}}}]{\$cookie}{}\end{DoxyParamCaption})}
+
+Store a new cookie and return a new collection. The original collection is left unchanged.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_ad476caad1b4315bd0902c4b083564f46}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!remove@{remove}}
+\index{remove@{remove}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_ad476caad1b4315bd0902c4b083564f46} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::remove (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Removes a cookie from a collection and returns an updated collection. The original collection is left unchanged.
+
+Removing a cookie from the store {\bfseries{DOES NOT}} delete it from the browser. If you intend to delete a cookie {\itshape from the browser}, you must put an empty value cookie with the same name to the store.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_a35ac09f910678da16ca6d368b26335cf}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!setCookie@{setCookie}}
+\index{setCookie@{setCookie}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{setCookie()}{setCookie()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_a35ac09f910678da16ca6d368b26335cf} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::set\+Cookie (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extracted call to {\ttfamily setcookie()} in order to run unit tests on it.
+
+@code\+Coverage\+Ignore
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000041}{Deprecated}}]\end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_a7f166e60db5a97f3a9ee2041e189af69}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!setRawCookie@{setRawCookie}}
+\index{setRawCookie@{setRawCookie}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{setRawCookie()}{setRawCookie()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_a7f166e60db5a97f3a9ee2041e189af69} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::set\+Raw\+Cookie (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extracted call to {\ttfamily setrawcookie()} in order to run unit tests on it.
+
+@code\+Coverage\+Ignore
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000040}{Deprecated}}]\end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_cookie_1_1_cookie_store_a8976bcf880285b5cc6d3795b73b89218}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}!validateCookies@{validateCookies}}
+\index{validateCookies@{validateCookies}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieStore}}
+\doxysubsubsection{\texorpdfstring{validateCookies()}{validateCookies()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cookie_1_1_cookie_store_a8976bcf880285b5cc6d3795b73b89218} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Store\+::validate\+Cookies (\begin{DoxyParamCaption}\item[{array}]{\$cookies}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validates all cookies passed to be instances of Cookie.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Cookie\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Cookie/Cookie\+Store.\+php\end{DoxyCompactItemize}

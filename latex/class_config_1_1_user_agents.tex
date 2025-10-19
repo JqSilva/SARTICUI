@@ -1,0 +1,106 @@
+\doxysection{Config\textbackslash{}User\+Agents Class Reference}
+\hypertarget{class_config_1_1_user_agents}{}\label{class_config_1_1_user_agents}\index{Config\textbackslash{}UserAgents@{Config\textbackslash{}UserAgents}}
+
+
+Inheritance diagram for Config\textbackslash{}User\+Agents\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}User\+Agents\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_config_1_1_user_agents_a7488f7021b8dd19e93e49d32b4f447a2}\label{class_config_1_1_user_agents_a7488f7021b8dd19e93e49d32b4f447a2} 
+array {\bfseries \$platforms}
+\item 
+\Hypertarget{class_config_1_1_user_agents_a77162cc97caff78e8b5cf03009fd3c68}\label{class_config_1_1_user_agents_a77162cc97caff78e8b5cf03009fd3c68} 
+array {\bfseries \$browsers}
+\item 
+\Hypertarget{class_config_1_1_user_agents_aa5e019e7704f89fe08e86715a0bae592}\label{class_config_1_1_user_agents_aa5e019e7704f89fe08e86715a0bae592} 
+array {\bfseries \$mobiles}
+\item 
+array \mbox{\hyperlink{class_config_1_1_user_agents_ab897fc0158049be7fbcd1929467e9908}{\$robots}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_user_agents_autotoc_md193}{}\doxysubsubsection{\texorpdfstring{User Agents}{User Agents}}\label{class_config_1_1_user_agents_autotoc_md193}
+This file contains four arrays of user agent data. It is used by the User Agent Class to help identify browser, platform, robot, and mobile device data. The array keys are used to identify the device and the array values are used to set the actual name of the item. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_user_agents_ab897fc0158049be7fbcd1929467e9908}\index{Config\textbackslash{}UserAgents@{Config\textbackslash{}UserAgents}!\$robots@{\$robots}}
+\index{\$robots@{\$robots}!Config\textbackslash{}UserAgents@{Config\textbackslash{}UserAgents}}
+\doxysubsubsection{\texorpdfstring{\$robots}{\$robots}}
+{\footnotesize\ttfamily \label{class_config_1_1_user_agents_ab897fc0158049be7fbcd1929467e9908} 
+array Config\textbackslash{}\+User\+Agents\+::\$robots}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'googlebot'}\ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Googlebot'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'msnbot'}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'MSNBot'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'baiduspider'}\ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Baiduspider'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'bingbot'}\ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Bing'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'slurp'}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Inktomi\ Slurp'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'yahoo'}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Yahoo'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ask\ jeeves'}\ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Ask\ Jeeves'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'fastcrawler'}\ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'FastCrawler'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'infoseek'}\ \ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'InfoSeek\ Robot\ 1.0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'lycos'}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Lycos'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'yandex'}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'YandexBot'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'mediapartners-\/google'}\ =>\ \textcolor{stringliteral}{'MediaPartners\ Google'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'CRAZYWEBCRAWLER'}\ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Crazy\ Webcrawler'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'adsbot-\/google'}\ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'AdsBot\ Google'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'feedfetcher-\/google'}\ \ \ =>\ \textcolor{stringliteral}{'Feedfetcher\ Google'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'curious\ george'}\ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Curious\ George'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ia\_archiver'}\ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Alexa\ Crawler'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MJ12bot'}\ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Majestic-\/12'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Uptimebot'}\ \ \ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Uptimebot'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/User\+Agents.\+php\end{DoxyCompactItemize}

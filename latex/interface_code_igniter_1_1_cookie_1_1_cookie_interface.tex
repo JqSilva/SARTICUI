@@ -1,0 +1,339 @@
+\doxysection{Code\+Igniter\textbackslash{}Cookie\textbackslash{}Cookie\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface}{}\label{interface_code_igniter_1_1_cookie_1_1_cookie_interface}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Cookie\textbackslash{}Cookie\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a762b3126af60d8e19cd0a27ea4420204}{get\+Id}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ab89d47e03e658cfa018fc39daad9d1d1}{get\+Prefix}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a58520f5e9b0b1912d4bb4de71144ed09}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a220962ced41c495af389ac6f40229007}{get\+Prefixed\+Name}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ae5b0805a4d5c56265b042b664cdf839f}{get\+Value}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a1240b0845710c1d7754b7864b0e234ee}{get\+Expires\+Timestamp}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a1e58312d93c68e2e9f9d411f93c1c0c9}{get\+Expires\+String}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a2e28b6569f5c0f0c92ffaa82f541bf2a}{is\+Expired}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a0b64dc868f6df8e381ebc86378d19fe2}{get\+Max\+Age}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a998ae34615553e294b67984c04bd4e8f}{get\+Path}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ae9f02ad0ff321bca126d77acedfeeea5}{get\+Domain}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a74cbf418a5ce1088cc86b20633063437}{is\+Secure}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a7c2dd051dc9c6e09b7e22a040cc53aa6}{is\+HTTPOnly}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a869449a6d7e316c7c3e87ec92261d6b2}{get\+Same\+Site}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a6dcdc2c65e5d2201999d3985fe3b45c6}{is\+Raw}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a44cd2719f0f36cc24c68f52648be5ded}{get\+Options}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a0d62f3ee73f1ce2873c8efc029043a16}{to\+Header\+String}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a5d0a4475c738635da0f0e6f8bb71c5a5}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_adc12cf2c70c42ed63cde895e30f558fd}{to\+Array}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a9c7d77d940b277ba4e1dfc4360fce985}{SAMESITE\+\_\+\+NONE}} = \textquotesingle{}none\textquotesingle{}
+\item 
+const \mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_aa03e221443bdd1646a037d6861de991b}{SAMESITE\+\_\+\+LAX}} = \textquotesingle{}lax\textquotesingle{}
+\item 
+const \mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_afe1b4e57425344e55f9375a66aa13875}{SAMESITE\+\_\+\+STRICT}} = \textquotesingle{}strict\textquotesingle{}
+\item 
+const \mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_afff226595260194fbcdcaee944e407f7}{ALLOWED\+\_\+\+SAMESITE\+\_\+\+VALUES}}
+\item 
+const \mbox{\hyperlink{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a98912b5364d5ea7bb31c85f5be507954}{EXPIRES\+\_\+\+FORMAT}} = \textquotesingle{}D, d-\/M-\/Y H\+:i\+:s T\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for a value object representation of an HTTP cookie.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie}{\texttt{ https\+://developer.\+mozilla.\+org/en-\/\+US/docs/\+Web/\+HTTP/\+Headers/\+Set-\/\+Cookie}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a5d0a4475c738635da0f0e6f8bb71c5a5}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a5d0a4475c738635da0f0e6f8bb71c5a5} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the string representation of the Cookie object.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a8b236ed68f269545374777e81232a03d}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ae9f02ad0ff321bca126d77acedfeeea5}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getDomain@{getDomain}}
+\index{getDomain@{getDomain}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getDomain()}{getDomain()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ae9f02ad0ff321bca126d77acedfeeea5} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Domain (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the "{}\+Domain"{} cookie attribute. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a9e680b162ba956860ade9c507127ef75}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a1e58312d93c68e2e9f9d411f93c1c0c9}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getExpiresString@{getExpiresString}}
+\index{getExpiresString@{getExpiresString}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getExpiresString()}{getExpiresString()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a1e58312d93c68e2e9f9d411f93c1c0c9} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Expires\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the formatted expires time. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a183666695ab2b336f69075c464d257dc}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a1240b0845710c1d7754b7864b0e234ee}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getExpiresTimestamp@{getExpiresTimestamp}}
+\index{getExpiresTimestamp@{getExpiresTimestamp}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getExpiresTimestamp()}{getExpiresTimestamp()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a1240b0845710c1d7754b7864b0e234ee} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Expires\+Timestamp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the time in Unix timestamp the cookie expires. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_aabdbcf2c11acfcc6bb3a43f09d903b7f}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a762b3126af60d8e19cd0a27ea4420204}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getId@{getId}}
+\index{getId@{getId}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a762b3126af60d8e19cd0a27ea4420204} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a unique identifier for the cookie consisting of its prefixed name, path, and domain. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_ab684693cde24aaef3f3e37858daff072}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a0b64dc868f6df8e381ebc86378d19fe2}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getMaxAge@{getMaxAge}}
+\index{getMaxAge@{getMaxAge}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getMaxAge()}{getMaxAge()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a0b64dc868f6df8e381ebc86378d19fe2} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Max\+Age (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the "{}\+Max-\/\+Age"{} cookie attribute. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a058a378b8b00bcb245ca087152a46c6f}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a58520f5e9b0b1912d4bb4de71144ed09}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getName@{getName}}
+\index{getName@{getName}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a58520f5e9b0b1912d4bb4de71144ed09} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the cookie name. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_aed72fb83b1a6967db42636ac0f8082d1}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a44cd2719f0f36cc24c68f52648be5ded}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a44cd2719f0f36cc24c68f52648be5ded} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the options that are passable to the {\ttfamily setcookie} variant available on PHP 7.\+3+
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a3e6ff98d5f1d4df20b29a9707a2eb2ab}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a998ae34615553e294b67984c04bd4e8f}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getPath@{getPath}}
+\index{getPath@{getPath}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a998ae34615553e294b67984c04bd4e8f} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the "{}\+Path"{} cookie attribute. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_abcc3322b5a4242454972e280a7caecc7}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ab89d47e03e658cfa018fc39daad9d1d1}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getPrefix@{getPrefix}}
+\index{getPrefix@{getPrefix}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getPrefix()}{getPrefix()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ab89d47e03e658cfa018fc39daad9d1d1} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the cookie prefix. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a26d85da88632829e18f9b31651c5e97e}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a220962ced41c495af389ac6f40229007}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getPrefixedName@{getPrefixedName}}
+\index{getPrefixedName@{getPrefixedName}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getPrefixedName()}{getPrefixedName()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a220962ced41c495af389ac6f40229007} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Prefixed\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the cookie name prepended with the prefix, if any. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_af0332313a12abfa5690e5911dc9f6d2b}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a869449a6d7e316c7c3e87ec92261d6b2}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getSameSite@{getSameSite}}
+\index{getSameSite@{getSameSite}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getSameSite()}{getSameSite()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a869449a6d7e316c7c3e87ec92261d6b2} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Same\+Site (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the "{}\+Same\+Site"{} cookie attribute. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a8b09d4101645e4390a529fe68e6e4839}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ae5b0805a4d5c56265b042b664cdf839f}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!getValue@{getValue}}
+\index{getValue@{getValue}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_ae5b0805a4d5c56265b042b664cdf839f} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the cookie value. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_af56ea854d4d3047438fae9e1d43c2a19}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a2e28b6569f5c0f0c92ffaa82f541bf2a}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!isExpired@{isExpired}}
+\index{isExpired@{isExpired}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{isExpired()}{isExpired()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a2e28b6569f5c0f0c92ffaa82f541bf2a} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::is\+Expired (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks if the cookie is expired. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_aa1ddab352158feb81abb37b4d03d988e}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a7c2dd051dc9c6e09b7e22a040cc53aa6}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!isHTTPOnly@{isHTTPOnly}}
+\index{isHTTPOnly@{isHTTPOnly}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{isHTTPOnly()}{isHTTPOnly()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a7c2dd051dc9c6e09b7e22a040cc53aa6} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::is\+HTTPOnly (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the "{}\+Http\+Only"{} cookie attribute.
+
+Checks if Java\+Script is forbidden from accessing the cookie. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a9d8e340c91f61f631266306c6f187b86}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a6dcdc2c65e5d2201999d3985fe3b45c6}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!isRaw@{isRaw}}
+\index{isRaw@{isRaw}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{isRaw()}{isRaw()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a6dcdc2c65e5d2201999d3985fe3b45c6} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::is\+Raw (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks if the cookie should be sent with no URL encoding. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a733f6830db5ca584c4f80d5a09dfd6ea}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a74cbf418a5ce1088cc86b20633063437}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!isSecure@{isSecure}}
+\index{isSecure@{isSecure}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{isSecure()}{isSecure()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a74cbf418a5ce1088cc86b20633063437} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::is\+Secure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the "{}\+Secure"{} cookie attribute.
+
+Checks if the cookie is only sent to the server when a request is made with the {\ttfamily https\+:} scheme (except on {\ttfamily localhost}), and therefore is more resistent to man-\/in-\/the-\/middle attacks. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a29c68b46f3cb005b9e3254a45daa598a}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_adc12cf2c70c42ed63cde895e30f558fd}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!toArray@{toArray}}
+\index{toArray@{toArray}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{toArray()}{toArray()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_adc12cf2c70c42ed63cde895e30f558fd} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::to\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the array representation of the Cookie object.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a63b72392b328e1df5d49123a63f01239}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a0d62f3ee73f1ce2873c8efc029043a16}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!toHeaderString@{toHeaderString}}
+\index{toHeaderString@{toHeaderString}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{toHeaderString()}{toHeaderString()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a0d62f3ee73f1ce2873c8efc029043a16} 
+Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::to\+Header\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the Cookie as a header value. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cookie_1_1_cookie_a28483a08f637383b6151c665d72d1f59}{Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_afff226595260194fbcdcaee944e407f7}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!ALLOWED\_SAMESITE\_VALUES@{ALLOWED\_SAMESITE\_VALUES}}
+\index{ALLOWED\_SAMESITE\_VALUES@{ALLOWED\_SAMESITE\_VALUES}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{ALLOWED\_SAMESITE\_VALUES}{ALLOWED\_SAMESITE\_VALUES}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_afff226595260194fbcdcaee944e407f7} 
+const Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::\+ALLOWED\+\_\+\+SAMESITE\+\_\+\+VALUES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::SAMESITE\_NONE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::SAMESITE\_LAX,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::SAMESITE\_STRICT,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+RFC 6265 allowed values for the "{}\+Same\+Site"{} attribute.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie/SameSite}{\texttt{ https\+://developer.\+mozilla.\+org/en-\/\+US/docs/\+Web/\+HTTP/\+Headers/\+Set-\/\+Cookie/\+Same\+Site}} 
+\end{DoxySeeAlso}
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a98912b5364d5ea7bb31c85f5be507954}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!EXPIRES\_FORMAT@{EXPIRES\_FORMAT}}
+\index{EXPIRES\_FORMAT@{EXPIRES\_FORMAT}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{EXPIRES\_FORMAT}{EXPIRES\_FORMAT}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a98912b5364d5ea7bb31c85f5be507954} 
+const Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::\+EXPIRES\+\_\+\+FORMAT = \textquotesingle{}D, d-\/M-\/Y H\+:i\+:s T\textquotesingle{}}
+
+Expires date format.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Date}{\texttt{ https\+://developer.\+mozilla.\+org/en-\/\+US/docs/\+Web/\+HTTP/\+Headers/\+Date}} 
+
+\href{https://tools.ietf.org/html/rfc7231\#section-7.1.1.2}{\texttt{ https\+://tools.\+ietf.\+org/html/rfc7231\#section-\/7.\+1.\+1.\+2}} 
+\end{DoxySeeAlso}
+\Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_aa03e221443bdd1646a037d6861de991b}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!SAMESITE\_LAX@{SAMESITE\_LAX}}
+\index{SAMESITE\_LAX@{SAMESITE\_LAX}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{SAMESITE\_LAX}{SAMESITE\_LAX}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_aa03e221443bdd1646a037d6861de991b} 
+const Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::\+SAMESITE\+\_\+\+LAX = \textquotesingle{}lax\textquotesingle{}}
+
+Cookies are not sent on normal cross-\/site subrequests (for example to load images or frames into a third party site), but are sent when a user is navigating to the origin site (i.\+e. when following a link). \Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a9c7d77d940b277ba4e1dfc4360fce985}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!SAMESITE\_NONE@{SAMESITE\_NONE}}
+\index{SAMESITE\_NONE@{SAMESITE\_NONE}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{SAMESITE\_NONE}{SAMESITE\_NONE}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_a9c7d77d940b277ba4e1dfc4360fce985} 
+const Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::\+SAMESITE\+\_\+\+NONE = \textquotesingle{}none\textquotesingle{}}
+
+Cookies will be sent in all contexts, i.\+e in responses to both first-\/party and cross-\/origin requests. If {\ttfamily Same\+Site=None} is set, the cookie {\ttfamily Secure} attribute must also be set (or the cookie will be blocked). \Hypertarget{interface_code_igniter_1_1_cookie_1_1_cookie_interface_afe1b4e57425344e55f9375a66aa13875}\index{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}!SAMESITE\_STRICT@{SAMESITE\_STRICT}}
+\index{SAMESITE\_STRICT@{SAMESITE\_STRICT}!CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface@{CodeIgniter\textbackslash{}Cookie\textbackslash{}CookieInterface}}
+\doxysubsubsection{\texorpdfstring{SAMESITE\_STRICT}{SAMESITE\_STRICT}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cookie_1_1_cookie_interface_afe1b4e57425344e55f9375a66aa13875} 
+const Code\+Igniter\textbackslash{}\+Cookie\textbackslash{}\+Cookie\+Interface\+::\+SAMESITE\+\_\+\+STRICT = \textquotesingle{}strict\textquotesingle{}}
+
+Cookies will only be sent in a first-\/party context and not be sent along with requests initiated by third party websites. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Cookie/Cookie\+Interface.\+php\end{DoxyCompactItemize}

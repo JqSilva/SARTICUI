@@ -1,0 +1,225 @@
+\doxysection{Code\+Igniter\textbackslash{}Cache\textbackslash{}Cache\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface}{}\label{interface_code_igniter_1_1_cache_1_1_cache_interface}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Cache\textbackslash{}Cache\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a3035592e1f3a9c5fae2526334537b8b1}{initialize}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a68b00b3bcb364db019cb285570a44e38}{get}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_ae7a4125220b98b393d2dcbd22f71914e}{save}} (string \$key, \$value, int \$ttl=60)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a924d9f47143e6e3a2d6c20b14988024e}{delete}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a7f5232e23a472896dff5d77a350c7b62}{increment}} (string \$key, int \$offset=1)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a9e34f8332defbd0af86e02179417125e}{decrement}} (string \$key, int \$offset=1)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a990dbf526af1c647c8fa9ae18211d2fa}{clean}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_aa769017060f105fd5d64e7202014b6ee}{get\+Cache\+Info}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a54d5bd77af2587ceee4288909115b193}{get\+Meta\+Data}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_ab59f48828ea4194cf13feec4d5417b86}{is\+Supported}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cache interface 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_a990dbf526af1c647c8fa9ae18211d2fa}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!clean@{clean}}
+\index{clean@{clean}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_a990dbf526af1c647c8fa9ae18211d2fa} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::clean (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Will delete all items in the entire cache.
+
+\begin{DoxyReturn}{Returns}
+bool Success or failure 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a5eb72aeafe2701de4cad070f7a2efe3a}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_aa4a22835b5a55e82c6b1576c5b1efc72}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_a18f68c19745140f6f422b200a1a8b34a}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_ae71d287d93f96d8d77a699641c9eccd7}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_a9366e1ad8fc6864af87f48e15b572f19}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_af924be0c53dacfaa277bb811a2069285}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ad1471a91c25ec7ecd5b9cfc3467473b4}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_a9e34f8332defbd0af86e02179417125e}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!decrement@{decrement}}
+\index{decrement@{decrement}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_a9e34f8332defbd0af86e02179417125e} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::decrement (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$offset}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Performs atomic decrementation of a raw stored value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache ID \\
+\hline
+int & {\em \$offset} & Step/value to increase by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a8fba78fb5f11705fc858924e3994b21e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_a99ddc685d4932de16558cb30ad1eb2ad}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_a43dea13b3f3efe8942cf27e9d28984d7}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_a38b64c21a246b5170485a82e41208ee6}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_a08c0c8b8ac94f6f708083eda3f5269bd}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a89cf81c82ec0735391d0aa5d84d4e536}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a70e0466b8496a46c2171158810bef5e0}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_a924d9f47143e6e3a2d6c20b14988024e}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!delete@{delete}}
+\index{delete@{delete}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_a924d9f47143e6e3a2d6c20b14988024e} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::delete (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Deletes a specific item from the cache store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache item name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Success or failure 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a61d7133ee31e4934a1ade2f3cafdbea9}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_ae18441cc3bb41359db403bb9a37c67ca}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_ae28e44cafa116ed7b388cb6d409f7fb9}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_a42ab952446650c84c6783e815003733e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_ad6b28a011f0c53ef50d4f8827985a42e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_ad394cae031aaa3164a9443d9da411472}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a9cc03f00cf61a6153b89356d3f5f9ddb}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_a68b00b3bcb364db019cb285570a44e38}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_a68b00b3bcb364db019cb285570a44e38} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Attempts to fetch an item from the cache store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache item name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a537a3f6919f9516a533ea9b255aad8ed}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_a1c937a150bf05ea8e25498af0e87b386}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_a6c27ba059a789c4cb7b5dfb20cc79553}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_ab601f72614ea52b8f9236554fc594f4e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_a17865e871c9da5e792516d67fd6fe3bc}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_aafb33211b511e8c499b1c9bd7e38ae2f}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a5e09c66d14a5a84062ed4bfbc1c874fc}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_aa769017060f105fd5d64e7202014b6ee}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!getCacheInfo@{getCacheInfo}}
+\index{getCacheInfo@{getCacheInfo}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{getCacheInfo()}{getCacheInfo()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_aa769017060f105fd5d64e7202014b6ee} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::get\+Cache\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns information on the entire cache.
+
+The information returned and the structure of the data varies depending on the handler.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a63afbcde955507e988373d7b3ef225b8}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_a770bac9cd2c2cabe70c929755103b871}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_a09c1c09ba7a223bf2d5f1639d3112b23}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_acc73bc6756594bb6acda9faeb689456a}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_a6f04c93532a120b97f9ba584751fedc0}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a49a984d6632f0c29b17fb1f16b2235a1}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_acf4094b0149a8bcdd4b1dddf975f30f4}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_a54d5bd77af2587ceee4288909115b193}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!getMetaData@{getMetaData}}
+\index{getMetaData@{getMetaData}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{getMetaData()}{getMetaData()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_a54d5bd77af2587ceee4288909115b193} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::get\+Meta\+Data (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns detailed information about the specific item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache item name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false\texorpdfstring{$\vert$}{|}null Returns null if the item does not exist, otherwise array$<$string, mixed$>$ with at least the \textquotesingle{}expire\textquotesingle{} key for absolute epoch expiry (or null). Some handlers may return false when an item does not exist, which is deprecated. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a65f8e818cd39997f2a92debdb20865f8}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_a6987fd5436e5571c1842901dbd0aee05}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_a90b02b10163674fe30a18d0c5ae91f5d}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_a20f0dd7df679891e398f5125659d5074}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_ab31077ab1bae232be2e059140ebe5abb}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a705bbe90c282771c7de9637d778f9987}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ad833a9162f8a826f9c593260da7e1e20}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_a7f5232e23a472896dff5d77a350c7b62}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!increment@{increment}}
+\index{increment@{increment}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_a7f5232e23a472896dff5d77a350c7b62} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::increment (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$offset}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Performs atomic incrementation of a raw stored value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache ID \\
+\hline
+int & {\em \$offset} & Step/value to increase by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a7cc410156bb8d0430894d1c1049a4d48}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_a535af0b219aca1f782071a3514ea45ec}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_aea4bb1deeb92c5887596f1cef776d9b9}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_a495eafe9db8547b08c7285e6e363aaad}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_a17ce6c553d3cc0efc5d73b090b9dfc7e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a985960c090a9042269bff02e9092a0f7}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_abff0eb6d03d35799f6c155ee33cc0c48}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_a3035592e1f3a9c5fae2526334537b8b1}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_a3035592e1f3a9c5fae2526334537b8b1} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Takes care of any handler-\/specific setup that must be done.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_aa5e7963cb4b13f6c7b516d82ecd305e6}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_ac14f44b82480655c7cd39421f31dc046}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_a4e614a2fceae00b76afde849b9c7ecf3}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_adfe9b48926a8349c042fef5163027d3a}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_a06ff05a6e578f0a9007f9837f6b2415f}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a42c6717c718319070ce7cb8bb71593b1}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_aa08e1942221419faa53b7d740507f413}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_ab59f48828ea4194cf13feec4d5417b86}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!isSupported@{isSupported}}
+\index{isSupported@{isSupported}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{isSupported()}{isSupported()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_ab59f48828ea4194cf13feec4d5417b86} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::is\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determines if the driver is supported on this system. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_acd078a885f43bcc84d6d54bbf6c7163f}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_ad933f7cec0a3f43f2d859a024f910bc8}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_a272c5fd10cfafff2c34a73c3bfce664e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_a6421be5540bb722e920792fbfcf43fbe}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_af4042d9ecc1a0a02977eea5d3e0d9f2f}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_acb0259860e80471a7ef00edb7abcb411}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a76786254b151661120a876b5817cbb3e}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+\Hypertarget{interface_code_igniter_1_1_cache_1_1_cache_interface_ae7a4125220b98b393d2dcbd22f71914e}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}!save@{save}}
+\index{save@{save}!CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface@{CodeIgniter\textbackslash{}Cache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_cache_1_1_cache_interface_ae7a4125220b98b393d2dcbd22f71914e} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface\+::save (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{, }\item[{int}]{\$ttl}{ = {\ttfamily 60}}\end{DoxyParamCaption})}
+
+Saves an item to the cache store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache item name \\
+\hline
+array | bool | float | int | object | string | null & {\em \$value} & The data to save \\
+\hline
+int & {\em \$ttl} & Time To Live, in seconds (default 60)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Success or failure 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_dummy_handler_a5f8db3f7eb3a953762d010191d749de0}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Dummy\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_file_handler_a4ccc976751fab1acaf4f58d9a1e8ed9a}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+File\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_memcached_handler_ad8be57090dc2c77ed4974a24c76dd857}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Memcached\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_predis_handler_aa58a8c95a204e5aa3407f672bd63daa9}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Predis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_redis_handler_a5a96ba898019899a9c79365603110bc6}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_adb5e45ec5791191c942f0de4e7eac529}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ac32ff4aabbebde65b9e1b059dcc34bf7}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Cache/Cache\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,225 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}Uploaded\+File\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface}{}\label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}Uploaded\+File\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aba024fe085ddb2a011f33f8029f84c50}{\+\_\+\+\_\+construct}} (string \$path, string \$original\+Name, ?string \$mime\+Type=null, ?int \$size=null, ?int \$error=null, ?string \$client\+Path=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aa018a12a42753f31f3ab590e60f1285e}{move}} (string \$target\+Path, ?string \$name=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a9b633bf376b7e048b6a395a5166b17ed}{has\+Moved}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_ac6ef1eec0f97e0f906e72768de850bc5}{get\+Error}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a48e4f33276df4e8a730edad4be30bcdb}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aacdb315c5f73d415aee9ff5af19ce459}{get\+Temp\+Name}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_abdc5323e51a4d70b7ee63bdedd875ba5}{get\+Client\+Path}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_ae54da796072fbd6ac819951b3bb5e4de}{get\+Client\+Extension}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a60f343fba820166cff34491136b48a31}{get\+Client\+Mime\+Type}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a3287147c2165bfb57573306b26ad9810}{is\+Valid}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_adf85aa34b0dd32081974082ac14cc5dd}{get\+Destination}} (string \$destination, string \$delimiter=\textquotesingle{}\+\_\+\textquotesingle{}, int \$i=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Value object representing a single file uploaded through an HTTP request. Used by the Incoming\+Request class to provide files.
+
+Typically, implementors will extend the Spl\+File\+Info class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aba024fe085ddb2a011f33f8029f84c50}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aba024fe085ddb2a011f33f8029f84c50} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$original\+Name}{, }\item[{?string}]{\$mime\+Type}{ = {\ttfamily null}, }\item[{?int}]{\$size}{ = {\ttfamily null}, }\item[{?int}]{\$error}{ = {\ttfamily null}, }\item[{?string}]{\$client\+Path}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Accepts the file information as would be filled in from the \$\+\_\+\+FILES array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The temporary location of the uploaded file. \\
+\hline
+string & {\em \$original\+Name} & The client-\/provided filename. \\
+\hline
+string | null & {\em \$mime\+Type} & The type of file as provided by PHP \\
+\hline
+int | null & {\em \$size} & The size of the file, in bytes \\
+\hline
+int | null & {\em \$error} & The error constant of the upload (one of PHP\textquotesingle{}s UPLOADERRXXX constants) \\
+\hline
+string | null & {\em \$client\+Path} & The webkit relative path of the uploaded file. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_a973af56dd16aab45ebfb70ecd185c44f}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_ae54da796072fbd6ac819951b3bb5e4de}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!getClientExtension@{getClientExtension}}
+\index{getClientExtension@{getClientExtension}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{getClientExtension()}{getClientExtension()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_ae54da796072fbd6ac819951b3bb5e4de} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::get\+Client\+Extension (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the original file extension, based on the file name that was uploaded. This is NOT a trusted source. For a trusted version, use guess\+Extension() instead. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_ad248502c156cb7b010dba9864a0f867a}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a60f343fba820166cff34491136b48a31}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!getClientMimeType@{getClientMimeType}}
+\index{getClientMimeType@{getClientMimeType}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{getClientMimeType()}{getClientMimeType()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a60f343fba820166cff34491136b48a31} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::get\+Client\+Mime\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the mime type as provided by the client. This is NOT a trusted value. For a trusted version, use get\+Mime\+Type() instead. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_a90b8945e87d1455a3cea3bdfbdb4405a}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_abdc5323e51a4d70b7ee63bdedd875ba5}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!getClientPath@{getClientPath}}
+\index{getClientPath@{getClientPath}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{getClientPath()}{getClientPath()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_abdc5323e51a4d70b7ee63bdedd875ba5} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::get\+Client\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+(PHP 8.\+1+) Returns the webkit relative path of the uploaded file on directory uploads. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_ab36aad3a5a7d7e4481cd036e03cbd61c}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_adf85aa34b0dd32081974082ac14cc5dd}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!getDestination@{getDestination}}
+\index{getDestination@{getDestination}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{getDestination()}{getDestination()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_adf85aa34b0dd32081974082ac14cc5dd} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::get\+Destination (\begin{DoxyParamCaption}\item[{string}]{\$destination}{, }\item[{string}]{\$delimiter}{ = {\ttfamily \textquotesingle{}\+\_\+\textquotesingle{}}, }\item[{int}]{\$i}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Returns the destination path for the move operation where overwriting is not expected.
+
+First, it checks whether the delimiter is present in the filename, if it is, then it checks whether the last element is an integer as there may be cases that the delimiter may be present in the filename. For the all other cases, it appends an integer starting from zero before the file\textquotesingle{}s extension. \Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_ac6ef1eec0f97e0f906e72768de850bc5}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!getError@{getError}}
+\index{getError@{getError}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{getError()}{getError()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_ac6ef1eec0f97e0f906e72768de850bc5} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::get\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve the error associated with the uploaded file.
+
+The return value MUST be one of PHP\textquotesingle{}s UPLOAD\+\_\+\+ERR\+\_\+\+XXX constants.
+
+If the file was uploaded successfully, this method MUST return UPLOAD\+\_\+\+ERR\+\_\+\+OK.
+
+Implementations SHOULD return the value stored in the "{}error"{} key of the file in the \$\+\_\+\+FILES array.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/manual/en/features.file-upload.errors.php}{\texttt{ http\+://php.\+net/manual/en/features.\+file-\/upload.\+errors.\+php}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int One of PHP\textquotesingle{}s UPLOAD\+\_\+\+ERR\+\_\+\+XXX constants. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_a1eb1e73fc1cd314097c4b8f4ee29c795}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a48e4f33276df4e8a730edad4be30bcdb}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!getName@{getName}}
+\index{getName@{getName}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a48e4f33276df4e8a730edad4be30bcdb} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve the filename sent by the client.
+
+Do not trust the value returned by this method. A client could send a malicious filename with the intention to corrupt or hack your application.
+
+Implementations SHOULD return the value stored in the "{}name"{} key of the file in the \$\+\_\+\+FILES array.
+
+\begin{DoxyReturn}{Returns}
+string The filename sent by the client or null if none was provided. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_af61fa1b08585682dcb27cabf34968c0d}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aacdb315c5f73d415aee9ff5af19ce459}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!getTempName@{getTempName}}
+\index{getTempName@{getTempName}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{getTempName()}{getTempName()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aacdb315c5f73d415aee9ff5af19ce459} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::get\+Temp\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the temporary filename where the file was uploaded to. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_af27e2ea1fe373e0bb740bb630ad22c05}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a9b633bf376b7e048b6a395a5166b17ed}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!hasMoved@{hasMoved}}
+\index{hasMoved@{hasMoved}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{hasMoved()}{hasMoved()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a9b633bf376b7e048b6a395a5166b17ed} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::has\+Moved (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns whether the file has been moved or not. If it has, the move() method will not work and certain properties, like the temp\+Name, will no longer be available. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_a04b304385ede90fe96428aaaad48389e}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a3287147c2165bfb57573306b26ad9810}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!isValid@{isValid}}
+\index{isValid@{isValid}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_a3287147c2165bfb57573306b26ad9810} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::is\+Valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns whether the file was uploaded successfully, based on whether it was uploaded via HTTP and has no errors. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_ab51dd8b60c28bd169d390d0edc7de2d3}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aa018a12a42753f31f3ab590e60f1285e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}!move@{move}}
+\index{move@{move}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}UploadedFileInterface}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_interface_aa018a12a42753f31f3ab590e60f1285e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File\+Interface\+::move (\begin{DoxyParamCaption}\item[{string}]{\$target\+Path}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Move the uploaded file to a new location.
+
+\$target\+Path may be an absolute path, or a relative path. If it is a relative path, resolution should be the same as used by PHP\textquotesingle{}s rename() function.
+
+The original file MUST be removed on completion.
+
+If this method is called more than once, any subsequent calls MUST raise an exception.
+
+When used in an SAPI environment where \$\+\_\+\+FILES is populated, when writing files via move\+To(), is\+\_\+uploaded\+\_\+file() and move\+\_\+uploaded\+\_\+file() SHOULD be used to ensure permissions and upload status are verified correctly.
+
+If you wish to move to a stream, use get\+Stream(), as SAPI operations cannot guarantee writing to stream destinations.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/is_uploaded_file}{\texttt{ http\+://php.\+net/is\+\_\+uploaded\+\_\+file}} 
+
+\href{http://php.net/move_uploaded_file}{\texttt{ http\+://php.\+net/move\+\_\+uploaded\+\_\+file}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target\+Path} & Path to which to move the uploaded file. \\
+\hline
+string | null & {\em \$name} & the name to rename the file to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if the \$path specified is invalid. \\
+\hline
+{\em Runtime\+Exception} & on the second or subsequent call to the method. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/\+Files/Uploaded\+File\+Interface.\+php\end{DoxyCompactItemize}

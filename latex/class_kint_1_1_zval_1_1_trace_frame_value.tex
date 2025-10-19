@@ -1,0 +1,125 @@
+\doxysection{Kint\textbackslash{}Zval\textbackslash{}Trace\+Frame\+Value Class Reference}
+\hypertarget{class_kint_1_1_zval_1_1_trace_frame_value}{}\label{class_kint_1_1_zval_1_1_trace_frame_value}\index{Kint\textbackslash{}Zval\textbackslash{}TraceFrameValue@{Kint\textbackslash{}Zval\textbackslash{}TraceFrameValue}}
+
+
+Inheritance diagram for Kint\textbackslash{}Zval\textbackslash{}Trace\+Frame\+Value\+:
+% FIG 0
+
+
+Collaboration diagram for Kint\textbackslash{}Zval\textbackslash{}Trace\+Frame\+Value\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_trace_frame_value_a203b5ce9c454a170c9a990fbdef50868}\label{class_kint_1_1_zval_1_1_trace_frame_value_a203b5ce9c454a170c9a990fbdef50868} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$base, array \$raw\+\_\+frame)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries add\+Representation} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_representation_1_1_representation}{Representation}} \$rep, int \$pos=null)
+\item 
+{\bfseries replace\+Representation} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_representation_1_1_representation}{Representation}} \$rep, int \$pos=null)
+\item 
+\mbox{\hyperlink{class_kint_1_1_zval_1_1_value_a208404a998e6f9df17424a82fbe7b496}{remove\+Representation}} (\$rep)
+\item 
+{\bfseries get\+Representation} (string \$name)
+\item 
+{\bfseries get\+Representations} ()
+\item 
+{\bfseries clear\+Representations} ()
+\item 
+{\bfseries get\+Type} ()
+\item 
+{\bfseries get\+Modifiers} ()
+\item 
+{\bfseries get\+Access} ()
+\item 
+{\bfseries get\+Name} ()
+\item 
+{\bfseries get\+Operator} ()
+\item 
+{\bfseries get\+Size} ()
+\item 
+{\bfseries get\+Value\+Short} ()
+\item 
+{\bfseries get\+Access\+Path} ()
+\item 
+{\bfseries transplant} (self \$old)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_trace_frame_value_ae3d3129f1008d98227406138a916b421}\label{class_kint_1_1_zval_1_1_trace_frame_value_ae3d3129f1008d98227406138a916b421} 
+{\bfseries \$trace}
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_trace_frame_value_a017d219cd1afd6e8bbb3356aeed348b7}\label{class_kint_1_1_zval_1_1_trace_frame_value_a017d219cd1afd6e8bbb3356aeed348b7} 
+{\bfseries \$hints} = \mbox{[}\textquotesingle{}trace\+\_\+frame\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries ACCESS\+\_\+\+NONE} = null
+\item 
+const {\bfseries ACCESS\+\_\+\+PUBLIC} = 1
+\item 
+const {\bfseries ACCESS\+\_\+\+PROTECTED} = 2
+\item 
+const {\bfseries ACCESS\+\_\+\+PRIVATE} = 3
+\item 
+const {\bfseries OPERATOR\+\_\+\+NONE} = null
+\item 
+const {\bfseries OPERATOR\+\_\+\+ARRAY} = 1
+\item 
+const {\bfseries OPERATOR\+\_\+\+OBJECT} = 2
+\item 
+const {\bfseries OPERATOR\+\_\+\+STATIC} = 3
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$type}
+\item 
+{\bfseries \$readonly} = false
+\item 
+{\bfseries \$static} = false
+\item 
+{\bfseries \$const} = false
+\item 
+{\bfseries \$access} = self\+::\+ACCESS\+\_\+\+NONE
+\item 
+{\bfseries \$owner\+\_\+class} = null
+\item 
+{\bfseries \$access\+\_\+path}
+\item 
+{\bfseries \$operator} = self\+::\+OPERATOR\+\_\+\+NONE
+\item 
+{\bfseries \$reference} = false
+\item 
+{\bfseries \$depth} = 0
+\item 
+{\bfseries \$size}
+\item 
+{\bfseries \$hints} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$value}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_zval_1_1_value_aeb4ce455ec49d20ad2c0eddc79278cdb}{blank}} (string \$name=null, string \$access\+\_\+path=null)
+\item 
+static {\bfseries sort\+By\+Access} (self \$a, self \$b)
+\item 
+static {\bfseries sort\+By\+Name} (self \$a, self \$b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$representations} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/\+Zval/Trace\+Frame\+Value.\+php\end{DoxyCompactItemize}

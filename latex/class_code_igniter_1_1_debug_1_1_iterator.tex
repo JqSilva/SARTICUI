@@ -1,0 +1,66 @@
+\doxysection{Code\+Igniter\textbackslash{}Debug\textbackslash{}Iterator Class Reference}
+\hypertarget{class_code_igniter_1_1_debug_1_1_iterator}{}\label{class_code_igniter_1_1_debug_1_1_iterator}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator@{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_iterator_a75f1d0e65fad6f14c82a7e3f6062884d}{add}} (string \$name, Closure \$closure)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_iterator_a9d6e57e721c9102d27cea14aeb70e317}{run}} (int \$iterations=1000, bool \$output=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_iterator_a5d558632b81f50f1aa4420977968225b}{get\+Report}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_iterator_a979944e6b04ca85e94c64796e2f698b3}\label{class_code_igniter_1_1_debug_1_1_iterator_a979944e6b04ca85e94c64796e2f698b3} 
+{\bfseries \$tests} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_iterator_a52e2b7e4d09417ba8c98f8a97ec46147}\label{class_code_igniter_1_1_debug_1_1_iterator_a52e2b7e4d09417ba8c98f8a97ec46147} 
+{\bfseries \$results} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Iterator for debugging. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_iterator_a75f1d0e65fad6f14c82a7e3f6062884d}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator@{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator}!add@{add}}
+\index{add@{add}!CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator@{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_iterator_a75f1d0e65fad6f14c82a7e3f6062884d} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Iterator\+::add (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{Closure}]{\$closure}{}\end{DoxyParamCaption})}
+
+Adds a test to run.
+
+Tests are simply closures that the user can define any sequence of things to happen during the test.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Closure()} & mixed \$closure\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_iterator_a5d558632b81f50f1aa4420977968225b}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator@{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator}!getReport@{getReport}}
+\index{getReport@{getReport}!CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator@{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator}}
+\doxysubsubsection{\texorpdfstring{getReport()}{getReport()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_iterator_a5d558632b81f50f1aa4420977968225b} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Iterator\+::get\+Report (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get results. \Hypertarget{class_code_igniter_1_1_debug_1_1_iterator_a9d6e57e721c9102d27cea14aeb70e317}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator@{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator@{CodeIgniter\textbackslash{}Debug\textbackslash{}Iterator}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_iterator_a9d6e57e721c9102d27cea14aeb70e317} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Iterator\+::run (\begin{DoxyParamCaption}\item[{int}]{\$iterations}{ = {\ttfamily 1000}, }\item[{bool}]{\$output}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Runs through all of the tests that have been added, recording time to execute the desired number of iterations, and the approximate memory usage used during those iterations.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Debug/Iterator.\+php\end{DoxyCompactItemize}

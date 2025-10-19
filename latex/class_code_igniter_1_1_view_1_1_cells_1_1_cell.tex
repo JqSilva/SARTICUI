@@ -1,0 +1,89 @@
+\doxysection{Code\+Igniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell Class Reference}
+\hypertarget{class_code_igniter_1_1_view_1_1_cells_1_1_cell}{}\label{class_code_igniter_1_1_view_1_1_cells_1_1_cell}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cells_1_1_cell_a018835e57118165ea863163f9e503479}{render}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cells_1_1_cell_af2499a09d971678af10f3a9c44eaba5a}{set\+View}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cells_1_1_cell_a20a7f3904d124454a134c26b69d74a47}{view}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cells_1_1_cell_ab9e0ca15a39d2b7ff9073c71010fe63c}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cells_1_1_cell_a20a7f3904d124454a134c26b69d74a47}{view}} (?string \$view, array \$data=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_cells_1_1_cell_ac9383de3764066f7c9757c504175096c}{\$view}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Cell
+
+The base class that View Cells should extend. Provides extended features for managing/rendering a single cell\textquotesingle{}s contents.
+
+@function mount() 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_view_1_1_cells_1_1_cell_ab9e0ca15a39d2b7ff9073c71010fe63c}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cells_1_1_cell_ab9e0ca15a39d2b7ff9073c71010fe63c} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cells\textbackslash{}\+Cell\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Provides capability to render on string casting. \Hypertarget{class_code_igniter_1_1_view_1_1_cells_1_1_cell_a018835e57118165ea863163f9e503479}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}!render@{render}}
+\index{render@{render}!CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cells_1_1_cell_a018835e57118165ea863163f9e503479} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cells\textbackslash{}\+Cell\+::render (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Responsible for converting the view into HTML. Expected to be overridden by the child class in many occasions, but not all. \Hypertarget{class_code_igniter_1_1_view_1_1_cells_1_1_cell_af2499a09d971678af10f3a9c44eaba5a}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}!setView@{setView}}
+\index{setView@{setView}!CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{setView()}{setView()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cells_1_1_cell_af2499a09d971678af10f3a9c44eaba5a} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cells\textbackslash{}\+Cell\+::set\+View (\begin{DoxyParamCaption}\item[{string}]{\$view}{}\end{DoxyParamCaption})}
+
+Sets the view to use when rendered.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_view_1_1_cells_1_1_cell_a20a7f3904d124454a134c26b69d74a47}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}!view@{view}}
+\index{view@{view}!CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cells_1_1_cell_a20a7f3904d124454a134c26b69d74a47} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cells\textbackslash{}\+Cell\+::view (\begin{DoxyParamCaption}\item[{?string}]{\$view}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [protected]}}
+
+Actually renders the view, and returns the HTML. In order to provide access to public properties and methods from within the view, this method extracts \$data into the current scope and captures the output buffer instead of relying on the view service.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_view_1_1_cells_1_1_cell_ac9383de3764066f7c9757c504175096c}\index{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}!\$view@{\$view}}
+\index{\$view@{\$view}!CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell@{CodeIgniter\textbackslash{}View\textbackslash{}Cells\textbackslash{}Cell}}
+\doxysubsubsection{\texorpdfstring{\$view}{\$view}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_cells_1_1_cell_ac9383de3764066f7c9757c504175096c} 
+string Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Cells\textbackslash{}\+Cell\+::\$view = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+The name of the view to render. If empty, will be determined based on the cell class\textquotesingle{} name. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+View/\+Cells/Cell.\+php\end{DoxyCompactItemize}

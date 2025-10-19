@@ -1,0 +1,455 @@
+\doxysection{Code\+Igniter\textbackslash{}Validation\textbackslash{}Validation Class Reference}
+\hypertarget{class_code_igniter_1_1_validation_1_1_validation}{}\label{class_code_igniter_1_1_validation_1_1_validation}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Validation\textbackslash{}Validation\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Validation\textbackslash{}Validation\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a8192bb8cfad70dbaad91e5b57e6e1a85}{\+\_\+\+\_\+construct}} (\$config, \mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface}{Renderer\+Interface}} \$view)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a117e48e046a5e6ae02e7017403f74d84}{run}} (?array \$data=null, ?string \$group=null, \$db\+Group=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_aa85c19fa4259f3811f486acd155dc93c}{check}} (\$value, \$rules, array \$errors=\mbox{[}$\,$\mbox{]}, \$db\+Group=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a00272b708627852150375356368d91bc}{get\+Validated}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a3bcb4f7100d8f40047c22641dda5f146}{set\+Rule}} (string \$field, ?string \$label, \$rules, array \$errors=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a203dd0ba369ee2efce78c7753a1bbb06}{set\+Rules}} (array \$rules, array \$errors=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a8aa04304f65be5d0b6d9e6f97c7dedbe}{get\+Rules}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a1ba3fcc9bccafe049366ecc5f02b663b}{has\+Rule}} (string \$field)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a6a37b9fcf5d007b2901665972225f9c4}{get\+Rule\+Group}} (string \$group)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a7a3418d8cf3522dc8a6e7eca4f54d8d0}{set\+Rule\+Group}} (string \$group)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a81efaaae4f351efd018aa699378ae768}{list\+Errors}} (string \$template=\textquotesingle{}list\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_ac2210d8f6e166c249b9b8cc7502e9e98}{show\+Error}} (string \$field, string \$template=\textquotesingle{}single\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_aaf38b52221b30ff1c77736a117641c84}{load\+Rule\+Group}} (?string \$group=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_ae208ebf9c4dc601150b8be8dc287c87a}{has\+Error}} (string \$field)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a82348b4713cc08e49ddd769cc662fa8c}{get\+Error}} (?string \$field=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a8064c8095d293396ef21db5e8a0ac8bc}{get\+Errors}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_ad4dd52e3aa1728ba60a9f6f8cc03c59e}{set\+Error}} (string \$field, string \$error)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a8829052c1de17aa614198ca66db647ba}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a2e190a68e4aa4d78c0f9cc5c2397b076}{with\+Request}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a47fe4fcf6bb2dd47ff7303eb5f40e118}{get\+Error}} (string \$field)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_af6ba5ff196a7268aa93b28e1105f6d91}{load\+Rule\+Sets}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_aff95fca844cb18e7cc6b1690601ba6f0}{fill\+Placeholders}} (array \$rules, array \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a9119051a0726a1443415a34963b0b2fe}{get\+Error\+Message}} (string \$rule, string \$field, ?string \$label=null, ?string \$param=null, ?string \$value=null, ?string \$original\+Field=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_validation_a46a6546483cb1e0a50fca2c7d5909d55}{split\+Rules}} (string \$rules)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a5e30c2a671ad2ddf7596db47b44ef216}\label{class_code_igniter_1_1_validation_1_1_validation_a5e30c2a671ad2ddf7596db47b44ef216} 
+{\bfseries \$rule\+Set\+Files}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a043c7ccb5a97305b79488599c8b8ed33}\label{class_code_igniter_1_1_validation_1_1_validation_a043c7ccb5a97305b79488599c8b8ed33} 
+{\bfseries \$rule\+Set\+Instances} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a949d37a45b107e53f19886f335f0712b}\label{class_code_igniter_1_1_validation_1_1_validation_a949d37a45b107e53f19886f335f0712b} 
+{\bfseries \$rules} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a852ec3ca937fe0af9ce5e6488c08d888}\label{class_code_igniter_1_1_validation_1_1_validation_a852ec3ca937fe0af9ce5e6488c08d888} 
+{\bfseries \$data} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_aec966994fee41f7a6971ba4b055d780e}\label{class_code_igniter_1_1_validation_1_1_validation_aec966994fee41f7a6971ba4b055d780e} 
+{\bfseries \$validated} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a91da044756dc72ce7dc17f0826ba7909}\label{class_code_igniter_1_1_validation_1_1_validation_a91da044756dc72ce7dc17f0826ba7909} 
+{\bfseries \$errors} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_ac6165077f64fc6c923c4f70362229896}\label{class_code_igniter_1_1_validation_1_1_validation_ac6165077f64fc6c923c4f70362229896} 
+{\bfseries \$custom\+Errors} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a3bc131c3013eaeca29a7a87af3a4ecc9}\label{class_code_igniter_1_1_validation_1_1_validation_a3bc131c3013eaeca29a7a87af3a4ecc9} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a39cacc452a5a0ed13586249388331c89}\label{class_code_igniter_1_1_validation_1_1_validation_a39cacc452a5a0ed13586249388331c89} 
+{\bfseries \$view}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Validator
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a8192bb8cfad70dbaad91e5b57e6e1a85}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a8192bb8cfad70dbaad91e5b57e6e1a85} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface}{Renderer\+Interface}}}]{\$view}{}\end{DoxyParamCaption})}
+
+Validation constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Validation\+Config & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_aa85c19fa4259f3811f486acd155dc93c}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!check@{check}}
+\index{check@{check}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_aa85c19fa4259f3811f486acd155dc93c} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::check (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$rules}{, }\item[{array}]{\$errors}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$db\+Group}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Runs the validation process, returning true or false determining whether validation was successful or not.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | bool | float | int | object | string | null & {\em \$value} & The data to validate. \\
+\hline
+array | string & {\em \$rules} & The validation rules. \\
+\hline
+ & {\em list$<$string$>$} & \$errors The custom error message. \\
+\hline
+string | null & {\em \$db\+Group} & The database group to use. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a1073679cf8bf7cb53bc8d576221f5881}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_aff95fca844cb18e7cc6b1690601ba6f0}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!fillPlaceholders@{fillPlaceholders}}
+\index{fillPlaceholders@{fillPlaceholders}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{fillPlaceholders()}{fillPlaceholders()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_aff95fca844cb18e7cc6b1690601ba6f0} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::fill\+Placeholders (\begin{DoxyParamCaption}\item[{array}]{\$rules}{, }\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace any placeholders within the rules with the values that match the \textquotesingle{}key\textquotesingle{} of any properties being set. For example, if we had the following \$data array\+:
+
+\mbox{[} \textquotesingle{}id\textquotesingle{} =\texorpdfstring{$>$}{>} 13 \mbox{]}
+
+and the following rule\+:
+
+\textquotesingle{}is\+\_\+unique\mbox{[}users,email,id,\{id\}\mbox{]}\textquotesingle{}
+
+The value of \{id\} would be replaced with the actual id in the form data\+:
+
+\textquotesingle{}is\+\_\+unique\mbox{[}users,email,id,13\mbox{]}\textquotesingle{} \Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a82348b4713cc08e49ddd769cc662fa8c}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!getError@{getError}}
+\index{getError@{getError}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{getError()}{getError()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a82348b4713cc08e49ddd769cc662fa8c} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::get\+Error (\begin{DoxyParamCaption}\item[{?string}]{\$field}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the error(s) for a specified \$field (or empty string if not set). \Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a9119051a0726a1443415a34963b0b2fe}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!getErrorMessage@{getErrorMessage}}
+\index{getErrorMessage@{getErrorMessage}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{getErrorMessage()}{getErrorMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a9119051a0726a1443415a34963b0b2fe} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::get\+Error\+Message (\begin{DoxyParamCaption}\item[{string}]{\$rule}{, }\item[{string}]{\$field}{, }\item[{?string}]{\$label}{ = {\ttfamily null}, }\item[{?string}]{\$param}{ = {\ttfamily null}, }\item[{?string}]{\$value}{ = {\ttfamily null}, }\item[{?string}]{\$original\+Field}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Attempts to find the appropriate error message
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string | null & {\em \$label} & \\
+\hline
+string | null & {\em \$value} & The value that caused the validation to fail. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a8064c8095d293396ef21db5e8a0ac8bc}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!getErrors@{getErrors}}
+\index{getErrors@{getErrors}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{getErrors()}{getErrors()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a8064c8095d293396ef21db5e8a0ac8bc} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::get\+Errors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the array of errors that were encountered during a run() call. The array should be in the following format\+:
+
+\mbox{[} \textquotesingle{}field1\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}error message\textquotesingle{}, \textquotesingle{}field2\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}error message\textquotesingle{}, \mbox{]}
+
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$
+\end{DoxyReturn}
+@code\+Coverage\+Ignore 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a278b6e9da1b145f2497b7685e6229983}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a6a37b9fcf5d007b2901665972225f9c4}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!getRuleGroup@{getRuleGroup}}
+\index{getRuleGroup@{getRuleGroup}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{getRuleGroup()}{getRuleGroup()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a6a37b9fcf5d007b2901665972225f9c4} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::get\+Rule\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{}\end{DoxyParamCaption})}
+
+Get rule group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & Group.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ Rule group.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Validation\+Exception} & If group not found. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_aaeaea525b3ecce13f91b8e41ac2b9799}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a8aa04304f65be5d0b6d9e6f97c7dedbe}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!getRules@{getRules}}
+\index{getRules@{getRules}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{getRules()}{getRules()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a8aa04304f65be5d0b6d9e6f97c7dedbe} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::get\+Rules (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all of the rules currently defined. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a7f8bd557476932140e7b16a569ee94c2}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a00272b708627852150375356368d91bc}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!getValidated@{getValidated}}
+\index{getValidated@{getValidated}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{getValidated()}{getValidated()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a00272b708627852150375356368d91bc} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::get\+Validated (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the actual validated data. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a214ce6849045c47b455c8f4ba7203e5c}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_ae208ebf9c4dc601150b8be8dc287c87a}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!hasError@{hasError}}
+\index{hasError@{hasError}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{hasError()}{hasError()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_ae208ebf9c4dc601150b8be8dc287c87a} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::has\+Error (\begin{DoxyParamCaption}\item[{string}]{\$field}{}\end{DoxyParamCaption})}
+
+Checks to see if an error exists for the given field. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_afe5f88cd25680ca7745c421a80defa60}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a1ba3fcc9bccafe049366ecc5f02b663b}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!hasRule@{hasRule}}
+\index{hasRule@{hasRule}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{hasRule()}{hasRule()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a1ba3fcc9bccafe049366ecc5f02b663b} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::has\+Rule (\begin{DoxyParamCaption}\item[{string}]{\$field}{}\end{DoxyParamCaption})}
+
+Checks to see if the rule for key \$field has been set or not. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_aa37e75baeb1207fc077e2184c46c5d0a}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a81efaaae4f351efd018aa699378ae768}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!listErrors@{listErrors}}
+\index{listErrors@{listErrors}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{listErrors()}{listErrors()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a81efaaae4f351efd018aa699378ae768} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::list\+Errors (\begin{DoxyParamCaption}\item[{string}]{\$template}{ = {\ttfamily \textquotesingle{}list\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the rendered HTML of the errors as defined in \$template.
+
+You can also use validation\+\_\+list\+\_\+errors() in Form helper. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a47521ad4f747bbcc758b510e455ce699}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_aaf38b52221b30ff1c77736a117641c84}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!loadRuleGroup@{loadRuleGroup}}
+\index{loadRuleGroup@{loadRuleGroup}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{loadRuleGroup()}{loadRuleGroup()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_aaf38b52221b30ff1c77736a117641c84} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::load\+Rule\+Group (\begin{DoxyParamCaption}\item[{?string}]{\$group}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Loads custom rule groups (if set) into the current rules.
+
+Rules can be pre-\/defined in \doxylink{namespace_config}{Config}\textbackslash{}\+Validation and can be any name, but must all still be an array of the same format used with set\+Rules(). Additionally, check for \{group\}\+\_\+errors for an array of custom error messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string | null & {\em \$group} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$int, array$>$ \mbox{[}rules, custom\+Errors\mbox{]}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Validation\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a8908185e8ba21fb95ccabf0001f47e0c}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_af6ba5ff196a7268aa93b28e1105f6d91}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!loadRuleSets@{loadRuleSets}}
+\index{loadRuleSets@{loadRuleSets}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{loadRuleSets()}{loadRuleSets()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_af6ba5ff196a7268aa93b28e1105f6d91} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::load\+Rule\+Sets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Loads all of the rulesets classes that have been defined in the \doxylink{namespace_config}{Config}\textbackslash{}\+Validation and stores them locally so we can use them.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a8829052c1de17aa614198ca66db647ba}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!reset@{reset}}
+\index{reset@{reset}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a8829052c1de17aa614198ca66db647ba} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Resets the class to a blank slate. Should be called whenever you need to process more than one array. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_adff8201fe8df3af8fec41b17e1074e71}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a117e48e046a5e6ae02e7017403f74d84}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a117e48e046a5e6ae02e7017403f74d84} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::run (\begin{DoxyParamCaption}\item[{?array}]{\$data}{ = {\ttfamily null}, }\item[{?string}]{\$group}{ = {\ttfamily null}, }\item[{}]{\$db\+Group}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Runs the validation process, returning true/false determining whether validation was successful or not.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$data} & The array of data to validate. \\
+\hline
+string | null & {\em \$group} & The predefined group of rules to apply. \\
+\hline
+array | Base\+Connection | non-\/empty-\/string | null & {\em \$db\+Group} & The database group to use. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_af64b76c49978fe46f07292c1e0c750a6}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_ad4dd52e3aa1728ba60a9f6f8cc03c59e}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!setError@{setError}}
+\index{setError@{setError}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{setError()}{setError()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_ad4dd52e3aa1728ba60a9f6f8cc03c59e} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::set\+Error (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{string}]{\$error}{}\end{DoxyParamCaption})}
+
+Sets the error for a specific field. Used by custom validation methods. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_aaeb89a13e074cae5b085c283b0111be5}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a3bcb4f7100d8f40047c22641dda5f146}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!setRule@{setRule}}
+\index{setRule@{setRule}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{setRule()}{setRule()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a3bcb4f7100d8f40047c22641dda5f146} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::set\+Rule (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{?string}]{\$label}{, }\item[{}]{\$rules}{, }\item[{array}]{\$errors}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Sets (or adds) an individual rule and custom error messages for a single field.
+
+The custom error message should be just the messages that apply to this field, like so\+: \mbox{[} \textquotesingle{}rule1\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}message1\textquotesingle{}, \textquotesingle{}rule2\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}message2\textquotesingle{}, \mbox{]}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$rules} & The validation rules. \\
+\hline
+array & {\em \$errors} & The custom error message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Type\+Error} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_af51ac62c19014acd7e62c11bcbd1c662}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a7a3418d8cf3522dc8a6e7eca4f54d8d0}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!setRuleGroup@{setRuleGroup}}
+\index{setRuleGroup@{setRuleGroup}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{setRuleGroup()}{setRuleGroup()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a7a3418d8cf3522dc8a6e7eca4f54d8d0} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::set\+Rule\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{}\end{DoxyParamCaption})}
+
+Set rule group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$group} & Group.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Validation\+Exception} & If group not found. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_aee09d4820429edb0833f2719b778981a}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a203dd0ba369ee2efce78c7753a1bbb06}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!setRules@{setRules}}
+\index{setRules@{setRules}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{setRules()}{setRules()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a203dd0ba369ee2efce78c7753a1bbb06} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::set\+Rules (\begin{DoxyParamCaption}\item[{array}]{\$rules}{, }\item[{array}]{\$errors}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Stores the rules that should be used to validate the items.
+
+Rules should be an array formatted like\+: \mbox{[} \textquotesingle{}field\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}rule1\texorpdfstring{$\vert$}{|}rule2\textquotesingle{} \mbox{]}
+
+The \$errors array should be formatted like\+: \mbox{[} \textquotesingle{}field\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[} \textquotesingle{}rule1\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}message1\textquotesingle{}, \textquotesingle{}rule2\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}message2\textquotesingle{}, \mbox{]}, \mbox{]}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$errors} & An array of custom error messages \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_ac83b73882ee1838c06526da46806aa2f}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_ac2210d8f6e166c249b9b8cc7502e9e98}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!showError@{showError}}
+\index{showError@{showError}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{showError()}{showError()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_ac2210d8f6e166c249b9b8cc7502e9e98} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::show\+Error (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{string}]{\$template}{ = {\ttfamily \textquotesingle{}single\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Displays a single error in formatted HTML as defined in the \$template view.
+
+You can also use validation\+\_\+show\+\_\+error() in Form helper. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface_a8a28f985ae7ec02d990b6c91699c5d53}{Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_validation_1_1_validation_a46a6546483cb1e0a50fca2c7d5909d55}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}!splitRules@{splitRules}}
+\index{splitRules@{splitRules}!CodeIgniter\textbackslash{}Validation\textbackslash{}Validation@{CodeIgniter\textbackslash{}Validation\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{splitRules()}{splitRules()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_validation_a46a6546483cb1e0a50fca2c7d5909d55} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Validation\+::split\+Rules (\begin{DoxyParamCaption}\item[{string}]{\$rules}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Split rules string by pipe operator. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Validation/Validation.\+php\end{DoxyCompactItemize}

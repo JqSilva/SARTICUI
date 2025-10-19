@@ -1,0 +1,89 @@
+\doxysection{Code\+Igniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}Publisher\+Exception Class Reference}
+\hypertarget{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception}{}\label{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception}\index{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException@{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}Publisher\+Exception\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}Publisher\+Exception\+:
+% FIG 1
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_a85a827eda5dc20734c62615f2197f42b}{for\+Collision}} (string \$from, string \$to)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_aecfdc46786806b5124d602274523cc67}{for\+Destination\+Not\+Allowed}} (string \$destination)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_a41e4c3bc3d683923def196e263c473a9}{for\+File\+Not\+Allowed}} (string \$file, string \$directory, string \$pattern)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_exceptions_1_1_framework_exception}{Code\+Igniter\textbackslash{}\+Exceptions\textbackslash{}\+Framework\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_exceptions_1_1_framework_exception_a7b500b92538df5243f90d681f6a3ed33}{for\+Enabled\+Zlib\+Output\+Compression}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_exceptions_1_1_framework_exception_a01773fe334a8b747b91974ba631d989b}{for\+Invalid\+File}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_exceptions_1_1_framework_exception_a75acff2f1539a4cfe5525014016bd660}{for\+Invalid\+Directory}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_exceptions_1_1_framework_exception_af72736267e68c16b5e103ecfbf80b192}{for\+Copy\+Error}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_exceptions_1_1_framework_exception_a071879edf0011ce6f5a031ec45ea602d}{for\+Missing\+Extension}} (string \$extension)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_exceptions_1_1_framework_exception_a77ff71a5602f50589ec32e4aa039b60f}{for\+No\+Handlers}} (string \$class)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_exceptions_1_1_framework_exception_aff9995356e1f6b65ec9cc7bc220a6eef}{for\+Fabricator\+Create\+Failed}} (string \$table, string \$reason)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Publisher Exception Class
+
+Handles exceptions related to actions taken by a Publisher. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_a85a827eda5dc20734c62615f2197f42b}\index{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException@{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException}!forCollision@{forCollision}}
+\index{forCollision@{forCollision}!CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException@{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException}}
+\doxysubsubsection{\texorpdfstring{forCollision()}{forCollision()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_a85a827eda5dc20734c62615f2197f42b} 
+static Code\+Igniter\textbackslash{}\+Publisher\textbackslash{}\+Exceptions\textbackslash{}\+Publisher\+Exception\+::for\+Collision (\begin{DoxyParamCaption}\item[{string}]{\$from}{, }\item[{string}]{\$to}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Throws when a file should be overwritten yet cannot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & The source file \\
+\hline
+string & {\em \$to} & The destination file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_aecfdc46786806b5124d602274523cc67}\index{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException@{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException}!forDestinationNotAllowed@{forDestinationNotAllowed}}
+\index{forDestinationNotAllowed@{forDestinationNotAllowed}!CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException@{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException}}
+\doxysubsubsection{\texorpdfstring{forDestinationNotAllowed()}{forDestinationNotAllowed()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_aecfdc46786806b5124d602274523cc67} 
+static Code\+Igniter\textbackslash{}\+Publisher\textbackslash{}\+Exceptions\textbackslash{}\+Publisher\+Exception\+::for\+Destination\+Not\+Allowed (\begin{DoxyParamCaption}\item[{string}]{\$destination}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Throws when given a destination that is not in the list of allowed directories.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_a41e4c3bc3d683923def196e263c473a9}\index{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException@{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException}!forFileNotAllowed@{forFileNotAllowed}}
+\index{forFileNotAllowed@{forFileNotAllowed}!CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException@{CodeIgniter\textbackslash{}Publisher\textbackslash{}Exceptions\textbackslash{}PublisherException}}
+\doxysubsubsection{\texorpdfstring{forFileNotAllowed()}{forFileNotAllowed()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_publisher_1_1_exceptions_1_1_publisher_exception_a41e4c3bc3d683923def196e263c473a9} 
+static Code\+Igniter\textbackslash{}\+Publisher\textbackslash{}\+Exceptions\textbackslash{}\+Publisher\+Exception\+::for\+File\+Not\+Allowed (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{string}]{\$directory}{, }\item[{string}]{\$pattern}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Throws when a file fails to match the allowed pattern for its destination.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Publisher/\+Exceptions/Publisher\+Exception.\+php\end{DoxyCompactItemize}

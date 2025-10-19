@@ -1,0 +1,92 @@
+\doxysection{tests Directory Reference}
+\hypertarget{dir_59425e443f801f1f2fd8bbe4959a3ccf}{}\label{dir_59425e443f801f1f2fd8bbe4959a3ccf}\index{tests Directory Reference@{tests Directory Reference}}
+\doxysubsubsection*{Directories}
+\begin{DoxyCompactItemize}
+\item 
+directory \mbox{\hyperlink{dir_75d760846aa40227f00e44530a510c90}{database}}
+\item 
+directory \mbox{\hyperlink{dir_aa51a67f73f09ae701cdd7cc6f71d2a5}{session}}
+\item 
+directory \mbox{\hyperlink{dir_7711e90abc3d4bd55823d9013a185d04}{unit}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is the quick-\/start to \doxylink{namespace_code_igniter}{Code\+Igniter} testing. Its intent is to describe what it takes to set up your application and get it ready to run unit tests. It is not intended to be a full description of the test features that you can use to test your application. Those details can be found in the documentation.\hypertarget{README.md_autotoc_md224}{}\doxysubsection{\texorpdfstring{Resources}{Resources}}\label{README.md_autotoc_md224}
+
+\begin{DoxyItemize}
+\item \href{https://codeigniter.com/user_guide/testing/index.html}{\texttt{ Code\+Igniter 4 User Guide on Testing}}
+\item \href{https://phpunit.de/documentation.html}{\texttt{ PHPUnit docs}}
+\item \href{https://forum.codeigniter.com/showthread.php?tid=81830}{\texttt{ Any tutorials on Unit testing in CI4?}}
+\end{DoxyItemize}\hypertarget{README.md_autotoc_md225}{}\doxysubsection{\texorpdfstring{Requirements}{Requirements}}\label{README.md_autotoc_md225}
+It is recommended to use the latest version of PHPUnit. At the time of this writing, we are running version 9.\+x. Support for this has been built into the {\bfseries{composer.\+json}} file that ships with \doxylink{namespace_code_igniter}{Code\+Igniter} and can easily be installed via \href{https://getcomposer.org/}{\texttt{ Composer}} if you don\textquotesingle{}t already have it installed globally.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ composer\ install}
+
+\end{DoxyCode}
+
+
+If running under mac\+OS or Linux, you can create a symbolic link to make running tests a touch nicer.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ ln\ -\/s\ ./vendor/bin/phpunit\ ./phpunit}
+
+\end{DoxyCode}
+
+
+You also need to install \href{https://xdebug.org/docs/install}{\texttt{ XDebug}} in order for code coverage to be calculated successfully. After installing {\ttfamily XDebug}, you must add {\ttfamily xdebug.\+mode=coverage} in the {\bfseries{php.\+ini}} file to enable code coverage.\hypertarget{README.md_autotoc_md226}{}\doxysubsection{\texorpdfstring{Setting Up}{Setting Up}}\label{README.md_autotoc_md226}
+A number of the tests use a running database. In order to set up the database edit the details for the {\ttfamily tests} group in {\bfseries{app/\+Config/\+Database.\+php}} or {\bfseries{.env}}. Make sure that you provide a database engine that is currently running on your machine. More details on a test database setup are in the \href{https://codeigniter.com/user_guide/testing/database.html}{\texttt{ Testing Your Database}} section of the documentation.\hypertarget{README.md_autotoc_md227}{}\doxysubsection{\texorpdfstring{Running the tests}{Running the tests}}\label{README.md_autotoc_md227}
+The entire test suite can be run by simply typing one command-\/line command from the main directory.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ ./phpunit}
+
+\end{DoxyCode}
+
+
+If you are using Windows, use the following command.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ vendor\(\backslash\)bin\(\backslash\)phpunit}
+
+\end{DoxyCode}
+
+
+You can limit tests to those within a single test directory by specifying the directory name after phpunit.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ ./phpunit\ app/Models}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md228}{}\doxysubsection{\texorpdfstring{Generating Code Coverage}{Generating Code Coverage}}\label{README.md_autotoc_md228}
+To generate coverage information, including HTML reports you can view in your browser, you can use the following command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{>\ ./phpunit\ -\/-\/colors\ -\/-\/coverage-\/text=tests/coverage.txt\ -\/-\/coverage-\/html=tests/coverage/\ -\/d\ memory\_limit=1024m}
+
+\end{DoxyCode}
+
+
+This runs all of the tests again collecting information about how many lines, functions, and files are tested. It also reports the percentage of the code that is covered by tests. It is collected in two formats\+: a simple text file that provides an overview as well as a comprehensive collection of HTML files that show the status of every line of code in the project.
+
+The text file can be found at {\bfseries{tests/coverage.\+txt}}. The HTML files can be viewed by opening {\bfseries{tests/coverage/index.\+html}} in your favorite browser.\hypertarget{README.md_autotoc_md229}{}\doxysubsection{\texorpdfstring{PHPUnit XML Configuration}{PHPUnit XML Configuration}}\label{README.md_autotoc_md229}
+The repository has a {\ttfamily phpunit.\+xml.\+dist} file in the project root that\textquotesingle{}s used for PHPUnit configuration. This is used to provide a default configuration if you do not have your own configuration file in the project root.
+
+The normal practice would be to copy {\ttfamily phpunit.\+xml.\+dist} to {\ttfamily phpunit.\+xml} (which is git ignored), and to tailor it as you see fit. For instance, you might wish to exclude database tests, or automatically generate HTML code coverage reports.\hypertarget{README.md_autotoc_md230}{}\doxysubsection{\texorpdfstring{Test Cases}{Test Cases}}\label{README.md_autotoc_md230}
+Every test needs a {\itshape test case}, or class that your tests extend. \doxylink{namespace_code_igniter}{Code\+Igniter} 4 provides one class that you may use directly\+:
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{namespace_code_igniter}{Code\+Igniter}\textbackslash{}Test\textbackslash{}CIUnit\+Test\+Case}
+\end{DoxyItemize}
+
+Most of the time you will want to write your own test cases that extend {\ttfamily CIUnit\+Test\+Case} to hold functions and services common to your test suites.\hypertarget{README.md_autotoc_md231}{}\doxysubsection{\texorpdfstring{Creating Tests}{Creating Tests}}\label{README.md_autotoc_md231}
+All tests go in the {\bfseries{tests/}} directory. Each test file is a class that extends a {\bfseries{Test Case}} (see above) and contains methods for the individual tests. These method names must start with the word "{}test"{} and should have descriptive names for precisely what they are testing\+: {\ttfamily test\+User\+Can\+Modify\+File()} {\ttfamily test\+Output\+Color\+Matches\+Input()} {\ttfamily test\+Is\+Logged\+In\+Fails\+With\+Invalid\+User()}
+
+Writing tests is an art, and there are many resources available to help learn how. Review the links above and always pay attention to your code coverage.\hypertarget{README.md_autotoc_md232}{}\doxysubsubsection{\texorpdfstring{Database Tests}{Database Tests}}\label{README.md_autotoc_md232}
+Tests can include migrating, seeding, and testing against a mock or live database. Be sure to modify the test case (or create your own) to point to your seed and migrations and include any additional steps to be run before tests in the {\ttfamily set\+Up()} method. See \href{https://codeigniter.com/user_guide/testing/database.html}{\texttt{ Testing Your Database}} for details. 

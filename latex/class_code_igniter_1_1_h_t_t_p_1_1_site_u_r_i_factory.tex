@@ -1,0 +1,62 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Site\+URIFactory Class Reference}
+\hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory}{}\label{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory@{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_abbb5e85933a42938fd22577d9ad4eac1}\label{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_abbb5e85933a42938fd22577d9ad4eac1} 
+{\bfseries \+\_\+\+\_\+construct} (private readonly \mbox{\hyperlink{class_config_1_1_app}{App}} \$app\+Config, private readonly \mbox{\hyperlink{class_code_igniter_1_1_superglobals}{Superglobals}} \$superglobals)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_a02e1b79023da8c09afc53f07c269b512}{create\+From\+Globals}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_a91f51488e201d44617e90da41a50af9e}{create\+From\+String}} (string \$uri)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_aac487960b017475917b7ccbf34fe2a92}{detect\+Route\+Path}} (string \$protocol=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates Site\+URI using superglobals.
+
+This class also updates superglobal \$\+\_\+\+SERVER and \$\+\_\+\+GET.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Site\+URIFactory\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_a02e1b79023da8c09afc53f07c269b512}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory@{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory}!createFromGlobals@{createFromGlobals}}
+\index{createFromGlobals@{createFromGlobals}!CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory@{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory}}
+\doxysubsubsection{\texorpdfstring{createFromGlobals()}{createFromGlobals()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_a02e1b79023da8c09afc53f07c269b512} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Site\+URIFactory\+::create\+From\+Globals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create the current URI object from superglobals.
+
+This method updates superglobal \$\+\_\+\+SERVER and \$\+\_\+\+GET. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_a91f51488e201d44617e90da41a50af9e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory@{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory}!createFromString@{createFromString}}
+\index{createFromString@{createFromString}!CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory@{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory}}
+\doxysubsubsection{\texorpdfstring{createFromString()}{createFromString()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_a91f51488e201d44617e90da41a50af9e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Site\+URIFactory\+::create\+From\+String (\begin{DoxyParamCaption}\item[{string}]{\$uri}{}\end{DoxyParamCaption})}
+
+Create the Site\+URI object from URI string. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_aac487960b017475917b7ccbf34fe2a92}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory@{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory}!detectRoutePath@{detectRoutePath}}
+\index{detectRoutePath@{detectRoutePath}!CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory@{CodeIgniter\textbackslash{}HTTP\textbackslash{}SiteURIFactory}}
+\doxysubsubsection{\texorpdfstring{detectRoutePath()}{detectRoutePath()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_site_u_r_i_factory_aac487960b017475917b7ccbf34fe2a92} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Site\+URIFactory\+::detect\+Route\+Path (\begin{DoxyParamCaption}\item[{string}]{\$protocol}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Detects the current URI path relative to base\+URL based on the URIProtocol \doxylink{namespace_config}{Config} setting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$protocol} & URIProtocol\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The route path 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/Site\+URIFactory.\+php\end{DoxyCompactItemize}

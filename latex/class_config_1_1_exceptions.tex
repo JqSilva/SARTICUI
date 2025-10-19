@@ -1,0 +1,120 @@
+\doxysection{Config\textbackslash{}Exceptions Class Reference}
+\hypertarget{class_config_1_1_exceptions}{}\label{class_config_1_1_exceptions}\index{Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}}
+
+
+Inheritance diagram for Config\textbackslash{}Exceptions\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Exceptions\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_config_1_1_exceptions_a1a6d0cf478f8bd2cd5f14609bc61088d}\label{class_config_1_1_exceptions_a1a6d0cf478f8bd2cd5f14609bc61088d} 
+{\bfseries handler} (int \$status\+Code, Throwable \$exception)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_config_1_1_exceptions_a16a0e1dbb2aa6a475fe445052c7c9f7a}{\$log}} = true
+\item 
+\Hypertarget{class_config_1_1_exceptions_ab151caa2b0802a9ca960ea0f6b313267}\label{class_config_1_1_exceptions_ab151caa2b0802a9ca960ea0f6b313267} 
+array {\bfseries \$ignore\+Codes} = \mbox{[}404\mbox{]}
+\item 
+string \mbox{\hyperlink{class_config_1_1_exceptions_a4bb1fd0e3c9d55b2a6a9d2089a022199}{\$error\+View\+Path}} = APPPATH . \textquotesingle{}\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_1_1_collectors_1_1_views}{Views}}/errors\textquotesingle{}
+\item 
+\Hypertarget{class_config_1_1_exceptions_ae1c2ffba1387e25d5ae8f9138e86d8ab}\label{class_config_1_1_exceptions_ae1c2ffba1387e25d5ae8f9138e86d8ab} 
+array {\bfseries \$sensitive\+Data\+In\+Trace} = \mbox{[}$\,$\mbox{]}
+\item 
+bool \mbox{\hyperlink{class_config_1_1_exceptions_ae7bbec1099e8d6f975c2ec9a696e3323}{\$log\+Deprecations}} = true
+\item 
+string \mbox{\hyperlink{class_config_1_1_exceptions_afeace51c43ab5421bdaf3285256fadad}{\$deprecation\+Log\+Level}} = Log\+Level\+::\+WARNING
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Setup how the exception handler works. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_exceptions_afeace51c43ab5421bdaf3285256fadad}\index{Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}!\$deprecationLogLevel@{\$deprecationLogLevel}}
+\index{\$deprecationLogLevel@{\$deprecationLogLevel}!Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{\$deprecationLogLevel}{\$deprecationLogLevel}}
+{\footnotesize\ttfamily \label{class_config_1_1_exceptions_afeace51c43ab5421bdaf3285256fadad} 
+string Config\textbackslash{}\+Exceptions\+::\$deprecation\+Log\+Level = Log\+Level\+::\+WARNING}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_exceptions_autotoc_md91}{}\doxysubsubsection{\texorpdfstring{LOG LEVEL THRESHOLD FOR DEPRECATIONS}{LOG LEVEL THRESHOLD FOR DEPRECATIONS}}\label{class_config_1_1_exceptions_autotoc_md91}
+If {\ttfamily \$log\+Deprecations} is set to {\ttfamily true}, this sets the log level to which the deprecation will be logged. This should be one of the log levels recognized by PSR-\/3.
+
+The related {\ttfamily \doxylink{namespace_config}{Config}\textbackslash{}Logger\+:\+:\$threshold} should be adjusted, if needed, to capture logging the deprecations. \Hypertarget{class_config_1_1_exceptions_a4bb1fd0e3c9d55b2a6a9d2089a022199}\index{Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}!\$errorViewPath@{\$errorViewPath}}
+\index{\$errorViewPath@{\$errorViewPath}!Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{\$errorViewPath}{\$errorViewPath}}
+{\footnotesize\ttfamily \label{class_config_1_1_exceptions_a4bb1fd0e3c9d55b2a6a9d2089a022199} 
+string Config\textbackslash{}\+Exceptions\+::\$error\+View\+Path = APPPATH . \textquotesingle{}\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_1_1_collectors_1_1_views}{Views}}/errors\textquotesingle{}}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_exceptions_autotoc_md85}{}\doxysubsubsection{\texorpdfstring{Error Views Path}{Error Views Path}}\label{class_config_1_1_exceptions_autotoc_md85}
+This is the path to the directory that contains the \textquotesingle{}cli\textquotesingle{} and \textquotesingle{}html\textquotesingle{} directories that hold the views used to generate errors.
+
+Default\+: APPPATH.\textquotesingle{}Views/errors\textquotesingle{} \Hypertarget{class_config_1_1_exceptions_a16a0e1dbb2aa6a475fe445052c7c9f7a}\index{Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}!\$log@{\$log}}
+\index{\$log@{\$log}!Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{\$log}{\$log}}
+{\footnotesize\ttfamily \label{class_config_1_1_exceptions_a16a0e1dbb2aa6a475fe445052c7c9f7a} 
+bool Config\textbackslash{}\+Exceptions\+::\$log = true}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_exceptions_autotoc_md81}{}\doxysubsubsection{\texorpdfstring{LOG EXCEPTIONS?}{LOG EXCEPTIONS?}}\label{class_config_1_1_exceptions_autotoc_md81}
+If true, then exceptions will be logged through Services\+::\+Log.
+
+Default\+: true \Hypertarget{class_config_1_1_exceptions_ae7bbec1099e8d6f975c2ec9a696e3323}\index{Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}!\$logDeprecations@{\$logDeprecations}}
+\index{\$logDeprecations@{\$logDeprecations}!Config\textbackslash{}Exceptions@{Config\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{\$logDeprecations}{\$logDeprecations}}
+{\footnotesize\ttfamily \label{class_config_1_1_exceptions_ae7bbec1099e8d6f975c2ec9a696e3323} 
+bool Config\textbackslash{}\+Exceptions\+::\$log\+Deprecations = true}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_exceptions_autotoc_md89}{}\doxysubsubsection{\texorpdfstring{WHETHER TO THROW AN EXCEPTION ON DEPRECATED ERRORS}{WHETHER TO THROW AN EXCEPTION ON DEPRECATED ERRORS}}\label{class_config_1_1_exceptions_autotoc_md89}
+If set to {\ttfamily true}, DEPRECATED errors are only logged and no exceptions are thrown. This option also works for user deprecations. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Exceptions.\+php\end{DoxyCompactItemize}

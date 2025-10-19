@@ -1,0 +1,149 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}File\+Collection Class Reference}
+\hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection}{}\label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a9a44708e9799eae9d7fe973c006a6b2c}{all}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a26420af3a0c0af9d6635aee555b43f96}{get\+File}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_ab0b17b9bad342600d9b4d188ef7a0d43}{get\+File\+Multiple}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a51ec300fa919a90946df17540b66c39c}{has\+File}} (string \$file\+ID)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_ad16a502bc9c41e69ee4604d635fa0f25}{populate\+Files}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a352b1a24eda466035f3456eb35d65455}{create\+File\+Object}} (array \$array)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a42ed8a0cb1f38e18dd52cd6b2f3ca7e6}{fix\+Files\+Array}} (array \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_afd849337c96ce08293adf06a0760972d}{get\+Value\+Dot\+Notation\+Syntax}} (array \$index, array \$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a0efabf90ecbdb8ec72c7f80b17c32d34}\label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a0efabf90ecbdb8ec72c7f80b17c32d34} 
+{\bfseries \$files}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class File\+Collection
+
+Provides easy access to uploaded files for a request.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a9a44708e9799eae9d7fe973c006a6b2c}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}!all@{all}}
+\index{all@{all}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a9a44708e9799eae9d7fe973c006a6b2c} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an array of all uploaded files that were found. Each element in the array will be an instance of Uploaded\+File. The key of each element will be the client filename.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a352b1a24eda466035f3456eb35d65455}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}!createFileObject@{createFileObject}}
+\index{createFileObject@{createFileObject}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{createFileObject()}{createFileObject()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a352b1a24eda466035f3456eb35d65455} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::create\+File\+Object (\begin{DoxyParamCaption}\item[{array}]{\$array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Given a file array, will create Uploaded\+File instances. Will loop over an array and create objects for each.
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Uploaded\+File$>$\texorpdfstring{$\vert$}{|}\+Uploaded\+File 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a42ed8a0cb1f38e18dd52cd6b2f3ca7e6}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}!fixFilesArray@{fixFilesArray}}
+\index{fixFilesArray@{fixFilesArray}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{fixFilesArray()}{fixFilesArray()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a42ed8a0cb1f38e18dd52cd6b2f3ca7e6} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::fix\+Files\+Array (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reformats the odd \$\+\_\+\+FILES array into something much more like we would expect, with each object having its own array.
+
+Thanks to Jack Sleight on the PHP Manual page for the basis of this method.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/manual/en/reserved.variables.files.php\#118294}{\texttt{ http\+://php.\+net/manual/en/reserved.\+variables.\+files.\+php\#118294}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a26420af3a0c0af9d6635aee555b43f96}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}!getFile@{getFile}}
+\index{getFile@{getFile}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{getFile()}{getFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a26420af3a0c0af9d6635aee555b43f96} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::get\+File (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Attempts to get a single file from the collection of uploaded files.
+
+\begin{DoxyReturn}{Returns}
+Uploaded\+File\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_ab0b17b9bad342600d9b4d188ef7a0d43}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}!getFileMultiple@{getFileMultiple}}
+\index{getFileMultiple@{getFileMultiple}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{getFileMultiple()}{getFileMultiple()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_ab0b17b9bad342600d9b4d188ef7a0d43} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::get\+File\+Multiple (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Verify if a file exist in the collection of uploaded files and is have been uploaded with multiple option.
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Uploaded\+File$>$\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_afd849337c96ce08293adf06a0760972d}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}!getValueDotNotationSyntax@{getValueDotNotationSyntax}}
+\index{getValueDotNotationSyntax@{getValueDotNotationSyntax}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{getValueDotNotationSyntax()}{getValueDotNotationSyntax()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_afd849337c96ce08293adf06a0760972d} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::get\+Value\+Dot\+Notation\+Syntax (\begin{DoxyParamCaption}\item[{array}]{\$index}{, }\item[{array}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Navigate through an array looking for a particular index
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$index} & The index sequence we are navigating down \\
+\hline
+array & {\em \$value} & The portion of the array to process\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$\+Uploaded\+File$>$\texorpdfstring{$\vert$}{|}\+Uploaded\+File\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a51ec300fa919a90946df17540b66c39c}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}!hasFile@{hasFile}}
+\index{hasFile@{hasFile}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{hasFile()}{hasFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_a51ec300fa919a90946df17540b66c39c} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::has\+File (\begin{DoxyParamCaption}\item[{string}]{\$file\+ID}{}\end{DoxyParamCaption})}
+
+Checks whether an uploaded file with name \$file\+ID exists in this request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+ID} & The name of the uploaded file (from the input) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_ad16a502bc9c41e69ee4604d635fa0f25}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}!populateFiles@{populateFiles}}
+\index{populateFiles@{populateFiles}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{populateFiles()}{populateFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_file_collection_ad16a502bc9c41e69ee4604d635fa0f25} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::populate\+Files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Taking information from the \$\+\_\+\+FILES array, it creates an instance of Uploaded\+File for each one, saving the results to this-\/\texorpdfstring{$>$}{>}files.
+
+Called by files(), file(), and has\+File()
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/\+Files/File\+Collection.\+php\end{DoxyCompactItemize}

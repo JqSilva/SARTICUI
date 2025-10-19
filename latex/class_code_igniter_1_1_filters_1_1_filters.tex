@@ -1,0 +1,325 @@
+\doxysection{Code\+Igniter\textbackslash{}Filters\textbackslash{}Filters Class Reference}
+\hypertarget{class_code_igniter_1_1_filters_1_1_filters}{}\label{class_code_igniter_1_1_filters_1_1_filters}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a4e13bdae6be2dad00846345a4024a0a4}{\+\_\+\+\_\+construct}} (\$config, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, ?\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_ac793e70fbbb3ced860ac27579bd88b4d}{set\+Response}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a83062a743ebec59c3e2edd30bb9198ee}{run}} (string \$uri, string \$position=\textquotesingle{}before\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a0335ad0ee609332323ecc5806485b710}{run\+Required}} (string \$position=\textquotesingle{}before\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a1bbf922e4ad62a0d6fa1478d1dfe2677}{get\+Required\+Filters}} (string \$position=\textquotesingle{}before\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a216411ddd9aeefeae423838492413576}{initialize}} (?string \$uri=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a798068282d38c11723c9641b1f967495}{reset}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a6424ccdce46caf5c1afaff18f8a98f75}{get\+Filters}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_ab412340c5e1ce96d315faf9bb3013ad9}{get\+Filters\+Class}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_abbf24cef910d0f1872cf839e9e0ec477}{add\+Filter}} (string \$class, ?string \$alias=null, string \$when=\textquotesingle{}before\textquotesingle{}, string \$section=\textquotesingle{}globals\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a0a62959f060fb0e42528f8dd8a4dd277}{enable\+Filters}} (array \$names, string \$when=\textquotesingle{}before\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_af64a05b9d6e515b4c2af56ecdd77a669}{get\+Arguments}} (?string \$key=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a04b85fecaa39db5da944178e2c38849e}{process\+Globals}} (?string \$uri=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a3c1c0d359c60fa6747ff035126aaf4e0}{process\+Methods}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a46d588d6590f5d9e2a5c5a72c012f7f6}{process\+Filters}} (?string \$uri=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_ac136727a84f46332062e1f4404fabc38}{process\+Aliases\+To\+Class}} (string \$position)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_af4235dbc38ddb8de22ea6122f2bb37f0}\label{class_code_igniter_1_1_filters_1_1_filters_af4235dbc38ddb8de22ea6122f2bb37f0} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a5141593a45244d713c4fcf9c4bce19cc}\label{class_code_igniter_1_1_filters_1_1_filters_a5141593a45244d713c4fcf9c4bce19cc} 
+{\bfseries \$request}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a77c916f2abcc42202c43fa2b5d0a38f7}\label{class_code_igniter_1_1_filters_1_1_filters_a77c916f2abcc42202c43fa2b5d0a38f7} 
+{\bfseries \$response}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a4a4745ae8128616af064f77f9f2c6317}\label{class_code_igniter_1_1_filters_1_1_filters_a4a4745ae8128616af064f77f9f2c6317} 
+{\bfseries \$modules}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_ac2d042c49e672cc9d4689b7d0c950f66}\label{class_code_igniter_1_1_filters_1_1_filters_ac2d042c49e672cc9d4689b7d0c950f66} 
+{\bfseries \$initialized} = false
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_a6efc3ae4d5e1f10d3cecbe3bf5ee6f2d}{\$filters}}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_filters_ab0e3af1072b015e76e43d455906d3ebd}{\$filters\+Class}}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_af9c878b6db407e9f2444d2efad1f1c8a}\label{class_code_igniter_1_1_filters_1_1_filters_af9c878b6db407e9f2444d2efad1f1c8a} 
+{\bfseries \$arguments} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_ae7234c174c272c74a6c433ea7c4e1774}\label{class_code_igniter_1_1_filters_1_1_filters_ae7234c174c272c74a6c433ea7c4e1774} 
+{\bfseries \$arguments\+Class} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Filters
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a4e13bdae6be2dad00846345a4024a0a4}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a4e13bdae6be2dad00846345a4024a0a4} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{?\mbox{\hyperlink{class_config_1_1_modules}{Modules}}}]{\$modules}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Filters\+Config & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_abbf24cef910d0f1872cf839e9e0ec477}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!addFilter@{addFilter}}
+\index{addFilter@{addFilter}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{addFilter()}{addFilter()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_abbf24cef910d0f1872cf839e9e0ec477} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::add\+Filter (\begin{DoxyParamCaption}\item[{string}]{\$class}{, }\item[{?string}]{\$alias}{ = {\ttfamily null}, }\item[{string}]{\$when}{ = {\ttfamily \textquotesingle{}before\textquotesingle{}}, }\item[{string}]{\$section}{ = {\ttfamily \textquotesingle{}globals\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Adds a new alias to the config file. MUST be called prior to initialize(); Intended for use within routes files.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a0a62959f060fb0e42528f8dd8a4dd277}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!enableFilters@{enableFilters}}
+\index{enableFilters@{enableFilters}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{enableFilters()}{enableFilters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a0a62959f060fb0e42528f8dd8a4dd277} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::enable\+Filters (\begin{DoxyParamCaption}\item[{array}]{\$names}{, }\item[{string}]{\$when}{ = {\ttfamily \textquotesingle{}before\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Ensures that specific filters are on and enabled for the current request.
+
+Filters can have "{}arguments"{}. This is done by placing a colon immediately after the filter name, followed by a comma-\/separated list of arguments that are passed to the filter when executed.
+
+@params array$<$string$>$ \$names filter\+\_\+name or filter\+\_\+name\+:arguments like \textquotesingle{}role\+:admin,manager\textquotesingle{}
+
+\begin{DoxyReturn}{Returns}
+Filters 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_af64a05b9d6e515b4c2af56ecdd77a669}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!getArguments@{getArguments}}
+\index{getArguments@{getArguments}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{getArguments()}{getArguments()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_af64a05b9d6e515b4c2af56ecdd77a669} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::get\+Arguments (\begin{DoxyParamCaption}\item[{?string}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the arguments for a specified key, or all.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a6424ccdce46caf5c1afaff18f8a98f75}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!getFilters@{getFilters}}
+\index{getFilters@{getFilters}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{getFilters()}{getFilters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a6424ccdce46caf5c1afaff18f8a98f75} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::get\+Filters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the processed filters array. This does not include "{}\+Required Filters"{}. \Hypertarget{class_code_igniter_1_1_filters_1_1_filters_ab412340c5e1ce96d315faf9bb3013ad9}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!getFiltersClass@{getFiltersClass}}
+\index{getFiltersClass@{getFiltersClass}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{getFiltersClass()}{getFiltersClass()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_ab412340c5e1ce96d315faf9bb3013ad9} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::get\+Filters\+Class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the filters\+Class array. This does not include "{}\+Required Filters"{}. \Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a1bbf922e4ad62a0d6fa1478d1dfe2677}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!getRequiredFilters@{getRequiredFilters}}
+\index{getRequiredFilters@{getRequiredFilters}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{getRequiredFilters()}{getRequiredFilters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a1bbf922e4ad62a0d6fa1478d1dfe2677} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::get\+Required\+Filters (\begin{DoxyParamCaption}\item[{string}]{\$position}{ = {\ttfamily \textquotesingle{}before\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns "{}\+Required Filters"{} for the specified position.
+
+@phpstan-\/param \textquotesingle{}before\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}after\textquotesingle{} \$position \Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a216411ddd9aeefeae423838492413576}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a216411ddd9aeefeae423838492413576} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::initialize (\begin{DoxyParamCaption}\item[{?string}]{\$uri}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Runs through our list of filters provided by the configuration object to get them ready for use, including getting uri masks to proper regex, removing those we can from the possibilities based on HTTP method, etc.
+
+The resulting \$this-\/\texorpdfstring{$>$}{>}filters is an array of only filters that should be applied to this request.
+
+We go ahead and process the entire tree because we\textquotesingle{}ll need to run through both a before and after and don\textquotesingle{}t want to double process the rows.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$uri} & URI path relative to base\+URL (all lowercase)\\
+\hline
+\end{DoxyParams}
+@\+TODO We don\textquotesingle{}t need to accept null as \$uri.
+
+\begin{DoxyReturn}{Returns}
+Filters 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_ac136727a84f46332062e1f4404fabc38}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!processAliasesToClass@{processAliasesToClass}}
+\index{processAliasesToClass@{processAliasesToClass}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{processAliasesToClass()}{processAliasesToClass()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_ac136727a84f46332062e1f4404fabc38} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::process\+Aliases\+To\+Class (\begin{DoxyParamCaption}\item[{string}]{\$position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Maps filter aliases to the equivalent filter classes
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Filter\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a46d588d6590f5d9e2a5c5a72c012f7f6}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!processFilters@{processFilters}}
+\index{processFilters@{processFilters}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{processFilters()}{processFilters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a46d588d6590f5d9e2a5c5a72c012f7f6} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::process\+Filters (\begin{DoxyParamCaption}\item[{?string}]{\$uri}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add any applicable configured filters to the mix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$uri} & URI path relative to base\+URL (all lowercase)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a04b85fecaa39db5da944178e2c38849e}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!processGlobals@{processGlobals}}
+\index{processGlobals@{processGlobals}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{processGlobals()}{processGlobals()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a04b85fecaa39db5da944178e2c38849e} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::process\+Globals (\begin{DoxyParamCaption}\item[{?string}]{\$uri}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add any applicable (not excluded) global filter settings to the mix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$uri} & URI path relative to base\+URL (all lowercase)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a3c1c0d359c60fa6747ff035126aaf4e0}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!processMethods@{processMethods}}
+\index{processMethods@{processMethods}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{processMethods()}{processMethods()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a3c1c0d359c60fa6747ff035126aaf4e0} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::process\+Methods (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add any method-\/specific filters to the mix.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a798068282d38c11723c9641b1f967495}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!reset@{reset}}
+\index{reset@{reset}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a798068282d38c11723c9641b1f967495} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Restores instance to its pre-\/initialized state. Most useful for testing so the service can be re-\/initialized to a different path. \Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a83062a743ebec59c3e2edd30bb9198ee}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a83062a743ebec59c3e2edd30bb9198ee} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::run (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{string}]{\$position}{ = {\ttfamily \textquotesingle{}before\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Runs through all of the filters for the specified uri and position.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & URI path relative to base\+URL @phpstan-\/param \textquotesingle{}before\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}after\textquotesingle{} \$position\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Request\+Interface\texorpdfstring{$\vert$}{|}\+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Filter\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a0335ad0ee609332323ecc5806485b710}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!runRequired@{runRequired}}
+\index{runRequired@{runRequired}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{runRequired()}{runRequired()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a0335ad0ee609332323ecc5806485b710} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::run\+Required (\begin{DoxyParamCaption}\item[{string}]{\$position}{ = {\ttfamily \textquotesingle{}before\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Runs "{}\+Required Filters"{} for the specified position.
+
+\begin{DoxyReturn}{Returns}
+Request\+Interface\texorpdfstring{$\vert$}{|}\+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+@phpstan-\/param \textquotesingle{}before\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}after\textquotesingle{} \$position
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Filter\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_ac793e70fbbb3ced860ac27579bd88b4d}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!setResponse@{setResponse}}
+\index{setResponse@{setResponse}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{setResponse()}{setResponse()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_ac793e70fbbb3ced860ac27579bd88b4d} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::set\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Set the response explicitly.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_a6efc3ae4d5e1f10d3cecbe3bf5ee6f2d}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!\$filters@{\$filters}}
+\index{\$filters@{\$filters}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{\$filters}{\$filters}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_a6efc3ae4d5e1f10d3cecbe3bf5ee6f2d} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::\$filters\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'before'}\ =>\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'after'}\ \ =>\ [],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_filters_ab0e3af1072b015e76e43d455906d3ebd}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}!\$filtersClass@{\$filtersClass}}
+\index{\$filtersClass@{\$filtersClass}!CodeIgniter\textbackslash{}Filters\textbackslash{}Filters@{CodeIgniter\textbackslash{}Filters\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{\$filtersClass}{\$filtersClass}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_filters_ab0e3af1072b015e76e43d455906d3ebd} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filters\+::\$filters\+Class\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'before'}\ =>\ [],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'after'}\ \ =>\ [],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Filters/Filters.\+php\end{DoxyCompactItemize}

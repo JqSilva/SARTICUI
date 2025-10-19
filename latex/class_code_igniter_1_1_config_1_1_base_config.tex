@@ -1,0 +1,140 @@
+\doxysection{Code\+Igniter\textbackslash{}Config\textbackslash{}Base\+Config Class Reference}
+\hypertarget{class_code_igniter_1_1_config_1_1_base_config}{}\label{class_code_igniter_1_1_config_1_1_base_config}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Base\+Config\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_a2a18a9512772facc1ea2ae5b4d0d0f3a}\label{class_code_igniter_1_1_config_1_1_base_config_a2a18a9512772facc1ea2ae5b4d0d0f3a} 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_a48e4ffe9579c1d97efd691585e13d572}\label{class_code_igniter_1_1_config_1_1_base_config_a48e4ffe9579c1d97efd691585e13d572} 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_a62ff6af0df0e9a7394cb27bc2a1cf364}\label{class_code_igniter_1_1_config_1_1_base_config_a62ff6af0df0e9a7394cb27bc2a1cf364} 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_a858ad278bef9532b4b18125b36fd301f}\label{class_code_igniter_1_1_config_1_1_base_config_a858ad278bef9532b4b18125b36fd301f} 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_ac0dac32a32a3229bc2e5caa845caca2c}\label{class_code_igniter_1_1_config_1_1_base_config_ac0dac32a32a3229bc2e5caa845caca2c} 
+static {\bfseries \$did\+Discovery} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_aa8c6f36d76e1de38a560d833ef9c7824}\label{class_code_igniter_1_1_config_1_1_base_config_aa8c6f36d76e1de38a560d833ef9c7824} 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Base\+Config
+
+Not intended to be used on its own, this class will attempt to automatically populate the child class\textquotesingle{} properties with values from the environment.
+
+These can be set within the .env file.
+
+@phpstan-\/consistent-\/constructor \begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Will attempt to get environment variables with names that match the properties of the child class.
+
+The "{}short\+Prefix"{} is the lowercase-\/only config class name. 
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_view_a892919fc2d3f7505e017bbb231523e8b}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+View}}, \mbox{\hyperlink{class_config_1_1_database_a2b6b8679558b5b3afb17fe13378e9aea}{Config\textbackslash{}\+Database}}, and \mbox{\hyperlink{class_tests_1_1_support_1_1_libraries_1_1_config_reader_acd8ffd03e4de4a4d46a978b7501e849d}{Tests\textbackslash{}\+Support\textbackslash{}\+Libraries\textbackslash{}\+Config\+Reader}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}!getEnvValue@{getEnvValue}}
+\index{getEnvValue@{getEnvValue}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}}
+\doxysubsubsection{\texorpdfstring{getEnvValue()}{getEnvValue()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config\+::get\+Env\+Value (\begin{DoxyParamCaption}\item[{string}]{\$property}{, }\item[{string}]{\$prefix}{, }\item[{string}]{\$short\+Prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieve an environment-\/specific configuration setting
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}!initEnvValue@{initEnvValue}}
+\index{initEnvValue@{initEnvValue}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}}
+\doxysubsubsection{\texorpdfstring{initEnvValue()}{initEnvValue()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config\+::init\+Env\+Value (\begin{DoxyParamCaption}\item[{\&}]{\$property}{, }\item[{string}]{\$name}{, }\item[{string}]{\$prefix}{, }\item[{string}]{\$short\+Prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initialization an environment-\/specific configuration setting
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | bool | float | int | string | null & {\em \$property} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}!registerProperties@{registerProperties}}
+\index{registerProperties@{registerProperties}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}}
+\doxysubsubsection{\texorpdfstring{registerProperties()}{registerProperties()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config\+::register\+Properties (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Provides external libraries a simple way to register one or more options into a config file.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_publisher_a58038c62f7f006cb31b1d2b67982af41}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Publisher}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}!\$override@{\$override}}
+\index{\$override@{\$override}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseConfig}}
+\doxysubsubsection{\texorpdfstring{\$override}{\$override}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c} 
+bool Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config\+::\$override = true\hspace{0.3cm}{\ttfamily [static]}}
+
+Whether to override properties by Env vars and Registrars. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Config/Base\+Config.\+php\end{DoxyCompactItemize}

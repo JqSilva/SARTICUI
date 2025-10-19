@@ -1,0 +1,86 @@
+\doxysection{Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Query Class Reference}
+\hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_query}{}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_query}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockQuery@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockQuery}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Query\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Query\+:
+% FIG 1
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$db)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_ac8a757f9e4fb5f5bf6e8ef178e8f4c73}{set\+Query}} (string \$sql, \$binds=null, bool \$set\+Escape=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a276b01b0c34c1f93c5796469f10ab794}{set\+Binds}} (array \$binds, bool \$set\+Escape=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a4c907abb80d78c2f52db9eb51dae585e}{get\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a2ca231b4f1dea7cb714969e5bf25d4bf}{set\+Duration}} (float \$start, ?float \$end=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a49e26632cdd11aa572591167bab77b18}{get\+Start\+Time}} (bool \$return\+Raw=false, int \$decimals=6)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_aa3d879df6f222097d346c6a1932dee04}{get\+Duration}} (int \$decimals=6)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a34343ced9f3bbf0a83e82923d4c6b64b}{set\+Error}} (int \$code, string \$error)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_ad3544f602010ea20e4f8739408fc398f}{has\+Error}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_aca75fc783968dc07847a218edcf18980}{get\+Error\+Code}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_ad96bcddfe845ef3961bf0605050bafda}{get\+Error\+Message}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a2f6659057b8a550400ffe7e9fa613d24}{is\+Write\+Type}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a82384839983180774d7db906e8d3a4e2}{swap\+Prefix}} (string \$orig, string \$swap)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a374e2a856098b960736304e34a56fb3b}{get\+Original\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a75795cdf1a39d66802c59c8c771965e0}{debug\+Toolbar\+Display}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_aabcd5e1adf947958fef1996a88e403b8}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$db}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_af4001c467157e6cfab672db8a8b22863}{compile\+Binds}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_adceacaeedad7d4b1487617aa86d4761a}{match\+Named\+Binds}} (string \$sql, array \$binds)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_aa1e78d2748acc1ffe886b9fb8e72bc91}{match\+Simple\+Binds}} (string \$sql, array \$binds, int \$bind\+Count, int \$ml)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$original\+Query\+String}
+\item 
+{\bfseries \$swapped\+Query\+String}
+\item 
+{\bfseries \$final\+Query\+String}
+\item 
+{\bfseries \$binds} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$bind\+Marker} = \textquotesingle{}?\textquotesingle{}
+\item 
+{\bfseries \$start\+Time}
+\item 
+{\bfseries \$end\+Time}
+\item 
+{\bfseries \$error\+Code}
+\item 
+{\bfseries \$error\+String}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Test/\+Mock/Mock\+Query.\+php\end{DoxyCompactItemize}

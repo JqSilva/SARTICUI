@@ -1,0 +1,297 @@
+\doxysection{Code\+Igniter\textbackslash{}View\textbackslash{}View Class Reference}
+\hypertarget{class_code_igniter_1_1_view_1_1_view}{}\label{class_code_igniter_1_1_view_1_1_view}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}View\textbackslash{}View\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}View\textbackslash{}View\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a494cd297f94674fd7f38ed78b89fe069}\label{class_code_igniter_1_1_view_1_1_view_a494cd297f94674fd7f38ed78b89fe069} 
+{\bfseries \+\_\+\+\_\+construct} (View\+Config \$config, ?string \$view\+Path=null, ?\mbox{\hyperlink{interface_code_igniter_1_1_autoloader_1_1_file_locator_interface}{File\+Locator\+Interface}} \$loader=null, ?bool \$debug=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_aa2eac690e16411660fe5bffe82abaaa8}{render}} (string \$view, ?array \$options=null, ?bool \$save\+Data=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_a6a58824253e5a016d4083f6e4a3a3fc1}{render\+String}} (string \$view, ?array \$options=null, ?bool \$save\+Data=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_a173bcd975f093913ebc91a8368bc1e0d}{excerpt}} (string \$string, int \$length=20)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_a4b68e4111ca8dcbb48f548c938d1eacc}{set\+Data}} (array \$data=\mbox{[}$\,$\mbox{]}, ?string \$context=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_ae36db34c6591eba85021cf2cf9d32492}{set\+Var}} (string \$name, \$value=null, ?string \$context=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_ad5e6c822e4bc45dfeb6c09cd70e07b31}{reset\+Data}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_af6786595476ab81a154b3f6835013227}{get\+Data}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_a90d2b0cfc9ff17eb3c607fcee3f4131b}{extend}} (string \$layout)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_ab1599dc4e49c5383be2786624f7f9147}{section}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_a96650e26d47e49b71a47a0a3c3da4670}{end\+Section}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_ad9544fa8ec45307313b85f590be10f13}{render\+Section}} (string \$section\+Name, bool \$save\+Data=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface}{Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_af0d5ee5544d5f69d4d30e85873904119}{render}} (string \$view, ?array \$options=null, bool \$save\+Data=false)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_ad9d79ff3a1c6eb85619f64cfc59ab60d}{render\+String}} (string \$view, ?array \$options=null, bool \$save\+Data=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_a511967a0df8d3e041ac65cd658e2fcee}{function}}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_ac251b13964146a4a89676ebb238fd522}\label{class_code_igniter_1_1_view_1_1_view_ac251b13964146a4a89676ebb238fd522} 
+array {\bfseries \$options} = null
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_ac16b088dd526e5879e1b5adbe9372d1e}\label{class_code_igniter_1_1_view_1_1_view_ac16b088dd526e5879e1b5adbe9372d1e} 
+{\bfseries \$data} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_aa8787eed1e2cb7d5f8ebd6e60f86d46c}\label{class_code_igniter_1_1_view_1_1_view_aa8787eed1e2cb7d5f8ebd6e60f86d46c} 
+{\bfseries \$temp\+Data}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a588aee1a6798c835ec2afcb2231a9ddf}\label{class_code_igniter_1_1_view_1_1_view_a588aee1a6798c835ec2afcb2231a9ddf} 
+{\bfseries \$view\+Path}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a47db0b583c5d662d948ee6e6265e6ff8}\label{class_code_igniter_1_1_view_1_1_view_a47db0b583c5d662d948ee6e6265e6ff8} 
+{\bfseries \$render\+Vars} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a0dd1d7bec19c71b9bee6583814c27cbe}\label{class_code_igniter_1_1_view_1_1_view_a0dd1d7bec19c71b9bee6583814c27cbe} 
+{\bfseries \$loader}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_aa48144e5ae5afe87c5f967651a834ff9}\label{class_code_igniter_1_1_view_1_1_view_aa48144e5ae5afe87c5f967651a834ff9} 
+{\bfseries \$logger}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a718c63ac0ba9dd6162a80407822bcada}\label{class_code_igniter_1_1_view_1_1_view_a718c63ac0ba9dd6162a80407822bcada} 
+{\bfseries \$debug} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a238a81e424aaea4c9fb12235b073330e}\label{class_code_igniter_1_1_view_1_1_view_a238a81e424aaea4c9fb12235b073330e} 
+{\bfseries \$performance\+Data} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a876b8b55790e7ca7564b0d0dd92b82f6}\label{class_code_igniter_1_1_view_1_1_view_a876b8b55790e7ca7564b0d0dd92b82f6} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a6f7bf7d2698ed1ed605a23643a8a04b3}\label{class_code_igniter_1_1_view_1_1_view_a6f7bf7d2698ed1ed605a23643a8a04b3} 
+{\bfseries \$save\+Data}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_af0945bd0f219c8d37df5535edecd455b}\label{class_code_igniter_1_1_view_1_1_view_af0945bd0f219c8d37df5535edecd455b} 
+{\bfseries \$views\+Count} = 0
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a1d64f06ed7b314ea0976090a581d79ae}\label{class_code_igniter_1_1_view_1_1_view_a1d64f06ed7b314ea0976090a581d79ae} 
+{\bfseries \$layout}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_ab6b5d832e8e2446036167066b054790a}\label{class_code_igniter_1_1_view_1_1_view_ab6b5d832e8e2446036167066b054790a} 
+{\bfseries \$sections} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a5bc3907eca7e2931def3a4320378bd89}\label{class_code_igniter_1_1_view_1_1_view_a5bc3907eca7e2931def3a4320378bd89} 
+{\bfseries \$current\+Section}
+\item 
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a801dd80890c2c14f1d80cec73b368b1f}\label{class_code_igniter_1_1_view_1_1_view_a801dd80890c2c14f1d80cec73b368b1f} 
+{\bfseries \$section\+Stack} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class View
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a96650e26d47e49b71a47a0a3c3da4670}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!endSection@{endSection}}
+\index{endSection@{endSection}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{endSection()}{endSection()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_a96650e26d47e49b71a47a0a3c3da4670} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::end\+Section (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Captures the last section
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a173bcd975f093913ebc91a8368bc1e0d}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!excerpt@{excerpt}}
+\index{excerpt@{excerpt}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{excerpt()}{excerpt()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_a173bcd975f093913ebc91a8368bc1e0d} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::excerpt (\begin{DoxyParamCaption}\item[{string}]{\$string}{, }\item[{int}]{\$length}{ = {\ttfamily 20}}\end{DoxyParamCaption})}
+
+Extract first bit of a long string and add ellipsis \Hypertarget{class_code_igniter_1_1_view_1_1_view_a90d2b0cfc9ff17eb3c607fcee3f4131b}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!extend@{extend}}
+\index{extend@{extend}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_a90d2b0cfc9ff17eb3c607fcee3f4131b} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::extend (\begin{DoxyParamCaption}\item[{string}]{\$layout}{}\end{DoxyParamCaption})}
+
+Specifies that the current view should extend an existing layout.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_af6786595476ab81a154b3f6835013227}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!getData@{getData}}
+\index{getData@{getData}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_af6786595476ab81a154b3f6835013227} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::get\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current data that will be displayed in the view.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_aa2eac690e16411660fe5bffe82abaaa8}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!render@{render}}
+\index{render@{render}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_aa2eac690e16411660fe5bffe82abaaa8} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::render (\begin{DoxyParamCaption}\item[{string}]{\$view}{, }\item[{?array}]{\$options}{ = {\ttfamily null}, }\item[{?bool}]{\$save\+Data}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Builds the output based upon a file name and any data that has already been set.
+
+Valid \$options\+:
+\begin{DoxyItemize}
+\item cache Number of seconds to cache for
+\item cache\+\_\+name Name to use for cache
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$view} & File name of the view source \\
+\hline
+ & {\em array$<$string,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$options Reserved for 3rd-\/party uses since it might be needed to pass additional info to other template engines. \\
+\hline
+bool | null & {\em \$save\+Data} & If true, saves data for subsequent calls, if false, cleans the data after displaying, if null, uses the config setting. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_ad9544fa8ec45307313b85f590be10f13}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!renderSection@{renderSection}}
+\index{renderSection@{renderSection}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{renderSection()}{renderSection()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_ad9544fa8ec45307313b85f590be10f13} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::render\+Section (\begin{DoxyParamCaption}\item[{string}]{\$section\+Name}{, }\item[{bool}]{\$save\+Data}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Renders a section\textquotesingle{}s contents.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$save\+Data} & If true, saves data for subsequent calls, if false, cleans the data after displaying.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a6a58824253e5a016d4083f6e4a3a3fc1}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!renderString@{renderString}}
+\index{renderString@{renderString}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{renderString()}{renderString()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_a6a58824253e5a016d4083f6e4a3a3fc1} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::render\+String (\begin{DoxyParamCaption}\item[{string}]{\$view}{, }\item[{?array}]{\$options}{ = {\ttfamily null}, }\item[{?bool}]{\$save\+Data}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Builds the output based upon a string and any data that has already been set. Cache does not apply, because there is no "{}key"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$view} & The view contents \\
+\hline
+ & {\em array$<$string,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$options Reserved for 3rd-\/party uses since it might be needed to pass additional info to other template engines. \\
+\hline
+bool | null & {\em \$save\+Data} & If true, saves data for subsequent calls, if false, cleans the data after displaying, if null, uses the config setting. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_ad5e6c822e4bc45dfeb6c09cd70e07b31}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!resetData@{resetData}}
+\index{resetData@{resetData}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{resetData()}{resetData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_ad5e6c822e4bc45dfeb6c09cd70e07b31} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::reset\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Removes all of the view data from the system. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_aabd4f7eca8a5cc7ceb7ee3a4cfd9a8e4}{Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_ab1599dc4e49c5383be2786624f7f9147}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!section@{section}}
+\index{section@{section}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{section()}{section()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_ab1599dc4e49c5383be2786624f7f9147} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::section (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Starts holds content for a section within the layout.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Section name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a4b68e4111ca8dcbb48f548c938d1eacc}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!setData@{setData}}
+\index{setData@{setData}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_a4b68e4111ca8dcbb48f548c938d1eacc} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::set\+Data (\begin{DoxyParamCaption}\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets several pieces of view data at once.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string | null & {\em \$context} & The context to escape it for. If \textquotesingle{}raw\textquotesingle{}, no escaping will happen. @phpstan-\/param null\texorpdfstring{$\vert$}{|}\textquotesingle{}html\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}js\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}css\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}url\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}attr\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}raw\textquotesingle{} \$context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_a5cfeb8734f6ee04b62cde7d1be635882}{Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_ae36db34c6591eba85021cf2cf9d32492}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!setVar@{setVar}}
+\index{setVar@{setVar}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{setVar()}{setVar()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_ae36db34c6591eba85021cf2cf9d32492} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::set\+Var (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$value}{ = {\ttfamily null}, }\item[{?string}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets a single piece of view data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+non-\/empty-\/string | null & {\em \$context} & The context to escape it for. If \textquotesingle{}raw\textquotesingle{}, no escaping will happen. @phpstan-\/param null\texorpdfstring{$\vert$}{|}\textquotesingle{}html\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}js\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}css\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}url\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}attr\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}raw\textquotesingle{} \$context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_a01a2897ddd9f62b4260542e9bae64ed0}{Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_view_1_1_view_a511967a0df8d3e041ac65cd658e2fcee}\index{CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}!function@{function}}
+\index{function@{function}!CodeIgniter\textbackslash{}View\textbackslash{}View@{CodeIgniter\textbackslash{}View\textbackslash{}View}}
+\doxysubsubsection{\texorpdfstring{function}{function}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_view_a511967a0df8d3e041ac65cd658e2fcee} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View\+::function}
+
+Used within layout views to include additional views.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$options \\
+\hline
+bool & {\em \$save\+Data} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+View/View.\+php\end{DoxyCompactItemize}

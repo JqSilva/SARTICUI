@@ -1,0 +1,279 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge}{}\label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge\+:
+% FIG 1
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a8436c6079710e11c5e29826a554fe5e0}{\+\_\+create\+Table\+Attributes}} (array \$attributes)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aaa8aaf17651269e40088ff05a48d9297}{\+\_\+alter\+Table}} (string \$alter\+Type, string \$table, \$processed\+Fields)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aac9e481da563006929f4a14409e58f28}{\+\_\+process\+Column}} (array \$processed\+Field)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aa945fbb2f5ff56f9782c0e7a3eb259cc}{\+\_\+attribute\+Type}} (array \&\$attributes)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a7bea455f47288c061291852bc5cbd3ae}{\+\_\+attribute\+Auto\+Increment}} (array \&\$attributes, array \&\$field)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a2981af0d33b8fa4d1d30ab64b303ffe8}{\+\_\+drop\+Table}} (string \$table, bool \$if\+Exists, bool \$cascade)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_acefebbb481ecdc3e5f0f64869852a473}{\+\_\+drop\+Key\+As\+Constraint}} (string \$table, string \$constraint\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a7533ca2362a91929c55b1bf1c17646e0}{drop\+Key\+As\+Constraint}} (string \$table, string \$constraint\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a3a3b2dd1109d226232c10888b8a898ec}{\+\_\+create\+Table}} (string \$table, bool \$if\+Not\+Exists, array \$attributes)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a593bab784440394692c99f7f7f7a9375}{\+\_\+process\+Fields}} (bool \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a58b42779db5a5a6b5ed350a42ceff8e2}{create\+Table}}=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_abdeac57503fa8ac53933e5de02da45f6}{\+\_\+attribute\+Unsigned}} (array \&\$attributes, array \&\$field)
+\item 
+{\bfseries \+\_\+attribute\+Default} (array \&\$attributes, array \&\$field)
+\item 
+{\bfseries \+\_\+attribute\+Unique} (array \&\$attributes, array \&\$field)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a8a322650acfa92771ef4cada48b9cfb4}{\+\_\+process\+Primary\+Keys}} (string \$table, bool \$as\+Query=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a1950a134e40ef65a91143832ca0000b3}{\+\_\+process\+Indexes}} (string \$table, bool \$as\+Query=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a3a53e9039629b6d31cbcc82431e334f5}{\+\_\+process\+Foreign\+Keys}} (string \$table, bool \$as\+Query=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_abd38d194ad9ce78b3a06094bc7c1370d}\label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_abd38d194ad9ce78b3a06094bc7c1370d} 
+{\bfseries \$check\+Database\+Exist\+Str} = \textquotesingle{}SELECT 1 FROM pg\+\_\+database WHERE datname = ?\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a3faca0117b29ef4537b847870e92896d}\label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a3faca0117b29ef4537b847870e92896d} 
+{\bfseries \$drop\+Constraint\+Str} = \textquotesingle{}ALTER TABLE \%s DROP CONSTRAINT \%s\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a0f8cca1768d31ba21c00e9f1bab95732}\label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a0f8cca1768d31ba21c00e9f1bab95732} 
+{\bfseries \$drop\+Index\+Str} = \textquotesingle{}DROP INDEX \%s\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aa7c15777f9ce5dde46bb8525842eb54c}{\$\+\_\+unsigned}}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a174445bd26ff46c3d49a830afa60c0c4}\label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a174445bd26ff46c3d49a830afa60c0c4} 
+{\bfseries \$null} = \textquotesingle{}NULL\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a08bb418bd4ecf8758b9fac9bf3e441dc}\label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a08bb418bd4ecf8758b9fac9bf3e441dc} 
+{\bfseries \$db}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$db}
+\item 
+{\bfseries \$fields} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$keys} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$unique\+Keys} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$primary\+Keys} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$foreign\+Keys} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$charset} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$create\+Database\+Str} = \textquotesingle{}CREATE DATABASE \%s\textquotesingle{}
+\item 
+{\bfseries \$create\+Database\+If\+Str}
+\item 
+{\bfseries \$check\+Database\+Exist\+Str}
+\item 
+{\bfseries \$drop\+Database\+Str} = \textquotesingle{}DROP DATABASE \%s\textquotesingle{}
+\item 
+{\bfseries \$create\+Table\+Str} = "{}\%s \%s (\%s\textbackslash{}n)"{}
+\item 
+{\bfseries \$create\+Table\+If\+Str} = \textquotesingle{}CREATE TABLE IF NOT EXISTS\textquotesingle{}
+\item 
+{\bfseries \$create\+Table\+Keys} = false
+\item 
+{\bfseries \$drop\+Table\+If\+Str} = \textquotesingle{}DROP TABLE IF EXISTS\textquotesingle{}
+\item 
+{\bfseries \$rename\+Table\+Str} = \textquotesingle{}ALTER TABLE \%s RENAME TO \%s\textquotesingle{}
+\item 
+{\bfseries \$unsigned} = true
+\item 
+{\bfseries \$null} = \textquotesingle{}NULL\textquotesingle{}
+\item 
+{\bfseries \$default} = \textquotesingle{} DEFAULT \textquotesingle{}
+\item 
+{\bfseries \$drop\+Constraint\+Str}
+\item 
+{\bfseries \$drop\+Index\+Str} = \textquotesingle{}DROP INDEX \%s ON \%s\textquotesingle{}
+\item 
+{\bfseries \$fk\+Allow\+Actions} = \mbox{[}\textquotesingle{}CASCADE\textquotesingle{}, \textquotesingle{}SET NULL\textquotesingle{}, \textquotesingle{}NO ACTION\textquotesingle{}, \textquotesingle{}RESTRICT\textquotesingle{}, \textquotesingle{}SET DEFAULT\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_af2ebf035344b4bdca55f82249fcd3364}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Base\+Connection}} \$db)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a827f7ef17341f4f5c1870a7aba5cb5a1}{get\+Connection}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_ae34844535b61b2e92e950006689640e5}{create\+Database}} (string \$db\+Name, bool \$if\+Not\+Exists=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_ab3031361c589df2a559aba7191ab4aa6}{drop\+Database}} (string \$db\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a3c6ff10b209f946ed6e4131f2ae9422d}{add\+Key}} (\$key, bool \$primary=false, bool \$unique=false, string \$key\+Name=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_aadb1f459849b4ddefc22045008bed843}{add\+Primary\+Key}} (\$key, string \$key\+Name=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_ae9af34e0a75b7fe549e8b7d4be063386}{add\+Unique\+Key}} (\$key, string \$key\+Name=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_aa49ae39f019b6f1172ebca022b11a8c7}{add\+Field}} (\$fields)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a2e05d6d8336b223befe2bacce078cc2e}{add\+Foreign\+Key}} ( \$field\+Name=\textquotesingle{}\textquotesingle{}, string \$table\+Name=\textquotesingle{}\textquotesingle{}, \$table\+Field=\textquotesingle{}\textquotesingle{}, string \$on\+Update=\textquotesingle{}\textquotesingle{}, string \$on\+Delete=\textquotesingle{}\textquotesingle{}, string \$fk\+Name=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a530c6294f14ed9a010295521db41ee97}{drop\+Key}} (string \$table, string \$key\+Name, bool \$prefix\+Key\+Name=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a6b19980721f344dc4f4582c0dfa15221}{drop\+Primary\+Key}} (string \$table, string \$key\+Name=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a0cb260aae6adc7a1cc8cc186cee57f9b}{drop\+Foreign\+Key}} (string \$table, string \$foreign\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a58b42779db5a5a6b5ed350a42ceff8e2}{create\+Table}} (string \$table, bool \$if\+Not\+Exists=false, array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a1615fc46475f652b2ad6c6f122f57888}{drop\+Table}} (string \$table\+Name, bool \$if\+Exists=false, bool \$cascade=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a67a869320698a0c78c62031682a47739}{rename\+Table}} (string \$table\+Name, string \$new\+Table\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a8601a1c79e8b3f61bd6b685f6a106061}{add\+Column}} (string \$table, \$fields)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a54b2f79a170adce2e8655d430ed28ada}{drop\+Column}} (string \$table, \$column\+Names)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_ab0ab4e010a7e3a0abc54c81af5a42e5d}{modify\+Column}} (string \$table, \$fields)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_af3381bb39e7ab03e65d427e6ce69a135}{process\+Indexes}} (string \$table)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a945710c4561befbef9c8c7b56c4b9fd3}{reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Forge for Postgre 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aaa8aaf17651269e40088ff05a48d9297}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}!\_alterTable@{\_alterTable}}
+\index{\_alterTable@{\_alterTable}!CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+\doxysubsubsection{\texorpdfstring{\_alterTable()}{\_alterTable()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aaa8aaf17651269e40088ff05a48d9297} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Postgre\textbackslash{}\+Forge\+::\+\_\+alter\+Table (\begin{DoxyParamCaption}\item[{string}]{\$alter\+Type}{, }\item[{string}]{\$table}{, }\item[{}]{\$processed\+Fields}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$processed\+Fields} & Processed column definitions or column names to DROP\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}list$<$string$>$\texorpdfstring{$\vert$}{|}string SQL string or false @phpstan-\/return (\$alter\+Type is \textquotesingle{}DROP\textquotesingle{} ? string \+: list$<$string$>$\texorpdfstring{$\vert$}{|}false) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_acea1474c02e30dfa1d43b1d4bbc1f880}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a7bea455f47288c061291852bc5cbd3ae}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}!\_attributeAutoIncrement@{\_attributeAutoIncrement}}
+\index{\_attributeAutoIncrement@{\_attributeAutoIncrement}!CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+\doxysubsubsection{\texorpdfstring{\_attributeAutoIncrement()}{\_attributeAutoIncrement()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a7bea455f47288c061291852bc5cbd3ae} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Postgre\textbackslash{}\+Forge\+::\+\_\+attribute\+Auto\+Increment (\begin{DoxyParamCaption}\item[{array \&}]{\$attributes}{, }\item[{array \&}]{\$field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Field attribute AUTO\+\_\+\+INCREMENT 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aa945fbb2f5ff56f9782c0e7a3eb259cc}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}!\_attributeType@{\_attributeType}}
+\index{\_attributeType@{\_attributeType}!CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+\doxysubsubsection{\texorpdfstring{\_attributeType()}{\_attributeType()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aa945fbb2f5ff56f9782c0e7a3eb259cc} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Postgre\textbackslash{}\+Forge\+::\+\_\+attribute\+Type (\begin{DoxyParamCaption}\item[{array \&}]{\$attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Performs a data type mapping between different databases. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_adba929d2a596559102de754336f5492a}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a8436c6079710e11c5e29826a554fe5e0}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}!\_createTableAttributes@{\_createTableAttributes}}
+\index{\_createTableAttributes@{\_createTableAttributes}!CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+\doxysubsubsection{\texorpdfstring{\_createTableAttributes()}{\_createTableAttributes()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a8436c6079710e11c5e29826a554fe5e0} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Postgre\textbackslash{}\+Forge\+::\+\_\+create\+Table\+Attributes (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+CREATE TABLE attributes
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & Associative array of table attributes \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_acefebbb481ecdc3e5f0f64869852a473}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}!\_dropKeyAsConstraint@{\_dropKeyAsConstraint}}
+\index{\_dropKeyAsConstraint@{\_dropKeyAsConstraint}!CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+\doxysubsubsection{\texorpdfstring{\_dropKeyAsConstraint()}{\_dropKeyAsConstraint()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_acefebbb481ecdc3e5f0f64869852a473} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Postgre\textbackslash{}\+Forge\+::\+\_\+drop\+Key\+As\+Constraint (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{string}]{\$constraint\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructs sql to check if key is a constraint. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_ae44907d99efb007396f001f87fecdcc1}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a2981af0d33b8fa4d1d30ab64b303ffe8}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}!\_dropTable@{\_dropTable}}
+\index{\_dropTable@{\_dropTable}!CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+\doxysubsubsection{\texorpdfstring{\_dropTable()}{\_dropTable()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_a2981af0d33b8fa4d1d30ab64b303ffe8} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Postgre\textbackslash{}\+Forge\+::\+\_\+drop\+Table (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{bool}]{\$if\+Exists}{, }\item[{bool}]{\$cascade}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific DROP TABLE string 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a3a1605716208dbe7988115b411752190}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aac9e481da563006929f4a14409e58f28}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}!\_processColumn@{\_processColumn}}
+\index{\_processColumn@{\_processColumn}!CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+\doxysubsubsection{\texorpdfstring{\_processColumn()}{\_processColumn()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aac9e481da563006929f4a14409e58f28} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Postgre\textbackslash{}\+Forge\+::\+\_\+process\+Column (\begin{DoxyParamCaption}\item[{array}]{\$processed\+Field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Process column 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge_a00008661e52b909febc1fc973e9c6f32}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Forge}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aa7c15777f9ce5dde46bb8525842eb54c}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}!\$\_unsigned@{\$\_unsigned}}
+\index{\$\_unsigned@{\$\_unsigned}!CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge@{CodeIgniter\textbackslash{}Database\textbackslash{}Postgre\textbackslash{}Forge}}
+\doxysubsubsection{\texorpdfstring{\$\_unsigned}{\$\_unsigned}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_postgre_1_1_forge_aa7c15777f9ce5dde46bb8525842eb54c} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Postgre\textbackslash{}\+Forge\+::\$\+\_\+unsigned\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'INT2'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'INTEGER'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'SMALLINT'}\ =>\ \textcolor{stringliteral}{'INTEGER'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'INT'}\ \ \ \ \ \ =>\ \textcolor{stringliteral}{'BIGINT'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'INT4'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'BIGINT'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'INTEGER'}\ \ =>\ \textcolor{stringliteral}{'BIGINT'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'INT8'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'NUMERIC'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'BIGINT'}\ \ \ =>\ \textcolor{stringliteral}{'NUMERIC'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'REAL'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'DOUBLE\ PRECISION'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'FLOAT'}\ \ \ \ =>\ \textcolor{stringliteral}{'DOUBLE\ PRECISION'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/\+Postgre/Forge.\+php\end{DoxyCompactItemize}

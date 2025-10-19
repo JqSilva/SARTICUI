@@ -1,0 +1,425 @@
+\doxysection{Code\+Igniter\textbackslash{}Test\textbackslash{}Fabricator Class Reference}
+\hypertarget{class_code_igniter_1_1_test_1_1_fabricator}{}\label{class_code_igniter_1_1_test_1_1_fabricator}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_abf6e5699ba17148d258fcf64ff3417e3}{\+\_\+\+\_\+construct}} (\$model, ?array \$formatters=null, ?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a7ae87313ac3f46ddc17f296b8cc92d1a}{get\+Model}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a1f890d84412551d97787c9a9f1c5bb88}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_ad1c8e8112272f6138f329c0f292af5e8}{get\+Faker}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a0d39e1d9fac4df9403968027ffbaa573}{get\+Overrides}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_aa379d1571684952af05067b3fde58eba}{set\+Overrides}} (array \$overrides=\mbox{[}$\,$\mbox{]}, \$persist=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a5d802d339d8b361f22b9b644908e3927}{set\+Unique}} (string \$field, bool \$reset=false, int \$max\+Retries=10000)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a7d123c33c5ed7eca0ae127986273254a}{set\+Optional}} (string \$field, float \$weight=0.\+5, mixed \$default=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a61e213cc5ecf9914b6cf58c1945c47b6}{set\+Valid}} (string \$field, ?Closure \$validator=null, int \$max\+Retries=10000)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_afe2672c6b8835ce27aa80e6ba1177007}{get\+Formatters}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_affa456f21c1b0fe90f29c112418a6a1b}{set\+Formatters}} (?array \$formatters=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_ae962053dd7fc65ab0f8b96aafffc456a}{make}} (?int \$count=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a657a095bb28ebd402d4e512ae6ed4848}{make\+Array}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a4f9b9fa7dd1fa3bae8d3d4ab437332a7}{make\+Object}} (?string \$class\+Name=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a08b87bbf049adbd027f7d15a62b3bb44}{create}} (?int \$count=null, bool \$mock=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a20345e1683980bddc925e3ddfc19c417}{reset\+Counts}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a467eb293656b897de873fca2a5283fd9}{get\+Count}} (string \$table)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a4b1503ea1efb5bd3e8e6c2d35d2b8b3e}{set\+Count}} (string \$table, int \$count)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a4a473255c59731703d3ffbe0c18a5a7f}{up\+Count}} (string \$table)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_aced3daa7cb3a73791e6d9c604fdd2113}{down\+Count}} (string \$table)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_ae0151823432eb924eb582a21bd494bc9}\label{class_code_igniter_1_1_test_1_1_fabricator_ae0151823432eb924eb582a21bd494bc9} 
+{\bfseries \$default\+Formatter} = \textquotesingle{}word\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_ac5d3ff02e04d00b36c72c1d8e1aa8615}{detect\+Formatters}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a3780d0b885d45bab869910203b4a5c1d}{guess\+Formatter}} (\$field)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_fabricator_a323d41fe8945f42c6c27b216d99f50e0}{create\+Mock}} (?int \$count=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_abeaea0b94429bee9046c37ba4935e0bd}\label{class_code_igniter_1_1_test_1_1_fabricator_abeaea0b94429bee9046c37ba4935e0bd} 
+{\bfseries \$faker}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a5fe9bb6ab0daa4a09ab15ccc25456342}\label{class_code_igniter_1_1_test_1_1_fabricator_a5fe9bb6ab0daa4a09ab15ccc25456342} 
+{\bfseries \$model}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a6d5f606d808556c1cac4eecbd3c41dda}\label{class_code_igniter_1_1_test_1_1_fabricator_a6d5f606d808556c1cac4eecbd3c41dda} 
+{\bfseries \$locale}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a34ea3e55e211315c52a32099fbdd3678}\label{class_code_igniter_1_1_test_1_1_fabricator_a34ea3e55e211315c52a32099fbdd3678} 
+{\bfseries \$formatters}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_aa760190df7d68db81d0399a67a1d8984}\label{class_code_igniter_1_1_test_1_1_fabricator_aa760190df7d68db81d0399a67a1d8984} 
+{\bfseries \$date\+Fields} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_adce0e895fd25d8a2eb69279947285c4f}\label{class_code_igniter_1_1_test_1_1_fabricator_adce0e895fd25d8a2eb69279947285c4f} 
+{\bfseries \$overrides} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_ac811cc8e299c26fb51ad5a3f0554146b}\label{class_code_igniter_1_1_test_1_1_fabricator_ac811cc8e299c26fb51ad5a3f0554146b} 
+{\bfseries \$temp\+Overrides}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_abb5de87e435c50ae4e807d4bf2bc75ea}\label{class_code_igniter_1_1_test_1_1_fabricator_abb5de87e435c50ae4e807d4bf2bc75ea} 
+static {\bfseries \$table\+Counts} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fabricator
+
+Bridge class for using Faker to create example data based on model specifications.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_abf6e5699ba17148d258fcf64ff3417e3}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_abf6e5699ba17148d258fcf64ff3417e3} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$model}{, }\item[{?array}]{\$formatters}{ = {\ttfamily null}, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Store the model instance and initialize Faker to the locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$model} & Instance or classname of the model to use \\
+\hline
+array | null & {\em \$formatters} & Array of property =\texorpdfstring{$>$}{>} formatter \\
+\hline
+string | null & {\em \$locale} & Locale for Faker provider\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a08b87bbf049adbd027f7d15a62b3bb44}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!create@{create}}
+\index{create@{create}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a08b87bbf049adbd027f7d15a62b3bb44} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::create (\begin{DoxyParamCaption}\item[{?int}]{\$count}{ = {\ttfamily null}, }\item[{bool}]{\$mock}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Generate new entities from the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$count} & Optional number to create a collection \\
+\hline
+bool & {\em \$mock} & Whether to execute or mock the insertion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}object An array or object (based on return\+Type), or an array of return\+Types
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Framework\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a323d41fe8945f42c6c27b216d99f50e0}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!createMock@{createMock}}
+\index{createMock@{createMock}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{createMock()}{createMock()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a323d41fe8945f42c6c27b216d99f50e0} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::create\+Mock (\begin{DoxyParamCaption}\item[{?int}]{\$count}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generate new database entities without actually inserting them
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$count} & Optional number to create a collection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}object An array or object (based on return\+Type), or an array of return\+Types 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_ac5d3ff02e04d00b36c72c1d8e1aa8615}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!detectFormatters@{detectFormatters}}
+\index{detectFormatters@{detectFormatters}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{detectFormatters()}{detectFormatters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_ac5d3ff02e04d00b36c72c1d8e1aa8615} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::detect\+Formatters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Try to identify the appropriate Faker formatter for each field. \Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_aced3daa7cb3a73791e6d9c604fdd2113}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!downCount@{downCount}}
+\index{downCount@{downCount}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{downCount()}{downCount()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_aced3daa7cb3a73791e6d9c604fdd2113} 
+static Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::down\+Count (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decrement the count for a table
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Name of the target table\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The new count value 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a467eb293656b897de873fca2a5283fd9}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!getCount@{getCount}}
+\index{getCount@{getCount}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a467eb293656b897de873fca2a5283fd9} 
+static Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::get\+Count (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the count for a specific table
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Name of the target table \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_ad1c8e8112272f6138f329c0f292af5e8}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!getFaker@{getFaker}}
+\index{getFaker@{getFaker}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{getFaker()}{getFaker()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_ad1c8e8112272f6138f329c0f292af5e8} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::get\+Faker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the Faker generator \Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_afe2672c6b8835ce27aa80e6ba1177007}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!getFormatters@{getFormatters}}
+\index{getFormatters@{getFormatters}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{getFormatters()}{getFormatters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_afe2672c6b8835ce27aa80e6ba1177007} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::get\+Formatters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current formatters \Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a1f890d84412551d97787c9a9f1c5bb88}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{getLocale()}{getLocale()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a1f890d84412551d97787c9a9f1c5bb88} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::get\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the locale \Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a7ae87313ac3f46ddc17f296b8cc92d1a}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!getModel@{getModel}}
+\index{getModel@{getModel}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a7ae87313ac3f46ddc17f296b8cc92d1a} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::get\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the model instance
+
+\begin{DoxyReturn}{Returns}
+object Framework or compatible model 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a0d39e1d9fac4df9403968027ffbaa573}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!getOverrides@{getOverrides}}
+\index{getOverrides@{getOverrides}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{getOverrides()}{getOverrides()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a0d39e1d9fac4df9403968027ffbaa573} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::get\+Overrides (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return and reset temp\+Overrides \Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a3780d0b885d45bab869910203b4a5c1d}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!guessFormatter@{guessFormatter}}
+\index{guessFormatter@{guessFormatter}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{guessFormatter()}{guessFormatter()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a3780d0b885d45bab869910203b4a5c1d} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::guess\+Formatter (\begin{DoxyParamCaption}\item[{}]{\$field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Guess at the correct formatter to match a field name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & Name of the field\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Name of the formatter 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_ae962053dd7fc65ab0f8b96aafffc456a}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!make@{make}}
+\index{make@{make}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_ae962053dd7fc65ab0f8b96aafffc456a} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::make (\begin{DoxyParamCaption}\item[{?int}]{\$count}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Generate new entities with faked data
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$count} & Optional number to create a collection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}object An array or object (based on return\+Type), or an array of return\+Types 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a657a095bb28ebd402d4e512ae6ed4848}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!makeArray@{makeArray}}
+\index{makeArray@{makeArray}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{makeArray()}{makeArray()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a657a095bb28ebd402d4e512ae6ed4848} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::make\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Generate an array of faked data
+
+\begin{DoxyReturn}{Returns}
+array An array of faked data
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a4f9b9fa7dd1fa3bae8d3d4ab437332a7}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!makeObject@{makeObject}}
+\index{makeObject@{makeObject}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{makeObject()}{makeObject()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a4f9b9fa7dd1fa3bae8d3d4ab437332a7} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::make\+Object (\begin{DoxyParamCaption}\item[{?string}]{\$class\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Generate an object of faked data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$class\+Name} & Class name of the object to create; null to use model default\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object An instance of the class with faked data
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a20345e1683980bddc925e3ddfc19c417}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!resetCounts@{resetCounts}}
+\index{resetCounts@{resetCounts}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{resetCounts()}{resetCounts()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a20345e1683980bddc925e3ddfc19c417} 
+static Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::reset\+Counts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reset internal counts \Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a4b1503ea1efb5bd3e8e6c2d35d2b8b3e}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!setCount@{setCount}}
+\index{setCount@{setCount}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{setCount()}{setCount()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a4b1503ea1efb5bd3e8e6c2d35d2b8b3e} 
+static Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::set\+Count (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{int}]{\$count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set the count for a specific table
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Name of the target table \\
+\hline
+int & {\em \$count} & Count value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The new count value 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_affa456f21c1b0fe90f29c112418a6a1b}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!setFormatters@{setFormatters}}
+\index{setFormatters@{setFormatters}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{setFormatters()}{setFormatters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_affa456f21c1b0fe90f29c112418a6a1b} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::set\+Formatters (\begin{DoxyParamCaption}\item[{?array}]{\$formatters}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the formatters to use. Will attempt to autodetect if none are available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$formatters} & Array of \mbox{[}field =\texorpdfstring{$>$}{>} formatter\mbox{]}, or null to detect \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a7d123c33c5ed7eca0ae127986273254a}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!setOptional@{setOptional}}
+\index{setOptional@{setOptional}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{setOptional()}{setOptional()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a7d123c33c5ed7eca0ae127986273254a} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::set\+Optional (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{float}]{\$weight}{ = {\ttfamily 0.5}, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set a field to be optional.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$weight} & A probability between 0 and 1, 0 means that we always get the default value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_aa379d1571684952af05067b3fde58eba}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!setOverrides@{setOverrides}}
+\index{setOverrides@{setOverrides}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{setOverrides()}{setOverrides()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_aa379d1571684952af05067b3fde58eba} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::set\+Overrides (\begin{DoxyParamCaption}\item[{array}]{\$overrides}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$persist}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Set the overrides, once or persistent
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$overrides} & Array of \mbox{[}field =\texorpdfstring{$>$}{>} value\mbox{]} \\
+\hline
+bool & {\em \$persist} & Whether these overrides should persist through the next operation \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a5d802d339d8b361f22b9b644908e3927}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!setUnique@{setUnique}}
+\index{setUnique@{setUnique}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{setUnique()}{setUnique()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a5d802d339d8b361f22b9b644908e3927} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::set\+Unique (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{bool}]{\$reset}{ = {\ttfamily false}, }\item[{int}]{\$max\+Retries}{ = {\ttfamily 10000}}\end{DoxyParamCaption})}
+
+Set a field to be unique.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$reset} & If set to true, resets the list of existing values \\
+\hline
+int & {\em \$max\+Retries} & Maximum number of retries to find a unique value, After which an Overflow\+Exception is thrown. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a61e213cc5ecf9914b6cf58c1945c47b6}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!setValid@{setValid}}
+\index{setValid@{setValid}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{setValid()}{setValid()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a61e213cc5ecf9914b6cf58c1945c47b6} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::set\+Valid (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{?Closure}]{\$validator}{ = {\ttfamily null}, }\item[{int}]{\$max\+Retries}{ = {\ttfamily 10000}}\end{DoxyParamCaption})}
+
+Set a field to be valid using a callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Closure(mixed)} & bool\texorpdfstring{$\vert$}{|}null \$validator A function returning true for valid values \\
+\hline
+int & {\em \$max\+Retries} & Maximum number of retries to find a valid value, After which an Overflow\+Exception is thrown. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_test_1_1_fabricator_a4a473255c59731703d3ffbe0c18a5a7f}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}!upCount@{upCount}}
+\index{upCount@{upCount}!CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator@{CodeIgniter\textbackslash{}Test\textbackslash{}Fabricator}}
+\doxysubsubsection{\texorpdfstring{upCount()}{upCount()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_fabricator_a4a473255c59731703d3ffbe0c18a5a7f} 
+static Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Fabricator\+::up\+Count (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Increment the count for a table
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Name of the target table\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The new count value 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Test/Fabricator.\+php\end{DoxyCompactItemize}

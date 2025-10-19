@@ -1,0 +1,53 @@
+\doxysection{Code\+Igniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}Fabricator\+Model Interface Reference}
+\hypertarget{interface_code_igniter_1_1_test_1_1_interfaces_1_1_fabricator_model}{}\label{interface_code_igniter_1_1_test_1_1_interfaces_1_1_fabricator_model}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel@{CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_test_1_1_interfaces_1_1_fabricator_model_a71c5da5f051825bd0cfe44fb729e7780}{find}} (\$id=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_test_1_1_interfaces_1_1_fabricator_model_a7ecc3c29ea266defee52420db37130c2}{insert}} (\$row=null, bool \$return\+ID=true)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_test_1_1_interfaces_1_1_fabricator_model_a71c5da5f051825bd0cfe44fb729e7780}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel@{CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel}!find@{find}}
+\index{find@{find}!CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel@{CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_test_1_1_interfaces_1_1_fabricator_model_a71c5da5f051825bd0cfe44fb729e7780} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Interfaces\textbackslash{}\+Fabricator\+Model\+::find (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetches the row of database from \$this-\/\texorpdfstring{$>$}{>}table with a primary key matching \$id.
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\texorpdfstring{$\vert$}{|}list$<$int\texorpdfstring{$\vert$}{|}string$>$\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null} & \$id One primary key or an array of primary keys\\
+\hline
+\end{DoxyParams}
+@phpstan-\/return (\$id is int\texorpdfstring{$\vert$}{|}string ? row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null \+: list\texorpdfstring{$<$}{<}row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$>$}{>}) \Hypertarget{interface_code_igniter_1_1_test_1_1_interfaces_1_1_fabricator_model_a7ecc3c29ea266defee52420db37130c2}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel@{CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel}!insert@{insert}}
+\index{insert@{insert}!CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel@{CodeIgniter\textbackslash{}Test\textbackslash{}Interfaces\textbackslash{}FabricatorModel}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_test_1_1_interfaces_1_1_fabricator_model_a7ecc3c29ea266defee52420db37130c2} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Interfaces\textbackslash{}\+Fabricator\+Model\+::insert (\begin{DoxyParamCaption}\item[{}]{\$row}{ = {\ttfamily null}, }\item[{bool}]{\$return\+ID}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Inserts data into the current table. If an object is provided, it will attempt to convert it to an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object | null & {\em \$row} & @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null \$row \\
+\hline
+bool & {\em \$return\+ID} & Whether insert ID should be returned or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Test/\+Interfaces/Fabricator\+Model.\+php\end{DoxyCompactItemize}

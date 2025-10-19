@@ -1,0 +1,88 @@
+\doxysection{Code\+Igniter\textbackslash{}CLI\textbackslash{}Commands Class Reference}
+\hypertarget{class_code_igniter_1_1_c_l_i_1_1_commands}{}\label{class_code_igniter_1_1_c_l_i_1_1_commands}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands_a0991fd5d073f5789eec3b7c4cbe096b2}{\+\_\+\+\_\+construct}} (\$logger=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands_a44af896607f860aadb26eba4e46c6fb5}{run}} (string \$command, array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands_a7142e8ba56128339f4eddfb9e642fcd5}{get\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands_a7d0911bbe3a4f4be3cd6282d6aaa25f4}{verify\+Command}} (string \$command, array \$commands)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands_a08ce07f872e955029febbab55a264a6a}{get\+Command\+Alternatives}} (string \$name, array \$collection)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_commands_a1aec98aad3a82270577335f16c4b8405}\label{class_code_igniter_1_1_c_l_i_1_1_commands_a1aec98aad3a82270577335f16c4b8405} 
+{\bfseries \$commands} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_commands_ab127d5e7b3364cd68532f54a230058fe}\label{class_code_igniter_1_1_c_l_i_1_1_commands_ab127d5e7b3364cd68532f54a230058fe} 
+{\bfseries \$logger}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Core functionality for running, listing, etc commands. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_commands_a0991fd5d073f5789eec3b7c4cbe096b2}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_commands_a0991fd5d073f5789eec3b7c4cbe096b2} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Commands\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$logger}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+Logger | null & {\em \$logger} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_commands_a08ce07f872e955029febbab55a264a6a}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}!getCommandAlternatives@{getCommandAlternatives}}
+\index{getCommandAlternatives@{getCommandAlternatives}!CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}}
+\doxysubsubsection{\texorpdfstring{getCommandAlternatives()}{getCommandAlternatives()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_commands_a08ce07f872e955029febbab55a264a6a} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Commands\+::get\+Command\+Alternatives (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$collection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Finds alternative of {\ttfamily \$name} among collection of commands. \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_commands_a7142e8ba56128339f4eddfb9e642fcd5}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}!getCommands@{getCommands}}
+\index{getCommands@{getCommands}!CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}}
+\doxysubsubsection{\texorpdfstring{getCommands()}{getCommands()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_commands_a7142e8ba56128339f4eddfb9e642fcd5} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Commands\+::get\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Provide access to the list of commands.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_commands_a44af896607f860aadb26eba4e46c6fb5}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_commands_a44af896607f860aadb26eba4e46c6fb5} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Commands\+::run (\begin{DoxyParamCaption}\item[{string}]{\$command}{, }\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Runs a command given
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}void Exit code 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_commands_a7d0911bbe3a4f4be3cd6282d6aaa25f4}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}!verifyCommand@{verifyCommand}}
+\index{verifyCommand@{verifyCommand}!CodeIgniter\textbackslash{}CLI\textbackslash{}Commands@{CodeIgniter\textbackslash{}CLI\textbackslash{}Commands}}
+\doxysubsubsection{\texorpdfstring{verifyCommand()}{verifyCommand()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_commands_a7d0911bbe3a4f4be3cd6282d6aaa25f4} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Commands\+::verify\+Command (\begin{DoxyParamCaption}\item[{string}]{\$command}{, }\item[{array}]{\$commands}{}\end{DoxyParamCaption})}
+
+Verifies if the command being sought is found in the commands list. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+CLI/Commands.\+php\end{DoxyCompactItemize}

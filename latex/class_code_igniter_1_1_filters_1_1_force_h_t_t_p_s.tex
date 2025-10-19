@@ -1,0 +1,68 @@
+\doxysection{Code\+Igniter\textbackslash{}Filters\textbackslash{}Force\+HTTPS Class Reference}
+\hypertarget{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s}{}\label{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS@{CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Force\+HTTPS\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Force\+HTTPS\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s_a97b4018db4b9f34aaa17e5b28f897144}{before}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \$arguments=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s_a27bdecffd3181a252a3d7a6ddc76b7e2}{after}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, \$arguments=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Force HTTPS filter 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s_a27bdecffd3181a252a3d7a6ddc76b7e2}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS@{CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS}!after@{after}}
+\index{after@{after}!CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS@{CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s_a27bdecffd3181a252a3d7a6ddc76b7e2} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Force\+HTTPS\+::after (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+We don\textquotesingle{}t have anything to do here.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_a9d6d93f12b94b7b65258deb6f2b3d90e}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s_a97b4018db4b9f34aaa17e5b28f897144}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS@{CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS}!before@{before}}
+\index{before@{before}!CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS@{CodeIgniter\textbackslash{}Filters\textbackslash{}ForceHTTPS}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s_a97b4018db4b9f34aaa17e5b28f897144} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Force\+HTTPS\+::before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Force Secure Site Access? If the config value \textquotesingle{}force\+Global\+Secure\+Requests\textquotesingle{} is true, will enforce that all requests to this site are made through HTTPS. Will redirect the user to the current page with HTTPS, as well as set the HTTP Strict Transport Security (HSTS) header for those browsers that support it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_abae5f86c1d0bef8b0b44652a7346b716}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Filters/Force\+HTTPS.\+php\end{DoxyCompactItemize}

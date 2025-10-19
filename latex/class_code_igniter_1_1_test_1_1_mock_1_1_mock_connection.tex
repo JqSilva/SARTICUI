@@ -1,0 +1,545 @@
+\doxysection{Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Connection Class Reference}
+\hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection}{}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Connection\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Connection\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_af435c7e2f494b9b021b784e38fc01654}{should\+Return}} (string \$method, \$return)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_abd286543b556ede946e70298e6d980b8}{query}} (string \$sql, \$binds=null, bool \$set\+Escape\+Flags=true, string \$query\+Class=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a25ba2d2453eae1055aff80c0de1e113e}{connect}} (bool \$persistent=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5d5fefb28f1c41921d84a8f23352807a}{reconnect}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a090a932c1fa7be1ae3a2599240d5004a}{set\+Database}} (string \$database\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a10b168efead7fe85f13d9e1d777094b3}{get\+Version}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a1bb4443323c31bb69821a3c90680f7d5}{affected\+Rows}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a2bd6cfd83c8bad5e2d7f04a28a0bc10c}{error}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aa32f5e7ac30699600f3d998b20fe9c4d}{insert\+ID}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aac62e704d6b940805e372f1d04d3ccd1}{\+\_\+\+\_\+construct}} (array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ab8d63d2677be0f490a2042d057250d35}{initialize}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a0421ced2158d9dfdf30e5f5a6eff41dd}{close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ac83218231100f90bc399c50ad1820097}{persistent\+Connect}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_adf495d3e697bed03b8e2de7a24a5f19a}{get\+Connection}} (?string \$alias=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a69a627cc8cdc2f9eecf64acfe81f516e}{get\+Database}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7a6a99e54651828a96e8196556a67cfd}{set\+Prefix}} (string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_abb8aeb268303d948a0f9979e0aa79b68}{get\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a092c8711d30dcbd0782a581390cd0c3e}{get\+Platform}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ade51825444016763fb492944efbe0381}{set\+Aliased\+Tables}} (array \$aliases)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a406f24e7a65ee882bf8930d7b5b24da1}{add\+Table\+Alias}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_afb414e5beeaa9d2e9fbecd0f3dc4e2f8}{simple\+Query}} (string \$sql)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a5cc50ad2ff53822d2c85483fe77f7d17}{trans\+Off}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7ea2e30d187500a346390d3e852b360a}{trans\+Strict}} (bool \$mode=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a69e4c53bfcafbe69373ee8fdde8b1ab1}{trans\+Start}} (bool \$test\+Mode=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a9c23263020387cb58f19abc864c0c97a}{trans\+Exception}} (bool \$trans\+Exception)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a961608fe7ba708ce0f4e22a15b7b307a}{trans\+Complete}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aa419237d70c41ecf76cabf49f3c3f950}{trans\+Status}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a62f3936a80cecd42201d352801b91d53}{trans\+Begin}} (bool \$test\+Mode=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a6c24ed5becbcc74a9eb24919512ff1d1}{trans\+Commit}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aece009be8106a57b4ed5fd806c873a29}{trans\+Rollback}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}} (\$table\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a1f1db28b77054134cfd9e37684916ecd}{new\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ab05703b3da65f1311c79f67b9eb0448d}{get\+Last\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ada5443e6314e942e1aca2fa18fb85ddf}{show\+Last\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a127f9ff71e755b23663e01c2c4d42404}{get\+Connect\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a9253d14fffa4f06724c056d22e7d9586}{get\+Connect\+Duration}} (int \$decimals=6)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aa9d7a3d252531308ffe97d9bf5f6f0a5}{protect\+Identifiers}} (\$item, bool \$prefix\+Single=false, ?bool \$protect\+Identifiers=null, bool \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a065461d859e882cfdfc139b218b73daf}{field\+Exists}}=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a2f4e98ffa142e8a897798b3fb4e81a2f}{escape\+Identifier}} (string \$item)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_abc479b3262976ffa69fd8f6016c49494}{escape\+Identifiers}} (\$item)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aa856ec33761e803fbdb3e019c80e98a9}{prefix\+Table}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}}=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a454696eb147aa4372b53568dca89609d}{escape}} (\$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a50950ed9b2d709781782483b35d3de16}{escape\+String}} (\$str, bool \$like=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a9643f2ba720b3f46b21c0d4efc1906aa}{escape\+Like\+String}} (\$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a4f87cf67a3ba556cc6dbccc0d7552eb1}{call\+Function}} (string \$function\+Name,... \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_adf4d03925231e392e40bffe24e6b584c}{table\+Exists}} (string \$table\+Name, bool \$cached=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7cca8e2be6fbf09396baa3c97146a15c}{get\+Field\+Names}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a065461d859e882cfdfc139b218b73daf}{field\+Exists}} (string \$field\+Name, string \$table\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7beabb3c5a23588a88f1738f8062ed35}{get\+Field\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aacfd231b64079cc316bee2ada0b4caa4}{get\+Index\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ae4758f423796d9e087fad565c3f325b6}{get\+Foreign\+Key\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a85c0dea3ff1064e6994ff08b4e814767}{disable\+Foreign\+Key\+Checks}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_adf013604770d1a6fec4b1ced1a6b4b0f}{enable\+Foreign\+Key\+Checks}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a3094b9d5c71b4eb97ec0977f865b2f27}{pretend}} (bool \$pretend=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a82c172a7f80b0097cacd65c900841b97}{reset\+Data\+Cache}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a5f174e2f165bc417ca03fc5f36fe8fd2}{is\+Write\+Type}} (\$sql)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a9236b49ff58a0fe10b2e958cc48d66e1}{\+\_\+\+\_\+get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a1a2ea9d56b1a9f50686be00c1fcc7cf7}{\+\_\+\+\_\+isset}} (string \$key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_a002bff0bf48e1dcd1ed283d7b8374a45}{query}} (string \$sql, \$binds=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5bc8344b4c0f3dc52c68763cc7f590ad}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5bc8344b4c0f3dc52c68763cc7f590ad} 
+{\bfseries \$database}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_abbbdc93c4030777a9128b64dd516ace6}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_abbbdc93c4030777a9128b64dd516ace6} 
+{\bfseries \$last\+Query}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$conn\+ID} = false
+\item 
+{\bfseries \$result\+ID} = false
+\item 
+{\bfseries \$protect\+Identifiers} = true
+\item 
+{\bfseries \$escape\+Char} = \textquotesingle{}"{}\textquotesingle{}
+\item 
+{\bfseries \$like\+Escape\+Str} = "{} ESCAPE \textquotesingle{}\%s\textquotesingle{} "{}
+\item 
+{\bfseries \$like\+Escape\+Char} = \textquotesingle{}!\textquotesingle{}
+\item 
+{\bfseries \$data\+Cache} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$trans\+Enabled} = true
+\item 
+{\bfseries \$trans\+Strict} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5d770537630b100687d5e781b98a8584}{execute}} (string \$sql)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aeab107f1e23599f3808d87ba0a1e5115}{\+\_\+list\+Tables}} (bool \$constrain\+By\+Prefix=false, ?string \$table\+Name=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aa21dfab4922726483ccaa969f773f40c}{\+\_\+list\+Columns}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}}=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_ab1f87ce719a04022544cc1699137a3bc}{\+\_\+field\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a08b287d5b61483ac725b1945ab54eea9}{\+\_\+index\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a8aa801ac11b3a1dd6077bf9e081cc801}{\+\_\+foreign\+Key\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aedf7079a7cbeb2d63ef2af05508eb3fe}{\+\_\+close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a79830fbcc843ba80627f6e3fe647c2f8}{\+\_\+trans\+Begin}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5cb179aeee6803b00ad93529d961079d}{\+\_\+trans\+Commit}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_ad0a6d4ee103bb6f2c516c0d02966fbbc}{\+\_\+trans\+Rollback}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ab5ff89d459ec05d5ccaa35581b29ad84}{\+\_\+escape\+String}} (string \$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a8c1227c8b1e6cbc537248d2dad69eef6}{get\+Driver\+Function\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a12ace84fe8d342d618416077a3af5a4c}{foreign\+Key\+Data\+To\+Objects}} (array \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a255cabee6040aa0f7e1dc73dcca4a0cc}{\+\_\+disable\+Foreign\+Key\+Checks}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_af2f5dba345afcaeb44c48c7ced11dcd2}{\+\_\+enable\+Foreign\+Key\+Checks}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aad949c3877b100d56c25d5d93667c70c}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aad949c3877b100d56c25d5d93667c70c} 
+{\bfseries \$return\+Values} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_adaec04090f8560ef7c118e8b28abd4fa}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_adaec04090f8560ef7c118e8b28abd4fa} 
+{\bfseries \$schema}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+DSN}
+\item 
+{\bfseries \$port} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$hostname}
+\item 
+{\bfseries \$username}
+\item 
+{\bfseries \$password}
+\item 
+{\bfseries \$database}
+\item 
+{\bfseries \$\+DBDriver} = \textquotesingle{}My\+SQLi\textquotesingle{}
+\item 
+{\bfseries \$subdriver}
+\item 
+{\bfseries \$\+DBPrefix} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$p\+Connect} = false
+\item 
+{\bfseries \$\+DBDebug} = true
+\item 
+{\bfseries \$charset} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$\+DBCollat} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$swap\+Pre} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$encrypt} = false
+\item 
+{\bfseries \$compress} = false
+\item 
+{\bfseries \$strict\+On}
+\item 
+{\bfseries \$failover} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$last\+Query}
+\item 
+{\bfseries \$reserved\+Identifiers} = \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}
+\item 
+{\bfseries \$preg\+Escape\+Char} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$connect\+Time} = 0.\+0
+\item 
+{\bfseries \$connect\+Duration} = 0.\+0
+\item 
+{\bfseries \$pretend} = false
+\item 
+{\bfseries \$trans\+Depth} = 0
+\item 
+{\bfseries \$trans\+Status} = true
+\item 
+{\bfseries \$trans\+Failure} = false
+\item 
+bool \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a88d305d85a6f8b395f7cfb1f5886b002}{\$trans\+Exception}} = false
+\item 
+{\bfseries \$aliased\+Tables} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$query\+Class} = Query\+::class
+\item 
+array \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7b9a7afd84616c7077741bced6ac474a}{\$date\+Format}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\texorpdfstring{$<$}{<}object\texorpdfstring{$\vert$}{|}resource, object\texorpdfstring{$\vert$}{|}resource\texorpdfstring{$>$}{>} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aedf7079a7cbeb2d63ef2af05508eb3fe}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_close@{\_close}}
+\index{\_close@{\_close}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_close()}{\_close()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aedf7079a7cbeb2d63ef2af05508eb3fe} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Close the connection.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a58298a1df2c63e7531e6c042562ffc36}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_ab1f87ce719a04022544cc1699137a3bc}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_fieldData@{\_fieldData}}
+\index{\_fieldData@{\_fieldData}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_fieldData()}{\_fieldData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_ab1f87ce719a04022544cc1699137a3bc} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+field\+Data (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Platform-\/specific field data information.
+
+\begin{DoxySeeAlso}{See also}
+get\+Field\+Data()
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+list$<$std\+Class$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a13d8be849c37da2d0539a7ce08b5153a}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a8aa801ac11b3a1dd6077bf9e081cc801}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_foreignKeyData@{\_foreignKeyData}}
+\index{\_foreignKeyData@{\_foreignKeyData}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_foreignKeyData()}{\_foreignKeyData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a8aa801ac11b3a1dd6077bf9e081cc801} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+foreign\+Key\+Data (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Platform-\/specific foreign keys data.
+
+\begin{DoxySeeAlso}{See also}
+get\+Foreign\+Key\+Data()
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+array$<$string, std\+Class$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_abe77bb70eacf568dce007099252cf218}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a08b287d5b61483ac725b1945ab54eea9}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_indexData@{\_indexData}}
+\index{\_indexData@{\_indexData}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_indexData()}{\_indexData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a08b287d5b61483ac725b1945ab54eea9} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+index\+Data (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Platform-\/specific index data.
+
+\begin{DoxySeeAlso}{See also}
+get\+Index\+Data()
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+array$<$string, std\+Class$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a950bcd3a44e77f8bb6c7690d49c21b03}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aa21dfab4922726483ccaa969f773f40c}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_listColumns@{\_listColumns}}
+\index{\_listColumns@{\_listColumns}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_listColumns()}{\_listColumns()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aa21dfab4922726483ccaa969f773f40c} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+list\+Columns (\begin{DoxyParamCaption}\item[{string}]{\$table}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific query string so that the column names can be fetched. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a824278bd4bfa9b89566f49ecdfe4139d}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aeab107f1e23599f3808d87ba0a1e5115}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_listTables@{\_listTables}}
+\index{\_listTables@{\_listTables}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_listTables()}{\_listTables()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aeab107f1e23599f3808d87ba0a1e5115} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+list\+Tables (\begin{DoxyParamCaption}\item[{bool}]{\$constrain\+By\+Prefix}{ = {\ttfamily false}, }\item[{?string}]{\$table\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates the SQL for listing tables in a platform-\/dependent manner.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$table\+Name} & If \$table\+Name is provided will return only this table if exists. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a076c19c19adda30b299ff14fb698c92e}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a79830fbcc843ba80627f6e3fe647c2f8}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_transBegin@{\_transBegin}}
+\index{\_transBegin@{\_transBegin}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_transBegin()}{\_transBegin()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a79830fbcc843ba80627f6e3fe647c2f8} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+trans\+Begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Begin Transaction 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a6b6f0646534dc580690154ef644e3899}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5cb179aeee6803b00ad93529d961079d}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_transCommit@{\_transCommit}}
+\index{\_transCommit@{\_transCommit}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_transCommit()}{\_transCommit()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5cb179aeee6803b00ad93529d961079d} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+trans\+Commit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Commit Transaction 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a946bfe0fcf3f9eae85b962b5e8c44187}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_ad0a6d4ee103bb6f2c516c0d02966fbbc}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!\_transRollback@{\_transRollback}}
+\index{\_transRollback@{\_transRollback}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{\_transRollback()}{\_transRollback()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_ad0a6d4ee103bb6f2c516c0d02966fbbc} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::\+\_\+trans\+Rollback (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rollback Transaction 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a3719a7af4dfa13899d081aca6484cadd}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a1bb4443323c31bb69821a3c90680f7d5}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!affectedRows@{affectedRows}}
+\index{affectedRows@{affectedRows}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{affectedRows()}{affectedRows()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a1bb4443323c31bb69821a3c90680f7d5} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::affected\+Rows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the total number of rows affected by this query. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aa67533c767893e0f642aea72e46f82e2}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a25ba2d2453eae1055aff80c0de1e113e}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!connect@{connect}}
+\index{connect@{connect}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a25ba2d2453eae1055aff80c0de1e113e} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::connect (\begin{DoxyParamCaption}\item[{bool}]{\$persistent}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Connect to the database.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_a261ebaae17b98497c435d0c0d2250511}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a2bd6cfd83c8bad5e2d7f04a28a0bc10c}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!error@{error}}
+\index{error@{error}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a2bd6cfd83c8bad5e2d7f04a28a0bc10c} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the last error code and message.
+
+Must return an array with keys \textquotesingle{}code\textquotesingle{} and \textquotesingle{}message\textquotesingle{}\+:
+
+return \mbox{[}\textquotesingle{}code\textquotesingle{} =\texorpdfstring{$>$}{>} null, \textquotesingle{}message\textquotesingle{} =\texorpdfstring{$>$}{>} null); 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7b5b52fd6364ae0d2f0d67e64b9ccf37}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5d770537630b100687d5e781b98a8584}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!execute@{execute}}
+\index{execute@{execute}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5d770537630b100687d5e781b98a8584} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::execute (\begin{DoxyParamCaption}\item[{string}]{\$sql}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Executes the query against the database.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}object 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_adf9ef497d1330645b0ddcb8617eee8ab}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a10b168efead7fe85f13d9e1d777094b3}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{getVersion()}{getVersion()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a10b168efead7fe85f13d9e1d777094b3} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::get\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a string containing the version of the database being used. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_abfc8cf244d7d82cff3424f48c91095e3}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aa32f5e7ac30699600f3d998b20fe9c4d}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!insertID@{insertID}}
+\index{insertID@{insertID}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{insertID()}{insertID()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_aa32f5e7ac30699600f3d998b20fe9c4d} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::insert\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Insert ID 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a2548b3062e488c28a2f3853b6eaeb7e1}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_abd286543b556ede946e70298e6d980b8}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!query@{query}}
+\index{query@{query}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_abd286543b556ede946e70298e6d980b8} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::query (\begin{DoxyParamCaption}\item[{string}]{\$sql}{, }\item[{}]{\$binds}{ = {\ttfamily null}, }\item[{bool}]{\$set\+Escape\+Flags}{ = {\ttfamily true}, }\item[{string}]{\$query\+Class}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Orchestrates a query against the database. Queries must use Database\textbackslash{}\+Statement objects to store the query and build it. This method works with the cache.
+
+Should automatically handle different connections for read/write queries if needed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & ...\$binds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Base\+Result\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}\+Query
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]BC set \$query\+Class default as null in 4.\+1 \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5d5fefb28f1c41921d84a8f23352807a}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!reconnect@{reconnect}}
+\index{reconnect@{reconnect}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{reconnect()}{reconnect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a5d5fefb28f1c41921d84a8f23352807a} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::reconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Keep or establish the connection if no queries have been sent for a length of time exceeding the server\textquotesingle{}s idle timeout. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_ad200a6acc07bb8dc90df6c0ea037d077}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a090a932c1fa7be1ae3a2599240d5004a}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!setDatabase@{setDatabase}}
+\index{setDatabase@{setDatabase}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{setDatabase()}{setDatabase()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_a090a932c1fa7be1ae3a2599240d5004a} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::set\+Database (\begin{DoxyParamCaption}\item[{string}]{\$database\+Name}{}\end{DoxyParamCaption})}
+
+Select a specific database table to use.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_a7d59df33c2fdc324a5a8de9257b8d38e}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_af435c7e2f494b9b021b784e38fc01654}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}!shouldReturn@{shouldReturn}}
+\index{shouldReturn@{shouldReturn}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockConnection}}
+\doxysubsubsection{\texorpdfstring{shouldReturn()}{shouldReturn()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_connection_af435c7e2f494b9b021b784e38fc01654} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Connection\+::should\+Return (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{}]{\$return}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$return} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Test/\+Mock/Mock\+Connection.\+php\end{DoxyCompactItemize}

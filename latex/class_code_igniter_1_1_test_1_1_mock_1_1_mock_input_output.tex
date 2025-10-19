@@ -1,0 +1,101 @@
+\doxysection{Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Input\+Output Class Reference}
+\hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output}{}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Input\+Output\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Input\+Output\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a918aadffee75f222f5622daba8e75f75}{set\+Inputs}} (array \$inputs)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a78cd25b53a4b8e26fb12c85a701f33be}{get\+Output}} (?int \$index=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a3c6e19fcd86c2a8c819453a38579a6cf}{get\+Outputs}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_ac3a6e14873e57b232196873eb0cdba39}{input}} (?string \$prefix=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a002e64dd8c34be1f956048606427610b}{fwrite}} (\$handle, string \$string)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a002e64dd8c34be1f956048606427610b}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}!fwrite@{fwrite}}
+\index{fwrite@{fwrite}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}}
+\doxysubsubsection{\texorpdfstring{fwrite()}{fwrite()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a002e64dd8c34be1f956048606427610b} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Input\+Output\+::fwrite (\begin{DoxyParamCaption}\item[{}]{\$handle}{, }\item[{string}]{\$string}{}\end{DoxyParamCaption})}
+
+While the library is intended for use on CLI commands, commands can be called from controllers and elsewhere so we need a way to allow them to still work.
+
+For now, just echo the content, but look into a better solution down the road.
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$handle} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_input_output_ab77b2f1211c96b291e223d8351dd8f30}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Input\+Output}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a78cd25b53a4b8e26fb12c85a701f33be}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}!getOutput@{getOutput}}
+\index{getOutput@{getOutput}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}}
+\doxysubsubsection{\texorpdfstring{getOutput()}{getOutput()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a78cd25b53a4b8e26fb12c85a701f33be} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Input\+Output\+::get\+Output (\begin{DoxyParamCaption}\item[{?int}]{\$index}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets the item from the output array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$index} & The output array index. If null, returns all output string. If negative int, returns the last \$index-\/th item. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a3c6e19fcd86c2a8c819453a38579a6cf}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}!getOutputs@{getOutputs}}
+\index{getOutputs@{getOutputs}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}}
+\doxysubsubsection{\texorpdfstring{getOutputs()}{getOutputs()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a3c6e19fcd86c2a8c819453a38579a6cf} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Input\+Output\+::get\+Outputs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the outputs array. \Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_ac3a6e14873e57b232196873eb0cdba39}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}!input@{input}}
+\index{input@{input}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_ac3a6e14873e57b232196873eb0cdba39} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Input\+Output\+::input (\begin{DoxyParamCaption}\item[{?string}]{\$prefix}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get input from the shell, using readline or the standard STDIN
+
+Named options must be in the following formats\+: php index.\+php user -\/v --v -\/name=John --name=John
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$prefix} & You may specify a string with which to prompt the user. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_input_output_a070d54f52693c1ad053b7f9f6ca26ccc}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Input\+Output}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a918aadffee75f222f5622daba8e75f75}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}!setInputs@{setInputs}}
+\index{setInputs@{setInputs}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockInputOutput}}
+\doxysubsubsection{\texorpdfstring{setInputs()}{setInputs()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_input_output_a918aadffee75f222f5622daba8e75f75} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Input\+Output\+::set\+Inputs (\begin{DoxyParamCaption}\item[{array}]{\$inputs}{}\end{DoxyParamCaption})}
+
+Sets user inputs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,string$>$} & \$inputs @phpstan-\/param list$<$string$>$ \$inputs \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Test/\+Mock/Mock\+Input\+Output.\+php\end{DoxyCompactItemize}

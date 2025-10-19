@@ -1,0 +1,151 @@
+\doxysection{Code\+Igniter\textbackslash{}Encryption\textbackslash{}Encryption Class Reference}
+\hypertarget{class_code_igniter_1_1_encryption_1_1_encryption}{}\label{class_code_igniter_1_1_encryption_1_1_encryption}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_encryption_ac032903a2c2d9f0782f4c2881b2362b0}{\+\_\+\+\_\+construct}} (?Encryption\+Config \$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_encryption_a35e1300f52d2be544478138caa5eca38}{initialize}} (?Encryption\+Config \$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_encryption_a6bdbdf7925a68506fc4467217c7bf475}{\+\_\+\+\_\+get}} (\$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_encryption_ac75b91a0ff75159eead04f1583463db8}{\+\_\+\+\_\+isset}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_encryption_aafbd99ced215e522ab38cbd24aaaae03}{create\+Key}} (\$length=32)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_abd1d127e92096a338e0eea0179af6916}\label{class_code_igniter_1_1_encryption_1_1_encryption_abd1d127e92096a338e0eea0179af6916} 
+{\bfseries \$encrypter}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_a4c0b5c4d9dad7b3b31afaeb49d3fb2fe}\label{class_code_igniter_1_1_encryption_1_1_encryption_a4c0b5c4d9dad7b3b31afaeb49d3fb2fe} 
+{\bfseries \$driver}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_a6932863821d453833ea95269161714fd}\label{class_code_igniter_1_1_encryption_1_1_encryption_a6932863821d453833ea95269161714fd} 
+{\bfseries \$key}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_a1bdfcd9f4a3e8003f11149f300a0ff23}\label{class_code_igniter_1_1_encryption_1_1_encryption_a1bdfcd9f4a3e8003f11149f300a0ff23} 
+{\bfseries \$hmac\+Key}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_a27cebe6d039408fcfb1f14da0cdd9fad}\label{class_code_igniter_1_1_encryption_1_1_encryption_a27cebe6d039408fcfb1f14da0cdd9fad} 
+{\bfseries \$digest} = \textquotesingle{}SHA512\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_encryption_a9211889e606b2e60c5661c5db58ce807}{\$drivers}}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_a13a503c166f206d37f39efcba0bd21d3}\label{class_code_igniter_1_1_encryption_1_1_encryption_a13a503c166f206d37f39efcba0bd21d3} 
+{\bfseries \$handlers} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_code_igniter}{Code\+Igniter} Encryption Manager
+
+Provides two-\/way keyed encryption via PHP\textquotesingle{}s Sodium and/or Open\+SSL extensions. This class determines the driver, cipher, and mode to use, and then initializes the appropriate encryption handler.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encryption\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_ac032903a2c2d9f0782f4c2881b2362b0}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_encryption_ac032903a2c2d9f0782f4c2881b2362b0} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encryption\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?Encryption\+Config}]{\$config}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Encryption\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_a6bdbdf7925a68506fc4467217c7bf475}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_encryption_a6bdbdf7925a68506fc4467217c7bf475} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encryption\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+\+\_\+\+\_\+get() magic, providing readonly access to some of our protected properties
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Property name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_ac75b91a0ff75159eead04f1583463db8}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}!\_\_isset@{\_\_isset}}
+\index{\_\_isset@{\_\_isset}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}}
+\doxysubsubsection{\texorpdfstring{\_\_isset()}{\_\_isset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_encryption_ac75b91a0ff75159eead04f1583463db8} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encryption\+::\+\_\+\+\_\+isset (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+\+\_\+\+\_\+isset() magic, providing checking for some of our protected properties
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Property name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_aafbd99ced215e522ab38cbd24aaaae03}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}!createKey@{createKey}}
+\index{createKey@{createKey}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}}
+\doxysubsubsection{\texorpdfstring{createKey()}{createKey()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_encryption_aafbd99ced215e522ab38cbd24aaaae03} 
+static Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encryption\+::create\+Key (\begin{DoxyParamCaption}\item[{}]{\$length}{ = {\ttfamily 32}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a random key
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & Output length\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_a35e1300f52d2be544478138caa5eca38}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_encryption_a35e1300f52d2be544478138caa5eca38} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encryption\+::initialize (\begin{DoxyParamCaption}\item[{?Encryption\+Config}]{\$config}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Initialize or re-\/initialize an encrypter
+
+\begin{DoxyReturn}{Returns}
+Encrypter\+Interface
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Encryption\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_encryption_a9211889e606b2e60c5661c5db58ce807}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}!\$drivers@{\$drivers}}
+\index{\$drivers@{\$drivers}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Encryption}}
+\doxysubsubsection{\texorpdfstring{\$drivers}{\$drivers}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_encryption_a9211889e606b2e60c5661c5db58ce807} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encryption\+::\$drivers\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'OpenSSL'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Sodium'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Encryption/Encryption.\+php\end{DoxyCompactItemize}

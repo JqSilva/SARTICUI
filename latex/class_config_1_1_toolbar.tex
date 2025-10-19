@@ -1,0 +1,158 @@
+\doxysection{Config\textbackslash{}Toolbar Class Reference}
+\hypertarget{class_config_1_1_toolbar}{}\label{class_config_1_1_toolbar}\index{Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}}
+
+
+Inheritance diagram for Config\textbackslash{}Toolbar\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Toolbar\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_config_1_1_toolbar_aa783ddc3874d911f507354854a4fef06}{\$collectors}}
+\item 
+bool \mbox{\hyperlink{class_config_1_1_toolbar_a8eb108181e0c9f499c1cf2d669a6aee2}{\$collect\+Var\+Data}} = true
+\item 
+int \mbox{\hyperlink{class_config_1_1_toolbar_a69e75384ae8a33b09539f5830da1e356}{\$max\+History}} = 20
+\item 
+string \mbox{\hyperlink{class_config_1_1_toolbar_a6ba5d61e2c9c7b9fe270092674957ea6}{\$views\+Path}} = SYSTEMPATH . \textquotesingle{}Debug/\mbox{\hyperlink{class_config_1_1_toolbar}{Toolbar}}/\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_1_1_collectors_1_1_views}{Views}}/\textquotesingle{}
+\item 
+int \mbox{\hyperlink{class_config_1_1_toolbar_a4b4ad843a83caf71ef87b35dccac4839}{\$max\+Queries}} = 100
+\item 
+array \mbox{\hyperlink{class_config_1_1_toolbar_a2f3e07ecccb8d7d07f32f08108eb6db4}{\$watched\+Directories}}
+\item 
+array \mbox{\hyperlink{class_config_1_1_toolbar_ac667da07c8966f21e2dfc70ea1b5dbbf}{\$watched\+Extensions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_toolbar_autotoc_md177}{}\doxysubsubsection{\texorpdfstring{Debug Toolbar}{Debug Toolbar}}\label{class_config_1_1_toolbar_autotoc_md177}
+The Debug Toolbar provides a way to see information about the performance and state of your application during that page display. By default it will NOT be displayed under production environments, and will only display if {\ttfamily CI\+\_\+\+DEBUG} is true, since if it\textquotesingle{}s not, there\textquotesingle{}s not much to display anyway. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_toolbar_aa783ddc3874d911f507354854a4fef06}\index{Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}!\$collectors@{\$collectors}}
+\index{\$collectors@{\$collectors}!Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{\$collectors}{\$collectors}}
+{\footnotesize\ttfamily \label{class_config_1_1_toolbar_aa783ddc3874d911f507354854a4fef06} 
+array Config\textbackslash{}\+Toolbar\+::\$collectors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Timers::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Database::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Logs::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Views::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Files::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Routes::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Events::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_config_1_1_toolbar_a8eb108181e0c9f499c1cf2d669a6aee2}\index{Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}!\$collectVarData@{\$collectVarData}}
+\index{\$collectVarData@{\$collectVarData}!Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{\$collectVarData}{\$collectVarData}}
+{\footnotesize\ttfamily \label{class_config_1_1_toolbar_a8eb108181e0c9f499c1cf2d669a6aee2} 
+bool Config\textbackslash{}\+Toolbar\+::\$collect\+Var\+Data = true}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_toolbar_autotoc_md181}{}\doxysubsubsection{\texorpdfstring{Collect Var Data}{Collect Var Data}}\label{class_config_1_1_toolbar_autotoc_md181}
+If set to false var data from the views will not be collected. Useful to avoid high memory usage when there are lots of data passed to the view. \Hypertarget{class_config_1_1_toolbar_a69e75384ae8a33b09539f5830da1e356}\index{Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}!\$maxHistory@{\$maxHistory}}
+\index{\$maxHistory@{\$maxHistory}!Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{\$maxHistory}{\$maxHistory}}
+{\footnotesize\ttfamily \label{class_config_1_1_toolbar_a69e75384ae8a33b09539f5830da1e356} 
+int Config\textbackslash{}\+Toolbar\+::\$max\+History = 20}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_toolbar_autotoc_md183}{}\doxysubsubsection{\texorpdfstring{Max History}{Max History}}\label{class_config_1_1_toolbar_autotoc_md183}
+{\ttfamily \$max\+History} sets a limit on the number of past requests that are stored, helping to conserve file space used to store them. You can set it to 0 (zero) to not have any history stored, or -\/1 for unlimited history. \Hypertarget{class_config_1_1_toolbar_a4b4ad843a83caf71ef87b35dccac4839}\index{Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}!\$maxQueries@{\$maxQueries}}
+\index{\$maxQueries@{\$maxQueries}!Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{\$maxQueries}{\$maxQueries}}
+{\footnotesize\ttfamily \label{class_config_1_1_toolbar_a4b4ad843a83caf71ef87b35dccac4839} 
+int Config\textbackslash{}\+Toolbar\+::\$max\+Queries = 100}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_toolbar_autotoc_md187}{}\doxysubsubsection{\texorpdfstring{Max Queries}{Max Queries}}\label{class_config_1_1_toolbar_autotoc_md187}
+If the Database Collector is enabled, it will log every query that the the system generates so they can be displayed on the toolbar\textquotesingle{}s timeline and in the query log. This can lead to memory issues in some instances with hundreds of queries.
+
+{\ttfamily \$max\+Queries} defines the maximum amount of queries that will be stored. \Hypertarget{class_config_1_1_toolbar_a6ba5d61e2c9c7b9fe270092674957ea6}\index{Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}!\$viewsPath@{\$viewsPath}}
+\index{\$viewsPath@{\$viewsPath}!Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{\$viewsPath}{\$viewsPath}}
+{\footnotesize\ttfamily \label{class_config_1_1_toolbar_a6ba5d61e2c9c7b9fe270092674957ea6} 
+string Config\textbackslash{}\+Toolbar\+::\$views\+Path = SYSTEMPATH . \textquotesingle{}Debug/\mbox{\hyperlink{class_config_1_1_toolbar}{Toolbar}}/\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_toolbar_1_1_collectors_1_1_views}{Views}}/\textquotesingle{}}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_toolbar_autotoc_md185}{}\doxysubsubsection{\texorpdfstring{Toolbar Views Path}{Toolbar Views Path}}\label{class_config_1_1_toolbar_autotoc_md185}
+The full path to the the views that are used by the toolbar. This MUST have a trailing slash. \Hypertarget{class_config_1_1_toolbar_a2f3e07ecccb8d7d07f32f08108eb6db4}\index{Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}!\$watchedDirectories@{\$watchedDirectories}}
+\index{\$watchedDirectories@{\$watchedDirectories}!Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{\$watchedDirectories}{\$watchedDirectories}}
+{\footnotesize\ttfamily \label{class_config_1_1_toolbar_a2f3e07ecccb8d7d07f32f08108eb6db4} 
+array Config\textbackslash{}\+Toolbar\+::\$watched\+Directories}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'app'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_config_1_1_toolbar_ac667da07c8966f21e2dfc70ea1b5dbbf}\index{Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}!\$watchedExtensions@{\$watchedExtensions}}
+\index{\$watchedExtensions@{\$watchedExtensions}!Config\textbackslash{}Toolbar@{Config\textbackslash{}Toolbar}}
+\doxysubsubsection{\texorpdfstring{\$watchedExtensions}{\$watchedExtensions}}
+{\footnotesize\ttfamily \label{class_config_1_1_toolbar_ac667da07c8966f21e2dfc70ea1b5dbbf} 
+array Config\textbackslash{}\+Toolbar\+::\$watched\+Extensions}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'php'},\ \textcolor{stringliteral}{'css'},\ \textcolor{stringliteral}{'js'},\ \textcolor{stringliteral}{'html'},\ \textcolor{stringliteral}{'svg'},\ \textcolor{stringliteral}{'json'},\ \textcolor{stringliteral}{'env'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Toolbar.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}Migration Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_migration}{}\label{class_code_igniter_1_1_database_1_1_migration}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Migration@{CodeIgniter\textbackslash{}Database\textbackslash{}Migration}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}Migration\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_ac7782625e2d9f9a7c34bd97b9837776f}\label{class_code_igniter_1_1_database_1_1_migration_ac7782625e2d9f9a7c34bd97b9837776f} 
+{\bfseries \+\_\+\+\_\+construct} (?\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_forge}{Forge}} \$forge=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_a8757456227decb193cb21b08479a2fd6}{get\+DBGroup}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_a937acd1f0ec24852e325fe84af16975f}{up}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_aa8e2c40b048d1325869f98f2261059a5}{down}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_aa1f00601bb1fd1df8b2e5aebb6bb5099}\label{class_code_igniter_1_1_database_1_1_migration_aa1f00601bb1fd1df8b2e5aebb6bb5099} 
+{\bfseries \$\+DBGroup}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_aed12adc7668b439ba6bdae851a1ae934}\label{class_code_igniter_1_1_database_1_1_migration_aed12adc7668b439ba6bdae851a1ae934} 
+{\bfseries \$db}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_aa75d25b5efd92c8bf33742e16a861d97}\label{class_code_igniter_1_1_database_1_1_migration_aa75d25b5efd92c8bf33742e16a861d97} 
+{\bfseries \$forge}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Migration 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_aa8e2c40b048d1325869f98f2261059a5}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Migration@{CodeIgniter\textbackslash{}Database\textbackslash{}Migration}!down@{down}}
+\index{down@{down}!CodeIgniter\textbackslash{}Database\textbackslash{}Migration@{CodeIgniter\textbackslash{}Database\textbackslash{}Migration}}
+\doxysubsubsection{\texorpdfstring{down()}{down()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_aa8e2c40b048d1325869f98f2261059a5} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+::down (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Revert a migration step. 
+
+Reimplemented in \mbox{\hyperlink{class_tests_1_1_support_1_1_database_1_1_migrations_1_1_example_migration_a1ac690ab4511fb495b45abb19079b905}{Tests\textbackslash{}\+Support\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Example\+Migration}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_a8757456227decb193cb21b08479a2fd6}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Migration@{CodeIgniter\textbackslash{}Database\textbackslash{}Migration}!getDBGroup@{getDBGroup}}
+\index{getDBGroup@{getDBGroup}!CodeIgniter\textbackslash{}Database\textbackslash{}Migration@{CodeIgniter\textbackslash{}Database\textbackslash{}Migration}}
+\doxysubsubsection{\texorpdfstring{getDBGroup()}{getDBGroup()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_a8757456227decb193cb21b08479a2fd6} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+::get\+DBGroup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the database group name this migration uses. \Hypertarget{class_code_igniter_1_1_database_1_1_migration_a937acd1f0ec24852e325fe84af16975f}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Migration@{CodeIgniter\textbackslash{}Database\textbackslash{}Migration}!up@{up}}
+\index{up@{up}!CodeIgniter\textbackslash{}Database\textbackslash{}Migration@{CodeIgniter\textbackslash{}Database\textbackslash{}Migration}}
+\doxysubsubsection{\texorpdfstring{up()}{up()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_a937acd1f0ec24852e325fe84af16975f} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+::up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Perform a migration step. 
+
+Reimplemented in \mbox{\hyperlink{class_tests_1_1_support_1_1_database_1_1_migrations_1_1_example_migration_ac1f3192adf0272192c14bbcc0202830c}{Tests\textbackslash{}\+Support\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Example\+Migration}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/Migration.\+php\end{DoxyCompactItemize}

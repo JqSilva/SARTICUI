@@ -1,0 +1,38 @@
+\doxysection{Kint\textbackslash{}Parser\textbackslash{}Plugin\+Interface Interface Reference}
+\hypertarget{interface_kint_1_1_parser_1_1_plugin_interface}{}\label{interface_kint_1_1_parser_1_1_plugin_interface}\index{Kint\textbackslash{}Parser\textbackslash{}PluginInterface@{Kint\textbackslash{}Parser\textbackslash{}PluginInterface}}
+
+
+Inheritance diagram for Kint\textbackslash{}Parser\textbackslash{}Plugin\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_kint_1_1_parser_1_1_plugin_interface_a3d6e84454013161e3be58b3b21ef777a}\label{interface_kint_1_1_parser_1_1_plugin_interface_a3d6e84454013161e3be58b3b21ef777a} 
+{\bfseries set\+Parser} (\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser}{Parser}} \$p)
+\item 
+\Hypertarget{interface_kint_1_1_parser_1_1_plugin_interface_af2001837c36ad6bb6efd2a3a0b520a59}\label{interface_kint_1_1_parser_1_1_plugin_interface_af2001837c36ad6bb6efd2a3a0b520a59} 
+{\bfseries get\+Types} ()
+\item 
+\Hypertarget{interface_kint_1_1_parser_1_1_plugin_interface_ac15c15eb88c0a450ff4248733e46e8de}\label{interface_kint_1_1_parser_1_1_plugin_interface_ac15c15eb88c0a450ff4248733e46e8de} 
+{\bfseries get\+Triggers} ()
+\item 
+\mbox{\hyperlink{interface_kint_1_1_parser_1_1_plugin_interface_a75eb3cbc49e7848c83658d2afd371d8f}{parse}} (\&\$var, \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \&\$o, int \$trigger)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_kint_1_1_parser_1_1_plugin_interface_a75eb3cbc49e7848c83658d2afd371d8f}\index{Kint\textbackslash{}Parser\textbackslash{}PluginInterface@{Kint\textbackslash{}Parser\textbackslash{}PluginInterface}!parse@{parse}}
+\index{parse@{parse}!Kint\textbackslash{}Parser\textbackslash{}PluginInterface@{Kint\textbackslash{}Parser\textbackslash{}PluginInterface}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{interface_kint_1_1_parser_1_1_plugin_interface_a75eb3cbc49e7848c83658d2afd371d8f} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+Plugin\+Interface\+::parse (\begin{DoxyParamCaption}\item[{\&}]{\$var}{, }\item[{\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \&}]{\$o}{, }\item[{int}]{\$trigger}{}\end{DoxyParamCaption})}
+
+@psalm-\/param mixed \&\$var 
+
+Implemented in \mbox{\hyperlink{class_kint_1_1_parser_1_1_array_limit_plugin_a63cc11b82f9283f6ea9b52b9196a3bdb}{Kint\textbackslash{}\+Parser\textbackslash{}\+Array\+Limit\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_array_object_plugin_a71eda298f0dcb661b8d07546f10b1bc1}{Kint\textbackslash{}\+Parser\textbackslash{}\+Array\+Object\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_base64_plugin_a62d010711b610a83144ae91f8250e6d3}{Kint\textbackslash{}\+Parser\textbackslash{}\+Base64\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_binary_plugin_a22c679394a890898b3b0c63d3e6266c0}{Kint\textbackslash{}\+Parser\textbackslash{}\+Binary\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_blacklist_plugin_a8919d3aa424a7488a8e35b76ee4bda58}{Kint\textbackslash{}\+Parser\textbackslash{}\+Blacklist\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_class_methods_plugin_a7748a274bcc620c80b55ebe00065e86e}{Kint\textbackslash{}\+Parser\textbackslash{}\+Class\+Methods\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_class_statics_plugin_a4c48c96d3014c73baac4af9b0f9b2c3e}{Kint\textbackslash{}\+Parser\textbackslash{}\+Class\+Statics\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_closure_plugin_a29d3b8ac0ae972f1731246f68738f332}{Kint\textbackslash{}\+Parser\textbackslash{}\+Closure\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_color_plugin_a075a4fdd8128a47d732ec38942e4edbf}{Kint\textbackslash{}\+Parser\textbackslash{}\+Color\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_date_time_plugin_af47c5bf96274af2b4a70f151abd0a0e9}{Kint\textbackslash{}\+Parser\textbackslash{}\+Date\+Time\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a9ebf0a9e0755d1469bc1c3669fcf2a7a}{Kint\textbackslash{}\+Parser\textbackslash{}\+DOMDocument\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_enum_plugin_a70be87fc64cfed707f39bfd025083277}{Kint\textbackslash{}\+Parser\textbackslash{}\+Enum\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_fs_path_plugin_ab037b7c4a2d1c361c260c3e67600ef69}{Kint\textbackslash{}\+Parser\textbackslash{}\+Fs\+Path\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_iterator_plugin_a52afd103bd0b375e964225a8fc0a3f31}{Kint\textbackslash{}\+Parser\textbackslash{}\+Iterator\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_json_plugin_a3733cce277161ba86818a66e86eeaff7}{Kint\textbackslash{}\+Parser\textbackslash{}\+Json\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_microtime_plugin_a2442af3fd7350405cbbe863ed34810bf}{Kint\textbackslash{}\+Parser\textbackslash{}\+Microtime\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_mysqli_plugin_a44c97a7f120c9daabdbf1b989607b823}{Kint\textbackslash{}\+Parser\textbackslash{}\+Mysqli\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_proxy_plugin_ac3b445e425f415a7862bca5002a1ef0e}{Kint\textbackslash{}\+Parser\textbackslash{}\+Proxy\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_serialize_plugin_a18c506b130883ed1d09f97579c4d6d9a}{Kint\textbackslash{}\+Parser\textbackslash{}\+Serialize\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_simple_x_m_l_element_plugin_a2bddfc8d8f015e163378eca5a1c0e5d7}{Kint\textbackslash{}\+Parser\textbackslash{}\+Simple\+XMLElement\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_spl_file_info_plugin_aa59587c54e90d403114bb664f085886b}{Kint\textbackslash{}\+Parser\textbackslash{}\+Spl\+File\+Info\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_spl_object_storage_plugin_a051486e93f13d383faa887ba82b63317}{Kint\textbackslash{}\+Parser\textbackslash{}\+Spl\+Object\+Storage\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_stream_plugin_a48f966e12975344aaf895726ad2049a3}{Kint\textbackslash{}\+Parser\textbackslash{}\+Stream\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_table_plugin_acac83d706b600364a9a42c27832d0900}{Kint\textbackslash{}\+Parser\textbackslash{}\+Table\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_throwable_plugin_af11a148928b30ce51c4da2de27e1377b}{Kint\textbackslash{}\+Parser\textbackslash{}\+Throwable\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_timestamp_plugin_a8a6233d5d82a20f046e6f81b63ba4378}{Kint\textbackslash{}\+Parser\textbackslash{}\+Timestamp\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_to_string_plugin_a54255433febcb917819e32f7d62af1dc}{Kint\textbackslash{}\+Parser\textbackslash{}\+To\+String\+Plugin}}, \mbox{\hyperlink{class_kint_1_1_parser_1_1_trace_plugin_a5972137493ebd7e4900ce00fe7d3e7c4}{Kint\textbackslash{}\+Parser\textbackslash{}\+Trace\+Plugin}}, and \mbox{\hyperlink{class_kint_1_1_parser_1_1_xml_plugin_a2f052e4775b460c7f9a1b67898397697}{Kint\textbackslash{}\+Parser\textbackslash{}\+Xml\+Plugin}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/\+Parser/Plugin\+Interface.\+php\end{DoxyCompactItemize}

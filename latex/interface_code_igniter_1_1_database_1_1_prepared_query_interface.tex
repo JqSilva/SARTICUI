@@ -1,0 +1,105 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}Prepared\+Query\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_database_1_1_prepared_query_interface}{}\label{interface_code_igniter_1_1_database_1_1_prepared_query_interface}\index{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}Prepared\+Query\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a36b9850d38946e73ebf8bce47f92d423}{execute}} (... \$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_prepared_query_interface_aee74e958ce654ea3b7e273e79b3c773c}{prepare}} (string \$sql, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a39403f6822bbd380f13e5da7e2b3dd81}{close}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_prepared_query_interface_aa0c4dd5596e8ad2b57ca32413b4c542d}{get\+Query\+String}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a3e62c3710013a21266b1b9be5412e904}{get\+Error\+Code}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_prepared_query_interface_ab900a2c7b1a8ae76901197d4fab7f68a}{get\+Error\+Message}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template TConnection @template TStatement @template TResult 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a39403f6822bbd380f13e5da7e2b3dd81}\index{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}!close@{close}}
+\index{close@{close}!CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a39403f6822bbd380f13e5da7e2b3dd81} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Prepared\+Query\+Interface\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Explicity closes the statement.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Bad\+Method\+Call\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_ad7ec6e74dc3b44b3b2beb50cf748b656}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+\Hypertarget{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a36b9850d38946e73ebf8bce47f92d423}\index{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}!execute@{execute}}
+\index{execute@{execute}!CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a36b9850d38946e73ebf8bce47f92d423} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Prepared\+Query\+Interface\+::execute (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Takes a new set of data and runs it against the currently prepared query. Upon success, will return a Results object.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}\+Result\+Interface @phpstan-\/return bool\texorpdfstring{$\vert$}{|}\+Result\+Interface\texorpdfstring{$<$}{<}TConnection, TResult\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a7e5b5f27dc03c4a87189f54d4f3ae4f8}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+\Hypertarget{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a3e62c3710013a21266b1b9be5412e904}\index{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}!getErrorCode@{getErrorCode}}
+\index{getErrorCode@{getErrorCode}!CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}}
+\doxysubsubsection{\texorpdfstring{getErrorCode()}{getErrorCode()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_database_1_1_prepared_query_interface_a3e62c3710013a21266b1b9be5412e904} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Prepared\+Query\+Interface\+::get\+Error\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the error code created while executing this statement. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a72fe6343d1950afa2308246e16d1bf2d}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+\Hypertarget{interface_code_igniter_1_1_database_1_1_prepared_query_interface_ab900a2c7b1a8ae76901197d4fab7f68a}\index{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}!getErrorMessage@{getErrorMessage}}
+\index{getErrorMessage@{getErrorMessage}!CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}}
+\doxysubsubsection{\texorpdfstring{getErrorMessage()}{getErrorMessage()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_database_1_1_prepared_query_interface_ab900a2c7b1a8ae76901197d4fab7f68a} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Prepared\+Query\+Interface\+::get\+Error\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the error message created while executing this statement. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a77adafee705f5533ec4245bfa4d08b9d}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+\Hypertarget{interface_code_igniter_1_1_database_1_1_prepared_query_interface_aa0c4dd5596e8ad2b57ca32413b4c542d}\index{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}!getQueryString@{getQueryString}}
+\index{getQueryString@{getQueryString}!CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}}
+\doxysubsubsection{\texorpdfstring{getQueryString()}{getQueryString()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_database_1_1_prepared_query_interface_aa0c4dd5596e8ad2b57ca32413b4c542d} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Prepared\+Query\+Interface\+::get\+Query\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the SQL that has been prepared. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_af4165563718121bf030604f3b6306168}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+\Hypertarget{interface_code_igniter_1_1_database_1_1_prepared_query_interface_aee74e958ce654ea3b7e273e79b3c773c}\index{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}!prepare@{prepare}}
+\index{prepare@{prepare}!CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface@{CodeIgniter\textbackslash{}Database\textbackslash{}PreparedQueryInterface}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_database_1_1_prepared_query_interface_aee74e958ce654ea3b7e273e79b3c773c} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Prepared\+Query\+Interface\+::prepare (\begin{DoxyParamCaption}\item[{string}]{\$sql}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Prepares the query against the database, and saves the connection info necessary to execute the query later.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/Prepared\+Query\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,68 @@
+\doxysection{Code\+Igniter\textbackslash{}Filters\textbackslash{}Page\+Cache Class Reference}
+\hypertarget{class_code_igniter_1_1_filters_1_1_page_cache}{}\label{class_code_igniter_1_1_filters_1_1_page_cache}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache@{CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Page\+Cache\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Page\+Cache\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_page_cache_a51477b98fbbdadae2e8a2880cffd23b7}{before}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \$arguments=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_page_cache_a542f6986cb3594a49c495743e193732f}{after}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, \$arguments=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Page Cache filter 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_page_cache_a542f6986cb3594a49c495743e193732f}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache@{CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache}!after@{after}}
+\index{after@{after}!CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache@{CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_page_cache_a542f6986cb3594a49c495743e193732f} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Page\+Cache\+::after (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Cache the page.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_a9d6d93f12b94b7b65258deb6f2b3d90e}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_filters_1_1_page_cache_a51477b98fbbdadae2e8a2880cffd23b7}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache@{CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache}!before@{before}}
+\index{before@{before}!CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache@{CodeIgniter\textbackslash{}Filters\textbackslash{}PageCache}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_page_cache_a51477b98fbbdadae2e8a2880cffd23b7} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Page\+Cache\+::before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Checks page cache and return if found.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_abae5f86c1d0bef8b0b44652a7346b716}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Filters/Page\+Cache.\+php\end{DoxyCompactItemize}

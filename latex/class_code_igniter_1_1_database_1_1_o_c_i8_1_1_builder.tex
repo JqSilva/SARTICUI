@@ -1,0 +1,543 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder}{}\label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a653e2c534ca545e8da876cf4af145209}{delete}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ad86289d82e581ab84d15ec021b3134a8}{where}}=\textquotesingle{}\textquotesingle{}, ?int \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa31d913f916680f01e369780398eab83}{limit}}=null, bool \$reset\+Data=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_addf1b80d4ebf3c0924f8721c8c1f8275}{db}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a4a2d0b16f8edada2e815e93deecd8d48}{test\+Mode}} (bool \$mode=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a42b201554fd07643a79b19cecdcb5548}{get\+Table}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a319f4ab5fcb959b0fec9900f6ac5eddd}{get\+Binds}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a3c4ee2d8ffa337037c1895eb8da1d0c4}{ignore}} (bool \$ignore=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a65a43ec951d1bb86cbb4056b1d78118c}{select}} (\$select=\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ae128c4988d2cdd6063fcec720b199ef1}{select\+Max}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a65a43ec951d1bb86cbb4056b1d78118c}{select}}=\textquotesingle{}\textquotesingle{}, string \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a4ae8e7e6cca0a0b7007f91803f635320}{select\+Min}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a65a43ec951d1bb86cbb4056b1d78118c}{select}}=\textquotesingle{}\textquotesingle{}, string \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_af63f0b0c3f2a5a3db47da18cb72a1a9c}{select\+Avg}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a65a43ec951d1bb86cbb4056b1d78118c}{select}}=\textquotesingle{}\textquotesingle{}, string \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ab21aa54b18e4acec53b9d21214604516}{select\+Sum}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a65a43ec951d1bb86cbb4056b1d78118c}{select}}=\textquotesingle{}\textquotesingle{}, string \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1de0f3297cdaa3eacc60f35211396146}{select\+Count}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a65a43ec951d1bb86cbb4056b1d78118c}{select}}=\textquotesingle{}\textquotesingle{}, string \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_acb928452f0a95e35be8b9c2f7244091e}{select\+Subquery}} (\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder}{Base\+Builder}} \$subquery, string \$as)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a0dad05a10891e1fe3e415ae4a33a4937}{distinct}} (bool \$val=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a2d608c2abeeff14942bd12daaaa26565}{from}} (\$from, bool \$overwrite=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a673686688e92650097ddf9e737302cb0}{from\+Subquery}} (\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder}{Base\+Builder}} \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a2d608c2abeeff14942bd12daaaa26565}{from}}, string \$alias)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ac7a481d036fa62415efc3178762fff5b}{join}} (string \$table, \$cond, string \$type=\textquotesingle{}\textquotesingle{}, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ad86289d82e581ab84d15ec021b3134a8}{where}} (\$key, \$value=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_abbbe7b470020f400ff2c6f6192d82211}{or\+Where}} (\$key, \$value=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a28b366849b09c6d952bd1f56879b0316}{where\+In}} (?string \$key=null, \$values=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a7fe3b5cb546a041996163c0d3e6198ac}{or\+Where\+In}} (?string \$key=null, \$values=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ae4075a846cb07853c79cb73286dca4d9}{where\+Not\+In}} (?string \$key=null, \$values=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aad04e3a8b6e18db719892346da3342b8}{or\+Where\+Not\+In}} (?string \$key=null, \$values=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a4165ac5576dd10e7f1f941e6aee2b8c3}{having\+In}} (?string \$key=null, \$values=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aef3ca262b4006a46585aea4417c13655}{or\+Having\+In}} (?string \$key=null, \$values=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a9c3ec3d672b2c03b6ec5dcb167d9e3d0}{having\+Not\+In}} (?string \$key=null, \$values=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a339fe3ddf5967c5e7bc27866a22039aa}{or\+Having\+Not\+In}} (?string \$key=null, \$values=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a998c6974bbb646ff16b2708af1ffce36}{like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a6e11a0230366450515422354edd0bd3f}{not\+Like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a6773c86a9f4c6438cf1bb47188d2bedc}{or\+Like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1832c5f4f2131078c817628769451fde}{or\+Not\+Like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ada24eb0368cfa74f2847d53adbf2b18f}{having\+Like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ab892b896ba388f775c16dc9b912d1ae1}{not\+Having\+Like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_acc19db546c6e8106e2356afe04ff44c4}{or\+Having\+Like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a327f0a32148d9ac67194e8b5022ae66c}{or\+Not\+Having\+Like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a040ca3c6ebc256e1c6f9ec97866c092b}{union}} (\$union)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ae44a894e9c6f171bc165cb5e7cfaf696}{union\+All}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a040ca3c6ebc256e1c6f9ec97866c092b}{union}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a294871f1dd858abe47cbd7509a710505}{group\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a9c312d0acab0a8d2e65995fdccbe5083}{or\+Group\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_abf8e553f40d71356043b1c9e29717944}{not\+Group\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a672d2a8f742e61bc02cce87180113dfe}{or\+Not\+Group\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a3d87bbb988d79eae64c59dca959e554e}{group\+End}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aaf14ef374d294ca49949942ff0e034e9}{having\+Group\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a5dd9b8efed5ec448a6671160fcc7a830}{or\+Having\+Group\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a53742ea76cd98b1a028150ee3285ef42}{not\+Having\+Group\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a2132d6150864bd38d19336c0a9e34b49}{or\+Not\+Having\+Group\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_abe70f473d8cc07f96a7dee7ee0c979c5}{having\+Group\+End}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa5033e9cd0913f95459c05f3bf406b6f}{group\+By}} (\$by, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a6094b5e631ce9b8a70d43b2843f2bc78}{having}} (\$key, \$value=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aebded49b60ace1b243c947041670c81f}{or\+Having}} (\$key, \$value=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ae3960dfc47be3f7fcdc94c073aabcdc6}{order\+By}} (string \$order\+By, string \$direction=\textquotesingle{}\textquotesingle{}, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa31d913f916680f01e369780398eab83}{limit}} (?int \$value=null, ?int \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aaa7b09338a1e038c6651c42477f1386b}{offset}}=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aaa7b09338a1e038c6651c42477f1386b}{offset}} (int \$offset)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}} (\$key, \$value=\textquotesingle{}\textquotesingle{}, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ad6d70669ae0373c1c1aa0edc98e43780}{get\+Set\+Data}} (bool \$clean=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ae90dfb518560efdc9a1b1f86f11f58e6}{get\+Compiled\+Select}} (bool \$reset=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a6e028c5c6e2fe47c573595c0c4602cd4}{get}} (?int \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa31d913f916680f01e369780398eab83}{limit}}=null, int \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aaa7b09338a1e038c6651c42477f1386b}{offset}}=0, bool \$reset=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_adaa695f10caecca34c863d7d409e335a}{count\+All}} (bool \$reset=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a802c4ceed8b3be2efc01b3e65f4a5149}{count\+All\+Results}} (bool \$reset=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a46bbaaeb052e4ac93574e574ecc5f1a0}{get\+Compiled\+QBWhere}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa2181d3148bce9c0f6bddd54e4b6d091}{get\+Where}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ad86289d82e581ab84d15ec021b3134a8}{where}}=null, ?int \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa31d913f916680f01e369780398eab83}{limit}}=null, ?int \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aaa7b09338a1e038c6651c42477f1386b}{offset}}=0, bool \$reset=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a756475cb96dfb84ab40ae426a190e89b}{set\+Data}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}, ?bool \$escape=null, string \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_af6a30c7af222f91beef3d9cddd263639}{get\+Compiled\+Upsert}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a7582e34d62b47a6fb7aa80d409852763}{upsert}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1670ac617ddfbe090ffbc4bd5e7bd722}{upsert\+Batch}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}=null, ?bool \$escape=null, int \$batch\+Size=100)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a5bfa4f4a6488f3dd6ee2671a16344363}{update\+Fields}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}, bool \$add\+To\+Default=false, ?array \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a3c4ee2d8ffa337037c1895eb8da1d0c4}{ignore}}=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a046aecd84c839b673bd08a085d88e77e}{on\+Constraint}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a260ee50f764d48e868b7c8b9d445f1ed}{set\+Query\+As\+Data}} (\$query, ?string \$alias=null, \$columns=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa7fc92dfc66b3460e8748458d09579c1}{insert\+Batch}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}=null, ?bool \$escape=null, int \$batch\+Size=100)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a149ad5c5411a42ee1ba0fd89aa4f74c2}{set\+Insert\+Batch}} (\$key, string \$value=\textquotesingle{}\textquotesingle{}, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a8662a2ea753a3c1d02f6ce0c258a848e}{get\+Compiled\+Insert}} (bool \$reset=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa68365dbfedaa03b81ea02de7c89fbe2}{insert}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}=null, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_af130dd5aeb6f95a04a2b3ebe0c34787f}{replace}} (?array \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a3c3dc27bac5db4150f6f5b9bca810428}{get\+Compiled\+Update}} (bool \$reset=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a46d1d02e26247c5233b0f65012dc43d3}{update}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}=null, \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ad86289d82e581ab84d15ec021b3134a8}{where}}=null, ?int \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa31d913f916680f01e369780398eab83}{limit}}=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a60761503ae7df27eabc6ecddd011e77e}{update\+Batch}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}=null, \$constraints=null, int \$batch\+Size=100)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_af5ed00a70b93ad414371be4a5e2434ba}{set\+Update\+Batch}} (\$key, string \$index=\textquotesingle{}\textquotesingle{}, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a27adb94356df313eea5b8f2b6426880f}{empty\+Table}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ab36175a77d7819b37cbe5c8203386714}{truncate}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ab246465a9bee34aa649c602d85543a51}{get\+Compiled\+Delete}} (bool \$reset=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a5be62c7fef945dadc043a93783dadf3c}{delete\+Batch}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1b503db741f860bfcefab5c4e771a04b}{set}}=null, \$constraints=null, int \$batch\+Size=100)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a5a81d38f3f01c7ef9e0d841df81091ed}{increment}} (string \$column, int \$value=1)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a76146ee068c1c45cf7d035ad88e788b6}{decrement}} (string \$column, int \$value=1)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a22290749b38504bc7f3c3af43f752f3a}{reset\+Query}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_abdabc297a81d0304c13734c6ddfba337}{\+\_\+insert\+Batch}} (string \$table, array \$keys, array \$values)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a581dd6f5e00ac38fbf1778b3994f74da}{\+\_\+replace}} (string \$table, array \$keys, array \$values)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_ac32d2f6f88838fc5fc28a9540dbd7343}{\+\_\+truncate}} (string \$table)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a5a008f9f82e52ff945d15116a225a28f}{\+\_\+delete}} (string \$table)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a740acb0c5def59142f0f398eb2eb05ab}{\+\_\+update}} (string \$table, array \$values)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a288eac46f37b6c61e9dcf0837a7d63a6}{\+\_\+limit}} (string \$sql, bool \$offset\+Ignore=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a0148349d1624f250b881fa0e241bca54}{reset\+Select}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a1cae598c014b2560d5ee8bdd32550771}{\+\_\+update\+Batch}} (string \$table, array \$keys, array \$values)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_aa21765fc0117b494317681645a8dc027}{\+\_\+upsert\+Batch}} (string \$table, array \$keys, array \$values)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a260f60b88edab409094b943abe3011d4}{\+\_\+delete\+Batch}} (string \$table, array \$keys, array \$values)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a65de256f96adb4432fc9d88f217e3e9b}{fields\+From\+Query}} (string \$sql)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa1b948b04cd7826d792546d0c19a0a5b}{max\+Min\+Avg\+Sum}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a65a43ec951d1bb86cbb4056b1d78118c}{select}}=\textquotesingle{}\textquotesingle{}, string \$alias=\textquotesingle{}\textquotesingle{}, string \$type=\textquotesingle{}MAX\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_afe6a958d886abc26491cbba71a56e1a4}{create\+Alias\+From\+Table}} (string \$item)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_afa85edd9cee9b5254b8fdb3050079580}{where\+Having}} (string \$qb\+Key, \$key, \$value=null, string \$type=\textquotesingle{}AND \textquotesingle{}, ?bool \$escape=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_afaa33564606fb74c5ad64b24508463f0}{\+\_\+where\+In}} (?string \$key=null, \$values=null, bool \$not=false, string \$type=\textquotesingle{}AND \textquotesingle{}, ?bool \$escape=null, string \$clause=\textquotesingle{}QBWhere\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_af8f1b5a888d6ac6ccf8c15f0c807bf03}{\+\_\+like}} (\$field, string \$match=\textquotesingle{}\textquotesingle{}, string \$type=\textquotesingle{}AND \textquotesingle{}, string \$side=\textquotesingle{}both\textquotesingle{}, string \$not=\textquotesingle{}\textquotesingle{}, ?bool \$escape=null, bool \$insensitive\+Search=false, string \$clause=\textquotesingle{}QBWhere\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a27e8fa53954004491c0a23f58e3886e4}{\+\_\+like\+\_\+statement}} (?string \$prefix, string \$column, ?string \$not, string \$bind, bool \$insensitive\+Search=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a6a0090ed4e4c4ca92a361b72f8c79695}{add\+Union\+Statement}} (\$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a040ca3c6ebc256e1c6f9ec97866c092b}{union}}, bool \$all=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a6f3971fbf41811ebc94481bb1d95d0da}{group\+Start\+Prepare}} (string \$not=\textquotesingle{}\textquotesingle{}, string \$type=\textquotesingle{}AND \textquotesingle{}, string \$clause=\textquotesingle{}QBWhere\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a8c08977bab0af29198b5ca49334e9166}{group\+End\+Prepare}} (string \$clause=\textquotesingle{}QBWhere\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a4eb05781e26b62be5fb08c0de4f5585c}{group\+Get\+Type}} (string \$type)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a2aca06421eb551f51771248ed34b2ca4}{compile\+Final\+Query}} (string \$sql)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ad1e9082e8aa9085d2399265a6c85b879}{batch\+Execute}} (string \$render\+Method, int \$batch\+Size=100)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ab2ef6c24c5b8d34c41faa16b3ccf6fd7}{format\+Values}} (array \$values)
+\item 
+{\bfseries remove\+Alias} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a2d608c2abeeff14942bd12daaaa26565}{from}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a47b0d83ceb25958b465a1034c8744131}{validate\+Insert}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a0bb93d668808e2b9eca8f4a832bb0243}{\+\_\+insert}} (string \$table, array \$keys, array \$unescaped\+Keys)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a61312c7aad202c06722224713ca133d3}{\+\_\+from\+Tables}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_abf3bb3775a2152e6bb5606f6818662e7}{validate\+Update}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ace51f405568dfe4e5190b6fbff4933e0}{track\+Aliases}} (\$table)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a71f1de8adf8baf5b697756f2af033ee8}{compile\+Select}} (\$select\+Override=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa2da20cb55d4be758cc8a44afc39fe0c}{compile\+Ignore}} (string \$statement)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a265181edc62343e163be82e131f88d76}{compile\+Where\+Having}} (string \$qb\+Key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_afb77f7ff0e97fbee9e3fcc04a2753afb}{compile\+Group\+By}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ac6f770ee182179b85264317a6288c468}{compile\+Order\+By}} ()
+\item 
+{\bfseries union\+Injection} (string \$sql)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_accfae6306fec942e843ea5fb79996472}{object\+To\+Array}} (\$object)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_adfb557a9bff58d1feafae674b87ee876}{batch\+Object\+To\+Array}} (\$object)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_acb382c19d2cd73a6e754eedc645d4c5c}{is\+Literal}} (string \$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a4161fb203da56b53b7f684b2668877eb}{reset\+Run}} (array \$qb\+Reset\+Items)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_abd1c0a3635133da5550fef07cb79c98c}{reset\+Write}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1deb85d3950aef390b4619f9e9beb7f1}{has\+Operator}} (string \$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a3f9eb5acc74de70edf25fc6a6cd74825}{get\+Operator}} (string \$str, bool \$list=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a9c6aba80dd67eaa7ef36bcbcb426b2aa}{set\+Bind}} (string \$key, \$value=null, bool \$escape=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a7694cf099a1e7e257d1e05a07e113918}{clean\+Clone}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ae284b5580f44a1fc6c810faa77432908}{is\+Subquery}} (\$value)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a3abb2d02e5d915b9550c77db4d4c92d1}{build\+Subquery}} (\$builder, bool \$wrapped=false, string \$alias=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a1173cc1f48d6e935e5a49e5f117986d6}\label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a1173cc1f48d6e935e5a49e5f117986d6} 
+{\bfseries \$escape\+Char} = \textquotesingle{}"{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_ac9f9dd6e311102b69e9e18e4f46ea59f}{\$random\+Keyword}}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_aa4172cc5322765f1e51a614fd93910d2}\label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_aa4172cc5322765f1e51a614fd93910d2} 
+{\bfseries \$count\+String} = \textquotesingle{}SELECT COUNT(1) \textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a15d93ea775f95ca21513d35763f4a682}\label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a15d93ea775f95ca21513d35763f4a682} 
+{\bfseries \$limit\+Used} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_ae936db2f011030a9f3b5ab858b32a425}\label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_ae936db2f011030a9f3b5ab858b32a425} 
+{\bfseries \$db}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$reset\+Delete\+Data} = false
+\item 
+{\bfseries \$\+QBSelect} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBDistinct} = false
+\item 
+{\bfseries \$\+QBFrom} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBJoin} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBWhere} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBHaving} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBKeys} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBLimit} = false
+\item 
+{\bfseries \$\+QBOffset} = false
+\item 
+array {\bfseries \$\+QBUnion} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBSet} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBWhere\+Group\+Started} = false
+\item 
+{\bfseries \$\+QBWhere\+Group\+Count} = 0
+\item 
+{\bfseries \$\+QBIgnore} = false
+\item 
+{\bfseries \$\+QBOptions}
+\item 
+{\bfseries \$db}
+\item 
+{\bfseries \$table\+Name}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa4e71ea68e8ffec1a8114e02fee3a64d}{\$random\+Keyword}}
+\item 
+{\bfseries \$count\+String} = \textquotesingle{}SELECT COUNT(\texorpdfstring{$\ast$}{*}) AS \textquotesingle{}
+\item 
+{\bfseries \$binds} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$binds\+Key\+Count} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$can\+Limit\+Deletes} = true
+\item 
+{\bfseries \$can\+Limit\+Where\+Updates} = true
+\item 
+{\bfseries \$supported\+Ignore\+Statements} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$test\+Mode} = false
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a548ba0fc84f430bbccfe26cd2e21adeb}{\$join\+Types}}
+\item 
+{\bfseries \$is\+Literal\+Str} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$preg\+Operators} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+QBGroup\+By} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBOrder\+By} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$\+QBNo\+Escape} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Builder for OCI8 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a5a008f9f82e52ff945d15116a225a28f}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_delete@{\_delete}}
+\index{\_delete@{\_delete}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_delete()}{\_delete()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a5a008f9f82e52ff945d15116a225a28f} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+delete (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific delete string from the supplied data 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a47e04c9300a6394812e6b8a7e49f10f5}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a260f60b88edab409094b943abe3011d4}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_deleteBatch@{\_deleteBatch}}
+\index{\_deleteBatch@{\_deleteBatch}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_deleteBatch()}{\_deleteBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a260f60b88edab409094b943abe3011d4} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+delete\+Batch (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$keys}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific batch update string from the supplied data 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a28bdf5bbeeace59c61e6ecd8bceb0c58}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_abdabc297a81d0304c13734c6ddfba337}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_insertBatch@{\_insertBatch}}
+\index{\_insertBatch@{\_insertBatch}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_insertBatch()}{\_insertBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_abdabc297a81d0304c13734c6ddfba337} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+insert\+Batch (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$keys}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific insert string from the supplied data. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_aa63c49344a72a13df3278c11c666035f}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a288eac46f37b6c61e9dcf0837a7d63a6}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_limit@{\_limit}}
+\index{\_limit@{\_limit}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_limit()}{\_limit()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a288eac46f37b6c61e9dcf0837a7d63a6} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+limit (\begin{DoxyParamCaption}\item[{string}]{\$sql}{, }\item[{bool}]{\$offset\+Ignore}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific LIMIT clause. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ad3524ae1ddedaa34f006300f9d84318b}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a581dd6f5e00ac38fbf1778b3994f74da}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_replace@{\_replace}}
+\index{\_replace@{\_replace}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_replace()}{\_replace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a581dd6f5e00ac38fbf1778b3994f74da} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+replace (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$keys}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific replace string from the supplied data 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a9a1167b937c8e398e56eb13d90108a9c}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_ac32d2f6f88838fc5fc28a9540dbd7343}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_truncate@{\_truncate}}
+\index{\_truncate@{\_truncate}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_truncate()}{\_truncate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_ac32d2f6f88838fc5fc28a9540dbd7343} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+truncate (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific truncate string from the supplied data
+
+If the database does not support the truncate() command, then this method maps to \textquotesingle{}DELETE FROM table\textquotesingle{} 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a0dd40b01fc93ba3123cae1d6adc48312}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a740acb0c5def59142f0f398eb2eb05ab}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_update@{\_update}}
+\index{\_update@{\_update}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_update()}{\_update()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a740acb0c5def59142f0f398eb2eb05ab} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+update (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific update string from the supplied data 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a270675b81471f9e572c42d303ee783da}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a1cae598c014b2560d5ee8bdd32550771}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_updateBatch@{\_updateBatch}}
+\index{\_updateBatch@{\_updateBatch}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_updateBatch()}{\_updateBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a1cae598c014b2560d5ee8bdd32550771} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+update\+Batch (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$keys}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific batch update string from the supplied data 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_af1f31a46b214e3012cb2dd62aa70a4c4}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_aa21765fc0117b494317681645a8dc027}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\_upsertBatch@{\_upsertBatch}}
+\index{\_upsertBatch@{\_upsertBatch}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\_upsertBatch()}{\_upsertBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_aa21765fc0117b494317681645a8dc027} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\+\_\+upsert\+Batch (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$keys}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific upsert\+Batch string from the supplied data
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a360b062d7e031d19df01c12ba8ba4b77}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a653e2c534ca545e8da876cf4af145209}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!delete@{delete}}
+\index{delete@{delete}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a653e2c534ca545e8da876cf4af145209} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::delete (\begin{DoxyParamCaption}\item[{}]{\$where}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{?int}]{\$limit}{ = {\ttfamily null}, }\item[{bool}]{\$reset\+Data}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Compiles a delete string and runs the query
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$where} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_ab9412057e28c6501c7a98a5ed0d3c4dd}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a65de256f96adb4432fc9d88f217e3e9b}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!fieldsFromQuery@{fieldsFromQuery}}
+\index{fieldsFromQuery@{fieldsFromQuery}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{fieldsFromQuery()}{fieldsFromQuery()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a65de256f96adb4432fc9d88f217e3e9b} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::fields\+From\+Query (\begin{DoxyParamCaption}\item[{string}]{\$sql}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets column names from a select query 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a1a6d70d6447bc4d3bdaaf5ca08adf274}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a0148349d1624f250b881fa0e241bca54}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!resetSelect@{resetSelect}}
+\index{resetSelect@{resetSelect}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{resetSelect()}{resetSelect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_a0148349d1624f250b881fa0e241bca54} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::reset\+Select (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resets the query builder values. Called by the get() function 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder_a6439a180dbaf24f7daba2d215f8e787a}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Builder}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_ac9f9dd6e311102b69e9e18e4f46ea59f}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}!\$randomKeyword@{\$randomKeyword}}
+\index{\$randomKeyword@{\$randomKeyword}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Builder}}
+\doxysubsubsection{\texorpdfstring{\$randomKeyword}{\$randomKeyword}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_builder_ac9f9dd6e311102b69e9e18e4f46ea59f} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Builder\+::\$random\+Keyword\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'"{}DBMS\_RANDOM"{}."{}RANDOM"{}'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/\+OCI8/Builder.\+php\end{DoxyCompactItemize}

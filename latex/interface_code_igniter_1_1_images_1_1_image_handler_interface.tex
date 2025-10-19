@@ -1,0 +1,257 @@
+\doxysection{Code\+Igniter\textbackslash{}Images\textbackslash{}Image\+Handler\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface}{}\label{interface_code_igniter_1_1_images_1_1_image_handler_interface}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Images\textbackslash{}Image\+Handler\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_afdd76bcc7353f42583d9ace5d945c677}{resize}} (int \$width, int \$height, bool \$maintain\+Ratio=false, string \$master\+Dim=\textquotesingle{}auto\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_a009146e75119a458ed567d333432a0ae}{crop}} (?int \$width=null, ?int \$height=null, ?int \$x=null, ?int \$y=null, bool \$maintain\+Ratio=false, string \$master\+Dim=\textquotesingle{}auto\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_a03b6867c57891847fe92643b76c4f833}{convert}} (int \$image\+Type)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_a9d065612157a484f837a7bdd6e007afe}{rotate}} (float \$angle)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_a91ee495db0cb4fc465d44753fa00ed65}{flatten}} (int \$red=255, int \$green=255, int \$blue=255)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_a67760276c818201db2d6849e29abca10}{reorient}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_ac213d80c999e92e5178d2a7b9720ec07}{get\+EXIF}} (?string \$key=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_ab4be142f25c7891c65ac35d8538627f7}{flip}} (string \$dir=\textquotesingle{}vertical\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_a10debf6af7a0a0a77d78ba4e6f8ebca7}{fit}} (int \$width, int \$height, string \$position)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_ad9319298ab0146c632e53068b8bca581}{text}} (string \$text, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_images_1_1_image_handler_interface_a8afc40538ff97316e4cff1684493ebe9}{save}} (?string \$target=null, int \$quality=90)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Expected behavior of an Image handler 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_a03b6867c57891847fe92643b76c4f833}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!convert@{convert}}
+\index{convert@{convert}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_a03b6867c57891847fe92643b76c4f833} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::convert (\begin{DoxyParamCaption}\item[{int}]{\$image\+Type}{}\end{DoxyParamCaption})}
+
+Changes the stored image type to indicate the new file format to use when saving. Does not touch the actual resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$image\+Type} & A PHP imagetype constant, e.\+g. \href{https://www.php.net/manual/en/function.image-type-to-mime-type.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+image-\/type-\/to-\/mime-\/type.\+php}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_base_handler_aff2cd9abc324429339eac30c570ea9ab}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_a009146e75119a458ed567d333432a0ae}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!crop@{crop}}
+\index{crop@{crop}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{crop()}{crop()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_a009146e75119a458ed567d333432a0ae} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::crop (\begin{DoxyParamCaption}\item[{?int}]{\$width}{ = {\ttfamily null}, }\item[{?int}]{\$height}{ = {\ttfamily null}, }\item[{?int}]{\$x}{ = {\ttfamily null}, }\item[{?int}]{\$y}{ = {\ttfamily null}, }\item[{bool}]{\$maintain\+Ratio}{ = {\ttfamily false}, }\item[{string}]{\$master\+Dim}{ = {\ttfamily \textquotesingle{}auto\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Crops the image to the desired height and width. If one of the height/width values is not provided, that value will be set the appropriate value based on offsets and image dimensions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$x} & X-\/axis coord to start cropping from the left of image \\
+\hline
+int | null & {\em \$y} & Y-\/axis coord to start cropping from the top of image\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_base_handler_a51ceb5b78721b50967dbf678fb913fa7}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_a10debf6af7a0a0a77d78ba4e6f8ebca7}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!fit@{fit}}
+\index{fit@{fit}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{fit()}{fit()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_a10debf6af7a0a0a77d78ba4e6f8ebca7} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::fit (\begin{DoxyParamCaption}\item[{int}]{\$width}{, }\item[{int}]{\$height}{, }\item[{string}]{\$position}{}\end{DoxyParamCaption})}
+
+Combine cropping and resizing into a single command.
+
+Supported positions\+:
+\begin{DoxyItemize}
+\item top-\/left
+\item top
+\item top-\/right
+\item left
+\item center
+\item right
+\item bottom-\/left
+\item bottom
+\item bottom-\/right
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_a91ee495db0cb4fc465d44753fa00ed65}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!flatten@{flatten}}
+\index{flatten@{flatten}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_a91ee495db0cb4fc465d44753fa00ed65} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::flatten (\begin{DoxyParamCaption}\item[{int}]{\$red}{ = {\ttfamily 255}, }\item[{int}]{\$green}{ = {\ttfamily 255}, }\item[{int}]{\$blue}{ = {\ttfamily 255}}\end{DoxyParamCaption})}
+
+Flattens transparencies, default white background
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_base_handler_acb4a82a63dcf99d52e9b0cf2bf108640}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_ab4be142f25c7891c65ac35d8538627f7}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!flip@{flip}}
+\index{flip@{flip}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{flip()}{flip()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_ab4be142f25c7891c65ac35d8538627f7} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::flip (\begin{DoxyParamCaption}\item[{string}]{\$dir}{ = {\ttfamily \textquotesingle{}vertical\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Flip an image horizontally or vertically
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & Direction to flip, either \textquotesingle{}vertical\textquotesingle{} or \textquotesingle{}horizontal\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_base_handler_a6cbac800f6143d4d2be46cd55b9526e1}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_ac213d80c999e92e5178d2a7b9720ec07}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!getEXIF@{getEXIF}}
+\index{getEXIF@{getEXIF}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{getEXIF()}{getEXIF()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_ac213d80c999e92e5178d2a7b9720ec07} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::get\+EXIF (\begin{DoxyParamCaption}\item[{?string}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Retrieve the EXIF information from the image, if possible. Returns an array of the information, or null if nothing can be found.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$key} & If specified, will only return this piece of EXIF data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_a67760276c818201db2d6849e29abca10}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!reorient@{reorient}}
+\index{reorient@{reorient}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{reorient()}{reorient()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_a67760276c818201db2d6849e29abca10} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::reorient (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Reads the EXIF information from the image and modifies the orientation so that displays correctly in the browser.
+
+\begin{DoxyReturn}{Returns}
+Image\+Handler\+Interface 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_afdd76bcc7353f42583d9ace5d945c677}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!resize@{resize}}
+\index{resize@{resize}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_afdd76bcc7353f42583d9ace5d945c677} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::resize (\begin{DoxyParamCaption}\item[{int}]{\$width}{, }\item[{int}]{\$height}{, }\item[{bool}]{\$maintain\+Ratio}{ = {\ttfamily false}, }\item[{string}]{\$master\+Dim}{ = {\ttfamily \textquotesingle{}auto\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Resize the image
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$maintain\+Ratio} & If true, will get the closest match possible while keeping aspect ratio true.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_base_handler_a22a9afb609bace061b4b5ced45fdcebf}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_a9d065612157a484f837a7bdd6e007afe}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!rotate@{rotate}}
+\index{rotate@{rotate}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_a9d065612157a484f837a7bdd6e007afe} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::rotate (\begin{DoxyParamCaption}\item[{float}]{\$angle}{}\end{DoxyParamCaption})}
+
+Rotates the image on the current canvas.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_base_handler_a84b6de93dcde33cc373297568203ccba}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_a8afc40538ff97316e4cff1684493ebe9}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!save@{save}}
+\index{save@{save}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_a8afc40538ff97316e4cff1684493ebe9} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::save (\begin{DoxyParamCaption}\item[{?string}]{\$target}{ = {\ttfamily null}, }\item[{int}]{\$quality}{ = {\ttfamily 90}}\end{DoxyParamCaption})}
+
+Saves any changes that have been made to file.
+
+Example\+: \$image-\/\texorpdfstring{$>$}{>}resize(100, 200, true) -\/\texorpdfstring{$>$}{>}save(\$target);
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string | null & {\em \$target} & The path to save the file to.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_base_handler_aa81ebe979fb8b3ef076a4bcc9e4a2945}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}, \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_g_d_handler_afb74e5cc5fb1dfd129b20845ffffb6f2}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+GDHandler}}, and \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_image_magick_handler_aafb5853801c7b345e990680aa1819975}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Image\+Magick\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_images_1_1_image_handler_interface_ad9319298ab0146c632e53068b8bca581}\index{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}!text@{text}}
+\index{text@{text}!CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface@{CodeIgniter\textbackslash{}Images\textbackslash{}ImageHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_images_1_1_image_handler_interface_ad9319298ab0146c632e53068b8bca581} 
+Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Image\+Handler\+Interface\+::text (\begin{DoxyParamCaption}\item[{string}]{\$text}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Overlays a string of text over the image.
+
+Valid options\+:
+
+
+\begin{DoxyItemize}
+\item color Text Color (hex number)
+\item shadow\+Color Color of the shadow (hex number)
+\item h\+Align Horizontal alignment\+: left, center, right
+\item v\+Align Vertical alignment\+: top, middle, bottom
+\item h\+Offset
+\item v\+Offset
+\item font\+Path
+\item font\+Size
+\item shadow\+Offset
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_images_1_1_handlers_1_1_base_handler_ab24113b50597e03604dcf66ae6893228}{Code\+Igniter\textbackslash{}\+Images\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Images/Image\+Handler\+Interface.\+php\end{DoxyCompactItemize}

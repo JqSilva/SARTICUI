@@ -1,0 +1,95 @@
+\doxysection{Code\+Igniter\textbackslash{}RESTful\textbackslash{}Base\+Resource Class Reference}
+\hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource}{}\label{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource@{CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}RESTful\textbackslash{}Base\+Resource\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}RESTful\textbackslash{}Base\+Resource\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a84f3fb60ce57647fe600f6dfa1fd6594}{init\+Controller}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a27797a4f40cf9700853feeedaf2b0cd4}{set\+Model}} (\$which=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a73018f2ce206d1c50a240184443db32c}\label{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a73018f2ce206d1c50a240184443db32c} 
+{\bfseries \$request}
+\item 
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a48c73c9b23b7fe98956cac6ad9aeee79}\label{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a48c73c9b23b7fe98956cac6ad9aeee79} 
+{\bfseries \$model\+Name}
+\item 
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a9a595b0c539370233c6e290742569e0b}\label{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a9a595b0c539370233c6e290742569e0b} 
+{\bfseries \$model}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_controller}{Code\+Igniter\textbackslash{}\+Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$helpers} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$request}
+\item 
+{\bfseries \$response}
+\item 
+{\bfseries \$logger}
+\item 
+{\bfseries \$force\+HTTPS} = 0
+\item 
+{\bfseries \$validator}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_controller}{Code\+Igniter\textbackslash{}\+Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_a92f4d5194dc454b7aad79fdb38d3db30}{force\+HTTPS}} (int \$duration=31\+\_\+536\+\_\+000)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_aecc71f991af606e223e29006d5470036}{cache\+Page}} (int \$time)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_aca21ed18c3d2fa7cbdadd61bbe6dce82}{validate}} (\$rules, array \$messages=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_af519dae459b31be1e692d8c7ff31b785}{validate\+Data}} (array \$data, \$rules, array \$messages=\mbox{[}$\,$\mbox{]}, ?string \$db\+Group=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a84f3fb60ce57647fe600f6dfa1fd6594}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource@{CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource}!initController@{initController}}
+\index{initController@{initController}!CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource@{CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource}}
+\doxysubsubsection{\texorpdfstring{initController()}{initController()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a84f3fb60ce57647fe600f6dfa1fd6594} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Base\+Resource\+::init\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_controller_a50942c5290a15cda405b9cd057756065}{Code\+Igniter\textbackslash{}\+Controller}}.
+
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a27797a4f40cf9700853feeedaf2b0cd4}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource@{CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource}!setModel@{setModel}}
+\index{setModel@{setModel}!CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource@{CodeIgniter\textbackslash{}RESTful\textbackslash{}BaseResource}}
+\doxysubsubsection{\texorpdfstring{setModel()}{setModel()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a27797a4f40cf9700853feeedaf2b0cd4} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Base\+Resource\+::set\+Model (\begin{DoxyParamCaption}\item[{}]{\$which}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set or change the model this controller is bound to. Given either the name or the object, determine the other.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string | null & {\em \$which} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+RESTful/Base\+Resource.\+php\end{DoxyCompactItemize}

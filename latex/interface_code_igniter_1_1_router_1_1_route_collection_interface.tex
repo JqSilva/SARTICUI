@@ -1,0 +1,363 @@
+\doxysection{Code\+Igniter\textbackslash{}Router\textbackslash{}Route\+Collection\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface}{}\label{interface_code_igniter_1_1_router_1_1_route_collection_interface}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Router\textbackslash{}Route\+Collection\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a2ea65d37b7f637792bea8a007352e9d3}{add}} (string \$from, \$to, ?array \$options=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_ab0a587ff912929515bf6f0e742a6a769}{add\+Placeholder}} (\$placeholder, ?string \$pattern=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a4a56e9f10482c3f921f6211423b7da02}{set\+Default\+Namespace}} (string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_ad614933b799d662391a52f72a5d74380}{set\+Default\+Controller}} (string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a22e8b0fd7409cc574e53fde691df8fa1}{set\+Default\+Method}} (string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae1d33ae4ffdad1f64a3c479db1468806}{set\+Translate\+URIDashes}} (bool \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a64f73399f5ddef8bb774f2b072fa11e0}{set\+Auto\+Route}} (bool \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a71ef521cd23c148444d9e99467cd9639}{set404\+Override}} (\$callable=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a65fd2c85a44fee138656791eba8c9b7d}{get404\+Override}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a2bc7ad35a3a11fa785636735d24cdf43}{get\+Default\+Controller}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a39a505cc0b1713a7f8b001441fd73268}{get\+Default\+Method}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_adedb235f83a10e73a4535901d82d16b9}{should\+Translate\+URIDashes}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a064ece0bec65609996b66dccb3a5ebc0}{should\+Auto\+Route}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae82e139e2504ceaeca89461620b99263}{get\+Routes}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a5e6dfee220db9f50a6b151850acfab39}{get\+HTTPVerb}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a913588b2f867fea53c4ffd85129dee37}{reverse\+Route}} (string \$search,... \$params)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a595f3971ec8e777d6da5aebd42dd7314}{is\+Redirect}} (string \$route\+Key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_a38327f524823eacbd4d35ca6f8adc58e}{get\+Redirect\+Code}} (string \$route\+Key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae01535ba86f2e62ad6c1b77203ef822f}{should\+Use\+Supported\+Locales\+Only}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface Route\+Collection\+Interface
+
+A Route Collection\textquotesingle{}s sole job is to hold a series of routes. The required number of methods is kept very small on purpose, but implementors may add a number of additional methods to customize how the routes are defined.
+
+The Route\+Collection provides the Router with the routes so that it can determine which controller should be run. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a2ea65d37b7f637792bea8a007352e9d3}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!add@{add}}
+\index{add@{add}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a2ea65d37b7f637792bea8a007352e9d3} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::add (\begin{DoxyParamCaption}\item[{string}]{\$from}{, }\item[{}]{\$to}{, }\item[{?array}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Adds a single route to the collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & The route path (with placeholders or regex) \\
+\hline
+ & {\em array\texorpdfstring{$\vert$}{|}(\+Closure(mixed...)} & (Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void))\texorpdfstring{$\vert$}{|}string \$to The route handler \\
+\hline
+array | null & {\em \$options} & The route options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Route\+Collection\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_a863c7a2b17fa13cb21f1d54232763691}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_ab0a587ff912929515bf6f0e742a6a769}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!addPlaceholder@{addPlaceholder}}
+\index{addPlaceholder@{addPlaceholder}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{addPlaceholder()}{addPlaceholder()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_ab0a587ff912929515bf6f0e742a6a769} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::add\+Placeholder (\begin{DoxyParamCaption}\item[{}]{\$placeholder}{, }\item[{?string}]{\$pattern}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Registers a new constraint with the system. Constraints are used by the routes as placeholders for regular expressions to make defining the routes more human-\/friendly.
+
+You can pass an associative array as \$placeholder, and have multiple placeholders added at once.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$placeholder} & \\
+\hline
+string | null & {\em \$pattern} & The regex pattern\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Route\+Collection\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_ae4e190da7501fabbc365429693bc951f}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a65fd2c85a44fee138656791eba8c9b7d}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!get404Override@{get404Override}}
+\index{get404Override@{get404Override}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{get404Override()}{get404Override()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a65fd2c85a44fee138656791eba8c9b7d} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::get404\+Override (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the 404 Override setting, which can be null, a closure or the controller/string.
+
+\begin{DoxyReturn}{Returns}
+(Closure(string)\+: (Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void))\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_a765b0a44a85a8eba8e412ab18694fdbe}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a2bc7ad35a3a11fa785636735d24cdf43}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!getDefaultController@{getDefaultController}}
+\index{getDefaultController@{getDefaultController}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{getDefaultController()}{getDefaultController()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a2bc7ad35a3a11fa785636735d24cdf43} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::get\+Default\+Controller (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the name of the default controller. With Namespace.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_a8aa18f9659c18be81ff19ca6c3a9c62b}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a39a505cc0b1713a7f8b001441fd73268}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!getDefaultMethod@{getDefaultMethod}}
+\index{getDefaultMethod@{getDefaultMethod}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{getDefaultMethod()}{getDefaultMethod()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a39a505cc0b1713a7f8b001441fd73268} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::get\+Default\+Method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the name of the default method to use within the controller.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_a1c93fc2b0b01a0c88196424c77a97d30}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a5e6dfee220db9f50a6b151850acfab39}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!getHTTPVerb@{getHTTPVerb}}
+\index{getHTTPVerb@{getHTTPVerb}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{getHTTPVerb()}{getHTTPVerb()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a5e6dfee220db9f50a6b151850acfab39} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::get\+HTTPVerb (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current HTTP Verb being used.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_ab5047730dadc759d915699e7f8292d1e}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a38327f524823eacbd4d35ca6f8adc58e}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!getRedirectCode@{getRedirectCode}}
+\index{getRedirectCode@{getRedirectCode}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{getRedirectCode()}{getRedirectCode()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a38327f524823eacbd4d35ca6f8adc58e} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::get\+Redirect\+Code (\begin{DoxyParamCaption}\item[{string}]{\$route\+Key}{}\end{DoxyParamCaption})}
+
+Grabs the HTTP status code from a redirecting Route. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_aba964871c1ee3b26e24816a8c3f589bc}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae82e139e2504ceaeca89461620b99263}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!getRoutes@{getRoutes}}
+\index{getRoutes@{getRoutes}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{getRoutes()}{getRoutes()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae82e139e2504ceaeca89461620b99263} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::get\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the raw array of available routes.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a595f3971ec8e777d6da5aebd42dd7314}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!isRedirect@{isRedirect}}
+\index{isRedirect@{isRedirect}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{isRedirect()}{isRedirect()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a595f3971ec8e777d6da5aebd42dd7314} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::is\+Redirect (\begin{DoxyParamCaption}\item[{string}]{\$route\+Key}{}\end{DoxyParamCaption})}
+
+Determines if the route is a redirecting route. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_aaa8489448d71034e53fce6fa4e93fb56}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a913588b2f867fea53c4ffd85129dee37}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!reverseRoute@{reverseRoute}}
+\index{reverseRoute@{reverseRoute}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{reverseRoute()}{reverseRoute()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a913588b2f867fea53c4ffd85129dee37} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::reverse\+Route (\begin{DoxyParamCaption}\item[{string}]{\$search}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Attempts to look up a route based on its destination.
+
+If a route exists\+: \begin{DoxyVerb} 'path/(:any)/(:any)' => 'Controller::method/$1/$2'
+\end{DoxyVerb}
+
+
+This method allows you to know the Controller and method and get the route that leads to it. \begin{DoxyVerb} // Equals 'path/$param1/$param2'
+ reverseRoute('Controller::method', $param1, $param2);
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$search} & Named route or Controller\+::method \\
+\hline
+ & {\em int\texorpdfstring{$\vert$}{|}string} & ...\$params\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string The route (URI path relative to base\+URL) or false if not found. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_aaa8eb0bafa62038d4b5270455db586e4}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a71ef521cd23c148444d9e99467cd9639}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!set404Override@{set404Override}}
+\index{set404Override@{set404Override}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{set404Override()}{set404Override()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a71ef521cd23c148444d9e99467cd9639} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::set404\+Override (\begin{DoxyParamCaption}\item[{}]{\$callable}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets the class/method that should be called if routing doesn\textquotesingle{}t find a match. It can be either a closure or the controller/method name exactly like a route is defined\+: Users\+::index
+
+This setting is passed to the Router class and handled there.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$callable} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_ae9203610156a697cce2e45f8a633698d}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a64f73399f5ddef8bb774f2b072fa11e0}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!setAutoRoute@{setAutoRoute}}
+\index{setAutoRoute@{setAutoRoute}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{setAutoRoute()}{setAutoRoute()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a64f73399f5ddef8bb774f2b072fa11e0} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::set\+Auto\+Route (\begin{DoxyParamCaption}\item[{bool}]{\$value}{}\end{DoxyParamCaption})}
+
+If TRUE, the system will attempt to match the URI against Controllers by matching each segment against folders/files in APPPATH/\+Controllers, when a match wasn\textquotesingle{}t found against defined routes.
+
+If FALSE, will stop searching and do NO automatic routing. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_a2dc148670ab2c246b87cc738127e1d91}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_ad614933b799d662391a52f72a5d74380}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!setDefaultController@{setDefaultController}}
+\index{setDefaultController@{setDefaultController}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{setDefaultController()}{setDefaultController()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_ad614933b799d662391a52f72a5d74380} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::set\+Default\+Controller (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets the default controller to use when no other controller has been specified.
+
+\begin{DoxyReturn}{Returns}
+Route\+Collection\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_a4b144e37e4bb66b6a9b05aa59189b0c1}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a22e8b0fd7409cc574e53fde691df8fa1}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!setDefaultMethod@{setDefaultMethod}}
+\index{setDefaultMethod@{setDefaultMethod}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{setDefaultMethod()}{setDefaultMethod()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a22e8b0fd7409cc574e53fde691df8fa1} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::set\+Default\+Method (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets the default method to call on the controller when no other method has been set in the route.
+
+\begin{DoxyReturn}{Returns}
+Route\+Collection\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_af0f4d6f198fb0caf89b67b86a7cc4cd3}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a4a56e9f10482c3f921f6211423b7da02}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!setDefaultNamespace@{setDefaultNamespace}}
+\index{setDefaultNamespace@{setDefaultNamespace}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{setDefaultNamespace()}{setDefaultNamespace()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a4a56e9f10482c3f921f6211423b7da02} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::set\+Default\+Namespace (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets the default namespace to use for Controllers when no other namespace has been specified.
+
+\begin{DoxyReturn}{Returns}
+Route\+Collection\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_aaf9f399d1155c20389569158d339115c}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae1d33ae4ffdad1f64a3c479db1468806}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!setTranslateURIDashes@{setTranslateURIDashes}}
+\index{setTranslateURIDashes@{setTranslateURIDashes}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{setTranslateURIDashes()}{setTranslateURIDashes()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae1d33ae4ffdad1f64a3c479db1468806} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::set\+Translate\+URIDashes (\begin{DoxyParamCaption}\item[{bool}]{\$value}{}\end{DoxyParamCaption})}
+
+Tells the system whether to convert dashes in URI strings into underscores. In some search engines, including Google, dashes create more meaning and make it easier for the search engine to find words and meaning in the URI for better SEO. But it doesn\textquotesingle{}t work well with PHP method names....
+
+\begin{DoxyReturn}{Returns}
+Route\+Collection\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_a7d9a793e76e4fd2e8448d2abbd2848ce}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_a064ece0bec65609996b66dccb3a5ebc0}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!shouldAutoRoute@{shouldAutoRoute}}
+\index{shouldAutoRoute@{shouldAutoRoute}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{shouldAutoRoute()}{shouldAutoRoute()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_a064ece0bec65609996b66dccb3a5ebc0} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::should\+Auto\+Route (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the flag that tells whether to auto\+Route URI against Controllers.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_a6c521347a3382a1bc7c571aac4c35146}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_adedb235f83a10e73a4535901d82d16b9}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!shouldTranslateURIDashes@{shouldTranslateURIDashes}}
+\index{shouldTranslateURIDashes@{shouldTranslateURIDashes}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{shouldTranslateURIDashes()}{shouldTranslateURIDashes()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_adedb235f83a10e73a4535901d82d16b9} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::should\+Translate\+URIDashes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current value of the translate\+URIDashes setting.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_ab0d9b0d81720c82b7bfb832edaba2017}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+\Hypertarget{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae01535ba86f2e62ad6c1b77203ef822f}\index{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}!shouldUseSupportedLocalesOnly@{shouldUseSupportedLocalesOnly}}
+\index{shouldUseSupportedLocalesOnly@{shouldUseSupportedLocalesOnly}!CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface@{CodeIgniter\textbackslash{}Router\textbackslash{}RouteCollectionInterface}}
+\doxysubsubsection{\texorpdfstring{shouldUseSupportedLocalesOnly()}{shouldUseSupportedLocalesOnly()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_router_1_1_route_collection_interface_ae01535ba86f2e62ad6c1b77203ef822f} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection\+Interface\+::should\+Use\+Supported\+Locales\+Only (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the flag that limit or not the routes with \{locale\} placeholder to App\+::\$supported\+Locales 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_route_collection_aac6a2419950b4547b56f61cf0d9223e6}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Route\+Collection}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Router/Route\+Collection\+Interface.\+php\end{DoxyCompactItemize}

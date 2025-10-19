@@ -1,0 +1,84 @@
+\doxysection{Code\+Igniter\textbackslash{}Data\+Caster\textbackslash{}Cast\textbackslash{}Json\+Cast Class Reference}
+\hypertarget{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast}{}\label{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Data\+Caster\textbackslash{}Cast\textbackslash{}Json\+Cast\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Data\+Caster\textbackslash{}Cast\textbackslash{}Json\+Cast\+:
+% FIG 1
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast_a6839d997b601781b4df0b1dfce446393}{get}} (mixed \$value, array \$params=\mbox{[}$\,$\mbox{]}, ?object \$helper=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast_a760bff910604dd7359e2773c539dbe63}{set}} (mixed \$value, array \$params=\mbox{[}$\,$\mbox{]}, ?object \$helper=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_base_cast}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Base\+Cast}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries invalid\+Type\+Value\+Error} (mixed \$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Json\+Cast
+
+(PHP) \mbox{[}array\texorpdfstring{$\vert$}{|}std\+Class -\/-\/\texorpdfstring{$>$}{>} string\mbox{]} -\/-\/\texorpdfstring{$>$}{>} (DB driver) -\/-\/\texorpdfstring{$>$}{>} (DB column) string \mbox{[} \texorpdfstring{$<$}{<}-- string\mbox{]} \texorpdfstring{$<$}{<}-- (DB driver) \texorpdfstring{$<$}{<}-- (DB column) string 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast_a6839d997b601781b4df0b1dfce446393}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast_a6839d997b601781b4df0b1dfce446393} 
+static Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Json\+Cast\+::get (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?object}]{\$helper}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes a value from Data\+Source, returns its value for PHP.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & Data from database driver \\
+\hline
+ & {\em list$<$string$>$} & \$params Additional param \\
+\hline
+object | null & {\em \$helper} & Helper object. E.\+g., database connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed PHP native value 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_base_cast_a636775f3c1d87fcc215d60edd9bf6e35}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Base\+Cast}}.
+
+\Hypertarget{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast_a760bff910604dd7359e2773c539dbe63}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast}!set@{set}}
+\index{set@{set}!CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}Cast\textbackslash{}JsonCast}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_caster_1_1_cast_1_1_json_cast_a760bff910604dd7359e2773c539dbe63} 
+static Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Json\+Cast\+::set (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?object}]{\$helper}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes a PHP value, returns its value for Data\+Source.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & PHP native value \\
+\hline
+ & {\em list$<$string$>$} & \$params Additional param \\
+\hline
+object | null & {\em \$helper} & Helper object. E.\+g., database connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Data to pass to database driver 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_cast_1_1_base_cast_a0bcf34608d849d37061b9b9afe91f3eb}{Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Cast\textbackslash{}\+Base\+Cast}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Data\+Caster/\+Cast/Json\+Cast.\+php\end{DoxyCompactItemize}

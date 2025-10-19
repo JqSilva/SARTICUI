@@ -1,0 +1,1591 @@
+\doxysection{Code\+Igniter\textbackslash{}Base\+Model Class Reference}
+\hypertarget{class_code_igniter_1_1_base_model}{}\label{class_code_igniter_1_1_base_model}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Base\+Model\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Base\+Model\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aec48c946e12171d40ad78da4c5fc3def}\label{class_code_igniter_1_1_base_model_aec48c946e12171d40ad78da4c5fc3def} 
+{\bfseries \+\_\+\+\_\+construct} (?\mbox{\hyperlink{interface_code_igniter_1_1_validation_1_1_validation_interface}{Validation\+Interface}} \$validation=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a3d81f4ecd2bb3a6ea1ac1de2024465f1}{get\+Id\+Value}} (\$row)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_af7da0e4cc514ac3ed80750638c2ebb36}{count\+All\+Results}} (bool \$reset=true, bool \$test=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_aa68fef574aad444429ac357ba06489de}{chunk}} (int \$size, Closure \$user\+Func)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a963b796d5fba36503eaab2de808abe5c}{find}} (\$id=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a76915d686e2a8702386be3e9c38b4d9d}{find\+Column}} (string \$column\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_acd0b4c42891ec4d48754a3f551a4f538}{find\+All}} (?int \$limit=null, int \$offset=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_aa9873ef39608540eb701f771372e8d48}{first}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ad9eb22cd86ebf54e4e93cf43d4a13151}{save}} (\$row)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a0bd1f4f98cc6ed700e3f2c6e41e971ab}{get\+Insert\+ID}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_aa488844198aa021e1aa2ae48b2d39e1f}{insert}} (\$row=null, bool \$return\+ID=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a02bcb5a2a91bd75946e8df9e157ed091}{insert\+Batch}} (?array \$set=null, ?bool \$escape=null, int \$batch\+Size=100, bool \$testing=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a64b603d7a765eeb7f28a9f391228e654}{update}} (\$id=null, \$row=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a198808ffe1391895d9ec73ceab8d9b08}{update\+Batch}} (?array \$set=null, ?string \$index=null, int \$batch\+Size=100, bool \$return\+SQL=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_abd0b5fecbb8f4313c16334127c875032}{delete}} (\$id=null, bool \$purge=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ae75a43e0f92086e55bd3cbce7c92b8e0}{purge\+Deleted}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a793135a1840596e9965cf7014940c5f0}{with\+Deleted}} (bool \$val=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_acc8f4a70e274521bc0b19827ca582e5c}{only\+Deleted}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_afc1412c08e258eee3ad36a838da61803}{replace}} (?array \$row=null, bool \$return\+SQL=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ad1ec553790425a29b758ae6a0a78ae82}{errors}} (bool \$force\+DB=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a1b7e234165d755e6225c15f45600afb3}{paginate}} (?int \$per\+Page=null, string \$group=\textquotesingle{}default\textquotesingle{}, ?int \$page=null, int \$segment=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_aeb32d6b95f03738c404fc2e05b74b1fb}{set\+Allowed\+Fields}} (array \$allowed\+Fields)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a8c39d97ab9207978de5c3c9d78c7ba50}{protect}} (bool \$protect=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a97235715edb590792640f2c692a1c6d5}{skip\+Validation}} (bool \$skip=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a9eeddb37c538cb5774e4d11928103103}{set\+Validation\+Messages}} (array \$validation\+Messages)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_aa18f1fc71298f7a1b6aad993ac2f31ba}{set\+Validation\+Message}} (string \$field, array \$field\+Messages)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a1b30cc41138d5d868b21afc6ae0150e5}{set\+Validation\+Rules}} (array \$validation\+Rules)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a16543a20e46c27242fa8d01cca3bd3c6}{set\+Validation\+Rule}} (string \$field, \$field\+Rules)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a3f7bfc7e18b117b82e84d10765db6e25}{clean\+Rules}} (bool \$choice=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a8e5c6d98205035390a512f6e9270ff67}{validate}} (\$row)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a947a64032f996b02da1779e3da8f22f7}{get\+Validation\+Rules}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a1ee4b0c7541de7eb0145a4339c6020c8}{get\+Validation\+Messages}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a2cb72cb0aed4203925eacec9e2433d12}{allow\+Callbacks}} (bool \$val=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_af6ab494c36a6c611fe5d9360f2528c47}{as\+Array}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a6d97e32674ae30a535cfb951e0c95b41}{as\+Object}} (string \$class=\textquotesingle{}object\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ab4aedebe366243e59a844100d93c9918}{\+\_\+\+\_\+get}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a34cb2565333471879c99ff1ab8f9b05e}{\+\_\+\+\_\+isset}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a7c6fc1b84c09611a5294ca7eda3f8096}{\+\_\+\+\_\+call}} (string \$name, array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a83565767b3c6bfa23208fcf381a57dd4}{allow\+Empty\+Inserts}} (bool \$value=true)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a2e44d583842a55994b111393e0ac76aa}\label{class_code_igniter_1_1_base_model_a2e44d583842a55994b111393e0ac76aa} 
+{\bfseries \$pager}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_af7fdc70d366b0d3b90fa45f2e8823ce6}{create\+Data\+Converter}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a1b2412e75ed2d6d31c48a812df72a6c5}{use\+Casts}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a4985b6bd0994c765178f7841674e8a48}{initialize}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a86bd1821fe0b81f9e4a652bbe20f979a}{do\+Find}} (bool \$singleton, \$id=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ae0255a21ddaa7926f798b030007517b6}{do\+Find\+Column}} (string \$column\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ae0b2f82821e100a6ce1c14ea61c00c39}{do\+Find\+All}} (?int \$limit=null, int \$offset=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a10c2b8cffd0f03af1693bdbc6a8dcf43}{do\+First}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a396e297ed985478f75be70fc24323827}{do\+Insert}} (array \$row)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a9c608aba23fd28875f61cd3399043de7}{do\+Insert\+Batch}} (?array \$set=null, ?bool \$escape=null, int \$batch\+Size=100, bool \$testing=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_afc6bfbd18e3989bf07eb6c2ef6fd1a5e}{do\+Update}} (\$id=null, \$row=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a463c1cde4776126fa044842d8fe53fc3}{do\+Update\+Batch}} (?array \$set=null, ?string \$index=null, int \$batch\+Size=100, bool \$return\+SQL=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a6982afc31a23579c47e9b16a37790844}{do\+Delete}} (\$id=null, bool \$purge=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a2eef95b66cd10a28fb7619df3c2c90a9}{do\+Purge\+Deleted}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a8b86a4919391841b1d8e82617da08a65}{do\+Only\+Deleted}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a54d41acb8cfa12a12de7017d2d703380}{do\+Replace}} (?array \$row=null, bool \$return\+SQL=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a019ecd7f13d86519a14d29c8ae39b9ed}{do\+Errors}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ae8ea4131722e1a6cfb41f34c17732152}{should\+Update}} (\$row)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ad06b30c02e0bd52e8a6547fcc8fb222b}{set\+Created\+Field}} (array \$row, \$date)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ac9699c3005f48af06f27a82ccceadba4}{set\+Updated\+Field}} (array \$row, \$date)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ae759420945bd1cdcebbc50b4b70900e2}{do\+Protect\+Fields}} (array \$row)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ae1d90e36f3c9e1f6368e9e8e06d2bb2e}{do\+Protect\+Fields\+For\+Insert}} (array \$row)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a976baa4ce37a79ae93d9fcf0f7aa6911}{set\+Date}} (?int \$user\+Data=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_af8ab5c1e52f9441fcf8366157681e3c7}{int\+To\+Date}} (int \$value)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ad99678e9ec14ac1e831c9127f7790bcf}{time\+To\+Date}} (\mbox{\hyperlink{class_code_igniter_1_1_i18n_1_1_time}{Time}} \$value)
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_af96c419dbb76862691eedd512175856b}\label{class_code_igniter_1_1_base_model_af96c419dbb76862691eedd512175856b} 
+{\bfseries ensure\+Validation} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a18c8559991b309cf177a494962880ec5}{clean\+Validation\+Rules}} (array \$rules, ?array \$row=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a7723a193541f3b11cbc61a19a98639d8}{trigger}} (string \$event, array \$event\+Data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a98aeebda32990ee6cd68eecd88d4ffd6}{object\+To\+Array}} (\$object, bool \$only\+Changed=true, bool \$recursive=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ad6ebc39f0bab5ae7e07f563167c97fec}{time\+To\+String}} (array \$properties)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_a9e2bd2c7e4090bcdf5d523effea8b776}{object\+To\+Raw\+Array}} (\$object, bool \$only\+Changed=true, bool \$recursive=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ab0ec4e6e9a061770bcaba17ebf48af93}{transform\+Data\+To\+Array}} (\$row, string \$type)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_base_model_ae14d3734162e4d9882738775c6dd38e1}{convert\+To\+Return\+Type}} (array \$row, string \$return\+Type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a324a7d438bb3f87f33889afc31e67178}\label{class_code_igniter_1_1_base_model_a324a7d438bb3f87f33889afc31e67178} 
+{\bfseries \$db}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a729092bafa802e8171174c5db0b2ccb9}\label{class_code_igniter_1_1_base_model_a729092bafa802e8171174c5db0b2ccb9} 
+{\bfseries \$insert\+ID} = 0
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a154f37837b8d9d6b0278e01111445a04}\label{class_code_igniter_1_1_base_model_a154f37837b8d9d6b0278e01111445a04} 
+{\bfseries \$\+DBGroup}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_ab473d10dc55116833f8eb9423c61775f}\label{class_code_igniter_1_1_base_model_ab473d10dc55116833f8eb9423c61775f} 
+{\bfseries \$return\+Type} = \textquotesingle{}array\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a09334916c057f906f4ca8492bc42a9f1}\label{class_code_igniter_1_1_base_model_a09334916c057f906f4ca8492bc42a9f1} 
+{\bfseries \$temp\+Return\+Type}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aa9b7baf399bbfcecf5aa807b9bc5b879}\label{class_code_igniter_1_1_base_model_aa9b7baf399bbfcecf5aa807b9bc5b879} 
+array {\bfseries \$casts} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_ab9c1f73b490707f2d13d70abd7d8fa3a}\label{class_code_igniter_1_1_base_model_ab9c1f73b490707f2d13d70abd7d8fa3a} 
+array {\bfseries \$cast\+Handlers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aa82b1c01530534d03dca94a1d43b93ba}\label{class_code_igniter_1_1_base_model_aa82b1c01530534d03dca94a1d43b93ba} 
+\mbox{\hyperlink{class_code_igniter_1_1_data_converter_1_1_data_converter}{Data\+Converter}} {\bfseries \$converter} = null
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aa7544aa6e774712c458c5ab7b39e93e6}\label{class_code_igniter_1_1_base_model_aa7544aa6e774712c458c5ab7b39e93e6} 
+{\bfseries \$protect\+Fields} = true
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aafa776b889531055e34f82d12e29c310}\label{class_code_igniter_1_1_base_model_aafa776b889531055e34f82d12e29c310} 
+{\bfseries \$allowed\+Fields} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_ac49b3a3a05c91833b2a9982ac409aba3}\label{class_code_igniter_1_1_base_model_ac49b3a3a05c91833b2a9982ac409aba3} 
+{\bfseries \$use\+Timestamps} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a2060799e7866b649f6bdbc28ebf3f66c}\label{class_code_igniter_1_1_base_model_a2060799e7866b649f6bdbc28ebf3f66c} 
+{\bfseries \$date\+Format} = \textquotesingle{}datetime\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a7d27d2898b53a71a072b2a626d7bdb37}\label{class_code_igniter_1_1_base_model_a7d27d2898b53a71a072b2a626d7bdb37} 
+{\bfseries \$created\+Field} = \textquotesingle{}created\+\_\+at\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a8b62ecf6ef8781480cd8f5e523858f17}\label{class_code_igniter_1_1_base_model_a8b62ecf6ef8781480cd8f5e523858f17} 
+{\bfseries \$updated\+Field} = \textquotesingle{}updated\+\_\+at\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aaee7d7cadd27d01f8c6a794c63f9e00a}\label{class_code_igniter_1_1_base_model_aaee7d7cadd27d01f8c6a794c63f9e00a} 
+{\bfseries \$use\+Soft\+Deletes} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_ada7a168a2625676197690022a7b7c081}\label{class_code_igniter_1_1_base_model_ada7a168a2625676197690022a7b7c081} 
+{\bfseries \$temp\+Use\+Soft\+Deletes}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a57d7f052881ecb57a8729d7a70f0313d}\label{class_code_igniter_1_1_base_model_a57d7f052881ecb57a8729d7a70f0313d} 
+{\bfseries \$deleted\+Field} = \textquotesingle{}deleted\+\_\+at\textquotesingle{}
+\item 
+bool \mbox{\hyperlink{class_code_igniter_1_1_base_model_a4ef1ca0cb419416b3b6e740440e399f2}{\$allow\+Empty\+Inserts}} = false
+\item 
+bool \mbox{\hyperlink{class_code_igniter_1_1_base_model_ad0657149a5dc5602ff46da8ae25c21a6}{\$update\+Only\+Changed}} = true
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_ac738938a5ddaf6502743cf8c59adda24}\label{class_code_igniter_1_1_base_model_ac738938a5ddaf6502743cf8c59adda24} 
+{\bfseries \$validation\+Rules} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a11f12e497f2a9f657415d351c969e90d}\label{class_code_igniter_1_1_base_model_a11f12e497f2a9f657415d351c969e90d} 
+{\bfseries \$validation\+Messages} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_ae6742f16b8e67f579c709979eeca7547}\label{class_code_igniter_1_1_base_model_ae6742f16b8e67f579c709979eeca7547} 
+{\bfseries \$skip\+Validation} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aa4df563b8b8f979c2762f5e43e8965b3}\label{class_code_igniter_1_1_base_model_aa4df563b8b8f979c2762f5e43e8965b3} 
+{\bfseries \$clean\+Validation\+Rules} = true
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aac0c62d7249c798d991cb46430bf1c42}\label{class_code_igniter_1_1_base_model_aac0c62d7249c798d991cb46430bf1c42} 
+{\bfseries \$validation}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a56c0fffe6cdb54efbedba57eb8e85704}\label{class_code_igniter_1_1_base_model_a56c0fffe6cdb54efbedba57eb8e85704} 
+{\bfseries \$allow\+Callbacks} = true
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_adad477c93ff4f51c9576776e4cc3134b}\label{class_code_igniter_1_1_base_model_adad477c93ff4f51c9576776e4cc3134b} 
+{\bfseries \$temp\+Allow\+Callbacks}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a797921d1eda6b84c68412b0df7e9b394}\label{class_code_igniter_1_1_base_model_a797921d1eda6b84c68412b0df7e9b394} 
+{\bfseries \$before\+Insert} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a61ebbc9ec1933a11315d2028624973d4}\label{class_code_igniter_1_1_base_model_a61ebbc9ec1933a11315d2028624973d4} 
+{\bfseries \$after\+Insert} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a2ddccd1d43d718d369ae9296f782d03f}\label{class_code_igniter_1_1_base_model_a2ddccd1d43d718d369ae9296f782d03f} 
+{\bfseries \$before\+Update} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_aa8c6dcfe29e6f0385aa1939d30d04b92}\label{class_code_igniter_1_1_base_model_aa8c6dcfe29e6f0385aa1939d30d04b92} 
+{\bfseries \$after\+Update} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_ad6ff501859bcecee533a8dae4ae10b13}\label{class_code_igniter_1_1_base_model_ad6ff501859bcecee533a8dae4ae10b13} 
+{\bfseries \$before\+Insert\+Batch} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a194ead86d1de2f1753236bcd3c58359d}\label{class_code_igniter_1_1_base_model_a194ead86d1de2f1753236bcd3c58359d} 
+{\bfseries \$after\+Insert\+Batch} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a46811a20ea55b6c7590493daf47b9f44}\label{class_code_igniter_1_1_base_model_a46811a20ea55b6c7590493daf47b9f44} 
+{\bfseries \$before\+Update\+Batch} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a6ccf954096af2d6ff990c6b777476bfe}\label{class_code_igniter_1_1_base_model_a6ccf954096af2d6ff990c6b777476bfe} 
+{\bfseries \$after\+Update\+Batch} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a50d7c398ba727556a8635a9ad9225b5c}\label{class_code_igniter_1_1_base_model_a50d7c398ba727556a8635a9ad9225b5c} 
+{\bfseries \$before\+Find} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_ab127c4610aed05f546dec174e0c6c206}\label{class_code_igniter_1_1_base_model_ab127c4610aed05f546dec174e0c6c206} 
+{\bfseries \$after\+Find} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a92ddb93560c456b44cad26f8b3db2454}\label{class_code_igniter_1_1_base_model_a92ddb93560c456b44cad26f8b3db2454} 
+{\bfseries \$before\+Delete} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_base_model_a9134b0aae44ad834f788701108e204fa}\label{class_code_igniter_1_1_base_model_a9134b0aae44ad834f788701108e204fa} 
+{\bfseries \$after\+Delete} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Base\+Model class provides a number of convenient features that makes working with a databases less painful. Extending this class provide means of implementing various database systems
+
+It will\+:
+\begin{DoxyItemize}
+\item simplifies pagination
+\item allow specifying the return type (array, object, etc) with each call
+\item automatically set and update timestamps
+\item handle soft deletes
+\item ensure validation is run against objects when saving items
+\item process various callbacks
+\item allow intermingling calls to the db connection
+\end{DoxyItemize}
+
+@phpstan-\/type row\+\_\+array array\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string, float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$>$}{>} @phpstan-\/type event\+\_\+data\+\_\+beforeinsert array\{data\+: row\+\_\+array\} @phpstan-\/type event\+\_\+data\+\_\+afterinsert array\{id\+: int\texorpdfstring{$\vert$}{|}string, data\+: row\+\_\+array, result\+: bool\} @phpstan-\/type event\+\_\+data\+\_\+beforefind array\{id?\+: int\texorpdfstring{$\vert$}{|}string, method\+: string, singleton\+: bool, limit?\+: int, offset?\+: int\} @phpstan-\/type event\+\_\+data\+\_\+afterfind array\{id\+: int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}, data\+: row\+\_\+array\texorpdfstring{$\vert$}{|}list$<$row\+\_\+array$>$\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null, method\+: string, singleton\+: bool\} @phpstan-\/type event\+\_\+data\+\_\+beforeupdate array\{id\+: null\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}, data\+: row\+\_\+array\} @phpstan-\/type event\+\_\+data\+\_\+afterupdate array\{id\+: null\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}, data\+: row\+\_\+array\texorpdfstring{$\vert$}{|}object, result\+: bool\} @phpstan-\/type event\+\_\+data\+\_\+beforedelete array\{id\+: null\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}, purge\+: bool\} @phpstan-\/type event\+\_\+data\+\_\+afterdelete array\{id\+: null\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}, data\+: null, purge\+: bool, result\+: bool\} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_base_model_a7c6fc1b84c09611a5294ca7eda3f8096}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a7c6fc1b84c09611a5294ca7eda3f8096} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Provides direct access to method in the database connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name \\
+\hline
+array & {\em \$params} & Params\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a437b6057f32ca7b2b7b425181e7fac9e}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_ab4aedebe366243e59a844100d93c9918}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ab4aedebe366243e59a844100d93c9918} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Provides the db connection and model\textquotesingle{}s properties.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a98605b9d3af4ed1c51276b1c63357d2b}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a34cb2565333471879c99ff1ab8f9b05e}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!\_\_isset@{\_\_isset}}
+\index{\_\_isset@{\_\_isset}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{\_\_isset()}{\_\_isset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a34cb2565333471879c99ff1ab8f9b05e} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::\+\_\+\+\_\+isset (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Checks for the existence of properties across this model, and db connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_ad64bdf8e123c3b516614777b71de63a1}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a2cb72cb0aed4203925eacec9e2433d12}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!allowCallbacks@{allowCallbacks}}
+\index{allowCallbacks@{allowCallbacks}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{allowCallbacks()}{allowCallbacks()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a2cb72cb0aed4203925eacec9e2433d12} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::allow\+Callbacks (\begin{DoxyParamCaption}\item[{bool}]{\$val}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Sets \$temp\+Allow\+Callbacks value so that we can temporarily override the setting. Resets after the next method that uses triggers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$val} & value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a83565767b3c6bfa23208fcf381a57dd4}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!allowEmptyInserts@{allowEmptyInserts}}
+\index{allowEmptyInserts@{allowEmptyInserts}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{allowEmptyInserts()}{allowEmptyInserts()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a83565767b3c6bfa23208fcf381a57dd4} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::allow\+Empty\+Inserts (\begin{DoxyParamCaption}\item[{bool}]{\$value}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Sets \$allow\+Empty\+Inserts. \Hypertarget{class_code_igniter_1_1_base_model_af6ab494c36a6c611fe5d9360f2528c47}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!asArray@{asArray}}
+\index{asArray@{asArray}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{asArray()}{asArray()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_af6ab494c36a6c611fe5d9360f2528c47} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::as\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sets the return type of the results to be as an associative array.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a6d97e32674ae30a535cfb951e0c95b41}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!asObject@{asObject}}
+\index{asObject@{asObject}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{asObject()}{asObject()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a6d97e32674ae30a535cfb951e0c95b41} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::as\+Object (\begin{DoxyParamCaption}\item[{string}]{\$class}{ = {\ttfamily \textquotesingle{}object\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Sets the return type to be of the specified type of object. Defaults to a simple object, but can be any class that has class vars with the same name as the collection columns, or at least allows them to be created.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \textquotesingle{}object\textquotesingle{}\texorpdfstring{$\vert$}{|}class-\/string} & \$class Class Name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_aa68fef574aad444429ac357ba06489de}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!chunk@{chunk}}
+\index{chunk@{chunk}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{chunk()}{chunk()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_aa68fef574aad444429ac357ba06489de} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::chunk (\begin{DoxyParamCaption}\item[{int}]{\$size}{, }\item[{Closure}]{\$user\+Func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Loops over records in batches, allowing you to operate on them. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size} & Size \\
+\hline
+ & {\em Closure(array$<$string,string$>$\texorpdfstring{$\vert$}{|}object)} & mixed \$user\+Func Callback Function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a92d0affd41935cf4c82f01af9459719f}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a3f7bfc7e18b117b82e84d10765db6e25}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!cleanRules@{cleanRules}}
+\index{cleanRules@{cleanRules}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{cleanRules()}{cleanRules()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a3f7bfc7e18b117b82e84d10765db6e25} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::clean\+Rules (\begin{DoxyParamCaption}\item[{bool}]{\$choice}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Should validation rules be removed before saving? Most handy when doing updates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$choice} & Value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a18c8559991b309cf177a494962880ec5}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!cleanValidationRules@{cleanValidationRules}}
+\index{cleanValidationRules@{cleanValidationRules}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{cleanValidationRules()}{cleanValidationRules()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a18c8559991b309cf177a494962880ec5} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::clean\+Validation\+Rules (\begin{DoxyParamCaption}\item[{array}]{\$rules}{, }\item[{?array}]{\$row}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Removes any rules that apply to fields that have not been set currently so that rules don\textquotesingle{}t block updating when only updating a partial row.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$rules} & Array containing field name and rule \\
+\hline
+array & {\em \$row} & Row data (@\+TODO Remove null in param type) @phpstan-\/param row\+\_\+array \$row \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_base_model_ae14d3734162e4d9882738775c6dd38e1}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!convertToReturnType@{convertToReturnType}}
+\index{convertToReturnType@{convertToReturnType}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{convertToReturnType()}{convertToReturnType()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ae14d3734162e4d9882738775c6dd38e1} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::convert\+To\+Return\+Type (\begin{DoxyParamCaption}\item[{array}]{\$row}{, }\item[{string}]{\$return\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts database data array to return type value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$row Raw data from database \\
+\hline
+{\em \textquotesingle{}array\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}object\textquotesingle{}\texorpdfstring{$\vert$}{|}class-\/string} & \$return\+Type \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_base_model_af7da0e4cc514ac3ed80750638c2ebb36}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!countAllResults@{countAllResults}}
+\index{countAllResults@{countAllResults}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{countAllResults()}{countAllResults()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_af7da0e4cc514ac3ed80750638c2ebb36} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::count\+All\+Results (\begin{DoxyParamCaption}\item[{bool}]{\$reset}{ = {\ttfamily true}, }\item[{bool}]{\$test}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Override count\+All\+Results to account for soft deleted accounts. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$reset} & Reset \\
+\hline
+bool & {\em \$test} & Test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a8f413326eff01fd0c2430ffdfff5c726}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_af7fdc70d366b0d3b90fa45f2e8823ce6}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!createDataConverter@{createDataConverter}}
+\index{createDataConverter@{createDataConverter}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{createDataConverter()}{createDataConverter()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_af7fdc70d366b0d3b90fa45f2e8823ce6} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::create\+Data\+Converter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates Data\+Converter instance. \Hypertarget{class_code_igniter_1_1_base_model_abd0b5fecbb8f4313c16334127c875032}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!delete@{delete}}
+\index{delete@{delete}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_abd0b5fecbb8f4313c16334127c875032} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::delete (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}, }\item[{bool}]{\$purge}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Deletes a single record from the database where \$id matches.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | int | string | null & {\em \$id} & The rows primary key(s) \\
+\hline
+bool & {\em \$purge} & Allows overriding the soft deletes setting.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Base\+Result\texorpdfstring{$\vert$}{|}bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_a6982afc31a23579c47e9b16a37790844}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doDelete@{doDelete}}
+\index{doDelete@{doDelete}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doDelete()}{doDelete()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a6982afc31a23579c47e9b16a37790844} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Delete (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}, }\item[{bool}]{\$purge}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Deletes a single record from the database where \$id matches. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | int | string | null & {\em \$id} & The rows primary key(s) \\
+\hline
+bool & {\em \$purge} & Allows overriding the soft deletes setting.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a1556c63d6df0848c49814d4c3f31595b}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a019ecd7f13d86519a14d29c8ae39b9ed}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doErrors@{doErrors}}
+\index{doErrors@{doErrors}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doErrors()}{doErrors()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a019ecd7f13d86519a14d29c8ae39b9ed} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Errors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Grabs the last error(s) that occurred from the Database connection. This method works only with db\+Calls.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_af833166f373bba323fb1f868185c3509}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a86bd1821fe0b81f9e4a652bbe20f979a}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doFind@{doFind}}
+\index{doFind@{doFind}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doFind()}{doFind()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a86bd1821fe0b81f9e4a652bbe20f979a} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Find (\begin{DoxyParamCaption}\item[{bool}]{\$singleton}{, }\item[{}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Fetches the row of database. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$singleton} & Single or multiple results \\
+\hline
+array | int | string | null & {\em \$id} & One primary key or an array of primary keys\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null The resulting row of data, or null. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a7f25f445a37ddbd023ff85cfa71d3d74}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_ae0b2f82821e100a6ce1c14ea61c00c39}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doFindAll@{doFindAll}}
+\index{doFindAll@{doFindAll}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doFindAll()}{doFindAll()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ae0b2f82821e100a6ce1c14ea61c00c39} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Find\+All (\begin{DoxyParamCaption}\item[{?int}]{\$limit}{ = {\ttfamily null}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Fetches all results, while optionally limiting them. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$limit} & Limit \\
+\hline
+int & {\em \$offset} & Offset\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_ae88071861b84bd1b63b8528e2713f6d3}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_ae0255a21ddaa7926f798b030007517b6}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doFindColumn@{doFindColumn}}
+\index{doFindColumn@{doFindColumn}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doFindColumn()}{doFindColumn()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ae0255a21ddaa7926f798b030007517b6} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Find\+Column (\begin{DoxyParamCaption}\item[{string}]{\$column\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Fetches the column of database. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column\+Name} & Column Name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null The resulting row of data, or null if no data found.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_aa3df14dce15acbf9f42b91c2244f01bc}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a10c2b8cffd0f03af1693bdbc6a8dcf43}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doFirst@{doFirst}}
+\index{doFirst@{doFirst}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doFirst()}{doFirst()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a10c2b8cffd0f03af1693bdbc6a8dcf43} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+First (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Returns the first row of the result set. This method works only with db\+Calls.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a788296a8b4d931af4d6e6fc8ce62373b}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a396e297ed985478f75be70fc24323827}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doInsert@{doInsert}}
+\index{doInsert@{doInsert}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doInsert()}{doInsert()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a396e297ed985478f75be70fc24323827} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Insert (\begin{DoxyParamCaption}\item[{array}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Inserts data into the current database. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$row} & Row data @phpstan-\/param row\+\_\+array \$row\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_ab4000d3fcf1c8084bb470faf929466c5}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a9c608aba23fd28875f61cd3399043de7}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doInsertBatch@{doInsertBatch}}
+\index{doInsertBatch@{doInsertBatch}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doInsertBatch()}{doInsertBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a9c608aba23fd28875f61cd3399043de7} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Insert\+Batch (\begin{DoxyParamCaption}\item[{?array}]{\$set}{ = {\ttfamily null}, }\item[{?bool}]{\$escape}{ = {\ttfamily null}, }\item[{int}]{\$batch\+Size}{ = {\ttfamily 100}, }\item[{bool}]{\$testing}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Compiles batch insert and runs the queries, validating each row prior. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$set} & An associative array of insert values \\
+\hline
+bool | null & {\em \$escape} & Whether to escape values \\
+\hline
+int & {\em \$batch\+Size} & The size of the batch to run \\
+\hline
+bool & {\em \$testing} & True means only number of records is returned, false will execute the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int Number of rows inserted or FALSE on failure 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a21c9308f8ad1de364973b72b696796df}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a8b86a4919391841b1d8e82617da08a65}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doOnlyDeleted@{doOnlyDeleted}}
+\index{doOnlyDeleted@{doOnlyDeleted}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doOnlyDeleted()}{doOnlyDeleted()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a8b86a4919391841b1d8e82617da08a65} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Only\+Deleted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Works with the find\texorpdfstring{$\ast$}{*} methods to return only the rows that have been deleted. This method works only with db\+Calls.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a79ced6cd62a390402668633146df1c75}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_ae759420945bd1cdcebbc50b4b70900e2}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doProtectFields@{doProtectFields}}
+\index{doProtectFields@{doProtectFields}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doProtectFields()}{doProtectFields()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ae759420945bd1cdcebbc50b4b70900e2} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Protect\+Fields (\begin{DoxyParamCaption}\item[{array}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensures that only the fields that are allowed to be updated are in the data array.
+
+@used-\/by update() to protect against mass assignment vulnerabilities. @used-\/by update\+Batch() to protect against mass assignment vulnerabilities.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$row} & Row data @phpstan-\/param row\+\_\+array \$row\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_ae1d90e36f3c9e1f6368e9e8e06d2bb2e}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doProtectFieldsForInsert@{doProtectFieldsForInsert}}
+\index{doProtectFieldsForInsert@{doProtectFieldsForInsert}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doProtectFieldsForInsert()}{doProtectFieldsForInsert()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ae1d90e36f3c9e1f6368e9e8e06d2bb2e} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Protect\+Fields\+For\+Insert (\begin{DoxyParamCaption}\item[{array}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensures that only the fields that are allowed to be inserted are in the data array.
+
+@used-\/by insert() to protect against mass assignment vulnerabilities. @used-\/by insert\+Batch() to protect against mass assignment vulnerabilities.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$row} & Row data @phpstan-\/param row\+\_\+array \$row\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a027a49aca4489d6d047e2753e666097a}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a2eef95b66cd10a28fb7619df3c2c90a9}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doPurgeDeleted@{doPurgeDeleted}}
+\index{doPurgeDeleted@{doPurgeDeleted}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doPurgeDeleted()}{doPurgeDeleted()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a2eef95b66cd10a28fb7619df3c2c90a9} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Purge\+Deleted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Permanently deletes all rows that have been marked as deleted. through soft deletes (deleted = 1). This method works only with db\+Calls.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string Returns a string if in test mode. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_aa6fedda5b977ca8306cda5071da3bdf9}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a54d41acb8cfa12a12de7017d2d703380}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doReplace@{doReplace}}
+\index{doReplace@{doReplace}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doReplace()}{doReplace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a54d41acb8cfa12a12de7017d2d703380} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Replace (\begin{DoxyParamCaption}\item[{?array}]{\$row}{ = {\ttfamily null}, }\item[{bool}]{\$return\+SQL}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Compiles a replace and runs the query. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}null \$row \\
+\hline
+bool & {\em \$return\+SQL} & Set to true to return Query String\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Base\+Result\texorpdfstring{$\vert$}{|}false\texorpdfstring{$\vert$}{|}\+Query\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a5e0becdd08a18feadfa36a1089e30f78}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_afc6bfbd18e3989bf07eb6c2ef6fd1a5e}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doUpdate@{doUpdate}}
+\index{doUpdate@{doUpdate}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doUpdate()}{doUpdate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_afc6bfbd18e3989bf07eb6c2ef6fd1a5e} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Update (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}, }\item[{}]{\$row}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Updates a single record in the database. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | int | string | null & {\em \$id} & ID \\
+\hline
+array | null & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}null \$row \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a9f4682e178d737ca7f5e4f4c0c734438}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a463c1cde4776126fa044842d8fe53fc3}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!doUpdateBatch@{doUpdateBatch}}
+\index{doUpdateBatch@{doUpdateBatch}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{doUpdateBatch()}{doUpdateBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a463c1cde4776126fa044842d8fe53fc3} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::do\+Update\+Batch (\begin{DoxyParamCaption}\item[{?array}]{\$set}{ = {\ttfamily null}, }\item[{?string}]{\$index}{ = {\ttfamily null}, }\item[{int}]{\$batch\+Size}{ = {\ttfamily 100}, }\item[{bool}]{\$return\+SQL}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Compiles an update and runs the query. This method works only with db\+Calls.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$set} & An associative array of update values \\
+\hline
+string | null & {\em \$index} & The where key \\
+\hline
+int & {\em \$batch\+Size} & The size of the batch to run \\
+\hline
+bool & {\em \$return\+SQL} & True means SQL is returned, false will execute the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}list$<$string$>$ Number of rows affected or FALSE on failure, SQL array when test\+Mode
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_af392148e9a3308a88c0484b758dab45b}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_ad1ec553790425a29b758ae6a0a78ae82}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!errors@{errors}}
+\index{errors@{errors}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{errors()}{errors()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ad1ec553790425a29b758ae6a0a78ae82} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::errors (\begin{DoxyParamCaption}\item[{bool}]{\$force\+DB}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Grabs the last error(s) that occurred. If data was validated, it will first check for errors there, otherwise will try to grab the last error from the Database connection.
+
+The return array should be in the following format\+: \mbox{[}\textquotesingle{}source\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}message\textquotesingle{}\mbox{]}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$force\+DB} & Always grab the db error, not validation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a963b796d5fba36503eaab2de808abe5c}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!find@{find}}
+\index{find@{find}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a963b796d5fba36503eaab2de808abe5c} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::find (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetches the row of database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | int | string | null & {\em \$id} & One primary key or an array of primary keys\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null The resulting row of data, or null. @phpstan-\/return (\$id is int\texorpdfstring{$\vert$}{|}string ? row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null \+: list\texorpdfstring{$<$}{<}row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$>$}{>}) 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_acd0b4c42891ec4d48754a3f551a4f538}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!findAll@{findAll}}
+\index{findAll@{findAll}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{findAll()}{findAll()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_acd0b4c42891ec4d48754a3f551a4f538} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::find\+All (\begin{DoxyParamCaption}\item[{?int}]{\$limit}{ = {\ttfamily null}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Fetches all results, while optionally limiting them.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & Limit \\
+\hline
+int & {\em \$offset} & Offset\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a76915d686e2a8702386be3e9c38b4d9d}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!findColumn@{findColumn}}
+\index{findColumn@{findColumn}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{findColumn()}{findColumn()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a76915d686e2a8702386be3e9c38b4d9d} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::find\+Column (\begin{DoxyParamCaption}\item[{string}]{\$column\+Name}{}\end{DoxyParamCaption})}
+
+Fetches the column of database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column\+Name} & Column Name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null The resulting row of data, or null if no data found.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_aa9873ef39608540eb701f771372e8d48}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!first@{first}}
+\index{first@{first}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_aa9873ef39608540eb701f771372e8d48} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::first (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the first row of the result set.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a3d81f4ecd2bb3a6ea1ac1de2024465f1}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!getIdValue@{getIdValue}}
+\index{getIdValue@{getIdValue}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{getIdValue()}{getIdValue()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a3d81f4ecd2bb3a6ea1ac1de2024465f1} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::get\+Id\+Value (\begin{DoxyParamCaption}\item[{}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Public getter to return the id value using the id\+Value() method. For example with SQL this will return \$data-\/\texorpdfstring{$>$}{>}\$this-\/\texorpdfstring{$>$}{>}primary\+Key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}object \$row\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a22a5b792ddfadf28dff056715a884c26}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a0bd1f4f98cc6ed700e3f2c6e41e971ab}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!getInsertID@{getInsertID}}
+\index{getInsertID@{getInsertID}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{getInsertID()}{getInsertID()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a0bd1f4f98cc6ed700e3f2c6e41e971ab} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::get\+Insert\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns last insert ID or 0.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a1ee4b0c7541de7eb0145a4339c6020c8}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!getValidationMessages@{getValidationMessages}}
+\index{getValidationMessages@{getValidationMessages}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{getValidationMessages()}{getValidationMessages()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a1ee4b0c7541de7eb0145a4339c6020c8} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::get\+Validation\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the model\textquotesingle{}s validation messages, so they can be used elsewhere, if needed. \Hypertarget{class_code_igniter_1_1_base_model_a947a64032f996b02da1779e3da8f22f7}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!getValidationRules@{getValidationRules}}
+\index{getValidationRules@{getValidationRules}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{getValidationRules()}{getValidationRules()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a947a64032f996b02da1779e3da8f22f7} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::get\+Validation\+Rules (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Returns the model\textquotesingle{}s defined validation rules so that they can be used elsewhere, if needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & Options \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_base_model_a4985b6bd0994c765178f7841674e8a48}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a4985b6bd0994c765178f7841674e8a48} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Initializes the instance with any additional steps. Optionally implemented by child classes.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_aa488844198aa021e1aa2ae48b2d39e1f}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!insert@{insert}}
+\index{insert@{insert}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_aa488844198aa021e1aa2ae48b2d39e1f} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::insert (\begin{DoxyParamCaption}\item[{}]{\$row}{ = {\ttfamily null}, }\item[{bool}]{\$return\+ID}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Inserts data into the database. If an object is provided, it will attempt to convert it to an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object | null & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null \$row \\
+\hline
+bool & {\em \$return\+ID} & Whether insert ID should be returned or not.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string insert ID or true on success. false on failure. @phpstan-\/return (\$return\+ID is true ? int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}false \+: bool)
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a68e89c9d176b334b1550d303d88548a6}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a02bcb5a2a91bd75946e8df9e157ed091}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!insertBatch@{insertBatch}}
+\index{insertBatch@{insertBatch}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{insertBatch()}{insertBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a02bcb5a2a91bd75946e8df9e157ed091} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::insert\+Batch (\begin{DoxyParamCaption}\item[{?array}]{\$set}{ = {\ttfamily null}, }\item[{?bool}]{\$escape}{ = {\ttfamily null}, }\item[{int}]{\$batch\+Size}{ = {\ttfamily 100}, }\item[{bool}]{\$testing}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Compiles batch insert runs the queries, validating each row prior.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em list$<$array\texorpdfstring{$\vert$}{|}object$>$\texorpdfstring{$\vert$}{|}null} & \$set an associative array of insert values @phpstan-\/param list\texorpdfstring{$<$}{<}row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}null \$set \\
+\hline
+bool | null & {\em \$escape} & Whether to escape values \\
+\hline
+int & {\em \$batch\+Size} & The size of the batch to run \\
+\hline
+bool & {\em \$testing} & True means only number of records is returned, false will execute the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int Number of rows inserted or FALSE on failure
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_af8ab5c1e52f9441fcf8366157681e3c7}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!intToDate@{intToDate}}
+\index{intToDate@{intToDate}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{intToDate()}{intToDate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_af8ab5c1e52f9441fcf8366157681e3c7} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::int\+To\+Date (\begin{DoxyParamCaption}\item[{int}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A utility function to allow child models to use the type of date/time format that they prefer. This is primarily used for setting created\+\_\+at, updated\+\_\+at and deleted\+\_\+at values, but can be used by inheriting classes.
+
+The available time formats are\+:
+\begin{DoxyItemize}
+\item \textquotesingle{}int\textquotesingle{} -\/ Stores the date as an integer timestamp
+\item \textquotesingle{}datetime\textquotesingle{} -\/ Stores the data in the SQL datetime format
+\item \textquotesingle{}date\textquotesingle{} -\/ Stores the date (only) in the SQL date format.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$value} & value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Model\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_a98aeebda32990ee6cd68eecd88d4ffd6}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!objectToArray@{objectToArray}}
+\index{objectToArray@{objectToArray}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{objectToArray()}{objectToArray()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a98aeebda32990ee6cd68eecd88d4ffd6} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::object\+To\+Array (\begin{DoxyParamCaption}\item[{}]{\$object}{, }\item[{bool}]{\$only\+Changed}{ = {\ttfamily true}, }\item[{bool}]{\$recursive}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Takes a class and returns an array of its public and protected properties as an array suitable for use in creates and updates. This method uses object\+To\+Raw\+Array() internally and does conversion to string on all Time instances
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$object} & Object \\
+\hline
+bool & {\em \$only\+Changed} & Only Changed Property \\
+\hline
+bool & {\em \$recursive} & If true, inner entities will be cast as array as well\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_a9e2bd2c7e4090bcdf5d523effea8b776}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!objectToRawArray@{objectToRawArray}}
+\index{objectToRawArray@{objectToRawArray}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{objectToRawArray()}{objectToRawArray()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a9e2bd2c7e4090bcdf5d523effea8b776} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::object\+To\+Raw\+Array (\begin{DoxyParamCaption}\item[{}]{\$object}{, }\item[{bool}]{\$only\+Changed}{ = {\ttfamily true}, }\item[{bool}]{\$recursive}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Takes a class and returns an array of its public and protected properties as an array with raw values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$object} & Object \\
+\hline
+bool & {\em \$only\+Changed} & Only Changed Property \\
+\hline
+bool & {\em \$recursive} & If true, inner entities will be casted as array as well\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ Array with raw values.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a2f3aa3e9ab1b41a40220c1bedb7a5260}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_acc8f4a70e274521bc0b19827ca582e5c}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!onlyDeleted@{onlyDeleted}}
+\index{onlyDeleted@{onlyDeleted}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{onlyDeleted()}{onlyDeleted()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_acc8f4a70e274521bc0b19827ca582e5c} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::only\+Deleted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Works with the find\texorpdfstring{$\ast$}{*} methods to return only the rows that have been deleted.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a1b7e234165d755e6225c15f45600afb3}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!paginate@{paginate}}
+\index{paginate@{paginate}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{paginate()}{paginate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a1b7e234165d755e6225c15f45600afb3} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::paginate (\begin{DoxyParamCaption}\item[{?int}]{\$per\+Page}{ = {\ttfamily null}, }\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}, }\item[{?int}]{\$page}{ = {\ttfamily null}, }\item[{int}]{\$segment}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Works with Pager to get the size and offset parameters. Expects a GET variable (?page=2) that specifies the page of results to display.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$per\+Page} & Items per page \\
+\hline
+string & {\em \$group} & Will be used by the pagination library to identify a unique pagination set. \\
+\hline
+int | null & {\em \$page} & Optional page number (useful when the page number is provided in different way) \\
+\hline
+int & {\em \$segment} & Optional URI segment number (if page number is provided by URI segment)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a8c39d97ab9207978de5c3c9d78c7ba50}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!protect@{protect}}
+\index{protect@{protect}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{protect()}{protect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a8c39d97ab9207978de5c3c9d78c7ba50} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::protect (\begin{DoxyParamCaption}\item[{bool}]{\$protect}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Sets whether or not we should whitelist data set during updates or inserts against \$this-\/\texorpdfstring{$>$}{>}available\+Fields.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$protect} & Value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_ae75a43e0f92086e55bd3cbce7c92b8e0}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!purgeDeleted@{purgeDeleted}}
+\index{purgeDeleted@{purgeDeleted}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{purgeDeleted()}{purgeDeleted()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ae75a43e0f92086e55bd3cbce7c92b8e0} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::purge\+Deleted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Permanently deletes all rows that have been marked as deleted through soft deletes (deleted = 1).
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string Returns a string if in test mode. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_afc1412c08e258eee3ad36a838da61803}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!replace@{replace}}
+\index{replace@{replace}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_afc1412c08e258eee3ad36a838da61803} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::replace (\begin{DoxyParamCaption}\item[{?array}]{\$row}{ = {\ttfamily null}, }\item[{bool}]{\$return\+SQL}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Compiles a replace and runs the query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}null \$row \\
+\hline
+bool & {\em \$return\+SQL} & Set to true to return Query String\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Base\+Result\texorpdfstring{$\vert$}{|}false\texorpdfstring{$\vert$}{|}\+Query\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_ad9eb22cd86ebf54e4e93cf43d4a13151}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!save@{save}}
+\index{save@{save}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ad9eb22cd86ebf54e4e93cf43d4a13151} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::save (\begin{DoxyParamCaption}\item[{}]{\$row}{}\end{DoxyParamCaption})}
+
+A convenience method that will attempt to determine whether the data should be inserted or updated. Will work with either an array or object. When using with custom class objects, you must ensure that the class will provide access to the class variables, even if through a magic method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}object \$row\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_aeb32d6b95f03738c404fc2e05b74b1fb}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!setAllowedFields@{setAllowedFields}}
+\index{setAllowedFields@{setAllowedFields}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{setAllowedFields()}{setAllowedFields()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_aeb32d6b95f03738c404fc2e05b74b1fb} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::set\+Allowed\+Fields (\begin{DoxyParamCaption}\item[{array}]{\$allowed\+Fields}{}\end{DoxyParamCaption})}
+
+It could be used when you have to change default or override current allowed fields.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$allowed\+Fields} & Array with names of fields\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_ad06b30c02e0bd52e8a6547fcc8fb222b}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!setCreatedField@{setCreatedField}}
+\index{setCreatedField@{setCreatedField}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{setCreatedField()}{setCreatedField()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ad06b30c02e0bd52e8a6547fcc8fb222b} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::set\+Created\+Field (\begin{DoxyParamCaption}\item[{array}]{\$row}{, }\item[{}]{\$date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set datetime to created field.
+
+@phpstan-\/param row\+\_\+array \$row 
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$date} & timestamp or datetime string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_base_model_a976baa4ce37a79ae93d9fcf0f7aa6911}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!setDate@{setDate}}
+\index{setDate@{setDate}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a976baa4ce37a79ae93d9fcf0f7aa6911} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::set\+Date (\begin{DoxyParamCaption}\item[{?int}]{\$user\+Data}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the date or current date if null value is passed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$user\+Data} & An optional PHP timestamp to be converted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Model\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_ac9699c3005f48af06f27a82ccceadba4}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!setUpdatedField@{setUpdatedField}}
+\index{setUpdatedField@{setUpdatedField}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{setUpdatedField()}{setUpdatedField()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ac9699c3005f48af06f27a82ccceadba4} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::set\+Updated\+Field (\begin{DoxyParamCaption}\item[{array}]{\$row}{, }\item[{}]{\$date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set datetime to updated field.
+
+@phpstan-\/param row\+\_\+array \$row 
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$date} & timestamp or datetime string \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_base_model_aa18f1fc71298f7a1b6aad993ac2f31ba}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!setValidationMessage@{setValidationMessage}}
+\index{setValidationMessage@{setValidationMessage}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{setValidationMessage()}{setValidationMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_aa18f1fc71298f7a1b6aad993ac2f31ba} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::set\+Validation\+Message (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{array}]{\$field\+Messages}{}\end{DoxyParamCaption})}
+
+Allows to set field wise validation message. It could be used when you have to change default or override current validate messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & Field Name \\
+\hline
+array & {\em \$field\+Messages} & Validation messages\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a9eeddb37c538cb5774e4d11928103103}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!setValidationMessages@{setValidationMessages}}
+\index{setValidationMessages@{setValidationMessages}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{setValidationMessages()}{setValidationMessages()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a9eeddb37c538cb5774e4d11928103103} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::set\+Validation\+Messages (\begin{DoxyParamCaption}\item[{array}]{\$validation\+Messages}{}\end{DoxyParamCaption})}
+
+Allows to set (and reset) validation messages. It could be used when you have to change default or override current validate messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$validation\+Messages} & Value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a16543a20e46c27242fa8d01cca3bd3c6}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!setValidationRule@{setValidationRule}}
+\index{setValidationRule@{setValidationRule}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{setValidationRule()}{setValidationRule()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a16543a20e46c27242fa8d01cca3bd3c6} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::set\+Validation\+Rule (\begin{DoxyParamCaption}\item[{string}]{\$field}{, }\item[{}]{\$field\+Rules}{}\end{DoxyParamCaption})}
+
+Allows to set field wise validation rules. It could be used when you have to change default or override current validate rules.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$field} & Field Name \\
+\hline
+array | string & {\em \$field\+Rules} & Validation rules\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_a1b30cc41138d5d868b21afc6ae0150e5}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!setValidationRules@{setValidationRules}}
+\index{setValidationRules@{setValidationRules}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{setValidationRules()}{setValidationRules()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a1b30cc41138d5d868b21afc6ae0150e5} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::set\+Validation\+Rules (\begin{DoxyParamCaption}\item[{array}]{\$validation\+Rules}{}\end{DoxyParamCaption})}
+
+Allows to set (and reset) validation rules. It could be used when you have to change default or override current validate rules.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,array$<$string,array$<$string,string$>$\texorpdfstring{$\vert$}{|}string$>$\texorpdfstring{$\vert$}{|}string$>$} & \$validation\+Rules Value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_ae8ea4131722e1a6cfb41f34c17732152}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!shouldUpdate@{shouldUpdate}}
+\index{shouldUpdate@{shouldUpdate}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{shouldUpdate()}{shouldUpdate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ae8ea4131722e1a6cfb41f34c17732152} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::should\+Update (\begin{DoxyParamCaption}\item[{}]{\$row}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This method is called on save to determine if entry have to be updated. If this method returns false insert operation will be executed
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}object \$row \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_a2ead7311f16a2a9d3de2cde330d1b377}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a97235715edb590792640f2c692a1c6d5}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!skipValidation@{skipValidation}}
+\index{skipValidation@{skipValidation}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{skipValidation()}{skipValidation()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a97235715edb590792640f2c692a1c6d5} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::skip\+Validation (\begin{DoxyParamCaption}\item[{bool}]{\$skip}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Set the value of the skip\+Validation flag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$skip} & Value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_ad99678e9ec14ac1e831c9127f7790bcf}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!timeToDate@{timeToDate}}
+\index{timeToDate@{timeToDate}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{timeToDate()}{timeToDate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ad99678e9ec14ac1e831c9127f7790bcf} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::time\+To\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_code_igniter_1_1_i18n_1_1_time}{Time}}}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts Time value to string using \$this-\/\texorpdfstring{$>$}{>}date\+Format.
+
+The available time formats are\+:
+\begin{DoxyItemize}
+\item \textquotesingle{}int\textquotesingle{} -\/ Stores the date as an integer timestamp
+\item \textquotesingle{}datetime\textquotesingle{} -\/ Stores the data in the SQL datetime format
+\item \textquotesingle{}date\textquotesingle{} -\/ Stores the date (only) in the SQL date format.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Time & {\em \$value} & value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_ad6ebc39f0bab5ae7e07f563167c97fec}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!timeToString@{timeToString}}
+\index{timeToString@{timeToString}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{timeToString()}{timeToString()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ad6ebc39f0bab5ae7e07f563167c97fec} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::time\+To\+String (\begin{DoxyParamCaption}\item[{array}]{\$properties}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Convert any Time instances to appropriate \$date\+Format.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$properties\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_base_model_ab0ec4e6e9a061770bcaba17ebf48af93}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!transformDataToArray@{transformDataToArray}}
+\index{transformDataToArray@{transformDataToArray}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{transformDataToArray()}{transformDataToArray()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ab0ec4e6e9a061770bcaba17ebf48af93} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::transform\+Data\+To\+Array (\begin{DoxyParamCaption}\item[{}]{\$row}{, }\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Transform data to array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object | null & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null \$row \\
+\hline
+string & {\em \$type} & Type of data (insert\texorpdfstring{$\vert$}{|}update)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\+Exception} & \\
+\hline
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@used-\/by insert() @used-\/by update() \Hypertarget{class_code_igniter_1_1_base_model_a7723a193541f3b11cbc61a19a98639d8}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!trigger@{trigger}}
+\index{trigger@{trigger}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{trigger()}{trigger()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a7723a193541f3b11cbc61a19a98639d8} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::trigger (\begin{DoxyParamCaption}\item[{string}]{\$event}{, }\item[{array}]{\$event\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A simple event trigger for Model Events that allows additional data manipulation within the model. Specifically intended for usage by child models this can be used to format data, save/load related classes, etc.
+
+It is the responsibility of the callback methods to return the data itself.
+
+Each \$event\+Data array MUST have a \textquotesingle{}data\textquotesingle{} key with the relevant data for callback methods (like an array of key/value pairs to insert or update, an array of results, etc.)
+
+If callbacks are not allowed then returns \$event\+Data immediately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & Event \\
+\hline
+array & {\em \$event\+Data} & Event Data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Data\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_a64b603d7a765eeb7f28a9f391228e654}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!update@{update}}
+\index{update@{update}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a64b603d7a765eeb7f28a9f391228e654} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::update (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}, }\item[{}]{\$row}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Updates a single record in the database. If an object is provided, it will attempt to convert it into an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | int | string | null & {\em \$id} & \\
+\hline
+array | object | null & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null \$row\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_model_ab330551865a005af2816da471c0bdcdb}{Code\+Igniter\textbackslash{}\+Model}}.
+
+\Hypertarget{class_code_igniter_1_1_base_model_a198808ffe1391895d9ec73ceab8d9b08}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!updateBatch@{updateBatch}}
+\index{updateBatch@{updateBatch}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{updateBatch()}{updateBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a198808ffe1391895d9ec73ceab8d9b08} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::update\+Batch (\begin{DoxyParamCaption}\item[{?array}]{\$set}{ = {\ttfamily null}, }\item[{?string}]{\$index}{ = {\ttfamily null}, }\item[{int}]{\$batch\+Size}{ = {\ttfamily 100}, }\item[{bool}]{\$return\+SQL}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Compiles an update and runs the query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em list$<$array\texorpdfstring{$\vert$}{|}object$>$\texorpdfstring{$\vert$}{|}null} & \$set an associative array of insert values @phpstan-\/param list\texorpdfstring{$<$}{<}row\+\_\+array\texorpdfstring{$\vert$}{|}object\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}null \$set \\
+\hline
+string | null & {\em \$index} & The where key \\
+\hline
+int & {\em \$batch\+Size} & The size of the batch to run \\
+\hline
+bool & {\em \$return\+SQL} & True means SQL is returned, false will execute the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}list$<$string$>$ Number of rows affected or FALSE on failure, SQL array when test\+Mode
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_base_model_a1b2412e75ed2d6d31c48a812df72a6c5}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!useCasts@{useCasts}}
+\index{useCasts@{useCasts}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{useCasts()}{useCasts()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a1b2412e75ed2d6d31c48a812df72a6c5} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::use\+Casts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Are casts used? \Hypertarget{class_code_igniter_1_1_base_model_a8e5c6d98205035390a512f6e9270ff67}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!validate@{validate}}
+\index{validate@{validate}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a8e5c6d98205035390a512f6e9270ff67} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::validate (\begin{DoxyParamCaption}\item[{}]{\$row}{}\end{DoxyParamCaption})}
+
+Validate the row data against the validation rules (or the validation group) specified in the class property, \$validation\+Rules.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object & {\em \$row} & Row data @phpstan-\/param row\+\_\+array\texorpdfstring{$\vert$}{|}object \$row \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_base_model_a793135a1840596e9965cf7014940c5f0}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!withDeleted@{withDeleted}}
+\index{withDeleted@{withDeleted}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{withDeleted()}{withDeleted()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a793135a1840596e9965cf7014940c5f0} 
+Code\+Igniter\textbackslash{}\+Base\+Model\+::with\+Deleted (\begin{DoxyParamCaption}\item[{bool}]{\$val}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Sets \$use\+Soft\+Deletes value so that we can temporarily override the soft deletes settings. Can be used for all find\texorpdfstring{$\ast$}{*} methods.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$val} & Value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_base_model_a4ef1ca0cb419416b3b6e740440e399f2}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!\$allowEmptyInserts@{\$allowEmptyInserts}}
+\index{\$allowEmptyInserts@{\$allowEmptyInserts}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{\$allowEmptyInserts}{\$allowEmptyInserts}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_a4ef1ca0cb419416b3b6e740440e399f2} 
+bool Code\+Igniter\textbackslash{}\+Base\+Model\+::\$allow\+Empty\+Inserts = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether to allow inserting empty data. \Hypertarget{class_code_igniter_1_1_base_model_ad0657149a5dc5602ff46da8ae25c21a6}\index{CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}!\$updateOnlyChanged@{\$updateOnlyChanged}}
+\index{\$updateOnlyChanged@{\$updateOnlyChanged}!CodeIgniter\textbackslash{}BaseModel@{CodeIgniter\textbackslash{}BaseModel}}
+\doxysubsubsection{\texorpdfstring{\$updateOnlyChanged}{\$updateOnlyChanged}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_base_model_ad0657149a5dc5602ff46da8ae25c21a6} 
+bool Code\+Igniter\textbackslash{}\+Base\+Model\+::\$update\+Only\+Changed = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether to update Entity\textquotesingle{}s only changed data. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/Base\+Model.\+php\end{DoxyCompactItemize}

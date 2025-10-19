@@ -1,0 +1,101 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Request\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{}\label{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Request\+Interface\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Request\+Interface\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ace016a78647307a448c4b657338933df}{get\+IPAddress}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ade76e1ccb52bcbab29e6978fc7425d6d}{get\+Server}} (\$index=null, \$filter=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_interface}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Outgoing\+Request\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_interface_a12eacc439323506f5749ecfd2e5cbbde}{get\+Method}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_interface_aa100b08a4600b3780db52379e5a8d280}{with\+Method}} (\$method)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_interface_a890468f79582d49af001e661b1d02d8d}{get\+Uri}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_interface_a4d85f6c0535d974911d978e30ee6343e}{with\+Uri}} (\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_u_r_i}{URI}} \$uri, \$preserve\+Host=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a08728b8c414bf753b3f93c80f191615f}{get\+Protocol\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1404c237690d52896a1d7b0e93e191ed}{set\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a7da8b18543020c45c6ebcbc5648c780e}{get\+Body}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a9a56354f94237570fd05a1f5d54d2599}{append\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a131427f3868bdf49f8bbeedc0d19090d}{populate\+Headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0}{headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a23d534da6bbfd0997fd647234151a21e}{has\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0b864465e53179641cd0e5683e20e624}{header}} (\$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_aeb003c4ae89535abab87dc1ac5ecc695}{get\+Header\+Line}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_ad1bcf6ae6decb3c16cadb15ef1214002}{set\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a27f10d14218d4230df3a0819f09a8d8e}{remove\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0630aad9e82c1eafa81d7fa35a9f8738}{append\+Header}} (string \$name, ?string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1972a71352cb4801abe4c1473e40b181}{prepend\+Header}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_af6fbfa16a508383fb4adfb0fc9fdaf0e}{set\+Protocol\+Version}} (string \$version)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representation of an incoming, server-\/side HTTP request.
+
+Corresponds to Psr7\textbackslash{}\+Server\+Request\+Interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ace016a78647307a448c4b657338933df}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface}!getIPAddress@{getIPAddress}}
+\index{getIPAddress@{getIPAddress}!CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface}}
+\doxysubsubsection{\texorpdfstring{getIPAddress()}{getIPAddress()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ace016a78647307a448c4b657338933df} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+Interface\+::get\+IPAddress (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the user\textquotesingle{}s IP address. Supplied by Request\+Trait.
+
+\begin{DoxyReturn}{Returns}
+string IP address 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ade76e1ccb52bcbab29e6978fc7425d6d}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface}!getServer@{getServer}}
+\index{getServer@{getServer}!CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}RequestInterface}}
+\doxysubsubsection{\texorpdfstring{getServer()}{getServer()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ade76e1ccb52bcbab29e6978fc7425d6d} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+Interface\+::get\+Server (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{}]{\$filter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetch an item from the \$\+\_\+\+SERVER array. Supplied by Request\+Trait.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & Index for item to be fetched from \$\+\_\+\+SERVER \\
+\hline
+int | null & {\em \$filter} & A filter name to be applied\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/Request\+Interface.\+php\end{DoxyCompactItemize}

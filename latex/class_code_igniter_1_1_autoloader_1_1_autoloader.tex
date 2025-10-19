@@ -1,0 +1,235 @@
+\doxysection{Code\+Igniter\textbackslash{}Autoloader\textbackslash{}Autoloader Class Reference}
+\hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader}{}\label{class_code_igniter_1_1_autoloader_1_1_autoloader}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_a462228e98562ff3b9f4e6f162cfe7ed0}{initialize}} (\mbox{\hyperlink{class_config_1_1_autoload}{Autoload}} \$config, \mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_a56604a9bc535e790b2ab4477ef204a44}{register}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_ae05a821ad720862ed9167a4593948a5e}{unregister}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_a5a21365c0930b06965174122543da98a}{add\+Namespace}} (\$namespace, ?string \$path=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_af41fabc59c658bd83190c6e7c4272188}{get\+Namespace}} (?string \$prefix=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_ad91d9abcbf3d5820ee5cb3ed4d1990c2}{remove\+Namespace}} (string \$namespace)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_a4eaa2fc7519c2cecb60517685f4d38c5}{load\+Classmap}} (string \$class)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_a1db851f486a8cc7a29bfacb5971b343d}{load\+Class}} (string \$class)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_ac7012bfded5a95018cc2f13f80558a19}{sanitize\+Filename}} (string \$filename)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_a120451b45c9b22d835508cd33ef921d9}{load\+Helpers}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_a5a2616558bf05928cc030d149ee5ca88}{initialize\+Kint}} (bool \$debug=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_af69ae70fc12bc541fbeec6e42cc4287d}{load\+In\+Namespace}} (string \$class)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader_a3839e86028e63b78b7286a1c692090e1}{include\+File}} (string \$file)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a0e8e8c784e76d15a9599f47b764b5a47}\label{class_code_igniter_1_1_autoloader_1_1_autoloader_a0e8e8c784e76d15a9599f47b764b5a47} 
+{\bfseries \$prefixes} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a010c84bae325e41b864e4e3660ae3fbd}\label{class_code_igniter_1_1_autoloader_1_1_autoloader_a010c84bae325e41b864e4e3660ae3fbd} 
+{\bfseries \$classmap} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_ab03d6cfb9f3dc03aeadaa241c7506556}\label{class_code_igniter_1_1_autoloader_1_1_autoloader_ab03d6cfb9f3dc03aeadaa241c7506556} 
+{\bfseries \$files} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_ac0defb6647f56acf277d142031785930}\label{class_code_igniter_1_1_autoloader_1_1_autoloader_ac0defb6647f56acf277d142031785930} 
+{\bfseries \$helpers} = \mbox{[}\textquotesingle{}url\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An autoloader that uses both PSR4 autoloading, and traditional classmaps.
+
+Given a foo-\/bar package of classes in the file system at the following paths\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{/path/to/packages/foo-\/bar/}
+\DoxyCodeLine{\ \ \ \ /src}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Baz.php\ \ \ \ \ \ \ \ \ \#\ Foo\(\backslash\)Bar\(\backslash\)Baz}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Qux/}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Quux.php\ \ \ \ \#\ Foo\(\backslash\)Bar\(\backslash\)Qux\(\backslash\)Quux}
+
+\end{DoxyCode}
+ you can add the path to the configuration array that is passed in the constructor. The \doxylink{namespace_config}{Config} array consists of 2 primary keys, both of which are associative arrays\+: \textquotesingle{}psr4\textquotesingle{}, and \textquotesingle{}classmap\textquotesingle{}. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$Config\ =\ [}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'psr4'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Foo\(\backslash\)Bar'}\ \ \ =>\ \textcolor{stringliteral}{'/path/to/packages/foo-\/bar'}}
+\DoxyCodeLine{\ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{'classmap'}\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MyClass'}\ \ \ =>\ \textcolor{stringliteral}{'/path/to/class/file.php'}}
+\DoxyCodeLine{\ \ \ \ ]}
+\DoxyCodeLine{];}
+
+\end{DoxyCode}
+ Example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{\textcolor{comment}{//\ our\ configuration\ array}}
+\DoxyCodeLine{\$Config\ =\ [\ ...\ ];}
+\DoxyCodeLine{\$loader\ =\ new\ \(\backslash\)CodeIgniter\(\backslash\)Autoloader\(\backslash\)Autoloader(\$Config);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ register\ the\ autoloader}}
+\DoxyCodeLine{\$loader-\/>register();}
+
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a5a21365c0930b06965174122543da98a}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!addNamespace@{addNamespace}}
+\index{addNamespace@{addNamespace}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{addNamespace()}{addNamespace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_a5a21365c0930b06965174122543da98a} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::add\+Namespace (\begin{DoxyParamCaption}\item[{}]{\$namespace}{, }\item[{?string}]{\$path}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Registers namespaces with the autoloader.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,list$<$string$>$\texorpdfstring{$\vert$}{|}string$>$\texorpdfstring{$\vert$}{|}string} & \$namespace\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_af41fabc59c658bd83190c6e7c4272188}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!getNamespace@{getNamespace}}
+\index{getNamespace@{getNamespace}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{getNamespace()}{getNamespace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_af41fabc59c658bd83190c6e7c4272188} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::get\+Namespace (\begin{DoxyParamCaption}\item[{?string}]{\$prefix}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get namespaces with prefixes as keys and paths as values.
+
+If a prefix param is set, returns only paths to the given prefix.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, list$<$string$>$$>$\texorpdfstring{$\vert$}{|}list$<$string$>$ @phpstan-\/return (\$prefix is null ? array$<$string, list$<$string$>$$>$ \+: list$<$string$>$) 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a3839e86028e63b78b7286a1c692090e1}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!includeFile@{includeFile}}
+\index{includeFile@{includeFile}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{includeFile()}{includeFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_a3839e86028e63b78b7286a1c692090e1} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::include\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A central way to include a file. Split out primarily for testing purposes.
+
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string The filename on success, false if the file is not loaded 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a462228e98562ff3b9f4e6f162cfe7ed0}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_a462228e98562ff3b9f4e6f162cfe7ed0} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_config_1_1_autoload}{Autoload}}}]{\$config}{, }\item[{\mbox{\hyperlink{class_config_1_1_modules}{Modules}}}]{\$modules}{}\end{DoxyParamCaption})}
+
+Reads in the configuration array (described above) and stores the valid parts that we\textquotesingle{}ll need.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a5a2616558bf05928cc030d149ee5ca88}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!initializeKint@{initializeKint}}
+\index{initializeKint@{initializeKint}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{initializeKint()}{initializeKint()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_a5a2616558bf05928cc030d149ee5ca88} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::initialize\+Kint (\begin{DoxyParamCaption}\item[{bool}]{\$debug}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Initializes Kint \Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a1db851f486a8cc7a29bfacb5971b343d}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!loadClass@{loadClass}}
+\index{loadClass@{loadClass}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{loadClass()}{loadClass()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_a1db851f486a8cc7a29bfacb5971b343d} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::load\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})}
+
+Loads the class file for a given class name. \Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a4eaa2fc7519c2cecb60517685f4d38c5}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!loadClassmap@{loadClassmap}}
+\index{loadClassmap@{loadClassmap}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{loadClassmap()}{loadClassmap()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_a4eaa2fc7519c2cecb60517685f4d38c5} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::load\+Classmap (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})}
+
+Load a class using available class mapping. \Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a120451b45c9b22d835508cd33ef921d9}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!loadHelpers@{loadHelpers}}
+\index{loadHelpers@{loadHelpers}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{loadHelpers()}{loadHelpers()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_a120451b45c9b22d835508cd33ef921d9} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::load\+Helpers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Loads helpers \Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_af69ae70fc12bc541fbeec6e42cc4287d}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!loadInNamespace@{loadInNamespace}}
+\index{loadInNamespace@{loadInNamespace}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{loadInNamespace()}{loadInNamespace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_af69ae70fc12bc541fbeec6e42cc4287d} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::load\+In\+Namespace (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Loads the class file for a given class name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & The fully-\/qualified class name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string The mapped file name on success, or boolean false on fail 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_a56604a9bc535e790b2ab4477ef204a44}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!register@{register}}
+\index{register@{register}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_a56604a9bc535e790b2ab4477ef204a44} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the loader with the SPL autoloader stack.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_ad91d9abcbf3d5820ee5cb3ed4d1990c2}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!removeNamespace@{removeNamespace}}
+\index{removeNamespace@{removeNamespace}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{removeNamespace()}{removeNamespace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_ad91d9abcbf3d5820ee5cb3ed4d1990c2} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::remove\+Namespace (\begin{DoxyParamCaption}\item[{string}]{\$namespace}{}\end{DoxyParamCaption})}
+
+Removes a single namespace from the psr4 settings.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_ac7012bfded5a95018cc2f13f80558a19}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!sanitizeFilename@{sanitizeFilename}}
+\index{sanitizeFilename@{sanitizeFilename}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{sanitizeFilename()}{sanitizeFilename()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_ac7012bfded5a95018cc2f13f80558a19} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::sanitize\+Filename (\begin{DoxyParamCaption}\item[{string}]{\$filename}{}\end{DoxyParamCaption})}
+
+Check file path.
+
+Checks special characters that are illegal in filenames on certain operating systems and special characters requiring special escaping to manipulate at the command line. Replaces spaces and consecutive dashes with a single dash. Trim period, dash and underscore from beginning and end of filename.
+
+\begin{DoxyReturn}{Returns}
+string The sanitized filename
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000008}{Deprecated}}]No longer used. See \href{https://github.com/codeigniter4/CodeIgniter4/issues/7055}{\texttt{ https\+://github.\+com/codeigniter4/\+Code\+Igniter4/issues/7055}} \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_autoloader_ae05a821ad720862ed9167a4593948a5e}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}!unregister@{unregister}}
+\index{unregister@{unregister}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}Autoloader}}
+\doxysubsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_autoloader_ae05a821ad720862ed9167a4593948a5e} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+Autoloader\+::unregister (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Unregister autoloader.
+
+This method is for testing. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Autoloader/Autoloader.\+php\end{DoxyCompactItemize}

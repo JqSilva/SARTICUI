@@ -1,0 +1,137 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Prepared\+Query Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query}{}\label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Prepared\+Query\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Prepared\+Query\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aef8d55b7eaf70d3af909e698ecc8b40a}{\+\_\+prepare}} (string \$sql, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aafbec6b211e326f309211301a170db45}{\+\_\+execute}} (array \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_a88732b11d22ce46f6306c840343d4f66}{\+\_\+get\+Result}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Base\+Connection}} \$db)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a7e5b5f27dc03c4a87189f54d4f3ae4f8}{execute}} (... \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_ad7ec6e74dc3b44b3b2beb50cf748b656}{close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_af4165563718121bf030604f3b6306168}{get\+Query\+String}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_ab45f78368cc934d174cf17793cba084d}{has\+Error}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a72fe6343d1950afa2308246e16d1bf2d}{get\+Error\+Code}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a77adafee705f5533ec4245bfa4d08b9d}{get\+Error\+Message}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_prepared_query_interface}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Prepared\+Query\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_prepared_query_interface_aee74e958ce654ea3b7e273e79b3c773c}{prepare}} (string \$sql, array \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aaa5afb785c3e77e635348968f6a84718}{\+\_\+close}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_ad69824827c186fde69f195df4aba3842}{is\+Binary}} (string \$input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aa5252fc273f2921e303460a0996ab714}\label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aa5252fc273f2921e303460a0996ab714} 
+{\bfseries \$result}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$statement}
+\item 
+{\bfseries \$error\+Code}
+\item 
+{\bfseries \$error\+String}
+\item 
+{\bfseries \$query}
+\item 
+{\bfseries \$db}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Prepared query for SQLite3
+
+\texorpdfstring{$<$}{<}SQLite3, SQLite3\+Stmt, SQLite3\+Result\texorpdfstring{$>$}{>} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aaa5afb785c3e77e635348968f6a84718}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}!\_close@{\_close}}
+\index{\_close@{\_close}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}}
+\doxysubsubsection{\texorpdfstring{\_close()}{\_close()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aaa5afb785c3e77e635348968f6a84718} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Prepared\+Query\+::\+\_\+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Deallocate prepared statements. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_aad90dc4199be2857881cc1b13f7d40e0}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aafbec6b211e326f309211301a170db45}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}!\_execute@{\_execute}}
+\index{\_execute@{\_execute}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}}
+\doxysubsubsection{\texorpdfstring{\_execute()}{\_execute()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aafbec6b211e326f309211301a170db45} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Prepared\+Query\+::\+\_\+execute (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+Takes a new set of data and runs it against the currently prepared query. Upon success, will return a Results object. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a89f07eae3ca6de47a313a15b3c215728}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_a88732b11d22ce46f6306c840343d4f66}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}!\_getResult@{\_getResult}}
+\index{\_getResult@{\_getResult}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}}
+\doxysubsubsection{\texorpdfstring{\_getResult()}{\_getResult()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_a88732b11d22ce46f6306c840343d4f66} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Prepared\+Query\+::\+\_\+get\+Result (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the result object for the prepared query or false on failure.
+
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}\+SQLite3\+Result 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a1cb8af5710465bde38b98a81da6db421}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aef8d55b7eaf70d3af909e698ecc8b40a}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}!\_prepare@{\_prepare}}
+\index{\_prepare@{\_prepare}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}PreparedQuery}}
+\doxysubsubsection{\texorpdfstring{\_prepare()}{\_prepare()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_prepared_query_aef8d55b7eaf70d3af909e698ecc8b40a} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Prepared\+Query\+::\+\_\+prepare (\begin{DoxyParamCaption}\item[{string}]{\$sql}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Prepares the query against the database, and saves the connection info necessary to execute the query later.
+
+NOTE\+: This version is based on SQL code. Child classes should override this method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & Passed to the connection\textquotesingle{}s prepare statement. Unused in the My\+SQLi driver. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_prepared_query_a55b8352984815c842118b0b1424867da}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Prepared\+Query}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/\+SQLite3/Prepared\+Query.\+php\end{DoxyCompactItemize}

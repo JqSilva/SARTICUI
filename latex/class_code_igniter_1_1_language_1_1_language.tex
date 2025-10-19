@@ -1,0 +1,141 @@
+\doxysection{Code\+Igniter\textbackslash{}Language\textbackslash{}Language Class Reference}
+\hypertarget{class_code_igniter_1_1_language_1_1_language}{}\label{class_code_igniter_1_1_language_1_1_language}\index{CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Language\textbackslash{}Language\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_a553c4047639bd5d5afd7d3914787338b}\label{class_code_igniter_1_1_language_1_1_language_a553c4047639bd5d5afd7d3914787338b} 
+{\bfseries \+\_\+\+\_\+construct} (string \$locale)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_language_1_1_language_a6b82116fa93a0746e5f4f6fb3292a37a}{set\+Locale}} (?string \$locale=null)
+\item 
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_a554f29becec0dbdf8c797b5d36793634}\label{class_code_igniter_1_1_language_1_1_language_a554f29becec0dbdf8c797b5d36793634} 
+{\bfseries get\+Locale} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_language_1_1_language_ad247a0403e49e3c4f863bd16a819f1b7}{get\+Line}} (string \$line, array \$args=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_language_1_1_language_a2f2a041339af453ebe08dae7f3adf441}{get\+Translation\+Output}} (string \$locale, string \$file, string \$parsed\+Line)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_language_1_1_language_ae92b9462566d189742dd055cd1b16d07}{parse\+Line}} (string \$line, string \$locale)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_language_1_1_language_aeb77b44b65333706b2092fcf08b1d18f}{format\+Message}} (\$message, array \$args=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_language_1_1_language_a9dcb455ed9e9ecf4cb35e8a3e7feaaef}{load}} (string \$file, string \$locale, bool \$return=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_language_1_1_language_a19b2b93041ecc725f2b678472f373752}{require\+File}} (string \$path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_afe06e76e9e469106089ef98c6e1634ea}\label{class_code_igniter_1_1_language_1_1_language_afe06e76e9e469106089ef98c6e1634ea} 
+{\bfseries \$language} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_ac915de29d13970cbd8956f8a5e60bf09}\label{class_code_igniter_1_1_language_1_1_language_ac915de29d13970cbd8956f8a5e60bf09} 
+{\bfseries \$locale}
+\item 
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_acb8db12d1d64ed613028b3975c3292b9}\label{class_code_igniter_1_1_language_1_1_language_acb8db12d1d64ed613028b3975c3292b9} 
+{\bfseries \$intl\+Support} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_a31e898fa2754000fd36d3fa3a02abb2d}\label{class_code_igniter_1_1_language_1_1_language_a31e898fa2754000fd36d3fa3a02abb2d} 
+{\bfseries \$loaded\+Files} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handle system messages and localization.
+
+Locale-\/based, built on top of PHP internationalization.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Language\textbackslash{}\+Language\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_aeb77b44b65333706b2092fcf08b1d18f}\index{CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}!formatMessage@{formatMessage}}
+\index{formatMessage@{formatMessage}!CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}}
+\doxysubsubsection{\texorpdfstring{formatMessage()}{formatMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_language_1_1_language_aeb77b44b65333706b2092fcf08b1d18f} 
+Code\+Igniter\textbackslash{}\+Language\textbackslash{}\+Language\+::format\+Message (\begin{DoxyParamCaption}\item[{}]{\$message}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Advanced message formatting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$message} & \\
+\hline
+ & {\em list$<$string$>$} & \$args\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_ad247a0403e49e3c4f863bd16a819f1b7}\index{CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}!getLine@{getLine}}
+\index{getLine@{getLine}!CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}}
+\doxysubsubsection{\texorpdfstring{getLine()}{getLine()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_language_1_1_language_ad247a0403e49e3c4f863bd16a819f1b7} 
+Code\+Igniter\textbackslash{}\+Language\textbackslash{}\+Language\+::get\+Line (\begin{DoxyParamCaption}\item[{string}]{\$line}{, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Parses the language string for a file, loads the file, if necessary, getting the line.
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_a2f2a041339af453ebe08dae7f3adf441}\index{CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}!getTranslationOutput@{getTranslationOutput}}
+\index{getTranslationOutput@{getTranslationOutput}!CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}}
+\doxysubsubsection{\texorpdfstring{getTranslationOutput()}{getTranslationOutput()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_language_1_1_language_a2f2a041339af453ebe08dae7f3adf441} 
+Code\+Igniter\textbackslash{}\+Language\textbackslash{}\+Language\+::get\+Translation\+Output (\begin{DoxyParamCaption}\item[{string}]{\$locale}{, }\item[{string}]{\$file}{, }\item[{string}]{\$parsed\+Line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_a9dcb455ed9e9ecf4cb35e8a3e7feaaef}\index{CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}!load@{load}}
+\index{load@{load}!CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_language_1_1_language_a9dcb455ed9e9ecf4cb35e8a3e7feaaef} 
+Code\+Igniter\textbackslash{}\+Language\textbackslash{}\+Language\+::load (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{string}]{\$locale}{, }\item[{bool}]{\$return}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Loads a language file in the current locale. If \$return is true, will return the file\textquotesingle{}s contents, otherwise will merge with the existing language lines.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_ae92b9462566d189742dd055cd1b16d07}\index{CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}!parseLine@{parseLine}}
+\index{parseLine@{parseLine}!CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}}
+\doxysubsubsection{\texorpdfstring{parseLine()}{parseLine()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_language_1_1_language_ae92b9462566d189742dd055cd1b16d07} 
+Code\+Igniter\textbackslash{}\+Language\textbackslash{}\+Language\+::parse\+Line (\begin{DoxyParamCaption}\item[{string}]{\$line}{, }\item[{string}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parses the language string which should include the filename as the first segment (separated by period). \Hypertarget{class_code_igniter_1_1_language_1_1_language_a19b2b93041ecc725f2b678472f373752}\index{CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}!requireFile@{requireFile}}
+\index{requireFile@{requireFile}!CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}}
+\doxysubsubsection{\texorpdfstring{requireFile()}{requireFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_language_1_1_language_a19b2b93041ecc725f2b678472f373752} 
+Code\+Igniter\textbackslash{}\+Language\textbackslash{}\+Language\+::require\+File (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A simple method for including files that can be overridden during testing. 
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_language_a42b8d0fdcc522002182d9763dc73995b}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Language}}.
+
+\Hypertarget{class_code_igniter_1_1_language_1_1_language_a6b82116fa93a0746e5f4f6fb3292a37a}\index{CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}!setLocale@{setLocale}}
+\index{setLocale@{setLocale}!CodeIgniter\textbackslash{}Language\textbackslash{}Language@{CodeIgniter\textbackslash{}Language\textbackslash{}Language}}
+\doxysubsubsection{\texorpdfstring{setLocale()}{setLocale()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_language_1_1_language_a6b82116fa93a0746e5f4f6fb3292a37a} 
+Code\+Igniter\textbackslash{}\+Language\textbackslash{}\+Language\+::set\+Locale (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets the current locale to use when performing string lookups.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Language/Language.\+php\end{DoxyCompactItemize}

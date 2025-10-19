@@ -1,0 +1,170 @@
+\doxysection{Code\+Igniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}Generate\+Key Class Reference}
+\hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key}{}\label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}Generate\+Key\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}Generate\+Key\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a51a5710cb909bf5064eddfe9cfdd3ff8}{run}} (array \$params)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger, \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands}{Commands}} \$commands)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a8c1b91614e01907f8499addf7532e706}{show\+Help}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a85679c7b947025249f6b881e8d369f03}{set\+Pad}} (string \$item, int \$max, int \$extra=2, int \$indent=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a05b222369321bbf57a70be3c7b294b37}{get\+Pad}} (array \$array, int \$pad)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a5622df4c411832f7a5305be058355fdf}{\+\_\+\+\_\+get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a61d735707706e9b865c176930a5d617d}{\+\_\+\+\_\+isset}} (string \$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a1702f47c0b8213a71cfabd315dc46bbf}{generate\+Random\+Key}} (string \$prefix, int \$length)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a2de6354348b31ed7f3c476ca12667df6}{set\+New\+Encryption\+Key}} (string \$key, array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a176b52d648799ac328dd80c341bd5743}{confirm\+Overwrite}} (array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_ab01fd698e0719e2831a0134baa1de882}{write\+New\+Encryption\+Key\+To\+File}} (string \$old\+Key, string \$new\+Key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_aeafd9cca8ddb3b99d72b39b8f1e95c8e}{key\+Pattern}} (string \$old\+Key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a171e6df6dfd095248ca564f8e7680dbd}{call}} (string \$command, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a866d1ea8c4143c9301e21b21b4021855}{show\+Error}} (Throwable \$e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_acc42c661578af630c3e16eb562d09ab0}\label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_acc42c661578af630c3e16eb562d09ab0} 
+{\bfseries \$group} = \textquotesingle{}\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_encryption}{Encryption}}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a2d762866803f1a6425186857f854926e}\label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a2d762866803f1a6425186857f854926e} 
+{\bfseries \$name} = \textquotesingle{}key\+:generate\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a985d3458579527c68518a1f47c5e1e76}\label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a985d3458579527c68518a1f47c5e1e76} 
+{\bfseries \$usage} = \textquotesingle{}key\+:generate \mbox{[}options\mbox{]}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a81849ceb3017354a4b3928bf38bd006f}\label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a81849ceb3017354a4b3928bf38bd006f} 
+{\bfseries \$description} = \textquotesingle{}Generates a new encryption key and writes it in an \`{}.env\`{} file.\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a4cd5b9c6a77f2283b4293525cff7c190}{\$options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$group}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$usage}
+\item 
+{\bfseries \$description}
+\item 
+{\bfseries \$options} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$arguments} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$logger}
+\item 
+{\bfseries \$commands}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generates a new encryption key. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a176b52d648799ac328dd80c341bd5743}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}!confirmOverwrite@{confirmOverwrite}}
+\index{confirmOverwrite@{confirmOverwrite}!CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}}
+\doxysubsubsection{\texorpdfstring{confirmOverwrite()}{confirmOverwrite()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a176b52d648799ac328dd80c341bd5743} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Encryption\textbackslash{}\+Generate\+Key\+::confirm\+Overwrite (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks whether to overwrite existing encryption key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int\texorpdfstring{$\vert$}{|}string,string\texorpdfstring{$\vert$}{|}null$>$} & \$params \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a1702f47c0b8213a71cfabd315dc46bbf}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}!generateRandomKey@{generateRandomKey}}
+\index{generateRandomKey@{generateRandomKey}!CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}}
+\doxysubsubsection{\texorpdfstring{generateRandomKey()}{generateRandomKey()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a1702f47c0b8213a71cfabd315dc46bbf} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Encryption\textbackslash{}\+Generate\+Key\+::generate\+Random\+Key (\begin{DoxyParamCaption}\item[{string}]{\$prefix}{, }\item[{int}]{\$length}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a key and encodes it. \Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_aeafd9cca8ddb3b99d72b39b8f1e95c8e}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}!keyPattern@{keyPattern}}
+\index{keyPattern@{keyPattern}!CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}}
+\doxysubsubsection{\texorpdfstring{keyPattern()}{keyPattern()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_aeafd9cca8ddb3b99d72b39b8f1e95c8e} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Encryption\textbackslash{}\+Generate\+Key\+::key\+Pattern (\begin{DoxyParamCaption}\item[{string}]{\$old\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the regex of the current encryption key. \Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a51a5710cb909bf5064eddfe9cfdd3ff8}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a51a5710cb909bf5064eddfe9cfdd3ff8} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Encryption\textbackslash{}\+Generate\+Key\+::run (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Actually execute the command. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_ac43ba8f0bf1082f9b994bb86135e083e}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}.
+
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a2de6354348b31ed7f3c476ca12667df6}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}!setNewEncryptionKey@{setNewEncryptionKey}}
+\index{setNewEncryptionKey@{setNewEncryptionKey}!CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}}
+\doxysubsubsection{\texorpdfstring{setNewEncryptionKey()}{setNewEncryptionKey()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a2de6354348b31ed7f3c476ca12667df6} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Encryption\textbackslash{}\+Generate\+Key\+::set\+New\+Encryption\+Key (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{array}]{\$params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the new encryption key in your .env file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int\texorpdfstring{$\vert$}{|}string,string\texorpdfstring{$\vert$}{|}null$>$} & \$params \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_ab01fd698e0719e2831a0134baa1de882}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}!writeNewEncryptionKeyToFile@{writeNewEncryptionKeyToFile}}
+\index{writeNewEncryptionKeyToFile@{writeNewEncryptionKeyToFile}!CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}}
+\doxysubsubsection{\texorpdfstring{writeNewEncryptionKeyToFile()}{writeNewEncryptionKeyToFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_ab01fd698e0719e2831a0134baa1de882} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Encryption\textbackslash{}\+Generate\+Key\+::write\+New\+Encryption\+Key\+To\+File (\begin{DoxyParamCaption}\item[{string}]{\$old\+Key}{, }\item[{string}]{\$new\+Key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Writes the new encryption key to .env file. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a4cd5b9c6a77f2283b4293525cff7c190}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}!\$options@{\$options}}
+\index{\$options@{\$options}!CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey@{CodeIgniter\textbackslash{}Commands\textbackslash{}Encryption\textbackslash{}GenerateKey}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a4cd5b9c6a77f2283b4293525cff7c190} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Encryption\textbackslash{}\+Generate\+Key\+::\$options\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/force'}\ \ =>\ \textcolor{stringliteral}{'Force\ overwrite\ existing\ key\ in\ \`{}.env`\ file.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/length'}\ =>\ \textcolor{stringliteral}{'The\ length\ of\ the\ random\ string\ that\ should\ be\ returned\ in\ bytes.\ Defaults\ to\ 32.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/prefix'}\ =>\ \textcolor{stringliteral}{'Prefix\ to\ prepend\ to\ encoded\ key\ (either\ hex2bin\ or\ base64).\ Defaults\ to\ hex2bin.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/show'}\ \ \ =>\ \textcolor{stringliteral}{'Shows\ the\ generated\ key\ in\ the\ terminal\ instead\ of\ storing\ in\ the\ \`{}.env`\ file.'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Commands/\+Encryption/Generate\+Key.\+php\end{DoxyCompactItemize}

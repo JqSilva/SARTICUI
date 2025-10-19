@@ -1,0 +1,131 @@
+\doxysection{Config\textbackslash{}Format Class Reference}
+\hypertarget{class_config_1_1_format}{}\label{class_config_1_1_format}\index{Config\textbackslash{}Format@{Config\textbackslash{}Format}}
+
+
+Inheritance diagram for Config\textbackslash{}Format\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Format\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_config_1_1_format_ad33bee4523a8a72d55f3b39bbef23844}{get\+Formatter}} (string \$mime)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_config_1_1_format_a60fe6a0f0ada524006c1ed83e109dcf2}{\$supported\+Response\+Formats}}
+\item 
+array \mbox{\hyperlink{class_config_1_1_format_add157f11fc62d25b27b946c4642bb940}{\$formatters}}
+\item 
+array \mbox{\hyperlink{class_config_1_1_format_a167148e0c0f3bda420eb26093a390ed5}{\$formatter\+Options}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_config_1_1_format_ad33bee4523a8a72d55f3b39bbef23844}\index{Config\textbackslash{}Format@{Config\textbackslash{}Format}!getFormatter@{getFormatter}}
+\index{getFormatter@{getFormatter}!Config\textbackslash{}Format@{Config\textbackslash{}Format}}
+\doxysubsubsection{\texorpdfstring{getFormatter()}{getFormatter()}}
+{\footnotesize\ttfamily \label{class_config_1_1_format_ad33bee4523a8a72d55f3b39bbef23844} 
+Config\textbackslash{}\+Format\+::get\+Formatter (\begin{DoxyParamCaption}\item[{string}]{\$mime}{}\end{DoxyParamCaption})}
+
+A Factory method to return the appropriate formatter for the given mime type.
+
+\begin{DoxyReturn}{Returns}
+Formatter\+Interface
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000005}{Deprecated}}]This is an alias of {\ttfamily \textbackslash{}\doxylink{namespace_code_igniter}{Code\+Igniter}\textbackslash{}Format\textbackslash{}Format\+::get\+Formatter}. Use that instead. \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_format_a167148e0c0f3bda420eb26093a390ed5}\index{Config\textbackslash{}Format@{Config\textbackslash{}Format}!\$formatterOptions@{\$formatterOptions}}
+\index{\$formatterOptions@{\$formatterOptions}!Config\textbackslash{}Format@{Config\textbackslash{}Format}}
+\doxysubsubsection{\texorpdfstring{\$formatterOptions}{\$formatterOptions}}
+{\footnotesize\ttfamily \label{class_config_1_1_format_a167148e0c0f3bda420eb26093a390ed5} 
+array Config\textbackslash{}\+Format\+::\$formatter\+Options}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'application/json'}\ =>\ JSON\_UNESCAPED\_UNICODE\ |\ JSON\_UNESCAPED\_SLASHES,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'application/xml'}\ \ =>\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'text/xml'}\ \ \ \ \ \ \ \ \ =>\ 0,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_config_1_1_format_add157f11fc62d25b27b946c4642bb940}\index{Config\textbackslash{}Format@{Config\textbackslash{}Format}!\$formatters@{\$formatters}}
+\index{\$formatters@{\$formatters}!Config\textbackslash{}Format@{Config\textbackslash{}Format}}
+\doxysubsubsection{\texorpdfstring{\$formatters}{\$formatters}}
+{\footnotesize\ttfamily \label{class_config_1_1_format_add157f11fc62d25b27b946c4642bb940} 
+array Config\textbackslash{}\+Format\+::\$formatters}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'application/json'}\ =>\ JSONFormatter::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'application/xml'}\ \ =>\ XMLFormatter::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'text/xml'}\ \ \ \ \ \ \ \ \ =>\ XMLFormatter::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_config_1_1_format_a60fe6a0f0ada524006c1ed83e109dcf2}\index{Config\textbackslash{}Format@{Config\textbackslash{}Format}!\$supportedResponseFormats@{\$supportedResponseFormats}}
+\index{\$supportedResponseFormats@{\$supportedResponseFormats}!Config\textbackslash{}Format@{Config\textbackslash{}Format}}
+\doxysubsubsection{\texorpdfstring{\$supportedResponseFormats}{\$supportedResponseFormats}}
+{\footnotesize\ttfamily \label{class_config_1_1_format_a60fe6a0f0ada524006c1ed83e109dcf2} 
+array Config\textbackslash{}\+Format\+::\$supported\+Response\+Formats}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'application/json'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'application/xml'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'text/xml'},\ }
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Format.\+php\end{DoxyCompactItemize}

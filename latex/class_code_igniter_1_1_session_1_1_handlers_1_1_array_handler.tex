@@ -1,0 +1,165 @@
+\doxysection{Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Array\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler}{}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Array\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Array\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_ad63bb403062e0406fcbf6a3402168a1b}{open}} (\$path, \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a9b5cc10e28af84864105efabf77d8242}{read}} (\$id)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_abc5a731a51b3359b2353bf59e31bad79}{write}} (\$id, \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_af89a6484ba679cbc1ec7b30a0d55a608}{close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a0f146a9caa3b8c0b3dc96bdac000b4b2}{destroy}} (\$id)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a933d30fc4835f502ef7333e483e400c8}{gc}} (\$max\+\_\+lifetime)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_ac7925efe63882d2ddc15624f85919fb6}{\+\_\+\+\_\+construct}} (Session\+Config \$config, string \$ip\+Address)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a5d02d9ce3e2d3960544e07f9232885e3}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a5d02d9ce3e2d3960544e07f9232885e3} 
+static {\bfseries \$cache} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_aa22222decdb7468b5cbedaca3c2177dc}{destroy\+Cookie}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a46bf0a22cb5a3507751080e9594548d6}{lock\+Session}} (string \$session\+ID)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a41a354b952a3b07bdac8b831bc51ec5b}{release\+Lock}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a2f5aa1f0b421ecb5b57e3c7fdfbf0e00}{fail}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$fingerprint}
+\item 
+{\bfseries \$lock} = false
+\item 
+{\bfseries \$cookie\+Prefix} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Domain} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Path} = \textquotesingle{}/\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Secure} = false
+\item 
+{\bfseries \$cookie\+Name}
+\item 
+{\bfseries \$match\+IP} = false
+\item 
+{\bfseries \$session\+ID}
+\item 
+{\bfseries \$save\+Path}
+\item 
+{\bfseries \$ip\+Address}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Session handler using static array for storage. Intended only for use during testing. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_af89a6484ba679cbc1ec7b30a0d55a608}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}!close@{close}}
+\index{close@{close}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_af89a6484ba679cbc1ec7b30a0d55a608} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Array\+Handler\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Closes the current session. \Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a0f146a9caa3b8c0b3dc96bdac000b4b2}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}!destroy@{destroy}}
+\index{destroy@{destroy}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a0f146a9caa3b8c0b3dc96bdac000b4b2} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Array\+Handler\+::destroy (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Destroys a session
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID being destroyed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a933d30fc4835f502ef7333e483e400c8}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}!gc@{gc}}
+\index{gc@{gc}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}}
+\doxysubsubsection{\texorpdfstring{gc()}{gc()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a933d30fc4835f502ef7333e483e400c8} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Array\+Handler\+::gc (\begin{DoxyParamCaption}\item[{}]{\$max\+\_\+lifetime}{}\end{DoxyParamCaption})}
+
+Cleans up expired sessions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+\_\+lifetime} & Sessions that have not updated for the last max\+\_\+lifetime seconds will be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int Returns the number of deleted sessions on success, or false on failure. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_ad63bb403062e0406fcbf6a3402168a1b}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}!open@{open}}
+\index{open@{open}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_ad63bb403062e0406fcbf6a3402168a1b} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Array\+Handler\+::open (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Re-\/initialize existing session, or creates a new one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path where to store/retrieve the session \\
+\hline
+string & {\em \$name} & The session name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a9b5cc10e28af84864105efabf77d8242}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}!read@{read}}
+\index{read@{read}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_a9b5cc10e28af84864105efabf77d8242} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Array\+Handler\+::read (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Reads the session data from the session storage, and returns the results.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string Returns an encoded string of the read data. If nothing was read, it must return false. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_abc5a731a51b3359b2353bf59e31bad79}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}!write@{write}}
+\index{write@{write}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}ArrayHandler}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_array_handler_abc5a731a51b3359b2353bf59e31bad79} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Array\+Handler\+::write (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+Writes the session data to the session storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID \\
+\hline
+string & {\em \$data} & The encoded session data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Session/\+Handlers/Array\+Handler.\+php\end{DoxyCompactItemize}

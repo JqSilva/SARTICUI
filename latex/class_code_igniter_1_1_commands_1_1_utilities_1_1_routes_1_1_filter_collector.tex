@@ -1,0 +1,72 @@
+\doxysection{Code\+Igniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}Filter\+Collector Class Reference}
+\hypertarget{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector}{}\label{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector@{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_a2ff0304f7acc42ea09722d9fcb5464ee}{\+\_\+\+\_\+construct}} (private readonly bool \$reset\+Routes=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_ad07e2c3cfaccc9bd97d5c1f26e424604}{get}} (string \$method, string \$uri)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_ad350b365e68c3c71fd6ab07f884d3bc9}{get\+Required\+Filters}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Collects filters for a route.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Routes\textbackslash{}\+Filter\+Collector\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_a2ff0304f7acc42ea09722d9fcb5464ee}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector@{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector@{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_a2ff0304f7acc42ea09722d9fcb5464ee} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Routes\textbackslash{}\+Filter\+Collector\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private readonly bool}]{\$reset\+Routes}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$reset\+Routes} & Whether to reset Defined Routes.\\
+\hline
+\end{DoxyParams}
+If set to true, route filters are not found. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_ad07e2c3cfaccc9bd97d5c1f26e424604}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector@{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector@{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_ad07e2c3cfaccc9bd97d5c1f26e424604} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Routes\textbackslash{}\+Filter\+Collector\+::get (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{string}]{\$uri}{}\end{DoxyParamCaption})}
+
+Returns filters for the URI
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & HTTP verb like {\ttfamily GET},{\ttfamily POST} or {\ttfamily CLI}. \\
+\hline
+string & {\em \$uri} & URI path to find filters for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\{before\+: list$<$string$>$, after\+: list$<$string$>$\} array of filter alias or classname 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000034}{Deprecated}}]4.\+5.\+0 @\+TODO Remove this in the future. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_ad350b365e68c3c71fd6ab07f884d3bc9}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector@{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector}!getRequiredFilters@{getRequiredFilters}}
+\index{getRequiredFilters@{getRequiredFilters}!CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector@{CodeIgniter\textbackslash{}Commands\textbackslash{}Utilities\textbackslash{}Routes\textbackslash{}FilterCollector}}
+\doxysubsubsection{\texorpdfstring{getRequiredFilters()}{getRequiredFilters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_1_1_filter_collector_ad350b365e68c3c71fd6ab07f884d3bc9} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Routes\textbackslash{}\+Filter\+Collector\+::get\+Required\+Filters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns Required Filters
+
+\begin{DoxyReturn}{Returns}
+array\{before\+: list$<$string$>$, after\+: list$<$string$>$\} array of filter alias or classname 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Commands/\+Utilities/\+Routes/Filter\+Collector.\+php\end{DoxyCompactItemize}

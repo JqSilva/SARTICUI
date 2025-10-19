@@ -1,0 +1,762 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Response\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Response\+Interface\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Response\+Interface\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a8a9fcd56853bdc924dc30954fc145d48}{get\+Status\+Code}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a5fb9f0691852724f860b0f99560eab51}{set\+Status\+Code}} (int \$code, string \$reason=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a80bf8a41662ad7a22dc93faee05bc3a7}{get\+Reason}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab6809d633dfae66cb308cf073e363d0e}{get\+Reason\+Phrase}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a852894e12d03e2a01fda97511b9ca1ff}{set\+Date}} (Date\+Time \$date)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a271957619c41c69c6a5246c0e1b4e751}{set\+Last\+Modified}} (\$date)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a5b34b2215974949e0828f82506fb9a34}{set\+Link}} (\mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface}{Pager\+Interface}} \$pager)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a83f0b7a82db8faf6522538e631302f45}{set\+Content\+Type}} (string \$mime, string \$charset=\textquotesingle{}UTF-\/8\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a00c6f1c9972862fcf4647c38430b1926}{set\+JSON}} (\$body, bool \$unencoded=false)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab23797cbf330d38025f4ee3519c6254a}{get\+JSON}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a9939c1b33772dd4e7826aa3d56aae1ce}{set\+XML}} (\$body)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_af77b471945a30a639cf4ce45e2657e68}{get\+XML}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab54afada542d3e0080e19cd6a8018879}{no\+Cache}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa91fa2386054bcaec9ce936be43c4f65}{set\+Cache}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_afbec5d7681576b5a99e0fad6ad53ef3b}{send}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a94fe542d35dc4cd869d9598b3b17f516}{send\+Headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a8ee53bf037fe556798780640eb326b7b}{send\+Body}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a6f38df8c9859983429cb376735df5e18}{set\+Cookie}} ( \$name, \$value=\textquotesingle{}\textquotesingle{}, \$expire=0, \$domain=\textquotesingle{}\textquotesingle{}, \$path=\textquotesingle{}/\textquotesingle{}, \$prefix=\textquotesingle{}\textquotesingle{}, \$secure=false, \$httponly=false, \$samesite=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2e3ffefe42991bddcce42a2fbbef5a2a}{has\+Cookie}} (string \$name, ?string \$value=null, string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2648f104afbc22672f242c4648a5a569}{get\+Cookie}} (?string \$name=null, string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa6417fbc307df6bfb486c1e241524f8e}{delete\+Cookie}} (string \$name=\textquotesingle{}\textquotesingle{}, string \$domain=\textquotesingle{}\textquotesingle{}, string \$path=\textquotesingle{}/\textquotesingle{}, string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a3963e2b53253ed142e87ce2c6a5c8adf}{get\+Cookies}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a18b649f43ee5749c955ccf7cafcce113}{get\+Cookie\+Store}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a9cf7a69afa7d3b046dd191a839662957}{redirect}} (string \$uri, string \$method=\textquotesingle{}auto\textquotesingle{}, ?int \$code=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aafd73397063d9cf5ea48032dba5be8c1}{download}} (string \$filename=\textquotesingle{}\textquotesingle{}, \$data=\textquotesingle{}\textquotesingle{}, bool \$set\+Mime=false)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa6a5ed5218861c9dae9726fb9c92abeb}{get\+CSP}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a08728b8c414bf753b3f93c80f191615f}{get\+Protocol\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1404c237690d52896a1d7b0e93e191ed}{set\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a7da8b18543020c45c6ebcbc5648c780e}{get\+Body}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a9a56354f94237570fd05a1f5d54d2599}{append\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a131427f3868bdf49f8bbeedc0d19090d}{populate\+Headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0}{headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a23d534da6bbfd0997fd647234151a21e}{has\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0b864465e53179641cd0e5683e20e624}{header}} (\$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_aeb003c4ae89535abab87dc1ac5ecc695}{get\+Header\+Line}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_ad1bcf6ae6decb3c16cadb15ef1214002}{set\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a27f10d14218d4230df3a0819f09a8d8e}{remove\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0630aad9e82c1eafa81d7fa35a9f8738}{append\+Header}} (string \$name, ?string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1972a71352cb4801abe4c1473e40b181}{prepend\+Header}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_af6fbfa16a508383fb4adfb0fc9fdaf0e}{set\+Protocol\+Version}} (string \$version)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a91a8db2fdf3dc1fb460053ffaa77fd63}{HTTP\+\_\+\+CONTINUE}} = 100
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a3f80e2ebdd4c518585b27a35e838458b}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a3f80e2ebdd4c518585b27a35e838458b} 
+const {\bfseries HTTP\+\_\+\+SWITCHING\+\_\+\+PROTOCOLS} = 101
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aaf4fdb16e1683113b2776b7181dc7176}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aaf4fdb16e1683113b2776b7181dc7176} 
+const {\bfseries HTTP\+\_\+\+PROCESSING} = 102
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a6909510019aee25139a4ac6d734eeec5}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a6909510019aee25139a4ac6d734eeec5} 
+const {\bfseries HTTP\+\_\+\+EARLY\+\_\+\+HINTS} = 103
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a9ea88a165e0910dd272d45c0d9c85ec3}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a9ea88a165e0910dd272d45c0d9c85ec3} 
+const {\bfseries HTTP\+\_\+\+OK} = 200
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ae9ef167cc48c344b27f4aff48a849295}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ae9ef167cc48c344b27f4aff48a849295} 
+const {\bfseries HTTP\+\_\+\+CREATED} = 201
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2caf7673739aa824a12f3a64bda33e5f}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2caf7673739aa824a12f3a64bda33e5f} 
+const {\bfseries HTTP\+\_\+\+ACCEPTED} = 202
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a18dd0da624e560337b82af4f3f72f06d}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a18dd0da624e560337b82af4f3f72f06d} 
+const {\bfseries HTTP\+\_\+\+NONAUTHORITATIVE\+\_\+\+INFORMATION} = 203
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a623d03130cd62eef82e545687bf56ab9}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a623d03130cd62eef82e545687bf56ab9} 
+const {\bfseries HTTP\+\_\+\+NO\+\_\+\+CONTENT} = 204
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a14b6e6365c8dc8f971a5ed358d46de6e}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a14b6e6365c8dc8f971a5ed358d46de6e} 
+const {\bfseries HTTP\+\_\+\+RESET\+\_\+\+CONTENT} = 205
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a66047be23000dc023f1c38ce7fc34b03}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a66047be23000dc023f1c38ce7fc34b03} 
+const {\bfseries HTTP\+\_\+\+PARTIAL\+\_\+\+CONTENT} = 206
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab8073ab9027cff9ded5aa384233b39f8}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab8073ab9027cff9ded5aa384233b39f8} 
+const {\bfseries HTTP\+\_\+\+MULTI\+\_\+\+STATUS} = 207
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a76c93b656bad8295c9fdb058b333c5ef}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a76c93b656bad8295c9fdb058b333c5ef} 
+const {\bfseries HTTP\+\_\+\+ALREADY\+\_\+\+REPORTED} = 208
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a4d9ba6315931006bea63ccc7aba8e53c}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a4d9ba6315931006bea63ccc7aba8e53c} 
+const {\bfseries HTTP\+\_\+\+IM\+\_\+\+USED} = 226
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ac0ddd9787899f03e4d984e6ca77c628d}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ac0ddd9787899f03e4d984e6ca77c628d} 
+const {\bfseries HTTP\+\_\+\+MULTIPLE\+\_\+\+CHOICES} = 300
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a5abb29908f4248d3a15c88b727edc614}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a5abb29908f4248d3a15c88b727edc614} 
+const {\bfseries HTTP\+\_\+\+MOVED\+\_\+\+PERMANENTLY} = 301
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a90aa3e923ebf55b1977104ee5fd8080a}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a90aa3e923ebf55b1977104ee5fd8080a} 
+const {\bfseries HTTP\+\_\+\+FOUND} = 302
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a185135009a769ffa344f173aca1799d1}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a185135009a769ffa344f173aca1799d1} 
+const {\bfseries HTTP\+\_\+\+SEE\+\_\+\+OTHER} = 303
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a238d6298c4ce1e349eee96b0fdada9d3}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a238d6298c4ce1e349eee96b0fdada9d3} 
+const {\bfseries HTTP\+\_\+\+NOT\+\_\+\+MODIFIED} = 304
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_af4534d3cf0da11a9ed96c923a558e3ee}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_af4534d3cf0da11a9ed96c923a558e3ee} 
+const {\bfseries HTTP\+\_\+\+USE\+\_\+\+PROXY} = 305
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a38a467aadd0d67d630b01ef3ee38c6db}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a38a467aadd0d67d630b01ef3ee38c6db} 
+const {\bfseries HTTP\+\_\+\+SWITCH\+\_\+\+PROXY} = 306
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ac66e315481f50b00898868d878ff9aff}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ac66e315481f50b00898868d878ff9aff} 
+const {\bfseries HTTP\+\_\+\+TEMPORARY\+\_\+\+REDIRECT} = 307
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ae005dfac057d01f83ed1b201bd00310f}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ae005dfac057d01f83ed1b201bd00310f} 
+const {\bfseries HTTP\+\_\+\+PERMANENT\+\_\+\+REDIRECT} = 308
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a59c8a7271d0d51379dcfbe139500f47a}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a59c8a7271d0d51379dcfbe139500f47a} 
+const {\bfseries HTTP\+\_\+\+BAD\+\_\+\+REQUEST} = 400
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a1ca5dc4bf9adfac0fee57a0f34068491}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a1ca5dc4bf9adfac0fee57a0f34068491} 
+const {\bfseries HTTP\+\_\+\+UNAUTHORIZED} = 401
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa9d028d1f319b433732df525ead6d902}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa9d028d1f319b433732df525ead6d902} 
+const {\bfseries HTTP\+\_\+\+PAYMENT\+\_\+\+REQUIRED} = 402
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a972c8b78f1745f5720ae0b7541e98e85}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a972c8b78f1745f5720ae0b7541e98e85} 
+const {\bfseries HTTP\+\_\+\+FORBIDDEN} = 403
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab3d72f37f97d44d5d0b2149476a803a6}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab3d72f37f97d44d5d0b2149476a803a6} 
+const {\bfseries HTTP\+\_\+\+NOT\+\_\+\+FOUND} = 404
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_adb1da45382b457ee3ddbf1585adeb8dc}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_adb1da45382b457ee3ddbf1585adeb8dc} 
+const {\bfseries HTTP\+\_\+\+METHOD\+\_\+\+NOT\+\_\+\+ALLOWED} = 405
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a0bc5dbf0544f8d3b10668b6002342121}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a0bc5dbf0544f8d3b10668b6002342121} 
+const {\bfseries HTTP\+\_\+\+NOT\+\_\+\+ACCEPTABLE} = 406
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a0f06556559e120973ecd1d5a8259e6f3}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a0f06556559e120973ecd1d5a8259e6f3} 
+const {\bfseries HTTP\+\_\+\+PROXY\+\_\+\+AUTHENTICATION\+\_\+\+REQUIRED} = 407
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa205eb3d1e64adfb836f80eb6b36856b}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa205eb3d1e64adfb836f80eb6b36856b} 
+const {\bfseries HTTP\+\_\+\+REQUEST\+\_\+\+TIMEOUT} = 408
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab851c8de37af4fbd1345a6edc13c59b9}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab851c8de37af4fbd1345a6edc13c59b9} 
+const {\bfseries HTTP\+\_\+\+CONFLICT} = 409
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_adbcdeac9159eb03e47a9ec0909abdae6}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_adbcdeac9159eb03e47a9ec0909abdae6} 
+const {\bfseries HTTP\+\_\+\+GONE} = 410
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ac7aa271bf5a35bed70cdb1018a91f7ff}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ac7aa271bf5a35bed70cdb1018a91f7ff} 
+const {\bfseries HTTP\+\_\+\+LENGTH\+\_\+\+REQUIRED} = 411
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a11494e511fba29a94984cd95d1395f2d}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a11494e511fba29a94984cd95d1395f2d} 
+const {\bfseries HTTP\+\_\+\+PRECONDITION\+\_\+\+FAILED} = 412
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a84ac4bd6648701ca6b7b5d6900ea9ca6}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a84ac4bd6648701ca6b7b5d6900ea9ca6} 
+const {\bfseries HTTP\+\_\+\+PAYLOAD\+\_\+\+TOO\+\_\+\+LARGE} = 413
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a4a119a6a7bb6cb23df2613dd62c7a039}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a4a119a6a7bb6cb23df2613dd62c7a039} 
+const {\bfseries HTTP\+\_\+\+URI\+\_\+\+TOO\+\_\+\+LONG} = 414
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a29e936905ef948b09d1825c381340e82}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a29e936905ef948b09d1825c381340e82} 
+const {\bfseries HTTP\+\_\+\+UNSUPPORTED\+\_\+\+MEDIA\+\_\+\+TYPE} = 415
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a77f28ac023a2035677be8f856070ae9d}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a77f28ac023a2035677be8f856070ae9d} 
+const {\bfseries HTTP\+\_\+\+RANGE\+\_\+\+NOT\+\_\+\+SATISFIABLE} = 416
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab3bd6268dc5b47e8767377147d369c04}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab3bd6268dc5b47e8767377147d369c04} 
+const {\bfseries HTTP\+\_\+\+EXPECTATION\+\_\+\+FAILED} = 417
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_adfa6268817a9b8ec77b6afcf5cf58b80}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_adfa6268817a9b8ec77b6afcf5cf58b80} 
+const {\bfseries HTTP\+\_\+\+IM\+\_\+\+A\+\_\+\+TEAPOT} = 418
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a500de699709e274b01497a2501d9d037}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a500de699709e274b01497a2501d9d037} 
+const {\bfseries HTTP\+\_\+\+MISDIRECTED\+\_\+\+REQUEST} = 421
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a959db61f98f2abbc7ec003488ab5b55c}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a959db61f98f2abbc7ec003488ab5b55c} 
+const {\bfseries HTTP\+\_\+\+UNPROCESSABLE\+\_\+\+ENTITY} = 422
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2dcd2792e19c4d23122c0a9a66c8b6ee}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2dcd2792e19c4d23122c0a9a66c8b6ee} 
+const {\bfseries HTTP\+\_\+\+LOCKED} = 423
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aec9017b359559d22aa81ebd8cfd4bdf8}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aec9017b359559d22aa81ebd8cfd4bdf8} 
+const {\bfseries HTTP\+\_\+\+FAILED\+\_\+\+DEPENDENCY} = 424
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ad7e858654fe54a24da02af1f28674539}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ad7e858654fe54a24da02af1f28674539} 
+const {\bfseries HTTP\+\_\+\+TOO\+\_\+\+EARLY} = 425
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa60766b0d7735629659df510f2e272b9}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa60766b0d7735629659df510f2e272b9} 
+const {\bfseries HTTP\+\_\+\+UPGRADE\+\_\+\+REQUIRED} = 426
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a83ce97d80a821bb6682913c93d8b5506}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a83ce97d80a821bb6682913c93d8b5506} 
+const {\bfseries HTTP\+\_\+\+PRECONDITION\+\_\+\+REQUIRED} = 428
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a81f086735307478b5e65427d5ddd1ec1}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a81f086735307478b5e65427d5ddd1ec1} 
+const {\bfseries HTTP\+\_\+\+TOO\+\_\+\+MANY\+\_\+\+REQUESTS} = 429
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_af7cc2522374d10b0930af9a225307360}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_af7cc2522374d10b0930af9a225307360} 
+const {\bfseries HTTP\+\_\+\+REQUEST\+\_\+\+HEADER\+\_\+\+FIELDS\+\_\+\+TOO\+\_\+\+LARGE} = 431
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab380969103095131694fb92859564f68}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab380969103095131694fb92859564f68} 
+const {\bfseries HTTP\+\_\+\+UNAVAILABLE\+\_\+\+FOR\+\_\+\+LEGAL\+\_\+\+REASONS} = 451
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a081089d658d3be464a195f6461cdf10e}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a081089d658d3be464a195f6461cdf10e} 
+const {\bfseries HTTP\+\_\+\+CLIENT\+\_\+\+CLOSED\+\_\+\+REQUEST} = 499
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a33fc77146fc0268a7bd2bdd4fccf3c98}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a33fc77146fc0268a7bd2bdd4fccf3c98} 
+const {\bfseries HTTP\+\_\+\+INTERNAL\+\_\+\+SERVER\+\_\+\+ERROR} = 500
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a7e78d65793307539f00ee9db2000ce63}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a7e78d65793307539f00ee9db2000ce63} 
+const {\bfseries HTTP\+\_\+\+NOT\+\_\+\+IMPLEMENTED} = 501
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a4253dda3a67e44822b0cc2f122e57347}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a4253dda3a67e44822b0cc2f122e57347} 
+const {\bfseries HTTP\+\_\+\+BAD\+\_\+\+GATEWAY} = 502
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a79d3128546e176a2d77bea3ad9e937a3}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a79d3128546e176a2d77bea3ad9e937a3} 
+const {\bfseries HTTP\+\_\+\+SERVICE\+\_\+\+UNAVAILABLE} = 503
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ae808cc3fbe79c7b8b3a4f71e941686de}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ae808cc3fbe79c7b8b3a4f71e941686de} 
+const {\bfseries HTTP\+\_\+\+GATEWAY\+\_\+\+TIMEOUT} = 504
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ae021de7606a2729675dd3760cb2e2d33}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ae021de7606a2729675dd3760cb2e2d33} 
+const {\bfseries HTTP\+\_\+\+HTTP\+\_\+\+VERSION\+\_\+\+NOT\+\_\+\+SUPPORTED} = 505
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa05b17ae7c702cff8dc5d5f4ad075aac}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa05b17ae7c702cff8dc5d5f4ad075aac} 
+const {\bfseries HTTP\+\_\+\+VARIANT\+\_\+\+ALSO\+\_\+\+NEGOTIATES} = 506
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a6953a114a5981ef0c7f2593a93c1fba4}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a6953a114a5981ef0c7f2593a93c1fba4} 
+const {\bfseries HTTP\+\_\+\+INSUFFICIENT\+\_\+\+STORAGE} = 507
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ade1f3cab7793a25106e36e6d42196a8d}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ade1f3cab7793a25106e36e6d42196a8d} 
+const {\bfseries HTTP\+\_\+\+LOOP\+\_\+\+DETECTED} = 508
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab843a2168d78a74c7201c2dbe4ad0800}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab843a2168d78a74c7201c2dbe4ad0800} 
+const {\bfseries HTTP\+\_\+\+NOT\+\_\+\+EXTENDED} = 510
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2bcf32863b3fa3b7ff82c6d14ecd1db1}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2bcf32863b3fa3b7ff82c6d14ecd1db1} 
+const {\bfseries HTTP\+\_\+\+NETWORK\+\_\+\+AUTHENTICATION\+\_\+\+REQUIRED} = 511
+\item 
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_afd9b13a59a4f471c88d92d2f61b01619}\label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_afd9b13a59a4f471c88d92d2f61b01619} 
+const {\bfseries HTTP\+\_\+\+NETWORK\+\_\+\+CONNECT\+\_\+\+TIMEOUT\+\_\+\+ERROR} = 599
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representation of an outgoing, server-\/side response. Most of these methods are supplied by Response\+Trait.
+
+Per the HTTP specification, this interface includes properties for each of the following\+:
+
+
+\begin{DoxyItemize}
+\item Protocol version
+\item Status code and reason phrase
+\item Headers
+\item Message body 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa6417fbc307df6bfb486c1e241524f8e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!deleteCookie@{deleteCookie}}
+\index{deleteCookie@{deleteCookie}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{deleteCookie()}{deleteCookie()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa6417fbc307df6bfb486c1e241524f8e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::delete\+Cookie (\begin{DoxyParamCaption}\item[{string}]{\$name}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$path}{ = {\ttfamily \textquotesingle{}/\textquotesingle{}}, }\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Sets a cookie to be deleted when the response is sent.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aafd73397063d9cf5ea48032dba5be8c1}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!download@{download}}
+\index{download@{download}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aafd73397063d9cf5ea48032dba5be8c1} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::download (\begin{DoxyParamCaption}\item[{string}]{\$filename}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{bool}]{\$set\+Mime}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Force a download.
+
+Generates the headers that force a download to happen. And sends the file to the browser.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & The path to the file to send \\
+\hline
+string | null & {\em \$data} & The data to be downloaded \\
+\hline
+bool & {\em \$set\+Mime} & Whether to try and send the actual MIME type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Download\+Response\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2648f104afbc22672f242c4648a5a569}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getCookie@{getCookie}}
+\index{getCookie@{getCookie}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getCookie()}{getCookie()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2648f104afbc22672f242c4648a5a569} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+Cookie (\begin{DoxyParamCaption}\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the cookie
+
+\begin{DoxyReturn}{Returns}
+array$<$string, Cookie$>$\texorpdfstring{$\vert$}{|}\+Cookie\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a3963e2b53253ed142e87ce2c6a5c8adf}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getCookies@{getCookies}}
+\index{getCookies@{getCookies}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getCookies()}{getCookies()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a3963e2b53253ed142e87ce2c6a5c8adf} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+Cookies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all cookies currently set.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, Cookie$>$ 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a18b649f43ee5749c955ccf7cafcce113}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getCookieStore@{getCookieStore}}
+\index{getCookieStore@{getCookieStore}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getCookieStore()}{getCookieStore()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a18b649f43ee5749c955ccf7cafcce113} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+Cookie\+Store (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the {\ttfamily Cookie\+Store} instance.
+
+\begin{DoxyReturn}{Returns}
+Cookie\+Store 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa6a5ed5218861c9dae9726fb9c92abeb}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getCSP@{getCSP}}
+\index{getCSP@{getCSP}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getCSP()}{getCSP()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa6a5ed5218861c9dae9726fb9c92abeb} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+CSP (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get Content Security Policy handler. \Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab23797cbf330d38025f4ee3519c6254a}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getJSON@{getJSON}}
+\index{getJSON@{getJSON}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getJSON()}{getJSON()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab23797cbf330d38025f4ee3519c6254a} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+JSON (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current body, converted to JSON is it isn\textquotesingle{}t already.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the body property is not array. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a80bf8a41662ad7a22dc93faee05bc3a7}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getReason@{getReason}}
+\index{getReason@{getReason}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getReason()}{getReason()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a80bf8a41662ad7a22dc93faee05bc3a7} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+Reason (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the response phrase associated with the status code.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://tools.ietf.org/html/rfc7231\#section-6}{\texttt{ http\+://tools.\+ietf.\+org/html/rfc7231\#section-\/6}} 
+
+\href{http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml}{\texttt{ http\+://www.\+iana.\+org/assignments/http-\/status-\/codes/http-\/status-\/codes.\+xhtml}}
+\end{DoxySeeAlso}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000083}{Deprecated}}]Use get\+Reason\+Phrase() \end{DoxyRefDesc}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_response_a1bcc07cefaacb4129f233385f1a8e539}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab6809d633dfae66cb308cf073e363d0e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getReasonPhrase@{getReasonPhrase}}
+\index{getReasonPhrase@{getReasonPhrase}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getReasonPhrase()}{getReasonPhrase()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab6809d633dfae66cb308cf073e363d0e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+Reason\+Phrase (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the response reason phrase associated with the status code.
+
+Because a reason phrase is not a required element in a response status line, the reason phrase value MAY be null. Implementations MAY choose to return the default RFC 7231 recommended reason phrase (or those listed in the IANA HTTP Status Code Registry) for the response\textquotesingle{}s status code.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://tools.ietf.org/html/rfc7231\#section-6}{\texttt{ http\+://tools.\+ietf.\+org/html/rfc7231\#section-\/6}} 
+
+\href{http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml}{\texttt{ http\+://www.\+iana.\+org/assignments/http-\/status-\/codes/http-\/status-\/codes.\+xhtml}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string Reason phrase; must return an empty string if none present. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_response_a745a5936f4be6477c91b1d959d3c77a1}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a8a9fcd56853bdc924dc30954fc145d48}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getStatusCode@{getStatusCode}}
+\index{getStatusCode@{getStatusCode}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getStatusCode()}{getStatusCode()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a8a9fcd56853bdc924dc30954fc145d48} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+Status\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the response status code.
+
+The status code is a 3-\/digit integer result code of the server\textquotesingle{}s attempt to understand and satisfy the request.
+
+\begin{DoxyReturn}{Returns}
+int Status code. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_response_a28b65865c95fbd33ae8c3572001ff549}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_af77b471945a30a639cf4ce45e2657e68}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!getXML@{getXML}}
+\index{getXML@{getXML}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{getXML()}{getXML()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_af77b471945a30a639cf4ce45e2657e68} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::get\+XML (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the current body into XML and returns it.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the body property is not array. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2e3ffefe42991bddcce42a2fbbef5a2a}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!hasCookie@{hasCookie}}
+\index{hasCookie@{hasCookie}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{hasCookie()}{hasCookie()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a2e3ffefe42991bddcce42a2fbbef5a2a} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::has\+Cookie (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{?string}]{\$value}{ = {\ttfamily null}, }\item[{string}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Checks to see if the Response has a specified cookie or not. \Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab54afada542d3e0080e19cd6a8018879}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!noCache@{noCache}}
+\index{noCache@{noCache}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{noCache()}{noCache()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_ab54afada542d3e0080e19cd6a8018879} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::no\+Cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sets the appropriate headers to ensure this response is not cached by the browsers.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_download_response_a2087975e9e7fcc18dd10648537ca60f5}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Download\+Response}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a9cf7a69afa7d3b046dd191a839662957}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!redirect@{redirect}}
+\index{redirect@{redirect}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a9cf7a69afa7d3b046dd191a839662957} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::redirect (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{string}]{\$method}{ = {\ttfamily \textquotesingle{}auto\textquotesingle{}}, }\item[{?int}]{\$code}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Perform a redirect to a new URL, in two flavors\+: header or location.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & The URI to redirect to \\
+\hline
+int & {\em \$code} & The type of redirection, defaults to 302\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em HTTPException} & For invalid status code. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_afbec5d7681576b5a99e0fad6ad53ef3b}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!send@{send}}
+\index{send@{send}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_afbec5d7681576b5a99e0fad6ad53ef3b} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::send (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sends the output to the browser.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_download_response_ab2244d48e016bc64332d8e6f6938d502}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Download\+Response}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a8ee53bf037fe556798780640eb326b7b}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!sendBody@{sendBody}}
+\index{sendBody@{sendBody}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{sendBody()}{sendBody()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a8ee53bf037fe556798780640eb326b7b} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::send\+Body (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sends the Body of the message to the browser.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_download_response_aec78d26cc099d572e81f08cc51cf044e}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Download\+Response}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a94fe542d35dc4cd869d9598b3b17f516}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!sendHeaders@{sendHeaders}}
+\index{sendHeaders@{sendHeaders}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{sendHeaders()}{sendHeaders()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a94fe542d35dc4cd869d9598b3b17f516} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::send\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sends the headers of this HTTP request to the browser.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa91fa2386054bcaec9ce936be43c4f65}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setCache@{setCache}}
+\index{setCache@{setCache}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setCache()}{setCache()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_aa91fa2386054bcaec9ce936be43c4f65} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+Cache (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+A shortcut method that allows the developer to set all of the cache-\/control headers in one method call.
+
+The options array is used to provide the cache-\/control directives for the header. It might look something like\+: \begin{DoxyVerb} $options = [
+     'max-age'  => 300,
+     's-maxage' => 900
+     'etag'     => 'abcde',
+ ];
+\end{DoxyVerb}
+
+
+Typical options are\+:
+\begin{DoxyItemize}
+\item etag
+\item last-\/modified
+\item max-\/age
+\item s-\/maxage
+\item private
+\item public
+\item must-\/revalidate
+\item proxy-\/revalidate
+\item no-\/transform
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a83f0b7a82db8faf6522538e631302f45}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setContentType@{setContentType}}
+\index{setContentType@{setContentType}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setContentType()}{setContentType()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a83f0b7a82db8faf6522538e631302f45} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+Content\+Type (\begin{DoxyParamCaption}\item[{string}]{\$mime}{, }\item[{string}]{\$charset}{ = {\ttfamily \textquotesingle{}UTF-\/8\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Sets the Content Type header for this response with the mime type and, optionally, the charset.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_download_response_a24fa329d9569a6061e6468783e151a5d}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Download\+Response}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a6f38df8c9859983429cb376735df5e18}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setCookie@{setCookie}}
+\index{setCookie@{setCookie}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setCookie()}{setCookie()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a6f38df8c9859983429cb376735df5e18} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+Cookie (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$value}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$expire}{ = {\ttfamily 0}, }\item[{}]{\$domain}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$path}{ = {\ttfamily \textquotesingle{}/\textquotesingle{}}, }\item[{}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$secure}{ = {\ttfamily false}, }\item[{}]{\$httponly}{ = {\ttfamily false}, }\item[{}]{\$samesite}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set a cookie
+
+Accepts an arbitrary number of binds (up to 7) or an associative array in the first parameter containing all the values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | Cookie | string & {\em \$name} & Cookie name / array containing binds / Cookie object \\
+\hline
+string & {\em \$value} & Cookie value \\
+\hline
+int & {\em \$expire} & Cookie expiration time in seconds \\
+\hline
+string & {\em \$domain} & Cookie domain (e.\+g.\+: \textquotesingle{}.yourdomain.\+com\textquotesingle{}) \\
+\hline
+string & {\em \$path} & Cookie path (default\+: \textquotesingle{}/\textquotesingle{}) \\
+\hline
+string & {\em \$prefix} & Cookie name prefix \\
+\hline
+bool & {\em \$secure} & Whether to only transfer cookies via SSL \\
+\hline
+bool & {\em \$httponly} & Whether only make the cookie accessible via HTTP (no javascript) \\
+\hline
+string | null & {\em \$samesite} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a852894e12d03e2a01fda97511b9ca1ff}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setDate@{setDate}}
+\index{setDate@{setDate}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a852894e12d03e2a01fda97511b9ca1ff} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+Date (\begin{DoxyParamCaption}\item[{Date\+Time}]{\$date}{}\end{DoxyParamCaption})}
+
+Sets the date header
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a00c6f1c9972862fcf4647c38430b1926}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setJSON@{setJSON}}
+\index{setJSON@{setJSON}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setJSON()}{setJSON()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a00c6f1c9972862fcf4647c38430b1926} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+JSON (\begin{DoxyParamCaption}\item[{}]{\$body}{, }\item[{bool}]{\$unencoded}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Converts the \$body into JSON and sets the Content Type header.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object | string & {\em \$body} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a271957619c41c69c6a5246c0e1b4e751}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setLastModified@{setLastModified}}
+\index{setLastModified@{setLastModified}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setLastModified()}{setLastModified()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a271957619c41c69c6a5246c0e1b4e751} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+Last\+Modified (\begin{DoxyParamCaption}\item[{}]{\$date}{}\end{DoxyParamCaption})}
+
+Sets the Last-\/\+Modified date header.
+
+\$date can be either a string representation of the date or, preferably, an instance of Date\+Time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Date\+Time | string & {\em \$date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a5b34b2215974949e0828f82506fb9a34}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setLink@{setLink}}
+\index{setLink@{setLink}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setLink()}{setLink()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a5b34b2215974949e0828f82506fb9a34} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+Link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface}{Pager\+Interface}}}]{\$pager}{}\end{DoxyParamCaption})}
+
+Set the Link Header
+
+\begin{DoxySeeAlso}{See also}
+\href{http://tools.ietf.org/html/rfc5988}{\texttt{ http\+://tools.\+ietf.\+org/html/rfc5988}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000008}{Todo}}]Recommend moving to Pager \end{DoxyRefDesc}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a5fb9f0691852724f860b0f99560eab51}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setStatusCode@{setStatusCode}}
+\index{setStatusCode@{setStatusCode}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setStatusCode()}{setStatusCode()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a5fb9f0691852724f860b0f99560eab51} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+Status\+Code (\begin{DoxyParamCaption}\item[{int}]{\$code}{, }\item[{string}]{\$reason}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Return an instance with the specified status code and, optionally, reason phrase.
+
+If no reason phrase is specified, will default recommended reason phrase for the response\textquotesingle{}s status code.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://tools.ietf.org/html/rfc7231\#section-6}{\texttt{ http\+://tools.\+ietf.\+org/html/rfc7231\#section-\/6}} 
+
+\href{http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml}{\texttt{ http\+://www.\+iana.\+org/assignments/http-\/status-\/codes/http-\/status-\/codes.\+xhtml}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & The 3-\/digit integer result code to set. \\
+\hline
+string & {\em \$reason} & The reason phrase to use with the provided status code; if none is provided, will default to the IANA name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em HTTPException} & For invalid status code arguments. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_download_response_a56482be594fe401b365954adaac056e7}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Download\+Response}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a9939c1b33772dd4e7826aa3d56aae1ce}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!setXML@{setXML}}
+\index{setXML@{setXML}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{setXML()}{setXML()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a9939c1b33772dd4e7826aa3d56aae1ce} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::set\+XML (\begin{DoxyParamCaption}\item[{}]{\$body}{}\end{DoxyParamCaption})}
+
+Converts \$body into XML, and sets the correct Content-\/\+Type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$body} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a91a8db2fdf3dc1fb460053ffaa77fd63}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}!HTTP\_CONTINUE@{HTTP\_CONTINUE}}
+\index{HTTP\_CONTINUE@{HTTP\_CONTINUE}!CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}ResponseInterface}}
+\doxysubsubsection{\texorpdfstring{HTTP\_CONTINUE}{HTTP\_CONTINUE}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface_a91a8db2fdf3dc1fb460053ffaa77fd63} 
+const Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Response\+Interface\+::\+HTTP\+\_\+\+CONTINUE = 100}
+
+Constants for status codes. From \href{https://en.wikipedia.org/wiki/List_of_HTTP_status_codes}{\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+List\+\_\+of\+\_\+\+HTTP\+\_\+status\+\_\+codes}} 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/Response\+Interface.\+php\end{DoxyCompactItemize}

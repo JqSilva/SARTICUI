@@ -1,0 +1,152 @@
+\doxysection{Code\+Igniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}Test\+Generator Class Reference}
+\hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator}{}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}Test\+Generator\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}Test\+Generator\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a5dd4e3582e5e527e757e2074e94694f3}{run}} (array \$params)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger, \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands}{Commands}} \$commands)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a8c1b91614e01907f8499addf7532e706}{show\+Help}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a85679c7b947025249f6b881e8d369f03}{set\+Pad}} (string \$item, int \$max, int \$extra=2, int \$indent=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a05b222369321bbf57a70be3c7b294b37}{get\+Pad}} (array \$array, int \$pad)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a5622df4c411832f7a5305be058355fdf}{\+\_\+\+\_\+get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a61d735707706e9b865c176930a5d617d}{\+\_\+\+\_\+isset}} (string \$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_aaae5b4e31332074cce4164ec3bb67b6d}{get\+Namespace}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a8640a8485ba009c4a05919c772b89119}{build\+Path}} (string \$class)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a171e6df6dfd095248ca564f8e7680dbd}{call}} (string \$command, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a866d1ea8c4143c9301e21b21b4021855}{show\+Error}} (Throwable \$e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a28858602cdc5d1eaf4cf8920c154c22c}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a28858602cdc5d1eaf4cf8920c154c22c} 
+{\bfseries \$group} = \textquotesingle{}\mbox{\hyperlink{class_config_1_1_generators}{Generators}}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_ad0d1cff6e3897abf8e956e5e3c9a8340}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_ad0d1cff6e3897abf8e956e5e3c9a8340} 
+{\bfseries \$name} = \textquotesingle{}make\+:test\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_afdcf32a5e9b0bc478695d776df122730}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_afdcf32a5e9b0bc478695d776df122730} 
+{\bfseries \$description} = \textquotesingle{}Generates a new test file.\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a262a92dec84f4a311df590ea50b1fcc8}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a262a92dec84f4a311df590ea50b1fcc8} 
+{\bfseries \$usage} = \textquotesingle{}make\+:test $<$name$>$ \mbox{[}options\mbox{]}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_ac0655e9d10b362a8e61b6b9222dc8f78}{\$arguments}}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_ad211f59cb2c0c788b0ac7acf28743bbf}{\$options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$group}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$usage}
+\item 
+{\bfseries \$description}
+\item 
+{\bfseries \$options} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$arguments} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$logger}
+\item 
+{\bfseries \$commands}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generates a skeleton command file. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a8640a8485ba009c4a05919c772b89119}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}!buildPath@{buildPath}}
+\index{buildPath@{buildPath}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}}
+\doxysubsubsection{\texorpdfstring{buildPath()}{buildPath()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a8640a8485ba009c4a05919c772b89119} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Test\+Generator\+::build\+Path (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Builds the test file path from the class name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & namespaced classname. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_aaae5b4e31332074cce4164ec3bb67b6d}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}!getNamespace@{getNamespace}}
+\index{getNamespace@{getNamespace}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}}
+\doxysubsubsection{\texorpdfstring{getNamespace()}{getNamespace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_aaae5b4e31332074cce4164ec3bb67b6d} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Test\+Generator\+::get\+Namespace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the namespace from input or the default namespace. \Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a5dd4e3582e5e527e757e2074e94694f3}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a5dd4e3582e5e527e757e2074e94694f3} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Test\+Generator\+::run (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Actually execute a command. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_ac43ba8f0bf1082f9b994bb86135e083e}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_ac0655e9d10b362a8e61b6b9222dc8f78}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}!\$arguments@{\$arguments}}
+\index{\$arguments@{\$arguments}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}}
+\doxysubsubsection{\texorpdfstring{\$arguments}{\$arguments}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_ac0655e9d10b362a8e61b6b9222dc8f78} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Test\+Generator\+::\$arguments\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'name'}\ =>\ \textcolor{stringliteral}{'The\ test\ class\ name.'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_ad211f59cb2c0c788b0ac7acf28743bbf}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}!\$options@{\$options}}
+\index{\$options@{\$options}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}TestGenerator}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_ad211f59cb2c0c788b0ac7acf28743bbf} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Test\+Generator\+::\$options\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/namespace'}\ =>\ \textcolor{stringliteral}{'Set\ root\ namespace.\ Default:\ "{}Tests"{}.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/force'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'Force\ overwrite\ existing\ file.'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Commands/\+Generators/Test\+Generator.\+php\end{DoxyCompactItemize}

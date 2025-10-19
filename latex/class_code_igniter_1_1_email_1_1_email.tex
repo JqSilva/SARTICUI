@@ -1,0 +1,1205 @@
+\doxysection{Code\+Igniter\textbackslash{}Email\textbackslash{}Email Class Reference}
+\hypertarget{class_code_igniter_1_1_email_1_1_email}{}\label{class_code_igniter_1_1_email_1_1_email}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Email\textbackslash{}Email\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_acba8edb2ed978c8b3db8e9a55b697c5d}{\+\_\+\+\_\+construct}} (\$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a42d086c5a4f76667a4b3cac25349ee5b}{initialize}} (\$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a9d5805f7547c37863bcadb7711faf7f8}{clear}} (\$clear\+Attachments=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_aa6064065b74028385c7d1dbab30fe4f5}{set\+From}} (\$from, \$name=\textquotesingle{}\textquotesingle{}, \$return\+Path=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a18e0fae608823b2190a835d4daea4b62}{set\+Reply\+To}} (\$replyto, \$name=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a8bd70aeb5834b2bc8f913dd750eb6b02}{set\+To}} (\$to)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a69dec5e358c68fc56221edb714331dba}{set\+CC}} (\$cc)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a7e80558565a77c5911b4652d55d7d42e}{set\+BCC}} (\$bcc, \$limit=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a5ee3723d67b5fe8cc485ffa0992e5781}{set\+Subject}} (\$subject)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ad024b089e466d5591a5e362711c900bf}{set\+Message}} (\$body)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a27780fa9e3036bd52c5149e4b613afed}{attach}} (\$file, \$disposition=\textquotesingle{}\textquotesingle{}, \$newname=null, \$mime=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ae145c79861315e802b788eec50010f5e}{set\+Attachment\+CID}} (\$filename)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ab0bde3c4a56c063b62128e6c273a564c}{set\+Header}} (\$header, \$value)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a5f9be240a46ba084418f9b3ec7ab7ac4}{set\+Alt\+Message}} (\$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a1354e27a8738e2daf65fadbaaa028f4b}{set\+Mail\+Type}} (\$type=\textquotesingle{}text\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ab88f73de031c01d16acca807de40f701}{set\+Word\+Wrap}} (\$\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ade9ab5230b6bb64fbe843278a87a30d0}{word\+Wrap}}=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a1b778707de9fd4bec394ac034917dcca}{set\+Protocol}} (\$protocol=\textquotesingle{}mail\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a463e1d0fcf586e1ca5eeaa52dd90274c}{set\+Priority}} (\$n=3)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_aa8ebedc9252fcc71e6e19a8825621796}{set\+Newline}} (\$newline="{}\textbackslash{}n"{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a88d1117d605dabfb78834533bfb4be33}{set\+CRLF}} (\$CRLF="{}\textbackslash{}n"{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a5a19be42419b3336f70b13801abb8225}{validate\+Email}} (\$email)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a20047222f1b0a59842aaa22cf65359dc}{is\+Valid\+Email}} (\$email)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a99133ccf1bc66e0e8dc1220d67f45cb9}{clean\+Email}} (\$email)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ade9ab5230b6bb64fbe843278a87a30d0}{word\+Wrap}} (\$str, \$charlim=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_abd7a4d2f204951283a73ad0abd61ea86}{send}} (\$auto\+Clear=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a0fd01ffecb2dd1a913764e1e6bee58d3}{batch\+BCCSend}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_aa5dea34811687ad21911b0a33731534e}{print\+Debugger}} (\$include=\mbox{[}\textquotesingle{}headers\textquotesingle{}, \textquotesingle{}subject\textquotesingle{}, \textquotesingle{}body\textquotesingle{}\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab3eac04e617aaa5cd6abc59cf472a5c8}\label{class_code_igniter_1_1_email_1_1_email_ab3eac04e617aaa5cd6abc59cf472a5c8} 
+{\bfseries \$archive}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_adab58dd884abab3a14a8a426edb7fb47}\label{class_code_igniter_1_1_email_1_1_email_adab58dd884abab3a14a8a426edb7fb47} 
+{\bfseries \$from\+Email}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a4465afaa43eff541d929820c1c34a149}\label{class_code_igniter_1_1_email_1_1_email_a4465afaa43eff541d929820c1c34a149} 
+{\bfseries \$from\+Name}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a331b0f2298fe95d6bfb28e9b8bb48b5a}\label{class_code_igniter_1_1_email_1_1_email_a331b0f2298fe95d6bfb28e9b8bb48b5a} 
+{\bfseries \$user\+Agent} = \textquotesingle{}\mbox{\hyperlink{class_code_igniter_1_1_code_igniter}{Code\+Igniter}}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ae681bb43b761c59d7504f33cd820323d}\label{class_code_igniter_1_1_email_1_1_email_ae681bb43b761c59d7504f33cd820323d} 
+{\bfseries \$mail\+Path} = \textquotesingle{}/usr/sbin/sendmail\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a60c322c228ecaf6a67f22cc527d8525a}\label{class_code_igniter_1_1_email_1_1_email_a60c322c228ecaf6a67f22cc527d8525a} 
+{\bfseries \$protocol} = \textquotesingle{}mail\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ac480a5141089e312c3ec4c6161b13860}\label{class_code_igniter_1_1_email_1_1_email_ac480a5141089e312c3ec4c6161b13860} 
+{\bfseries \$\+SMTPHost} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a62db6327012de6fff0cef301826adfc2}\label{class_code_igniter_1_1_email_1_1_email_a62db6327012de6fff0cef301826adfc2} 
+{\bfseries \$\+SMTPUser} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a4ffd251d54cf998845d9f80a0a67f057}\label{class_code_igniter_1_1_email_1_1_email_a4ffd251d54cf998845d9f80a0a67f057} 
+{\bfseries \$\+SMTPPass} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a7751f5daab9b06b7cff12397ad16848b}\label{class_code_igniter_1_1_email_1_1_email_a7751f5daab9b06b7cff12397ad16848b} 
+{\bfseries \$\+SMTPPort} = 25
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a8a9ff2b0212298b45fd34f7145eb825e}\label{class_code_igniter_1_1_email_1_1_email_a8a9ff2b0212298b45fd34f7145eb825e} 
+{\bfseries \$\+SMTPTimeout} = 5
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_afd64472a17447c135e593c8c0278db36}\label{class_code_igniter_1_1_email_1_1_email_afd64472a17447c135e593c8c0278db36} 
+{\bfseries \$\+SMTPKeep\+Alive} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a338aab8f3e8450220a9f0e90d7203b55}\label{class_code_igniter_1_1_email_1_1_email_a338aab8f3e8450220a9f0e90d7203b55} 
+{\bfseries \$\+SMTPCrypto} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a23f48d0e9402b73a64540f78fda18a4e}\label{class_code_igniter_1_1_email_1_1_email_a23f48d0e9402b73a64540f78fda18a4e} 
+{\bfseries \$word\+Wrap} = true
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ac9da5c5d25d3bdfa92d3538477eb99a8}\label{class_code_igniter_1_1_email_1_1_email_ac9da5c5d25d3bdfa92d3538477eb99a8} 
+{\bfseries \$wrap\+Chars} = 76
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a3962886e2e2b73025f5c36c6c67ef68f}\label{class_code_igniter_1_1_email_1_1_email_a3962886e2e2b73025f5c36c6c67ef68f} 
+{\bfseries \$mail\+Type} = \textquotesingle{}text\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a606830609c53c84062b2e0c66f63df93}\label{class_code_igniter_1_1_email_1_1_email_a606830609c53c84062b2e0c66f63df93} 
+{\bfseries \$charset} = \textquotesingle{}UTF-\/8\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_adbdaab37aeb52c2c8b6837b92ac4949c}\label{class_code_igniter_1_1_email_1_1_email_adbdaab37aeb52c2c8b6837b92ac4949c} 
+{\bfseries \$alt\+Message} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a5d92062ea871fafe35e49c3f2174d919}\label{class_code_igniter_1_1_email_1_1_email_a5d92062ea871fafe35e49c3f2174d919} 
+{\bfseries \$validate} = true
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a470486779e2cedbbbaf35fac167beb6c}\label{class_code_igniter_1_1_email_1_1_email_a470486779e2cedbbbaf35fac167beb6c} 
+{\bfseries \$priority} = 3
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ac35289db742a4df30cb8b98f3b857b9f}\label{class_code_igniter_1_1_email_1_1_email_ac35289db742a4df30cb8b98f3b857b9f} 
+{\bfseries \$newline} = "{}\textbackslash{}r\textbackslash{}n"{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_afa2b5dbd1310e6eb1393839bfa4f2c61}\label{class_code_igniter_1_1_email_1_1_email_afa2b5dbd1310e6eb1393839bfa4f2c61} 
+{\bfseries \$\+CRLF} = "{}\textbackslash{}r\textbackslash{}n"{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a87903cec535c70387365ac9a4baf03f6}\label{class_code_igniter_1_1_email_1_1_email_a87903cec535c70387365ac9a4baf03f6} 
+{\bfseries \$\+DSN} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a45acc24665d4849c94230a9f3c81bbe9}\label{class_code_igniter_1_1_email_1_1_email_a45acc24665d4849c94230a9f3c81bbe9} 
+{\bfseries \$send\+Multipart} = true
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a1249f3a874d7d849c90bc630f217cae6}\label{class_code_igniter_1_1_email_1_1_email_a1249f3a874d7d849c90bc630f217cae6} 
+{\bfseries \$\+BCCBatch\+Mode} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a7dbb4eb3d92cf44d472d25b5962066e0}\label{class_code_igniter_1_1_email_1_1_email_a7dbb4eb3d92cf44d472d25b5962066e0} 
+{\bfseries \$\+BCCBatch\+Size} = 200
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_abd1fb3ecc1b41288a216e157e8ed2389}{string\+To\+Array}} (\$email)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a459547f84f0697aeae08f10cff261547}{get\+Message\+ID}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a69e5ddee1317a00c4e0d7d4296379a4b}{get\+Protocol}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_aeab7c7ab27dfab493f9acf4d410424db}{get\+Encoding}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ae17946c3e759bea459bfc4c8294e2784}{get\+Content\+Type}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a513f91b7932d9fbabf0896e668cbe1e9}{set\+Date}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a246a9e9b56f78aa1c1126912bb814eea}{get\+Mime\+Message}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a2e0aa691b2582f46074264019201d512}{get\+Alt\+Message}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a5057e4bdec069976b8f08719a7a697ad}{build\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ad3f422e340a0b4e48cd5675f8680cfdb}{write\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a06f754873c535b6deeff0fea50025d5c}{build\+Message}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a08e0118b21267df9a1a722ffb25144f5}{attachments\+Have\+Multipart}} (\$type)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_aa7496ab2f7ecc7eeab087457f2ecb872}{append\+Attachments}} (\&\$body, \$boundary, \$multipart=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_aaac716f091084194c48fa5070cb87284}{prep\+Quoted\+Printable}} (\$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_adb33c0d58dcb5f59335f50551b2c5d40}{prep\+QEncoding}} (\$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a1812fa1ed85e0ba3f4895ab84925161f}{unwrap\+Specials}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_af7312694af79b70bc483141678971740}{remove\+NLCallback}} (\$matches)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a7290f89e2107d3cabb32ef681215ce1d}{spool\+Email}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a2847b64e1c14df3bcb2776f3ba06e235}{validate\+Email\+For\+Shell}} (\&\$email)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a06aa6427c2e57857ddb09c2918a5e9c2}{send\+With\+Mail}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ab44d84b93c6dbfb4e150f59f3890c9e1}{send\+With\+Sendmail}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a62b4acd9fa9f4903b27521167494d2b6}{send\+With\+Smtp}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a6ae34c62d0d96b8f135b860916427299}{SMTPEnd}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ad45b7910e211e72b2221ba456546052d}{SMTPConnect}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a5435fd0e0934e25556262c2589e7d612}{send\+Command}} (\$cmd, \$data=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a6c76dd5615868d86247c70166bc67ba6}{SMTPAuthenticate}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_aa746e7ce791e367ac36ed9435720bc96}{send\+Data}} (\$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ab87da5ddd77cdcc8bfb54fea4353b815}{get\+SMTPData}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ac59a7744b70cfc642aaaf95252f4e1bf}{get\+Hostname}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ab4fc18601c359882942e746f043a30a6}{set\+Error\+Message}} (\$msg)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a31e092bd762acb498a286a5b108a1fcc}{mime\+Types}} (\$ext=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a0ce6382a11be60770a0cf36415226860}{set\+Archive\+Values}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ac095c2e31462ec5e313bda46161df2c3}{strlen}} (\$str)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_ade35093190f87b14f579cbe87bedf3b9}{substr}} (\$str, \$start, \$length=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_afbdb37c900f0feeebc8ed70fad4acc40}\label{class_code_igniter_1_1_email_1_1_email_afbdb37c900f0feeebc8ed70fad4acc40} 
+{\bfseries \$tmp\+Archive} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a47bba95209d898b6c731caad50610a84}\label{class_code_igniter_1_1_email_1_1_email_a47bba95209d898b6c731caad50610a84} 
+{\bfseries \$subject} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_adb34713146f55b87b614dab9345c279a}\label{class_code_igniter_1_1_email_1_1_email_adb34713146f55b87b614dab9345c279a} 
+{\bfseries \$body} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_af30bb9fb3704d5e9f693ac63d69f5ea8}\label{class_code_igniter_1_1_email_1_1_email_af30bb9fb3704d5e9f693ac63d69f5ea8} 
+{\bfseries \$final\+Body} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab88385056a5d087f18a6bd5830a6af4d}\label{class_code_igniter_1_1_email_1_1_email_ab88385056a5d087f18a6bd5830a6af4d} 
+{\bfseries \$header\+Str} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a878dc538d3ad8556e086a1cc142fe616}\label{class_code_igniter_1_1_email_1_1_email_a878dc538d3ad8556e086a1cc142fe616} 
+{\bfseries \$\+SMTPConnect}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab187a349088a7a69d35a8cc0b8df7926}\label{class_code_igniter_1_1_email_1_1_email_ab187a349088a7a69d35a8cc0b8df7926} 
+{\bfseries \$encoding} = \textquotesingle{}8bit\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a3978e6da03d662ed29405b6f98559285}\label{class_code_igniter_1_1_email_1_1_email_a3978e6da03d662ed29405b6f98559285} 
+{\bfseries \$\+SMTPAuth} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a14772420bdf4e4b84f360e379b7937e5}\label{class_code_igniter_1_1_email_1_1_email_a14772420bdf4e4b84f360e379b7937e5} 
+{\bfseries \$reply\+To\+Flag} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aab370f19d1db9accd81c434da5a00654}\label{class_code_igniter_1_1_email_1_1_email_aab370f19d1db9accd81c434da5a00654} 
+{\bfseries \$debug\+Message} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab12b963cc0f8f4907b57a99709010003}\label{class_code_igniter_1_1_email_1_1_email_ab12b963cc0f8f4907b57a99709010003} 
+{\bfseries \$recipients} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_afeb97442198bc2187fb4dc070d078873}\label{class_code_igniter_1_1_email_1_1_email_afeb97442198bc2187fb4dc070d078873} 
+{\bfseries \$\+CCArray} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a6073ed6c3d04af884f1e0b509ac87d87}\label{class_code_igniter_1_1_email_1_1_email_a6073ed6c3d04af884f1e0b509ac87d87} 
+{\bfseries \$\+BCCArray} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a66ac12cdcc24836318c4a987dbdde2bb}\label{class_code_igniter_1_1_email_1_1_email_a66ac12cdcc24836318c4a987dbdde2bb} 
+{\bfseries \$headers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a14f86160e2b23bb10d3955599eac5754}\label{class_code_igniter_1_1_email_1_1_email_a14f86160e2b23bb10d3955599eac5754} 
+{\bfseries \$attachments} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a6d7a2db31ace502f9c11d16013cf7e4b}{\$protocols}}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_a75562f5b562eae9f4d7d3c0e4a1c78ea}{\$base\+Charsets}}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_aae28be0c04e113f04809e08eea019377}{\$bit\+Depths}}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_email_1_1_email_adebeded2546436c153090ba284bf4b7e}{\$priorities}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a9fdb14abf14d95df75560f96d3784e09}\label{class_code_igniter_1_1_email_1_1_email_a9fdb14abf14d95df75560f96d3784e09} 
+static {\bfseries \$func\+\_\+overload}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_code_igniter}{Code\+Igniter} Email Class
+
+Permits email to be sent using Mail, Sendmail, or SMTP.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_acba8edb2ed978c8b3db8e9a55b697c5d}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_acba8edb2ed978c8b3db8e9a55b697c5d} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | \textbackslash{}\+Config\textbackslash{}\+Email | null & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aa7496ab2f7ecc7eeab087457f2ecb872}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!appendAttachments@{appendAttachments}}
+\index{appendAttachments@{appendAttachments}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{appendAttachments()}{appendAttachments()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_aa7496ab2f7ecc7eeab087457f2ecb872} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::append\+Attachments (\begin{DoxyParamCaption}\item[{\&}]{\$body}{, }\item[{}]{\$boundary}{, }\item[{}]{\$multipart}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$body} & Message body to append to \\
+\hline
+string & {\em \$boundary} & Multipart boundary \\
+\hline
+string | null & {\em \$multipart} & When provided, only attachments of this type will be processed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a27780fa9e3036bd52c5149e4b613afed}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!attach@{attach}}
+\index{attach@{attach}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a27780fa9e3036bd52c5149e4b613afed} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::attach (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{}]{\$disposition}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$newname}{ = {\ttfamily null}, }\item[{}]{\$mime}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & Can be local path, URL or buffered content \\
+\hline
+string & {\em \$disposition} & \textquotesingle{}attachment\textquotesingle{} \\
+\hline
+string | null & {\em \$newname} & \\
+\hline
+string & {\em \$mime} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}\+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a08e0118b21267df9a1a722ffb25144f5}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!attachmentsHaveMultipart@{attachmentsHaveMultipart}}
+\index{attachmentsHaveMultipart@{attachmentsHaveMultipart}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{attachmentsHaveMultipart()}{attachmentsHaveMultipart()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a08e0118b21267df9a1a722ffb25144f5} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::attachments\+Have\+Multipart (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a0fd01ffecb2dd1a913764e1e6bee58d3}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!batchBCCSend@{batchBCCSend}}
+\index{batchBCCSend@{batchBCCSend}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{batchBCCSend()}{batchBCCSend()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a0fd01ffecb2dd1a913764e1e6bee58d3} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::batch\+BCCSend (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Batch Bcc Send. Sends groups of BCCs in batches
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a5057e4bdec069976b8f08719a7a697ad}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!buildHeaders@{buildHeaders}}
+\index{buildHeaders@{buildHeaders}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{buildHeaders()}{buildHeaders()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a5057e4bdec069976b8f08719a7a697ad} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::build\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build final headers
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a06f754873c535b6deeff0fea50025d5c}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!buildMessage@{buildMessage}}
+\index{buildMessage@{buildMessage}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{buildMessage()}{buildMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a06f754873c535b6deeff0fea50025d5c} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::build\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build Final Body and attachments
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a99133ccf1bc66e0e8dc1220d67f45cb9}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!cleanEmail@{cleanEmail}}
+\index{cleanEmail@{cleanEmail}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{cleanEmail()}{cleanEmail()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a99133ccf1bc66e0e8dc1220d67f45cb9} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::clean\+Email (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a9d5805f7547c37863bcadb7711faf7f8}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!clear@{clear}}
+\index{clear@{clear}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a9d5805f7547c37863bcadb7711faf7f8} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::clear (\begin{DoxyParamCaption}\item[{}]{\$clear\+Attachments}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$clear\+Attachments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a2e0aa691b2582f46074264019201d512}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!getAltMessage@{getAltMessage}}
+\index{getAltMessage@{getAltMessage}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{getAltMessage()}{getAltMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a2e0aa691b2582f46074264019201d512} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::get\+Alt\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build alternative plain text message
+
+Provides the raw message for use in plain-\/text headers of HTML-\/formatted emails.
+
+If the user hasn\textquotesingle{}t specified his own alternative message it creates one by stripping the HTML
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ae17946c3e759bea459bfc4c8294e2784}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!getContentType@{getContentType}}
+\index{getContentType@{getContentType}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{getContentType()}{getContentType()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ae17946c3e759bea459bfc4c8294e2784} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::get\+Content\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aeab7c7ab27dfab493f9acf4d410424db}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!getEncoding@{getEncoding}}
+\index{getEncoding@{getEncoding}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{getEncoding()}{getEncoding()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_aeab7c7ab27dfab493f9acf4d410424db} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::get\+Encoding (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ac59a7744b70cfc642aaaf95252f4e1bf}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!getHostname@{getHostname}}
+\index{getHostname@{getHostname}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{getHostname()}{getHostname()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ac59a7744b70cfc642aaaf95252f4e1bf} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::get\+Hostname (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+There are only two legal types of hostname -\/ either a fully qualified domain name (eg\+: "{}mail.\+example.\+com"{}) or an IP literal (eg\+: "{}\mbox{[}1.\+2.\+3.\+4\mbox{]}"{}).
+
+\begin{DoxySeeAlso}{See also}
+\href{https://tools.ietf.org/html/rfc5321\#section-2.3.5}{\texttt{ https\+://tools.\+ietf.\+org/html/rfc5321\#section-\/2.\+3.\+5}} 
+
+\href{http://cbl.abuseat.org/namingproblems.html}{\texttt{ http\+://cbl.\+abuseat.\+org/namingproblems.\+html}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a459547f84f0697aeae08f10cff261547}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!getMessageID@{getMessageID}}
+\index{getMessageID@{getMessageID}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{getMessageID()}{getMessageID()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a459547f84f0697aeae08f10cff261547} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::get\+Message\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a246a9e9b56f78aa1c1126912bb814eea}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!getMimeMessage@{getMimeMessage}}
+\index{getMimeMessage@{getMimeMessage}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{getMimeMessage()}{getMimeMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a246a9e9b56f78aa1c1126912bb814eea} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::get\+Mime\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a69e5ddee1317a00c4e0d7d4296379a4b}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!getProtocol@{getProtocol}}
+\index{getProtocol@{getProtocol}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{getProtocol()}{getProtocol()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a69e5ddee1317a00c4e0d7d4296379a4b} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::get\+Protocol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab87da5ddd77cdcc8bfb54fea4353b815}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!getSMTPData@{getSMTPData}}
+\index{getSMTPData@{getSMTPData}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{getSMTPData()}{getSMTPData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ab87da5ddd77cdcc8bfb54fea4353b815} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::get\+SMTPData (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a42d086c5a4f76667a4b3cac25349ee5b}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a42d086c5a4f76667a4b3cac25349ee5b} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::initialize (\begin{DoxyParamCaption}\item[{}]{\$config}{}\end{DoxyParamCaption})}
+
+Initialize preferences
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | \textbackslash{}\+Config\textbackslash{}\+Email | null & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a20047222f1b0a59842aaa22cf65359dc}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!isValidEmail@{isValidEmail}}
+\index{isValidEmail@{isValidEmail}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{isValidEmail()}{isValidEmail()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a20047222f1b0a59842aaa22cf65359dc} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::is\+Valid\+Email (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a31e092bd762acb498a286a5b108a1fcc}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!mimeTypes@{mimeTypes}}
+\index{mimeTypes@{mimeTypes}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{mimeTypes()}{mimeTypes()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a31e092bd762acb498a286a5b108a1fcc} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::mime\+Types (\begin{DoxyParamCaption}\item[{}]{\$ext}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mime Types
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ext} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_adb33c0d58dcb5f59335f50551b2c5d40}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!prepQEncoding@{prepQEncoding}}
+\index{prepQEncoding@{prepQEncoding}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{prepQEncoding()}{prepQEncoding()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_adb33c0d58dcb5f59335f50551b2c5d40} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::prep\+QEncoding (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Performs "{}\+Q Encoding"{} on a string for use in email headers. It\textquotesingle{}s related but not identical to quoted-\/printable, so it has its own method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aaac716f091084194c48fa5070cb87284}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!prepQuotedPrintable@{prepQuotedPrintable}}
+\index{prepQuotedPrintable@{prepQuotedPrintable}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{prepQuotedPrintable()}{prepQuotedPrintable()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_aaac716f091084194c48fa5070cb87284} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::prep\+Quoted\+Printable (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepares string for Quoted-\/\+Printable Content-\/\+Transfer-\/\+Encoding Refer to RFC 2045 \href{http://www.ietf.org/rfc/rfc2045.txt}{\texttt{ http\+://www.\+ietf.\+org/rfc/rfc2045.\+txt}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aa5dea34811687ad21911b0a33731534e}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!printDebugger@{printDebugger}}
+\index{printDebugger@{printDebugger}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{printDebugger()}{printDebugger()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_aa5dea34811687ad21911b0a33731534e} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::print\+Debugger (\begin{DoxyParamCaption}\item[{}]{\$include}{ = {\ttfamily \mbox{[}\textquotesingle{}headers\textquotesingle{},~\textquotesingle{}subject\textquotesingle{},~\textquotesingle{}body\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$include} & List of raw data chunks to include in the output Valid options are\+: \textquotesingle{}headers\textquotesingle{}, \textquotesingle{}subject\textquotesingle{}, \textquotesingle{}body\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_af7312694af79b70bc483141678971740}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!removeNLCallback@{removeNLCallback}}
+\index{removeNLCallback@{removeNLCallback}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{removeNLCallback()}{removeNLCallback()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_af7312694af79b70bc483141678971740} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::remove\+NLCallback (\begin{DoxyParamCaption}\item[{}]{\$matches}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Strip line-\/breaks via callback
+
+@used-\/by unwrap\+Specials()
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$matches\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_abd7a4d2f204951283a73ad0abd61ea86}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!send@{send}}
+\index{send@{send}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_abd7a4d2f204951283a73ad0abd61ea86} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::send (\begin{DoxyParamCaption}\item[{}]{\$auto\+Clear}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$auto\+Clear} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_email_aea6f027ac2d66c048b93c05694112ee5}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Email}}.
+
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a5435fd0e0934e25556262c2589e7d612}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!sendCommand@{sendCommand}}
+\index{sendCommand@{sendCommand}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{sendCommand()}{sendCommand()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a5435fd0e0934e25556262c2589e7d612} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::send\+Command (\begin{DoxyParamCaption}\item[{}]{\$cmd}{, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cmd} & \\
+\hline
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aa746e7ce791e367ac36ed9435720bc96}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!sendData@{sendData}}
+\index{sendData@{sendData}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{sendData()}{sendData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_aa746e7ce791e367ac36ed9435720bc96} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::send\+Data (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a06aa6427c2e57857ddb09c2918a5e9c2}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!sendWithMail@{sendWithMail}}
+\index{sendWithMail@{sendWithMail}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{sendWithMail()}{sendWithMail()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a06aa6427c2e57857ddb09c2918a5e9c2} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::send\+With\+Mail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send using mail()
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab44d84b93c6dbfb4e150f59f3890c9e1}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!sendWithSendmail@{sendWithSendmail}}
+\index{sendWithSendmail@{sendWithSendmail}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{sendWithSendmail()}{sendWithSendmail()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ab44d84b93c6dbfb4e150f59f3890c9e1} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::send\+With\+Sendmail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send using Sendmail
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a62b4acd9fa9f4903b27521167494d2b6}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!sendWithSmtp@{sendWithSmtp}}
+\index{sendWithSmtp@{sendWithSmtp}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{sendWithSmtp()}{sendWithSmtp()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a62b4acd9fa9f4903b27521167494d2b6} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::send\+With\+Smtp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send using SMTP
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a5f9be240a46ba084418f9b3ec7ab7ac4}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setAltMessage@{setAltMessage}}
+\index{setAltMessage@{setAltMessage}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setAltMessage()}{setAltMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a5f9be240a46ba084418f9b3ec7ab7ac4} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Alt\+Message (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a0ce6382a11be60770a0cf36415226860}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setArchiveValues@{setArchiveValues}}
+\index{setArchiveValues@{setArchiveValues}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setArchiveValues()}{setArchiveValues()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a0ce6382a11be60770a0cf36415226860} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Archive\+Values (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines the values that should be stored in \$archive.
+
+\begin{DoxyReturn}{Returns}
+array The updated archive values 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ae145c79861315e802b788eec50010f5e}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setAttachmentCID@{setAttachmentCID}}
+\index{setAttachmentCID@{setAttachmentCID}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setAttachmentCID()}{setAttachmentCID()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ae145c79861315e802b788eec50010f5e} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Attachment\+CID (\begin{DoxyParamCaption}\item[{}]{\$filename}{}\end{DoxyParamCaption})}
+
+Set and return attachment Content-\/\+ID Useful for attached inline pictures
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a7e80558565a77c5911b4652d55d7d42e}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setBCC@{setBCC}}
+\index{setBCC@{setBCC}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setBCC()}{setBCC()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a7e80558565a77c5911b4652d55d7d42e} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+BCC (\begin{DoxyParamCaption}\item[{}]{\$bcc}{, }\item[{}]{\$limit}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bcc} & \\
+\hline
+string & {\em \$limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a69dec5e358c68fc56221edb714331dba}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setCC@{setCC}}
+\index{setCC@{setCC}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setCC()}{setCC()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a69dec5e358c68fc56221edb714331dba} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+CC (\begin{DoxyParamCaption}\item[{}]{\$cc}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a88d1117d605dabfb78834533bfb4be33}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setCRLF@{setCRLF}}
+\index{setCRLF@{setCRLF}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setCRLF()}{setCRLF()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a88d1117d605dabfb78834533bfb4be33} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+CRLF (\begin{DoxyParamCaption}\item[{}]{\$\+CRLF}{ = {\ttfamily "{}\textbackslash{}n"{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$\+CRLF} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a513f91b7932d9fbabf0896e668cbe1e9}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setDate@{setDate}}
+\index{setDate@{setDate}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setDate()}{setDate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a513f91b7932d9fbabf0896e668cbe1e9} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set RFC 822 Date
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab4fc18601c359882942e746f043a30a6}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setErrorMessage@{setErrorMessage}}
+\index{setErrorMessage@{setErrorMessage}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setErrorMessage()}{setErrorMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ab4fc18601c359882942e746f043a30a6} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Error\+Message (\begin{DoxyParamCaption}\item[{}]{\$msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aa6064065b74028385c7d1dbab30fe4f5}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setFrom@{setFrom}}
+\index{setFrom@{setFrom}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setFrom()}{setFrom()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_aa6064065b74028385c7d1dbab30fe4f5} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+From (\begin{DoxyParamCaption}\item[{}]{\$from}{, }\item[{}]{\$name}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$return\+Path}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+string | null & {\em \$return\+Path} & Return-\/\+Path\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab0bde3c4a56c063b62128e6c273a564c}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ab0bde3c4a56c063b62128e6c273a564c} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Header (\begin{DoxyParamCaption}\item[{}]{\$header}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a1354e27a8738e2daf65fadbaaa028f4b}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setMailType@{setMailType}}
+\index{setMailType@{setMailType}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setMailType()}{setMailType()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a1354e27a8738e2daf65fadbaaa028f4b} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Mail\+Type (\begin{DoxyParamCaption}\item[{}]{\$type}{ = {\ttfamily \textquotesingle{}text\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ad024b089e466d5591a5e362711c900bf}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setMessage@{setMessage}}
+\index{setMessage@{setMessage}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setMessage()}{setMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ad024b089e466d5591a5e362711c900bf} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Message (\begin{DoxyParamCaption}\item[{}]{\$body}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$body} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aa8ebedc9252fcc71e6e19a8825621796}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setNewline@{setNewline}}
+\index{setNewline@{setNewline}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setNewline()}{setNewline()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_aa8ebedc9252fcc71e6e19a8825621796} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Newline (\begin{DoxyParamCaption}\item[{}]{\$newline}{ = {\ttfamily "{}\textbackslash{}n"{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$newline} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a463e1d0fcf586e1ca5eeaa52dd90274c}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setPriority@{setPriority}}
+\index{setPriority@{setPriority}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setPriority()}{setPriority()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a463e1d0fcf586e1ca5eeaa52dd90274c} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Priority (\begin{DoxyParamCaption}\item[{}]{\$n}{ = {\ttfamily 3}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$n} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a1b778707de9fd4bec394ac034917dcca}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setProtocol@{setProtocol}}
+\index{setProtocol@{setProtocol}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setProtocol()}{setProtocol()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a1b778707de9fd4bec394ac034917dcca} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Protocol (\begin{DoxyParamCaption}\item[{}]{\$protocol}{ = {\ttfamily \textquotesingle{}mail\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$protocol} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a18e0fae608823b2190a835d4daea4b62}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setReplyTo@{setReplyTo}}
+\index{setReplyTo@{setReplyTo}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setReplyTo()}{setReplyTo()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a18e0fae608823b2190a835d4daea4b62} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Reply\+To (\begin{DoxyParamCaption}\item[{}]{\$replyto}{, }\item[{}]{\$name}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$replyto} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a5ee3723d67b5fe8cc485ffa0992e5781}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setSubject@{setSubject}}
+\index{setSubject@{setSubject}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setSubject()}{setSubject()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a5ee3723d67b5fe8cc485ffa0992e5781} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Subject (\begin{DoxyParamCaption}\item[{}]{\$subject}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$subject} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a8bd70aeb5834b2bc8f913dd750eb6b02}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setTo@{setTo}}
+\index{setTo@{setTo}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setTo()}{setTo()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a8bd70aeb5834b2bc8f913dd750eb6b02} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+To (\begin{DoxyParamCaption}\item[{}]{\$to}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ab88f73de031c01d16acca807de40f701}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!setWordWrap@{setWordWrap}}
+\index{setWordWrap@{setWordWrap}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{setWordWrap()}{setWordWrap()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ab88f73de031c01d16acca807de40f701} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::set\+Word\+Wrap (\begin{DoxyParamCaption}\item[{}]{\$word\+Wrap}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$word\+Wrap} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a6c76dd5615868d86247c70166bc67ba6}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!SMTPAuthenticate@{SMTPAuthenticate}}
+\index{SMTPAuthenticate@{SMTPAuthenticate}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{SMTPAuthenticate()}{SMTPAuthenticate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a6c76dd5615868d86247c70166bc67ba6} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::\+SMTPAuthenticate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ad45b7910e211e72b2221ba456546052d}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!SMTPConnect@{SMTPConnect}}
+\index{SMTPConnect@{SMTPConnect}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{SMTPConnect()}{SMTPConnect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ad45b7910e211e72b2221ba456546052d} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::\+SMTPConnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a6ae34c62d0d96b8f135b860916427299}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!SMTPEnd@{SMTPEnd}}
+\index{SMTPEnd@{SMTPEnd}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{SMTPEnd()}{SMTPEnd()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a6ae34c62d0d96b8f135b860916427299} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::\+SMTPEnd (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Shortcut to send RSET or QUIT depending on keep-\/alive
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a7290f89e2107d3cabb32ef681215ce1d}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!spoolEmail@{spoolEmail}}
+\index{spoolEmail@{spoolEmail}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{spoolEmail()}{spoolEmail()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a7290f89e2107d3cabb32ef681215ce1d} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::spool\+Email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Spool mail to the mail server
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_abd1fb3ecc1b41288a216e157e8ed2389}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!stringToArray@{stringToArray}}
+\index{stringToArray@{stringToArray}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{stringToArray()}{stringToArray()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_abd1fb3ecc1b41288a216e157e8ed2389} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::string\+To\+Array (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ac095c2e31462ec5e313bda46161df2c3}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!strlen@{strlen}}
+\index{strlen@{strlen}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{strlen()}{strlen()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ac095c2e31462ec5e313bda46161df2c3} 
+static Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::strlen (\begin{DoxyParamCaption}\item[{}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Byte-\/safe strlen()
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ade35093190f87b14f579cbe87bedf3b9}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!substr@{substr}}
+\index{substr@{substr}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{substr()}{substr()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ade35093190f87b14f579cbe87bedf3b9} 
+static Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::substr (\begin{DoxyParamCaption}\item[{}]{\$str}{, }\item[{}]{\$start}{, }\item[{}]{\$length}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Byte-\/safe substr()
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+int & {\em \$start} & \\
+\hline
+int | null & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a1812fa1ed85e0ba3f4895ab84925161f}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!unwrapSpecials@{unwrapSpecials}}
+\index{unwrapSpecials@{unwrapSpecials}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{unwrapSpecials()}{unwrapSpecials()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a1812fa1ed85e0ba3f4895ab84925161f} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::unwrap\+Specials (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unwrap special elements
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a5a19be42419b3336f70b13801abb8225}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!validateEmail@{validateEmail}}
+\index{validateEmail@{validateEmail}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{validateEmail()}{validateEmail()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a5a19be42419b3336f70b13801abb8225} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::validate\+Email (\begin{DoxyParamCaption}\item[{}]{\$email}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a2847b64e1c14df3bcb2776f3ba06e235}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!validateEmailForShell@{validateEmailForShell}}
+\index{validateEmailForShell@{validateEmailForShell}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{validateEmailForShell()}{validateEmailForShell()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a2847b64e1c14df3bcb2776f3ba06e235} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::validate\+Email\+For\+Shell (\begin{DoxyParamCaption}\item[{\&}]{\$email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate email for shell
+
+Applies stricter, shell-\/safe validation to email addresses. Introduced to prevent RCE via sendmail\textquotesingle{}s -\/f option.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/codeigniter4/CodeIgniter/issues/4963}{\texttt{ https\+://github.\+com/codeigniter4/\+Code\+Igniter/issues/4963}} 
+
+\href{https://gist.github.com/Zenexer/40d02da5e07f151adeaeeaa11af9ab36}{\texttt{ https\+://gist.\+github.\+com/\+Zenexer/40d02da5e07f151adeaeeaa11af9ab36}}
+\end{DoxySeeAlso}
+@license \href{https://creativecommons.org/publicdomain/zero/1.0/}{\texttt{ https\+://creativecommons.\+org/publicdomain/zero/1.\+0/}} CC0 1.\+0, Public Domain
+
+Credits for the base concept go to Paul Buonopane \href{mailto:paul@namepros.com}{\texttt{ paul@namepros.\+com}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ade9ab5230b6bb64fbe843278a87a30d0}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!wordWrap@{wordWrap}}
+\index{wordWrap@{wordWrap}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{wordWrap()}{wordWrap()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ade9ab5230b6bb64fbe843278a87a30d0} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::word\+Wrap (\begin{DoxyParamCaption}\item[{}]{\$str}{, }\item[{}]{\$charlim}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+int | null & {\em \$charlim} & Line-\/length limit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_ad3f422e340a0b4e48cd5675f8680cfdb}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!writeHeaders@{writeHeaders}}
+\index{writeHeaders@{writeHeaders}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{writeHeaders()}{writeHeaders()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_ad3f422e340a0b4e48cd5675f8680cfdb} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::write\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Write Headers as a string
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a75562f5b562eae9f4d7d3c0e4a1c78ea}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!\$baseCharsets@{\$baseCharsets}}
+\index{\$baseCharsets@{\$baseCharsets}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{\$baseCharsets}{\$baseCharsets}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a75562f5b562eae9f4d7d3c0e4a1c78ea} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::\$base\+Charsets\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'us-\/ascii'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iso-\/2022-\/'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_aae28be0c04e113f04809e08eea019377}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!\$bitDepths@{\$bitDepths}}
+\index{\$bitDepths@{\$bitDepths}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{\$bitDepths}{\$bitDepths}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_aae28be0c04e113f04809e08eea019377} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::\$bit\+Depths\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'7bit'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'8bit'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_adebeded2546436c153090ba284bf4b7e}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!\$priorities@{\$priorities}}
+\index{\$priorities@{\$priorities}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{\$priorities}{\$priorities}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_adebeded2546436c153090ba284bf4b7e} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::\$priorities\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ \textcolor{stringliteral}{'1\ (Highest)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ \textcolor{stringliteral}{'2\ (High)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 3\ =>\ \textcolor{stringliteral}{'3\ (Normal)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 4\ =>\ \textcolor{stringliteral}{'4\ (Low)'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 5\ =>\ \textcolor{stringliteral}{'5\ (Lowest)'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_email_1_1_email_a6d7a2db31ace502f9c11d16013cf7e4b}\index{CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}!\$protocols@{\$protocols}}
+\index{\$protocols@{\$protocols}!CodeIgniter\textbackslash{}Email\textbackslash{}Email@{CodeIgniter\textbackslash{}Email\textbackslash{}Email}}
+\doxysubsubsection{\texorpdfstring{\$protocols}{\$protocols}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_email_1_1_email_a6d7a2db31ace502f9c11d16013cf7e4b} 
+Code\+Igniter\textbackslash{}\+Email\textbackslash{}\+Email\+::\$protocols\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'mail'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'sendmail'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'smtp'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Email/Email.\+php\end{DoxyCompactItemize}

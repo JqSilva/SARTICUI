@@ -1,0 +1,72 @@
+\doxysection{Code\+Igniter\textbackslash{}Filters\textbackslash{}Honeypot Class Reference}
+\hypertarget{class_code_igniter_1_1_filters_1_1_honeypot}{}\label{class_code_igniter_1_1_filters_1_1_honeypot}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Honeypot\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Honeypot\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_honeypot_ad4da6b5fa2f67d2a5c3affdf6f8c903a}{before}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \$arguments=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_honeypot_ae79b1bd46c24f25a2561d14673992001}{after}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, \$arguments=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Honeypot filter
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Honeypot\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_filters_1_1_honeypot_ae79b1bd46c24f25a2561d14673992001}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot}!after@{after}}
+\index{after@{after}!CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_honeypot_ae79b1bd46c24f25a2561d14673992001} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Honeypot\+::after (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Attach a honeypot to the current response.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$\texorpdfstring{$\vert$}{|}null} & \$arguments \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_a9d6d93f12b94b7b65258deb6f2b3d90e}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_filters_1_1_honeypot_ad4da6b5fa2f67d2a5c3affdf6f8c903a}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot}!before@{before}}
+\index{before@{before}!CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Filters\textbackslash{}Honeypot}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_filters_1_1_honeypot_ad4da6b5fa2f67d2a5c3affdf6f8c903a} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Honeypot\+::before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Checks if Honeypot field is empty, if not then the requester is a bot
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$\texorpdfstring{$\vert$}{|}null} & \$arguments\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Honeypot\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_abae5f86c1d0bef8b0b44652a7346b716}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Filters/Honeypot.\+php\end{DoxyCompactItemize}

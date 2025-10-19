@@ -1,0 +1,101 @@
+\doxysection{Config\textbackslash{}Cors Class Reference}
+\hypertarget{class_config_1_1_cors}{}\label{class_config_1_1_cors}\index{Config\textbackslash{}Cors@{Config\textbackslash{}Cors}}
+
+
+Inheritance diagram for Config\textbackslash{}Cors\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Cors\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_config_1_1_cors_a5cc633f06272839af727b4e7675beb62}{\$default}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cross-\/\+Origin Resource Sharing (CORS) Configuration
+
+\begin{DoxySeeAlso}{See also}
+\href{https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS}{\texttt{ https\+://developer.\+mozilla.\+org/en-\/\+US/docs/\+Web/\+HTTP/\+CORS}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_cors_a5cc633f06272839af727b4e7675beb62}\index{Config\textbackslash{}Cors@{Config\textbackslash{}Cors}!\$default@{\$default}}
+\index{\$default@{\$default}!Config\textbackslash{}Cors@{Config\textbackslash{}Cors}}
+\doxysubsubsection{\texorpdfstring{\$default}{\$default}}
+{\footnotesize\ttfamily \label{class_config_1_1_cors_a5cc633f06272839af727b4e7675beb62} 
+array Config\textbackslash{}\+Cors\+::\$default}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'allowedOrigins'}\ =>\ [],}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'allowedOriginsPatterns'}\ =>\ [],}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'supportsCredentials'}\ =>\ \textcolor{keyword}{false},}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'allowedHeaders'}\ =>\ [],}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'exposedHeaders'}\ =>\ [],}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'allowedMethods'}\ =>\ [],}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'maxAge'}\ =>\ 7200,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Cors.\+php\end{DoxyCompactItemize}

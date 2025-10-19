@@ -1,0 +1,70 @@
+\doxysection{Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Handler\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface}{}\label{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Handler\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_a79691a9e971d9279225acc91d9f84e93}{handle}} (\$level, \$message)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_ac057c8c646b95b9be9efb7e69fe0d115}{can\+Handle}} (string \$level)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_ac65619dc049f96e4df63ee8fc7b6889a}{set\+Date\+Format}} (string \$format)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Expected behavior for a Log handler 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_ac057c8c646b95b9be9efb7e69fe0d115}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface}!canHandle@{canHandle}}
+\index{canHandle@{canHandle}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface}}
+\doxysubsubsection{\texorpdfstring{canHandle()}{canHandle()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_ac057c8c646b95b9be9efb7e69fe0d115} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Handler\+Interface\+::can\+Handle (\begin{DoxyParamCaption}\item[{string}]{\$level}{}\end{DoxyParamCaption})}
+
+Checks whether the Handler will handle logging items of this log Level. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a00399835be424e54af0edf64d14fe90c}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_a79691a9e971d9279225acc91d9f84e93}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface}!handle@{handle}}
+\index{handle@{handle}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_a79691a9e971d9279225acc91d9f84e93} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Handler\+Interface\+::handle (\begin{DoxyParamCaption}\item[{}]{\$level}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})}
+
+Handles logging the message. If the handler returns false, then execution of handlers will stop. Any handlers that have not run, yet, will not be run.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$level} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a2786dd4b788dc626a697fb3f53423c9a}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_af27df8144773df7d9046ef6536cdc05b}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Errorlog\+Handler}}.
+
+\Hypertarget{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_ac65619dc049f96e4df63ee8fc7b6889a}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface}!setDateFormat@{setDateFormat}}
+\index{setDateFormat@{setDateFormat}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}HandlerInterface}}
+\doxysubsubsection{\texorpdfstring{setDateFormat()}{setDateFormat()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_ac65619dc049f96e4df63ee8fc7b6889a} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Handler\+Interface\+::set\+Date\+Format (\begin{DoxyParamCaption}\item[{string}]{\$format}{}\end{DoxyParamCaption})}
+
+Sets the preferred date format to use when logging.
+
+\begin{DoxyReturn}{Returns}
+Handler\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_ac1e40c030b4a48a0c7b160064301627f}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Log/\+Handlers/Handler\+Interface.\+php\end{DoxyCompactItemize}

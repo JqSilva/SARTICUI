@@ -1,0 +1,74 @@
+\doxysection{Code\+Igniter\textbackslash{}Data\+Caster\textbackslash{}Data\+Caster Class Reference}
+\hypertarget{class_code_igniter_1_1_data_caster_1_1_data_caster}{}\label{class_code_igniter_1_1_data_caster_1_1_data_caster}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_data_caster_aee419c39dbc8af64611fe3ba1e86d8bc}{\+\_\+\+\_\+construct}} (?array \$cast\+Handlers=null, ?array \$types=null, private readonly ?object \$helper=null, private readonly bool \$strict=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_data_caster_a18b1245a4d0e484c708c10ac9263ab5b}{set\+Types}} (array \$types)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_data_caster_1_1_data_caster_a24d175d395843c8b5e18db953c810cf7}{cast\+As}} (mixed \$value, string \$field, string \$method=\textquotesingle{}get\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_data_caster_1_1_data_caster_aee419c39dbc8af64611fe3ba1e86d8bc}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_caster_1_1_data_caster_aee419c39dbc8af64611fe3ba1e86d8bc} 
+Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Data\+Caster\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?array}]{\$cast\+Handlers}{ = {\ttfamily null}, }\item[{?array}]{\$types}{ = {\ttfamily null}, }\item[{private readonly ?object}]{\$helper}{ = {\ttfamily null}, }\item[{private readonly bool}]{\$strict}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string,class-\/string$>$\texorpdfstring{$\vert$}{|}null} & \$cast\+Handlers Custom convert handlers \\
+\hline
+ & {\em array$<$string,string$>$\texorpdfstring{$\vert$}{|}null} & \$types \mbox{[}field =\texorpdfstring{$>$}{>} type\mbox{]} \\
+\hline
+object | null & {\em \$helper} & Helper object. \\
+\hline
+bool & {\em \$strict} & Strict mode? Set to false for casts for Entity. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_data_caster_1_1_data_caster_a24d175d395843c8b5e18db953c810cf7}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster}!castAs@{castAs}}
+\index{castAs@{castAs}!CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster}}
+\doxysubsubsection{\texorpdfstring{castAs()}{castAs()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_caster_1_1_data_caster_a24d175d395843c8b5e18db953c810cf7} 
+Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Data\+Caster\+::cast\+As (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{string}]{\$field}{, }\item[{string}]{\$method}{ = {\ttfamily \textquotesingle{}get\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Provides the ability to cast an item as a specific data type. Add ? at the beginning of the type (i.\+e. ?string) to get {\ttfamily null} instead of casting \$value when \$value is null.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & The value to convert \\
+\hline
+string & {\em \$field} & The field name \\
+\hline
+string & {\em \$method} & Allowed to "{}get"{} and "{}set"{} @phpstan-\/param \textquotesingle{}get\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}set\textquotesingle{} \$method \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_data_caster_1_1_data_caster_a18b1245a4d0e484c708c10ac9263ab5b}\index{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster}!setTypes@{setTypes}}
+\index{setTypes@{setTypes}!CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster@{CodeIgniter\textbackslash{}DataCaster\textbackslash{}DataCaster}}
+\doxysubsubsection{\texorpdfstring{setTypes()}{setTypes()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_caster_1_1_data_caster_a18b1245a4d0e484c708c10ac9263ab5b} 
+Code\+Igniter\textbackslash{}\+Data\+Caster\textbackslash{}\+Data\+Caster\+::set\+Types (\begin{DoxyParamCaption}\item[{array}]{\$types}{}\end{DoxyParamCaption})}
+
+This method is only for Entity.
+
+@\+TODO if Entity\+::\$casts is readonly, we don\textquotesingle{}t need this method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,string$>$} & \$types \mbox{[}field =\texorpdfstring{$>$}{>} type\mbox{]}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Data\+Caster/Data\+Caster.\+php\end{DoxyCompactItemize}

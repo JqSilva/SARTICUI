@@ -1,0 +1,73 @@
+\doxysection{Kint\textbackslash{}Utils Class Reference}
+\hypertarget{class_kint_1_1_utils}{}\label{class_kint_1_1_utils}\index{Kint\textbackslash{}Utils@{Kint\textbackslash{}Utils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_utils_a09ba38e85ea8b348d0e4af3f68fbedf7}{get\+Human\+Readable\+Bytes}} (int \$value)
+\item 
+\Hypertarget{class_kint_1_1_utils_a32517c6f338fd7513f7a201c2f1b8a4c}\label{class_kint_1_1_utils_a32517c6f338fd7513f7a201c2f1b8a4c} 
+static {\bfseries is\+Sequential} (array \$array)
+\item 
+\Hypertarget{class_kint_1_1_utils_a67892644dd133f76ae8e81b59aea026f}\label{class_kint_1_1_utils_a67892644dd133f76ae8e81b59aea026f} 
+static {\bfseries is\+Assoc} (array \$array)
+\item 
+\Hypertarget{class_kint_1_1_utils_a23d276a6a535b115394f95db02f382b8}\label{class_kint_1_1_utils_a23d276a6a535b115394f95db02f382b8} 
+static {\bfseries composer\+Get\+Extras} (string \$key=\textquotesingle{}kint\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_kint_1_1_utils_ac30ecf1bea030a66e4d1772054648c38}{composer\+Skip\+Flags}} ()
+\item 
+\Hypertarget{class_kint_1_1_utils_ad516a4c78e36ea8d3971adb9ce84b3e6}\label{class_kint_1_1_utils_ad516a4c78e36ea8d3971adb9ce84b3e6} 
+static {\bfseries is\+Trace} (array \$trace)
+\item 
+\Hypertarget{class_kint_1_1_utils_af8a4604327b35293fd99d260688b934e}\label{class_kint_1_1_utils_af8a4604327b35293fd99d260688b934e} 
+static {\bfseries trace\+Frame\+Is\+Listed} (array \$frame, array \$matches)
+\item 
+\Hypertarget{class_kint_1_1_utils_a0c06f3213ee3b4efcfca4f0d494e4b08}\label{class_kint_1_1_utils_a0c06f3213ee3b4efcfca4f0d494e4b08} 
+static {\bfseries normalize\+Aliases} (array \&\$aliases)
+\item 
+static \mbox{\hyperlink{class_kint_1_1_utils_a1882b673378ee5459d584c6298a65aac}{truncate\+String}} (string \$input, int \$length=PHP\+\_\+\+INT\+\_\+\+MAX, string \$end=\textquotesingle{}...\textquotesingle{}, \$encoding=false)
+\item 
+\Hypertarget{class_kint_1_1_utils_aa70ef9db015c11109a04660b33f601ba}\label{class_kint_1_1_utils_aa70ef9db015c11109a04660b33f601ba} 
+static {\bfseries get\+Type\+String} (Reflection\+Type \$type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collection of utility methods. Should all be static methods with no dependencies.
+
+@psalm-\/import-\/type Encoding from Blob\+Value 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kint_1_1_utils_ac30ecf1bea030a66e4d1772054648c38}\index{Kint\textbackslash{}Utils@{Kint\textbackslash{}Utils}!composerSkipFlags@{composerSkipFlags}}
+\index{composerSkipFlags@{composerSkipFlags}!Kint\textbackslash{}Utils@{Kint\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{composerSkipFlags()}{composerSkipFlags()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_utils_ac30ecf1bea030a66e4d1772054648c38} 
+static Kint\textbackslash{}\+Utils\+::composer\+Skip\+Flags (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@code\+Coverage\+Ignore \Hypertarget{class_kint_1_1_utils_a09ba38e85ea8b348d0e4af3f68fbedf7}\index{Kint\textbackslash{}Utils@{Kint\textbackslash{}Utils}!getHumanReadableBytes@{getHumanReadableBytes}}
+\index{getHumanReadableBytes@{getHumanReadableBytes}!Kint\textbackslash{}Utils@{Kint\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{getHumanReadableBytes()}{getHumanReadableBytes()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_utils_a09ba38e85ea8b348d0e4af3f68fbedf7} 
+static Kint\textbackslash{}\+Utils\+::get\+Human\+Readable\+Bytes (\begin{DoxyParamCaption}\item[{int}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Turns a byte value into a human-\/readable representation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$value} & Amount of bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Human readable value and unit 
+\end{DoxyReturn}
+\Hypertarget{class_kint_1_1_utils_a1882b673378ee5459d584c6298a65aac}\index{Kint\textbackslash{}Utils@{Kint\textbackslash{}Utils}!truncateString@{truncateString}}
+\index{truncateString@{truncateString}!Kint\textbackslash{}Utils@{Kint\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{truncateString()}{truncateString()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_utils_a1882b673378ee5459d584c6298a65aac} 
+static Kint\textbackslash{}\+Utils\+::truncate\+String (\begin{DoxyParamCaption}\item[{string}]{\$input}{, }\item[{int}]{\$length}{ = {\ttfamily PHP\+\_\+INT\+\_\+MAX}, }\item[{string}]{\$end}{ = {\ttfamily \textquotesingle{}...\textquotesingle{}}, }\item[{}]{\$encoding}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/param Encoding \$encoding 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/Utils.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,221 @@
+\doxysection{Code\+Igniter\textbackslash{}RESTful\textbackslash{}Resource\+Controller Class Reference}
+\hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller}{}\label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}RESTful\textbackslash{}Resource\+Controller\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}RESTful\textbackslash{}Resource\+Controller\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a7a0c2c5a963e612f6ef2275c46243d5d}{index}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a59644886cdae2c2c5e3f10e79ed1265e}{show}} (\$id=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_ac129df029d409cea4863d32622dfb41a}{new}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a13541b53f7ceba41ee23eb73c35bc4cd}{create}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a22004d84b1d2e3c7abdf6c0b0de58d46}{edit}} (\$id=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a962af8eda224cbc32285d3e60fe7a978}{update}} (\$id=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a0ccfd868b0348d312e8e018a9944fbe7}{delete}} (\$id=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_ae7cd7b9e4d404fd00a5fd8ab48c19150}{set\+Format}} (string \$format=\textquotesingle{}json\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource}{Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Base\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a84f3fb60ce57647fe600f6dfa1fd6594}{init\+Controller}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a27797a4f40cf9700853feeedaf2b0cd4}{set\+Model}} (\$which=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_controller}{Code\+Igniter\textbackslash{}\+Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_a92f4d5194dc454b7aad79fdb38d3db30}{force\+HTTPS}} (int \$duration=31\+\_\+536\+\_\+000)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_aecc71f991af606e223e29006d5470036}{cache\+Page}} (int \$time)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_aca21ed18c3d2fa7cbdadd61bbe6dce82}{validate}} (\$rules, array \$messages=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_af519dae459b31be1e692d8c7ff31b785}{validate\+Data}} (array \$data, \$rules, array \$messages=\mbox{[}$\,$\mbox{]}, ?string \$db\+Group=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource}{Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Base\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$request}
+\item 
+{\bfseries \$model\+Name}
+\item 
+{\bfseries \$model}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_controller}{Code\+Igniter\textbackslash{}\+Controller}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$helpers} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$request}
+\item 
+{\bfseries \$response}
+\item 
+{\bfseries \$logger}
+\item 
+{\bfseries \$force\+HTTPS} = 0
+\item 
+{\bfseries \$validator}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An extendable controller to provide a RESTful API for a resource.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a13541b53f7ceba41ee23eb73c35bc4cd}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}!create@{create}}
+\index{create@{create}!CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a13541b53f7ceba41ee23eb73c35bc4cd} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+::create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a new resource object, from "{}posted"{} parameters
+
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_app_1_1_controllers_1_1_clasificacion_controller_a693911d7566868bc0895021d4ad86499}{App\textbackslash{}\+Controllers\textbackslash{}\+Clasificacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_condicion_paciente_controller_a4cd287eb3ce88d69542bfe88e6f5f2f3}{App\textbackslash{}\+Controllers\textbackslash{}\+Condicion\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_disponibilidad_controller_a97ab5f76653ef83101bfb35c5d9a61c1}{App\textbackslash{}\+Controllers\textbackslash{}\+Disponibilidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_equipo_medico_controller_a859569dac4aec20e48444179f529a878}{App\textbackslash{}\+Controllers\textbackslash{}\+Equipo\+Medico\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estado_solicitud_controller_ae06716708becb33b0ddfc60ac778742b}{App\textbackslash{}\+Controllers\textbackslash{}\+Estado\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estamento_controller_a9b7b4302115ad027a476cc46a9746dba}{App\textbackslash{}\+Controllers\textbackslash{}\+Estamento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_controller_a45b6e5307b87be36172546ac2ed23d7c}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_sala_controller_a6d217833120f4778b27b82468c54c022}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_licitacion_controller_a622a596706c3fa1055a47d6cc3c9ba39}{App\textbackslash{}\+Controllers\textbackslash{}\+Licitacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_lote_controller_ac4f11e27f7103387a080543ca550c6a0}{App\textbackslash{}\+Controllers\textbackslash{}\+Lote\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_mantencion_equipo_controller_a6f5bee6aca2546621da9f48751fa9fb9}{App\textbackslash{}\+Controllers\textbackslash{}\+Mantencion\+Equipo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_paciente_controller_ae0fa4dd75721fee5de61aadbd95302f0}{App\textbackslash{}\+Controllers\textbackslash{}\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_perfil_controller_a4b54acf9e806efe2125a8a9a5004798b}{App\textbackslash{}\+Controllers\textbackslash{}\+Perfil\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_prestacion_controller_a0b49eff29a128a3b4d38e2ba91916c26}{App\textbackslash{}\+Controllers\textbackslash{}\+Prestacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedencia_controller_a4bd9450826f419ba532b561f9daca9a4}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedencia\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedimiento_controller_a579f34ec9673296ab978d55aab4974fb}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedimiento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_proveedor_controller_a975cc403fc8e474bb03de2e093b5a809}{App\textbackslash{}\+Controllers\textbackslash{}\+Proveedor\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_sala_controller_a27f40bcd125e8038858e416531d686ef}{App\textbackslash{}\+Controllers\textbackslash{}\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_solicitud_controller_ae087c3b8ceba7e3124f88950ea1e27fe}{App\textbackslash{}\+Controllers\textbackslash{}\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_subunidad_controller_aa1fa958a5f433555cb1288bd97a6fb2b}{App\textbackslash{}\+Controllers\textbackslash{}\+Subunidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_compra_controller_a884b34d0266179b51678dddbebaf07d1}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Compra\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_mantencion_controller_a090da022eab6e5c7259282027adff5aa}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Mantencion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_registro_controller_a536bc29d48df28efeb815ada8acb4766}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Registro\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_uso_paciente_controller_a51d2022f2ea2d0222378577fe2022da9}{App\textbackslash{}\+Controllers\textbackslash{}\+Uso\+Paciente\+Controller}}, and \mbox{\hyperlink{class_app_1_1_controllers_1_1_usuario_controller_ae57ad41d1311842173a1e87ca75aa46a}{App\textbackslash{}\+Controllers\textbackslash{}\+Usuario\+Controller}}.
+
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a0ccfd868b0348d312e8e018a9944fbe7}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}!delete@{delete}}
+\index{delete@{delete}!CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a0ccfd868b0348d312e8e018a9944fbe7} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+::delete (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Delete the designated resource object from the model
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string | null & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_app_1_1_controllers_1_1_clasificacion_controller_a5e8e7985b782710e7e571eda926e315b}{App\textbackslash{}\+Controllers\textbackslash{}\+Clasificacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_condicion_paciente_controller_ac4e36fd71fae8c26f5fb44837078ee07}{App\textbackslash{}\+Controllers\textbackslash{}\+Condicion\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_disponibilidad_controller_a0630e857b1d5a2030c45afd6e7af3041}{App\textbackslash{}\+Controllers\textbackslash{}\+Disponibilidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_equipo_medico_controller_a6733fe763a436f7553eca06924c599de}{App\textbackslash{}\+Controllers\textbackslash{}\+Equipo\+Medico\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estado_solicitud_controller_acae9ec853713082407ab1b97bfa5df36}{App\textbackslash{}\+Controllers\textbackslash{}\+Estado\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estamento_controller_a08c36d8140202714a0b1eea545d8cf89}{App\textbackslash{}\+Controllers\textbackslash{}\+Estamento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_controller_aec8b4ebae57382e106b08c0d364163c2}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_sala_controller_a62eead1cbe0a141c667d694059327ed6}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_licitacion_controller_a2f4e7b0a2f883f3a0f035e3e25827a39}{App\textbackslash{}\+Controllers\textbackslash{}\+Licitacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_lote_controller_ae78ca28ce853f7b6629cc104f75108aa}{App\textbackslash{}\+Controllers\textbackslash{}\+Lote\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_mantencion_equipo_controller_a690c55e56458373dbb3a5e5c6ea9974f}{App\textbackslash{}\+Controllers\textbackslash{}\+Mantencion\+Equipo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_paciente_controller_a5b3d4f640dc7cd5809feb1b1bd932d02}{App\textbackslash{}\+Controllers\textbackslash{}\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_perfil_controller_a05f8eb9e89617704323055769762968c}{App\textbackslash{}\+Controllers\textbackslash{}\+Perfil\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_prestacion_controller_a03ed8f6058a87a610a6f9cc415c6f53f}{App\textbackslash{}\+Controllers\textbackslash{}\+Prestacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedencia_controller_ac3083561aaf973efae2b315355502546}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedencia\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedimiento_controller_a76dac5105e88c8d28e739b9ea008f232}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedimiento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_proveedor_controller_aa705d92af380ef970a27af3a9bd84353}{App\textbackslash{}\+Controllers\textbackslash{}\+Proveedor\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_sala_controller_ac23de6f872eab432c391d2d4e19e3898}{App\textbackslash{}\+Controllers\textbackslash{}\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_solicitud_controller_aae76305224fba15f5d40b399ff206f44}{App\textbackslash{}\+Controllers\textbackslash{}\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_subunidad_controller_a19160f7acdf10c9d31be6f6bee11b41e}{App\textbackslash{}\+Controllers\textbackslash{}\+Subunidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_compra_controller_afacbe4f910ddb346a5f1a42066e8f98e}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Compra\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_mantencion_controller_a4109d6d3277eb4d95badb19e8b64f1e8}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Mantencion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_registro_controller_a85b56daa4082d83e3a7f95f8e89dc82b}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Registro\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_uso_paciente_controller_aff3096114d755a1d7d35d3ae14b5df95}{App\textbackslash{}\+Controllers\textbackslash{}\+Uso\+Paciente\+Controller}}, and \mbox{\hyperlink{class_app_1_1_controllers_1_1_usuario_controller_a4e9af53c070ee3910f1dfefe81f2ed8b}{App\textbackslash{}\+Controllers\textbackslash{}\+Usuario\+Controller}}.
+
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a22004d84b1d2e3c7abdf6c0b0de58d46}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}!edit@{edit}}
+\index{edit@{edit}!CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a22004d84b1d2e3c7abdf6c0b0de58d46} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+::edit (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Return the editable properties of a resource object
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string | null & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_app_1_1_controllers_1_1_clasificacion_controller_a5f7a6578d18dbc5ed8c3237089cd13d6}{App\textbackslash{}\+Controllers\textbackslash{}\+Clasificacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_condicion_paciente_controller_a4359f983b37b9f1b9be773742a5d408b}{App\textbackslash{}\+Controllers\textbackslash{}\+Condicion\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_disponibilidad_controller_a661ef0e4a743b2cd1a839cf62fe1cf7e}{App\textbackslash{}\+Controllers\textbackslash{}\+Disponibilidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_equipo_medico_controller_a080b304cef5ffbeb7b0d8cc5947758d8}{App\textbackslash{}\+Controllers\textbackslash{}\+Equipo\+Medico\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estado_solicitud_controller_ac9d2331aa5e3590394f14092fa5515ef}{App\textbackslash{}\+Controllers\textbackslash{}\+Estado\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estamento_controller_af3a1d7a8acd48863d5b347a1057d6f87}{App\textbackslash{}\+Controllers\textbackslash{}\+Estamento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_controller_a6a4e5ae92bcb07fe552031c35bf21425}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_sala_controller_ab6d3ac11521ee5acf4c646f1fd7d23e1}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_licitacion_controller_a8e0633b76c065556b1eeab74c89dee1f}{App\textbackslash{}\+Controllers\textbackslash{}\+Licitacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_lote_controller_a3f42cdca4f25ffd7cc945f2b0776c961}{App\textbackslash{}\+Controllers\textbackslash{}\+Lote\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_mantencion_equipo_controller_a514a80baa6bb58a8b386ac1f81133e3f}{App\textbackslash{}\+Controllers\textbackslash{}\+Mantencion\+Equipo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_paciente_controller_a7524953be30bd7bac383d102b3868140}{App\textbackslash{}\+Controllers\textbackslash{}\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_perfil_controller_a9a6508b96df4486e9bec6770d596b19d}{App\textbackslash{}\+Controllers\textbackslash{}\+Perfil\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_prestacion_controller_ae9e57ba8c6451febaeeebf45557dcc04}{App\textbackslash{}\+Controllers\textbackslash{}\+Prestacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedencia_controller_ac54a5da4d7426fb568226c6b92ccf1e4}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedencia\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedimiento_controller_a5363d02808e326714523fc7db09bbac6}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedimiento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_proveedor_controller_a53d3f7aa422e362c77286809db054a68}{App\textbackslash{}\+Controllers\textbackslash{}\+Proveedor\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_sala_controller_a3e5e893b6d86e20cdbcbea2d0c9ed7de}{App\textbackslash{}\+Controllers\textbackslash{}\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_solicitud_controller_ad7187e9e3bfd928ac341bc76fce6261e}{App\textbackslash{}\+Controllers\textbackslash{}\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_subunidad_controller_a0ebfa24208fbaad71f0cffa920c20cbd}{App\textbackslash{}\+Controllers\textbackslash{}\+Subunidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_compra_controller_adc8a7cb3915a991ea231eb4c13464a38}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Compra\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_mantencion_controller_ab5ae151f02a8e7bae8ccfcdf34580e7b}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Mantencion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_registro_controller_a4b560f3cf356e95fb8b328ebe133c631}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Registro\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_uso_paciente_controller_a34e01c0ae2f7095c00a60550e5ff1908}{App\textbackslash{}\+Controllers\textbackslash{}\+Uso\+Paciente\+Controller}}, and \mbox{\hyperlink{class_app_1_1_controllers_1_1_usuario_controller_aff053fcadc230838c9e9603fe444e044}{App\textbackslash{}\+Controllers\textbackslash{}\+Usuario\+Controller}}.
+
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a7a0c2c5a963e612f6ef2275c46243d5d}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}!index@{index}}
+\index{index@{index}!CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a7a0c2c5a963e612f6ef2275c46243d5d} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+::index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return an array of resource objects, themselves in array format
+
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_app_1_1_controllers_1_1_clasificacion_controller_a94f327aed8d5c0f741024737f8bba42b}{App\textbackslash{}\+Controllers\textbackslash{}\+Clasificacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_condicion_paciente_controller_a761404b9a6fc9ce27e991472e1e29d2b}{App\textbackslash{}\+Controllers\textbackslash{}\+Condicion\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_disponibilidad_controller_a6cb7327a15bd24577d468dad7cf26a40}{App\textbackslash{}\+Controllers\textbackslash{}\+Disponibilidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_equipo_medico_controller_a471d5c1612ba6c7302ac3e9a9d14f323}{App\textbackslash{}\+Controllers\textbackslash{}\+Equipo\+Medico\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estado_solicitud_controller_a06c38f85a3e7ce1fca37707c7c64c86b}{App\textbackslash{}\+Controllers\textbackslash{}\+Estado\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estamento_controller_a05f029118f475432e7cd8f8be4fe66df}{App\textbackslash{}\+Controllers\textbackslash{}\+Estamento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_controller_a39b7ade0655fcdb2f14cadf7325b2f05}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_sala_controller_a82b3d78ea47d2d55aa70a269da408fdf}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_licitacion_controller_a62815347c56b2debedcf561cfb918055}{App\textbackslash{}\+Controllers\textbackslash{}\+Licitacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_lote_controller_ae3adf96138aea90f01dbabbfdc78cc40}{App\textbackslash{}\+Controllers\textbackslash{}\+Lote\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_mantencion_equipo_controller_ae803b27f323c37664e314fe5402735a4}{App\textbackslash{}\+Controllers\textbackslash{}\+Mantencion\+Equipo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_paciente_controller_ad256ac558d376f13e50541ee4ca4a7f0}{App\textbackslash{}\+Controllers\textbackslash{}\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_perfil_controller_ab3fc07548a1379fea16c5fc33f92264f}{App\textbackslash{}\+Controllers\textbackslash{}\+Perfil\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_prestacion_controller_add7b5d6eae320b578a589eef58deff12}{App\textbackslash{}\+Controllers\textbackslash{}\+Prestacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedencia_controller_a624d69be52178ebf390b5be2f4637312}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedencia\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedimiento_controller_ac0090ef008258989e28b709ad49bc538}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedimiento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_proveedor_controller_aabe2cdbe0e4c929573b70d3671627e89}{App\textbackslash{}\+Controllers\textbackslash{}\+Proveedor\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_sala_controller_a267778157183404a85979adf1ee33ca5}{App\textbackslash{}\+Controllers\textbackslash{}\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_solicitud_controller_a6a2a8de946504261f7add2f8e659c044}{App\textbackslash{}\+Controllers\textbackslash{}\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_subunidad_controller_a8b0b3a4aa9bf4e6a1c48b4b9723c693e}{App\textbackslash{}\+Controllers\textbackslash{}\+Subunidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_compra_controller_aa1ee60708823ee1a5e068314a46759c3}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Compra\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_mantencion_controller_aa485eb5e846200d99513183ffd889610}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Mantencion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_registro_controller_a494593ba9a5e5989efbee7e13a6a02d0}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Registro\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_uso_paciente_controller_af25d6634b29c9590347805b029a8207e}{App\textbackslash{}\+Controllers\textbackslash{}\+Uso\+Paciente\+Controller}}, and \mbox{\hyperlink{class_app_1_1_controllers_1_1_usuario_controller_a71499f2b6d9273941db725691ef30b50}{App\textbackslash{}\+Controllers\textbackslash{}\+Usuario\+Controller}}.
+
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_ac129df029d409cea4863d32622dfb41a}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}!new@{new}}
+\index{new@{new}!CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+\doxysubsubsection{\texorpdfstring{new()}{new()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_ac129df029d409cea4863d32622dfb41a} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+::new (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return a new resource object, with default properties
+
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_ae7cd7b9e4d404fd00a5fd8ab48c19150}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}!setFormat@{setFormat}}
+\index{setFormat@{setFormat}!CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+\doxysubsubsection{\texorpdfstring{setFormat()}{setFormat()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_ae7cd7b9e4d404fd00a5fd8ab48c19150} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+::set\+Format (\begin{DoxyParamCaption}\item[{string}]{\$format}{ = {\ttfamily \textquotesingle{}json\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Set/change the expected response representation for returned objects
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format} & Response format @phpstan-\/param \textquotesingle{}json\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}xml\textquotesingle{} \$format\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a59644886cdae2c2c5e3f10e79ed1265e}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}!show@{show}}
+\index{show@{show}!CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a59644886cdae2c2c5e3f10e79ed1265e} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+::show (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Return the properties of a resource object
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string | null & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a962af8eda224cbc32285d3e60fe7a978}\index{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}!update@{update}}
+\index{update@{update}!CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController@{CodeIgniter\textbackslash{}RESTful\textbackslash{}ResourceController}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_r_e_s_tful_1_1_resource_controller_a962af8eda224cbc32285d3e60fe7a978} 
+Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Resource\+Controller\+::update (\begin{DoxyParamCaption}\item[{}]{\$id}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add or update a model resource, from "{}posted"{} properties
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string | null & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_app_1_1_controllers_1_1_clasificacion_controller_a1a91ac026d3dd490f054915e90f26f8a}{App\textbackslash{}\+Controllers\textbackslash{}\+Clasificacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_condicion_paciente_controller_a43ded615dbc0959a565d3192126e6418}{App\textbackslash{}\+Controllers\textbackslash{}\+Condicion\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_disponibilidad_controller_a175079dbe09910ca58bfe71fe43a136b}{App\textbackslash{}\+Controllers\textbackslash{}\+Disponibilidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_equipo_medico_controller_a3000ddd6d042de8cf01e2040e205d8a2}{App\textbackslash{}\+Controllers\textbackslash{}\+Equipo\+Medico\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estado_solicitud_controller_ac527c0b01e56f0a43ffcf54863345d2b}{App\textbackslash{}\+Controllers\textbackslash{}\+Estado\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_estamento_controller_ab10007fb1e2eef4a37e226f88f7e4db6}{App\textbackslash{}\+Controllers\textbackslash{}\+Estamento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_controller_a3f101e223b6c633a04a29ee4d5ee2d10}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_insumo_sala_controller_a51bb6b872ad1b02759e5b278f6550dba}{App\textbackslash{}\+Controllers\textbackslash{}\+Insumo\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_licitacion_controller_a916c87a11df483bd13b5c40c1ab73f9d}{App\textbackslash{}\+Controllers\textbackslash{}\+Licitacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_lote_controller_aea0d6c00e22d105ca8adc1d00ae3219f}{App\textbackslash{}\+Controllers\textbackslash{}\+Lote\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_mantencion_equipo_controller_a61604c3959077db8542470e4effdb727}{App\textbackslash{}\+Controllers\textbackslash{}\+Mantencion\+Equipo\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_paciente_controller_ad25cd7f8cb2cd7500b72704b730565b2}{App\textbackslash{}\+Controllers\textbackslash{}\+Paciente\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_perfil_controller_a117a69d9d6ca0ad4c55df88403f7bca3}{App\textbackslash{}\+Controllers\textbackslash{}\+Perfil\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_prestacion_controller_a33235aea1e09c2ae10bf422e91dd8d8b}{App\textbackslash{}\+Controllers\textbackslash{}\+Prestacion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedencia_controller_ad5df5f0393924623fa80765c88f2fc41}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedencia\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_procedimiento_controller_a2f9146a873648f898689edcc92babf38}{App\textbackslash{}\+Controllers\textbackslash{}\+Procedimiento\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_proveedor_controller_a7652d66554d8b712c0e503ab8e0a248e}{App\textbackslash{}\+Controllers\textbackslash{}\+Proveedor\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_sala_controller_a34e7d0e9e61887c71a411a6fc5c63429}{App\textbackslash{}\+Controllers\textbackslash{}\+Sala\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_solicitud_controller_a919a87e333a441b2cc04cf53f32f6f70}{App\textbackslash{}\+Controllers\textbackslash{}\+Solicitud\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_subunidad_controller_a811afe485d8be089026d812b50b4e988}{App\textbackslash{}\+Controllers\textbackslash{}\+Subunidad\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_compra_controller_a210c80be6a8486ca2284ddafd7e78e1c}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Compra\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_mantencion_controller_ada45f5d3925cd00cfa5b1035276b0a21}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Mantencion\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_tipo_registro_controller_ab17442ad62b5a0c0d6c2a22016dcc0df}{App\textbackslash{}\+Controllers\textbackslash{}\+Tipo\+Registro\+Controller}}, \mbox{\hyperlink{class_app_1_1_controllers_1_1_uso_paciente_controller_ac103e888e280192193ba94da8b6ed655}{App\textbackslash{}\+Controllers\textbackslash{}\+Uso\+Paciente\+Controller}}, and \mbox{\hyperlink{class_app_1_1_controllers_1_1_usuario_controller_a714d109e6f22bb1aeaefa6dac9a4d264}{App\textbackslash{}\+Controllers\textbackslash{}\+Usuario\+Controller}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+RESTful/Resource\+Controller.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,190 @@
+\doxysection{Code\+Igniter\textbackslash{}Autoloader\textbackslash{}File\+Locator Class Reference}
+\hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator}{}\label{class_code_igniter_1_1_autoloader_1_1_file_locator}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Autoloader\textbackslash{}File\+Locator\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Autoloader\textbackslash{}File\+Locator\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_aff138c675de812666e79d6ad6bbc0761}\label{class_code_igniter_1_1_autoloader_1_1_file_locator_aff138c675de812666e79d6ad6bbc0761} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_autoloader}{Autoloader}} \$autoloader)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_a5eafd6168b53a51daa250d54f2c1c38e}{locate\+File}} (string \$file, ?string \$folder=null, string \$ext=\textquotesingle{}php\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_ac7454971ae82dfd28f88e8cab898bc25}{get\+Classname}} (string \$file)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_ad7682186565b3a4907ea693a110c3465}{search}} (string \$path, string \$ext=\textquotesingle{}php\textquotesingle{}, bool \$prioritize\+App=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_afa19253c1dcd08a8e2c16c4f9692301f}{find\+Qualified\+Name\+From\+Path}} (string \$path)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_a74dee658f29442aa60ef5462cf8ec7d5}{list\+Files}} (string \$path)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_af9c4b2b89bd5ba10a881ba5aa6a84ac1}{list\+Namespace\+Files}} (string \$prefix, string \$path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_afb38dce1cd53125462658f8896ccdd4b}{ensure\+Ext}} (string \$path, string \$ext)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_a42d5e6c463e4e29d0937c1e43856c53a}{get\+Namespaces}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_autoloader_1_1_file_locator_a2e7a6de29d95faff254554e08636c899}{legacy\+Locate}} (string \$file, ?string \$folder=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_a68d6f72b2ff06039a799ce8d66f5c3db}\label{class_code_igniter_1_1_autoloader_1_1_file_locator_a68d6f72b2ff06039a799ce8d66f5c3db} 
+{\bfseries \$autoloader}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows loading non-\/class files in a namespaced manner. Works with Helpers, Views, etc.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_afb38dce1cd53125462658f8896ccdd4b}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!ensureExt@{ensureExt}}
+\index{ensureExt@{ensureExt}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{ensureExt()}{ensureExt()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_afb38dce1cd53125462658f8896ccdd4b} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::ensure\+Ext (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$ext}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensures a extension is at the end of a filename \Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_afa19253c1dcd08a8e2c16c4f9692301f}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!findQualifiedNameFromPath@{findQualifiedNameFromPath}}
+\index{findQualifiedNameFromPath@{findQualifiedNameFromPath}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{findQualifiedNameFromPath()}{findQualifiedNameFromPath()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_afa19253c1dcd08a8e2c16c4f9692301f} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::find\+Qualified\+Name\+From\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+Find the qualified name of a file according to the namespace of the first matched namespace path.
+
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string The qualified name or false if the path is not found 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_autoloader_1_1_file_locator_interface_a9da0d67d0705aec0761e266ba0c64cc6}{Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_ac7454971ae82dfd28f88e8cab898bc25}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!getClassname@{getClassname}}
+\index{getClassname@{getClassname}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{getClassname()}{getClassname()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_ac7454971ae82dfd28f88e8cab898bc25} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::get\+Classname (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})}
+
+Examines a file and returns the fully qualified class name. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_autoloader_1_1_file_locator_interface_aa329527a25400875b228f93046f8571d}{Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_a42d5e6c463e4e29d0937c1e43856c53a}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!getNamespaces@{getNamespaces}}
+\index{getNamespaces@{getNamespaces}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{getNamespaces()}{getNamespaces()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_a42d5e6c463e4e29d0937c1e43856c53a} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::get\+Namespaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return the namespace mappings we know about.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, array$<$string, string$>$$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_a2e7a6de29d95faff254554e08636c899}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!legacyLocate@{legacyLocate}}
+\index{legacyLocate@{legacyLocate}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{legacyLocate()}{legacyLocate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_a2e7a6de29d95faff254554e08636c899} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::legacy\+Locate (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{?string}]{\$folder}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks the app folder to see if the file can be found. Only for use with filenames that DO NOT include namespacing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string | null & {\em \$folder} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string The path to the file, or false if not found. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_a74dee658f29442aa60ef5462cf8ec7d5}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!listFiles@{listFiles}}
+\index{listFiles@{listFiles}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{listFiles()}{listFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_a74dee658f29442aa60ef5462cf8ec7d5} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::list\+Files (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+Scans the defined namespaces, returning a list of all files that are contained within the subpath specified by \$path.
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ List of file paths 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_autoloader_1_1_file_locator_interface_ab2d3f17567826de86573e46534fb9880}{Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_af9c4b2b89bd5ba10a881ba5aa6a84ac1}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!listNamespaceFiles@{listNamespaceFiles}}
+\index{listNamespaceFiles@{listNamespaceFiles}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{listNamespaceFiles()}{listNamespaceFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_af9c4b2b89bd5ba10a881ba5aa6a84ac1} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::list\+Namespace\+Files (\begin{DoxyParamCaption}\item[{string}]{\$prefix}{, }\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+Scans the provided namespace, returning a list of all files that are contained within the sub path specified by \$path.
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ List of file paths 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_autoloader_1_1_file_locator_interface_a00a5031581407b74c84da5cba49deca9}{Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_a5eafd6168b53a51daa250d54f2c1c38e}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!locateFile@{locateFile}}
+\index{locateFile@{locateFile}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{locateFile()}{locateFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_a5eafd6168b53a51daa250d54f2c1c38e} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::locate\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{?string}]{\$folder}{ = {\ttfamily null}, }\item[{string}]{\$ext}{ = {\ttfamily \textquotesingle{}php\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Attempts to locate a file by examining the name for a namespace and looking through the PSR-\/4 namespaced files that we know about.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & The relative file path or namespaced file to locate. If not namespaced, search in the app folder. \\
+\hline
+non-\/empty-\/string | null & {\em \$folder} & The folder within the namespace that we should look for the file. If \$file does not contain this value, it will be appended to the namespace folder. \\
+\hline
+string & {\em \$ext} & The file extension the file should have.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string The path to the file, or false if not found. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_autoloader_1_1_file_locator_interface_af119b1ea44243a2c50147790245ce407}{Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_autoloader_1_1_file_locator_ad7682186565b3a4907ea693a110c3465}\index{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}!search@{search}}
+\index{search@{search}!CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator@{CodeIgniter\textbackslash{}Autoloader\textbackslash{}FileLocator}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_autoloader_1_1_file_locator_ad7682186565b3a4907ea693a110c3465} 
+Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+::search (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$ext}{ = {\ttfamily \textquotesingle{}php\textquotesingle{}}, }\item[{bool}]{\$prioritize\+App}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Searches through all of the defined namespaces looking for a file. Returns an array of all found locations for the defined file.
+
+Example\+:
+
+\$locator-\/\texorpdfstring{$>$}{>}search(\textquotesingle{}Config/\+Routes.\+php\textquotesingle{}); // Assuming PSR4 namespaces include foo and bar, might return\+: \mbox{[} \textquotesingle{}app/\+Modules/foo/\+Config/\+Routes.\+php\textquotesingle{}, \textquotesingle{}app/\+Modules/bar/\+Config/\+Routes.\+php\textquotesingle{}, \mbox{]}
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_autoloader_1_1_file_locator_interface_af41c28355dd8b34e2df67a45489a0ed8}{Code\+Igniter\textbackslash{}\+Autoloader\textbackslash{}\+File\+Locator\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Autoloader/File\+Locator.\+php\end{DoxyCompactItemize}

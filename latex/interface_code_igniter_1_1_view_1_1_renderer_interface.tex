@@ -1,0 +1,123 @@
+\doxysection{Code\+Igniter\textbackslash{}View\textbackslash{}Renderer\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_view_1_1_renderer_interface}{}\label{interface_code_igniter_1_1_view_1_1_renderer_interface}\index{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}View\textbackslash{}Renderer\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_af0d5ee5544d5f69d4d30e85873904119}{render}} (string \$view, ?array \$options=null, bool \$save\+Data=false)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_ad9d79ff3a1c6eb85619f64cfc59ab60d}{render\+String}} (string \$view, ?array \$options=null, bool \$save\+Data=false)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_a5cfeb8734f6ee04b62cde7d1be635882}{set\+Data}} (array \$data=\mbox{[}$\,$\mbox{]}, ?string \$context=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_a01a2897ddd9f62b4260542e9bae64ed0}{set\+Var}} (string \$name, \$value=null, ?string \$context=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface_aabd4f7eca8a5cc7ceb7ee3a4cfd9a8e4}{reset\+Data}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface Renderer\+Interface
+
+The interface used for displaying Views and/or theme files. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_view_1_1_renderer_interface_af0d5ee5544d5f69d4d30e85873904119}\index{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}!render@{render}}
+\index{render@{render}!CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_view_1_1_renderer_interface_af0d5ee5544d5f69d4d30e85873904119} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface\+::render (\begin{DoxyParamCaption}\item[{string}]{\$view}{, }\item[{?array}]{\$options}{ = {\ttfamily null}, }\item[{bool}]{\$save\+Data}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Builds the output based upon a file name and any data that has already been set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$options Reserved for 3rd-\/party uses since it might be needed to pass additional info to other template engines. \\
+\hline
+bool & {\em \$save\+Data} & Whether to save data for subsequent calls \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_code_igniter_1_1_view_1_1_renderer_interface_ad9d79ff3a1c6eb85619f64cfc59ab60d}\index{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}!renderString@{renderString}}
+\index{renderString@{renderString}!CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}}
+\doxysubsubsection{\texorpdfstring{renderString()}{renderString()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_view_1_1_renderer_interface_ad9d79ff3a1c6eb85619f64cfc59ab60d} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface\+::render\+String (\begin{DoxyParamCaption}\item[{string}]{\$view}{, }\item[{?array}]{\$options}{ = {\ttfamily null}, }\item[{bool}]{\$save\+Data}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Builds the output based upon a string and any data that has already been set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$view} & The view contents \\
+\hline
+ & {\em array$<$string,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$options Reserved for 3rd-\/party uses since it might be needed to pass additional info to other template engines. \\
+\hline
+bool & {\em \$save\+Data} & Whether to save data for subsequent calls \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_code_igniter_1_1_view_1_1_renderer_interface_aabd4f7eca8a5cc7ceb7ee3a4cfd9a8e4}\index{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}!resetData@{resetData}}
+\index{resetData@{resetData}!CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}}
+\doxysubsubsection{\texorpdfstring{resetData()}{resetData()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_view_1_1_renderer_interface_aabd4f7eca8a5cc7ceb7ee3a4cfd9a8e4} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface\+::reset\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Removes all of the view data from the system.
+
+\begin{DoxyReturn}{Returns}
+Renderer\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_ad5e6c822e4bc45dfeb6c09cd70e07b31}{Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View}}.
+
+\Hypertarget{interface_code_igniter_1_1_view_1_1_renderer_interface_a5cfeb8734f6ee04b62cde7d1be635882}\index{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}!setData@{setData}}
+\index{setData@{setData}!CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_view_1_1_renderer_interface_a5cfeb8734f6ee04b62cde7d1be635882} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface\+::set\+Data (\begin{DoxyParamCaption}\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets several pieces of view data at once.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string,mixed$>$} & \$data \\
+\hline
+non-\/empty-\/string | null & {\em \$context} & The context to escape it for. If \textquotesingle{}raw\textquotesingle{}, no escaping will happen. @phpstan-\/param null\texorpdfstring{$\vert$}{|}\textquotesingle{}html\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}js\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}css\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}url\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}attr\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}raw\textquotesingle{} \$context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Renderer\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_a4b68e4111ca8dcbb48f548c938d1eacc}{Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View}}.
+
+\Hypertarget{interface_code_igniter_1_1_view_1_1_renderer_interface_a01a2897ddd9f62b4260542e9bae64ed0}\index{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}!setVar@{setVar}}
+\index{setVar@{setVar}!CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface@{CodeIgniter\textbackslash{}View\textbackslash{}RendererInterface}}
+\doxysubsubsection{\texorpdfstring{setVar()}{setVar()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_view_1_1_renderer_interface_a01a2897ddd9f62b4260542e9bae64ed0} 
+Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Renderer\+Interface\+::set\+Var (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$value}{ = {\ttfamily null}, }\item[{?string}]{\$context}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets a single piece of view data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+non-\/empty-\/string | null & {\em \$context} & The context to escape it for. If \textquotesingle{}raw\textquotesingle{}, no escaping will happen. @phpstan-\/param null\texorpdfstring{$\vert$}{|}\textquotesingle{}html\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}js\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}css\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}url\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}attr\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}raw\textquotesingle{} \$context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Renderer\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_view_ae36db34c6591eba85021cf2cf9d32492}{Code\+Igniter\textbackslash{}\+View\textbackslash{}\+View}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+View/Renderer\+Interface.\+php\end{DoxyCompactItemize}

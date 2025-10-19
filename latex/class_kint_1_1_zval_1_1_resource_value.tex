@@ -1,0 +1,135 @@
+\doxysection{Kint\textbackslash{}Zval\textbackslash{}Resource\+Value Class Reference}
+\hypertarget{class_kint_1_1_zval_1_1_resource_value}{}\label{class_kint_1_1_zval_1_1_resource_value}\index{Kint\textbackslash{}Zval\textbackslash{}ResourceValue@{Kint\textbackslash{}Zval\textbackslash{}ResourceValue}}
+
+
+Inheritance diagram for Kint\textbackslash{}Zval\textbackslash{}Resource\+Value\+:
+% FIG 0
+
+
+Collaboration diagram for Kint\textbackslash{}Zval\textbackslash{}Resource\+Value\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_zval_1_1_resource_value_a18f98139479005eb20882a4e456b2369}{get\+Type}} ()
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_resource_value_a1b7ef56b7e98d5a635243127b0dae578}\label{class_kint_1_1_zval_1_1_resource_value_a1b7ef56b7e98d5a635243127b0dae578} 
+{\bfseries transplant} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$old)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries add\+Representation} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_representation_1_1_representation}{Representation}} \$rep, int \$pos=null)
+\item 
+{\bfseries replace\+Representation} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_representation_1_1_representation}{Representation}} \$rep, int \$pos=null)
+\item 
+\mbox{\hyperlink{class_kint_1_1_zval_1_1_value_a208404a998e6f9df17424a82fbe7b496}{remove\+Representation}} (\$rep)
+\item 
+{\bfseries get\+Representation} (string \$name)
+\item 
+{\bfseries get\+Representations} ()
+\item 
+{\bfseries clear\+Representations} ()
+\item 
+{\bfseries get\+Modifiers} ()
+\item 
+{\bfseries get\+Access} ()
+\item 
+{\bfseries get\+Name} ()
+\item 
+{\bfseries get\+Operator} ()
+\item 
+{\bfseries get\+Size} ()
+\item 
+{\bfseries get\+Value\+Short} ()
+\item 
+{\bfseries get\+Access\+Path} ()
+\item 
+{\bfseries transplant} (self \$old)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_resource_value_a8036669edd7e8df32e7b7be4693e3498}\label{class_kint_1_1_zval_1_1_resource_value_a8036669edd7e8df32e7b7be4693e3498} 
+{\bfseries \$resource\+\_\+type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries ACCESS\+\_\+\+NONE} = null
+\item 
+const {\bfseries ACCESS\+\_\+\+PUBLIC} = 1
+\item 
+const {\bfseries ACCESS\+\_\+\+PROTECTED} = 2
+\item 
+const {\bfseries ACCESS\+\_\+\+PRIVATE} = 3
+\item 
+const {\bfseries OPERATOR\+\_\+\+NONE} = null
+\item 
+const {\bfseries OPERATOR\+\_\+\+ARRAY} = 1
+\item 
+const {\bfseries OPERATOR\+\_\+\+OBJECT} = 2
+\item 
+const {\bfseries OPERATOR\+\_\+\+STATIC} = 3
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$type}
+\item 
+{\bfseries \$readonly} = false
+\item 
+{\bfseries \$static} = false
+\item 
+{\bfseries \$const} = false
+\item 
+{\bfseries \$access} = self\+::\+ACCESS\+\_\+\+NONE
+\item 
+{\bfseries \$owner\+\_\+class} = null
+\item 
+{\bfseries \$access\+\_\+path}
+\item 
+{\bfseries \$operator} = self\+::\+OPERATOR\+\_\+\+NONE
+\item 
+{\bfseries \$reference} = false
+\item 
+{\bfseries \$depth} = 0
+\item 
+{\bfseries \$size}
+\item 
+{\bfseries \$hints} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$value}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_zval_1_1_value_aeb4ce455ec49d20ad2c0eddc79278cdb}{blank}} (string \$name=null, string \$access\+\_\+path=null)
+\item 
+static {\bfseries sort\+By\+Access} (self \$a, self \$b)
+\item 
+static {\bfseries sort\+By\+Name} (self \$a, self \$b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$representations} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kint_1_1_zval_1_1_resource_value_a18f98139479005eb20882a4e456b2369}\index{Kint\textbackslash{}Zval\textbackslash{}ResourceValue@{Kint\textbackslash{}Zval\textbackslash{}ResourceValue}!getType@{getType}}
+\index{getType@{getType}!Kint\textbackslash{}Zval\textbackslash{}ResourceValue@{Kint\textbackslash{}Zval\textbackslash{}ResourceValue}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_zval_1_1_resource_value_a18f98139479005eb20882a4e456b2369} 
+Kint\textbackslash{}\+Zval\textbackslash{}\+Resource\+Value\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/\+Zval/Resource\+Value.\+php\end{DoxyCompactItemize}

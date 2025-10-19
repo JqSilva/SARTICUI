@@ -1,0 +1,72 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Cors Class Reference}
+\hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_cors}{}\label{class_code_igniter_1_1_h_t_t_p_1_1_cors}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_cors_a1a2ef71009509eb40f957ffe88fcb636}{\+\_\+\+\_\+construct}} (\$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_cors_a65e83b21c996d5a58c85231d6e4f849f}{is\+Preflight\+Request}} (\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request}{Incoming\+Request}} \$request)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_cors_a39e3b4a0b1b124f0e6c524e64912873e}{handle\+Preflight\+Request}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_cors_a70819ff7e7e340671920a1533b2be70c}{add\+Response\+Headers}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_cors_a710c7a5f822396c18ad6086d65e3d7d4}{factory}} (string \$config\+Name=\textquotesingle{}default\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cross-\/\+Origin Resource Sharing (CORS)
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Cors\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_cors_a1a2ef71009509eb40f957ffe88fcb636}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_cors_a1a2ef71009509eb40f957ffe88fcb636} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Cors\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\{} & allowed\+Origins?\+: list$<$string$>$, allowed\+Origins\+Patterns?\+: list$<$string$>$, supports\+Credentials?\+: bool, allowed\+Headers?\+: list$<$string$>$, exposed\+Headers?\+: list$<$string$>$, allowed\+Methods?\+: list$<$string$>$, max\+Age?\+: int, \}\texorpdfstring{$\vert$}{|}\+Cors\+Config\texorpdfstring{$\vert$}{|}null \$config \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_cors_a70819ff7e7e340671920a1533b2be70c}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}!addResponseHeaders@{addResponseHeaders}}
+\index{addResponseHeaders@{addResponseHeaders}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}}
+\doxysubsubsection{\texorpdfstring{addResponseHeaders()}{addResponseHeaders()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_cors_a70819ff7e7e340671920a1533b2be70c} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Cors\+::add\+Response\+Headers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Adds CORS headers to the Response. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_cors_a710c7a5f822396c18ad6086d65e3d7d4}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}!factory@{factory}}
+\index{factory@{factory}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}}
+\doxysubsubsection{\texorpdfstring{factory()}{factory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_cors_a710c7a5f822396c18ad6086d65e3d7d4} 
+static Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Cors\+::factory (\begin{DoxyParamCaption}\item[{string}]{\$config\+Name}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a new instance by config name. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_cors_a39e3b4a0b1b124f0e6c524e64912873e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}!handlePreflightRequest@{handlePreflightRequest}}
+\index{handlePreflightRequest@{handlePreflightRequest}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}}
+\doxysubsubsection{\texorpdfstring{handlePreflightRequest()}{handlePreflightRequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_cors_a39e3b4a0b1b124f0e6c524e64912873e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Cors\+::handle\+Preflight\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Handles the preflight request, and returns the response. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_cors_a65e83b21c996d5a58c85231d6e4f849f}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}!isPreflightRequest@{isPreflightRequest}}
+\index{isPreflightRequest@{isPreflightRequest}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Cors}}
+\doxysubsubsection{\texorpdfstring{isPreflightRequest()}{isPreflightRequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_cors_a65e83b21c996d5a58c85231d6e4f849f} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Cors\+::is\+Preflight\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request}{Incoming\+Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Whether if the request is a preflight request. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/Cors.\+php\end{DoxyCompactItemize}

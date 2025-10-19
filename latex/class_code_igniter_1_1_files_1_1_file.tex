@@ -1,0 +1,144 @@
+\doxysection{Code\+Igniter\textbackslash{}Files\textbackslash{}File Class Reference}
+\hypertarget{class_code_igniter_1_1_files_1_1_file}{}\label{class_code_igniter_1_1_files_1_1_file}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Files\textbackslash{}File\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Files\textbackslash{}File\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_ac854526b682b4ebdc61b6b162170d605}{\+\_\+\+\_\+construct}} (string \$path, bool \$check\+File=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_ad1ac7455600f0eee685f81dcb3faf9a7}{get\+Size}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_a80b01c9874168490d4bf96623e9ab0e7}{get\+Size\+By\+Unit}} (string \$unit=\textquotesingle{}b\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_afa31905febcb870ff65732314ff90a57}{guess\+Extension}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_ad285dd46fdcc204a7c9e694b4815e493}{get\+Mime\+Type}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_a50af84227150ba1dedbbc46d8e11a445}{get\+Random\+Name}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_a8ce17f75a657c227d720ddde88d3208e}{move}} (string \$target\+Path, ?string \$name=null, bool \$overwrite=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_acbabdc85079b7364b9291e7a2a35f688}{get\+Destination}} (string \$destination, string \$delimiter=\textquotesingle{}\+\_\+\textquotesingle{}, int \$i=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_a2f87f930ef055a8642f70d096fe11466}\label{class_code_igniter_1_1_files_1_1_file_a2f87f930ef055a8642f70d096fe11466} 
+{\bfseries \$size}
+\item 
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_a2325a39f95e246c66f10659868870b5d}\label{class_code_igniter_1_1_files_1_1_file_a2325a39f95e246c66f10659868870b5d} 
+{\bfseries \$original\+Mime\+Type}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wrapper for PHP\textquotesingle{}s built-\/in Spl\+File\+Info, with goodies.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_ac854526b682b4ebdc61b6b162170d605}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_ac854526b682b4ebdc61b6b162170d605} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{bool}]{\$check\+File}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Run our Spl\+File\+Info constructor with an optional verification that the path is really a file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_acbabdc85079b7364b9291e7a2a35f688}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}!getDestination@{getDestination}}
+\index{getDestination@{getDestination}!CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{getDestination()}{getDestination()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_acbabdc85079b7364b9291e7a2a35f688} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+::get\+Destination (\begin{DoxyParamCaption}\item[{string}]{\$destination}{, }\item[{string}]{\$delimiter}{ = {\ttfamily \textquotesingle{}\+\_\+\textquotesingle{}}, }\item[{int}]{\$i}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Returns the destination path for the move operation where overwriting is not expected.
+
+First, it checks whether the delimiter is present in the filename, if it is, then it checks whether the last element is an integer as there may be cases that the delimiter may be present in the filename. For the all other cases, it appends an integer starting from zero before the file\textquotesingle{}s extension. \Hypertarget{class_code_igniter_1_1_files_1_1_file_ad285dd46fdcc204a7c9e694b4815e493}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}!getMimeType@{getMimeType}}
+\index{getMimeType@{getMimeType}!CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{getMimeType()}{getMimeType()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_ad285dd46fdcc204a7c9e694b4815e493} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+::get\+Mime\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve the media type of the file. SHOULD not use information from the \$\+\_\+\+FILES array, but should use other methods to more accurately determine the type of file, like finfo, or mime\+\_\+content\+\_\+type().
+
+\begin{DoxyReturn}{Returns}
+string The media type we determined it to be. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_a50af84227150ba1dedbbc46d8e11a445}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}!getRandomName@{getRandomName}}
+\index{getRandomName@{getRandomName}!CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{getRandomName()}{getRandomName()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_a50af84227150ba1dedbbc46d8e11a445} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+::get\+Random\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Generates a random names based on a simple hash and the time, with the correct file extension attached. \Hypertarget{class_code_igniter_1_1_files_1_1_file_ad1ac7455600f0eee685f81dcb3faf9a7}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}!getSize@{getSize}}
+\index{getSize@{getSize}!CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_ad1ac7455600f0eee685f81dcb3faf9a7} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve the file size.
+
+Implementations SHOULD return the value stored in the "{}size"{} key of the file in the \$\+\_\+\+FILES array if available, as PHP calculates this based on the actual size transmitted. A Runtime\+Exception will be thrown if the file does not exist or an error occurs.
+
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int The file size in bytes, or false on failure 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_a80b01c9874168490d4bf96623e9ab0e7}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}!getSizeByUnit@{getSizeByUnit}}
+\index{getSizeByUnit@{getSizeByUnit}!CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{getSizeByUnit()}{getSizeByUnit()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_a80b01c9874168490d4bf96623e9ab0e7} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+::get\+Size\+By\+Unit (\begin{DoxyParamCaption}\item[{string}]{\$unit}{ = {\ttfamily \textquotesingle{}b\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Retrieve the file size by unit.
+
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_afa31905febcb870ff65732314ff90a57}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}!guessExtension@{guessExtension}}
+\index{guessExtension@{guessExtension}!CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{guessExtension()}{guessExtension()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_afa31905febcb870ff65732314ff90a57} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+::guess\+Extension (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempts to determine the file extension based on the trusted get\+Type() method. If the mime type is unknown, will return null. 
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_a68a0011ef8a40c43f686d724febaf7d3}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_a8ce17f75a657c227d720ddde88d3208e}\index{CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}!move@{move}}
+\index{move@{move}!CodeIgniter\textbackslash{}Files\textbackslash{}File@{CodeIgniter\textbackslash{}Files\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_a8ce17f75a657c227d720ddde88d3208e} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+::move (\begin{DoxyParamCaption}\item[{string}]{\$target\+Path}{, }\item[{?string}]{\$name}{ = {\ttfamily null}, }\item[{bool}]{\$overwrite}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Moves a file to a new location.
+
+\begin{DoxyReturn}{Returns}
+File 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_files_1_1_uploaded_file_a834d0e1f58a4e5ca659eb3becf9fbd73}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Files\textbackslash{}\+Uploaded\+File}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Files/File.\+php\end{DoxyCompactItemize}

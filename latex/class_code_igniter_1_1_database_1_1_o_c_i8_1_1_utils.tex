@@ -1,0 +1,79 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_utils}{}\label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_utils}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_utils_a7997d0aab4804b63d46e923b7ff421d2}{\+\_\+backup}} (?array \$prefs=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Utils}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_a3ec6763144dfdd80a127bb8f8e1422ca}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$db)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_a23467807a1218772dc3e3639fa515770}{list\+Databases}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_ad0bb83103095655bc5cefdcd293bf24f}{database\+Exists}} (string \$database\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_ae183ddd7c43257e484bd35adbd827e93}{optimize\+Table}} (string \$table\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_a185f61ef9f697b20234d45011ce546e2}{optimize\+Database}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_a3ffa20c6fb54d146dc8a46c9a08cd67a}{repair\+Table}} (string \$table\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_a0f0019fe366d9d54debb3b76d4590bb0}{get\+CSVFrom\+Result}} (\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_result_interface}{Result\+Interface}} \$query, string \$delim=\textquotesingle{},\textquotesingle{}, string \$newline="{}\textbackslash{}n"{}, string \$enclosure=\textquotesingle{}"{}\textquotesingle{}) 
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_a04dbc67bc7f4d058083fdd477d4d3a0f}{get\+XMLFrom\+Result}} (\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_result_interface}{Result\+Interface}} \$query, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_a6d8ecb988c4b88fb87d99cc12cb83ea3}{backup}} (\$params=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_utils_a5f4318dab1e42ea006f440eba1f10aec}\label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_utils_a5f4318dab1e42ea006f440eba1f10aec} 
+{\bfseries \$list\+Databases} = \textquotesingle{}SELECT TABLESPACE\+\_\+\+NAME FROM USER\+\_\+\+TABLESPACES\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Utils}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$db}
+\item 
+{\bfseries \$list\+Databases} = false
+\item 
+{\bfseries \$optimize\+Table} = false
+\item 
+{\bfseries \$repair\+Table} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utils for OCI8 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_utils_a7997d0aab4804b63d46e923b7ff421d2}\index{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils}!\_backup@{\_backup}}
+\index{\_backup@{\_backup}!CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils@{CodeIgniter\textbackslash{}Database\textbackslash{}OCI8\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{\_backup()}{\_backup()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_o_c_i8_1_1_utils_a7997d0aab4804b63d46e923b7ff421d2} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+OCI8\textbackslash{}\+Utils\+::\+\_\+backup (\begin{DoxyParamCaption}\item[{?array}]{\$prefs}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Platform dependent version of the backup function.
+
+\begin{DoxyReturn}{Returns}
+never 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_utils_aa79e8586a0ec34cb1d1401c1770ef201}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Utils}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/\+OCI8/Utils.\+php\end{DoxyCompactItemize}

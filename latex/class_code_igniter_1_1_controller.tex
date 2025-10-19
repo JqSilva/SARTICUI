@@ -1,0 +1,147 @@
+\doxysection{Code\+Igniter\textbackslash{}Controller Class Reference}
+\hypertarget{class_code_igniter_1_1_controller}{}\label{class_code_igniter_1_1_controller}\index{CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Controller\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_a50942c5290a15cda405b9cd057756065}{init\+Controller}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_a92f4d5194dc454b7aad79fdb38d3db30}{force\+HTTPS}} (int \$duration=31\+\_\+536\+\_\+000)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_aecc71f991af606e223e29006d5470036}{cache\+Page}} (int \$time)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_aca21ed18c3d2fa7cbdadd61bbe6dce82}{validate}} (\$rules, array \$messages=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_controller_af519dae459b31be1e692d8c7ff31b785}{validate\+Data}} (array \$data, \$rules, array \$messages=\mbox{[}$\,$\mbox{]}, ?string \$db\+Group=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_controller_aed4a1be2828c303d6f35069b3c8f5da1}\label{class_code_igniter_1_1_controller_aed4a1be2828c303d6f35069b3c8f5da1} 
+{\bfseries \$helpers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_controller_a89838a05eb950e1dbf3b79d6532f2d70}\label{class_code_igniter_1_1_controller_a89838a05eb950e1dbf3b79d6532f2d70} 
+{\bfseries \$request}
+\item 
+\Hypertarget{class_code_igniter_1_1_controller_a00d07152349f071a62820621a9999a77}\label{class_code_igniter_1_1_controller_a00d07152349f071a62820621a9999a77} 
+{\bfseries \$response}
+\item 
+\Hypertarget{class_code_igniter_1_1_controller_a047d2847394b1647fb3cec9651dfe9bb}\label{class_code_igniter_1_1_controller_a047d2847394b1647fb3cec9651dfe9bb} 
+{\bfseries \$logger}
+\item 
+\Hypertarget{class_code_igniter_1_1_controller_a2b95b789d2ed951faa7040f2be4a8d01}\label{class_code_igniter_1_1_controller_a2b95b789d2ed951faa7040f2be4a8d01} 
+{\bfseries \$force\+HTTPS} = 0
+\item 
+\Hypertarget{class_code_igniter_1_1_controller_a42b0f0e5bc526a8d1a3d135e41021db8}\label{class_code_igniter_1_1_controller_a42b0f0e5bc526a8d1a3d135e41021db8} 
+{\bfseries \$validator}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Controller
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Controller\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_controller_aecc71f991af606e223e29006d5470036}\index{CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}!cachePage@{cachePage}}
+\index{cachePage@{cachePage}!CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}}
+\doxysubsubsection{\texorpdfstring{cachePage()}{cachePage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_controller_aecc71f991af606e223e29006d5470036} 
+Code\+Igniter\textbackslash{}\+Controller\+::cache\+Page (\begin{DoxyParamCaption}\item[{int}]{\$time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+How long to cache the current page for.
+
+@params int \$time time to live in seconds.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_controller_a92f4d5194dc454b7aad79fdb38d3db30}\index{CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}!forceHTTPS@{forceHTTPS}}
+\index{forceHTTPS@{forceHTTPS}!CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}}
+\doxysubsubsection{\texorpdfstring{forceHTTPS()}{forceHTTPS()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_controller_a92f4d5194dc454b7aad79fdb38d3db30} 
+Code\+Igniter\textbackslash{}\+Controller\+::force\+HTTPS (\begin{DoxyParamCaption}\item[{int}]{\$duration}{ = {\ttfamily 31\+\_\+536\+\_\+000}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A convenience method to use when you need to ensure that a single method is reached only via HTTPS. If it isn\textquotesingle{}t, then a redirect will happen back to this method and HSTS header will be sent to have modern browsers transform requests automatically.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$duration} & The number of seconds this link should be considered secure for. Only with HSTS header. Default value is 1 year.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em HTTPException\texorpdfstring{$\vert$}{|}\+Redirect\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_controller_a50942c5290a15cda405b9cd057756065}\index{CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}!initController@{initController}}
+\index{initController@{initController}!CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}}
+\doxysubsubsection{\texorpdfstring{initController()}{initController()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_controller_a50942c5290a15cda405b9cd057756065} 
+Code\+Igniter\textbackslash{}\+Controller\+::init\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em HTTPException\texorpdfstring{$\vert$}{|}\+Redirect\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_app_1_1_controllers_1_1_base_controller_ac61356917268915c1f13cbb9f563b71c}{App\textbackslash{}\+Controllers\textbackslash{}\+Base\+Controller}}, and \mbox{\hyperlink{class_code_igniter_1_1_r_e_s_tful_1_1_base_resource_a84f3fb60ce57647fe600f6dfa1fd6594}{Code\+Igniter\textbackslash{}\+RESTful\textbackslash{}\+Base\+Resource}}.
+
+\Hypertarget{class_code_igniter_1_1_controller_aca21ed18c3d2fa7cbdadd61bbe6dce82}\index{CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}!validate@{validate}}
+\index{validate@{validate}!CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_controller_aca21ed18c3d2fa7cbdadd61bbe6dce82} 
+Code\+Igniter\textbackslash{}\+Controller\+::validate (\begin{DoxyParamCaption}\item[{}]{\$rules}{, }\item[{array}]{\$messages}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A shortcut to performing validation on Request data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$rules} & \\
+\hline
+array & {\em \$messages} & An array of custom error messages \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_controller_af519dae459b31be1e692d8c7ff31b785}\index{CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}!validateData@{validateData}}
+\index{validateData@{validateData}!CodeIgniter\textbackslash{}Controller@{CodeIgniter\textbackslash{}Controller}}
+\doxysubsubsection{\texorpdfstring{validateData()}{validateData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_controller_af519dae459b31be1e692d8c7ff31b785} 
+Code\+Igniter\textbackslash{}\+Controller\+::validate\+Data (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{}]{\$rules}{, }\item[{array}]{\$messages}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$db\+Group}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A shortcut to performing validation on any input data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & The data to validate \\
+\hline
+array | string & {\em \$rules} & \\
+\hline
+array & {\em \$messages} & An array of custom error messages \\
+\hline
+string | null & {\em \$db\+Group} & The database group to use \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/Controller.\+php\end{DoxyCompactItemize}

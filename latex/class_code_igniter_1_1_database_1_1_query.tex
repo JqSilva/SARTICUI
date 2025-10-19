@@ -1,0 +1,302 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}Query Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_query}{}\label{class_code_igniter_1_1_database_1_1_query}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}Query\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}Query\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_aed2465659e1d53af7f624f8423bd5364}\label{class_code_igniter_1_1_database_1_1_query_aed2465659e1d53af7f624f8423bd5364} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$db)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_ac8a757f9e4fb5f5bf6e8ef178e8f4c73}{set\+Query}} (string \$sql, \$binds=null, bool \$set\+Escape=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a276b01b0c34c1f93c5796469f10ab794}{set\+Binds}} (array \$binds, bool \$set\+Escape=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a4c907abb80d78c2f52db9eb51dae585e}{get\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a2ca231b4f1dea7cb714969e5bf25d4bf}{set\+Duration}} (float \$start, ?float \$end=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a49e26632cdd11aa572591167bab77b18}{get\+Start\+Time}} (bool \$return\+Raw=false, int \$decimals=6)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_aa3d879df6f222097d346c6a1932dee04}{get\+Duration}} (int \$decimals=6)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a34343ced9f3bbf0a83e82923d4c6b64b}{set\+Error}} (int \$code, string \$error)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_ad3544f602010ea20e4f8739408fc398f}{has\+Error}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_aca75fc783968dc07847a218edcf18980}{get\+Error\+Code}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_ad96bcddfe845ef3961bf0605050bafda}{get\+Error\+Message}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a2f6659057b8a550400ffe7e9fa613d24}{is\+Write\+Type}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a82384839983180774d7db906e8d3a4e2}{swap\+Prefix}} (string \$orig, string \$swap)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a374e2a856098b960736304e34a56fb3b}{get\+Original\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_a75795cdf1a39d66802c59c8c771965e0}{debug\+Toolbar\+Display}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_aabcd5e1adf947958fef1996a88e403b8}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a853f647f0de1587dffe73c9a75a8ba14}\label{class_code_igniter_1_1_database_1_1_query_a853f647f0de1587dffe73c9a75a8ba14} 
+{\bfseries \$db}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_af4001c467157e6cfab672db8a8b22863}{compile\+Binds}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_adceacaeedad7d4b1487617aa86d4761a}{match\+Named\+Binds}} (string \$sql, array \$binds)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_query_aa1e78d2748acc1ffe886b9fb8e72bc91}{match\+Simple\+Binds}} (string \$sql, array \$binds, int \$bind\+Count, int \$ml)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_abaac6f88727357d598da0bf5b83bb2e0}\label{class_code_igniter_1_1_database_1_1_query_abaac6f88727357d598da0bf5b83bb2e0} 
+{\bfseries \$original\+Query\+String}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a264e6b5058e571c7242c34ca4de62daf}\label{class_code_igniter_1_1_database_1_1_query_a264e6b5058e571c7242c34ca4de62daf} 
+{\bfseries \$swapped\+Query\+String}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_af1abdd3c7ff95969ff70989bb932b7f4}\label{class_code_igniter_1_1_database_1_1_query_af1abdd3c7ff95969ff70989bb932b7f4} 
+{\bfseries \$final\+Query\+String}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_abf6b0366888a20e9d1c012035458e850}\label{class_code_igniter_1_1_database_1_1_query_abf6b0366888a20e9d1c012035458e850} 
+{\bfseries \$binds} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a9ba2def247ed37b0633d4670c6a9991a}\label{class_code_igniter_1_1_database_1_1_query_a9ba2def247ed37b0633d4670c6a9991a} 
+{\bfseries \$bind\+Marker} = \textquotesingle{}?\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_aae9a169b5179601c02333b90bb1fb8b3}\label{class_code_igniter_1_1_database_1_1_query_aae9a169b5179601c02333b90bb1fb8b3} 
+{\bfseries \$start\+Time}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a41ddacc4950dff9d76a94a2919f9e556}\label{class_code_igniter_1_1_database_1_1_query_a41ddacc4950dff9d76a94a2919f9e556} 
+{\bfseries \$end\+Time}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a518f8b150a473eee238f9a93bcee0b99}\label{class_code_igniter_1_1_database_1_1_query_a518f8b150a473eee238f9a93bcee0b99} 
+{\bfseries \$error\+Code}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a767e38aaf9a64bb8dcda090ee5bd98e9}\label{class_code_igniter_1_1_database_1_1_query_a767e38aaf9a64bb8dcda090ee5bd98e9} 
+{\bfseries \$error\+String}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Query builder 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_aabcd5e1adf947958fef1996a88e403b8}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_aabcd5e1adf947958fef1996a88e403b8} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return text representation of the query \Hypertarget{class_code_igniter_1_1_database_1_1_query_af4001c467157e6cfab672db8a8b22863}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!compileBinds@{compileBinds}}
+\index{compileBinds@{compileBinds}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{compileBinds()}{compileBinds()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_af4001c467157e6cfab672db8a8b22863} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::compile\+Binds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Escapes and inserts any binds into the final\+Query\+String property.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://regex101.com/r/EUEhay/5}{\texttt{ https\+://regex101.\+com/r/\+EUEhay/5}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a75795cdf1a39d66802c59c8c771965e0}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!debugToolbarDisplay@{debugToolbarDisplay}}
+\index{debugToolbarDisplay@{debugToolbarDisplay}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{debugToolbarDisplay()}{debugToolbarDisplay()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a75795cdf1a39d66802c59c8c771965e0} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::debug\+Toolbar\+Display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns string to display in debug toolbar \begin{DoxySeeAlso}{See also}
+\href{https://stackoverflow.com/a/20767160}{\texttt{ https\+://stackoverflow.\+com/a/20767160}} 
+
+\href{https://regex101.com/r/hUlrGN/4}{\texttt{ https\+://regex101.\+com/r/h\+Ulr\+GN/4}}
+\end{DoxySeeAlso}
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_aa3d879df6f222097d346c6a1932dee04}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!getDuration@{getDuration}}
+\index{getDuration@{getDuration}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_aa3d879df6f222097d346c6a1932dee04} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::get\+Duration (\begin{DoxyParamCaption}\item[{int}]{\$decimals}{ = {\ttfamily 6}}\end{DoxyParamCaption})}
+
+Returns the duration of this query during execution, or null if the query has not been executed yet.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$decimals} & The accuracy of the returned time. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_a3d4ca6af632d72f022c5d8b9ff8aaf84}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_aca75fc783968dc07847a218edcf18980}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!getErrorCode@{getErrorCode}}
+\index{getErrorCode@{getErrorCode}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{getErrorCode()}{getErrorCode()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_aca75fc783968dc07847a218edcf18980} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::get\+Error\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the error code created while executing this statement. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_af5eaa72f1dc78bdf7bffa03c276a26ac}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_ad96bcddfe845ef3961bf0605050bafda}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!getErrorMessage@{getErrorMessage}}
+\index{getErrorMessage@{getErrorMessage}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{getErrorMessage()}{getErrorMessage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_ad96bcddfe845ef3961bf0605050bafda} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::get\+Error\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the error message created while executing this statement. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_adacab3939204a7abdf56249b5d0a3030}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a374e2a856098b960736304e34a56fb3b}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!getOriginalQuery@{getOriginalQuery}}
+\index{getOriginalQuery@{getOriginalQuery}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{getOriginalQuery()}{getOriginalQuery()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a374e2a856098b960736304e34a56fb3b} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::get\+Original\+Query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the original SQL that was passed into the system. \Hypertarget{class_code_igniter_1_1_database_1_1_query_a4c907abb80d78c2f52db9eb51dae585e}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!getQuery@{getQuery}}
+\index{getQuery@{getQuery}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{getQuery()}{getQuery()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a4c907abb80d78c2f52db9eb51dae585e} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::get\+Query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the final, processed query string after binding, etal has been performed. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_ad4680f0c0f2d0f314cb127e348d1f0e9}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a49e26632cdd11aa572591167bab77b18}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!getStartTime@{getStartTime}}
+\index{getStartTime@{getStartTime}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{getStartTime()}{getStartTime()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a49e26632cdd11aa572591167bab77b18} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::get\+Start\+Time (\begin{DoxyParamCaption}\item[{bool}]{\$return\+Raw}{ = {\ttfamily false}, }\item[{int}]{\$decimals}{ = {\ttfamily 6}}\end{DoxyParamCaption})}
+
+Returns the start time in seconds with microseconds.
+
+\begin{DoxyReturn}{Returns}
+float\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_ad3544f602010ea20e4f8739408fc398f}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!hasError@{hasError}}
+\index{hasError@{hasError}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{hasError()}{hasError()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_ad3544f602010ea20e4f8739408fc398f} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::has\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Reports whether this statement created an error not. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_a66843abd09e51bd2799c2dc6242de64d}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a2f6659057b8a550400ffe7e9fa613d24}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!isWriteType@{isWriteType}}
+\index{isWriteType@{isWriteType}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{isWriteType()}{isWriteType()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a2f6659057b8a550400ffe7e9fa613d24} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::is\+Write\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determines if the statement is a write-\/type query or not. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_a295d8dc69cc18055511172d512d05f89}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_adceacaeedad7d4b1487617aa86d4761a}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!matchNamedBinds@{matchNamedBinds}}
+\index{matchNamedBinds@{matchNamedBinds}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{matchNamedBinds()}{matchNamedBinds()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_adceacaeedad7d4b1487617aa86d4761a} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::match\+Named\+Binds (\begin{DoxyParamCaption}\item[{string}]{\$sql}{, }\item[{array}]{\$binds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Match bindings \Hypertarget{class_code_igniter_1_1_database_1_1_query_aa1e78d2748acc1ffe886b9fb8e72bc91}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!matchSimpleBinds@{matchSimpleBinds}}
+\index{matchSimpleBinds@{matchSimpleBinds}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{matchSimpleBinds()}{matchSimpleBinds()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_aa1e78d2748acc1ffe886b9fb8e72bc91} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::match\+Simple\+Binds (\begin{DoxyParamCaption}\item[{string}]{\$sql}{, }\item[{array}]{\$binds}{, }\item[{int}]{\$bind\+Count}{, }\item[{int}]{\$ml}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Match bindings \Hypertarget{class_code_igniter_1_1_database_1_1_query_a276b01b0c34c1f93c5796469f10ab794}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!setBinds@{setBinds}}
+\index{setBinds@{setBinds}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{setBinds()}{setBinds()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a276b01b0c34c1f93c5796469f10ab794} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::set\+Binds (\begin{DoxyParamCaption}\item[{array}]{\$binds}{, }\item[{bool}]{\$set\+Escape}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Will store the variables to bind into the query later.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a2ca231b4f1dea7cb714969e5bf25d4bf}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!setDuration@{setDuration}}
+\index{setDuration@{setDuration}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{setDuration()}{setDuration()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a2ca231b4f1dea7cb714969e5bf25d4bf} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::set\+Duration (\begin{DoxyParamCaption}\item[{float}]{\$start}{, }\item[{?float}]{\$end}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Records the execution time of the statement using microtime(true) for it\textquotesingle{}s start and end values. If no end value is present, will use the current time to determine total duration.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_a85176d1774b6293f8607b3e4be43857c}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a34343ced9f3bbf0a83e82923d4c6b64b}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!setError@{setError}}
+\index{setError@{setError}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{setError()}{setError()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a34343ced9f3bbf0a83e82923d4c6b64b} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::set\+Error (\begin{DoxyParamCaption}\item[{int}]{\$code}{, }\item[{string}]{\$error}{}\end{DoxyParamCaption})}
+
+Stores the error description that happened for this query.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_a7c1aa3551707584b0c5cf581ba4a2155}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_ac8a757f9e4fb5f5bf6e8ef178e8f4c73}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!setQuery@{setQuery}}
+\index{setQuery@{setQuery}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{setQuery()}{setQuery()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_ac8a757f9e4fb5f5bf6e8ef178e8f4c73} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::set\+Query (\begin{DoxyParamCaption}\item[{string}]{\$sql}{, }\item[{}]{\$binds}{ = {\ttfamily null}, }\item[{bool}]{\$set\+Escape}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Sets the raw query string to use for this statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$binds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_a371a6d45a9000f468198681336e126bb}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_query_a82384839983180774d7db906e8d3a4e2}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}!swapPrefix@{swapPrefix}}
+\index{swapPrefix@{swapPrefix}!CodeIgniter\textbackslash{}Database\textbackslash{}Query@{CodeIgniter\textbackslash{}Database\textbackslash{}Query}}
+\doxysubsubsection{\texorpdfstring{swapPrefix()}{swapPrefix()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_query_a82384839983180774d7db906e8d3a4e2} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+::swap\+Prefix (\begin{DoxyParamCaption}\item[{string}]{\$orig}{, }\item[{string}]{\$swap}{}\end{DoxyParamCaption})}
+
+Swaps out one table prefix for a new one.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_query_interface_a7c0cb9a56715185bf3a7701953903599}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Query\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/Query.\+php\end{DoxyCompactItemize}

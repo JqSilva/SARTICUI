@@ -1,0 +1,221 @@
+\doxysection{Code\+Igniter\textbackslash{}Debug\textbackslash{}Exceptions Class Reference}
+\hypertarget{class_code_igniter_1_1_debug_1_1_exceptions}{}\label{class_code_igniter_1_1_debug_1_1_exceptions}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_ad943ce34bceca633f51773b5f5af2afc}\label{class_code_igniter_1_1_debug_1_1_exceptions_ad943ce34bceca633f51773b5f5af2afc} 
+{\bfseries \+\_\+\+\_\+construct} (Exceptions\+Config \$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_a314757f2b1dc3ebc446cfeb230ba57c3}{initialize}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_a26538ca8db9f8fb44444073cf46d29f9}{exception\+Handler}} (Throwable \$exception)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_a1c44cc9b4c1a2e1a5c06b5fc66e8fa11}{error\+Handler}} (int \$severity, string \$message, ?string \$file=null, ?int \$line=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_ab77096051d1651efbbb6c3851fe72ae9}{shutdown\+Handler}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_adc68565a28087fc08ee0aa7709e97591}{clean\+Path}} (string \$file)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_aac0bd05ed4a79ad3ea24ae8b4d309a2f}{describe\+Memory}} (int \$bytes)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_ae31a5db890000798633e9061eae1a53c}{highlight\+File}} (string \$file, int \$line\+Number, int \$lines=15)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_ab0c3377ba9b75504cf7c7ce3c549d5a8}\label{class_code_igniter_1_1_debug_1_1_exceptions_ab0c3377ba9b75504cf7c7ce3c549d5a8} 
+{\bfseries \$ob\+\_\+level}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_ac340bdfa23639dfe5940106a770f2730}{determine\+View}} (Throwable \$exception, string \$template\+Path)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_ad6d5e840d1832eb5fabf3cacab7034fd}{render}} (Throwable \$exception, int \$status\+Code)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_a2e763f62c2a4d21d48f36f2a5742f62f}{collect\+Vars}} (Throwable \$exception, int \$status\+Code)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_a489c718f21b855704c0256e6119cfb36}{mask\+Sensitive\+Data}} (\$trace, array \$keys\+To\+Mask, string \$path=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_debug_1_1_exceptions_a08448f11f5c6d44a1a2bfb551edf72c9}{determine\+Codes}} (Throwable \$exception)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_a3cac676c795ea8976aa32c9622149ed2}\label{class_code_igniter_1_1_debug_1_1_exceptions_a3cac676c795ea8976aa32c9622149ed2} 
+{\bfseries \$view\+Path}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_a2b9ce5779e4acd0f954600caca637797}\label{class_code_igniter_1_1_debug_1_1_exceptions_a2b9ce5779e4acd0f954600caca637797} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_ac376d2e33de9789b4a75af18bceb398e}\label{class_code_igniter_1_1_debug_1_1_exceptions_ac376d2e33de9789b4a75af18bceb398e} 
+{\bfseries \$request}
+\item 
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_afa42b4a2be5e5293488b0714457ba68a}\label{class_code_igniter_1_1_debug_1_1_exceptions_afa42b4a2be5e5293488b0714457ba68a} 
+{\bfseries \$response}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Exceptions manager
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_adc68565a28087fc08ee0aa7709e97591}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!cleanPath@{cleanPath}}
+\index{cleanPath@{cleanPath}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{cleanPath()}{cleanPath()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_adc68565a28087fc08ee0aa7709e97591} 
+static Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::clean\+Path (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This makes nicer looking paths for the error output.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000060}{Deprecated}}]Use dedicated {\ttfamily clean\+\_\+path()} function. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_a2e763f62c2a4d21d48f36f2a5742f62f}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!collectVars@{collectVars}}
+\index{collectVars@{collectVars}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{collectVars()}{collectVars()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_a2e763f62c2a4d21d48f36f2a5742f62f} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::collect\+Vars (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{, }\item[{int}]{\$status\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gathers the variables that will be made available to the view.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000057}{Deprecated}}]4.\+4.\+0 No longer used. Moved to Base\+Exception\+Handler. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_aac0bd05ed4a79ad3ea24ae8b4d309a2f}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!describeMemory@{describeMemory}}
+\index{describeMemory@{describeMemory}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{describeMemory()}{describeMemory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_aac0bd05ed4a79ad3ea24ae8b4d309a2f} 
+static Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::describe\+Memory (\begin{DoxyParamCaption}\item[{int}]{\$bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Describes memory usage in real-\/world units. Intended for use with memory\+\_\+get\+\_\+usage, etc.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000061}{Deprecated}}]4.\+4.\+0 No longer used. Moved to Base\+Exception\+Handler. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_a08448f11f5c6d44a1a2bfb551edf72c9}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!determineCodes@{determineCodes}}
+\index{determineCodes@{determineCodes}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{determineCodes()}{determineCodes()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_a08448f11f5c6d44a1a2bfb551edf72c9} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::determine\+Codes (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines the HTTP status code and the exit status code for this request. \Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_ac340bdfa23639dfe5940106a770f2730}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!determineView@{determineView}}
+\index{determineView@{determineView}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{determineView()}{determineView()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_ac340bdfa23639dfe5940106a770f2730} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::determine\+View (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{, }\item[{string}]{\$template\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines the view to display based on the exception thrown, whether an HTTP or CLI request, etc.
+
+\begin{DoxyReturn}{Returns}
+string The path and filename of the view file to use
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000055}{Deprecated}}]4.\+4.\+0 No longer used. Moved to Exception\+Handler. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_a1c44cc9b4c1a2e1a5c06b5fc66e8fa11}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!errorHandler@{errorHandler}}
+\index{errorHandler@{errorHandler}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{errorHandler()}{errorHandler()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_a1c44cc9b4c1a2e1a5c06b5fc66e8fa11} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::error\+Handler (\begin{DoxyParamCaption}\item[{int}]{\$severity}{, }\item[{string}]{\$message}{, }\item[{?string}]{\$file}{ = {\ttfamily null}, }\item[{?int}]{\$line}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+The callback to be registered to {\ttfamily set\+\_\+error\+\_\+handler()}.
+
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Error\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@code\+Coverage\+Ignore \Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_a26538ca8db9f8fb44444073cf46d29f9}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!exceptionHandler@{exceptionHandler}}
+\index{exceptionHandler@{exceptionHandler}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{exceptionHandler()}{exceptionHandler()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_a26538ca8db9f8fb44444073cf46d29f9} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::exception\+Handler (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{}\end{DoxyParamCaption})}
+
+Catches any uncaught errors and exceptions, including most Fatal errors (Yay PHP7!). Will log the error, display it if display\+\_\+errors is on, and fire an event that allows custom actions to be taken at this point.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_ae31a5db890000798633e9061eae1a53c}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!highlightFile@{highlightFile}}
+\index{highlightFile@{highlightFile}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{highlightFile()}{highlightFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_ae31a5db890000798633e9061eae1a53c} 
+static Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::highlight\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{int}]{\$line\+Number}{, }\item[{int}]{\$lines}{ = {\ttfamily 15}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a syntax-\/highlighted version of a PHP file.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000062}{Deprecated}}]4.\+4.\+0 No longer used. Moved to Base\+Exception\+Handler. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_a314757f2b1dc3ebc446cfeb230ba57c3}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_a314757f2b1dc3ebc446cfeb230ba57c3} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Responsible for registering the error, exception and shutdown handling of our application.
+
+@code\+Coverage\+Ignore
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_a489c718f21b855704c0256e6119cfb36}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!maskSensitiveData@{maskSensitiveData}}
+\index{maskSensitiveData@{maskSensitiveData}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{maskSensitiveData()}{maskSensitiveData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_a489c718f21b855704c0256e6119cfb36} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::mask\+Sensitive\+Data (\begin{DoxyParamCaption}\item[{}]{\$trace}{, }\item[{array}]{\$keys\+To\+Mask}{, }\item[{string}]{\$path}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mask sensitive data in the trace.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$trace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000058}{Deprecated}}]4.\+4.\+0 No longer used. Moved to Base\+Exception\+Handler. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_ad6d5e840d1832eb5fabf3cacab7034fd}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!render@{render}}
+\index{render@{render}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_ad6d5e840d1832eb5fabf3cacab7034fd} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::render (\begin{DoxyParamCaption}\item[{Throwable}]{\$exception}{, }\item[{int}]{\$status\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Given an exception and status code will display the error to the client.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000056}{Deprecated}}]4.\+4.\+0 No longer used. Moved to Base\+Exception\+Handler. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_debug_1_1_exceptions_ab77096051d1651efbbb6c3851fe72ae9}\index{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}!shutdownHandler@{shutdownHandler}}
+\index{shutdownHandler@{shutdownHandler}!CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions@{CodeIgniter\textbackslash{}Debug\textbackslash{}Exceptions}}
+\doxysubsubsection{\texorpdfstring{shutdownHandler()}{shutdownHandler()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_debug_1_1_exceptions_ab77096051d1651efbbb6c3851fe72ae9} 
+Code\+Igniter\textbackslash{}\+Debug\textbackslash{}\+Exceptions\+::shutdown\+Handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks to see if any errors have happened during shutdown that need to be caught and handle them.
+
+@code\+Coverage\+Ignore
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Debug/Exceptions.\+php\end{DoxyCompactItemize}

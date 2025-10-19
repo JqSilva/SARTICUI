@@ -1,0 +1,325 @@
+\doxysection{Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Cache Class Reference}
+\hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache}{}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Cache\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}Mock\+Cache\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_aa08e1942221419faa53b7d740507f413}{initialize}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a5e09c66d14a5a84062ed4bfbc1c874fc}{get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ac0d94254e949384df809636c09268835}{remember}} (string \$key, int \$ttl, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ac32ff4aabbebde65b9e1b059dcc34bf7}{save}} (string \$key, \$value, int \$ttl=60)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a9cc03f00cf61a6153b89356d3f5f9ddb}{delete}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a0de218e1349e8e2266bed1c93de5fa7d}{delete\+Matching}} (string \$pattern)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_abff0eb6d03d35799f6c155ee33cc0c48}{increment}} (string \$key, int \$offset=1)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a70e0466b8496a46c2171158810bef5e0}{decrement}} (string \$key, int \$offset=1)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ad1471a91c25ec7ecd5b9cfc3467473b4}{clean}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_acf4094b0149a8bcdd4b1dddf975f30f4}{get\+Cache\+Info}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ad833a9162f8a826f9c593260da7e1e20}{get\+Meta\+Data}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a76786254b151661120a876b5817cbb3e}{is\+Supported}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a29cb84f0c9677030968cf39f781d4538}{bypass}} (bool \$bypass=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a566f8d2cadd8349548a7e3b4b6f947d5}{assert\+Has}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a363494f2ac5d0a74925ae08b79065959}{assert\+Has\+Value}} (string \$key, \$value=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_acff3f3a890874ca334f8daf362d392c8}{assert\+Missing}} (string \$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a5892a4886563b9ae5e5ab9ad520df199}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a5892a4886563b9ae5e5ab9ad520df199} 
+{\bfseries \$cache} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ab5a3407d65d1d1f8f17d90c0b93715fa}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ab5a3407d65d1d1f8f17d90c0b93715fa} 
+{\bfseries \$expirations} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ab86b05581071ac2d273a06f628a4df2b}\label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ab86b05581071ac2d273a06f628a4df2b} 
+{\bfseries \$bypass} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$prefix}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_a7f5b8d4cdff86945769e6a231064f1d4}{validate\+Key}} (\$key, \$prefix=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_aab78c36dc9172889a23edc4deecd3ec4}{RESERVED\+\_\+\+CHARACTERS}} = \textquotesingle{}\{\}()/\textbackslash{}@\+:\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_afa3d27887c584621f8c29cf07e8b78ac}{MAX\+\_\+\+KEY\+\_\+\+LENGTH}} = PHP\+\_\+\+INT\+\_\+\+MAX
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a566f8d2cadd8349548a7e3b4b6f947d5}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!assertHas@{assertHas}}
+\index{assertHas@{assertHas}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{assertHas()}{assertHas()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a566f8d2cadd8349548a7e3b4b6f947d5} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::assert\+Has (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Asserts that the cache has an item named \$key. The value is not checked since storing false or null values is valid.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a363494f2ac5d0a74925ae08b79065959}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!assertHasValue@{assertHasValue}}
+\index{assertHasValue@{assertHasValue}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{assertHasValue()}{assertHasValue()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a363494f2ac5d0a74925ae08b79065959} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::assert\+Has\+Value (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Asserts that the cache has an item named \$key with a value matching \$value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_acff3f3a890874ca334f8daf362d392c8}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!assertMissing@{assertMissing}}
+\index{assertMissing@{assertMissing}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{assertMissing()}{assertMissing()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_acff3f3a890874ca334f8daf362d392c8} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::assert\+Missing (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Asserts that the cache does NOT have an item named \$key.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a29cb84f0c9677030968cf39f781d4538}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!bypass@{bypass}}
+\index{bypass@{bypass}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{bypass()}{bypass()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a29cb84f0c9677030968cf39f781d4538} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::bypass (\begin{DoxyParamCaption}\item[{bool}]{\$bypass}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Instructs the class to ignore all requests to cache an item, and always "{}miss"{} when checked for existing data.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ad1471a91c25ec7ecd5b9cfc3467473b4}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!clean@{clean}}
+\index{clean@{clean}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ad1471a91c25ec7ecd5b9cfc3467473b4} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::clean (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Will delete all items in the entire cache.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a990dbf526af1c647c8fa9ae18211d2fa}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a70e0466b8496a46c2171158810bef5e0}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!decrement@{decrement}}
+\index{decrement@{decrement}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a70e0466b8496a46c2171158810bef5e0} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::decrement (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$offset}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Performs atomic decrementation of a raw stored value.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a9e34f8332defbd0af86e02179417125e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a9cc03f00cf61a6153b89356d3f5f9ddb}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!delete@{delete}}
+\index{delete@{delete}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a9cc03f00cf61a6153b89356d3f5f9ddb} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::delete (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Deletes a specific item from the cache store.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a924d9f47143e6e3a2d6c20b14988024e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a0de218e1349e8e2266bed1c93de5fa7d}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!deleteMatching@{deleteMatching}}
+\index{deleteMatching@{deleteMatching}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{deleteMatching()}{deleteMatching()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a0de218e1349e8e2266bed1c93de5fa7d} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::delete\+Matching (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{}\end{DoxyParamCaption})}
+
+Deletes items from the cache store matching a given pattern.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab27a631f8b63c1e67cbce698f2a6ff39}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a5e09c66d14a5a84062ed4bfbc1c874fc}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a5e09c66d14a5a84062ed4bfbc1c874fc} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Attempts to fetch an item from the cache store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache item name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a68b00b3bcb364db019cb285570a44e38}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_acf4094b0149a8bcdd4b1dddf975f30f4}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!getCacheInfo@{getCacheInfo}}
+\index{getCacheInfo@{getCacheInfo}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{getCacheInfo()}{getCacheInfo()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_acf4094b0149a8bcdd4b1dddf975f30f4} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::get\+Cache\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns information on the entire cache.
+
+The information returned and the structure of the data varies depending on the handler.
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ Keys currently present in the store 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_aa769017060f105fd5d64e7202014b6ee}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ad833a9162f8a826f9c593260da7e1e20}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!getMetaData@{getMetaData}}
+\index{getMetaData@{getMetaData}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{getMetaData()}{getMetaData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ad833a9162f8a826f9c593260da7e1e20} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::get\+Meta\+Data (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns detailed information about the specific item in the cache.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null Returns null if the item does not exist, otherwise array$<$string, mixed$>$ with at least the \textquotesingle{}expire\textquotesingle{} key for absolute epoch expiry (or null). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a54d5bd77af2587ceee4288909115b193}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_abff0eb6d03d35799f6c155ee33cc0c48}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!increment@{increment}}
+\index{increment@{increment}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_abff0eb6d03d35799f6c155ee33cc0c48} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::increment (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$offset}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Performs atomic incrementation of a raw stored value.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a7f5232e23a472896dff5d77a350c7b62}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_aa08e1942221419faa53b7d740507f413}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_aa08e1942221419faa53b7d740507f413} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Takes care of any handler-\/specific setup that must be done.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a3035592e1f3a9c5fae2526334537b8b1}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a76786254b151661120a876b5817cbb3e}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!isSupported@{isSupported}}
+\index{isSupported@{isSupported}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{isSupported()}{isSupported()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_a76786254b151661120a876b5817cbb3e} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::is\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the driver is supported on this system. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_ab59f48828ea4194cf13feec4d5417b86}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ac0d94254e949384df809636c09268835}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!remember@{remember}}
+\index{remember@{remember}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{remember()}{remember()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ac0d94254e949384df809636c09268835} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::remember (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$ttl}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Get an item from the cache, or execute the given Closure and store the result.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab9d46f4c7f8d09bd4a3c8e617db8b1fb}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ac32ff4aabbebde65b9e1b059dcc34bf7}\index{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}!save@{save}}
+\index{save@{save}!CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache@{CodeIgniter\textbackslash{}Test\textbackslash{}Mock\textbackslash{}MockCache}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_test_1_1_mock_1_1_mock_cache_ac32ff4aabbebde65b9e1b059dcc34bf7} 
+Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Cache\+::save (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{, }\item[{int}]{\$ttl}{ = {\ttfamily 60}}\end{DoxyParamCaption})}
+
+Saves an item to the cache store.
+
+The \$raw parameter is only utilized by Mamcache in order to allow usage of increment() and decrement().
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Cache item name \\
+\hline
+mixed & {\em \$value} & the data to save \\
+\hline
+int & {\em \$ttl} & Time To Live, in seconds (default 60)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_ae7a4125220b98b393d2dcbd22f71914e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Test/\+Mock/Mock\+Cache.\+php\end{DoxyCompactItemize}

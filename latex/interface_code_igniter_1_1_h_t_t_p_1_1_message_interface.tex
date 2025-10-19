@@ -1,0 +1,244 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Message\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface}{}\label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Message\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a08728b8c414bf753b3f93c80f191615f}{get\+Protocol\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1404c237690d52896a1d7b0e93e191ed}{set\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a7da8b18543020c45c6ebcbc5648c780e}{get\+Body}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a9a56354f94237570fd05a1f5d54d2599}{append\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a131427f3868bdf49f8bbeedc0d19090d}{populate\+Headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0}{headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a23d534da6bbfd0997fd647234151a21e}{has\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0b864465e53179641cd0e5683e20e624}{header}} (\$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_aeb003c4ae89535abab87dc1ac5ecc695}{get\+Header\+Line}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_ad1bcf6ae6decb3c16cadb15ef1214002}{set\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a27f10d14218d4230df3a0819f09a8d8e}{remove\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0630aad9e82c1eafa81d7fa35a9f8738}{append\+Header}} (string \$name, ?string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1972a71352cb4801abe4c1473e40b181}{prepend\+Header}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_af6fbfa16a508383fb4adfb0fc9fdaf0e}{set\+Protocol\+Version}} (string \$version)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Expected behavior of an HTTP message 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a9a56354f94237570fd05a1f5d54d2599}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!appendBody@{appendBody}}
+\index{appendBody@{appendBody}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{appendBody()}{appendBody()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a9a56354f94237570fd05a1f5d54d2599} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::append\+Body (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+Appends data to the body of the current message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0630aad9e82c1eafa81d7fa35a9f8738}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!appendHeader@{appendHeader}}
+\index{appendHeader@{appendHeader}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{appendHeader()}{appendHeader()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0630aad9e82c1eafa81d7fa35a9f8738} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::append\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{?string}]{\$value}{}\end{DoxyParamCaption})}
+
+Adds an additional header value to any headers that accept multiple values (i.\+e. are an array or implement Array\+Access)
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a7da8b18543020c45c6ebcbc5648c780e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!getBody@{getBody}}
+\index{getBody@{getBody}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{getBody()}{getBody()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a7da8b18543020c45c6ebcbc5648c780e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::get\+Body (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the body of the message.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+@\+TODO Incompatible return type with PSR-\/7 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_afe4cc5b6d5bac8977cd43f674f3848f4}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_aeb003c4ae89535abab87dc1ac5ecc695}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!getHeaderLine@{getHeaderLine}}
+\index{getHeaderLine@{getHeaderLine}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{getHeaderLine()}{getHeaderLine()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_aeb003c4ae89535abab87dc1ac5ecc695} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::get\+Header\+Line (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Retrieves a comma-\/separated string of the values for a single header.
+
+This method returns all of the header values of the given case-\/insensitive header name as a string concatenated together using a comma.
+
+NOTE\+: Not all header values may be appropriately represented using comma concatenation. For such headers, use get\+Header() instead and supply your own delimiter when concatenating. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_ae9394625d43fc2608e509a398108b81d}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a08728b8c414bf753b3f93c80f191615f}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!getProtocolVersion@{getProtocolVersion}}
+\index{getProtocolVersion@{getProtocolVersion}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{getProtocolVersion()}{getProtocolVersion()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a08728b8c414bf753b3f93c80f191615f} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::get\+Protocol\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the HTTP protocol version as a string.
+
+The string MUST contain only the HTTP version number (e.\+g., "{}1.\+1"{}, "{}1.\+0"{}).
+
+\begin{DoxyReturn}{Returns}
+string HTTP protocol version. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a3f581e06a1166651422dfab4c7f30b63}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a23d534da6bbfd0997fd647234151a21e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!hasHeader@{hasHeader}}
+\index{hasHeader@{hasHeader}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{hasHeader()}{hasHeader()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a23d534da6bbfd0997fd647234151a21e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::has\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Checks if a header exists by the given case-\/insensitive name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true if any header names match the given header name using a case-\/insensitive string comparison. Returns false if no matching header name is found in the message. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_ad5ab3a1b52182623349bf50019a05335}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message}}.
+
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0b864465e53179641cd0e5683e20e624}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!header@{header}}
+\index{header@{header}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{header()}{header()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0b864465e53179641cd0e5683e20e624} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::header (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Returns a single Header object. If multiple headers with the same name exist, then will return an array of header objects.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Header\texorpdfstring{$\vert$}{|}list$<$\+Header$>$\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!headers@{headers}}
+\index{headers@{headers}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{headers()}{headers()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an array containing all Headers.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, Header\texorpdfstring{$\vert$}{|}list$<$\+Header$>$\texorpdfstring{$>$}{>} An array of the Header objects 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a131427f3868bdf49f8bbeedc0d19090d}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!populateHeaders@{populateHeaders}}
+\index{populateHeaders@{populateHeaders}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{populateHeaders()}{populateHeaders()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a131427f3868bdf49f8bbeedc0d19090d} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::populate\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Populates the \$headers array with any headers the server knows about. \Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1972a71352cb4801abe4c1473e40b181}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!prependHeader@{prependHeader}}
+\index{prependHeader@{prependHeader}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{prependHeader()}{prependHeader()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1972a71352cb4801abe4c1473e40b181} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::prepend\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Adds an additional header value to any headers that accept multiple values (i.\+e. are an array or implement Array\+Access)
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a27f10d14218d4230df3a0819f09a8d8e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!removeHeader@{removeHeader}}
+\index{removeHeader@{removeHeader}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{removeHeader()}{removeHeader()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a27f10d14218d4230df3a0819f09a8d8e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::remove\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Removes a header from the list of headers we track.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1404c237690d52896a1d7b0e93e191ed}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!setBody@{setBody}}
+\index{setBody@{setBody}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{setBody()}{setBody()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1404c237690d52896a1d7b0e93e191ed} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::set\+Body (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+Sets the body of the current message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_ad1bcf6ae6decb3c16cadb15ef1214002}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_ad1bcf6ae6decb3c16cadb15ef1214002} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::set\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets a header and it\textquotesingle{}s value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_af6fbfa16a508383fb4adfb0fc9fdaf0e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}!setProtocolVersion@{setProtocolVersion}}
+\index{setProtocolVersion@{setProtocolVersion}!CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface@{CodeIgniter\textbackslash{}HTTP\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{setProtocolVersion()}{setProtocolVersion()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_af6fbfa16a508383fb4adfb0fc9fdaf0e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface\+::set\+Protocol\+Version (\begin{DoxyParamCaption}\item[{string}]{\$version}{}\end{DoxyParamCaption})}
+
+Sets the HTTP protocol version.
+
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em HTTPException} & For invalid protocols \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/Message\+Interface.\+php\end{DoxyCompactItemize}

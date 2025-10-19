@@ -1,0 +1,187 @@
+\doxysection{Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}Postgre\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler}{}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}Postgre\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}Postgre\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ac547f7c790427fdfeedba57300449808}{gc}} (\$max\+\_\+lifetime)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_aad6162f5a06e7e72a1a7cf6c989963cd}{\+\_\+\+\_\+construct}} (Session\+Config \$config, string \$ip\+Address)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_a44db39bdbb9d13eebb8cde6b8ba278bc}{open}} (\$path, \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_a95daacff13edc2dfe7dce89904aa02b6}{read}} (\$id)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_aceb8f56859f03d3807473bc4167b4e52}{write}} (\$id, \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_a3b1696a26ddf1a21882cf9e660c2d33a}{close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_a03cbdd7776a418db924d901c6c23616f}{destroy}} (\$id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ac26c84cdb5bb76ef3f9f906d5a87293d}{set\+Select}} (\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder}{Base\+Builder}} \$builder)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a52b00ecda7403af5b97a2d5b60bbd492}{decode\+Data}} (\$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a7887d35e33aa98db0a4827d9e3201207}{prepare\+Data}} (string \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a98d02f4c59078b000bbf72d7dd2b9153}{lock\+Session}} (string \$session\+ID)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ab9819710727329bd259137a802c4f667}{release\+Lock}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_aa22222decdb7468b5cbedaca3c2177dc}{destroy\+Cookie}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a2f5aa1f0b421ecb5b57e3c7fdfbf0e00}{fail}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+DBGroup}
+\item 
+{\bfseries \$table}
+\item 
+{\bfseries \$db}
+\item 
+{\bfseries \$platform}
+\item 
+{\bfseries \$row\+Exists} = false
+\item 
+string \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_a6b8278d7307bb975ef54f2695aa4424f}{\$id\+Prefix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$fingerprint}
+\item 
+{\bfseries \$lock} = false
+\item 
+{\bfseries \$cookie\+Prefix} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Domain} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Path} = \textquotesingle{}/\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Secure} = false
+\item 
+{\bfseries \$cookie\+Name}
+\item 
+{\bfseries \$match\+IP} = false
+\item 
+{\bfseries \$session\+ID}
+\item 
+{\bfseries \$save\+Path}
+\item 
+{\bfseries \$ip\+Address}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Session handler for Postgre
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\textbackslash{}\+Postgre\+Handler\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a52b00ecda7403af5b97a2d5b60bbd492}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}!decodeData@{decodeData}}
+\index{decodeData@{decodeData}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}}
+\doxysubsubsection{\texorpdfstring{decodeData()}{decodeData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a52b00ecda7403af5b97a2d5b60bbd492} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\textbackslash{}\+Postgre\+Handler\+::decode\+Data (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decodes column data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_a1da8228207afcb214496bfa4894bf633}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ac547f7c790427fdfeedba57300449808}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}!gc@{gc}}
+\index{gc@{gc}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}}
+\doxysubsubsection{\texorpdfstring{gc()}{gc()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ac547f7c790427fdfeedba57300449808} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\textbackslash{}\+Postgre\+Handler\+::gc (\begin{DoxyParamCaption}\item[{}]{\$max\+\_\+lifetime}{}\end{DoxyParamCaption})}
+
+Cleans up expired sessions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+\_\+lifetime} & Sessions that have not updated for the last max\+\_\+lifetime seconds will be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int Returns the number of deleted sessions on success, or false on failure. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_ad35837343290310a2934ebc17acf5d29}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a98d02f4c59078b000bbf72d7dd2b9153}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}!lockSession@{lockSession}}
+\index{lockSession@{lockSession}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}}
+\doxysubsubsection{\texorpdfstring{lockSession()}{lockSession()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a98d02f4c59078b000bbf72d7dd2b9153} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\textbackslash{}\+Postgre\+Handler\+::lock\+Session (\begin{DoxyParamCaption}\item[{string}]{\$session\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Lock the session. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a46bf0a22cb5a3507751080e9594548d6}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a7887d35e33aa98db0a4827d9e3201207}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}!prepareData@{prepareData}}
+\index{prepareData@{prepareData}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}}
+\doxysubsubsection{\texorpdfstring{prepareData()}{prepareData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_a7887d35e33aa98db0a4827d9e3201207} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\textbackslash{}\+Postgre\+Handler\+::prepare\+Data (\begin{DoxyParamCaption}\item[{string}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepare data to insert/update 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_abdcd30f36fd2cb23e5704790c5e85fcf}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ab9819710727329bd259137a802c4f667}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ab9819710727329bd259137a802c4f667} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\textbackslash{}\+Postgre\+Handler\+::release\+Lock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Releases the lock, if any. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_a0ca790a1846c3ed318502c7458e7be20}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ac26c84cdb5bb76ef3f9f906d5a87293d}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}!setSelect@{setSelect}}
+\index{setSelect@{setSelect}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Database\textbackslash{}PostgreHandler}}
+\doxysubsubsection{\texorpdfstring{setSelect()}{setSelect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_database_1_1_postgre_handler_ac26c84cdb5bb76ef3f9f906d5a87293d} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\textbackslash{}\+Postgre\+Handler\+::set\+Select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_builder}{Base\+Builder}}}]{\$builder}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets SELECT clause 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_database_handler_af3f526aee196bb545b748c134e48d12a}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Database\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Session/\+Handlers/\+Database/Postgre\+Handler.\+php\end{DoxyCompactItemize}

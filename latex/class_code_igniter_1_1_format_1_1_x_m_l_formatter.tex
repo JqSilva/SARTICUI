@@ -1,0 +1,98 @@
+\doxysection{Code\+Igniter\textbackslash{}Format\textbackslash{}XMLFormatter Class Reference}
+\hypertarget{class_code_igniter_1_1_format_1_1_x_m_l_formatter}{}\label{class_code_igniter_1_1_format_1_1_x_m_l_formatter}\index{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter@{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Format\textbackslash{}XMLFormatter\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Format\textbackslash{}XMLFormatter\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_format_1_1_x_m_l_formatter_a71bef528f2370a95998093753f735810}{format}} (\$data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_format_1_1_x_m_l_formatter_aa36ea439278ae51a741de6499dbe3468}{array\+To\+XML}} (array \$data, \&\$output)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_format_1_1_x_m_l_formatter_a200abd4537d5e9c32dec3f5c179bed9c}{normalize\+XMLTag}} (\$key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+XML data formatter
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+XMLFormatter\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_format_1_1_x_m_l_formatter_aa36ea439278ae51a741de6499dbe3468}\index{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter@{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter}!arrayToXML@{arrayToXML}}
+\index{arrayToXML@{arrayToXML}!CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter@{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter}}
+\doxysubsubsection{\texorpdfstring{arrayToXML()}{arrayToXML()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_format_1_1_x_m_l_formatter_aa36ea439278ae51a741de6499dbe3468} 
+Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+XMLFormatter\+::array\+To\+XML (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{\&}]{\$output}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A recursive method to convert an array into a valid XML string.
+
+Written by Codex\+World. Received permission by email on Nov 24, 2016 to use this code.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://www.codexworld.com/convert-array-to-xml-in-php/}{\texttt{ http\+://www.\+codexworld.\+com/convert-\/array-\/to-\/xml-\/in-\/php/}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+Simple\+XMLElement & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_format_1_1_x_m_l_formatter_a71bef528f2370a95998093753f735810}\index{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter@{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter}!format@{format}}
+\index{format@{format}!CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter@{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_format_1_1_x_m_l_formatter_a71bef528f2370a95998093753f735810} 
+Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+XMLFormatter\+::format (\begin{DoxyParamCaption}\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+Takes the given data and formats it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | bool | float | int | object | string | null & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string (XML string \texorpdfstring{$\vert$}{|} false) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_format_1_1_formatter_interface_ade3b3927254635e0744c95ce9d7e7149}{Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+Formatter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_format_1_1_x_m_l_formatter_a200abd4537d5e9c32dec3f5c179bed9c}\index{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter@{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter}!normalizeXMLTag@{normalizeXMLTag}}
+\index{normalizeXMLTag@{normalizeXMLTag}!CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter@{CodeIgniter\textbackslash{}Format\textbackslash{}XMLFormatter}}
+\doxysubsubsection{\texorpdfstring{normalizeXMLTag()}{normalizeXMLTag()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_format_1_1_x_m_l_formatter_a200abd4537d5e9c32dec3f5c179bed9c} 
+Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+XMLFormatter\+::normalize\+XMLTag (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Normalizes tags into the allowed by W3C. Regex adopted from this Stack\+Overflow answer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://stackoverflow.com/questions/60001029/invalid-characters-in-xml-tag-name}{\texttt{ https\+://stackoverflow.\+com/questions/60001029/invalid-\/characters-\/in-\/xml-\/tag-\/name}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Format/XMLFormatter.\+php\end{DoxyCompactItemize}

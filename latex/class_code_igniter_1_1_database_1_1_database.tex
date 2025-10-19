@@ -1,0 +1,98 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}Database Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_database}{}\label{class_code_igniter_1_1_database_1_1_database}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_database_a2c84e491005dba91cd679ed42f120f34}{load}} (array \$params=\mbox{[}$\,$\mbox{]}, string \$alias=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_database_af923952898e26894b1ca10198b98c0d5}{load\+Forge}} (\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$db)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_database_a8537a9c0798aa37f9b11f79c1509c52b}{load\+Utils}} (\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$db)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_database_a55404f4905fb460b1194c9571bd97d37}{parse\+DSN}} (array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_database_ac0eb229f7834d1ad1acaec25bdbf44a5}{init\+Driver}} (string \$driver, string \$class, \$argument)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_database_a38b941b4e014b614059662a77bcefa13}\label{class_code_igniter_1_1_database_1_1_database_a38b941b4e014b614059662a77bcefa13} 
+{\bfseries \$connections} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Database Connection Factory
+
+Creates and returns an instance of the appropriate Database Connection. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_database_ac0eb229f7834d1ad1acaec25bdbf44a5}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}!initDriver@{initDriver}}
+\index{initDriver@{initDriver}!CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}}
+\doxysubsubsection{\texorpdfstring{initDriver()}{initDriver()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_database_ac0eb229f7834d1ad1acaec25bdbf44a5} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Database\+::init\+Driver (\begin{DoxyParamCaption}\item[{string}]{\$driver}{, }\item[{string}]{\$class}{, }\item[{}]{\$argument}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates a database object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$driver} & Driver name. FQCN can be used. \\
+\hline
+string & {\em \$class} & \textquotesingle{}Connection\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}Forge\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}Utils\textquotesingle{} \\
+\hline
+array | Connection\+Interface & {\em \$argument} & The constructor parameter or DB connection\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Base\+Connection\texorpdfstring{$\vert$}{|}\+Base\+Utils\texorpdfstring{$\vert$}{|}\+Forge 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_database_a2c84e491005dba91cd679ed42f120f34}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}!load@{load}}
+\index{load@{load}!CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_database_a2c84e491005dba91cd679ed42f120f34} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Database\+::load (\begin{DoxyParamCaption}\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{string}]{\$alias}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Parses the connection binds and creates a Database Connection instance.
+
+\begin{DoxyReturn}{Returns}
+Base\+Connection
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_database_1_1_database_af923952898e26894b1ca10198b98c0d5}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}!loadForge@{loadForge}}
+\index{loadForge@{loadForge}!CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}}
+\doxysubsubsection{\texorpdfstring{loadForge()}{loadForge()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_database_af923952898e26894b1ca10198b98c0d5} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Database\+::load\+Forge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}}}]{\$db}{}\end{DoxyParamCaption})}
+
+Creates a Forge instance for the current database type. \Hypertarget{class_code_igniter_1_1_database_1_1_database_a8537a9c0798aa37f9b11f79c1509c52b}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}!loadUtils@{loadUtils}}
+\index{loadUtils@{loadUtils}!CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}}
+\doxysubsubsection{\texorpdfstring{loadUtils()}{loadUtils()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_database_a8537a9c0798aa37f9b11f79c1509c52b} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Database\+::load\+Utils (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}}}]{\$db}{}\end{DoxyParamCaption})}
+
+Creates an instance of Utils for the current database type. \Hypertarget{class_code_igniter_1_1_database_1_1_database_a55404f4905fb460b1194c9571bd97d37}\index{CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}!parseDSN@{parseDSN}}
+\index{parseDSN@{parseDSN}!CodeIgniter\textbackslash{}Database\textbackslash{}Database@{CodeIgniter\textbackslash{}Database\textbackslash{}Database}}
+\doxysubsubsection{\texorpdfstring{parseDSN()}{parseDSN()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_database_a55404f4905fb460b1194c9571bd97d37} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Database\+::parse\+DSN (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parses universal DSN string
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/Database.\+php\end{DoxyCompactItemize}

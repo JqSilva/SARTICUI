@@ -1,0 +1,127 @@
+\doxysection{Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Errorlog\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler}{}\label{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Errorlog\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Errorlog\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a841457eed683e29022396c30308884cd}{\+\_\+\+\_\+construct}} (array \$config=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_af27df8144773df7d9046ef6536cdc05b}{handle}} (\$level, \$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a00399835be424e54af0edf64d14fe90c}{can\+Handle}} (string \$level)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_ac1e40c030b4a48a0c7b160064301627f}{set\+Date\+Format}} (string \$format)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a30889838a262112334b025e62c3872ef}{TYPE\+\_\+\+OS}} = 0
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_ae4eab270622f823b367921654d804b06}{TYPE\+\_\+\+SAPI}} = 4
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a1838adf31d2db7c452cb957fd01e0c2e}{error\+Log}} (string \$message, int \$message\+Type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a7418f2c709c91593eee704fd74c93044}\label{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a7418f2c709c91593eee704fd74c93044} 
+{\bfseries \$message\+Type} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$handles}
+\item 
+{\bfseries \$date\+Format} = \textquotesingle{}Y-\/m-\/d H\+:i\+:s\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Log handler that writes to PHP\textquotesingle{}s {\ttfamily error\+\_\+log()}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Errorlog\+Handler\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a841457eed683e29022396c30308884cd}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a841457eed683e29022396c30308884cd} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Errorlog\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$config}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$mixed$>$} & \$config \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a4b0c021a3ee075b8d9bc11b0a28ecbd1}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a1838adf31d2db7c452cb957fd01e0c2e}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}!errorLog@{errorLog}}
+\index{errorLog@{errorLog}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}}
+\doxysubsubsection{\texorpdfstring{errorLog()}{errorLog()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a1838adf31d2db7c452cb957fd01e0c2e} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Errorlog\+Handler\+::error\+Log (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{int}]{\$message\+Type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extracted call to {\ttfamily error\+\_\+log()} in order to be tested.
+
+@code\+Coverage\+Ignore \Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_af27df8144773df7d9046ef6536cdc05b}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}!handle@{handle}}
+\index{handle@{handle}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_af27df8144773df7d9046ef6536cdc05b} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Errorlog\+Handler\+::handle (\begin{DoxyParamCaption}\item[{}]{\$level}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})}
+
+Handles logging the message. If the handler returns false, then execution of handlers will stop. Any handlers that have not run, yet, will not be run.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$level} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_a79691a9e971d9279225acc91d9f84e93}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Handler\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a30889838a262112334b025e62c3872ef}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}!TYPE\_OS@{TYPE\_OS}}
+\index{TYPE\_OS@{TYPE\_OS}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}}
+\doxysubsubsection{\texorpdfstring{TYPE\_OS}{TYPE\_OS}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a30889838a262112334b025e62c3872ef} 
+const Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Errorlog\+Handler\+::\+TYPE\+\_\+\+OS = 0}
+
+Message is sent to PHP\textquotesingle{}s system logger, using the Operating System\textquotesingle{}s system logging mechanism or a file, depending on what the error\+\_\+log configuration directive is set to. \Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_ae4eab270622f823b367921654d804b06}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}!TYPE\_SAPI@{TYPE\_SAPI}}
+\index{TYPE\_SAPI@{TYPE\_SAPI}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}ErrorlogHandler}}
+\doxysubsubsection{\texorpdfstring{TYPE\_SAPI}{TYPE\_SAPI}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_ae4eab270622f823b367921654d804b06} 
+const Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Errorlog\+Handler\+::\+TYPE\+\_\+\+SAPI = 4}
+
+Message is sent directly to the SAPI logging handler. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Log/\+Handlers/Errorlog\+Handler.\+php\end{DoxyCompactItemize}

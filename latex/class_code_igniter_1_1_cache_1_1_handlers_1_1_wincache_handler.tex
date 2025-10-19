@@ -1,0 +1,297 @@
+\doxysection{Code\+Igniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}Wincache\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler}{}\label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}Wincache\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}Wincache\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a40c1502ccdc3a62a4ebc534827118a73}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_config_1_1_cache}{Cache}} \$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a42c6717c718319070ce7cb8bb71593b1}{initialize}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_aafb33211b511e8c499b1c9bd7e38ae2f}{get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_adb5e45ec5791191c942f0de4e7eac529}{save}} (string \$key, \$value, int \$ttl=60)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_ad394cae031aaa3164a9443d9da411472}{delete}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_af7869839db4889d3b86ab4400ce68da2}{delete\+Matching}} (string \$pattern)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a985960c090a9042269bff02e9092a0f7}{increment}} (string \$key, int \$offset=1)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a89cf81c82ec0735391d0aa5d84d4e536}{decrement}} (string \$key, int \$offset=1)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_af924be0c53dacfaa277bb811a2069285}{clean}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a49a984d6632f0c29b17fb1f16b2235a1}{get\+Cache\+Info}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a705bbe90c282771c7de9637d778f9987}{get\+Meta\+Data}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_acb0259860e80471a7ef00edb7abcb411}{is\+Supported}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab9d46f4c7f8d09bd4a3c8e617db8b1fb}{remember}} (string \$key, int \$ttl, Closure \$callback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_a7f5b8d4cdff86945769e6a231064f1d4}{validate\+Key}} (\$key, \$prefix=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_aab78c36dc9172889a23edc4deecd3ec4}{RESERVED\+\_\+\+CHARACTERS}} = \textquotesingle{}\{\}()/\textbackslash{}@\+:\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_afa3d27887c584621f8c29cf07e8b78ac}{MAX\+\_\+\+KEY\+\_\+\+LENGTH}} = PHP\+\_\+\+INT\+\_\+\+MAX
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$prefix}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cache handler for Win\+Cache from Microsoft \& IIS.
+
+@code\+Coverage\+Ignore 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a40c1502ccdc3a62a4ebc534827118a73}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a40c1502ccdc3a62a4ebc534827118a73} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_config_1_1_cache}{Cache}}}]{\$config}{}\end{DoxyParamCaption})}
+
+Note\+: Use {\ttfamily Cache\+Factory\+::get\+Handler()} to instantiate. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_af924be0c53dacfaa277bb811a2069285}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!clean@{clean}}
+\index{clean@{clean}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_af924be0c53dacfaa277bb811a2069285} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::clean (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Will delete all items in the entire cache.
+
+\begin{DoxyReturn}{Returns}
+bool Success or failure
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a990dbf526af1c647c8fa9ae18211d2fa}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a89cf81c82ec0735391d0aa5d84d4e536}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!decrement@{decrement}}
+\index{decrement@{decrement}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a89cf81c82ec0735391d0aa5d84d4e536} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::decrement (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$offset}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Performs atomic decrementation of a raw stored value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \doxylink{namespace_code_igniter_1_1_cache}{Cache} ID \\
+\hline
+int & {\em \$offset} & Step/value to increase by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a9e34f8332defbd0af86e02179417125e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_ad394cae031aaa3164a9443d9da411472}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!delete@{delete}}
+\index{delete@{delete}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_ad394cae031aaa3164a9443d9da411472} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::delete (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Deletes a specific item from the cache store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \doxylink{namespace_code_igniter_1_1_cache}{Cache} item name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Success or failure
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a924d9f47143e6e3a2d6c20b14988024e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_af7869839db4889d3b86ab4400ce68da2}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!deleteMatching@{deleteMatching}}
+\index{deleteMatching@{deleteMatching}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{deleteMatching()}{deleteMatching()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_af7869839db4889d3b86ab4400ce68da2} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::delete\+Matching (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{}\end{DoxyParamCaption})}
+
+Deletes items from the cache store matching a given pattern.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \doxylink{namespace_code_igniter_1_1_cache}{Cache} items glob-\/style pattern\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}never
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\begin{DoxyReturn}{Returns}
+never 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_handlers_1_1_base_handler_ab27a631f8b63c1e67cbce698f2a6ff39}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_aafb33211b511e8c499b1c9bd7e38ae2f}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_aafb33211b511e8c499b1c9bd7e38ae2f} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Attempts to fetch an item from the cache store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \doxylink{namespace_code_igniter_1_1_cache}{Cache} item name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a68b00b3bcb364db019cb285570a44e38}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a49a984d6632f0c29b17fb1f16b2235a1}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!getCacheInfo@{getCacheInfo}}
+\index{getCacheInfo@{getCacheInfo}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{getCacheInfo()}{getCacheInfo()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a49a984d6632f0c29b17fb1f16b2235a1} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::get\+Cache\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns information on the entire cache.
+
+The information returned and the structure of the data varies depending on the handler.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_aa769017060f105fd5d64e7202014b6ee}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a705bbe90c282771c7de9637d778f9987}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!getMetaData@{getMetaData}}
+\index{getMetaData@{getMetaData}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{getMetaData()}{getMetaData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a705bbe90c282771c7de9637d778f9987} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::get\+Meta\+Data (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns detailed information about the specific item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \doxylink{namespace_code_igniter_1_1_cache}{Cache} item name.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false\texorpdfstring{$\vert$}{|}null Returns null if the item does not exist, otherwise array$<$string, mixed$>$ with at least the \textquotesingle{}expire\textquotesingle{} key for absolute epoch expiry (or null). Some handlers may return false when an item does not exist, which is deprecated.
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a54d5bd77af2587ceee4288909115b193}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a985960c090a9042269bff02e9092a0f7}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!increment@{increment}}
+\index{increment@{increment}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a985960c090a9042269bff02e9092a0f7} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::increment (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$offset}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Performs atomic incrementation of a raw stored value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \doxylink{namespace_code_igniter_1_1_cache}{Cache} ID \\
+\hline
+int & {\em \$offset} & Step/value to increase by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a7f5232e23a472896dff5d77a350c7b62}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a42c6717c718319070ce7cb8bb71593b1}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_a42c6717c718319070ce7cb8bb71593b1} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Takes care of any handler-\/specific setup that must be done.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_a3035592e1f3a9c5fae2526334537b8b1}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_acb0259860e80471a7ef00edb7abcb411}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!isSupported@{isSupported}}
+\index{isSupported@{isSupported}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{isSupported()}{isSupported()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_acb0259860e80471a7ef00edb7abcb411} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::is\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determines if the driver is supported on this system. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_ab59f48828ea4194cf13feec4d5417b86}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_adb5e45ec5791191c942f0de4e7eac529}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}!save@{save}}
+\index{save@{save}!CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler@{CodeIgniter\textbackslash{}Cache\textbackslash{}Handlers\textbackslash{}WincacheHandler}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_handlers_1_1_wincache_handler_adb5e45ec5791191c942f0de4e7eac529} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Handlers\textbackslash{}\+Wincache\+Handler\+::save (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{, }\item[{int}]{\$ttl}{ = {\ttfamily 60}}\end{DoxyParamCaption})}
+
+Saves an item to the cache store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \doxylink{namespace_code_igniter_1_1_cache}{Cache} item name \\
+\hline
+array | bool | float | int | object | string | null & {\em \$value} & The data to save \\
+\hline
+int & {\em \$ttl} & \doxylink{class_code_igniter_1_1_i18n_1_1_time}{Time} To Live, in seconds (default 60)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Success or failure
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface_ae7a4125220b98b393d2dcbd22f71914e}{Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Cache\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Cache/\+Handlers/Wincache\+Handler.\+php\end{DoxyCompactItemize}

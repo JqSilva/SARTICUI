@@ -1,0 +1,395 @@
+\doxysection{Kint\textbackslash{}Kint Class Reference}
+\hypertarget{class_kint_1_1_kint}{}\label{class_kint_1_1_kint}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+
+
+Inheritance diagram for Kint\textbackslash{}Kint\+:
+% FIG 0
+
+
+Collaboration diagram for Kint\textbackslash{}Kint\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_kint_af22be17cd858c94dda922f26cc89eb68}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser}{Parser}} \$p, \mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}} \$r)
+\item 
+\Hypertarget{class_kint_1_1_kint_afc2064641d04a957c1b050044b56c7df}\label{class_kint_1_1_kint_afc2064641d04a957c1b050044b56c7df} 
+{\bfseries set\+Parser} (\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser}{Parser}} \$p)
+\item 
+\Hypertarget{class_kint_1_1_kint_a1e526460b602e78444cc329e5638bdf2}\label{class_kint_1_1_kint_a1e526460b602e78444cc329e5638bdf2} 
+{\bfseries get\+Parser} ()
+\item 
+\Hypertarget{class_kint_1_1_kint_a0b12705e115a8383c968a6a59297676d}\label{class_kint_1_1_kint_a0b12705e115a8383c968a6a59297676d} 
+{\bfseries set\+Renderer} (\mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}} \$r)
+\item 
+\Hypertarget{class_kint_1_1_kint_a6e5f0743b7082563cc07aaa5f85daa33}\label{class_kint_1_1_kint_a6e5f0743b7082563cc07aaa5f85daa33} 
+{\bfseries get\+Renderer} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_kint_a3b13983bc44695357cdf1a8c0109814a}{set\+States\+From\+Statics}} (array \$statics)
+\item 
+\mbox{\hyperlink{class_kint_1_1_kint_a320ed0a355c51b12e1dc890f719c9d94}{set\+States\+From\+Call\+Info}} (array \$info)
+\item 
+\mbox{\hyperlink{class_kint_1_1_kint_a028201cfc1619e0f9887b081ef94f360}{dump\+All}} (array \$vars, array \$base)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_a83928c47fafc761c3139162c6cd1b5cd}{get\+Statics}} ()
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_a8fe068b58739def700a6f193ff5a3c86}{create\+From\+Statics}} (array \$statics)
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_a1fcb101398e60a5e92d1a54f44cb8689}{get\+Bases\+From\+Param\+Info}} (array \$params, int \$argc)
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_acb7be6859e17a7a959e5e3d2e288cb11}{get\+Call\+Info}} (array \$aliases, array \$\mbox{\hyperlink{class_kint_1_1_kint_ab9487bcdbab4f81b4dcdbf031ade5d73}{trace}}, array \$args)
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_ab9487bcdbab4f81b4dcdbf031ade5d73}{trace}} ()
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_a79fb157e7d50417a47385a4e752c2045}{dump}} (... \$args)
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_a802095b130313845ca265c86a66fd9b2}{shorten\+Path}} (string \$file)
+\item 
+\Hypertarget{class_kint_1_1_kint_a263e38ca3380c5b167d5e1d40818b50a}\label{class_kint_1_1_kint_a263e38ca3380c5b167d5e1d40818b50a} 
+static {\bfseries get\+Ide\+Link} (string \$file, int \$line)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_kint_af08a2efbf5772a3cb389c3f06f37a1d9}\label{class_kint_1_1_kint_af08a2efbf5772a3cb389c3f06f37a1d9} 
+const {\bfseries MODE\+\_\+\+RICH} = \textquotesingle{}r\textquotesingle{}
+\item 
+\Hypertarget{class_kint_1_1_kint_a6d112db99537a17fd94b68f5e60fd0c1}\label{class_kint_1_1_kint_a6d112db99537a17fd94b68f5e60fd0c1} 
+const {\bfseries MODE\+\_\+\+TEXT} = \textquotesingle{}t\textquotesingle{}
+\item 
+\Hypertarget{class_kint_1_1_kint_a31b1a4c7d711e396b2073aacede5076a}\label{class_kint_1_1_kint_a31b1a4c7d711e396b2073aacede5076a} 
+const {\bfseries MODE\+\_\+\+CLI} = \textquotesingle{}c\textquotesingle{}
+\item 
+\Hypertarget{class_kint_1_1_kint_a43fbf67c23671ad926cc281e3f05f135}\label{class_kint_1_1_kint_a43fbf67c23671ad926cc281e3f05f135} 
+const {\bfseries MODE\+\_\+\+PLAIN} = \textquotesingle{}p\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_kint_a38118f27a1fee31c658a1aef04737e0e}\label{class_kint_1_1_kint_a38118f27a1fee31c658a1aef04737e0e} 
+static {\bfseries \$enabled\+\_\+mode} = true
+\item 
+\Hypertarget{class_kint_1_1_kint_a84e6b5466dfd6edc74424215ee51cbf3}\label{class_kint_1_1_kint_a84e6b5466dfd6edc74424215ee51cbf3} 
+static {\bfseries \$mode\+\_\+default} = self\+::\+MODE\+\_\+\+RICH
+\item 
+\Hypertarget{class_kint_1_1_kint_ab85e22a817b5fe8ea808aae5058ef5ef}\label{class_kint_1_1_kint_ab85e22a817b5fe8ea808aae5058ef5ef} 
+static {\bfseries \$mode\+\_\+default\+\_\+cli} = self\+::\+MODE\+\_\+\+CLI
+\item 
+\Hypertarget{class_kint_1_1_kint_aac181382c7bd04a3140b7663fa688d71}\label{class_kint_1_1_kint_aac181382c7bd04a3140b7663fa688d71} 
+static {\bfseries \$return}
+\item 
+\Hypertarget{class_kint_1_1_kint_a457526dd5747fbafde534c0b9fef12b1}\label{class_kint_1_1_kint_a457526dd5747fbafde534c0b9fef12b1} 
+static {\bfseries \$file\+\_\+link\+\_\+format} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_kint_1_1_kint_ad4c25c2059b652f3cc6a0138da68c2ef}\label{class_kint_1_1_kint_ad4c25c2059b652f3cc6a0138da68c2ef} 
+static {\bfseries \$display\+\_\+called\+\_\+from} = true
+\item 
+\Hypertarget{class_kint_1_1_kint_a077c1cefb72f6f8374cc6b725fc9b362}\label{class_kint_1_1_kint_a077c1cefb72f6f8374cc6b725fc9b362} 
+static {\bfseries \$app\+\_\+root\+\_\+dirs} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_kint_1_1_kint_aaea582c810c6059d316899e8760cb753}\label{class_kint_1_1_kint_aaea582c810c6059d316899e8760cb753} 
+static {\bfseries \$depth\+\_\+limit} = 7
+\item 
+\Hypertarget{class_kint_1_1_kint_a27730d93d40420ff002f9755991ae44e}\label{class_kint_1_1_kint_a27730d93d40420ff002f9755991ae44e} 
+static {\bfseries \$expanded} = false
+\item 
+\Hypertarget{class_kint_1_1_kint_a0e9f05f8565c1fb092693c595ed41cf7}\label{class_kint_1_1_kint_a0e9f05f8565c1fb092693c595ed41cf7} 
+static {\bfseries \$cli\+\_\+detection} = true
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_a83ba4d2b835a7b7ae9d957188b7f21d1}{\$aliases}}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_a84275b67634442f54fed2aff993dbbfb}{\$renderers}}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_a35984687749bdae495c1e30a91f232c9}{\$plugins}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_kint_ad0a96e6285fd693d27a979604f257fd1}{dump\+Var}} (\&\$var, \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$base)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_kint_ae15463e6e78af4a77b54e1ff3fc3e530}{get\+Single\+Call}} (array \$frame, array \$args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_kint_a88e2fd248a04982ea33aec29d9912b3f}\label{class_kint_1_1_kint_a88e2fd248a04982ea33aec29d9912b3f} 
+{\bfseries \$parser}
+\item 
+\Hypertarget{class_kint_1_1_kint_a0452072145ff3e88365ff515448655ef}\label{class_kint_1_1_kint_a0452072145ff3e88365ff515448655ef} 
+{\bfseries \$renderer}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_kint_a5ba71e9d9c5cf2e30106f101d6c789b8}\label{class_kint_1_1_kint_a5ba71e9d9c5cf2e30106f101d6c789b8} 
+static {\bfseries \$plugin\+\_\+pool} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@psalm-\/consistent-\/constructor 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_kint_1_1_kint_af22be17cd858c94dda922f26cc89eb68}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_af22be17cd858c94dda922f26cc89eb68} 
+Kint\textbackslash{}\+Kint\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser}{Parser}}}]{\$p}{, }\item[{\mbox{\hyperlink{interface_kint_1_1_renderer_1_1_renderer_interface}{Renderer\+Interface}}}]{\$r}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_facade_interface}{Kint\textbackslash{}\+Facade\+Interface}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kint_1_1_kint_a8fe068b58739def700a6f193ff5a3c86}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!createFromStatics@{createFromStatics}}
+\index{createFromStatics@{createFromStatics}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{createFromStatics()}{createFromStatics()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a8fe068b58739def700a6f193ff5a3c86} 
+static Kint\textbackslash{}\+Kint\+::create\+From\+Statics (\begin{DoxyParamCaption}\item[{array}]{\$statics}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a Kint instance based on static settings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$statics} & array of statics as returned by get\+Statics \\
+\hline
+\end{DoxyParams}
+@psalm-\/var class-\/string\mbox{[}\mbox{]} \$statics\mbox{[}\textquotesingle{}renderers\textquotesingle{}\mbox{]}\Hypertarget{class_kint_1_1_kint_a79fb157e7d50417a47385a4e752c2045}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!dump@{dump}}
+\index{dump@{dump}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a79fb157e7d50417a47385a4e752c2045} 
+static Kint\textbackslash{}\+Kint\+::dump (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dumps some data.
+
+Functionally equivalent to Kint\+::dump(1) or Kint\+::dump(debug\+\_\+backtrace())
+
+@psalm-\/param array ...\$args
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_kint_1_1_kint_a028201cfc1619e0f9887b081ef94f360}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!dumpAll@{dumpAll}}
+\index{dumpAll@{dumpAll}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{dumpAll()}{dumpAll()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a028201cfc1619e0f9887b081ef94f360} 
+Kint\textbackslash{}\+Kint\+::dump\+All (\begin{DoxyParamCaption}\item[{array}]{\$vars}{, }\item[{array}]{\$base}{}\end{DoxyParamCaption})}
+
+Renders a list of vars including the pre and post renders.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$vars} & Data to dump \\
+\hline
+Value\mbox{[}$\,$\mbox{]} & {\em \$base} & The base value objects \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_facade_interface_ae5d96df1319f26ff728a7d5a8d0055dc}{Kint\textbackslash{}\+Facade\+Interface}}.
+
+\Hypertarget{class_kint_1_1_kint_ad0a96e6285fd693d27a979604f257fd1}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!dumpVar@{dumpVar}}
+\index{dumpVar@{dumpVar}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{dumpVar()}{dumpVar()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_ad0a96e6285fd693d27a979604f257fd1} 
+Kint\textbackslash{}\+Kint\+::dump\+Var (\begin{DoxyParamCaption}\item[{\&}]{\$var}{, }\item[{\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}}}]{\$base}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Dumps and renders a var.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \&\$var} & Data to dump \\
+\hline
+Value & {\em \$base} & Base object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_kint_1_1_kint_a1fcb101398e60a5e92d1a54f44cb8689}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!getBasesFromParamInfo@{getBasesFromParamInfo}}
+\index{getBasesFromParamInfo@{getBasesFromParamInfo}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{getBasesFromParamInfo()}{getBasesFromParamInfo()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a1fcb101398e60a5e92d1a54f44cb8689} 
+static Kint\textbackslash{}\+Kint\+::get\+Bases\+From\+Param\+Info (\begin{DoxyParamCaption}\item[{array}]{\$params}{, }\item[{int}]{\$argc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates base objects given parameter info.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Parameters as returned from get\+Call\+Info \\
+\hline
+int & {\em \$argc} & Number of arguments the helper was called with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value\mbox{[}\mbox{]} Base objects for the arguments 
+\end{DoxyReturn}
+\Hypertarget{class_kint_1_1_kint_acb7be6859e17a7a959e5e3d2e288cb11}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!getCallInfo@{getCallInfo}}
+\index{getCallInfo@{getCallInfo}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{getCallInfo()}{getCallInfo()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_acb7be6859e17a7a959e5e3d2e288cb11} 
+static Kint\textbackslash{}\+Kint\+::get\+Call\+Info (\begin{DoxyParamCaption}\item[{array}]{\$aliases}{, }\item[{array}]{\$trace}{, }\item[{array}]{\$args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets call info from the backtrace, alias, and argument count.
+
+Aliases must be normalized beforehand (Utils\+::normalize\+Aliases)
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$aliases} & Call aliases as found in Kint\+::\$aliases \\
+\hline
+array\mbox{[}$\,$\mbox{]} & {\em \$trace} & Backtrace \\
+\hline
+array & {\em \$args} & Arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Call info 
+\end{DoxyReturn}
+\Hypertarget{class_kint_1_1_kint_ae15463e6e78af4a77b54e1ff3fc3e530}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!getSingleCall@{getSingleCall}}
+\index{getSingleCall@{getSingleCall}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{getSingleCall()}{getSingleCall()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_ae15463e6e78af4a77b54e1ff3fc3e530} 
+static Kint\textbackslash{}\+Kint\+::get\+Single\+Call (\begin{DoxyParamCaption}\item[{array}]{\$frame}{, }\item[{array}]{\$args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Returns specific function call info from a stack trace frame, or null if no match could be found.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$frame} & The stack trace frame in question \\
+\hline
+array & {\em \$args} & The arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?array params and modifiers, or null if a specific call could not be determined 
+\end{DoxyReturn}
+\Hypertarget{class_kint_1_1_kint_a83928c47fafc761c3139162c6cd1b5cd}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!getStatics@{getStatics}}
+\index{getStatics@{getStatics}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{getStatics()}{getStatics()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a83928c47fafc761c3139162c6cd1b5cd} 
+static Kint\textbackslash{}\+Kint\+::get\+Statics (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets all static settings at once.
+
+\begin{DoxyReturn}{Returns}
+array Current static settings 
+\end{DoxyReturn}
+\Hypertarget{class_kint_1_1_kint_a320ed0a355c51b12e1dc890f719c9d94}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!setStatesFromCallInfo@{setStatesFromCallInfo}}
+\index{setStatesFromCallInfo@{setStatesFromCallInfo}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{setStatesFromCallInfo()}{setStatesFromCallInfo()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a320ed0a355c51b12e1dc890f719c9d94} 
+Kint\textbackslash{}\+Kint\+::set\+States\+From\+Call\+Info (\begin{DoxyParamCaption}\item[{array}]{\$info}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_facade_interface}{Kint\textbackslash{}\+Facade\+Interface}}.
+
+\Hypertarget{class_kint_1_1_kint_a3b13983bc44695357cdf1a8c0109814a}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!setStatesFromStatics@{setStatesFromStatics}}
+\index{setStatesFromStatics@{setStatesFromStatics}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{setStatesFromStatics()}{setStatesFromStatics()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a3b13983bc44695357cdf1a8c0109814a} 
+Kint\textbackslash{}\+Kint\+::set\+States\+From\+Statics (\begin{DoxyParamCaption}\item[{array}]{\$statics}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_facade_interface}{Kint\textbackslash{}\+Facade\+Interface}}.
+
+\Hypertarget{class_kint_1_1_kint_a802095b130313845ca265c86a66fd9b2}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!shortenPath@{shortenPath}}
+\index{shortenPath@{shortenPath}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{shortenPath()}{shortenPath()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a802095b130313845ca265c86a66fd9b2} 
+static Kint\textbackslash{}\+Kint\+::shorten\+Path (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+generic path display callback, can be configured in app\+\_\+root\+\_\+dirs; purpose is to show relevant path info and hide as much of the path as possible. @psalm-\/var string \$path\Hypertarget{class_kint_1_1_kint_ab9487bcdbab4f81b4dcdbf031ade5d73}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!trace@{trace}}
+\index{trace@{trace}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_ab9487bcdbab4f81b4dcdbf031ade5d73} 
+static Kint\textbackslash{}\+Kint\+::trace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dumps a backtrace.
+
+Functionally equivalent to Kint\+::dump(1) or Kint\+::dump(debug\+\_\+backtrace(true))
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_kint_1_1_kint_a83ba4d2b835a7b7ae9d957188b7f21d1}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!\$aliases@{\$aliases}}
+\index{\$aliases@{\$aliases}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{\$aliases}{\$aliases}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a83ba4d2b835a7b7ae9d957188b7f21d1} 
+Kint\textbackslash{}\+Kint\+::\$aliases\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'Kint\(\backslash\)\(\backslash\)Kint'},\ \textcolor{stringliteral}{'dump'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'Kint\(\backslash\)\(\backslash\)Kint'},\ \textcolor{stringliteral}{'trace'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'Kint\(\backslash\)\(\backslash\)Kint'},\ \textcolor{stringliteral}{'dumpAll'}],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_kint_1_1_kint_a35984687749bdae495c1e30a91f232c9}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!\$plugins@{\$plugins}}
+\index{\$plugins@{\$plugins}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{\$plugins}{\$plugins}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a35984687749bdae495c1e30a91f232c9} 
+Kint\textbackslash{}\+Kint\+::\$plugins\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)ArrayLimitPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)ArrayObjectPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)Base64Plugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)BlacklistPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)ClassMethodsPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)ClassStaticsPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)ClosurePlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)ColorPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)DateTimePlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)EnumPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)FsPathPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)IteratorPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)JsonPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)MicrotimePlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)SimpleXMLElementPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)SplFileInfoPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)SplObjectStoragePlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)StreamPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)TablePlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)ThrowablePlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)TimestampPlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)TracePlugin::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Kint\(\backslash\)Parser\(\backslash\)XmlPlugin::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+@psalm-\/var class-\/string\mbox{[}\mbox{]} \Hypertarget{class_kint_1_1_kint_a84275b67634442f54fed2aff993dbbfb}\index{Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}!\$renderers@{\$renderers}}
+\index{\$renderers@{\$renderers}!Kint\textbackslash{}Kint@{Kint\textbackslash{}Kint}}
+\doxysubsubsection{\texorpdfstring{\$renderers}{\$renderers}}
+{\footnotesize\ttfamily \label{class_kint_1_1_kint_a84275b67634442f54fed2aff993dbbfb} 
+Kint\textbackslash{}\+Kint\+::\$renderers\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::MODE\_RICH\ =>\ \(\backslash\)Kint\(\backslash\)Renderer\(\backslash\)RichRenderer::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::MODE\_PLAIN\ =>\ \(\backslash\)Kint\(\backslash\)Renderer\(\backslash\)PlainRenderer::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::MODE\_TEXT\ =>\ \(\backslash\)Kint\(\backslash\)Renderer\(\backslash\)TextRenderer::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::MODE\_CLI\ =>\ \(\backslash\)Kint\(\backslash\)Renderer\(\backslash\)CliRenderer::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+@psalm-\/var class-\/string\mbox{[}\mbox{]} Array of modes to renderer class names 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/Kint.\+php\end{DoxyCompactItemize}

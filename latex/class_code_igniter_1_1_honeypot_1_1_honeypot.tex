@@ -1,0 +1,82 @@
+\doxysection{Code\+Igniter\textbackslash{}Honeypot\textbackslash{}Honeypot Class Reference}
+\hypertarget{class_code_igniter_1_1_honeypot_1_1_honeypot}{}\label{class_code_igniter_1_1_honeypot_1_1_honeypot}\index{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_honeypot_1_1_honeypot_a964d10fc1448566faa13108d9d5c88c5}{\+\_\+\+\_\+construct}} (Honeypot\+Config \$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_honeypot_1_1_honeypot_ab7497126a00a7431f22bf9b8eb7cd464}{has\+Content}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_honeypot_1_1_honeypot_a05e5f2a949dc990e9ce37b1499174feb}{attach\+Honeypot}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_honeypot_1_1_honeypot_ac1ab2076ec3c00d6f5d0265429605f27}{prepare\+Template}} (string \$template)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_honeypot_1_1_honeypot_a0327360b6ade570da527b802d0b9d30c}\label{class_code_igniter_1_1_honeypot_1_1_honeypot_a0327360b6ade570da527b802d0b9d30c} 
+{\bfseries \$config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class Honeypot
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Honeypot\textbackslash{}\+Honeypot\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_honeypot_1_1_honeypot_a964d10fc1448566faa13108d9d5c88c5}\index{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_honeypot_1_1_honeypot_a964d10fc1448566faa13108d9d5c88c5} 
+Code\+Igniter\textbackslash{}\+Honeypot\textbackslash{}\+Honeypot\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Honeypot\+Config}]{\$config}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Honeypot\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_honeypot_1_1_honeypot_a05e5f2a949dc990e9ce37b1499174feb}\index{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}!attachHoneypot@{attachHoneypot}}
+\index{attachHoneypot@{attachHoneypot}!CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}}
+\doxysubsubsection{\texorpdfstring{attachHoneypot()}{attachHoneypot()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_honeypot_1_1_honeypot_a05e5f2a949dc990e9ce37b1499174feb} 
+Code\+Igniter\textbackslash{}\+Honeypot\textbackslash{}\+Honeypot\+::attach\+Honeypot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Attaches Honeypot template to response.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_honeypot_1_1_honeypot_ab7497126a00a7431f22bf9b8eb7cd464}\index{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}!hasContent@{hasContent}}
+\index{hasContent@{hasContent}!CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}}
+\doxysubsubsection{\texorpdfstring{hasContent()}{hasContent()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_honeypot_1_1_honeypot_ab7497126a00a7431f22bf9b8eb7cd464} 
+Code\+Igniter\textbackslash{}\+Honeypot\textbackslash{}\+Honeypot\+::has\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Checks the request if honeypot field has data.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_honeypot_1_1_honeypot_ac1ab2076ec3c00d6f5d0265429605f27}\index{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}!prepareTemplate@{prepareTemplate}}
+\index{prepareTemplate@{prepareTemplate}!CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot@{CodeIgniter\textbackslash{}Honeypot\textbackslash{}Honeypot}}
+\doxysubsubsection{\texorpdfstring{prepareTemplate()}{prepareTemplate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_honeypot_1_1_honeypot_ac1ab2076ec3c00d6f5d0265429605f27} 
+Code\+Igniter\textbackslash{}\+Honeypot\textbackslash{}\+Honeypot\+::prepare\+Template (\begin{DoxyParamCaption}\item[{string}]{\$template}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepares the template by adding label content and field name. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Honeypot/Honeypot.\+php\end{DoxyCompactItemize}

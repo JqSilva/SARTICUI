@@ -1,0 +1,182 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Negotiate Class Reference}
+\hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate}{}\label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a730f5a27c57e95abd12657b914af5457}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aa981892b25bd3f1a30e689c8345edb31}{set\+Request}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a59e9460c964eb8ff6c4e7f0764de5930}{media}} (array \$supported, bool \$strict\+Match=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ad3df47346f9623ac24b74162a6b57e62}{charset}} (array \$supported)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a99d3668e0a594c2b0fa35d3a03fd9f85}{encoding}} (array \$supported=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a043d7d399d80d938a760686df6dbe685}{language}} (array \$supported)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aaed972666119e4a88e7c20984967291c}{parse\+Header}} (string \$\mbox{\hyperlink{namespace_code_igniter_1_1_h_t_t_p_a51513cdc8969e196b61792bf70250023}{header}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a48ff3064084bc1125e114a71ddcf1574}{match\+Types}} (array \$acceptable, array \$supported)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ac3ea5c1bf9881267ba8d8210e403b8c4}{match\+Locales}} (array \$acceptable, array \$supported)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aa4e1f7d9414e4a8169f4017d89e2447d}{get\+Best\+Match}} (array \$supported, ?string \$\mbox{\hyperlink{namespace_code_igniter_1_1_h_t_t_p_a51513cdc8969e196b61792bf70250023}{header}}=null, bool \$enforce\+Types=false, bool \$strict\+Match=false, bool \$\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ac3ea5c1bf9881267ba8d8210e403b8c4}{match\+Locales}}=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_acbcb85100e4dc0c7e11ef35bc3acce12}{match}} (array \$acceptable, string \$supported, bool \$enforce\+Types=false, \$\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ac3ea5c1bf9881267ba8d8210e403b8c4}{match\+Locales}}=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a73c80f5e8081160c76850c6d03c8982f}{match\+Parameters}} (array \$acceptable, array \$supported)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ac8f6d571a83f5cdb7393e9000c2f9fb0}\label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ac8f6d571a83f5cdb7393e9000c2f9fb0} 
+{\bfseries \$request}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Negotiate
+
+Provides methods to negotiate with the HTTP headers to determine the best type match between what the application supports and what the requesting server wants.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://tools.ietf.org/html/rfc7231\#section-5.3}{\texttt{ http\+://tools.\+ietf.\+org/html/rfc7231\#section-\/5.\+3}} 
+
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a730f5a27c57e95abd12657b914af5457}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a730f5a27c57e95abd12657b914af5457} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ad3df47346f9623ac24b74162a6b57e62}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!charset@{charset}}
+\index{charset@{charset}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{charset()}{charset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ad3df47346f9623ac24b74162a6b57e62} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::charset (\begin{DoxyParamCaption}\item[{array}]{\$supported}{}\end{DoxyParamCaption})}
+
+Determines the best charset to use based on the \$supported types the application says it supports, and the types requested by the client.
+
+If no match is found, the first, highest-\/ranking client requested type is returned. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a99d3668e0a594c2b0fa35d3a03fd9f85}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!encoding@{encoding}}
+\index{encoding@{encoding}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{encoding()}{encoding()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a99d3668e0a594c2b0fa35d3a03fd9f85} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::encoding (\begin{DoxyParamCaption}\item[{array}]{\$supported}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determines the best encoding type to use based on the \$supported types the application says it supports, and the types requested by the client.
+
+If no match is found, the first, highest-\/ranking client requested type is returned. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aa4e1f7d9414e4a8169f4017d89e2447d}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!getBestMatch@{getBestMatch}}
+\index{getBestMatch@{getBestMatch}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{getBestMatch()}{getBestMatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aa4e1f7d9414e4a8169f4017d89e2447d} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::get\+Best\+Match (\begin{DoxyParamCaption}\item[{array}]{\$supported}{, }\item[{?string}]{\$header}{ = {\ttfamily null}, }\item[{bool}]{\$enforce\+Types}{ = {\ttfamily false}, }\item[{bool}]{\$strict\+Match}{ = {\ttfamily false}, }\item[{bool}]{\$match\+Locales}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Does the grunt work of comparing any of the app-\/supported values against a given Accept\texorpdfstring{$\ast$}{*} header string.
+
+Portions of this code base on Aura.\+Accept library.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$supported} & App-\/supported values \\
+\hline
+string & {\em \$header} & header string \\
+\hline
+bool & {\em \$enforce\+Types} & If TRUE, will compare media types and sub-\/types. \\
+\hline
+bool & {\em \$strict\+Match} & If TRUE, will return empty string on no match. If FALSE, will return the first supported element. \\
+\hline
+bool & {\em \$match\+Locales} & If TRUE, will match locale sub-\/types to a broad type (fr-\/\+FR = fr)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Best match 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a043d7d399d80d938a760686df6dbe685}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!language@{language}}
+\index{language@{language}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{language()}{language()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a043d7d399d80d938a760686df6dbe685} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::language (\begin{DoxyParamCaption}\item[{array}]{\$supported}{}\end{DoxyParamCaption})}
+
+Determines the best language to use based on the \$supported types the application says it supports, and the types requested by the client.
+
+If no match is found, the first, highest-\/ranking client requested type is returned. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_acbcb85100e4dc0c7e11ef35bc3acce12}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!match@{match}}
+\index{match@{match}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_acbcb85100e4dc0c7e11ef35bc3acce12} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::match (\begin{DoxyParamCaption}\item[{array}]{\$acceptable}{, }\item[{string}]{\$supported}{, }\item[{bool}]{\$enforce\+Types}{ = {\ttfamily false}, }\item[{}]{\$match\+Locales}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Match-\/maker
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$match\+Locales} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ac3ea5c1bf9881267ba8d8210e403b8c4}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!matchLocales@{matchLocales}}
+\index{matchLocales@{matchLocales}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{matchLocales()}{matchLocales()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_ac3ea5c1bf9881267ba8d8210e403b8c4} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::match\+Locales (\begin{DoxyParamCaption}\item[{array}]{\$acceptable}{, }\item[{array}]{\$supported}{}\end{DoxyParamCaption})}
+
+Will match locales against their broader pairs, so that fr-\/\+FR would match a supported localed of fr \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a73c80f5e8081160c76850c6d03c8982f}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!matchParameters@{matchParameters}}
+\index{matchParameters@{matchParameters}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{matchParameters()}{matchParameters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a73c80f5e8081160c76850c6d03c8982f} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::match\+Parameters (\begin{DoxyParamCaption}\item[{array}]{\$acceptable}{, }\item[{array}]{\$supported}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks two Accept values with matching \textquotesingle{}values\textquotesingle{} to see if their \textquotesingle{}params\textquotesingle{} are the same. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a48ff3064084bc1125e114a71ddcf1574}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!matchTypes@{matchTypes}}
+\index{matchTypes@{matchTypes}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{matchTypes()}{matchTypes()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a48ff3064084bc1125e114a71ddcf1574} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::match\+Types (\begin{DoxyParamCaption}\item[{array}]{\$acceptable}{, }\item[{array}]{\$supported}{}\end{DoxyParamCaption})}
+
+Compares the types/subtypes of an acceptable Media type and the supported string. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a59e9460c964eb8ff6c4e7f0764de5930}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!media@{media}}
+\index{media@{media}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{media()}{media()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_a59e9460c964eb8ff6c4e7f0764de5930} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::media (\begin{DoxyParamCaption}\item[{array}]{\$supported}{, }\item[{bool}]{\$strict\+Match}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Determines the best content-\/type to use based on the \$supported types the application says it supports, and the types requested by the client.
+
+If no match is found, the first, highest-\/ranking client requested type is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$strict\+Match} & If TRUE, will return an empty string when no match found. If FALSE, will return the first supported element. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aaed972666119e4a88e7c20984967291c}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!parseHeader@{parseHeader}}
+\index{parseHeader@{parseHeader}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{parseHeader()}{parseHeader()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aaed972666119e4a88e7c20984967291c} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::parse\+Header (\begin{DoxyParamCaption}\item[{string}]{\$header}{}\end{DoxyParamCaption})}
+
+Parses an Accept\texorpdfstring{$\ast$}{*} header into it\textquotesingle{}s multiple values.
+
+This is based on code from Aura.\+Accept library. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aa981892b25bd3f1a30e689c8345edb31}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}!setRequest@{setRequest}}
+\index{setRequest@{setRequest}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Negotiate}}
+\doxysubsubsection{\texorpdfstring{setRequest()}{setRequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_negotiate_aa981892b25bd3f1a30e689c8345edb31} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Negotiate\+::set\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Stores the request instance to grab the headers from.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/Negotiate.\+php\end{DoxyCompactItemize}

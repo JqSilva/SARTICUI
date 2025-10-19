@@ -1,0 +1,211 @@
+\doxysection{Kint\textbackslash{}Zval\textbackslash{}Blob\+Value Class Reference}
+\hypertarget{class_kint_1_1_zval_1_1_blob_value}{}\label{class_kint_1_1_zval_1_1_blob_value}\index{Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}}
+
+
+Inheritance diagram for Kint\textbackslash{}Zval\textbackslash{}Blob\+Value\+:
+% FIG 0
+
+
+Collaboration diagram for Kint\textbackslash{}Zval\textbackslash{}Blob\+Value\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_zval_1_1_blob_value_aaaf0d0e24b59f3e1960fd96d1f1acdef}{get\+Type}} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_zval_1_1_blob_value_a9724134d0c94398c730ee09c8d50b8f0}{get\+Value\+Short}} ()
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_aedcdb328479ac5e249285ca7c3678717}\label{class_kint_1_1_zval_1_1_blob_value_aedcdb328479ac5e249285ca7c3678717} 
+{\bfseries transplant} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \$old)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries add\+Representation} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_representation_1_1_representation}{Representation}} \$rep, int \$pos=null)
+\item 
+{\bfseries replace\+Representation} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_representation_1_1_representation}{Representation}} \$rep, int \$pos=null)
+\item 
+\mbox{\hyperlink{class_kint_1_1_zval_1_1_value_a208404a998e6f9df17424a82fbe7b496}{remove\+Representation}} (\$rep)
+\item 
+{\bfseries get\+Representation} (string \$name)
+\item 
+{\bfseries get\+Representations} ()
+\item 
+{\bfseries clear\+Representations} ()
+\item 
+{\bfseries get\+Modifiers} ()
+\item 
+{\bfseries get\+Access} ()
+\item 
+{\bfseries get\+Name} ()
+\item 
+{\bfseries get\+Operator} ()
+\item 
+{\bfseries get\+Size} ()
+\item 
+{\bfseries get\+Access\+Path} ()
+\item 
+{\bfseries transplant} (self \$old)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_zval_1_1_blob_value_a1f525ef47dff2772d91409cec0653bbd}{strlen}} (string \$string, \$encoding=false)
+\item 
+static \mbox{\hyperlink{class_kint_1_1_zval_1_1_blob_value_ad8f8219f8b418f608fe493e69922f395}{substr}} (string \$string, int \$start, int \$length=null, \$encoding=false)
+\item 
+static \mbox{\hyperlink{class_kint_1_1_zval_1_1_blob_value_ae48b6585fe5b5faa7b597ede1076a0cb}{detect\+Encoding}} (string \$string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_zval_1_1_value_aeb4ce455ec49d20ad2c0eddc79278cdb}{blank}} (string \$name=null, string \$access\+\_\+path=null)
+\item 
+static {\bfseries sort\+By\+Access} (self \$a, self \$b)
+\item 
+static {\bfseries sort\+By\+Name} (self \$a, self \$b)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_aba8af118df4458b26acaf6fd0fd17d6d}\label{class_kint_1_1_zval_1_1_blob_value_aba8af118df4458b26acaf6fd0fd17d6d} 
+{\bfseries \$type} = \textquotesingle{}string\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_kint_1_1_zval_1_1_blob_value_a2535c90c35a84c28161288c66cfc7978}{\$encoding}} = false
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_ae83b58aef66dbbd13b0a71dd2a8db966}\label{class_kint_1_1_zval_1_1_blob_value_ae83b58aef66dbbd13b0a71dd2a8db966} 
+{\bfseries \$hints} = \mbox{[}\textquotesingle{}string\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries ACCESS\+\_\+\+NONE} = null
+\item 
+const {\bfseries ACCESS\+\_\+\+PUBLIC} = 1
+\item 
+const {\bfseries ACCESS\+\_\+\+PROTECTED} = 2
+\item 
+const {\bfseries ACCESS\+\_\+\+PRIVATE} = 3
+\item 
+const {\bfseries OPERATOR\+\_\+\+NONE} = null
+\item 
+const {\bfseries OPERATOR\+\_\+\+ARRAY} = 1
+\item 
+const {\bfseries OPERATOR\+\_\+\+OBJECT} = 2
+\item 
+const {\bfseries OPERATOR\+\_\+\+STATIC} = 3
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$type}
+\item 
+{\bfseries \$readonly} = false
+\item 
+{\bfseries \$static} = false
+\item 
+{\bfseries \$const} = false
+\item 
+{\bfseries \$access} = self\+::\+ACCESS\+\_\+\+NONE
+\item 
+{\bfseries \$owner\+\_\+class} = null
+\item 
+{\bfseries \$access\+\_\+path}
+\item 
+{\bfseries \$operator} = self\+::\+OPERATOR\+\_\+\+NONE
+\item 
+{\bfseries \$reference} = false
+\item 
+{\bfseries \$depth} = 0
+\item 
+{\bfseries \$size}
+\item 
+{\bfseries \$hints} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$value}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_zval_1_1_blob_value_ad067372b8f39188983857191328c387e}{\$char\+\_\+encodings}}
+\item 
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_a31b02519fee44a4ec08c4e93828348c1}\label{class_kint_1_1_zval_1_1_blob_value_a31b02519fee44a4ec08c4e93828348c1} 
+static {\bfseries \$legacy\+\_\+encodings} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$representations} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@psalm-\/type Encoding string\texorpdfstring{$\vert$}{|}false 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_ae48b6585fe5b5faa7b597ede1076a0cb}\index{Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}!detectEncoding@{detectEncoding}}
+\index{detectEncoding@{detectEncoding}!Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}}
+\doxysubsubsection{\texorpdfstring{detectEncoding()}{detectEncoding()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_zval_1_1_blob_value_ae48b6585fe5b5faa7b597ede1076a0cb} 
+static Kint\textbackslash{}\+Zval\textbackslash{}\+Blob\+Value\+::detect\+Encoding (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/return Encoding \Hypertarget{class_kint_1_1_zval_1_1_blob_value_aaaf0d0e24b59f3e1960fd96d1f1acdef}\index{Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}!getType@{getType}}
+\index{getType@{getType}!Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_zval_1_1_blob_value_aaaf0d0e24b59f3e1960fd96d1f1acdef} 
+Kint\textbackslash{}\+Zval\textbackslash{}\+Blob\+Value\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}.
+
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_a9724134d0c94398c730ee09c8d50b8f0}\index{Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}!getValueShort@{getValueShort}}
+\index{getValueShort@{getValueShort}!Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}}
+\doxysubsubsection{\texorpdfstring{getValueShort()}{getValueShort()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_zval_1_1_blob_value_a9724134d0c94398c730ee09c8d50b8f0} 
+Kint\textbackslash{}\+Zval\textbackslash{}\+Blob\+Value\+::get\+Value\+Short (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Kint\textbackslash{}\+Zval\textbackslash{}\+Value}}.
+
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_a1f525ef47dff2772d91409cec0653bbd}\index{Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}!strlen@{strlen}}
+\index{strlen@{strlen}!Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}}
+\doxysubsubsection{\texorpdfstring{strlen()}{strlen()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_zval_1_1_blob_value_a1f525ef47dff2772d91409cec0653bbd} 
+static Kint\textbackslash{}\+Zval\textbackslash{}\+Blob\+Value\+::strlen (\begin{DoxyParamCaption}\item[{string}]{\$string}{, }\item[{}]{\$encoding}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/param Encoding \$encoding \Hypertarget{class_kint_1_1_zval_1_1_blob_value_ad8f8219f8b418f608fe493e69922f395}\index{Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}!substr@{substr}}
+\index{substr@{substr}!Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}}
+\doxysubsubsection{\texorpdfstring{substr()}{substr()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_zval_1_1_blob_value_ad8f8219f8b418f608fe493e69922f395} 
+static Kint\textbackslash{}\+Zval\textbackslash{}\+Blob\+Value\+::substr (\begin{DoxyParamCaption}\item[{string}]{\$string}{, }\item[{int}]{\$start}{, }\item[{int}]{\$length}{ = {\ttfamily null}, }\item[{}]{\$encoding}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/param Encoding \$encoding 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_ad067372b8f39188983857191328c387e}\index{Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}!\$char\_encodings@{\$char\_encodings}}
+\index{\$char\_encodings@{\$char\_encodings}!Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}}
+\doxysubsubsection{\texorpdfstring{\$char\_encodings}{\$char\_encodings}}
+{\footnotesize\ttfamily \label{class_kint_1_1_zval_1_1_blob_value_ad067372b8f39188983857191328c387e} 
+Kint\textbackslash{}\+Zval\textbackslash{}\+Blob\+Value\+::\$char\+\_\+encodings\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ASCII'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'UTF-\/8'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_kint_1_1_zval_1_1_blob_value_a2535c90c35a84c28161288c66cfc7978}\index{Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}!\$encoding@{\$encoding}}
+\index{\$encoding@{\$encoding}!Kint\textbackslash{}Zval\textbackslash{}BlobValue@{Kint\textbackslash{}Zval\textbackslash{}BlobValue}}
+\doxysubsubsection{\texorpdfstring{\$encoding}{\$encoding}}
+{\footnotesize\ttfamily \label{class_kint_1_1_zval_1_1_blob_value_a2535c90c35a84c28161288c66cfc7978} 
+Kint\textbackslash{}\+Zval\textbackslash{}\+Blob\+Value\+::\$encoding = false}
+
+@psalm-\/var Encoding 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/\+Zval/Blob\+Value.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\doxysection{Kint\textbackslash{}Parser\textbackslash{}DOMDocument\+Plugin Class Reference}
+\hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin}{}\label{class_kint_1_1_parser_1_1_d_o_m_document_plugin}\index{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}}
+
+
+Inheritance diagram for Kint\textbackslash{}Parser\textbackslash{}DOMDocument\+Plugin\+:
+% FIG 0
+
+
+Collaboration diagram for Kint\textbackslash{}Parser\textbackslash{}DOMDocument\+Plugin\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_d_o_m_document_plugin_af25671b2164c20c75f0559d5ff65b0b1}{get\+Types}} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a6cf190614c53c9d980a13c2b6b5cecb7}{get\+Triggers}} ()
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a9ebf0a9e0755d1469bc1c3669fcf2a7a}{parse}} (\&\$var, \mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \&\$o, int \$trigger)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_kint_1_1_parser_1_1_abstract_plugin}{Kint\textbackslash{}\+Parser\textbackslash{}\+Abstract\+Plugin}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_abstract_plugin_a3320f177678c2d9afa70a41462c6e00c}{set\+Parser}} (\mbox{\hyperlink{class_kint_1_1_parser_1_1_parser}{Parser}} \$p)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a4e3ae5d48019e98199dbc9307bc72837}{\$blacklist}}
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_abc37dc00c3c99a10f61338b119091a16}\label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_abc37dc00c3c99a10f61338b119091a16} 
+static {\bfseries \$verbose} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a545acbdee41a6f20f4a8d29e98554a33}{parse\+List}} (\$var, \mbox{\hyperlink{class_kint_1_1_zval_1_1_instance_value}{Instance\+Value}} \&\$o, int \$trigger)
+\item 
+\mbox{\hyperlink{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a602fe2f469dab389234eb7de3b4ce287}{parse\+Node}} (DOMNode \$var, \mbox{\hyperlink{class_kint_1_1_zval_1_1_instance_value}{Instance\+Value}} \&\$o)
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a6f98a857e2f7a98b75d63b60285e6911}\label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a6f98a857e2f7a98b75d63b60285e6911} 
+{\bfseries parse\+Property} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_instance_value}{Instance\+Value}} \$o, string \$prop, DOMNode \&\$var)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_ab0f6e9203ebe625d2be370edfa89b2d7}\label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_ab0f6e9203ebe625d2be370edfa89b2d7} 
+static {\bfseries textual\+Node\+To\+String} (\mbox{\hyperlink{class_kint_1_1_zval_1_1_instance_value}{Instance\+Value}} \$o)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_kint_1_1_parser_1_1_abstract_plugin}{Kint\textbackslash{}\+Parser\textbackslash{}\+Abstract\+Plugin}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$parser}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The DOMDocument parser plugin is particularly useful as it is both the only way to see inside the DOMNode without print\+\_\+r, and the only way to see mixed text and node inside XML (Simple\+XMLElement will strip out the text). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a6cf190614c53c9d980a13c2b6b5cecb7}\index{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}!getTriggers@{getTriggers}}
+\index{getTriggers@{getTriggers}!Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}}
+\doxysubsubsection{\texorpdfstring{getTriggers()}{getTriggers()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a6cf190614c53c9d980a13c2b6b5cecb7} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+DOMDocument\+Plugin\+::get\+Triggers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_parser_1_1_plugin_interface}{Kint\textbackslash{}\+Parser\textbackslash{}\+Plugin\+Interface}}.
+
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_af25671b2164c20c75f0559d5ff65b0b1}\index{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}!getTypes@{getTypes}}
+\index{getTypes@{getTypes}!Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}}
+\doxysubsubsection{\texorpdfstring{getTypes()}{getTypes()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_af25671b2164c20c75f0559d5ff65b0b1} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+DOMDocument\+Plugin\+::get\+Types (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_kint_1_1_parser_1_1_plugin_interface}{Kint\textbackslash{}\+Parser\textbackslash{}\+Plugin\+Interface}}.
+
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a9ebf0a9e0755d1469bc1c3669fcf2a7a}\index{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}!parse@{parse}}
+\index{parse@{parse}!Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a9ebf0a9e0755d1469bc1c3669fcf2a7a} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+DOMDocument\+Plugin\+::parse (\begin{DoxyParamCaption}\item[{\&}]{\$var}{, }\item[{\mbox{\hyperlink{class_kint_1_1_zval_1_1_value}{Value}} \&}]{\$o}{, }\item[{int}]{\$trigger}{}\end{DoxyParamCaption})}
+
+@psalm-\/param mixed \&\$var 
+
+Implements \mbox{\hyperlink{interface_kint_1_1_parser_1_1_plugin_interface_a75eb3cbc49e7848c83658d2afd371d8f}{Kint\textbackslash{}\+Parser\textbackslash{}\+Plugin\+Interface}}.
+
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a545acbdee41a6f20f4a8d29e98554a33}\index{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}!parseList@{parseList}}
+\index{parseList@{parseList}!Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}}
+\doxysubsubsection{\texorpdfstring{parseList()}{parseList()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a545acbdee41a6f20f4a8d29e98554a33} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+DOMDocument\+Plugin\+::parse\+List (\begin{DoxyParamCaption}\item[{}]{\$var}{, }\item[{\mbox{\hyperlink{class_kint_1_1_zval_1_1_instance_value}{Instance\+Value}} \&}]{\$o}{, }\item[{int}]{\$trigger}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+DOMNamed\+Node\+Map | DOMNode\+List & {\em \&\$var} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a602fe2f469dab389234eb7de3b4ce287}\index{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}!parseNode@{parseNode}}
+\index{parseNode@{parseNode}!Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}}
+\doxysubsubsection{\texorpdfstring{parseNode()}{parseNode()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a602fe2f469dab389234eb7de3b4ce287} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+DOMDocument\+Plugin\+::parse\+Node (\begin{DoxyParamCaption}\item[{DOMNode}]{\$var}{, }\item[{\mbox{\hyperlink{class_kint_1_1_zval_1_1_instance_value}{Instance\+Value}} \&}]{\$o}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+@psalm-\/param-\/out Value \&\$o 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a4e3ae5d48019e98199dbc9307bc72837}\index{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}!\$blacklist@{\$blacklist}}
+\index{\$blacklist@{\$blacklist}!Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin@{Kint\textbackslash{}Parser\textbackslash{}DOMDocumentPlugin}}
+\doxysubsubsection{\texorpdfstring{\$blacklist}{\$blacklist}}
+{\footnotesize\ttfamily \label{class_kint_1_1_parser_1_1_d_o_m_document_plugin_a4e3ae5d48019e98199dbc9307bc72837} 
+Kint\textbackslash{}\+Parser\textbackslash{}\+DOMDocument\+Plugin\+::\$blacklist\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'parentNode'}\ =>\ \textcolor{stringliteral}{'DOMNode'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'firstChild'}\ =>\ \textcolor{stringliteral}{'DOMNode'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'lastChild'}\ =>\ \textcolor{stringliteral}{'DOMNode'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'previousSibling'}\ =>\ \textcolor{stringliteral}{'DOMNode'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'nextSibling'}\ =>\ \textcolor{stringliteral}{'DOMNode'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ownerDocument'}\ =>\ \textcolor{stringliteral}{'DOMDocument'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/\+Parser/DOMDocument\+Plugin.\+php\end{DoxyCompactItemize}

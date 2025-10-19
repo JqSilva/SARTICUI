@@ -1,0 +1,81 @@
+\doxysection{Code\+Igniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}Format\+Exception Class Reference}
+\hypertarget{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception}{}\label{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception}\index{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}Format\+Exception\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}Format\+Exception\+:
+% FIG 1
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a07e075eb78701c35929573017af27f5d}{for\+Invalid\+Formatter}} (string \$class)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a85c7eca6abcdbc5ba185059e3a3cd95d}{for\+Invalid\+JSON}} (?string \$error=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a25e56c161ec753a4647fbdcb019be017}{for\+Invalid\+Mime}} (string \$mime)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a1c8571fb40f701b72e2ad2eca163183f}{for\+Missing\+Extension}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Format\+Exception 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a07e075eb78701c35929573017af27f5d}\index{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}!forInvalidFormatter@{forInvalidFormatter}}
+\index{forInvalidFormatter@{forInvalidFormatter}!CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}}
+\doxysubsubsection{\texorpdfstring{forInvalidFormatter()}{forInvalidFormatter()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a07e075eb78701c35929573017af27f5d} 
+static Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+Exceptions\textbackslash{}\+Format\+Exception\+::for\+Invalid\+Formatter (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Thrown when the instantiated class does not exist.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a85c7eca6abcdbc5ba185059e3a3cd95d}\index{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}!forInvalidJSON@{forInvalidJSON}}
+\index{forInvalidJSON@{forInvalidJSON}!CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}}
+\doxysubsubsection{\texorpdfstring{forInvalidJSON()}{forInvalidJSON()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a85c7eca6abcdbc5ba185059e3a3cd95d} 
+static Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+Exceptions\textbackslash{}\+Format\+Exception\+::for\+Invalid\+JSON (\begin{DoxyParamCaption}\item[{?string}]{\$error}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Thrown in JSONFormatter when the json\+\_\+encode produces an error code other than JSON\+\_\+\+ERROR\+\_\+\+NONE and JSON\+\_\+\+ERROR\+\_\+\+RECURSION.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error} & The error message\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a25e56c161ec753a4647fbdcb019be017}\index{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}!forInvalidMime@{forInvalidMime}}
+\index{forInvalidMime@{forInvalidMime}!CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}}
+\doxysubsubsection{\texorpdfstring{forInvalidMime()}{forInvalidMime()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a25e56c161ec753a4647fbdcb019be017} 
+static Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+Exceptions\textbackslash{}\+Format\+Exception\+::for\+Invalid\+Mime (\begin{DoxyParamCaption}\item[{string}]{\$mime}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Thrown when the supplied MIME type has no defined Formatter class.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a1c8571fb40f701b72e2ad2eca163183f}\index{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}!forMissingExtension@{forMissingExtension}}
+\index{forMissingExtension@{forMissingExtension}!CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException@{CodeIgniter\textbackslash{}Format\textbackslash{}Exceptions\textbackslash{}FormatException}}
+\doxysubsubsection{\texorpdfstring{forMissingExtension()}{forMissingExtension()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_format_1_1_exceptions_1_1_format_exception_a1c8571fb40f701b72e2ad2eca163183f} 
+static Code\+Igniter\textbackslash{}\+Format\textbackslash{}\+Exceptions\textbackslash{}\+Format\+Exception\+::for\+Missing\+Extension (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Thrown on XMLFormatter when the {\ttfamily simplexml} extension is not installed.
+
+\begin{DoxyReturn}{Returns}
+static
+\end{DoxyReturn}
+@code\+Coverage\+Ignore 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Format/\+Exceptions/Format\+Exception.\+php\end{DoxyCompactItemize}

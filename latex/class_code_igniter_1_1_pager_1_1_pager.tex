@@ -1,0 +1,334 @@
+\doxysection{Code\+Igniter\textbackslash{}Pager\textbackslash{}Pager Class Reference}
+\hypertarget{class_code_igniter_1_1_pager_1_1_pager}{}\label{class_code_igniter_1_1_pager_1_1_pager}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Pager\textbackslash{}Pager\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Pager\textbackslash{}Pager\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a4af1c0d34ac2d9a4c90f3d87f3c848d7}{\+\_\+\+\_\+construct}} (Pager\+Config \$config, \mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface}{Renderer\+Interface}} \$view)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_aeb8edf6e8e153a0fa9bd8649ff1d73a2}{links}} (string \$group=\textquotesingle{}default\textquotesingle{}, string \$template=\textquotesingle{}default\+\_\+full\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_ac4b7735bf40880c667d2344609b4f955}{simple\+Links}} (string \$group=\textquotesingle{}default\textquotesingle{}, string \$template=\textquotesingle{}default\+\_\+simple\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a187f62ff79de7f6d0f9172b9a4171a23}{make\+Links}} (int \$page, ?int \$per\+Page, int \$total, string \$template=\textquotesingle{}default\+\_\+full\textquotesingle{}, int \$segment=0, ?string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a01f43601565af576cddb0ea2b26c19a8}{store}} (string \$group, int \$page, ?int \$per\+Page, int \$total, int \$segment=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a1e3b3ac015b94d6d595974e7647db10d}{set\+Segment}} (int \$number, string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a1680ddc1755589bc0d72f342388df625}{set\+Path}} (string \$path, string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a9db141d6245d73ef321bba8a605513e6}{get\+Total}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a3fc623dce79fc5f96fc65a69b4175d04}{get\+Page\+Count}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_af832e8f985f1ba5884a576aec015fc30}{get\+Current\+Page}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_ae6c9ae06ee0993be79110ef0a487acda}{has\+More}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a46cf95de47f3e15ca171745943dc7a2f}{get\+Last\+Page}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a0c2618ff5ec2c2fbd6cb9a8a5ee3ccab}{get\+First\+Page}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_ab4c4253a6297bca79480c94f568e5047}{get\+Next\+Page\+URI}} (string \$group=\textquotesingle{}default\textquotesingle{}, bool \$return\+Object=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a69bafb081f2c3f35f943652909fdefe1}{get\+Previous\+Page\+URI}} (string \$group=\textquotesingle{}default\textquotesingle{}, bool \$return\+Object=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_ad6d12e6f97cd3059d95f4a64b854ac7a}{get\+Per\+Page}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a03e657b7fe2b05d8682f902e4564fc6d}{get\+Details}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a4246c83976b521ce9cd96d448e60f2ef}{only}} (array \$queries)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_a20543228e0559451a49d0a3a107277bf}{make\+Links}} (int \$page, int \$per\+Page, int \$total, string \$template=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_a64f7438ed36bdee5294df1f7c7aa19cd}{store}} (string \$group, int \$page, int \$per\+Page, int \$total)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_aa8e3431eb639fb6e63093cb7247899dd}{get\+Page\+URI}} (?int \$page=null, string \$group=\textquotesingle{}default\textquotesingle{}, bool \$return\+Object=false)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_a073e63e1b242b6976382073d265bd7fa}{get\+Next\+Page\+URI}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_a292b476e0884262bb145a38682ab8453}{get\+Previous\+Page\+URI}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_af24c2795de12a15dee56fe6df62da314}{display\+Links}} (string \$group, string \$template)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_ae8dbcabf1a700de23a6787a817aaebf1}{ensure\+Group}} (string \$group, ?int \$per\+Page=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_pager_1_1_pager_a3f96ee64918abc70023c0f56723c4ddb}{calculate\+Current\+Page}} (string \$group)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_ae7a2f9f726ccb44d6cc11abe4cf0caf6}\label{class_code_igniter_1_1_pager_1_1_pager_ae7a2f9f726ccb44d6cc11abe4cf0caf6} 
+{\bfseries \$groups} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_ae5fa39b8a5e1aa9341e84992f4164edb}\label{class_code_igniter_1_1_pager_1_1_pager_ae5fa39b8a5e1aa9341e84992f4164edb} 
+{\bfseries \$segment} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a03945608834e7bf57c65235cdfce705a}\label{class_code_igniter_1_1_pager_1_1_pager_a03945608834e7bf57c65235cdfce705a} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a672f6612c9542f2af8a35d2351a1829b}\label{class_code_igniter_1_1_pager_1_1_pager_a672f6612c9542f2af8a35d2351a1829b} 
+{\bfseries \$view}
+\item 
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a4ca539810d8721e92110150587c2c3cc}\label{class_code_igniter_1_1_pager_1_1_pager_a4ca539810d8721e92110150587c2c3cc} 
+{\bfseries \$only}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Pager
+
+The Pager class provides semi-\/automatic and manual methods for creating pagination links and reading the current url\textquotesingle{}s query variable, "{}page"{} to determine the current page. This class can support multiple paginations on a single page.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a4af1c0d34ac2d9a4c90f3d87f3c848d7}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a4af1c0d34ac2d9a4c90f3d87f3c848d7} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Pager\+Config}]{\$config}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface}{Renderer\+Interface}}}]{\$view}{}\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a3f96ee64918abc70023c0f56723c4ddb}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!calculateCurrentPage@{calculateCurrentPage}}
+\index{calculateCurrentPage@{calculateCurrentPage}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{calculateCurrentPage()}{calculateCurrentPage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a3f96ee64918abc70023c0f56723c4ddb} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::calculate\+Current\+Page (\begin{DoxyParamCaption}\item[{string}]{\$group}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculating the current page
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_af24c2795de12a15dee56fe6df62da314}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!displayLinks@{displayLinks}}
+\index{displayLinks@{displayLinks}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{displayLinks()}{displayLinks()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_af24c2795de12a15dee56fe6df62da314} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::display\+Links (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{string}]{\$template}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Does the actual work of displaying the view file. Used internally by links(), simple\+Links(), and make\+Links(). \Hypertarget{class_code_igniter_1_1_pager_1_1_pager_ae8dbcabf1a700de23a6787a817aaebf1}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!ensureGroup@{ensureGroup}}
+\index{ensureGroup@{ensureGroup}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{ensureGroup()}{ensureGroup()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_ae8dbcabf1a700de23a6787a817aaebf1} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::ensure\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{?int}]{\$per\+Page}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensures that an array exists for the group specified.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_af832e8f985f1ba5884a576aec015fc30}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getCurrentPage@{getCurrentPage}}
+\index{getCurrentPage@{getCurrentPage}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getCurrentPage()}{getCurrentPage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_af832e8f985f1ba5884a576aec015fc30} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+Current\+Page (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the number of the current page of results. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_adc967846da40fb5ed7141adc086f4ea1}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a03e657b7fe2b05d8682f902e4564fc6d}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getDetails@{getDetails}}
+\index{getDetails@{getDetails}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getDetails()}{getDetails()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a03e657b7fe2b05d8682f902e4564fc6d} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+Details (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns an array with details about the results, including total, per\+\_\+page, current\+\_\+page, last\+\_\+page, next\+\_\+url, prev\+\_\+url, from, to. Does not include the actual data. This data is suitable for adding a \textquotesingle{}data\textquotesingle{} object to with the result set and converting to JSON. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_af84fae6f51855eb3e8c8e4ae31a4fec1}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a0c2618ff5ec2c2fbd6cb9a8a5ee3ccab}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getFirstPage@{getFirstPage}}
+\index{getFirstPage@{getFirstPage}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getFirstPage()}{getFirstPage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a0c2618ff5ec2c2fbd6cb9a8a5ee3ccab} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+First\+Page (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Determines the first page \# that should be shown. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_a8767f978b63f997763ead060e4e90851}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a46cf95de47f3e15ca171745943dc7a2f}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getLastPage@{getLastPage}}
+\index{getLastPage@{getLastPage}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getLastPage()}{getLastPage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a46cf95de47f3e15ca171745943dc7a2f} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+Last\+Page (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the last page, if we have a total that we can calculate with.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_abfdd93fbd266e75b8ebb5dd0d8c1d4fd}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_ab4c4253a6297bca79480c94f568e5047}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getNextPageURI@{getNextPageURI}}
+\index{getNextPageURI@{getNextPageURI}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getNextPageURI()}{getNextPageURI()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_ab4c4253a6297bca79480c94f568e5047} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+Next\+Page\+URI (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}, }\item[{bool}]{\$return\+Object}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Returns the full URI to the next page of results, or null.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a3fc623dce79fc5f96fc65a69b4175d04}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getPageCount@{getPageCount}}
+\index{getPageCount@{getPageCount}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getPageCount()}{getPageCount()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a3fc623dce79fc5f96fc65a69b4175d04} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+Page\+Count (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the total number of pages. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_a0786cf3690a266896e118538f728acd8}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_ad6d12e6f97cd3059d95f4a64b854ac7a}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getPerPage@{getPerPage}}
+\index{getPerPage@{getPerPage}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getPerPage()}{getPerPage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_ad6d12e6f97cd3059d95f4a64b854ac7a} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+Per\+Page (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the number of results per page that should be shown. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_aed583e738158ff7cc22676cba61d3c08}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a69bafb081f2c3f35f943652909fdefe1}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getPreviousPageURI@{getPreviousPageURI}}
+\index{getPreviousPageURI@{getPreviousPageURI}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getPreviousPageURI()}{getPreviousPageURI()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a69bafb081f2c3f35f943652909fdefe1} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+Previous\+Page\+URI (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}, }\item[{bool}]{\$return\+Object}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Returns the full URL to the previous page of results, or null.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a9db141d6245d73ef321bba8a605513e6}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!getTotal@{getTotal}}
+\index{getTotal@{getTotal}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{getTotal()}{getTotal()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a9db141d6245d73ef321bba8a605513e6} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::get\+Total (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the total number of items in data store. \Hypertarget{class_code_igniter_1_1_pager_1_1_pager_ae6c9ae06ee0993be79110ef0a487acda}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!hasMore@{hasMore}}
+\index{hasMore@{hasMore}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{hasMore()}{hasMore()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_ae6c9ae06ee0993be79110ef0a487acda} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::has\+More (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Tells whether this group of results has any more pages of results. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_a812ec8f8636958d6a6bcb74194fb97d9}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_aeb8edf6e8e153a0fa9bd8649ff1d73a2}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!links@{links}}
+\index{links@{links}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{links()}{links()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_aeb8edf6e8e153a0fa9bd8649ff1d73a2} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::links (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}, }\item[{string}]{\$template}{ = {\ttfamily \textquotesingle{}default\+\_\+full\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Handles creating and displaying the
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$template} & The output template alias to render. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_aabcf6156e80faea37170057b0ac21c9a}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a187f62ff79de7f6d0f9172b9a4171a23}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!makeLinks@{makeLinks}}
+\index{makeLinks@{makeLinks}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{makeLinks()}{makeLinks()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a187f62ff79de7f6d0f9172b9a4171a23} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::make\+Links (\begin{DoxyParamCaption}\item[{int}]{\$page}{, }\item[{?int}]{\$per\+Page}{, }\item[{int}]{\$total}{, }\item[{string}]{\$template}{ = {\ttfamily \textquotesingle{}default\+\_\+full\textquotesingle{}}, }\item[{int}]{\$segment}{ = {\ttfamily 0}, }\item[{?string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Allows for a simple, manual, form of pagination where all of the data is provided by the user. The URL is the current URI.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$template} & The output template alias to render. \\
+\hline
+int & {\em \$segment} & (whether page number is provided by URI segment) \\
+\hline
+string | null & {\em \$group} & optional group (i.\+e. if we\textquotesingle{}d like to define custom path) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a4246c83976b521ce9cd96d448e60f2ef}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!only@{only}}
+\index{only@{only}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{only()}{only()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a4246c83976b521ce9cd96d448e60f2ef} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::only (\begin{DoxyParamCaption}\item[{array}]{\$queries}{}\end{DoxyParamCaption})}
+
+Sets only allowed queries on pagination links. \Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a1680ddc1755589bc0d72f342388df625}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!setPath@{setPath}}
+\index{setPath@{setPath}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a1680ddc1755589bc0d72f342388df625} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::set\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Sets the path that an aliased group of links will use.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_a1e7e091480ddd9d6834d393e7d93919d}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a1e3b3ac015b94d6d595974e7647db10d}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!setSegment@{setSegment}}
+\index{setSegment@{setSegment}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{setSegment()}{setSegment()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a1e3b3ac015b94d6d595974e7647db10d} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::set\+Segment (\begin{DoxyParamCaption}\item[{int}]{\$number}{, }\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Sets segment for a group.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_ac4b7735bf40880c667d2344609b4f955}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!simpleLinks@{simpleLinks}}
+\index{simpleLinks@{simpleLinks}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{simpleLinks()}{simpleLinks()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_ac4b7735bf40880c667d2344609b4f955} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::simple\+Links (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}, }\item[{string}]{\$template}{ = {\ttfamily \textquotesingle{}default\+\_\+simple\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Creates simple Next/\+Previous links, instead of full pagination. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_pager_1_1_pager_interface_ad5f42f3200dad6f65225fb586f03fd2a}{Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_pager_1_1_pager_a01f43601565af576cddb0ea2b26c19a8}\index{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}!store@{store}}
+\index{store@{store}!CodeIgniter\textbackslash{}Pager\textbackslash{}Pager@{CodeIgniter\textbackslash{}Pager\textbackslash{}Pager}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_pager_1_1_pager_a01f43601565af576cddb0ea2b26c19a8} 
+Code\+Igniter\textbackslash{}\+Pager\textbackslash{}\+Pager\+::store (\begin{DoxyParamCaption}\item[{string}]{\$group}{, }\item[{int}]{\$page}{, }\item[{?int}]{\$per\+Page}{, }\item[{int}]{\$total}{, }\item[{int}]{\$segment}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Stores a set of pagination data for later display. Most commonly used by the model to automate the process.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Pager/Pager.\+php\end{DoxyCompactItemize}

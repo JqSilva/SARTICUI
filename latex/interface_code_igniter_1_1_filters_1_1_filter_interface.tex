@@ -1,0 +1,64 @@
+\doxysection{Code\+Igniter\textbackslash{}Filters\textbackslash{}Filter\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_filters_1_1_filter_interface}{}\label{interface_code_igniter_1_1_filters_1_1_filter_interface}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface@{CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Filters\textbackslash{}Filter\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_abae5f86c1d0bef8b0b44652a7346b716}{before}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \$arguments=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_filters_1_1_filter_interface_a9d6d93f12b94b7b65258deb6f2b3d90e}{after}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response, \$arguments=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Filter interface 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_filters_1_1_filter_interface_a9d6d93f12b94b7b65258deb6f2b3d90e}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface@{CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface}!after@{after}}
+\index{after@{after}!CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface@{CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_filters_1_1_filter_interface_a9d6d93f12b94b7b65258deb6f2b3d90e} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface\+::after (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Allows After filters to inspect and modify the response object as needed. This method does not allow any way to stop execution of other after filters, short of throwing an Exception or Error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$\texorpdfstring{$\vert$}{|}null} & \$arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_cors_a4342eb82404c15667a0113c3c1b3c106}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Cors}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_c_s_r_f_a38ba3d1b964655a8f7fde99f867e0a8c}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+CSRF}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_debug_toolbar_ad134c4aa7e9fc125204eeeecc786ae2c}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Debug\+Toolbar}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s_a27bdecffd3181a252a3d7a6ddc76b7e2}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Force\+HTTPS}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_honeypot_ae79b1bd46c24f25a2561d14673992001}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Honeypot}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_invalid_chars_aa6cc346081e61856c50e7e38287603c0}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Invalid\+Chars}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_page_cache_a542f6986cb3594a49c495743e193732f}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Page\+Cache}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_performance_metrics_ae61df07a98d698706b709c31c575d4c0}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Performance\+Metrics}}, and \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_secure_headers_ade18c19a3e2b6682cc3b4f116a834fc3}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Secure\+Headers}}.
+
+\Hypertarget{interface_code_igniter_1_1_filters_1_1_filter_interface_abae5f86c1d0bef8b0b44652a7346b716}\index{CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface@{CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface}!before@{before}}
+\index{before@{before}!CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface@{CodeIgniter\textbackslash{}Filters\textbackslash{}FilterInterface}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_filters_1_1_filter_interface_abae5f86c1d0bef8b0b44652a7346b716} 
+Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Filter\+Interface\+::before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{}]{\$arguments}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Do whatever processing this filter needs to do. By default it should not return anything during normal execution. However, when an abnormal state is found, it should return an instance of \doxylink{namespace_code_igniter}{Code\+Igniter}\textbackslash{}\+HTTP\textbackslash{}\+Response. If it does, script execution will end and that Response will be sent back to the client, allowing for error pages, redirects, etc.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$\texorpdfstring{$\vert$}{|}null} & \$arguments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Request\+Interface\texorpdfstring{$\vert$}{|}\+Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_debug_toolbar_a5259d8e950d4ce6c1008e0fd5db6ad05}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Debug\+Toolbar}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_force_h_t_t_p_s_a97b4018db4b9f34aaa17e5b28f897144}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Force\+HTTPS}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_honeypot_ad4da6b5fa2f67d2a5c3affdf6f8c903a}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Honeypot}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_invalid_chars_a2c99fbffc930158a7bf446c70e3485ef}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Invalid\+Chars}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_page_cache_a51477b98fbbdadae2e8a2880cffd23b7}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Page\+Cache}}, \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_performance_metrics_a52aa9691ac7074f8d964cd59423e4723}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Performance\+Metrics}}, and \mbox{\hyperlink{class_code_igniter_1_1_filters_1_1_secure_headers_ae64c0b24867fa691683a1388c4bcb5dd}{Code\+Igniter\textbackslash{}\+Filters\textbackslash{}\+Secure\+Headers}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Filters/Filter\+Interface.\+php\end{DoxyCompactItemize}

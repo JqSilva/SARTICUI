@@ -1,0 +1,408 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}Migration\+Runner Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_migration_runner}{}\label{class_code_igniter_1_1_database_1_1_migration_runner}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a35dde85d6f76f3ef1ed88ed87e33f355}{\+\_\+\+\_\+construct}} (Migrations\+Config \$config, \$db=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a0def933eb9e293fc08990d0a04f626f5}{latest}} (?string \$group=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a87912ee08baa2f9cda7bed0d605645bd}{regress}} (int \$target\+Batch=0, ?string \$group=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a521dceaf71b7af8133ec9b23216c144c}{force}} (string \$path, string \$namespace, ?string \$group=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a2589f22ecc9ed8351767a3f044cfebf9}{find\+Migrations}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a95bd4586b40c646b75f2638a3f01843e}{find\+Namespace\+Migrations}} (string \$namespace)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a57927df7fa8689fd43870edfef06df1f}{set\+Namespace}} (?string \$namespace)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a3c665d4017e2941341e388e603c7c66b}{set\+Group}} (string \$group)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a515a4bbe9938f745e616108cd23a7e8d}{set\+Name}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a0bb2345e35971c9d7c792c1644de19f1}{set\+Silent}} (bool \$silent)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_ae0cf4c40570b5925593aa0ad0b2771b3}{get\+Object\+Uid}} (\$object)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a6ffb39428ac195db091be3b77a763485}{get\+Cli\+Messages}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a01d76b475e0e91c8741a1185b641f146}{clear\+Cli\+Messages}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a7cef91a46e1fe32e243cc6f74d2825de}{clear\+History}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a6419ef9504daedb4ca22b84220fc8803}{get\+History}} (string \$group=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a2124dd381fe2357b12164521012503e7}{get\+Batch\+History}} (int \$batch, \$order=\textquotesingle{}asc\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_ad83ee5f03cf92e1721887992b3ea64db}{get\+Batches}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a5c2fe2be2c494f88938245962b837a6e}{get\+Last\+Batch}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_af72c5fb6ce9cda8a92692c372c3159af}{get\+Batch\+Start}} (int \$batch)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_afe202c72e009b65f1c75232278b8d7dd}{get\+Batch\+End}} (int \$batch)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a5a3ec89df23f6bb6216440e80a327629}{ensure\+Table}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a89377fb54cb61ecfde0c7cbb9479b338}{migration\+From\+File}} (string \$path, string \$namespace)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a04a2827d02a01cb475743de825219e6f}{get\+Migration\+Number}} (string \$migration)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_aeb1b66137c0405973888eadf2a631ea6}{get\+Migration\+Name}} (string \$migration)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a6b88dd1fd93af03ef9f3700b9a657b95}{add\+History}} (\$migration, int \$batch)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_migration_runner_a4ec62f23e28ecb31904a55cb7ab6cb1e}{remove\+History}} (\$history)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a0455aa29b13c04c2627066092603deb4}\label{class_code_igniter_1_1_database_1_1_migration_runner_a0455aa29b13c04c2627066092603deb4} 
+{\bfseries \$enabled} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a42287a32656ac495a4e277ff8cd16940}\label{class_code_igniter_1_1_database_1_1_migration_runner_a42287a32656ac495a4e277ff8cd16940} 
+{\bfseries \$table}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_aaff3731bf75f2e4ec292ffc4da1f7a4f}\label{class_code_igniter_1_1_database_1_1_migration_runner_aaff3731bf75f2e4ec292ffc4da1f7a4f} 
+{\bfseries \$namespace}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a80d8552ab5752594a7721bbd209b8fbc}\label{class_code_igniter_1_1_database_1_1_migration_runner_a80d8552ab5752594a7721bbd209b8fbc} 
+{\bfseries \$group}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a742bec297dd922e48637437e0e96422c}\label{class_code_igniter_1_1_database_1_1_migration_runner_a742bec297dd922e48637437e0e96422c} 
+{\bfseries \$name}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a94c1c5fb1f6210ad190bcb1c35d58a51}\label{class_code_igniter_1_1_database_1_1_migration_runner_a94c1c5fb1f6210ad190bcb1c35d58a51} 
+{\bfseries \$regex} = \textquotesingle{}/\textbackslash{}A(\textbackslash{}d\{4\}\mbox{[}\+\_\+-\/\mbox{]}?\textbackslash{}d\{2\}\mbox{[}\+\_\+-\/\mbox{]}?\textbackslash{}d\{2\}\mbox{[}\+\_\+-\/\mbox{]}?\textbackslash{}d\{6\})\+\_\+(\textbackslash{}w+)\textbackslash{}z/\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a6dc9a1df2f584ac47479cb838eff4985}\label{class_code_igniter_1_1_database_1_1_migration_runner_a6dc9a1df2f584ac47479cb838eff4985} 
+{\bfseries \$db}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_ad2b670ee41c78dbee589ccf29828fa40}\label{class_code_igniter_1_1_database_1_1_migration_runner_ad2b670ee41c78dbee589ccf29828fa40} 
+{\bfseries \$silent} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_adde09aa5802a9e535e00e8150dc79ac2}\label{class_code_igniter_1_1_database_1_1_migration_runner_adde09aa5802a9e535e00e8150dc79ac2} 
+{\bfseries \$cli\+Messages} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_afeab30768d5d620092b6b2b1f5def9fc}\label{class_code_igniter_1_1_database_1_1_migration_runner_afeab30768d5d620092b6b2b1f5def9fc} 
+{\bfseries \$table\+Checked} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a0f704c71f228280d949742cf5b4b1d84}\label{class_code_igniter_1_1_database_1_1_migration_runner_a0f704c71f228280d949742cf5b4b1d84} 
+{\bfseries \$path}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_aaac0d6c9bcba47d5270b104d9bc399a6}\label{class_code_igniter_1_1_database_1_1_migration_runner_aaac0d6c9bcba47d5270b104d9bc399a6} 
+{\bfseries \$group\+Filter}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a1463a724038bb299de2d5d82e8227746}\label{class_code_igniter_1_1_database_1_1_migration_runner_a1463a724038bb299de2d5d82e8227746} 
+{\bfseries \$group\+Skip} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Migration\+Runner 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a35dde85d6f76f3ef1ed88ed87e33f355}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a35dde85d6f76f3ef1ed88ed87e33f355} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Migrations\+Config}]{\$config}{, }\item[{}]{\$db}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+The migration can manage multiple databases. So it should always use the default DB group so that it creates the {\ttfamily migrations} table in the default DB group. Therefore, passing \$db is for testing purposes only.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | Connection\+Interface | string | null & {\em \$db} & DB group. For testing purposes only.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Config\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a6b88dd1fd93af03ef9f3700b9a657b95}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!addHistory@{addHistory}}
+\index{addHistory@{addHistory}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{addHistory()}{addHistory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a6b88dd1fd93af03ef9f3700b9a657b95} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::add\+History (\begin{DoxyParamCaption}\item[{}]{\$migration}{, }\item[{int}]{\$batch}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add a history to the table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$migration} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a01d76b475e0e91c8741a1185b641f146}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!clearCliMessages@{clearCliMessages}}
+\index{clearCliMessages@{clearCliMessages}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{clearCliMessages()}{clearCliMessages()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a01d76b475e0e91c8741a1185b641f146} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::clear\+Cli\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clears any CLI messages.
+
+\begin{DoxyReturn}{Returns}
+Migration\+Runner 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a7cef91a46e1fe32e243cc6f74d2825de}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!clearHistory@{clearHistory}}
+\index{clearHistory@{clearHistory}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{clearHistory()}{clearHistory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a7cef91a46e1fe32e243cc6f74d2825de} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::clear\+History (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Truncates the history table. \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a5a3ec89df23f6bb6216440e80a327629}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!ensureTable@{ensureTable}}
+\index{ensureTable@{ensureTable}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{ensureTable()}{ensureTable()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a5a3ec89df23f6bb6216440e80a327629} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::ensure\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ensures that we have created our migrations table in the database. \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a2589f22ecc9ed8351767a3f044cfebf9}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!findMigrations@{findMigrations}}
+\index{findMigrations@{findMigrations}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{findMigrations()}{findMigrations()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a2589f22ecc9ed8351767a3f044cfebf9} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::find\+Migrations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves list of available migration scripts
+
+\begin{DoxyReturn}{Returns}
+array List of all located migrations by their UID 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a95bd4586b40c646b75f2638a3f01843e}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!findNamespaceMigrations@{findNamespaceMigrations}}
+\index{findNamespaceMigrations@{findNamespaceMigrations}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{findNamespaceMigrations()}{findNamespaceMigrations()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a95bd4586b40c646b75f2638a3f01843e} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::find\+Namespace\+Migrations (\begin{DoxyParamCaption}\item[{string}]{\$namespace}{}\end{DoxyParamCaption})}
+
+Retrieves a list of available migration scripts for one namespace \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a521dceaf71b7af8133ec9b23216c144c}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!force@{force}}
+\index{force@{force}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{force()}{force()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a521dceaf71b7af8133ec9b23216c144c} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::force (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$namespace}{, }\item[{?string}]{\$group}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Migrate a single file regardless of order or batches. Method "{}up"{} or "{}down"{} determined by presence in history. NOTE\+: This is not recommended and provided mostly for testing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Full path to a valid migration file \\
+\hline
+string & {\em \$path} & Namespace of the target migration \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_afe202c72e009b65f1c75232278b8d7dd}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getBatchEnd@{getBatchEnd}}
+\index{getBatchEnd@{getBatchEnd}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getBatchEnd()}{getBatchEnd()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_afe202c72e009b65f1c75232278b8d7dd} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Batch\+End (\begin{DoxyParamCaption}\item[{int}]{\$batch}{}\end{DoxyParamCaption})}
+
+Returns the version number of the last migration for a batch. Mostly just for tests. \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_ad83ee5f03cf92e1721887992b3ea64db}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getBatches@{getBatches}}
+\index{getBatches@{getBatches}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getBatches()}{getBatches()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_ad83ee5f03cf92e1721887992b3ea64db} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Batches (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all the batches from the database history in order \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a2124dd381fe2357b12164521012503e7}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getBatchHistory@{getBatchHistory}}
+\index{getBatchHistory@{getBatchHistory}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getBatchHistory()}{getBatchHistory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a2124dd381fe2357b12164521012503e7} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Batch\+History (\begin{DoxyParamCaption}\item[{int}]{\$batch}{, }\item[{}]{\$order}{ = {\ttfamily \textquotesingle{}asc\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Returns the migration history for a single batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$order} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_af72c5fb6ce9cda8a92692c372c3159af}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getBatchStart@{getBatchStart}}
+\index{getBatchStart@{getBatchStart}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getBatchStart()}{getBatchStart()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_af72c5fb6ce9cda8a92692c372c3159af} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Batch\+Start (\begin{DoxyParamCaption}\item[{int}]{\$batch}{}\end{DoxyParamCaption})}
+
+Returns the version number of the first migration for a batch. Mostly just for tests. \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a6ffb39428ac195db091be3b77a763485}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getCliMessages@{getCliMessages}}
+\index{getCliMessages@{getCliMessages}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getCliMessages()}{getCliMessages()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a6ffb39428ac195db091be3b77a763485} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Cli\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves messages formatted for CLI output \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a6419ef9504daedb4ca22b84220fc8803}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getHistory@{getHistory}}
+\index{getHistory@{getHistory}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getHistory()}{getHistory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a6419ef9504daedb4ca22b84220fc8803} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+History (\begin{DoxyParamCaption}\item[{string}]{\$group}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Grabs the full migration history from the database for a group \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a5c2fe2be2c494f88938245962b837a6e}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getLastBatch@{getLastBatch}}
+\index{getLastBatch@{getLastBatch}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getLastBatch()}{getLastBatch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a5c2fe2be2c494f88938245962b837a6e} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Last\+Batch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the value of the last batch in the database. \Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_aeb1b66137c0405973888eadf2a631ea6}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getMigrationName@{getMigrationName}}
+\index{getMigrationName@{getMigrationName}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getMigrationName()}{getMigrationName()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_aeb1b66137c0405973888eadf2a631ea6} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Migration\+Name (\begin{DoxyParamCaption}\item[{string}]{\$migration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extracts the migration name from a filename
+
+Note\+: The migration name should be the classname, but maybe they are different.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$migration} & A migration filename w/o path. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a04a2827d02a01cb475743de825219e6f}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getMigrationNumber@{getMigrationNumber}}
+\index{getMigrationNumber@{getMigrationNumber}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getMigrationNumber()}{getMigrationNumber()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a04a2827d02a01cb475743de825219e6f} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Migration\+Number (\begin{DoxyParamCaption}\item[{string}]{\$migration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extracts the migration number from a filename
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$migration} & A migration filename w/o path. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_ae0cf4c40570b5925593aa0ad0b2771b3}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!getObjectUid@{getObjectUid}}
+\index{getObjectUid@{getObjectUid}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{getObjectUid()}{getObjectUid()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_ae0cf4c40570b5925593aa0ad0b2771b3} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::get\+Object\+Uid (\begin{DoxyParamCaption}\item[{}]{\$object}{}\end{DoxyParamCaption})}
+
+Uses the non-\/repeatable portions of a migration or history to create a sortable unique key
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$object} & migration or \$history \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a0def933eb9e293fc08990d0a04f626f5}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!latest@{latest}}
+\index{latest@{latest}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{latest()}{latest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a0def933eb9e293fc08990d0a04f626f5} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::latest (\begin{DoxyParamCaption}\item[{?string}]{\$group}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Locate and run all new migrations
+
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Config\+Exception} & \\
+\hline
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a89377fb54cb61ecfde0c7cbb9479b338}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!migrationFromFile@{migrationFromFile}}
+\index{migrationFromFile@{migrationFromFile}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{migrationFromFile()}{migrationFromFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a89377fb54cb61ecfde0c7cbb9479b338} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::migration\+From\+File (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$namespace}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a migration object from a file path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Full path to a valid migration file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}object Returns the migration object, or false on failure 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a87912ee08baa2f9cda7bed0d605645bd}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!regress@{regress}}
+\index{regress@{regress}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{regress()}{regress()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a87912ee08baa2f9cda7bed0d605645bd} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::regress (\begin{DoxyParamCaption}\item[{int}]{\$target\+Batch}{ = {\ttfamily 0}, }\item[{?string}]{\$group}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Migrate down to a previous batch
+
+Calls each migration step required to get to the provided batch
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$target\+Batch} & Target batch number, or negative for a relative batch, 0 for all \\
+\hline
+string | null & {\em \$group} & Deprecated. The designation has no effect.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True on success, FALSE on failure or no migrations are found
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Config\+Exception} & \\
+\hline
+{\em Runtime\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a4ec62f23e28ecb31904a55cb7ab6cb1e}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!removeHistory@{removeHistory}}
+\index{removeHistory@{removeHistory}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{removeHistory()}{removeHistory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a4ec62f23e28ecb31904a55cb7ab6cb1e} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::remove\+History (\begin{DoxyParamCaption}\item[{}]{\$history}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Removes a single history
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$history} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a3c665d4017e2941341e388e603c7c66b}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!setGroup@{setGroup}}
+\index{setGroup@{setGroup}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{setGroup()}{setGroup()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a3c665d4017e2941341e388e603c7c66b} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::set\+Group (\begin{DoxyParamCaption}\item[{string}]{\$group}{}\end{DoxyParamCaption})}
+
+Allows other scripts to modify on the fly as needed.
+
+\begin{DoxyReturn}{Returns}
+Migration\+Runner 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a515a4bbe9938f745e616108cd23a7e8d}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!setName@{setName}}
+\index{setName@{setName}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a515a4bbe9938f745e616108cd23a7e8d} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Migration\+Runner 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a57927df7fa8689fd43870edfef06df1f}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!setNamespace@{setNamespace}}
+\index{setNamespace@{setNamespace}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{setNamespace()}{setNamespace()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a57927df7fa8689fd43870edfef06df1f} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::set\+Namespace (\begin{DoxyParamCaption}\item[{?string}]{\$namespace}{}\end{DoxyParamCaption})}
+
+Allows other scripts to modify on the fly as needed.
+
+\begin{DoxyReturn}{Returns}
+Migration\+Runner 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_database_1_1_migration_runner_a0bb2345e35971c9d7c792c1644de19f1}\index{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}!setSilent@{setSilent}}
+\index{setSilent@{setSilent}!CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner@{CodeIgniter\textbackslash{}Database\textbackslash{}MigrationRunner}}
+\doxysubsubsection{\texorpdfstring{setSilent()}{setSilent()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_migration_runner_a0bb2345e35971c9d7c792c1644de19f1} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Migration\+Runner\+::set\+Silent (\begin{DoxyParamCaption}\item[{bool}]{\$silent}{}\end{DoxyParamCaption})}
+
+If \$silent == true, then will not throw exceptions and will attempt to continue gracefully.
+
+\begin{DoxyReturn}{Returns}
+Migration\+Runner 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/Migration\+Runner.\+php\end{DoxyCompactItemize}

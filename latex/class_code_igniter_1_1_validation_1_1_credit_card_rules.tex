@@ -1,0 +1,52 @@
+\doxysection{Code\+Igniter\textbackslash{}Validation\textbackslash{}Credit\+Card\+Rules Class Reference}
+\hypertarget{class_code_igniter_1_1_validation_1_1_credit_card_rules}{}\label{class_code_igniter_1_1_validation_1_1_credit_card_rules}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules@{CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_credit_card_rules_a732c67d52c7c7d3dbaac5d6532f8cf8e}{valid\+\_\+cc\+\_\+number}} (?string \$cc\+Number, string \$type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_validation_1_1_credit_card_rules_aac2c9af05f83d23aa13335323f1e15ae}{is\+Valid\+Luhn}} (?string \$number=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_validation_1_1_credit_card_rules_a22fe4785ebb1ccb931dc15da0964accc}\label{class_code_igniter_1_1_validation_1_1_credit_card_rules_a22fe4785ebb1ccb931dc15da0964accc} 
+{\bfseries \$cards}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Credit\+Card\+Rules
+
+Provides validation methods for common credit-\/card inputs.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://en.wikipedia.org/wiki/Credit_card_number}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+Credit\+\_\+card\+\_\+number}} 
+
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Credit\+Card\+Rules\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_validation_1_1_credit_card_rules_aac2c9af05f83d23aa13335323f1e15ae}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules@{CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules}!isValidLuhn@{isValidLuhn}}
+\index{isValidLuhn@{isValidLuhn}!CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules@{CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules}}
+\doxysubsubsection{\texorpdfstring{isValidLuhn()}{isValidLuhn()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_credit_card_rules_aac2c9af05f83d23aa13335323f1e15ae} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Credit\+Card\+Rules\+::is\+Valid\+Luhn (\begin{DoxyParamCaption}\item[{?string}]{\$number}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks the given number to see if the number passing a Luhn check. \Hypertarget{class_code_igniter_1_1_validation_1_1_credit_card_rules_a732c67d52c7c7d3dbaac5d6532f8cf8e}\index{CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules@{CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules}!valid\_cc\_number@{valid\_cc\_number}}
+\index{valid\_cc\_number@{valid\_cc\_number}!CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules@{CodeIgniter\textbackslash{}Validation\textbackslash{}CreditCardRules}}
+\doxysubsubsection{\texorpdfstring{valid\_cc\_number()}{valid\_cc\_number()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_validation_1_1_credit_card_rules_a732c67d52c7c7d3dbaac5d6532f8cf8e} 
+Code\+Igniter\textbackslash{}\+Validation\textbackslash{}\+Credit\+Card\+Rules\+::valid\+\_\+cc\+\_\+number (\begin{DoxyParamCaption}\item[{?string}]{\$cc\+Number}{, }\item[{string}]{\$type}{}\end{DoxyParamCaption})}
+
+Verifies that a credit card number is valid and matches the known formats for a wide number of credit card types. This does not verify that the card is a valid card, only that the number is formatted correctly.
+
+Example\+: \$rules = \mbox{[} \textquotesingle{}cc\+\_\+num\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}valid\+\_\+cc\+\_\+number\mbox{[}visa\mbox{]}\textquotesingle{} \mbox{]}; 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Validation/Credit\+Card\+Rules.\+php\end{DoxyCompactItemize}

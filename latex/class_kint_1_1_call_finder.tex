@@ -1,0 +1,39 @@
+\doxysection{Kint\textbackslash{}Call\+Finder Class Reference}
+\hypertarget{class_kint_1_1_call_finder}{}\label{class_kint_1_1_call_finder}\index{Kint\textbackslash{}CallFinder@{Kint\textbackslash{}CallFinder}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kint_1_1_call_finder_abd97464200c16fa9432bd9835306ad2d}{get\+Function\+Calls}} (string \$source, int \$line, \$function)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@psalm-\/type Php\+Token\+Array = array\{int, string, int\} @psalm-\/type Php\+Token = string\texorpdfstring{$\vert$}{|}\+Php\+Token\+Array 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_kint_1_1_call_finder_abd97464200c16fa9432bd9835306ad2d}\index{Kint\textbackslash{}CallFinder@{Kint\textbackslash{}CallFinder}!getFunctionCalls@{getFunctionCalls}}
+\index{getFunctionCalls@{getFunctionCalls}!Kint\textbackslash{}CallFinder@{Kint\textbackslash{}CallFinder}}
+\doxysubsubsection{\texorpdfstring{getFunctionCalls()}{getFunctionCalls()}}
+{\footnotesize\ttfamily \label{class_kint_1_1_call_finder_abd97464200c16fa9432bd9835306ad2d} 
+static Kint\textbackslash{}\+Call\+Finder\+::get\+Function\+Calls (\begin{DoxyParamCaption}\item[{string}]{\$source}{, }\item[{int}]{\$line}{, }\item[{}]{\$function}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/param callable-\/array\texorpdfstring{$\vert$}{|}callable-\/string \$function
+
+@psalm-\/return list\texorpdfstring{$<$}{<}array\{parameters\+: list, modifiers\+: list$<$\+Php\+Token$>$\}\texorpdfstring{$>$}{>}
+
+\begin{DoxyReturn}{Returns}
+array List of matching calls on the relevant line 
+\end{DoxyReturn}
+@psalm-\/var list$<$\+Php\+Token$>$
+
+@psalm-\/var array\texorpdfstring{$<$}{<}Php\+Token\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>}
+
+@psalm-\/suppress Redundant\+Function\+Call\+Given\+Docblock\+Type
+
+@psalm-\/var Php\+Token\+Array \$prev\+\_\+tokens\mbox{[}0\mbox{]}
+
+@psalm-\/var list\texorpdfstring{$<$}{<}array\{name\+: string, path\+: string, expression\+: bool\}\texorpdfstring{$>$}{>} \$params
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Kint/Call\+Finder.\+php\end{DoxyCompactItemize}

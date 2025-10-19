@@ -1,0 +1,101 @@
+\doxysection{Code\+Igniter\textbackslash{}Config\textbackslash{}Factory Class Reference}
+\hypertarget{class_code_igniter_1_1_config_1_1_factory}{}\label{class_code_igniter_1_1_config_1_1_factory}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factory@{CodeIgniter\textbackslash{}Config\textbackslash{}Factory}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Factory\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Factory\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factory_a19751782e722e8437525fc89d5bf72bf}{\$models}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_factory_a5d03e6e6083df4d0270d6a66c7516989}{\$default}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factories Configuration file.
+
+Provides overriding directives for how Factories should handle discovery and instantiation of specific components. Each property should correspond to the lowercase, plural component name. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_factory_a5d03e6e6083df4d0270d6a66c7516989}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factory@{CodeIgniter\textbackslash{}Config\textbackslash{}Factory}!\$default@{\$default}}
+\index{\$default@{\$default}!CodeIgniter\textbackslash{}Config\textbackslash{}Factory@{CodeIgniter\textbackslash{}Config\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{\$default}{\$default}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factory_a5d03e6e6083df4d0270d6a66c7516989} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factory\+::\$default\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'component'}\ \ =>\ \textcolor{keyword}{null},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'path'}\ \ \ \ \ \ \ =>\ \textcolor{keyword}{null},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'instanceOf'}\ =>\ \textcolor{keyword}{null},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'getShared'}\ \ =>\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'preferApp'}\ \ =>\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_config_1_1_factory_a19751782e722e8437525fc89d5bf72bf}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Factory@{CodeIgniter\textbackslash{}Config\textbackslash{}Factory}!\$models@{\$models}}
+\index{\$models@{\$models}!CodeIgniter\textbackslash{}Config\textbackslash{}Factory@{CodeIgniter\textbackslash{}Config\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{\$models}{\$models}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_factory_a19751782e722e8437525fc89d5bf72bf} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Factory\+::\$models}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'preferApp'}\ =>\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Config/Factory.\+php\end{DoxyCompactItemize}

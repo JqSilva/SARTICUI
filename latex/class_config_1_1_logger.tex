@@ -1,0 +1,75 @@
+\doxysection{Config\textbackslash{}Logger Class Reference}
+\hypertarget{class_config_1_1_logger}{}\label{class_config_1_1_logger}\index{Config\textbackslash{}Logger@{Config\textbackslash{}Logger}}
+
+
+Inheritance diagram for Config\textbackslash{}Logger\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Logger\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_config_1_1_logger_a601fb8396d15b23403d71947b46d4d45}\label{class_config_1_1_logger_a601fb8396d15b23403d71947b46d4d45} 
+{\bfseries \$threshold} = (ENVIRONMENT === \textquotesingle{}production\textquotesingle{}) ? 4 \+: 9
+\item 
+string \mbox{\hyperlink{class_config_1_1_logger_ab745df0b888342f096176c91e27b3f45}{\$date\+Format}} = \textquotesingle{}Y-\/m-\/d H\+:i\+:s\textquotesingle{}
+\item 
+\Hypertarget{class_config_1_1_logger_ad25b7c5c75cbf901f29cb7ea81fc5461}\label{class_config_1_1_logger_ad25b7c5c75cbf901f29cb7ea81fc5461} 
+array {\bfseries \$handlers}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_logger_ab745df0b888342f096176c91e27b3f45}\index{Config\textbackslash{}Logger@{Config\textbackslash{}Logger}!\$dateFormat@{\$dateFormat}}
+\index{\$dateFormat@{\$dateFormat}!Config\textbackslash{}Logger@{Config\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{\$dateFormat}{\$dateFormat}}
+{\footnotesize\ttfamily \label{class_config_1_1_logger_ab745df0b888342f096176c91e27b3f45} 
+string Config\textbackslash{}\+Logger\+::\$date\+Format = \textquotesingle{}Y-\/m-\/d H\+:i\+:s\textquotesingle{}}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_logger_autotoc_md105}{}\doxysubsubsection{\texorpdfstring{Date Format for Logs}{Date Format for Logs}}\label{class_config_1_1_logger_autotoc_md105}
+Each item that is logged has an associated date. You can use PHP date codes to set your own date formatting 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Logger.\+php\end{DoxyCompactItemize}

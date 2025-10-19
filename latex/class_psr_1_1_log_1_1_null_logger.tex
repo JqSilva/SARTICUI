@@ -1,0 +1,69 @@
+\doxysection{Psr\textbackslash{}Log\textbackslash{}Null\+Logger Class Reference}
+\hypertarget{class_psr_1_1_log_1_1_null_logger}{}\label{class_psr_1_1_log_1_1_null_logger}\index{Psr\textbackslash{}Log\textbackslash{}NullLogger@{Psr\textbackslash{}Log\textbackslash{}NullLogger}}
+
+
+Inheritance diagram for Psr\textbackslash{}Log\textbackslash{}Null\+Logger\+:
+% FIG 0
+
+
+Collaboration diagram for Psr\textbackslash{}Log\textbackslash{}Null\+Logger\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psr_1_1_log_1_1_null_logger_a687544779f90d344348742ac3b239700}{log}} (\$level, string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a4843fab307ff69f85ff2d48e6e24deb7}{emergency}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a55179e427a94ae27bba8180f47723fe9}{alert}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_af40cc3669b78654a1eda232189c1be55}{critical}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_af92fb724195a60b1cb6a7c3b717bad44}{error}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_afa46cae2ba9d1e477081cecd3f66437d}{warning}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a6a9a0e724ec201737658cbd098d53239}{notice}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a741006b64755db72e2b7016d73416a3d}{info}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_ac8e5c5e7fac367087de201b6261939c1}{debug}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This Logger can be used to avoid conditional log calls.
+
+Logging should always be optional, and if no logger is provided to your library creating a Null\+Logger instance to have something to throw logs at is a good way to avoid littering your code with {\ttfamily if (\$this-\/\texorpdfstring{$>$}{>}logger) \{ \}} blocks. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psr_1_1_log_1_1_null_logger_a687544779f90d344348742ac3b239700}\index{Psr\textbackslash{}Log\textbackslash{}NullLogger@{Psr\textbackslash{}Log\textbackslash{}NullLogger}!log@{log}}
+\index{log@{log}!Psr\textbackslash{}Log\textbackslash{}NullLogger@{Psr\textbackslash{}Log\textbackslash{}NullLogger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_psr_1_1_log_1_1_null_logger_a687544779f90d344348742ac3b239700} 
+Psr\textbackslash{}\+Log\textbackslash{}\+Null\+Logger\+::log (\begin{DoxyParamCaption}\item[{}]{\$level}{, }\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Logs with an arbitrary level.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Log\textbackslash{}\+Invalid\+Argument\+Exception 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a8dbb4a9bdc1c65ace13af1d45b221373}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+PSR/\+Log/Null\+Logger.\+php\end{DoxyCompactItemize}

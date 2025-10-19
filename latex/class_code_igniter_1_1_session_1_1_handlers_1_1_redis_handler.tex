@@ -1,0 +1,261 @@
+\doxysection{Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Redis\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler}{}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Redis\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}Redis\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a5f8c8722805e2e6fcfc5b83cc3e7d98d}{\+\_\+\+\_\+construct}} (Session\+Config \$config, string \$ip\+Address)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a490052455dd1ac48748f38d792d6271b}{open}} (\$path, \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a4a592a30e1b25af8e6618c67dcfa0fa6}{read}} (\$id)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a136d7cbb00e2a8cb150c729e29b8dba8}{write}} (\$id, \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_ae42c59c87a0db76a4386b2b36801e59c}{close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a66a2e4186845346cb8e823eb078f3f89}{destroy}} (\$id)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_aafb25662d092b155b3e7529a5e27c164}{gc}} (\$max\+\_\+lifetime)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_aa1a78d7e399de47de34d45111d13556f}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_aa1a78d7e399de47de34d45111d13556f} 
+{\bfseries set\+Save\+Path} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_af16b368edb3a795e260f01b0463ff1f0}{lock\+Session}} (string \$session\+ID)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a429854c24d0c78dc92dcb923224b2fdc}{release\+Lock}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_aa22222decdb7468b5cbedaca3c2177dc}{destroy\+Cookie}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a2f5aa1f0b421ecb5b57e3c7fdfbf0e00}{fail}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a2674b7c6d18b0aca0e7e8cc1c8b19968}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a2674b7c6d18b0aca0e7e8cc1c8b19968} 
+{\bfseries \$redis}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a683fe7c1391447e3484fd94662a31a31}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a683fe7c1391447e3484fd94662a31a31} 
+{\bfseries \$key\+Prefix} = \textquotesingle{}ci\+\_\+session\+:\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a5f59d096af43db87aeb5b7293a6820c9}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a5f59d096af43db87aeb5b7293a6820c9} 
+{\bfseries \$lock\+Key}
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a29c003f17c10b0bd77899e0ba82166e8}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a29c003f17c10b0bd77899e0ba82166e8} 
+{\bfseries \$key\+Exists} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_ae71ef924921434c5dbcee92c27a7f735}\label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_ae71ef924921434c5dbcee92c27a7f735} 
+{\bfseries \$session\+Expiration} = 7200
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$fingerprint}
+\item 
+{\bfseries \$lock} = false
+\item 
+{\bfseries \$cookie\+Prefix} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Domain} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Path} = \textquotesingle{}/\textquotesingle{}
+\item 
+{\bfseries \$cookie\+Secure} = false
+\item 
+{\bfseries \$cookie\+Name}
+\item 
+{\bfseries \$match\+IP} = false
+\item 
+{\bfseries \$session\+ID}
+\item 
+{\bfseries \$save\+Path}
+\item 
+{\bfseries \$ip\+Address}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Session handler using Redis for persistence 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a5f8c8722805e2e6fcfc5b83cc3e7d98d}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a5f8c8722805e2e6fcfc5b83cc3e7d98d} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Session\+Config}]{\$config}{, }\item[{string}]{\$ip\+Address}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ip\+Address} & User\textquotesingle{}s IP address\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Session\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_ae42c59c87a0db76a4386b2b36801e59c}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!close@{close}}
+\index{close@{close}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_ae42c59c87a0db76a4386b2b36801e59c} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Closes the current session. \Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a66a2e4186845346cb8e823eb078f3f89}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!destroy@{destroy}}
+\index{destroy@{destroy}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a66a2e4186845346cb8e823eb078f3f89} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::destroy (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Destroys a session
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID being destroyed\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Redis\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_aafb25662d092b155b3e7529a5e27c164}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!gc@{gc}}
+\index{gc@{gc}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{gc()}{gc()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_aafb25662d092b155b3e7529a5e27c164} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::gc (\begin{DoxyParamCaption}\item[{}]{\$max\+\_\+lifetime}{}\end{DoxyParamCaption})}
+
+Cleans up expired sessions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+\_\+lifetime} & Sessions that have not updated for the last max\+\_\+lifetime seconds will be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int Returns the number of deleted sessions on success, or false on failure. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_af16b368edb3a795e260f01b0463ff1f0}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!lockSession@{lockSession}}
+\index{lockSession@{lockSession}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{lockSession()}{lockSession()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_af16b368edb3a795e260f01b0463ff1f0} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::lock\+Session (\begin{DoxyParamCaption}\item[{string}]{\$session\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Acquires an emulated lock.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$session\+ID} & Session ID\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Redis\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a46bf0a22cb5a3507751080e9594548d6}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a490052455dd1ac48748f38d792d6271b}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!open@{open}}
+\index{open@{open}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a490052455dd1ac48748f38d792d6271b} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::open (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Re-\/initialize existing session, or creates a new one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path where to store/retrieve the session \\
+\hline
+string & {\em \$name} & The session name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Redis\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a4a592a30e1b25af8e6618c67dcfa0fa6}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!read@{read}}
+\index{read@{read}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a4a592a30e1b25af8e6618c67dcfa0fa6} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::read (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Reads the session data from the session storage, and returns the results.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string Returns an encoded string of the read data. If nothing was read, it must return false.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Redis\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a429854c24d0c78dc92dcb923224b2fdc}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a429854c24d0c78dc92dcb923224b2fdc} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::release\+Lock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Releases a previously acquired lock
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Redis\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_handlers_1_1_base_handler_a41a354b952a3b07bdac8b831bc51ec5b}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}.
+
+\Hypertarget{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a136d7cbb00e2a8cb150c729e29b8dba8}\index{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}!write@{write}}
+\index{write@{write}!CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler@{CodeIgniter\textbackslash{}Session\textbackslash{}Handlers\textbackslash{}RedisHandler}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_session_1_1_handlers_1_1_redis_handler_a136d7cbb00e2a8cb150c729e29b8dba8} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Handlers\textbackslash{}\+Redis\+Handler\+::write (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+Writes the session data to the session storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & The session ID \\
+\hline
+string & {\em \$data} & The encoded session data\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Redis\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Session/\+Handlers/Redis\+Handler.\+php\end{DoxyCompactItemize}

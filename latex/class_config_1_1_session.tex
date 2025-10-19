@@ -1,0 +1,164 @@
+\doxysection{Config\textbackslash{}Session Class Reference}
+\hypertarget{class_config_1_1_session}{}\label{class_config_1_1_session}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+
+
+Inheritance diagram for Config\textbackslash{}Session\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Session\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_config_1_1_session_abe2caeb78be9e87101ec81784c9c3532}\label{class_config_1_1_session_abe2caeb78be9e87101ec81784c9c3532} 
+string {\bfseries \$driver} = File\+Handler\+::class
+\item 
+string \mbox{\hyperlink{class_config_1_1_session_a4cbf677447c69c8f09ae78af133cda90}{\$cookie\+Name}} = \textquotesingle{}ci\+\_\+session\textquotesingle{}
+\item 
+int \mbox{\hyperlink{class_config_1_1_session_a00a50d5364935f7085d4b8294246f4b0}{\$expiration}} = 7200
+\item 
+string \mbox{\hyperlink{class_config_1_1_session_a1b1b78551d378263efd29ac8e92be919}{\$save\+Path}} = WRITEPATH . \textquotesingle{}session\textquotesingle{}
+\item 
+bool \mbox{\hyperlink{class_config_1_1_session_a180778c1e66888fd6a3e7c8d43fe45f7}{\$match\+IP}} = false
+\item 
+int \mbox{\hyperlink{class_config_1_1_session_a0020ee48b461e4270e8ce1b425ed1d84}{\$time\+To\+Update}} = 300
+\item 
+bool \mbox{\hyperlink{class_config_1_1_session_a6a533d14644ae80e69c1dcf9c46c87db}{\$regenerate\+Destroy}} = false
+\item 
+string \mbox{\hyperlink{class_config_1_1_session_aa195f4c4b9eba1c6d16f9aadf3eafbe3}{\$\+DBGroup}} = null
+\item 
+int \mbox{\hyperlink{class_config_1_1_session_a94ad173adcee730718adc1751adc9163}{\$lock\+Retry\+Interval}} = 100\+\_\+000
+\item 
+int \mbox{\hyperlink{class_config_1_1_session_a80b5ae2c3ee83d1949aa23b9a11acacb}{\$lock\+Max\+Retries}} = 300
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_session_a4cbf677447c69c8f09ae78af133cda90}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$cookieName@{\$cookieName}}
+\index{\$cookieName@{\$cookieName}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$cookieName}{\$cookieName}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_a4cbf677447c69c8f09ae78af133cda90} 
+string Config\textbackslash{}\+Session\+::\$cookie\+Name = \textquotesingle{}ci\+\_\+session\textquotesingle{}}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md159}{}\doxysubsubsection{\texorpdfstring{Session Cookie Name}{Session Cookie Name}}\label{class_config_1_1_session_autotoc_md159}
+The session cookie name, must contain only \mbox{[}0-\/9a-\/z\+\_\+-\/\mbox{]} characters \Hypertarget{class_config_1_1_session_aa195f4c4b9eba1c6d16f9aadf3eafbe3}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$DBGroup@{\$DBGroup}}
+\index{\$DBGroup@{\$DBGroup}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$DBGroup}{\$DBGroup}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_aa195f4c4b9eba1c6d16f9aadf3eafbe3} 
+string Config\textbackslash{}\+Session\+::\$\+DBGroup = null}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md171}{}\doxysubsubsection{\texorpdfstring{Session Database Group}{Session Database Group}}\label{class_config_1_1_session_autotoc_md171}
+DB Group for the database session. \Hypertarget{class_config_1_1_session_a00a50d5364935f7085d4b8294246f4b0}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$expiration@{\$expiration}}
+\index{\$expiration@{\$expiration}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$expiration}{\$expiration}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_a00a50d5364935f7085d4b8294246f4b0} 
+int Config\textbackslash{}\+Session\+::\$expiration = 7200}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md161}{}\doxysubsubsection{\texorpdfstring{Session Expiration}{Session Expiration}}\label{class_config_1_1_session_autotoc_md161}
+The number of SECONDS you want the session to last. Setting to 0 (zero) means expire when the browser is closed. \Hypertarget{class_config_1_1_session_a80b5ae2c3ee83d1949aa23b9a11acacb}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$lockMaxRetries@{\$lockMaxRetries}}
+\index{\$lockMaxRetries@{\$lockMaxRetries}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$lockMaxRetries}{\$lockMaxRetries}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_a80b5ae2c3ee83d1949aa23b9a11acacb} 
+int Config\textbackslash{}\+Session\+::\$lock\+Max\+Retries = 300}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md175}{}\doxysubsubsection{\texorpdfstring{Lock Max Retries}{Lock Max Retries}}\label{class_config_1_1_session_autotoc_md175}
+This is used for Redis\+Handler.
+
+Maximum number of lock acquisition attempts. The default is 300 times. That is lock timeout is about 30 (0.\+1 \texorpdfstring{$\ast$}{*} 300) seconds. \Hypertarget{class_config_1_1_session_a94ad173adcee730718adc1751adc9163}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$lockRetryInterval@{\$lockRetryInterval}}
+\index{\$lockRetryInterval@{\$lockRetryInterval}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$lockRetryInterval}{\$lockRetryInterval}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_a94ad173adcee730718adc1751adc9163} 
+int Config\textbackslash{}\+Session\+::\$lock\+Retry\+Interval = 100\+\_\+000}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md173}{}\doxysubsubsection{\texorpdfstring{Lock Retry Interval (microseconds)}{Lock Retry Interval (microseconds)}}\label{class_config_1_1_session_autotoc_md173}
+This is used for Redis\+Handler.
+
+Time (microseconds) to wait if lock cannot be acquired. The default is 100,000 microseconds (= 0.\+1 seconds). \Hypertarget{class_config_1_1_session_a180778c1e66888fd6a3e7c8d43fe45f7}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$matchIP@{\$matchIP}}
+\index{\$matchIP@{\$matchIP}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$matchIP}{\$matchIP}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_a180778c1e66888fd6a3e7c8d43fe45f7} 
+bool Config\textbackslash{}\+Session\+::\$match\+IP = false}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md165}{}\doxysubsubsection{\texorpdfstring{Session Match IP}{Session Match IP}}\label{class_config_1_1_session_autotoc_md165}
+Whether to match the user\textquotesingle{}s IP address when reading the session data.
+
+WARNING\+: If you\textquotesingle{}re using the database driver, don\textquotesingle{}t forget to update your session table\textquotesingle{}s PRIMARY KEY when changing this setting. \Hypertarget{class_config_1_1_session_a6a533d14644ae80e69c1dcf9c46c87db}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$regenerateDestroy@{\$regenerateDestroy}}
+\index{\$regenerateDestroy@{\$regenerateDestroy}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$regenerateDestroy}{\$regenerateDestroy}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_a6a533d14644ae80e69c1dcf9c46c87db} 
+bool Config\textbackslash{}\+Session\+::\$regenerate\+Destroy = false}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md169}{}\doxysubsubsection{\texorpdfstring{Session Regenerate Destroy}{Session Regenerate Destroy}}\label{class_config_1_1_session_autotoc_md169}
+Whether to destroy session data associated with the old session ID when auto-\/regenerating the session ID. When set to FALSE, the data will be later deleted by the garbage collector. \Hypertarget{class_config_1_1_session_a1b1b78551d378263efd29ac8e92be919}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$savePath@{\$savePath}}
+\index{\$savePath@{\$savePath}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$savePath}{\$savePath}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_a1b1b78551d378263efd29ac8e92be919} 
+string Config\textbackslash{}\+Session\+::\$save\+Path = WRITEPATH . \textquotesingle{}session\textquotesingle{}}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md163}{}\doxysubsubsection{\texorpdfstring{Session Save Path}{Session Save Path}}\label{class_config_1_1_session_autotoc_md163}
+The location to save sessions to and is driver dependent.
+
+For the \textquotesingle{}files\textquotesingle{} driver, it\textquotesingle{}s a path to a writable directory. WARNING\+: Only absolute paths are supported!
+
+For the \textquotesingle{}database\textquotesingle{} driver, it\textquotesingle{}s a table name. Please read up the manual for the format with other session drivers.
+
+IMPORTANT\+: You are REQUIRED to set a valid save path! \Hypertarget{class_config_1_1_session_a0020ee48b461e4270e8ce1b425ed1d84}\index{Config\textbackslash{}Session@{Config\textbackslash{}Session}!\$timeToUpdate@{\$timeToUpdate}}
+\index{\$timeToUpdate@{\$timeToUpdate}!Config\textbackslash{}Session@{Config\textbackslash{}Session}}
+\doxysubsubsection{\texorpdfstring{\$timeToUpdate}{\$timeToUpdate}}
+{\footnotesize\ttfamily \label{class_config_1_1_session_a0020ee48b461e4270e8ce1b425ed1d84} 
+int Config\textbackslash{}\+Session\+::\$time\+To\+Update = 300}
+
+\DoxyHorRuler{0}
+ \hypertarget{class_config_1_1_session_autotoc_md167}{}\doxysubsubsection{\texorpdfstring{Session Time to Update}{Session Time to Update}}\label{class_config_1_1_session_autotoc_md167}
+How many seconds between CI regenerating the session ID. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Session.\+php\end{DoxyCompactItemize}

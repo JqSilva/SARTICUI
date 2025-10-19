@@ -1,0 +1,233 @@
+\doxysection{Code\+Igniter\textbackslash{}View\textbackslash{}Filters Class Reference}
+\hypertarget{class_code_igniter_1_1_view_1_1_filters}{}\label{class_code_igniter_1_1_view_1_1_filters}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_ad6f19e0dda108292d1e89088f21ca405}{capitalize}} (string \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_a9428ada57f6962b86bc752f0d8f22d57}{date}} (\$value, string \$format)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_a7c8f54c0826605bb1d96cb0c1410a83a}{date\+\_\+modify}} (\$value, string \$adjustment)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_a97731e0d104776c0bb0cb7a7bd9403e9}{default}} (\$value, string \$default)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_ad8a6a4d5fc4f4c08708e40d12b08f1fe}{esc}} (\$value, string \$context=\textquotesingle{}html\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_a618950010334be59dffdd8f705778032}{excerpt}} (string \$value, string \$phrase, int \$radius=100)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_acc4b8d9e7ff7e20435c9136722f4b257}{highlight}} (string \$value, string \$phrase)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_aa7c6af446fce9c78a7ea6293567576f5}{highlight\+\_\+code}} (\$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_a36707e0ad84261cd02e7bf5548d137db}{limit\+\_\+chars}} (\$value, int \$limit=500)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_aec5eaa8a29a274d5b81f4850130b4fc7}{limit\+\_\+words}} (\$value, int \$limit=100)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_ac6ade7560feeaf39b8b098bada8f1219}{local\+\_\+number}} (\$value, string \$type=\textquotesingle{}decimal\textquotesingle{}, int \$precision=4, ?string \$locale=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_af8a1f0e51ee33dd960240cb04fc1f2d9}{local\+\_\+currency}} (\$value, string \$currency, ?string \$locale=null, \$fraction=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_a9b1a0bfaf462ce15adfaaa7bfa1e840a}{nl2br}} (string \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_abb15530ceca74c2693095940c2288e16}{prose}} (string \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_ab38429f5e074f2751dd5ef6af90b8227}{round}} (string \$value, \$precision=2, string \$type=\textquotesingle{}common\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_view_1_1_filters_a1f5a14183fcc4ab43c25f80398816264}{title}} (string \$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+View filters 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_ad6f19e0dda108292d1e89088f21ca405}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!capitalize@{capitalize}}
+\index{capitalize@{capitalize}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{capitalize()}{capitalize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_ad6f19e0dda108292d1e89088f21ca405} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::capitalize (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns \$value as all lowercase with the first letter capitalized. \Hypertarget{class_code_igniter_1_1_view_1_1_filters_a9428ada57f6962b86bc752f0d8f22d57}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!date@{date}}
+\index{date@{date}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_a9428ada57f6962b86bc752f0d8f22d57} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::date (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{string}]{\$format}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Formats a date into the given \$format.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string | null & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_a7c8f54c0826605bb1d96cb0c1410a83a}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!date\_modify@{date\_modify}}
+\index{date\_modify@{date\_modify}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{date\_modify()}{date\_modify()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_a7c8f54c0826605bb1d96cb0c1410a83a} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::date\+\_\+modify (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{string}]{\$adjustment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Given a string or Date\+Time object, will return the date modified by the given value. Returns the value as a unix timestamp
+
+Example\+: my\+\_\+date\texorpdfstring{$\vert$}{|}date\+\_\+modify(+1 day)
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string | null & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_a97731e0d104776c0bb0cb7a7bd9403e9}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!default@{default}}
+\index{default@{default}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{default()}{default()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_a97731e0d104776c0bb0cb7a7bd9403e9} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::default (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{string}]{\$default}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the given default value if \$value is empty or undefined.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}list$<$string$>$\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}resource\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null} & \$value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_ad8a6a4d5fc4f4c08708e40d12b08f1fe}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!esc@{esc}}
+\index{esc@{esc}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{esc()}{esc()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_ad8a6a4d5fc4f4c08708e40d12b08f1fe} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::esc (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{string}]{\$context}{ = {\ttfamily \textquotesingle{}html\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Escapes the given value with our {\ttfamily esc()} helper function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & @phpstan-\/param \textquotesingle{}html\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}js\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}css\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}url\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}attr\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}raw\textquotesingle{} \$context \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_a618950010334be59dffdd8f705778032}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!excerpt@{excerpt}}
+\index{excerpt@{excerpt}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{excerpt()}{excerpt()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_a618950010334be59dffdd8f705778032} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::excerpt (\begin{DoxyParamCaption}\item[{string}]{\$value}{, }\item[{string}]{\$phrase}{, }\item[{int}]{\$radius}{ = {\ttfamily 100}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an excerpt of the given string. \Hypertarget{class_code_igniter_1_1_view_1_1_filters_acc4b8d9e7ff7e20435c9136722f4b257}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!highlight@{highlight}}
+\index{highlight@{highlight}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{highlight()}{highlight()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_acc4b8d9e7ff7e20435c9136722f4b257} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::highlight (\begin{DoxyParamCaption}\item[{string}]{\$value}{, }\item[{string}]{\$phrase}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Highlights a given phrase within the text using \textquotesingle{}$<$mark$>$$<$/mark$>$\textquotesingle{} tags. \Hypertarget{class_code_igniter_1_1_view_1_1_filters_aa7c6af446fce9c78a7ea6293567576f5}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!highlight\_code@{highlight\_code}}
+\index{highlight\_code@{highlight\_code}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{highlight\_code()}{highlight\_code()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_aa7c6af446fce9c78a7ea6293567576f5} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::highlight\+\_\+code (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Highlights code samples with HTML/\+CSS.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_a36707e0ad84261cd02e7bf5548d137db}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!limit\_chars@{limit\_chars}}
+\index{limit\_chars@{limit\_chars}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{limit\_chars()}{limit\_chars()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_a36707e0ad84261cd02e7bf5548d137db} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::limit\+\_\+chars (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{int}]{\$limit}{ = {\ttfamily 500}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Limits the number of characters to \$limit, and trails of with an ellipsis. Will break at word break so may be more or less than \$limit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_aec5eaa8a29a274d5b81f4850130b4fc7}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!limit\_words@{limit\_words}}
+\index{limit\_words@{limit\_words}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{limit\_words()}{limit\_words()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_aec5eaa8a29a274d5b81f4850130b4fc7} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::limit\+\_\+words (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{int}]{\$limit}{ = {\ttfamily 100}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Limits the number of words to \$limit, and trails of with an ellipsis.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_af8a1f0e51ee33dd960240cb04fc1f2d9}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!local\_currency@{local\_currency}}
+\index{local\_currency@{local\_currency}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{local\_currency()}{local\_currency()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_af8a1f0e51ee33dd960240cb04fc1f2d9} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::local\+\_\+currency (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{string}]{\$currency}{, }\item[{?string}]{\$locale}{ = {\ttfamily null}, }\item[{}]{\$fraction}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the \$value displayed as a currency string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float | int & {\em \$value} & \\
+\hline
+int & {\em \$fraction} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_ac6ade7560feeaf39b8b098bada8f1219}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!local\_number@{local\_number}}
+\index{local\_number@{local\_number}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{local\_number()}{local\_number()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_ac6ade7560feeaf39b8b098bada8f1219} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::local\+\_\+number (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{string}]{\$type}{ = {\ttfamily \textquotesingle{}decimal\textquotesingle{}}, }\item[{int}]{\$precision}{ = {\ttfamily 4}, }\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the \$value displayed in a localized manner.
+
+
+\begin{DoxyParams}[1]{Parameters}
+float | int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_a9b1a0bfaf462ce15adfaaa7bfa1e840a}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!nl2br@{nl2br}}
+\index{nl2br@{nl2br}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{nl2br()}{nl2br()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_a9b1a0bfaf462ce15adfaaa7bfa1e840a} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::nl2br (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a string with all instances of newline character (~\newline
+) converted to an HTML ~\newline
+ tag. \Hypertarget{class_code_igniter_1_1_view_1_1_filters_abb15530ceca74c2693095940c2288e16}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!prose@{prose}}
+\index{prose@{prose}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{prose()}{prose()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_abb15530ceca74c2693095940c2288e16} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::prose (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Takes a body of text and uses the auto\+\_\+typography() method to turn it into prettier, easier-\/to-\/read, prose. \Hypertarget{class_code_igniter_1_1_view_1_1_filters_ab38429f5e074f2751dd5ef6af90b8227}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!round@{round}}
+\index{round@{round}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{round()}{round()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_ab38429f5e074f2751dd5ef6af90b8227} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::round (\begin{DoxyParamCaption}\item[{string}]{\$value}{, }\item[{}]{\$precision}{ = {\ttfamily 2}, }\item[{string}]{\$type}{ = {\ttfamily \textquotesingle{}common\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Rounds a given \$value in one of 3 ways;
+
+
+\begin{DoxyItemize}
+\item common Normal rounding
+\item ceil always rounds up
+\item floor always rounds down
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$precision} & precision or type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_view_1_1_filters_a1f5a14183fcc4ab43c25f80398816264}\index{CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}!title@{title}}
+\index{title@{title}!CodeIgniter\textbackslash{}View\textbackslash{}Filters@{CodeIgniter\textbackslash{}View\textbackslash{}Filters}}
+\doxysubsubsection{\texorpdfstring{title()}{title()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_view_1_1_filters_a1f5a14183fcc4ab43c25f80398816264} 
+static Code\+Igniter\textbackslash{}\+View\textbackslash{}\+Filters\+::title (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a "{}title case"{} version of the string. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+View/Filters.\+php\end{DoxyCompactItemize}

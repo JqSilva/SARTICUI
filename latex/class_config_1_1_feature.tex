@@ -1,0 +1,88 @@
+\doxysection{Config\textbackslash{}Feature Class Reference}
+\hypertarget{class_config_1_1_feature}{}\label{class_config_1_1_feature}\index{Config\textbackslash{}Feature@{Config\textbackslash{}Feature}}
+
+
+Inheritance diagram for Config\textbackslash{}Feature\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Feature\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_config_1_1_feature_a0600153cd8aa63c20375421af725ff6e}{\$auto\+Routes\+Improved}} = false
+\item 
+bool \mbox{\hyperlink{class_config_1_1_feature_a34159d68cf207c482db91d92d5e0bdc2}{\$old\+Filter\+Order}} = false
+\item 
+bool \mbox{\hyperlink{class_config_1_1_feature_acda88c92da2c6dfd4f406a233db75733}{\$limit\+Zero\+As\+All}} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Enable/disable backward compatibility breaking features. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_feature_a0600153cd8aa63c20375421af725ff6e}\index{Config\textbackslash{}Feature@{Config\textbackslash{}Feature}!\$autoRoutesImproved@{\$autoRoutesImproved}}
+\index{\$autoRoutesImproved@{\$autoRoutesImproved}!Config\textbackslash{}Feature@{Config\textbackslash{}Feature}}
+\doxysubsubsection{\texorpdfstring{\$autoRoutesImproved}{\$autoRoutesImproved}}
+{\footnotesize\ttfamily \label{class_config_1_1_feature_a0600153cd8aa63c20375421af725ff6e} 
+bool Config\textbackslash{}\+Feature\+::\$auto\+Routes\+Improved = false}
+
+Use improved new auto routing instead of the default legacy version. \Hypertarget{class_config_1_1_feature_acda88c92da2c6dfd4f406a233db75733}\index{Config\textbackslash{}Feature@{Config\textbackslash{}Feature}!\$limitZeroAsAll@{\$limitZeroAsAll}}
+\index{\$limitZeroAsAll@{\$limitZeroAsAll}!Config\textbackslash{}Feature@{Config\textbackslash{}Feature}}
+\doxysubsubsection{\texorpdfstring{\$limitZeroAsAll}{\$limitZeroAsAll}}
+{\footnotesize\ttfamily \label{class_config_1_1_feature_acda88c92da2c6dfd4f406a233db75733} 
+bool Config\textbackslash{}\+Feature\+::\$limit\+Zero\+As\+All = true}
+
+The behavior of {\ttfamily limit(0)} in Query Builder.
+
+If true, {\ttfamily limit(0)} returns all records. (the behavior of 4.\+4.\+x or before in version 4.\+x.) If false, {\ttfamily limit(0)} returns no records. (the behavior of 3.\+1.\+9 or later in version 3.\+x.) \Hypertarget{class_config_1_1_feature_a34159d68cf207c482db91d92d5e0bdc2}\index{Config\textbackslash{}Feature@{Config\textbackslash{}Feature}!\$oldFilterOrder@{\$oldFilterOrder}}
+\index{\$oldFilterOrder@{\$oldFilterOrder}!Config\textbackslash{}Feature@{Config\textbackslash{}Feature}}
+\doxysubsubsection{\texorpdfstring{\$oldFilterOrder}{\$oldFilterOrder}}
+{\footnotesize\ttfamily \label{class_config_1_1_feature_a34159d68cf207c482db91d92d5e0bdc2} 
+bool Config\textbackslash{}\+Feature\+::\$old\+Filter\+Order = false}
+
+Use filter execution order in 4.\+4 or before. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Feature.\+php\end{DoxyCompactItemize}

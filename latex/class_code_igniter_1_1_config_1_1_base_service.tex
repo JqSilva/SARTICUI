@@ -1,0 +1,220 @@
+\doxysection{Code\+Igniter\textbackslash{}Config\textbackslash{}Base\+Service Class Reference}
+\hypertarget{class_code_igniter_1_1_config_1_1_base_service}{}\label{class_code_igniter_1_1_config_1_1_base_service}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Base\+Service\+:
+% FIG 0
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_ab55c32b6edbd4713d326d208b335b82b}{get}} (string \$key)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a3d3899d1006fd50a9ae484242373d25f}{set}} (string \$key, object \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a1ee6d7804652eab946b8fe05c752480c}{override}} (string \$key, object \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a2c60ecb4d1ad3ed8b8f1dc0778303839}{autoloader}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a3b5f7cf82431c1bf10e7ac3908d198be}{locator}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a980201a6a926bc13e2af9657e73c3041}{\+\_\+\+\_\+call\+Static}} (string \$name, array \$arguments)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_aa1f3de4acf0a9a3545783e3177ce0369}{service\+Exists}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a9a305a4dc0ee5fa906e5d8974c2e06ef}{reset}} (bool \$init\+Autoloader=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_acbe23e93fbcb3b2dacb880e496c70afc}{reset\+Single}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a11973f220d8da04aff60c0ec851a6b6b}{inject\+Mock}} (string \$name, \$mock)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_ae71b0a23a5f55f9418fd10f6efe20cbb}{get\+Shared\+Instance}} (string \$key,... \$params)
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_afe53ac1d1ebd81d4825dd805d853f52b}\label{class_code_igniter_1_1_config_1_1_base_service_afe53ac1d1ebd81d4825dd805d853f52b} 
+static {\bfseries build\+Services\+Cache} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_aaa4951b7d649e164679f712c0b22f462}\label{class_code_igniter_1_1_config_1_1_base_service_aaa4951b7d649e164679f712c0b22f462} 
+static {\bfseries \$instances} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a24654d1716410acc782ff02fe9837bed}\label{class_code_igniter_1_1_config_1_1_base_service_a24654d1716410acc782ff02fe9837bed} 
+static array {\bfseries \$factories} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a7f37695f8be82893979a15ff954b9ab6}\label{class_code_igniter_1_1_config_1_1_base_service_a7f37695f8be82893979a15ff954b9ab6} 
+static {\bfseries \$mocks} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_ad977d5eedd4c038db02328ca204bf563}\label{class_code_igniter_1_1_config_1_1_base_service_ad977d5eedd4c038db02328ca204bf563} 
+static {\bfseries \$discovered} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a3bdfcce7b8e2b645c28383321a5ec61b}\label{class_code_igniter_1_1_config_1_1_base_service_a3bdfcce7b8e2b645c28383321a5ec61b} 
+static {\bfseries \$services} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Services Configuration file.
+
+Services are simply other classes/libraries that the system uses to do its job. This is used by \doxylink{namespace_code_igniter}{Code\+Igniter} to allow the core of the framework to be swapped out easily without affecting the usage within the rest of your application.
+
+This is used in place of a Dependency Injection container primarily due to its simplicity, which allows a better long-\/term maintenance of the applications built on top of \doxylink{namespace_code_igniter}{Code\+Igniter}. A bonus side-\/effect is that IDEs are able to determine what class you are calling whereas with DI Containers there usually isn\textquotesingle{}t a way for them to do this.
+
+Warning\+: To allow overrides by service providers do not use static calls, instead call out to \textbackslash{}\+Config\textbackslash{}\+Services (imported as App\+Services).
+
+\begin{DoxySeeAlso}{See also}
+\href{http://blog.ircmaxell.com/2015/11/simple-easy-risk-and-change.html}{\texttt{ http\+://blog.\+ircmaxell.\+com/2015/11/simple-\/easy-\/risk-\/and-\/change.\+html}} 
+
+\href{http://www.infoq.com/presentations/Simple-Made-Easy}{\texttt{ http\+://www.\+infoq.\+com/presentations/\+Simple-\/\+Made-\/\+Easy}}
+\end{DoxySeeAlso}
+@method static Cache\+Interface cache(Cache \$config = null, \$get\+Shared = true) @method static CLIRequest clirequest(App \$config = null, \$get\+Shared = true) @method static \doxylink{namespace_code_igniter}{Code\+Igniter} codeigniter(App \$config = null, \$get\+Shared = true) @method static Commands commands(\$get\+Shared = true) @method static void create\+Request(App \$config, bool \$is\+Cli = false) @method static Content\+Security\+Policy csp(CSPConfig \$config = null, \$get\+Shared = true) @method static CURLRequest curlrequest(\$options = \mbox{[}\mbox{]}, Response\+Interface \$response = null, App \$config = null, \$get\+Shared = true) @method static Email email(\$config = null, \$get\+Shared = true) @method static Encrypter\+Interface encrypter(Encryption \$config = null, \$get\+Shared = false) @method static Exceptions exceptions(Config\+Exceptions \$config = null, \$get\+Shared = true) @method static Filters filters(Config\+Filters \$config = null, \$get\+Shared = true) @method static Format format(Config\+Format \$config = null, \$get\+Shared = true) @method static Honeypot honeypot(Config\+Honey\+Pot \$config = null, \$get\+Shared = true) @method static Base\+Handler image(\$handler = null, Images \$config = null, \$get\+Shared = true) @method static Incoming\+Request incomingrequest(?App \$config = null, bool \$get\+Shared = true) @method static Iterator iterator(\$get\+Shared = true) @method static Language language(\$locale = null, \$get\+Shared = true) @method static Logger logger(\$get\+Shared = true) @method static Migration\+Runner migrations(Migrations \$config = null, Connection\+Interface \$db = null, \$get\+Shared = true) @method static Negotiate negotiator(Request\+Interface \$request = null, \$get\+Shared = true) @method static Pager pager(Config\+Pager \$config = null, Renderer\+Interface \$view = null, \$get\+Shared = true) @method static Parser parser(\$view\+Path = null, Config\+View \$config = null, \$get\+Shared = true) @method static Redirect\+Response redirectresponse(App \$config = null, \$get\+Shared = true) @method static View renderer(\$view\+Path = null, Config\+View \$config = null, \$get\+Shared = true) @method static Incoming\+Request\texorpdfstring{$\vert$}{|}\+CLIRequest request(App \$config = null, \$get\+Shared = true) @method static Response\+Interface response(App \$config = null, \$get\+Shared = true) @method static Response\+Cache responsecache(?Cache \$config = null, ?Cache\+Interface \$cache = null, bool \$get\+Shared = true) @method static Router router(Route\+Collection\+Interface \$routes = null, Request \$request = null, \$get\+Shared = true) @method static Route\+Collection routes(\$get\+Shared = true) @method static Security security(App \$config = null, \$get\+Shared = true) @method static Session session(Config\+Session \$config = null, \$get\+Shared = true) @method static Site\+URIFactory siteurifactory(App \$config = null, Superglobals \$superglobals = null, \$get\+Shared = true) @method static Superglobals superglobals(array \$server = null, array \$get = null, bool \$get\+Shared = true) @method static Throttler throttler(\$get\+Shared = true) @method static Timer timer(\$get\+Shared = true) @method static Toolbar toolbar(Config\+Toolbar \$config = null, \$get\+Shared = true) @method static Typography typography(\$get\+Shared = true) @method static URI uri(\$uri = null, \$get\+Shared = true) @method static Validation\+Interface validation(Config\+Validation \$config = null, \$get\+Shared = true) @method static Cell viewcell(\$get\+Shared = true) 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a980201a6a926bc13e2af9657e73c3041}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!\_\_callStatic@{\_\_callStatic}}
+\index{\_\_callStatic@{\_\_callStatic}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{\_\_callStatic()}{\_\_callStatic()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_a980201a6a926bc13e2af9657e73c3041} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::\+\_\+\+\_\+call\+Static (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Provides the ability to perform case-\/insensitive calling of service names.
+
+\begin{DoxyReturn}{Returns}
+object\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a2c60ecb4d1ad3ed8b8f1dc0778303839}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!autoloader@{autoloader}}
+\index{autoloader@{autoloader}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{autoloader()}{autoloader()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_a2c60ecb4d1ad3ed8b8f1dc0778303839} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::autoloader (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Autoloader class is the central class that handles our spl\+\_\+autoload\+\_\+register method, and helper methods.
+
+\begin{DoxyReturn}{Returns}
+Autoloader 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_ab55c32b6edbd4713d326d208b335b82b}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_ab55c32b6edbd4713d326d208b335b82b} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Simple method to get an entry fast.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Identifier of the entry to look for.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object\texorpdfstring{$\vert$}{|}null Entry. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_ae71b0a23a5f55f9418fd10f6efe20cbb}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!getSharedInstance@{getSharedInstance}}
+\index{getSharedInstance@{getSharedInstance}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{getSharedInstance()}{getSharedInstance()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_ae71b0a23a5f55f9418fd10f6efe20cbb} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::get\+Shared\+Instance (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Returns a shared instance of any of the class\textquotesingle{} services.
+
+\$key must be a name matching a service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null} & ...\$params\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a11973f220d8da04aff60c0ec851a6b6b}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!injectMock@{injectMock}}
+\index{injectMock@{injectMock}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{injectMock()}{injectMock()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_a11973f220d8da04aff60c0ec851a6b6b} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::inject\+Mock (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$mock}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Inject mock object for testing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$mock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+@test\+Tag only available to test code \Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a3b5f7cf82431c1bf10e7ac3908d198be}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!locator@{locator}}
+\index{locator@{locator}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{locator()}{locator()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_a3b5f7cf82431c1bf10e7ac3908d198be} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::locator (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The file locator provides utility methods for looking for non-\/classes within namespaced folders, as well as convenience methods for loading \textquotesingle{}helpers\textquotesingle{}, and \textquotesingle{}libraries\textquotesingle{}.
+
+\begin{DoxyReturn}{Returns}
+File\+Locator\+Interface 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_services_ad515afe8ed53ebf192c4c5bbfbcef9ed}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Services}}.
+
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a1ee6d7804652eab946b8fe05c752480c}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!override@{override}}
+\index{override@{override}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{override()}{override()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_a1ee6d7804652eab946b8fe05c752480c} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::override (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{object}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Overrides an existing entry.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Identifier of the entry. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a9a305a4dc0ee5fa906e5d8974c2e06ef}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!reset@{reset}}
+\index{reset@{reset}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_a9a305a4dc0ee5fa906e5d8974c2e06ef} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::reset (\begin{DoxyParamCaption}\item[{bool}]{\$init\+Autoloader}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reset shared instances and mocks for testing.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+@test\+Tag only available to test code \Hypertarget{class_code_igniter_1_1_config_1_1_base_service_acbe23e93fbcb3b2dacb880e496c70afc}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!resetSingle@{resetSingle}}
+\index{resetSingle@{resetSingle}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{resetSingle()}{resetSingle()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_acbe23e93fbcb3b2dacb880e496c70afc} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::reset\+Single (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resets any mock and shared instances for a single service.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+@test\+Tag only available to test code \Hypertarget{class_code_igniter_1_1_config_1_1_base_service_aa1f3de4acf0a9a3545783e3177ce0369}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!serviceExists@{serviceExists}}
+\index{serviceExists@{serviceExists}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{serviceExists()}{serviceExists()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_aa1f3de4acf0a9a3545783e3177ce0369} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::service\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if the requested service is defined and return the declaring class. Return null if not found. \Hypertarget{class_code_igniter_1_1_config_1_1_base_service_a3d3899d1006fd50a9ae484242373d25f}\index{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}!set@{set}}
+\index{set@{set}!CodeIgniter\textbackslash{}Config\textbackslash{}BaseService@{CodeIgniter\textbackslash{}Config\textbackslash{}BaseService}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_base_service_a3d3899d1006fd50a9ae484242373d25f} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service\+::set (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{object}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets an entry.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Identifier of the entry. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Config/Base\+Service.\+php\end{DoxyCompactItemize}

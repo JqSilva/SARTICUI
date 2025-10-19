@@ -1,0 +1,88 @@
+\doxysection{Code\+Igniter\textbackslash{}Data\+Converter\textbackslash{}Data\+Converter Class Reference}
+\hypertarget{class_code_igniter_1_1_data_converter_1_1_data_converter}{}\label{class_code_igniter_1_1_data_converter_1_1_data_converter}\index{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_data_converter_1_1_data_converter_aae10afc1da1c67baa53d565123b4058b}{from\+Data\+Source}} (array \$data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_data_converter_1_1_data_converter_abcecb0f4200e32eee0b534c0755491f7}{to\+Data\+Source}} (array \$php\+Data)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_data_converter_1_1_data_converter_a0129f20a78f1646da3dcd249f23be6d3}{reconstruct}} (string \$classname, array \$row)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_data_converter_1_1_data_converter_a0e2f728999bd3afcac7285be5a0a2c0c}{extract}} (object \$object, bool \$only\+Changed=false, bool \$recursive=false)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+PHP data \texorpdfstring{$<$}{<}==\texorpdfstring{$>$}{>} Data\+Source data converter
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Data\+Converter\textbackslash{}\+Data\+Converter\+Test
+\end{DoxySeeAlso}
+@template TEntity of object 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_data_converter_1_1_data_converter_a0e2f728999bd3afcac7285be5a0a2c0c}\index{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}!extract@{extract}}
+\index{extract@{extract}!CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}}
+\doxysubsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_converter_1_1_data_converter_a0e2f728999bd3afcac7285be5a0a2c0c} 
+Code\+Igniter\textbackslash{}\+Data\+Converter\textbackslash{}\+Data\+Converter\+::extract (\begin{DoxyParamCaption}\item[{object}]{\$object}{, }\item[{bool}]{\$only\+Changed}{ = {\ttfamily false}, }\item[{bool}]{\$recursive}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Takes an object and extract properties as an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$only\+Changed} & Only for \doxylink{namespace_code_igniter}{Code\+Igniter}\textquotesingle{}s Entity. If true, only returns values that have changed since object creation. \\
+\hline
+bool & {\em \$recursive} & Only for \doxylink{namespace_code_igniter}{Code\+Igniter}\textquotesingle{}s Entity. If true, inner entities will be cast as array as well.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_data_converter_1_1_data_converter_aae10afc1da1c67baa53d565123b4058b}\index{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}!fromDataSource@{fromDataSource}}
+\index{fromDataSource@{fromDataSource}!CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}}
+\doxysubsubsection{\texorpdfstring{fromDataSource()}{fromDataSource()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_converter_1_1_data_converter_aae10afc1da1c67baa53d565123b4058b} 
+Code\+Igniter\textbackslash{}\+Data\+Converter\textbackslash{}\+Data\+Converter\+::from\+Data\+Source (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,class-\/string$>$} & \$cast\+Handlers Custom convert handlers Converts data from Data\+Source to PHP array with specified type values.\\
+\hline
+{\em array$<$string,mixed$>$} & \$data Data\+Source data \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_data_converter_1_1_data_converter_a0129f20a78f1646da3dcd249f23be6d3}\index{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}!reconstruct@{reconstruct}}
+\index{reconstruct@{reconstruct}!CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}}
+\doxysubsubsection{\texorpdfstring{reconstruct()}{reconstruct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_converter_1_1_data_converter_a0129f20a78f1646da3dcd249f23be6d3} 
+Code\+Igniter\textbackslash{}\+Data\+Converter\textbackslash{}\+Data\+Converter\+::reconstruct (\begin{DoxyParamCaption}\item[{string}]{\$classname}{, }\item[{array}]{\$row}{}\end{DoxyParamCaption})}
+
+Takes database data array and creates a specified type object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$classname} & @phpstan-\/param class-\/string$<$\+TEntity$>$ \$classname \\
+\hline
+ & {\em array$<$string,mixed$>$} & \$row Raw data from database\\
+\hline
+\end{DoxyParams}
+@phpstan-\/return TEntity \Hypertarget{class_code_igniter_1_1_data_converter_1_1_data_converter_abcecb0f4200e32eee0b534c0755491f7}\index{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}!toDataSource@{toDataSource}}
+\index{toDataSource@{toDataSource}!CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter@{CodeIgniter\textbackslash{}DataConverter\textbackslash{}DataConverter}}
+\doxysubsubsection{\texorpdfstring{toDataSource()}{toDataSource()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_data_converter_1_1_data_converter_abcecb0f4200e32eee0b534c0755491f7} 
+Code\+Igniter\textbackslash{}\+Data\+Converter\textbackslash{}\+Data\+Converter\+::to\+Data\+Source (\begin{DoxyParamCaption}\item[{array}]{\$php\+Data}{}\end{DoxyParamCaption})}
+
+Converts PHP array to data for Data\+Source field types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$php\+Data PHP data \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Data\+Converter/Data\+Converter.\+php\end{DoxyCompactItemize}

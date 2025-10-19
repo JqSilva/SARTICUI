@@ -1,0 +1,114 @@
+\doxysection{Code\+Igniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}Array\+Helper Class Reference}
+\hypertarget{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper}{}\label{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper}\index{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a63cdbff88a685292ad448757f967689d}{dot\+Search}} (string \$index, array \$array)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_abf2971db29e8a58387da455000f3c904}{dot\+Key\+Exists}} (string \$index, array \$array)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a0bd81d177a18ffd3f4f5d243bf0397a5}{group\+By}} (array \$array, array \$indexes, bool \$include\+Empty=false)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_add2ab1ae23b1583a9b1629557679fbc5}{recursive\+Diff}} (array \$original, array \$compare\+With)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_ab167cf2a5dd6ea9c79d5eb972cdd90fa}{recursive\+Count}} (array \$array, int \$counter=0)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a36c750b32828e76dbac143eef4763650}{sort\+Values\+By\+Natural}} (array \&\$array, \$sort\+By\+Index=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@interal This is internal implementation for the framework.
+
+If there are any methods that should be provided, make them public APIs via helper functions.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+Dot\+Key\+Exists\+Test 
+
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+Recursive\+Diff\+Test 
+
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+Sort\+Values\+By\+Natural\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_abf2971db29e8a58387da455000f3c904}\index{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}!dotKeyExists@{dotKeyExists}}
+\index{dotKeyExists@{dotKeyExists}!CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}}
+\doxysubsubsection{\texorpdfstring{dotKeyExists()}{dotKeyExists()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_abf2971db29e8a58387da455000f3c904} 
+static Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+::dot\+Key\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$index}{, }\item[{array}]{\$array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+array\+\_\+key\+\_\+exists() with dot array syntax.
+
+If wildcard {\ttfamily \texorpdfstring{$\ast$}{*}} is used, all items for the key after it must have the key. \Hypertarget{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a63cdbff88a685292ad448757f967689d}\index{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}!dotSearch@{dotSearch}}
+\index{dotSearch@{dotSearch}!CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}}
+\doxysubsubsection{\texorpdfstring{dotSearch()}{dotSearch()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a63cdbff88a685292ad448757f967689d} 
+static Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+::dot\+Search (\begin{DoxyParamCaption}\item[{string}]{\$index}{, }\item[{array}]{\$array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Searches an array through dot syntax. Supports wildcard searches, like {\ttfamily foo.\texorpdfstring{$\ast$}{*}.bar}.
+
+@used-\/by dot\+\_\+array\+\_\+search()
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$index} & The index as dot array syntax.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a0bd81d177a18ffd3f4f5d243bf0397a5}\index{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}!groupBy@{groupBy}}
+\index{groupBy@{groupBy}!CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}}
+\doxysubsubsection{\texorpdfstring{groupBy()}{groupBy()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a0bd81d177a18ffd3f4f5d243bf0397a5} 
+static Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+::group\+By (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{array}]{\$indexes}{, }\item[{bool}]{\$include\+Empty}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Groups all rows by their index values. Result\textquotesingle{}s depth equals number of indexes
+
+@used-\/by array\+\_\+group\+\_\+by()
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & Data array (i.\+e. from query result) \\
+\hline
+array & {\em \$indexes} & Indexes to group by. Dot syntax used. Returns \$array if empty \\
+\hline
+bool & {\em \$include\+Empty} & If true, null and \textquotesingle{}\textquotesingle{} are also added as valid keys to group\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Result array where rows are grouped together by indexes values. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_ab167cf2a5dd6ea9c79d5eb972cdd90fa}\index{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}!recursiveCount@{recursiveCount}}
+\index{recursiveCount@{recursiveCount}!CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}}
+\doxysubsubsection{\texorpdfstring{recursiveCount()}{recursiveCount()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_ab167cf2a5dd6ea9c79d5eb972cdd90fa} 
+static Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+::recursive\+Count (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{int}]{\$counter}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Recursively count all keys. \Hypertarget{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_add2ab1ae23b1583a9b1629557679fbc5}\index{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}!recursiveDiff@{recursiveDiff}}
+\index{recursiveDiff@{recursiveDiff}!CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}}
+\doxysubsubsection{\texorpdfstring{recursiveDiff()}{recursiveDiff()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_add2ab1ae23b1583a9b1629557679fbc5} 
+static Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+::recursive\+Diff (\begin{DoxyParamCaption}\item[{array}]{\$original}{, }\item[{array}]{\$compare\+With}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Compare recursively two associative arrays and return difference as new array. Returns keys that exist in {\ttfamily \$original} but not in {\ttfamily \$compare\+With}. \Hypertarget{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a36c750b32828e76dbac143eef4763650}\index{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}!sortValuesByNatural@{sortValuesByNatural}}
+\index{sortValuesByNatural@{sortValuesByNatural}!CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper@{CodeIgniter\textbackslash{}Helpers\textbackslash{}Array\textbackslash{}ArrayHelper}}
+\doxysubsubsection{\texorpdfstring{sortValuesByNatural()}{sortValuesByNatural()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_helpers_1_1_array_1_1_array_helper_a36c750b32828e76dbac143eef4763650} 
+static Code\+Igniter\textbackslash{}\+Helpers\textbackslash{}\+Array\textbackslash{}\+Array\+Helper\+::sort\+Values\+By\+Natural (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{}]{\$sort\+By\+Index}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sorts array values in natural order If the value is an array, you need to specify the \$sort\+By\+Index of the key to sort
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em list$<$int\texorpdfstring{$\vert$}{|}list$<$int\texorpdfstring{$\vert$}{|}string$>$\texorpdfstring{$\vert$}{|}string$>$} & \$array \\
+\hline
+int | string | null & {\em \$sort\+By\+Index} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Helpers/\+Array/Array\+Helper.\+php\end{DoxyCompactItemize}

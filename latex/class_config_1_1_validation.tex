@@ -1,0 +1,93 @@
+\doxysection{Config\textbackslash{}Validation Class Reference}
+\hypertarget{class_config_1_1_validation}{}\label{class_config_1_1_validation}\index{Config\textbackslash{}Validation@{Config\textbackslash{}Validation}}
+
+
+Inheritance diagram for Config\textbackslash{}Validation\+:
+% FIG 0
+
+
+Collaboration diagram for Config\textbackslash{}Validation\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+array \mbox{\hyperlink{class_config_1_1_validation_a7dfdec354d15c784a3e931b7e32debf2}{\$rule\+Sets}}
+\item 
+array \mbox{\hyperlink{class_config_1_1_validation_a366c8315f75b007ebacd2e664d54212e}{\$templates}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_afd93e1684576dcc352d719c11a064ccc}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \+\_\+\+\_\+set\+\_\+state} (array \$array)
+\item 
+static {\bfseries set\+Modules} (\mbox{\hyperlink{class_config_1_1_modules}{Modules}} \$modules)
+\item 
+static {\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$registrars} = \mbox{[}$\,$\mbox{]}
+\item 
+static bool \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8c9d70b068e1f5b83a0abb810147fb0c}{\$override}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_af1aaf2c5d61fe89b38546f5cbfc7c635}{init\+Env\+Value}} (\&\$property, string \$name, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a329ee56e47020630eda09d037bd06756}{get\+Env\+Value}} (string \$property, string \$prefix, string \$short\+Prefix)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config_a8f6272a60e2ec5087ef7dcff7c8f7b43}{register\+Properties}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_config}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Config}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$did\+Discovery} = false
+\item 
+static {\bfseries \$module\+Config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_config_1_1_validation_a7dfdec354d15c784a3e931b7e32debf2}\index{Config\textbackslash{}Validation@{Config\textbackslash{}Validation}!\$ruleSets@{\$ruleSets}}
+\index{\$ruleSets@{\$ruleSets}!Config\textbackslash{}Validation@{Config\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{\$ruleSets}{\$ruleSets}}
+{\footnotesize\ttfamily \label{class_config_1_1_validation_a7dfdec354d15c784a3e931b7e32debf2} 
+array Config\textbackslash{}\+Validation\+::\$rule\+Sets}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Rules::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ FormatRules::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ FileRules::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ CreditCardRules::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_config_1_1_validation_a366c8315f75b007ebacd2e664d54212e}\index{Config\textbackslash{}Validation@{Config\textbackslash{}Validation}!\$templates@{\$templates}}
+\index{\$templates@{\$templates}!Config\textbackslash{}Validation@{Config\textbackslash{}Validation}}
+\doxysubsubsection{\texorpdfstring{\$templates}{\$templates}}
+{\footnotesize\ttfamily \label{class_config_1_1_validation_a366c8315f75b007ebacd2e664d54212e} 
+array Config\textbackslash{}\+Validation\+::\$templates}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'list'}\ \ \ =>\ \textcolor{stringliteral}{'CodeIgniter\(\backslash\)Validation\(\backslash\)Views\(\backslash\)list'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'single'}\ =>\ \textcolor{stringliteral}{'CodeIgniter\(\backslash\)Validation\(\backslash\)Views\(\backslash\)single'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/\+Config/Validation.\+php\end{DoxyCompactItemize}

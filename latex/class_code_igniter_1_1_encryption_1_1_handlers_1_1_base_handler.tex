@@ -1,0 +1,100 @@
+\doxysection{Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Base\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler}{}\label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Base\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Base\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ae51e5cc2a5903d44bd20b37678d85c1e}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{class_config_1_1_encryption}{Encryption}} \$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a543a765317bf0b0952d8ae6d0f647027}{\+\_\+\+\_\+get}} (\$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ac2ea67fe3cf8d22b6488b930ff29b2c2}{\+\_\+\+\_\+isset}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_encryption_1_1_encrypter_interface}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encrypter\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_encryption_1_1_encrypter_interface_aeea7d999efeb0ff5e6e7e32f7e1c07d4}{encrypt}} (\$data, \$params=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_encryption_1_1_encrypter_interface_a746fe55db1edd6cda8a3e0ac46b44808}{decrypt}} (\$data, \$params=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a3f7794834de4dc3838a4b78290be80b1}{substr}} (\$str, \$start, \$length=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for encryption handling 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ae51e5cc2a5903d44bd20b37678d85c1e}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ae51e5cc2a5903d44bd20b37678d85c1e} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_encryption}{Encryption}}}]{\$config}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a543a765317bf0b0952d8ae6d0f647027}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a543a765317bf0b0952d8ae6d0f647027} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+\+\_\+\+\_\+get() magic, providing readonly access to some of our properties
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Property name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ac2ea67fe3cf8d22b6488b930ff29b2c2}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}!\_\_isset@{\_\_isset}}
+\index{\_\_isset@{\_\_isset}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_isset()}{\_\_isset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ac2ea67fe3cf8d22b6488b930ff29b2c2} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::\+\_\+\+\_\+isset (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+\+\_\+\+\_\+isset() magic, providing checking for some of our properties
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Property name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a3f7794834de4dc3838a4b78290be80b1}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}!substr@{substr}}
+\index{substr@{substr}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{substr()}{substr()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a3f7794834de4dc3838a4b78290be80b1} 
+static Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::substr (\begin{DoxyParamCaption}\item[{}]{\$str}{, }\item[{}]{\$start}{, }\item[{}]{\$length}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Byte-\/safe substr()
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+int & {\em \$start} & \\
+\hline
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Encryption/\+Handlers/Base\+Handler.\+php\end{DoxyCompactItemize}

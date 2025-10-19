@@ -1,0 +1,611 @@
+\doxysection{Code\+Igniter\textbackslash{}Config\textbackslash{}Services Class Reference}
+\hypertarget{class_code_igniter_1_1_config_1_1_services}{}\label{class_code_igniter_1_1_config_1_1_services}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Services\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Services\+:
+% FIG 1
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a48cf9acd8c3a0634839e4414eee764e8}{cache}} (?\mbox{\hyperlink{class_config_1_1_cache}{Cache}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a11f1f4d3487327b97deb25fd0d0c88fc}{clirequest}} (?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a559ced8569a3e61e6d205c9ecfae796a}{codeigniter}} (?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_aa04550c07a7a497a778ea34495746b06}{commands}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_aeb48b24f1da4ab91ca32240dc2129baf}{csp}} (?CSPConfig \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a5707711c36b64e29cca6e5f8d285c7df}{curlrequest}} (array \$options=\mbox{[}$\,$\mbox{]}, ?\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ada79b58f76fd7029c770234d1b982622}{response}}=null, ?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a52cacf8ed0ed26ee3498173795e99e1d}{email}} (\$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_acaeced7c669fa3b177568dff3964d616}{encrypter}} (?Encryption\+Config \$config=null, \$get\+Shared=false)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_aedc4b5821b23bd7805401cc8b325db5c}{exceptions}} (?Exceptions\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a44faeeed9e2851029374111e246e5822}{filters}} (?Filters\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_af71c00350665ff471f914852cb736e16}{format}} (?Format\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a5edca90a9273487622607f80462b61b4}{honeypot}} (?Honeypot\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a3739eb5e337940d7cd9333195fd21a5e}{image}} (?string \$handler=null, ?\mbox{\hyperlink{class_config_1_1_images}{Images}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_acbcb12e40b8eab047579c1b611f3d54c}{iterator}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ac1513ff35f0c24bd6c38108356a7eee3}{language}} (?string \$locale=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ab2dd5cbd83513ae6cbb41c198b06d0f1}{logger}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a2a3cca749deb6be56e2dc21eb589cd86}{migrations}} (?\mbox{\hyperlink{class_config_1_1_migrations}{Migrations}} \$config=null, ?\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$db=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ac3b0cc12c1ca660cfd3cd484da88bf1d}{negotiator}} (?\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_af71499c1cf86712eeabe5996c9f464c7}{request}}=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_aec7900ea80f7047ecc09924711a60da2}{responsecache}} (?\mbox{\hyperlink{class_config_1_1_cache}{Cache}} \$config=null, ?\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface}{Cache\+Interface}} \$\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a48cf9acd8c3a0634839e4414eee764e8}{cache}}=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_af851a7f3776fef54f70dc8e87c88190c}{pager}} (?Pager\+Config \$config=null, ?\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface}{Renderer\+Interface}} \$view=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a37487a95b64e7bd2bc3b7e116f1952ec}{parser}} (?string \$view\+Path=null, ?View\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ae5f1089cdc4113fffd5bd8247a7b982e}{renderer}} (?string \$view\+Path=null, ?View\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_af71499c1cf86712eeabe5996c9f464c7}{request}} (?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a4c3cc8f7370e5705f305fbac4b85036f}{create\+Request}} (\mbox{\hyperlink{class_config_1_1_app}{App}} \$config, bool \$is\+Cli=false)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ae770308ae91d9109432f032abd7f66c2}{incomingrequest}} (?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ada79b58f76fd7029c770234d1b982622}{response}} (?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_abc007e209303a5f51eeb403b7c24dbc2}{redirectresponse}} (?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a80b6770b0e762a01201b90cd6df1601d}{routes}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_aa6c4e9366338ee4e2b053b735db3a0e6}{router}} (?\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface}{Route\+Collection\+Interface}} \$\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a80b6770b0e762a01201b90cd6df1601d}{routes}}=null, ?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request}{Request}} \$\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_af71499c1cf86712eeabe5996c9f464c7}{request}}=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_aeb5ab775c1e99774bc5bbccdc8a8676e}{security}} (?Security\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a5fcca88739df790ced24eaf163643401}{siteurifactory}} (?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null, ?\mbox{\hyperlink{class_code_igniter_1_1_superglobals}{Superglobals}} \$\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a4bf13597e330eb71ab0b2bfa96c81b56}{superglobals}}=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a4bf13597e330eb71ab0b2bfa96c81b56}{superglobals}} (?array \$server=null, ?array \$\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_ab55c32b6edbd4713d326d208b335b82b}{get}}=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a16d7544d331bfb98453cb724dae86665}{throttler}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a6a90ef02439614815369d1b9d4a3ea30}{timer}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a78b3561145a8cba9e8d42454b2dc70f4}{toolbar}} (?Toolbar\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ab4aa1970ec751ac71cbdd60665f235a8}{uri}} (?string \$uri=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a8bbe99cef0344660afd67754ae96a1d4}{validation}} (?Validation\+Config \$config=null, bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_ac0b55fdf16618c125f8f91f749b610da}{viewcell}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_services_a8be82563754d3c537975c2e406fee18b}{typography}} (bool \$get\+Shared=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_ab55c32b6edbd4713d326d208b335b82b}{get}} (string \$key)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a3d3899d1006fd50a9ae484242373d25f}{set}} (string \$key, object \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a1ee6d7804652eab946b8fe05c752480c}{override}} (string \$key, object \$value)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a2c60ecb4d1ad3ed8b8f1dc0778303839}{autoloader}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a3b5f7cf82431c1bf10e7ac3908d198be}{locator}} (bool \$get\+Shared=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a980201a6a926bc13e2af9657e73c3041}{\+\_\+\+\_\+call\+Static}} (string \$name, array \$arguments)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_aa1f3de4acf0a9a3545783e3177ce0369}{service\+Exists}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a9a305a4dc0ee5fa906e5d8974c2e06ef}{reset}} (bool \$init\+Autoloader=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_acbe23e93fbcb3b2dacb880e496c70afc}{reset\+Single}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_a11973f220d8da04aff60c0ec851a6b6b}{inject\+Mock}} (string \$name, \$mock)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service_ae71b0a23a5f55f9418fd10f6efe20cbb}{get\+Shared\+Instance}} (string \$key,... \$params)
+\item 
+static {\bfseries build\+Services\+Cache} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_config_1_1_base_service}{Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Base\+Service}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$instances} = \mbox{[}$\,$\mbox{]}
+\item 
+static array {\bfseries \$factories} = \mbox{[}$\,$\mbox{]}
+\item 
+static {\bfseries \$mocks} = \mbox{[}$\,$\mbox{]}
+\item 
+static {\bfseries \$discovered} = false
+\item 
+static {\bfseries \$services} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Services Configuration file.
+
+Services are simply other classes/libraries that the system uses to do its job. This is used by \doxylink{namespace_code_igniter}{Code\+Igniter} to allow the core of the framework to be swapped out easily without affecting the usage within the rest of your application.
+
+This is used in place of a Dependency Injection container primarily due to its simplicity, which allows a better long-\/term maintenance of the applications built on top of \doxylink{namespace_code_igniter}{Code\+Igniter}. A bonus side-\/effect is that IDEs are able to determine what class you are calling whereas with DI Containers there usually isn\textquotesingle{}t a way for them to do this.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://blog.ircmaxell.com/2015/11/simple-easy-risk-and-change.html}{\texttt{ http\+://blog.\+ircmaxell.\+com/2015/11/simple-\/easy-\/risk-\/and-\/change.\+html}} 
+
+\href{http://www.infoq.com/presentations/Simple-Made-Easy}{\texttt{ http\+://www.\+infoq.\+com/presentations/\+Simple-\/\+Made-\/\+Easy}} 
+
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a48cf9acd8c3a0634839e4414eee764e8}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!cache@{cache}}
+\index{cache@{cache}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{cache()}{cache()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a48cf9acd8c3a0634839e4414eee764e8} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::cache (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_cache}{Cache}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The cache class provides a simple way to store and retrieve complex data for later.
+
+\begin{DoxyReturn}{Returns}
+Cache\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a11f1f4d3487327b97deb25fd0d0c88fc}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!clirequest@{clirequest}}
+\index{clirequest@{clirequest}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{clirequest()}{clirequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a11f1f4d3487327b97deb25fd0d0c88fc} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::clirequest (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The CLI Request class provides for ways to interact with a command line request.
+
+\begin{DoxyReturn}{Returns}
+CLIRequest 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a559ced8569a3e61e6d205c9ecfae796a}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!codeigniter@{codeigniter}}
+\index{codeigniter@{codeigniter}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{codeigniter()}{codeigniter()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a559ced8569a3e61e6d205c9ecfae796a} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::codeigniter (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_code_igniter}{Code\+Igniter}, the core of the framework.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{namespace_code_igniter}{Code\+Igniter} 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_aa04550c07a7a497a778ea34495746b06}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!commands@{commands}}
+\index{commands@{commands}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{commands()}{commands()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_aa04550c07a7a497a778ea34495746b06} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::commands (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The commands utility for running and working with CLI commands.
+
+\begin{DoxyReturn}{Returns}
+Commands 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a4c3cc8f7370e5705f305fbac4b85036f}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!createRequest@{createRequest}}
+\index{createRequest@{createRequest}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{createRequest()}{createRequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a4c3cc8f7370e5705f305fbac4b85036f} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::create\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{, }\item[{bool}]{\$is\+Cli}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create the current Request object, either Incoming\+Request or CLIRequest.
+
+This method is called from Code\+Igniter\+::get\+Request\+Object(). \Hypertarget{class_code_igniter_1_1_config_1_1_services_aeb48b24f1da4ab91ca32240dc2129baf}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!csp@{csp}}
+\index{csp@{csp}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{csp()}{csp()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_aeb48b24f1da4ab91ca32240dc2129baf} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::csp (\begin{DoxyParamCaption}\item[{?CSPConfig}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Content Security Policy
+
+\begin{DoxyReturn}{Returns}
+Content\+Security\+Policy 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a5707711c36b64e29cca6e5f8d285c7df}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!curlrequest@{curlrequest}}
+\index{curlrequest@{curlrequest}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{curlrequest()}{curlrequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a5707711c36b64e29cca6e5f8d285c7df} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::curlrequest (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The CURL Request class acts as a simple HTTP client for interacting with other servers, typically through APIs.
+
+\begin{DoxyReturn}{Returns}
+CURLRequest 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a52cacf8ed0ed26ee3498173795e99e1d}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!email@{email}}
+\index{email@{email}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{email()}{email()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a52cacf8ed0ed26ee3498173795e99e1d} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::email (\begin{DoxyParamCaption}\item[{}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Email class allows you to send email via mail, sendmail, SMTP.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | Email\+Config | null & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Email 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_acaeced7c669fa3b177568dff3964d616}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!encrypter@{encrypter}}
+\index{encrypter@{encrypter}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{encrypter()}{encrypter()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_acaeced7c669fa3b177568dff3964d616} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::encrypter (\begin{DoxyParamCaption}\item[{?Encryption\+Config}]{\$config}{ = {\ttfamily null}, }\item[{}]{\$get\+Shared}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Encryption class provides two-\/way encryption.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$get\+Shared} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Encrypter\+Interface Encryption handler 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_aedc4b5821b23bd7805401cc8b325db5c}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!exceptions@{exceptions}}
+\index{exceptions@{exceptions}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{exceptions()}{exceptions()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_aedc4b5821b23bd7805401cc8b325db5c} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::exceptions (\begin{DoxyParamCaption}\item[{?Exceptions\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Exceptions class holds the methods that handle\+:
+
+
+\begin{DoxyItemize}
+\item set\+\_\+exception\+\_\+handler
+\item set\+\_\+error\+\_\+handler
+\item register\+\_\+shutdown\+\_\+function
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Exceptions 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a44faeeed9e2851029374111e246e5822}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!filters@{filters}}
+\index{filters@{filters}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{filters()}{filters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a44faeeed9e2851029374111e246e5822} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::filters (\begin{DoxyParamCaption}\item[{?Filters\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Filters allow you to run tasks before and/or after a controller is executed. During before filters, the request can be modified, and actions taken based on the request, while after filters can act on or modify the response itself before it is sent to the client.
+
+\begin{DoxyReturn}{Returns}
+Filters 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_af71c00350665ff471f914852cb736e16}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!format@{format}}
+\index{format@{format}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_af71c00350665ff471f914852cb736e16} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::format (\begin{DoxyParamCaption}\item[{?Format\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Format class is a convenient place to create Formatters.
+
+\begin{DoxyReturn}{Returns}
+Format 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a5edca90a9273487622607f80462b61b4}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!honeypot@{honeypot}}
+\index{honeypot@{honeypot}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{honeypot()}{honeypot()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a5edca90a9273487622607f80462b61b4} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::honeypot (\begin{DoxyParamCaption}\item[{?Honeypot\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Honeypot provides a secret input on forms that bots should NOT fill in, providing an additional safeguard when accepting user input.
+
+\begin{DoxyReturn}{Returns}
+Honeypot 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a3739eb5e337940d7cd9333195fd21a5e}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!image@{image}}
+\index{image@{image}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a3739eb5e337940d7cd9333195fd21a5e} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::image (\begin{DoxyParamCaption}\item[{?string}]{\$handler}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{class_config_1_1_images}{Images}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Acts as a factory for Image\+Handler classes and returns an instance of the handler. Used like service(\textquotesingle{}image\textquotesingle{})-\/\texorpdfstring{$>$}{>}with\+File(\$path)-\/\texorpdfstring{$>$}{>}rotate(90)-\/\texorpdfstring{$>$}{>}save();
+
+\begin{DoxyReturn}{Returns}
+Base\+Handler 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_ae770308ae91d9109432f032abd7f66c2}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!incomingrequest@{incomingrequest}}
+\index{incomingrequest@{incomingrequest}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{incomingrequest()}{incomingrequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_ae770308ae91d9109432f032abd7f66c2} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::incomingrequest (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Incoming\+Request class models an HTTP request.
+
+\begin{DoxyReturn}{Returns}
+Incoming\+Request 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_acbcb12e40b8eab047579c1b611f3d54c}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!iterator@{iterator}}
+\index{iterator@{iterator}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{iterator()}{iterator()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_acbcb12e40b8eab047579c1b611f3d54c} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::iterator (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Iterator class provides a simple way of looping over a function and timing the results and memory usage. Used when debugging and optimizing applications.
+
+\begin{DoxyReturn}{Returns}
+Iterator 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_ac1513ff35f0c24bd6c38108356a7eee3}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!language@{language}}
+\index{language@{language}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{language()}{language()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_ac1513ff35f0c24bd6c38108356a7eee3} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::language (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Responsible for loading the language string translations.
+
+\begin{DoxyReturn}{Returns}
+Language 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_ab2dd5cbd83513ae6cbb41c198b06d0f1}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!logger@{logger}}
+\index{logger@{logger}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_ab2dd5cbd83513ae6cbb41c198b06d0f1} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::logger (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Logger class is a PSR-\/3 compatible Logging class that supports multiple handlers that process the actual logging.
+
+\begin{DoxyReturn}{Returns}
+Logger 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a2a3cca749deb6be56e2dc21eb589cd86}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!migrations@{migrations}}
+\index{migrations@{migrations}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{migrations()}{migrations()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a2a3cca749deb6be56e2dc21eb589cd86} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::migrations (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_migrations}{Migrations}}}]{\$config}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Connection\+Interface}}}]{\$db}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the appropriate Migration runner.
+
+\begin{DoxyReturn}{Returns}
+Migration\+Runner 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_ac3b0cc12c1ca660cfd3cd484da88bf1d}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!negotiator@{negotiator}}
+\index{negotiator@{negotiator}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{negotiator()}{negotiator()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_ac3b0cc12c1ca660cfd3cd484da88bf1d} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::negotiator (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Negotiate class provides the content negotiation features for working the request to determine correct language, encoding, charset, and more.
+
+\begin{DoxyReturn}{Returns}
+Negotiate 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_af851a7f3776fef54f70dc8e87c88190c}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!pager@{pager}}
+\index{pager@{pager}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{pager()}{pager()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_af851a7f3776fef54f70dc8e87c88190c} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::pager (\begin{DoxyParamCaption}\item[{?Pager\+Config}]{\$config}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_code_igniter_1_1_view_1_1_renderer_interface}{Renderer\+Interface}}}]{\$view}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the appropriate pagination handler.
+
+\begin{DoxyReturn}{Returns}
+Pager 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a37487a95b64e7bd2bc3b7e116f1952ec}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!parser@{parser}}
+\index{parser@{parser}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{parser()}{parser()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a37487a95b64e7bd2bc3b7e116f1952ec} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::parser (\begin{DoxyParamCaption}\item[{?string}]{\$view\+Path}{ = {\ttfamily null}, }\item[{?View\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Parser is a simple template parser.
+
+\begin{DoxyReturn}{Returns}
+Parser 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_abc007e209303a5f51eeb403b7c24dbc2}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!redirectresponse@{redirectresponse}}
+\index{redirectresponse@{redirectresponse}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{redirectresponse()}{redirectresponse()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_abc007e209303a5f51eeb403b7c24dbc2} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::redirectresponse (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Redirect class provides nice way of working with redirects.
+
+\begin{DoxyReturn}{Returns}
+Redirect\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_ae5f1089cdc4113fffd5bd8247a7b982e}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!renderer@{renderer}}
+\index{renderer@{renderer}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{renderer()}{renderer()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_ae5f1089cdc4113fffd5bd8247a7b982e} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::renderer (\begin{DoxyParamCaption}\item[{?string}]{\$view\+Path}{ = {\ttfamily null}, }\item[{?View\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Renderer class is the class that actually displays a file to the user. The default View class within \doxylink{namespace_code_igniter}{Code\+Igniter} is intentionally simple, but this service could easily be replaced by a template engine if the user needed to.
+
+\begin{DoxyReturn}{Returns}
+View 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_af71499c1cf86712eeabe5996c9f464c7}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!request@{request}}
+\index{request@{request}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_af71499c1cf86712eeabe5996c9f464c7} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::request (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the current Request object.
+
+create\+Request() injects Incoming\+Request or CLIRequest.
+
+\begin{DoxyReturn}{Returns}
+CLIRequest\texorpdfstring{$\vert$}{|}\+Incoming\+Request
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000036}{Deprecated}}]The parameter \$config and \$get\+Shared are deprecated. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_ada79b58f76fd7029c770234d1b982622}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!response@{response}}
+\index{response@{response}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_ada79b58f76fd7029c770234d1b982622} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::response (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Response class models an HTTP response.
+
+\begin{DoxyReturn}{Returns}
+Response\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_aec7900ea80f7047ecc09924711a60da2}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!responsecache@{responsecache}}
+\index{responsecache@{responsecache}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{responsecache()}{responsecache()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_aec7900ea80f7047ecc09924711a60da2} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::responsecache (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_cache}{Cache}}}]{\$config}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface}{Cache\+Interface}}}]{\$cache}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the Response\+Cache.
+
+\begin{DoxyReturn}{Returns}
+Response\+Cache 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_aa6c4e9366338ee4e2b053b735db3a0e6}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!router@{router}}
+\index{router@{router}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{router()}{router()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_aa6c4e9366338ee4e2b053b735db3a0e6} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::router (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface}{Route\+Collection\+Interface}}}]{\$routes}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request}{Request}}}]{\$request}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Router class uses a Route\+Collection\textquotesingle{}s array of routes, and determines the correct Controller and Method to execute.
+
+\begin{DoxyReturn}{Returns}
+Router 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a80b6770b0e762a01201b90cd6df1601d}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!routes@{routes}}
+\index{routes@{routes}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{routes()}{routes()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a80b6770b0e762a01201b90cd6df1601d} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::routes (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Routes service is a class that allows for easily building a collection of routes.
+
+\begin{DoxyReturn}{Returns}
+Route\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_aeb5ab775c1e99774bc5bbccdc8a8676e}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!security@{security}}
+\index{security@{security}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{security()}{security()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_aeb5ab775c1e99774bc5bbccdc8a8676e} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::security (\begin{DoxyParamCaption}\item[{?Security\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Security class provides a few handy tools for keeping the site secure, most notably the CSRF protection tools.
+
+\begin{DoxyReturn}{Returns}
+Security 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a5fcca88739df790ced24eaf163643401}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!siteurifactory@{siteurifactory}}
+\index{siteurifactory@{siteurifactory}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{siteurifactory()}{siteurifactory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a5fcca88739df790ced24eaf163643401} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::siteurifactory (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{class_code_igniter_1_1_superglobals}{Superglobals}}}]{\$superglobals}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Factory for Site\+URI.
+
+\begin{DoxyReturn}{Returns}
+Site\+URIFactory 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a4bf13597e330eb71ab0b2bfa96c81b56}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!superglobals@{superglobals}}
+\index{superglobals@{superglobals}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{superglobals()}{superglobals()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a4bf13597e330eb71ab0b2bfa96c81b56} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::superglobals (\begin{DoxyParamCaption}\item[{?array}]{\$server}{ = {\ttfamily null}, }\item[{?array}]{\$get}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Superglobals.
+
+\begin{DoxyReturn}{Returns}
+Superglobals 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a16d7544d331bfb98453cb724dae86665}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!throttler@{throttler}}
+\index{throttler@{throttler}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{throttler()}{throttler()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a16d7544d331bfb98453cb724dae86665} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::throttler (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Throttler class provides a simple method for implementing rate limiting in your applications.
+
+\begin{DoxyReturn}{Returns}
+Throttler 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a6a90ef02439614815369d1b9d4a3ea30}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!timer@{timer}}
+\index{timer@{timer}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{timer()}{timer()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a6a90ef02439614815369d1b9d4a3ea30} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::timer (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Timer class provides a simple way to Benchmark portions of your application.
+
+\begin{DoxyReturn}{Returns}
+Timer 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a78b3561145a8cba9e8d42454b2dc70f4}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!toolbar@{toolbar}}
+\index{toolbar@{toolbar}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{toolbar()}{toolbar()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a78b3561145a8cba9e8d42454b2dc70f4} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::toolbar (\begin{DoxyParamCaption}\item[{?Toolbar\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the debug toolbar.
+
+\begin{DoxyReturn}{Returns}
+Toolbar 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a8be82563754d3c537975c2e406fee18b}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!typography@{typography}}
+\index{typography@{typography}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{typography()}{typography()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a8be82563754d3c537975c2e406fee18b} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::typography (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Typography class provides a way to format text in semantically relevant ways.
+
+\begin{DoxyReturn}{Returns}
+Typography 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_ab4aa1970ec751ac71cbdd60665f235a8}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!uri@{uri}}
+\index{uri@{uri}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{uri()}{uri()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_ab4aa1970ec751ac71cbdd60665f235a8} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::uri (\begin{DoxyParamCaption}\item[{?string}]{\$uri}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The URI class provides a way to model and manipulate URIs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$uri} & The URI string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+URI The current URI if \$uri is null. 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_a8bbe99cef0344660afd67754ae96a1d4}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!validation@{validation}}
+\index{validation@{validation}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{validation()}{validation()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_a8bbe99cef0344660afd67754ae96a1d4} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::validation (\begin{DoxyParamCaption}\item[{?Validation\+Config}]{\$config}{ = {\ttfamily null}, }\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The Validation class provides tools for validating input data.
+
+\begin{DoxyReturn}{Returns}
+Validation\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_services_ac0b55fdf16618c125f8f91f749b610da}\index{CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}!viewcell@{viewcell}}
+\index{viewcell@{viewcell}!CodeIgniter\textbackslash{}Config\textbackslash{}Services@{CodeIgniter\textbackslash{}Config\textbackslash{}Services}}
+\doxysubsubsection{\texorpdfstring{viewcell()}{viewcell()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_services_ac0b55fdf16618c125f8f91f749b610da} 
+static Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Services\+::viewcell (\begin{DoxyParamCaption}\item[{bool}]{\$get\+Shared}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+View cells are intended to let you insert HTML into view that has been generated by any callable in the system.
+
+\begin{DoxyReturn}{Returns}
+Cell 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Config/Services.\+php\end{DoxyCompactItemize}

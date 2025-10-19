@@ -1,0 +1,213 @@
+\doxysection{Code\+Igniter\textbackslash{}Events\textbackslash{}Events Class Reference}
+\hypertarget{class_code_igniter_1_1_events_1_1_events}{}\label{class_code_igniter_1_1_events_1_1_events}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Events\textbackslash{}Events\+:
+% FIG 0
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_ae9e69a19c819dd458db240587ae28140}{initialize}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_a0d7688df4493732d9b4288f88645552c}{on}} (\$event\+Name, \$callback, \$priority=self\+::\+PRIORITY\+\_\+\+NORMAL)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_a06afcdbbf02b817df7bf456da6161d45}{trigger}} (\$event\+Name,... \$arguments)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_aaa94b930f7f0e5fa15be5afdb31e7b18}{listeners}} (\$event\+Name)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_ae79880087e149fef8c87b9729d5027f0}{remove\+Listener}} (\$event\+Name, callable \$listener)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_a3d9cb8c5e75f1b301098f5af0e70e5d2}{remove\+All\+Listeners}} (\$event\+Name=null)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_a827ffa8413e7a0c019bb568a6355e510}{set\+Files}} (array \$files)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_a02f1b02ea1bc63ff6de609744ad9cc06}{get\+Files}} ()
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_ac976c62fc08c83ced5e33f44e66cb9f2}{simulate}} (bool \$choice=true)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_events_1_1_events_a25d4f5ecfa0f152fa16721d8f7e8deb8}{get\+Performance\+Logs}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a1d19e84b22627543fab9df1503fb699b}\label{class_code_igniter_1_1_events_1_1_events_a1d19e84b22627543fab9df1503fb699b} 
+const {\bfseries PRIORITY\+\_\+\+LOW} = 200
+\item 
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_af5960ad01eee9ed151a49ac79dddeb68}\label{class_code_igniter_1_1_events_1_1_events_af5960ad01eee9ed151a49ac79dddeb68} 
+const {\bfseries PRIORITY\+\_\+\+NORMAL} = 100
+\item 
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a21fdcf7bed0db266f8c09ef2f9c2fb74}\label{class_code_igniter_1_1_events_1_1_events_a21fdcf7bed0db266f8c09ef2f9c2fb74} 
+const {\bfseries PRIORITY\+\_\+\+HIGH} = 10
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_ab9f193d94dc996a3182c923ed2d4954b}\label{class_code_igniter_1_1_events_1_1_events_ab9f193d94dc996a3182c923ed2d4954b} 
+static {\bfseries \$listeners} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_aa7b098af5238bb5b80f801c9b4bdcbba}\label{class_code_igniter_1_1_events_1_1_events_aa7b098af5238bb5b80f801c9b4bdcbba} 
+static {\bfseries \$initialized} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a15cb42a627103636cf2f0a6d3019542b}\label{class_code_igniter_1_1_events_1_1_events_a15cb42a627103636cf2f0a6d3019542b} 
+static {\bfseries \$simulate} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a713c165119ebacfe82143d2f5a5d30fc}\label{class_code_igniter_1_1_events_1_1_events_a713c165119ebacfe82143d2f5a5d30fc} 
+static {\bfseries \$performance\+Log} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a3295b131eed619c1d25d094352eb8e72}\label{class_code_igniter_1_1_events_1_1_events_a3295b131eed619c1d25d094352eb8e72} 
+static {\bfseries \$files} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Events
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a02f1b02ea1bc63ff6de609744ad9cc06}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_a02f1b02ea1bc63ff6de609744ad9cc06} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::get\+Files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the files that were found/loaded during this request.
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a25d4f5ecfa0f152fa16721d8f7e8deb8}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!getPerformanceLogs@{getPerformanceLogs}}
+\index{getPerformanceLogs@{getPerformanceLogs}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{getPerformanceLogs()}{getPerformanceLogs()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_a25d4f5ecfa0f152fa16721d8f7e8deb8} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::get\+Performance\+Logs (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Getter for the performance log records.
+
+\begin{DoxyReturn}{Returns}
+list\texorpdfstring{$<$}{<}array\texorpdfstring{$<$}{<}string, float\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_ae9e69a19c819dd458db240587ae28140}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_ae9e69a19c819dd458db240587ae28140} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Ensures that we have a events file ready.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_aaa94b930f7f0e5fa15be5afdb31e7b18}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!listeners@{listeners}}
+\index{listeners@{listeners}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{listeners()}{listeners()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_aaa94b930f7f0e5fa15be5afdb31e7b18} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::listeners (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of listeners for a single event. They are sorted by priority.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a0d7688df4493732d9b4288f88645552c}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!on@{on}}
+\index{on@{on}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{on()}{on()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_a0d7688df4493732d9b4288f88645552c} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::on (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{, }\item[{}]{\$callback}{, }\item[{}]{\$priority}{ = {\ttfamily self\+:\+:PRIORITY\+\_\+NORMAL}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers an action to happen on an event. The action can be any sort of callable\+:
+
+Events\+::on(\textquotesingle{}create\textquotesingle{}, \textquotesingle{}my\+Function\textquotesingle{}); // procedural function Events\+::on(\textquotesingle{}create\textquotesingle{}, \mbox{[}\textquotesingle{}my\+Class\textquotesingle{}, \textquotesingle{}my\+Method\textquotesingle{}\mbox{]}); // Class\+::method Events\+::on(\textquotesingle{}create\textquotesingle{}, \mbox{[}\$my\+Instance, \textquotesingle{}my\+Method\textquotesingle{}\mbox{]}); // Method on an existing instance Events\+::on(\textquotesingle{}create\textquotesingle{}, function() \{\}); // Closure
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+int & {\em \$priority} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a3d9cb8c5e75f1b301098f5af0e70e5d2}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!removeAllListeners@{removeAllListeners}}
+\index{removeAllListeners@{removeAllListeners}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{removeAllListeners()}{removeAllListeners()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_a3d9cb8c5e75f1b301098f5af0e70e5d2} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::remove\+All\+Listeners (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Removes all listeners.
+
+If the event\+\_\+name is specified, only listeners for that event will be removed, otherwise all listeners for all events are removed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_ae79880087e149fef8c87b9729d5027f0}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!removeListener@{removeListener}}
+\index{removeListener@{removeListener}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{removeListener()}{removeListener()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_ae79880087e149fef8c87b9729d5027f0} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::remove\+Listener (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{, }\item[{callable}]{\$listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Removes a single listener from an event.
+
+If the listener couldn\textquotesingle{}t be found, returns FALSE, else TRUE if it was removed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a827ffa8413e7a0c019bb568a6355e510}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!setFiles@{setFiles}}
+\index{setFiles@{setFiles}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{setFiles()}{setFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_a827ffa8413e7a0c019bb568a6355e510} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::set\+Files (\begin{DoxyParamCaption}\item[{array}]{\$files}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets the path to the file that routes are read from.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_ac976c62fc08c83ced5e33f44e66cb9f2}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!simulate@{simulate}}
+\index{simulate@{simulate}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_ac976c62fc08c83ced5e33f44e66cb9f2} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::simulate (\begin{DoxyParamCaption}\item[{bool}]{\$choice}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Turns simulation on or off. When on, events will not be triggered, simply logged. Useful during testing when you don\textquotesingle{}t actually want the tests to run.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_events_1_1_events_a06afcdbbf02b817df7bf456da6161d45}\index{CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}!trigger@{trigger}}
+\index{trigger@{trigger}!CodeIgniter\textbackslash{}Events\textbackslash{}Events@{CodeIgniter\textbackslash{}Events\textbackslash{}Events}}
+\doxysubsubsection{\texorpdfstring{trigger()}{trigger()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_events_1_1_events_a06afcdbbf02b817df7bf456da6161d45} 
+static Code\+Igniter\textbackslash{}\+Events\textbackslash{}\+Events\+::trigger (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Runs through all subscribed methods running them one at a time, until either\+: a) All subscribers have finished or b) a method returns false, at which point execution of subscribers stops.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Events/Events.\+php\end{DoxyCompactItemize}

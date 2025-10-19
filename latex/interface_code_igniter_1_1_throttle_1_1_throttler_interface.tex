@@ -1,0 +1,60 @@
+\doxysection{Code\+Igniter\textbackslash{}Throttle\textbackslash{}Throttler\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_throttle_1_1_throttler_interface}{}\label{interface_code_igniter_1_1_throttle_1_1_throttler_interface}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface@{CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Throttle\textbackslash{}Throttler\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_throttle_1_1_throttler_interface_ac7289739ed9e32224a9e708deb160ffd}{check}} (string \$key, int \$capacity, int \$seconds, int \$cost)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_throttle_1_1_throttler_interface_af1742aab1e472522e8f8390c1de57dd7}{get\+Token\+Time}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Expected behavior of a Throttler 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_throttle_1_1_throttler_interface_ac7289739ed9e32224a9e708deb160ffd}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface@{CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface}!check@{check}}
+\index{check@{check}!CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface@{CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_throttle_1_1_throttler_interface_ac7289739ed9e32224a9e708deb160ffd} 
+Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+Interface\+::check (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{int}]{\$capacity}{, }\item[{int}]{\$seconds}{, }\item[{int}]{\$cost}{}\end{DoxyParamCaption})}
+
+Restricts the number of requests made by a single key within a set number of seconds.
+
+Example\+:
+
+if (! \$throttler-\/\texorpdfstring{$>$}{>}check\+IPAddress(\$request-\/\texorpdfstring{$>$}{>}ip\+Address(), 60, MINUTE)) \{ die(\textquotesingle{}You submitted over 60 requests within a minute.\textquotesingle{}); \}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The name to use as the "{}bucket"{} name. \\
+\hline
+int & {\em \$capacity} & The number of requests the "{}bucket"{} can hold \\
+\hline
+int & {\em \$seconds} & The time it takes the "{}bucket"{} to completely refill \\
+\hline
+int & {\em \$cost} & The number of tokens this action uses.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{interface_code_igniter_1_1_throttle_1_1_throttler_interface_af1742aab1e472522e8f8390c1de57dd7}\index{CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface@{CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface}!getTokenTime@{getTokenTime}}
+\index{getTokenTime@{getTokenTime}!CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface@{CodeIgniter\textbackslash{}Throttle\textbackslash{}ThrottlerInterface}}
+\doxysubsubsection{\texorpdfstring{getTokenTime()}{getTokenTime()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_throttle_1_1_throttler_interface_af1742aab1e472522e8f8390c1de57dd7} 
+Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler\+Interface\+::get\+Token\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the number of seconds until the next available token will be released for usage. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_throttle_1_1_throttler_a027d808f6eb177e3a377830f140877b6}{Code\+Igniter\textbackslash{}\+Throttle\textbackslash{}\+Throttler}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Throttle/Throttler\+Interface.\+php\end{DoxyCompactItemize}

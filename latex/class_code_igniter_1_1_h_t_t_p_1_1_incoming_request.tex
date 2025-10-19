@@ -1,0 +1,665 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Incoming\+Request Class Reference}
+\hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request}{}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Incoming\+Request\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Incoming\+Request\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a1798b62adec7447a8cbd00e44b69ef2b}{\+\_\+\+\_\+construct}} (\$config, ?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_u_r_i}{URI}} \$uri=null, \$body=\textquotesingle{}php\+://input\textquotesingle{}, ?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_user_agent}{User\+Agent}} \$user\+Agent=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9fdba285bfa4143f0f15ea15c9abd343}{detect\+Locale}} (\$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ae496ea4caf0c02c33ead2e3af50c3bde}{detect\+Path}} (string \$protocol=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_abb9dbee49b3d914e55d840c1ad064925}{negotiate}} (string \$type, array \$supported, bool \$strict\+Match=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aef6fa64aad475be8f26e13c094b654ea}{is}} (string \$type)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2df22dbfe4413c428ad90c4d7e335c34}{is\+CLI}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a8b89cbf55238162cae8b8ceda1aba76c}{is\+AJAX}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9421ee2f60767098890a2be0203fe131}{is\+Secure}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_af97e2eda3c57243d6bc61fe49302f6e5}{set\+Path}} (string \$path, ?\mbox{\hyperlink{class_config_1_1_app}{App}} \$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a8442b57fed817a26fe4ea94404dcdd7c}{get\+Path}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2bd84710f3bdaf55cdfd9d870e0b26a9}{set\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a495ce7900dc5369f3d6a9efec94e95ee}{set\+Valid\+Locales}} (array \$locales)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a732be45eb2140114d60f9346f3414501}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_abd25ec63011d033dc1ef6bdc77c9d381}{get\+Default\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a144cd867ae741354d78c2060844d277d}{get\+Var}} (\$index=null, \$filter=null, \$flags=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a86a3857498d753da94dc4ba846adca98}{get\+JSON}} (bool \$assoc=false, int \$depth=512, int \$options=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad9585a8b1494a3d6a4db608162b3f189}{get\+Json\+Var}} (\$index=null, bool \$assoc=false, ?int \$filter=null, \$flags=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a184c2085e73ee00208fa7f786fbad763}{get\+Raw\+Input}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ae0ee5815effa5c3bd2c4ad61c2b52c00}{get\+Raw\+Input\+Var}} (\$index=null, ?int \$filter=null, \$flags=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a55a25d90e649f6a1a439ddb87e04ca6d}{get\+Get}} (\$index=null, \$filter=null, \$flags=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a3377a735b353093ffe7c859c3dd8814e}{get\+Post}} (\$index=null, \$filter=null, \$flags=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a05658af95522206813ff80c2ff682297}{get\+Post\+Get}} (\$index=null, \$filter=null, \$flags=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad92fb9ff2093b59dbd95e817aa4b552b}{get\+Get\+Post}} (\$index=null, \$filter=null, \$flags=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a94ea88cc44715120cbc247b0c2f11399}{get\+Cookie}} (\$index=null, \$filter=null, \$flags=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a7adca9c838f7c957ce377a8d9b08ebcc}{get\+User\+Agent}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a14e04e223bc4f6036d0c61c3cca849c1}{get\+Old\+Input}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aa73cc670bb017a5036603dc24106af93}{get\+Files}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9482f92d83ec9a5fef994e9d7c6f0122}{get\+File\+Multiple}} (string \$file\+ID)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2e6088b3e6e412cee070b1d04d2d8514}{get\+File}} (string \$file\+ID)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request_ae2485df518912121e981093f1b94a3aa}{\+\_\+\+\_\+construct}} (\$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request_a6f3a8de5e6f822d2a47851beae96c718}{set\+Method}} (string \$method)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request_a2c37ab0f56c12ef26400f12aeea9b7f9}{with\+Method}} (\$method)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request_a86e4829d19cbfdbb95c2eebfd694582c}{get\+Uri}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Outgoing\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_a45e61e08e4309a6957128edb88effaf3}{\+\_\+\+\_\+construct}} (string \$method, ?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_u_r_i}{URI}} \$uri=null, array \$\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0}{headers}}=\mbox{[}$\,$\mbox{]}, \$body=null, string \$version=\textquotesingle{}1.\+1\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_aa6d778173bc33d1ff9eb4c904bce7a38}{get\+Method}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_aa7f5bc23084e0efef134f86d85e91bc1}{with\+Uri}} (\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_u_r_i}{URI}} \$uri, \$preserve\+Host=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_afe4cc5b6d5bac8977cd43f674f3848f4}{get\+Body}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a7ac779bec32597d4367aa736bc5d2551}{get\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a94b9aea731f4906181b84374eb54b192}{get\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_ad5ab3a1b52182623349bf50019a05335}{has\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_ae9394625d43fc2608e509a398108b81d}{get\+Header\+Line}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a3f581e06a1166651422dfab4c7f30b63}{get\+Protocol\+Version}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1404c237690d52896a1d7b0e93e191ed}{set\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a9a56354f94237570fd05a1f5d54d2599}{append\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a131427f3868bdf49f8bbeedc0d19090d}{populate\+Headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0}{headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0b864465e53179641cd0e5683e20e624}{header}} (\$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_ad1bcf6ae6decb3c16cadb15ef1214002}{set\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a27f10d14218d4230df3a0819f09a8d8e}{remove\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0630aad9e82c1eafa81d7fa35a9f8738}{append\+Header}} (string \$name, ?string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1972a71352cb4801abe4c1473e40b181}{prepend\+Header}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_af6fbfa16a508383fb4adfb0fc9fdaf0e}{set\+Protocol\+Version}} (string \$version)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ace016a78647307a448c4b657338933df}{get\+IPAddress}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ade76e1ccb52bcbab29e6978fc7425d6d}{get\+Server}} (\$index=null, \$filter=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a4a527a0eb838ab895e7c316e88d2a0eb}{detect\+URI}} (string \$protocol, string \$base\+URL)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aca542a0b87bdf023fa6a85d63cf55158}{parse\+Request\+URI}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad013e1cf727742b2857c3cc873ba2fe0}{parse\+Query\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_abdcbaa304be98196ff0af01b9717cd22}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_abdcbaa304be98196ff0af01b9717cd22} 
+{\bfseries \$uri}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a0e0b0b78b4cdf912d4c02e39e5da37a5}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a0e0b0b78b4cdf912d4c02e39e5da37a5} 
+{\bfseries \$path}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a18904cb124a8dcb60af549f3f7e55d27}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a18904cb124a8dcb60af549f3f7e55d27} 
+{\bfseries \$files}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aa3c8d9a0087c98e89fc9862db0439454}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aa3c8d9a0087c98e89fc9862db0439454} 
+{\bfseries \$negotiator}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a08ae56c2b74418ae476ddbabb4186e29}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a08ae56c2b74418ae476ddbabb4186e29} 
+{\bfseries \$default\+Locale}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a335db9178350b4f5555119a83281f851}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a335db9178350b4f5555119a83281f851} 
+{\bfseries \$locale}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a50c237cc8860f4411c113fa1e1d6fafa}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a50c237cc8860f4411c113fa1e1d6fafa} 
+{\bfseries \$valid\+Locales} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a057f9727787ec5f03035bea20a9a2026}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a057f9727787ec5f03035bea20a9a2026} 
+{\bfseries \$old\+Input} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ab1836a813cd99881392fe3d13c046ed8}\label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ab1836a813cd99881392fe3d13c046ed8} 
+{\bfseries \$user\+Agent}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Outgoing\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$method}
+\item 
+{\bfseries \$uri}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$protocol\+Version}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a77d40e242f8492f460971e952242ca6a}{\$valid\+Protocol\+Versions}}
+\item 
+{\bfseries \$body}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Incoming\+Request
+
+Represents an incoming, server-\/side HTTP request.
+
+Per the HTTP specification, this interface includes properties for each of the following\+:
+
+
+\begin{DoxyItemize}
+\item Protocol version
+\item HTTP method
+\item URI
+\item Headers
+\item Message body
+\end{DoxyItemize}
+
+Additionally, it encapsulates all data as it has arrived to the application from the CGI and/or PHP environment, including\+:
+
+
+\begin{DoxyItemize}
+\item The values represented in \$\+\_\+\+SERVER.
+\item Any cookies provided (generally via \$\+\_\+\+COOKIE)
+\item Query string arguments (generally via \$\+\_\+\+GET, or as parsed via parse\+\_\+str())
+\item Upload files, if any (as represented by \$\+\_\+\+FILES)
+\item Deserialized body binds (generally from \$\+\_\+\+POST)
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a1798b62adec7447a8cbd00e44b69ef2b}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a1798b62adec7447a8cbd00e44b69ef2b} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config}{, }\item[{?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_u_r_i}{URI}}}]{\$uri}{ = {\ttfamily null}, }\item[{}]{\$body}{ = {\ttfamily \textquotesingle{}php\+://input\textquotesingle{}}, }\item[{?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_user_agent}{User\+Agent}}}]{\$user\+Agent}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+App & {\em \$config} & \\
+\hline
+string | null & {\em \$body} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9fdba285bfa4143f0f15ea15c9abd343}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!detectLocale@{detectLocale}}
+\index{detectLocale@{detectLocale}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{detectLocale()}{detectLocale()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9fdba285bfa4143f0f15ea15c9abd343} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::detect\+Locale (\begin{DoxyParamCaption}\item[{}]{\$config}{}\end{DoxyParamCaption})}
+
+Handles setting up the locale, perhaps auto-\/detecting through content negotiation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+App & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ae496ea4caf0c02c33ead2e3af50c3bde}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!detectPath@{detectPath}}
+\index{detectPath@{detectPath}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{detectPath()}{detectPath()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ae496ea4caf0c02c33ead2e3af50c3bde} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::detect\+Path (\begin{DoxyParamCaption}\item[{string}]{\$protocol}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Detects the relative path based on the URIProtocol \doxylink{namespace_config}{Config} setting.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000071}{Deprecated}}]4.\+4.\+0 Moved to Site\+URIFactory. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a4a527a0eb838ab895e7c316e88d2a0eb}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!detectURI@{detectURI}}
+\index{detectURI@{detectURI}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{detectURI()}{detectURI()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a4a527a0eb838ab895e7c316e88d2a0eb} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::detect\+URI (\begin{DoxyParamCaption}\item[{string}]{\$protocol}{, }\item[{string}]{\$base\+URL}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets up our URI object based on the information we have. This is either provided by the user in the base\+URL \doxylink{namespace_config}{Config} setting, or determined from the environment as needed.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000070}{Deprecated}}]4.\+4.\+0 No longer used. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a94ea88cc44715120cbc247b0c2f11399}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getCookie@{getCookie}}
+\index{getCookie@{getCookie}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getCookie()}{getCookie()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a94ea88cc44715120cbc247b0c2f11399} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Cookie (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{}]{\$filter}{ = {\ttfamily null}, }\item[{}]{\$flags}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetch an item from the COOKIE array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & Index for item to be fetched from \$\+\_\+\+COOKIE \\
+\hline
+int | null & {\em \$filter} & A filter name to be applied \\
+\hline
+array | int | null & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_abd25ec63011d033dc1ef6bdc77c9d381}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getDefaultLocale@{getDefaultLocale}}
+\index{getDefaultLocale@{getDefaultLocale}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getDefaultLocale()}{getDefaultLocale()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_abd25ec63011d033dc1ef6bdc77c9d381} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Default\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the default locale as set in app/\+Config/\+App.\+php \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2e6088b3e6e412cee070b1d04d2d8514}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getFile@{getFile}}
+\index{getFile@{getFile}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getFile()}{getFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2e6088b3e6e412cee070b1d04d2d8514} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+File (\begin{DoxyParamCaption}\item[{string}]{\$file\+ID}{}\end{DoxyParamCaption})}
+
+Retrieves a single file by the name of the input field used to upload it.
+
+\begin{DoxyReturn}{Returns}
+Uploaded\+File\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9482f92d83ec9a5fef994e9d7c6f0122}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getFileMultiple@{getFileMultiple}}
+\index{getFileMultiple@{getFileMultiple}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getFileMultiple()}{getFileMultiple()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9482f92d83ec9a5fef994e9d7c6f0122} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+File\+Multiple (\begin{DoxyParamCaption}\item[{string}]{\$file\+ID}{}\end{DoxyParamCaption})}
+
+Verify if a file exist, by the name of the input field used to upload it, in the collection of uploaded files and if is have been uploaded with multiple option.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aa73cc670bb017a5036603dc24106af93}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aa73cc670bb017a5036603dc24106af93} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an array of all files that have been uploaded with this request. Each file is represented by an Uploaded\+File instance. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a55a25d90e649f6a1a439ddb87e04ca6d}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getGet@{getGet}}
+\index{getGet@{getGet}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getGet()}{getGet()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a55a25d90e649f6a1a439ddb87e04ca6d} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Get (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{}]{\$filter}{ = {\ttfamily null}, }\item[{}]{\$flags}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetch an item from GET data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & Index for item to fetch from \$\+\_\+\+GET. \\
+\hline
+int | null & {\em \$filter} & A filter name to apply. \\
+\hline
+array | int | null & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad92fb9ff2093b59dbd95e817aa4b552b}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getGetPost@{getGetPost}}
+\index{getGetPost@{getGetPost}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getGetPost()}{getGetPost()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad92fb9ff2093b59dbd95e817aa4b552b} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Get\+Post (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{}]{\$filter}{ = {\ttfamily null}, }\item[{}]{\$flags}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetch an item from GET data with fallback to POST.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & Index for item to be fetched from \$\+\_\+\+GET or \$\+\_\+\+POST \\
+\hline
+int | null & {\em \$filter} & A filter name to apply \\
+\hline
+array | int | null & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a86a3857498d753da94dc4ba846adca98}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getJSON@{getJSON}}
+\index{getJSON@{getJSON}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getJSON()}{getJSON()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a86a3857498d753da94dc4ba846adca98} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+JSON (\begin{DoxyParamCaption}\item[{bool}]{\$assoc}{ = {\ttfamily false}, }\item[{int}]{\$depth}{ = {\ttfamily 512}, }\item[{int}]{\$options}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+A convenience method that grabs the raw input stream and decodes the JSON into an array.
+
+If \$assoc == true, then all objects in the response will be converted to associative arrays.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$assoc} & Whether to return objects as associative arrays \\
+\hline
+int & {\em \$depth} & How many levels deep to decode \\
+\hline
+int & {\em \$options} & Bitmask of options\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/manual/en/function.json-decode.php}{\texttt{ http\+://php.\+net/manual/en/function.\+json-\/decode.\+php}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}std\+Class\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em HTTPException} & When the body is invalid as JSON. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad9585a8b1494a3d6a4db608162b3f189}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getJsonVar@{getJsonVar}}
+\index{getJsonVar@{getJsonVar}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getJsonVar()}{getJsonVar()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad9585a8b1494a3d6a4db608162b3f189} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Json\+Var (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{bool}]{\$assoc}{ = {\ttfamily false}, }\item[{?int}]{\$filter}{ = {\ttfamily null}, }\item[{}]{\$flags}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a specific variable from a JSON input stream
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & The variable that you want which can use dot syntax for getting specific values. \\
+\hline
+bool & {\em \$assoc} & If true, return the result as an associative array. \\
+\hline
+int | null & {\em \$filter} & Filter Constant \\
+\hline
+array | int | null & {\em \$flags} & Option\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}std\+Class\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a732be45eb2140114d60f9346f3414501}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getLocale()}{getLocale()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a732be45eb2140114d60f9346f3414501} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the current locale, with a fallback to the default locale if none is set. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a14e04e223bc4f6036d0c61c3cca849c1}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getOldInput@{getOldInput}}
+\index{getOldInput@{getOldInput}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getOldInput()}{getOldInput()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a14e04e223bc4f6036d0c61c3cca849c1} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Old\+Input (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Attempts to get old Input data that has been flashed to the session with redirect\+\_\+with\+\_\+input(). It first checks for the data in the old POST data, then the old GET data and finally check for dot arrays
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a8442b57fed817a26fe4ea94404dcdd7c}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getPath@{getPath}}
+\index{getPath@{getPath}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a8442b57fed817a26fe4ea94404dcdd7c} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the URI path relative to base\+URL, running detection as necessary. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a3377a735b353093ffe7c859c3dd8814e}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getPost@{getPost}}
+\index{getPost@{getPost}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getPost()}{getPost()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a3377a735b353093ffe7c859c3dd8814e} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Post (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{}]{\$filter}{ = {\ttfamily null}, }\item[{}]{\$flags}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetch an item from POST.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & Index for item to fetch from \$\+\_\+\+POST. \\
+\hline
+int | null & {\em \$filter} & A filter name to apply \\
+\hline
+array | int | null & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a05658af95522206813ff80c2ff682297}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getPostGet@{getPostGet}}
+\index{getPostGet@{getPostGet}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getPostGet()}{getPostGet()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a05658af95522206813ff80c2ff682297} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Post\+Get (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{}]{\$filter}{ = {\ttfamily null}, }\item[{}]{\$flags}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetch an item from POST data with fallback to GET.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & Index for item to fetch from \$\+\_\+\+POST or \$\+\_\+\+GET \\
+\hline
+int | null & {\em \$filter} & A filter name to apply \\
+\hline
+array | int | null & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a184c2085e73ee00208fa7f786fbad763}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getRawInput@{getRawInput}}
+\index{getRawInput@{getRawInput}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getRawInput()}{getRawInput()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a184c2085e73ee00208fa7f786fbad763} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Raw\+Input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+A convenience method that grabs the raw input stream(send method in PUT, PATCH, DELETE) and decodes the String into an array.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ae0ee5815effa5c3bd2c4ad61c2b52c00}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getRawInputVar@{getRawInputVar}}
+\index{getRawInputVar@{getRawInputVar}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getRawInputVar()}{getRawInputVar()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ae0ee5815effa5c3bd2c4ad61c2b52c00} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Raw\+Input\+Var (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{?int}]{\$filter}{ = {\ttfamily null}, }\item[{}]{\$flags}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets a specific variable from raw input stream (send method in PUT, PATCH, DELETE).
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & The variable that you want which can use dot syntax for getting specific values. \\
+\hline
+int | null & {\em \$filter} & Filter Constant \\
+\hline
+array | int | null & {\em \$flags} & Option\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a7adca9c838f7c957ce377a8d9b08ebcc}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getUserAgent@{getUserAgent}}
+\index{getUserAgent@{getUserAgent}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getUserAgent()}{getUserAgent()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a7adca9c838f7c957ce377a8d9b08ebcc} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+User\+Agent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Fetch the user agent string
+
+\begin{DoxyReturn}{Returns}
+User\+Agent 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a144cd867ae741354d78c2060844d277d}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!getVar@{getVar}}
+\index{getVar@{getVar}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{getVar()}{getVar()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a144cd867ae741354d78c2060844d277d} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::get\+Var (\begin{DoxyParamCaption}\item[{}]{\$index}{ = {\ttfamily null}, }\item[{}]{\$filter}{ = {\ttfamily null}, }\item[{}]{\$flags}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetch an item from JSON input stream with fallback to \$\+\_\+\+REQUEST object. This is the simplest way to grab data from the request object and can be used in lieu of the other get\texorpdfstring{$\ast$}{*} methods in most cases.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$index} & \\
+\hline
+int | null & {\em \$filter} & Filter constant \\
+\hline
+array | int | null & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}std\+Class\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aef6fa64aad475be8f26e13c094b654ea}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!is@{is}}
+\index{is@{is}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{is()}{is()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aef6fa64aad475be8f26e13c094b654ea} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::is (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})}
+
+Checks this request type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & HTTP verb or \textquotesingle{}json\textquotesingle{} or \textquotesingle{}ajax\textquotesingle{} @phpstan-\/param string\texorpdfstring{$\vert$}{|}\textquotesingle{}get\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}post\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}put\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}delete\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}head\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}patch\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}options\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}json\textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{}ajax\textquotesingle{} \$type \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a8b89cbf55238162cae8b8ceda1aba76c}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!isAJAX@{isAJAX}}
+\index{isAJAX@{isAJAX}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{isAJAX()}{isAJAX()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a8b89cbf55238162cae8b8ceda1aba76c} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::is\+AJAX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Test to see if a request contains the HTTP\+\_\+\+X\+\_\+\+REQUESTED\+\_\+\+WITH header. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2df22dbfe4413c428ad90c4d7e335c34}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!isCLI@{isCLI}}
+\index{isCLI@{isCLI}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{isCLI()}{isCLI()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2df22dbfe4413c428ad90c4d7e335c34} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::is\+CLI (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determines if this request was made from the command line (CLI). \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9421ee2f60767098890a2be0203fe131}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!isSecure@{isSecure}}
+\index{isSecure@{isSecure}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{isSecure()}{isSecure()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a9421ee2f60767098890a2be0203fe131} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::is\+Secure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempts to detect if the current connection is secure through a few different methods. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_abb9dbee49b3d914e55d840c1ad064925}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!negotiate@{negotiate}}
+\index{negotiate@{negotiate}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{negotiate()}{negotiate()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_abb9dbee49b3d914e55d840c1ad064925} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::negotiate (\begin{DoxyParamCaption}\item[{string}]{\$type}{, }\item[{array}]{\$supported}{, }\item[{bool}]{\$strict\+Match}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Provides a convenient way to work with the Negotiate class for content negotiation. \Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad013e1cf727742b2857c3cc873ba2fe0}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!parseQueryString@{parseQueryString}}
+\index{parseQueryString@{parseQueryString}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{parseQueryString()}{parseQueryString()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_ad013e1cf727742b2857c3cc873ba2fe0} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::parse\+Query\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse QUERY\+\_\+\+STRING
+
+Will parse QUERY\+\_\+\+STRING and automatically detect the URI from it.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000073}{Deprecated}}]4.\+4.\+0 Moved to Site\+URIFactory. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aca542a0b87bdf023fa6a85d63cf55158}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!parseRequestURI@{parseRequestURI}}
+\index{parseRequestURI@{parseRequestURI}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{parseRequestURI()}{parseRequestURI()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_aca542a0b87bdf023fa6a85d63cf55158} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::parse\+Request\+URI (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Will parse the REQUEST\+\_\+\+URI and automatically detect the URI from it, fixing the query string if necessary.
+
+\begin{DoxyReturn}{Returns}
+string The URI it found.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000072}{Deprecated}}]4.\+4.\+0 Moved to Site\+URIFactory. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2bd84710f3bdaf55cdfd9d870e0b26a9}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!setLocale@{setLocale}}
+\index{setLocale@{setLocale}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{setLocale()}{setLocale()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a2bd84710f3bdaf55cdfd9d870e0b26a9} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::set\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})}
+
+Sets the locale string for this request.
+
+\begin{DoxyReturn}{Returns}
+Incoming\+Request 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_af97e2eda3c57243d6bc61fe49302f6e5}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!setPath@{setPath}}
+\index{setPath@{setPath}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{setPath()}{setPath()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_af97e2eda3c57243d6bc61fe49302f6e5} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::set\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{?\mbox{\hyperlink{class_config_1_1_app}{App}}}]{\$config}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets the URI path relative to base\+URL.
+
+Note\+: Since current\+\_\+url() accesses the shared request instance, this can be used to change the "{}current URL"{} for testing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & URI path relative to base\+URL \\
+\hline
+App | null & {\em \$config} & Optional alternate config to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000074}{Deprecated}}]4.\+4.\+0 This method will be private. The parameter \$config is deprecated. No longer used. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a495ce7900dc5369f3d6a9efec94e95ee}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}!setValidLocales@{setValidLocales}}
+\index{setValidLocales@{setValidLocales}!CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest@{CodeIgniter\textbackslash{}HTTP\textbackslash{}IncomingRequest}}
+\doxysubsubsection{\texorpdfstring{setValidLocales()}{setValidLocales()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_incoming_request_a495ce7900dc5369f3d6a9efec94e95ee} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Incoming\+Request\+::set\+Valid\+Locales (\begin{DoxyParamCaption}\item[{array}]{\$locales}{}\end{DoxyParamCaption})}
+
+Set the valid locales.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/Incoming\+Request.\+php\end{DoxyCompactItemize}

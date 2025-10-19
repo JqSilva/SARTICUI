@@ -1,0 +1,139 @@
+\doxysection{Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Sodium\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler}{}\label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Sodium\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Sodium\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a9fd869dbe66b50c6c21e1d2ea127cbc2}{encrypt}} (\$data, \$params=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a2ca8d0c34d9f56ca83f1d00b7055eb95}{decrypt}} (\$data, \$params=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ae51e5cc2a5903d44bd20b37678d85c1e}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{class_config_1_1_encryption}{Encryption}} \$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a543a765317bf0b0952d8ae6d0f647027}{\+\_\+\+\_\+get}} (\$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ac2ea67fe3cf8d22b6488b930ff29b2c2}{\+\_\+\+\_\+isset}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a0dc49bbf7ee9227037062a62888f70e6}{parse\+Params}} (\$params)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a401d2feae6d5cdadeb41937dffa7e30d}\label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a401d2feae6d5cdadeb41937dffa7e30d} 
+{\bfseries \$key} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a1b46521f2ca793aa6e2568ac1d833699}\label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a1b46521f2ca793aa6e2568ac1d833699} 
+{\bfseries \$block\+Size} = 16
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a3f7794834de4dc3838a4b78290be80b1}{substr}} (\$str, \$start, \$length=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sodium\+Handler uses libsodium in encryption.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/jedisct1/libsodium/issues/392}{\texttt{ https\+://github.\+com/jedisct1/libsodium/issues/392}} 
+
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Sodium\+Handler\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a2ca8d0c34d9f56ca83f1d00b7055eb95}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a2ca8d0c34d9f56ca83f1d00b7055eb95} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Sodium\+Handler\+::decrypt (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$params}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Decrypt -\/ convert ciphertext into plaintext
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & Encrypted data \\
+\hline
+array | string | null & {\em \$params} & Overridden parameters, specifically the key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_code_igniter_1_1_encryption_1_1_exceptions_1_1_encryption_exception}{Encryption\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_encryption_1_1_encrypter_interface_a746fe55db1edd6cda8a3e0ac46b44808}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encrypter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a9fd869dbe66b50c6c21e1d2ea127cbc2}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a9fd869dbe66b50c6c21e1d2ea127cbc2} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Sodium\+Handler\+::encrypt (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$params}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Encrypt -\/ convert plaintext into ciphertext
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & Input data \\
+\hline
+array | string | null & {\em \$params} & Overridden parameters, specifically the key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_code_igniter_1_1_encryption_1_1_exceptions_1_1_encryption_exception}{Encryption\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_encryption_1_1_encrypter_interface_aeea7d999efeb0ff5e6e7e32f7e1c07d4}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encrypter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a0dc49bbf7ee9227037062a62888f70e6}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler}!parseParams@{parseParams}}
+\index{parseParams@{parseParams}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}SodiumHandler}}
+\doxysubsubsection{\texorpdfstring{parseParams()}{parseParams()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_sodium_handler_a0dc49bbf7ee9227037062a62888f70e6} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Sodium\+Handler\+::parse\+Params (\begin{DoxyParamCaption}\item[{}]{\$params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the \$params before doing assignment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Encryption\+Exception} & If key is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Encryption/\+Handlers/Sodium\+Handler.\+php\end{DoxyCompactItemize}

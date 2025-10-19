@@ -1,0 +1,345 @@
+\doxysection{Code\+Igniter\textbackslash{}Files\textbackslash{}File\+Collection Class Reference}
+\hypertarget{class_code_igniter_1_1_files_1_1_file_collection}{}\label{class_code_igniter_1_1_files_1_1_file_collection}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Files\textbackslash{}File\+Collection\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Files\textbackslash{}File\+Collection\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_ad5e33d74b6d279ade875a000a10ba780}{\+\_\+\+\_\+construct}} (array \$files=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a4e44143550630f10820081769b02e0c3}{get}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a274c456706192b0f55e40b95c73ba1c1}{set}} (array \$files)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a111ce76fc143a23a8f27e0ad7bea7c5e}{add}} (\$paths, bool \$recursive=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a765d83922978d9b62225a4cc8a646f50}{add\+Files}} (array \$files)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a27a263bf451d8b163feef5550a7f7f2a}{add\+File}} (string \$file)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a8faaa908e37a1c215c23eac43768f3cf}{remove\+Files}} (array \$files)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a67742e02727fff21f3a4f379ea0e22a0}{remove\+File}} (string \$file)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_abb81325e7872f5ea7b4e4c87e905a9cf}{add\+Directories}} (array \$directories, bool \$recursive=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a5f4ae44acb8d7eab13ae62f6af592db8}{add\+Directory}} (string \$directory, bool \$recursive=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_abf8b934365606e9485a84f3d6cd41eab}{remove\+Pattern}} (string \$pattern, ?string \$scope=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_aa95b8fe7e3698983dbb9ae70b68e8bc5}{retain\+Pattern}} (string \$pattern, ?string \$scope=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_ab10e3db54e42941d60d727d8ccd95ac6}{count}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a52a2231329e86435f2023f6d232ab353}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a2acd540b6c681f6db08b6ecfca1b6829}{define}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a4c4b1c2a40515af550d362ee7744d452}{resolve\+Directory}} (string \$directory)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a0b39585e16c50338e79c2a8723a35ac4}{resolve\+File}} (string \$file)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a048a65ceab8d9f2db9e754767cc1b6ff}{filter\+Files}} (array \$files, string \$directory)
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_files_1_1_file_collection_a595fd5cf277b821864ae443b32eae36f}{match\+Files}} (array \$files, string \$pattern)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_ae14417de16b16d4569a44d755ece108b}\label{class_code_igniter_1_1_files_1_1_file_collection_ae14417de16b16d4569a44d755ece108b} 
+{\bfseries \$files} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File Collection Class
+
+Representation for a group of files, with utilities for locating, filtering, and ordering them.
+
+@template-\/implements Iterator\+Aggregate$<$int, File$>$ \begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_ad5e33d74b6d279ade875a000a10ba780}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_ad5e33d74b6d279ade875a000a10ba780} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$files}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Loads the Filesystem helper and adds any initial files.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$files \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a111ce76fc143a23a8f27e0ad7bea7c5e}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!add@{add}}
+\index{add@{add}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a111ce76fc143a23a8f27e0ad7bea7c5e} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::add (\begin{DoxyParamCaption}\item[{}]{\$paths}{, }\item[{bool}]{\$recursive}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Adds an array/single file or directory to the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$\texorpdfstring{$\vert$}{|}string} & \$paths\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_abb81325e7872f5ea7b4e4c87e905a9cf}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!addDirectories@{addDirectories}}
+\index{addDirectories@{addDirectories}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{addDirectories()}{addDirectories()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_abb81325e7872f5ea7b4e4c87e905a9cf} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::add\+Directories (\begin{DoxyParamCaption}\item[{array}]{\$directories}{, }\item[{bool}]{\$recursive}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Verifies and adds files from each directory to the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$directories\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a5f4ae44acb8d7eab13ae62f6af592db8}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!addDirectory@{addDirectory}}
+\index{addDirectory@{addDirectory}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{addDirectory()}{addDirectory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a5f4ae44acb8d7eab13ae62f6af592db8} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::add\+Directory (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{bool}]{\$recursive}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Verifies and adds all files from a directory.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a27a263bf451d8b163feef5550a7f7f2a}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!addFile@{addFile}}
+\index{addFile@{addFile}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{addFile()}{addFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a27a263bf451d8b163feef5550a7f7f2a} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::add\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})}
+
+Verifies and adds a single file to the file list.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a765d83922978d9b62225a4cc8a646f50}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!addFiles@{addFiles}}
+\index{addFiles@{addFiles}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{addFiles()}{addFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a765d83922978d9b62225a4cc8a646f50} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::add\+Files (\begin{DoxyParamCaption}\item[{array}]{\$files}{}\end{DoxyParamCaption})}
+
+Verifies and adds files to the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$files\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_ab10e3db54e42941d60d727d8ccd95ac6}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!count@{count}}
+\index{count@{count}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_ab10e3db54e42941d60d727d8ccd95ac6} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current number of files in the collection. Fulfills Countable. \Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a2acd540b6c681f6db08b6ecfca1b6829}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!define@{define}}
+\index{define@{define}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{define()}{define()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a2acd540b6c681f6db08b6ecfca1b6829} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::define (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Applies any initial inputs after the constructor. This method is a stub to be implemented by child classes. \Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a048a65ceab8d9f2db9e754767cc1b6ff}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!filterFiles@{filterFiles}}
+\index{filterFiles@{filterFiles}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{filterFiles()}{filterFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a048a65ceab8d9f2db9e754767cc1b6ff} 
+static Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::filter\+Files (\begin{DoxyParamCaption}\item[{array}]{\$files}{, }\item[{string}]{\$directory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}, {\ttfamily [protected]}}
+
+Removes files that are not part of the given directory (recursive).
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$files\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a4e44143550630f10820081769b02e0c3}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a4e44143550630f10820081769b02e0c3} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Optimizes and returns the current file list.
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a52a2231329e86435f2023f6d232ab353}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a52a2231329e86435f2023f6d232ab353} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Yields as an Iterator for the current files. Fulfills Iterator\+Aggregate.
+
+\begin{DoxyReturn}{Returns}
+Generator$<$\+File$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a595fd5cf277b821864ae443b32eae36f}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!matchFiles@{matchFiles}}
+\index{matchFiles@{matchFiles}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{matchFiles()}{matchFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a595fd5cf277b821864ae443b32eae36f} 
+static Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::match\+Files (\begin{DoxyParamCaption}\item[{array}]{\$files}{, }\item[{string}]{\$pattern}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}, {\ttfamily [protected]}}
+
+Returns any files whose {\ttfamily basename} matches the given pattern.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em list$<$string$>$} & \$files \\
+\hline
+string & {\em \$pattern} & Regex or pseudo-\/regex string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a67742e02727fff21f3a4f379ea0e22a0}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!removeFile@{removeFile}}
+\index{removeFile@{removeFile}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{removeFile()}{removeFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a67742e02727fff21f3a4f379ea0e22a0} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::remove\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})}
+
+Removes a single file from the list.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a8faaa908e37a1c215c23eac43768f3cf}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!removeFiles@{removeFiles}}
+\index{removeFiles@{removeFiles}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{removeFiles()}{removeFiles()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a8faaa908e37a1c215c23eac43768f3cf} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::remove\+Files (\begin{DoxyParamCaption}\item[{array}]{\$files}{}\end{DoxyParamCaption})}
+
+Removes files from the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$files\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_abf8b934365606e9485a84f3d6cd41eab}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!removePattern@{removePattern}}
+\index{removePattern@{removePattern}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{removePattern()}{removePattern()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_abf8b934365606e9485a84f3d6cd41eab} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::remove\+Pattern (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{?string}]{\$scope}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Removes any files from the list that match the supplied pattern (within the optional scope).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & Regex or pseudo-\/regex string \\
+\hline
+string | null & {\em \$scope} & The directory to limit the scope\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a4c4b1c2a40515af550d362ee7744d452}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!resolveDirectory@{resolveDirectory}}
+\index{resolveDirectory@{resolveDirectory}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{resolveDirectory()}{resolveDirectory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a4c4b1c2a40515af550d362ee7744d452} 
+static Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::resolve\+Directory (\begin{DoxyParamCaption}\item[{string}]{\$directory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}, {\ttfamily [protected]}}
+
+Resolves a full path and verifies it is an actual directory.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a0b39585e16c50338e79c2a8723a35ac4}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!resolveFile@{resolveFile}}
+\index{resolveFile@{resolveFile}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{resolveFile()}{resolveFile()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a0b39585e16c50338e79c2a8723a35ac4} 
+static Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::resolve\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [final]}, {\ttfamily [protected]}}
+
+Resolves a full path and verifies it is an actual file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_aa95b8fe7e3698983dbb9ae70b68e8bc5}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!retainPattern@{retainPattern}}
+\index{retainPattern@{retainPattern}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{retainPattern()}{retainPattern()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_aa95b8fe7e3698983dbb9ae70b68e8bc5} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::retain\+Pattern (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{?string}]{\$scope}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Keeps only the files from the list that match (within the optional scope).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & Regex or pseudo-\/regex string \\
+\hline
+string | null & {\em \$scope} & A directory to limit the scope\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_files_1_1_file_collection_a274c456706192b0f55e40b95c73ba1c1}\index{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}!set@{set}}
+\index{set@{set}!CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection@{CodeIgniter\textbackslash{}Files\textbackslash{}FileCollection}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_files_1_1_file_collection_a274c456706192b0f55e40b95c73ba1c1} 
+Code\+Igniter\textbackslash{}\+Files\textbackslash{}\+File\+Collection\+::set (\begin{DoxyParamCaption}\item[{array}]{\$files}{}\end{DoxyParamCaption})}
+
+Sets the file list directly, files are still subject to verification. This works as a "{}reset"{} method with \mbox{[}\mbox{]}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$string$>$} & \$files The new file list to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Files/File\+Collection.\+php\end{DoxyCompactItemize}

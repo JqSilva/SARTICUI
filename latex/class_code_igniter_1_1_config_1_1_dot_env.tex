@@ -1,0 +1,122 @@
+\doxysection{Code\+Igniter\textbackslash{}Config\textbackslash{}Dot\+Env Class Reference}
+\hypertarget{class_code_igniter_1_1_config_1_1_dot_env}{}\label{class_code_igniter_1_1_config_1_1_dot_env}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_dot_env_aeb808104ce43844dc8e0875e01d3dd71}{\+\_\+\+\_\+construct}} (string \$path, string \$file=\textquotesingle{}.env\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_dot_env_a5bd99d468a32391e929d9e8bb1b6a0e3}{load}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_dot_env_a26d867a1176bf641cf04f02adc15a837}{parse}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_dot_env_aecabd0724e88cbf23be5def5fee9583d}{normalise\+Variable}} (string \$name, string \$value=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_dot_env_a22f50f227c58a39db26bfaaf4dc3a027}{set\+Variable}} (string \$name, string \$value=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_dot_env_aea62609bcfc205654e6395aa5e2857d8}{sanitize\+Value}} (string \$value)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_dot_env_a3bd2c06c9b639f93b3e3753b0d3b6378}{resolve\+Nested\+Variables}} (string \$value)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_dot_env_a209b7f5a0bb5794ca68a345678818302}{get\+Variable}} (string \$name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_a8c08500c7867573cbbbc3fe322423baa}\label{class_code_igniter_1_1_config_1_1_dot_env_a8c08500c7867573cbbbc3fe322423baa} 
+{\bfseries \$path}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Environment-\/specific configuration
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_aeb808104ce43844dc8e0875e01d3dd71}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_dot_env_aeb808104ce43844dc8e0875e01d3dd71} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$file}{ = {\ttfamily \textquotesingle{}.env\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Builds the path to our file. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_a209b7f5a0bb5794ca68a345678818302}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}!getVariable@{getVariable}}
+\index{getVariable@{getVariable}!CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection{\texorpdfstring{getVariable()}{getVariable()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_dot_env_a209b7f5a0bb5794ca68a345678818302} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+::get\+Variable (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Search the different places for environment variables and return first value found.
+
+This was borrowed from the excellent phpdotenv with very few changes. \href{https://github.com/vlucas/phpdotenv}{\texttt{ https\+://github.\+com/vlucas/phpdotenv}}
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_a5bd99d468a32391e929d9e8bb1b6a0e3}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}!load@{load}}
+\index{load@{load}!CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_dot_env_a5bd99d468a32391e929d9e8bb1b6a0e3} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+::load (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The main entry point, will load the .env file and process it so that we end up with all settings in the PHP environment vars (i.\+e. getenv(), \$\+\_\+\+ENV, and \$\+\_\+\+SERVER) \Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_aecabd0724e88cbf23be5def5fee9583d}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}!normaliseVariable@{normaliseVariable}}
+\index{normaliseVariable@{normaliseVariable}!CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection{\texorpdfstring{normaliseVariable()}{normaliseVariable()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_dot_env_aecabd0724e88cbf23be5def5fee9583d} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+::normalise\+Variable (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Parses for assignment, cleans the \$name and \$value, and ensures that nested variables are handled. \Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_a26d867a1176bf641cf04f02adc15a837}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}!parse@{parse}}
+\index{parse@{parse}!CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_dot_env_a26d867a1176bf641cf04f02adc15a837} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+::parse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Parse the .env file into an array of key =\texorpdfstring{$>$}{>} value \Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_a3bd2c06c9b639f93b3e3753b0d3b6378}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}!resolveNestedVariables@{resolveNestedVariables}}
+\index{resolveNestedVariables@{resolveNestedVariables}!CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection{\texorpdfstring{resolveNestedVariables()}{resolveNestedVariables()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_dot_env_a3bd2c06c9b639f93b3e3753b0d3b6378} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+::resolve\+Nested\+Variables (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the nested variables.
+
+Look for \$\{varname\} patterns in the variable value and replace with an existing environment variable.
+
+This was borrowed from the excellent phpdotenv with very few changes. \href{https://github.com/vlucas/phpdotenv}{\texttt{ https\+://github.\+com/vlucas/phpdotenv}} \Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_aea62609bcfc205654e6395aa5e2857d8}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}!sanitizeValue@{sanitizeValue}}
+\index{sanitizeValue@{sanitizeValue}!CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection{\texorpdfstring{sanitizeValue()}{sanitizeValue()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_dot_env_aea62609bcfc205654e6395aa5e2857d8} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+::sanitize\+Value (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Strips quotes from the environment variable value.
+
+This was borrowed from the excellent phpdotenv with very few changes. \href{https://github.com/vlucas/phpdotenv}{\texttt{ https\+://github.\+com/vlucas/phpdotenv}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_config_1_1_dot_env_a22f50f227c58a39db26bfaaf4dc3a027}\index{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}!setVariable@{setVariable}}
+\index{setVariable@{setVariable}!CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv@{CodeIgniter\textbackslash{}Config\textbackslash{}DotEnv}}
+\doxysubsubsection{\texorpdfstring{setVariable()}{setVariable()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_dot_env_a22f50f227c58a39db26bfaaf4dc3a027} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Dot\+Env\+::set\+Variable (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the variable into the environment. Will parse the string first to look for \{name\}=\{value\} pattern, ensure that nested variables are handled, and strip it of single and double quotes.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Config/Dot\+Env.\+php\end{DoxyCompactItemize}

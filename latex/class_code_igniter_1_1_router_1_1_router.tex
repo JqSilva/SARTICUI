@@ -1,0 +1,464 @@
+\doxysection{Code\+Igniter\textbackslash{}Router\textbackslash{}Router Class Reference}
+\hypertarget{class_code_igniter_1_1_router_1_1_router}{}\label{class_code_igniter_1_1_router_1_1_router}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Router\textbackslash{}Router\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Router\textbackslash{}Router\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a06349cb104108de9a1a1620956c292f3}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface}{Route\+Collection\+Interface}} \$routes, ?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request}{Request}} \$request=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a85803e21578fbd32c18c871e72abc6c3}{handle}} (?string \$uri=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_ab8c7cc9fee2a77fb1c005cf102f8b8ec}{get\+Filters}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a458e665be2c094f530558751faba6621}{controller\+Name}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_ae0c4bc509c7dc5503fcff68ac01b0b7d}{method\+Name}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_abe2967a14878af25f216ce1c4857e06a}{get404\+Override}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a4a337f8f5dc8e5af03375844bcb0239b}{params}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a55a186a94c413b301193a5ff2e731945}{directory}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a73a6f5df1744859f93fd5ae20ccef291}{get\+Matched\+Route}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a3c47c43a9a745f362e11c01501e8410d}{get\+Matched\+Route\+Options}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_abcde89dd13f730cab6c33c64dd569f2c}{set\+Index\+Page}} (\$page)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a64c69694b5d1bdb45588098993e27b72}{set\+Translate\+URIDashes}} (bool \$val=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a051a8fed598b08ebe472429f873538ed}{has\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a08a128b037c9bce7c324061d37935f46}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a65ff25bf166bd0fd5f34ada960bb20bb}{auto\+Route}} (string \$uri)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a4fc314ad10043efb5103d66ac40b6bdd}{set\+Directory}} (?string \$dir=null, bool \$append=false, bool \$validate=true)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_aadbe918b4864ee98b4db43954f38acd0}{HTTP\+\_\+\+METHODS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_aa8c046fcf3c21be957b2352bb4b720ba}{check\+Routes}} (string \$uri)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a006592f13bf68bf9baeecbc3edb6d96a}{validate\+Request}} (array \$segments)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_ada83047c41ed0d96d65d553cbebdd9e1}{scan\+Controllers}} (array \$segments)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a1a12923ca65e0731794e1032797a70fc}{set\+Request}} (array \$segments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a8cb1fbe6f3edc10082dcd56ac095e4fd}{set\+Default\+Controller}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a61ed0179c11fbc75d420cb208c087073}{set\+Matched\+Route}} (string \$route, \$handler)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a9488ba39ef51a0e4371df67e59b91b6b}\label{class_code_igniter_1_1_router_1_1_router_a9488ba39ef51a0e4371df67e59b91b6b} 
+{\bfseries \$collection}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a68df7f13ffb1b7c394dfa3a8db5062bf}\label{class_code_igniter_1_1_router_1_1_router_a68df7f13ffb1b7c394dfa3a8db5062bf} 
+{\bfseries \$directory}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a9339baabacff1ea6df74d7c251bcf718}\label{class_code_igniter_1_1_router_1_1_router_a9339baabacff1ea6df74d7c251bcf718} 
+{\bfseries \$controller}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a88ca58b64650cd779b9f2229890ec281}\label{class_code_igniter_1_1_router_1_1_router_a88ca58b64650cd779b9f2229890ec281} 
+{\bfseries \$method}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a9c3e76cfb1eaf78ba508bd4205789ae3}\label{class_code_igniter_1_1_router_1_1_router_a9c3e76cfb1eaf78ba508bd4205789ae3} 
+{\bfseries \$params} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a8399cfcd465fe80a27d4040e94f0c3c6}\label{class_code_igniter_1_1_router_1_1_router_a8399cfcd465fe80a27d4040e94f0c3c6} 
+{\bfseries \$index\+Page} = \textquotesingle{}index.\+php\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a2b88947f04fd66d6c183c91ac28bca5f}\label{class_code_igniter_1_1_router_1_1_router_a2b88947f04fd66d6c183c91ac28bca5f} 
+{\bfseries \$translate\+URIDashes} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a5dda5338cc7053135844da7f27280893}\label{class_code_igniter_1_1_router_1_1_router_a5dda5338cc7053135844da7f27280893} 
+{\bfseries \$matched\+Route}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a7801c09554c6793007c133daf2c316e6}\label{class_code_igniter_1_1_router_1_1_router_a7801c09554c6793007c133daf2c316e6} 
+{\bfseries \$matched\+Route\+Options}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a45bd5000a21ba9df599c01587aa4ba9c}\label{class_code_igniter_1_1_router_1_1_router_a45bd5000a21ba9df599c01587aa4ba9c} 
+{\bfseries \$detected\+Locale}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a6dad39d6ac41d4976bc6ea7cc4b1f98d}\label{class_code_igniter_1_1_router_1_1_router_a6dad39d6ac41d4976bc6ea7cc4b1f98d} 
+{\bfseries \$filters\+Info} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a7fa6bc51f53e75647b9c64b788d76f5b}\label{class_code_igniter_1_1_router_1_1_router_a7fa6bc51f53e75647b9c64b788d76f5b} 
+\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_auto_router_interface}{Auto\+Router\+Interface}} {\bfseries \$auto\+Router} = null
+\item 
+string \mbox{\hyperlink{class_code_igniter_1_1_router_1_1_router_a2283b4723ab23be6e4034807650e9257}{\$permitted\+URIChars}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Request router.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a06349cb104108de9a1a1620956c292f3}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a06349cb104108de9a1a1620956c292f3} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_route_collection_interface}{Route\+Collection\+Interface}}}]{\$routes}{, }\item[{?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request}{Request}}}]{\$request}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Stores a reference to the Route\+Collection object. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_router_interface_a3ed720bc45fdceb08322aac2da706811}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+Interface}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a65ff25bf166bd0fd5f34ada960bb20bb}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!autoRoute@{autoRoute}}
+\index{autoRoute@{autoRoute}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{autoRoute()}{autoRoute()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a65ff25bf166bd0fd5f34ada960bb20bb} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::auto\+Route (\begin{DoxyParamCaption}\item[{string}]{\$uri}{}\end{DoxyParamCaption})}
+
+Checks Auto Routes.
+
+Attempts to match a URI path against Controllers and directories found in APPPATH/\+Controllers, to find a matching route.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_aa8c046fcf3c21be957b2352bb4b720ba}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!checkRoutes@{checkRoutes}}
+\index{checkRoutes@{checkRoutes}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{checkRoutes()}{checkRoutes()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_aa8c046fcf3c21be957b2352bb4b720ba} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::check\+Routes (\begin{DoxyParamCaption}\item[{string}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks Defined Routes.
+
+Compares the uri string against the routes that the Route\+Collection class defined for us, attempting to find a match. This method will modify \$this-\/\texorpdfstring{$>$}{>}controller, etal as needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & The URI path to compare against the routes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether the route was matched or not.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Redirect\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a458e665be2c094f530558751faba6621}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!controllerName@{controllerName}}
+\index{controllerName@{controllerName}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{controllerName()}{controllerName()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a458e665be2c094f530558751faba6621} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::controller\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the name of the matched controller or closure.
+
+\begin{DoxyReturn}{Returns}
+(Closure(mixed...)\+: (Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void))\texorpdfstring{$\vert$}{|}string Controller classname or Closure 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_router_interface_a6b72114a2503080191047abb6278bfc6}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a55a186a94c413b301193a5ff2e731945}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!directory@{directory}}
+\index{directory@{directory}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{directory()}{directory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a55a186a94c413b301193a5ff2e731945} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::directory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the name of the sub-\/directory the controller is in, if any. Relative to APPPATH.\textquotesingle{}Controllers\textquotesingle{}.
+
+Only used when auto-\/routing is turned on. \Hypertarget{class_code_igniter_1_1_router_1_1_router_abe2967a14878af25f216ce1c4857e06a}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!get404Override@{get404Override}}
+\index{get404Override@{get404Override}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{get404Override()}{get404Override()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_abe2967a14878af25f216ce1c4857e06a} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::get404\+Override (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the 404 Override settings from the Collection. If the override is a string, will split to controller/index array. \Hypertarget{class_code_igniter_1_1_router_1_1_router_ab8c7cc9fee2a77fb1c005cf102f8b8ec}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!getFilters@{getFilters}}
+\index{getFilters@{getFilters}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getFilters()}{getFilters()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_ab8c7cc9fee2a77fb1c005cf102f8b8ec} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::get\+Filters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the filter info for the matched route, if any.
+
+\begin{DoxyReturn}{Returns}
+list$<$string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a08a128b037c9bce7c324061d37935f46}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getLocale()}{getLocale()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a08a128b037c9bce7c324061d37935f46} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::get\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the detected locale, if any, or null.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a73a6f5df1744859f93fd5ae20ccef291}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!getMatchedRoute@{getMatchedRoute}}
+\index{getMatchedRoute@{getMatchedRoute}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getMatchedRoute()}{getMatchedRoute()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a73a6f5df1744859f93fd5ae20ccef291} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::get\+Matched\+Route (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the routing information that was matched for this request, if a route was defined.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a3c47c43a9a745f362e11c01501e8410d}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!getMatchedRouteOptions@{getMatchedRouteOptions}}
+\index{getMatchedRouteOptions@{getMatchedRouteOptions}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getMatchedRouteOptions()}{getMatchedRouteOptions()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a3c47c43a9a745f362e11c01501e8410d} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::get\+Matched\+Route\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all options set for the matched route
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a85803e21578fbd32c18c871e72abc6c3}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!handle@{handle}}
+\index{handle@{handle}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a85803e21578fbd32c18c871e72abc6c3} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::handle (\begin{DoxyParamCaption}\item[{?string}]{\$uri}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Finds the controller corresponding to the URI.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$uri} & URI path relative to base\+URL\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(Closure(mixed...)\+: (Response\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}void))\texorpdfstring{$\vert$}{|}string Controller classname or Closure
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Bad\+Request\+Exception} & \\
+\hline
+{\em Page\+Not\+Found\+Exception} & \\
+\hline
+{\em Redirect\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_router_interface_ae8248ecd25e05ddaea130401a4ee61b2}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a051a8fed598b08ebe472429f873538ed}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!hasLocale@{hasLocale}}
+\index{hasLocale@{hasLocale}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{hasLocale()}{hasLocale()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a051a8fed598b08ebe472429f873538ed} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::has\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true/false based on whether the current route contained a \{locale\} placeholder.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_ae0c4bc509c7dc5503fcff68ac01b0b7d}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!methodName@{methodName}}
+\index{methodName@{methodName}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{methodName()}{methodName()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_ae0c4bc509c7dc5503fcff68ac01b0b7d} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::method\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the name of the method to run in the chosen controller. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_router_interface_a740b14302010e87bb0088e3a79daaa57}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a4a337f8f5dc8e5af03375844bcb0239b}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!params@{params}}
+\index{params@{params}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{params()}{params()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a4a337f8f5dc8e5af03375844bcb0239b} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::params (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the binds that have been matched and collected during the parsing process as an array, ready to send to instance-\/\texorpdfstring{$>$}{>}method(...\$params). 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_router_interface_a6c25b6a78024d9bfd4c017f6abbce8c9}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_ada83047c41ed0d96d65d553cbebdd9e1}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!scanControllers@{scanControllers}}
+\index{scanControllers@{scanControllers}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{scanControllers()}{scanControllers()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_ada83047c41ed0d96d65d553cbebdd9e1} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::scan\+Controllers (\begin{DoxyParamCaption}\item[{array}]{\$segments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Scans the controller directory, attempting to locate a controller matching the supplied uri \$segments
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$segments} & URI segments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array returns an array of remaining uri segments that don\textquotesingle{}t map onto a directory
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000108}{Deprecated}}]Not used. Moved to Auto\+Router class. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a8cb1fbe6f3edc10082dcd56ac095e4fd}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!setDefaultController@{setDefaultController}}
+\index{setDefaultController@{setDefaultController}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setDefaultController()}{setDefaultController()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a8cb1fbe6f3edc10082dcd56ac095e4fd} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::set\+Default\+Controller (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets the default controller based on the info set in the Route\+Collection.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000111}{Deprecated}}]This was an unnecessary method, so it is no longer used.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a4fc314ad10043efb5103d66ac40b6bdd}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!setDirectory@{setDirectory}}
+\index{setDirectory@{setDirectory}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setDirectory()}{setDirectory()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a4fc314ad10043efb5103d66ac40b6bdd} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::set\+Directory (\begin{DoxyParamCaption}\item[{?string}]{\$dir}{ = {\ttfamily null}, }\item[{bool}]{\$append}{ = {\ttfamily false}, }\item[{bool}]{\$validate}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Sets the sub-\/directory that the controller is in.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$validate} & if true, checks to make sure \$dir consists of only PSR4 compliant segments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000109}{Deprecated}}]This method should be removed. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_abcde89dd13f730cab6c33c64dd569f2c}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!setIndexPage@{setIndexPage}}
+\index{setIndexPage@{setIndexPage}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setIndexPage()}{setIndexPage()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_abcde89dd13f730cab6c33c64dd569f2c} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::set\+Index\+Page (\begin{DoxyParamCaption}\item[{}]{\$page}{}\end{DoxyParamCaption})}
+
+Sets the value that should be used to match the index.\+php file. Defaults to index.\+php but this allows you to modify it in case you are using something like mod\+\_\+rewrite to remove the page. This allows you to set it a blank.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$page} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_router_1_1_router_interface_a8bab1edcfc3636724036f48a94aafea9}{Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a61ed0179c11fbc75d420cb208c087073}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!setMatchedRoute@{setMatchedRoute}}
+\index{setMatchedRoute@{setMatchedRoute}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setMatchedRoute()}{setMatchedRoute()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a61ed0179c11fbc75d420cb208c087073} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::set\+Matched\+Route (\begin{DoxyParamCaption}\item[{string}]{\$route}{, }\item[{}]{\$handler}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | string & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a1a12923ca65e0731794e1032797a70fc}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!setRequest@{setRequest}}
+\index{setRequest@{setRequest}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setRequest()}{setRequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a1a12923ca65e0731794e1032797a70fc} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::set\+Request (\begin{DoxyParamCaption}\item[{array}]{\$segments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set request route
+
+Takes an array of URI segments as input and sets the class/method to be called.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$segments} & URI segments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a64c69694b5d1bdb45588098993e27b72}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!setTranslateURIDashes@{setTranslateURIDashes}}
+\index{setTranslateURIDashes@{setTranslateURIDashes}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setTranslateURIDashes()}{setTranslateURIDashes()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a64c69694b5d1bdb45588098993e27b72} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::set\+Translate\+URIDashes (\begin{DoxyParamCaption}\item[{bool}]{\$val}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Tells the system whether we should translate URI dashes or not in the URI from a dash to an underscore.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000106}{Deprecated}}]This method should be removed. \end{DoxyRefDesc}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a006592f13bf68bf9baeecbc3edb6d96a}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!validateRequest@{validateRequest}}
+\index{validateRequest@{validateRequest}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{validateRequest()}{validateRequest()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a006592f13bf68bf9baeecbc3edb6d96a} 
+Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::validate\+Request (\begin{DoxyParamCaption}\item[{array}]{\$segments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Scans the controller directory, attempting to locate a controller matching the supplied uri \$segments
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$segments} & URI segments\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array returns an array of remaining uri segments that don\textquotesingle{}t map onto a directory
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000107}{Deprecated}}]this function name does not properly describe its behavior so it has been deprecated\end{DoxyRefDesc}
+
+
+@code\+Coverage\+Ignore 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_router_1_1_router_a2283b4723ab23be6e4034807650e9257}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!\$permittedURIChars@{\$permittedURIChars}}
+\index{\$permittedURIChars@{\$permittedURIChars}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{\$permittedURIChars}{\$permittedURIChars}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_a2283b4723ab23be6e4034807650e9257} 
+string Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::\$permitted\+URIChars = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Permitted URI chars
+
+The default value is `'\textquotesingle{}\`{} (do not check) for backward compatibility. \Hypertarget{class_code_igniter_1_1_router_1_1_router_aadbe918b4864ee98b4db43954f38acd0}\index{CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}!HTTP\_METHODS@{HTTP\_METHODS}}
+\index{HTTP\_METHODS@{HTTP\_METHODS}!CodeIgniter\textbackslash{}Router\textbackslash{}Router@{CodeIgniter\textbackslash{}Router\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{HTTP\_METHODS}{HTTP\_METHODS}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_router_1_1_router_aadbe918b4864ee98b4db43954f38acd0} 
+const Code\+Igniter\textbackslash{}\+Router\textbackslash{}\+Router\+::\+HTTP\+\_\+\+METHODS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_aa8121e76177b2002d8e53289dc581d5f}{Method::GET}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_abc257f0df530dd3c01e39def5a9d2a9c}{Method::HEAD}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_ace34b93d832d222b122a6584956ddb1e}{Method::POST}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_abfb2539f1844c727750686d0341722ed}{Method::PATCH}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_a5cc003c021ac0d1f2c4e0b5e74993741}{Method::PUT}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_acfda127415e0f50610f50cd3335e0fb6}{Method::DELETE}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_a4acf0ebbef3a00abe3a060b441ec4efd}{Method::OPTIONS}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_a5a1d094d58999b6b95b385cece4ba7b2}{Method::TRACE}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_method_ad3c4918d271f9740eee663619216dcf4}{Method::CONNECT}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'CLI'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+List of allowed HTTP methods (and CLI for command line use). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Router/Router.\+php\end{DoxyCompactItemize}

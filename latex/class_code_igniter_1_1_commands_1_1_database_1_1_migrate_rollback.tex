@@ -1,0 +1,96 @@
+\doxysection{Code\+Igniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}Migrate\+Rollback Class Reference}
+\hypertarget{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback}{}\label{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}MigrateRollback@{CodeIgniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}MigrateRollback}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}Migrate\+Rollback\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}Migrate\+Rollback\+:
+% FIG 1
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a7321faa6429cc7131cc328f66955b4b4}\label{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a7321faa6429cc7131cc328f66955b4b4} 
+{\bfseries \$group} = \textquotesingle{}\mbox{\hyperlink{class_config_1_1_database}{Database}}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a64300877bc415a03c6bb7ac5e8fea95b}\label{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a64300877bc415a03c6bb7ac5e8fea95b} 
+{\bfseries \$name} = \textquotesingle{}migrate\+:rollback\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a03e9046af649a233807e4e6a43a7e9cb}\label{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a03e9046af649a233807e4e6a43a7e9cb} 
+{\bfseries \$description} = \textquotesingle{}Runs the "{}down"{} method for all migrations in the last batch.\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_af65973b9d0877c73ab81ee326d0ea797}\label{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_af65973b9d0877c73ab81ee326d0ea797} 
+{\bfseries \$usage} = \textquotesingle{}migrate\+:rollback \mbox{[}options\mbox{]}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a3bb4c49750d118bb5612d2e2a3c56271}{\$options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$group}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$usage}
+\item 
+{\bfseries \$description}
+\item 
+{\bfseries \$options} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$arguments} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$logger}
+\item 
+{\bfseries \$commands}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger, \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands}{Commands}} \$commands)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_ac43ba8f0bf1082f9b994bb86135e083e}{run}} (array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a8c1b91614e01907f8499addf7532e706}{show\+Help}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a85679c7b947025249f6b881e8d369f03}{set\+Pad}} (string \$item, int \$max, int \$extra=2, int \$indent=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a05b222369321bbf57a70be3c7b294b37}{get\+Pad}} (array \$array, int \$pad)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a5622df4c411832f7a5305be058355fdf}{\+\_\+\+\_\+get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a61d735707706e9b865c176930a5d617d}{\+\_\+\+\_\+isset}} (string \$key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a171e6df6dfd095248ca564f8e7680dbd}{call}} (string \$command, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a866d1ea8c4143c9301e21b21b4021855}{show\+Error}} (Throwable \$e)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Runs all of the migrations in reverse order, until they have all been unapplied. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a3bb4c49750d118bb5612d2e2a3c56271}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}MigrateRollback@{CodeIgniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}MigrateRollback}!\$options@{\$options}}
+\index{\$options@{\$options}!CodeIgniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}MigrateRollback@{CodeIgniter\textbackslash{}Commands\textbackslash{}Database\textbackslash{}MigrateRollback}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_rollback_a3bb4c49750d118bb5612d2e2a3c56271} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Database\textbackslash{}\+Migrate\+Rollback\+::\$options\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/b'}\ =>\ \textcolor{stringliteral}{'Specify\ a\ batch\ to\ roll\ back\ to;\ e.g.\ "{}3"{}\ to\ return\ to\ batch\ \#3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/f'}\ =>\ \textcolor{stringliteral}{'Force\ command\ -\/\ this\ option\ allows\ you\ to\ bypass\ the\ confirmation\ question\ when\ running\ this\ command\ in\ a\ production\ environment'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Commands/\+Database/Migrate\+Rollback.\+php\end{DoxyCompactItemize}

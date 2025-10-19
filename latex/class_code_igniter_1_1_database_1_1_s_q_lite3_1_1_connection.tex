@@ -1,0 +1,595 @@
+\doxysection{Code\+Igniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection Class Reference}
+\hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection}{}\label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_acc138c1fc7d272ad0e00b78a72811bd6}{initialize}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a1acf3a5a5471cb3b66d2bc79deb76855}{connect}} (bool \$persistent=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a13578494afaded4c11d065a22547d822}{reconnect}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a828a026f6798948f5763f327ec82695d}{set\+Database}} (string \$database\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a10c7d0ef12337879b7724bbc3fd0fa69}{get\+Version}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a2f9e8864c9ac678ec3d830575e7544e0}{affected\+Rows}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a07ab9d3457021b880da8010f4fa02bbf}{get\+Field\+Names}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a4f1c6137cae26a7c7d56fe07b55d5a8c}{error}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a3f59bec0ea96e7cb8a6ada02edafbfc4}{insert\+ID}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_af2b3e6c13ba8283587cb6d66ae3f9229}{supports\+Foreign\+Keys}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aac62e704d6b940805e372f1d04d3ccd1}{\+\_\+\+\_\+construct}} (array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a0421ced2158d9dfdf30e5f5a6eff41dd}{close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ac83218231100f90bc399c50ad1820097}{persistent\+Connect}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_adf495d3e697bed03b8e2de7a24a5f19a}{get\+Connection}} (?string \$alias=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a69a627cc8cdc2f9eecf64acfe81f516e}{get\+Database}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7a6a99e54651828a96e8196556a67cfd}{set\+Prefix}} (string \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_abb8aeb268303d948a0f9979e0aa79b68}{get\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a092c8711d30dcbd0782a581390cd0c3e}{get\+Platform}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ade51825444016763fb492944efbe0381}{set\+Aliased\+Tables}} (array \$aliases)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a406f24e7a65ee882bf8930d7b5b24da1}{add\+Table\+Alias}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_afb414e5beeaa9d2e9fbecd0f3dc4e2f8}{simple\+Query}} (string \$sql)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a5cc50ad2ff53822d2c85483fe77f7d17}{trans\+Off}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7ea2e30d187500a346390d3e852b360a}{trans\+Strict}} (bool \$mode=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a69e4c53bfcafbe69373ee8fdde8b1ab1}{trans\+Start}} (bool \$test\+Mode=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a9c23263020387cb58f19abc864c0c97a}{trans\+Exception}} (bool \$trans\+Exception)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a961608fe7ba708ce0f4e22a15b7b307a}{trans\+Complete}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aa419237d70c41ecf76cabf49f3c3f950}{trans\+Status}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a62f3936a80cecd42201d352801b91d53}{trans\+Begin}} (bool \$test\+Mode=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a6c24ed5becbcc74a9eb24919512ff1d1}{trans\+Commit}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aece009be8106a57b4ed5fd806c873a29}{trans\+Rollback}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}} (\$table\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a1f1db28b77054134cfd9e37684916ecd}{new\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ab05703b3da65f1311c79f67b9eb0448d}{get\+Last\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ada5443e6314e942e1aca2fa18fb85ddf}{show\+Last\+Query}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a127f9ff71e755b23663e01c2c4d42404}{get\+Connect\+Start}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a9253d14fffa4f06724c056d22e7d9586}{get\+Connect\+Duration}} (int \$decimals=6)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aa9d7a3d252531308ffe97d9bf5f6f0a5}{protect\+Identifiers}} (\$item, bool \$prefix\+Single=false, ?bool \$protect\+Identifiers=null, bool \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a065461d859e882cfdfc139b218b73daf}{field\+Exists}}=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a2f4e98ffa142e8a897798b3fb4e81a2f}{escape\+Identifier}} (string \$item)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_abc479b3262976ffa69fd8f6016c49494}{escape\+Identifiers}} (\$item)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aa856ec33761e803fbdb3e019c80e98a9}{prefix\+Table}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}}=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a454696eb147aa4372b53568dca89609d}{escape}} (\$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a50950ed9b2d709781782483b35d3de16}{escape\+String}} (\$str, bool \$like=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a9643f2ba720b3f46b21c0d4efc1906aa}{escape\+Like\+String}} (\$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a4f87cf67a3ba556cc6dbccc0d7552eb1}{call\+Function}} (string \$function\+Name,... \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_adf4d03925231e392e40bffe24e6b584c}{table\+Exists}} (string \$table\+Name, bool \$cached=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a065461d859e882cfdfc139b218b73daf}{field\+Exists}} (string \$field\+Name, string \$table\+Name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7beabb3c5a23588a88f1738f8062ed35}{get\+Field\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aacfd231b64079cc316bee2ada0b4caa4}{get\+Index\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ae4758f423796d9e087fad565c3f325b6}{get\+Foreign\+Key\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a85c0dea3ff1064e6994ff08b4e814767}{disable\+Foreign\+Key\+Checks}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_adf013604770d1a6fec4b1ced1a6b4b0f}{enable\+Foreign\+Key\+Checks}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a3094b9d5c71b4eb97ec0977f865b2f27}{pretend}} (bool \$pretend=true)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a82c172a7f80b0097cacd65c900841b97}{reset\+Data\+Cache}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a5f174e2f165bc417ca03fc5f36fe8fd2}{is\+Write\+Type}} (\$sql)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a9236b49ff58a0fe10b2e958cc48d66e1}{\+\_\+\+\_\+get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a1a2ea9d56b1a9f50686be00c1fcc7cf7}{\+\_\+\+\_\+isset}} (string \$key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_a002bff0bf48e1dcd1ed283d7b8374a45}{query}} (string \$sql, \$binds=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a952e055883e6579f73cb4918a13cb673}\label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a952e055883e6579f73cb4918a13cb673} 
+{\bfseries \$\+DBDriver} = \textquotesingle{}SQLite3\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_afa11e94b15a812022db1c950d7b25f75}\label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_afa11e94b15a812022db1c950d7b25f75} 
+{\bfseries \$escape\+Char} = \textquotesingle{}\`{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$conn\+ID} = false
+\item 
+{\bfseries \$result\+ID} = false
+\item 
+{\bfseries \$protect\+Identifiers} = true
+\item 
+{\bfseries \$escape\+Char} = \textquotesingle{}"{}\textquotesingle{}
+\item 
+{\bfseries \$like\+Escape\+Str} = "{} ESCAPE \textquotesingle{}\%s\textquotesingle{} "{}
+\item 
+{\bfseries \$like\+Escape\+Char} = \textquotesingle{}!\textquotesingle{}
+\item 
+{\bfseries \$data\+Cache} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$trans\+Enabled} = true
+\item 
+{\bfseries \$trans\+Strict} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_af7fb2aef9cb9883f607b2d04bbc4b3b7}{\+\_\+close}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_abfc52889460910e445d4922c8a805042}{execute}} (string \$sql)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ab0184617e0e3dcc8bb388a88caa4d6a6}{\+\_\+escape\+String}} (string \$str)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a3a2844add9c4365f9e494d0c93b0ff10}{\+\_\+list\+Tables}} (bool \$prefix\+Limit=false, ?string \$table\+Name=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a0808c628b08347c4987023ffc8d14d0a}{\+\_\+list\+Columns}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}}=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a33ad97a00dc24c9f7f33ad8a972a7f84}{\+\_\+field\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ae94f83d25311d160ee5851dda9eae924}{\+\_\+index\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a31d599d793c05c3dcc3e566de3877924}{\+\_\+foreign\+Key\+Data}} (string \$\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aefbd035973199ff312af543e91cf7381}{table}})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a4e48db65b96de8d8b64d45fc82fdd593}{\+\_\+disable\+Foreign\+Key\+Checks}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a911ad7abd31fd95ecfeec94bbe20e589}{\+\_\+enable\+Foreign\+Key\+Checks}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ac2ff2c6580528ad320c15e43d94070e9}{\+\_\+trans\+Begin}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_adf5438654e7b62c079d51fb5fbf148fa}{\+\_\+trans\+Commit}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a559ff6ccc27799e181ac626945c5b338}{\+\_\+trans\+Rollback}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a8c1227c8b1e6cbc537248d2dad69eef6}{get\+Driver\+Function\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a12ace84fe8d342d618416077a3af5a4c}{foreign\+Key\+Data\+To\+Objects}} (array \$data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a8b6b57bb7d3e84803a33a16327753bc5}\label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a8b6b57bb7d3e84803a33a16327753bc5} 
+{\bfseries \$foreign\+Keys} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_aae7466b6ecf6032afe80e79ad103a4a3}\label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_aae7466b6ecf6032afe80e79ad103a4a3} 
+{\bfseries \$busy\+Timeout}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$\+DSN}
+\item 
+{\bfseries \$port} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$hostname}
+\item 
+{\bfseries \$username}
+\item 
+{\bfseries \$password}
+\item 
+{\bfseries \$database}
+\item 
+{\bfseries \$\+DBDriver} = \textquotesingle{}My\+SQLi\textquotesingle{}
+\item 
+{\bfseries \$subdriver}
+\item 
+{\bfseries \$\+DBPrefix} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$p\+Connect} = false
+\item 
+{\bfseries \$\+DBDebug} = true
+\item 
+{\bfseries \$charset} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$\+DBCollat} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$swap\+Pre} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$encrypt} = false
+\item 
+{\bfseries \$compress} = false
+\item 
+{\bfseries \$strict\+On}
+\item 
+{\bfseries \$failover} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$last\+Query}
+\item 
+{\bfseries \$reserved\+Identifiers} = \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}
+\item 
+{\bfseries \$preg\+Escape\+Char} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$connect\+Time} = 0.\+0
+\item 
+{\bfseries \$connect\+Duration} = 0.\+0
+\item 
+{\bfseries \$pretend} = false
+\item 
+{\bfseries \$trans\+Depth} = 0
+\item 
+{\bfseries \$trans\+Status} = true
+\item 
+{\bfseries \$trans\+Failure} = false
+\item 
+bool \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a88d305d85a6f8b395f7cfb1f5886b002}{\$trans\+Exception}} = false
+\item 
+{\bfseries \$aliased\+Tables} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$query\+Class} = Query\+::class
+\item 
+array \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7b9a7afd84616c7077741bced6ac474a}{\$date\+Format}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Connection for SQLite3
+
+\texorpdfstring{$<$}{<}SQLite3, SQLite3\+Result\texorpdfstring{$>$}{>} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_af7fb2aef9cb9883f607b2d04bbc4b3b7}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_close@{\_close}}
+\index{\_close@{\_close}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_close()}{\_close()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_af7fb2aef9cb9883f607b2d04bbc4b3b7} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Close the database connection.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a58298a1df2c63e7531e6c042562ffc36}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a4e48db65b96de8d8b64d45fc82fdd593}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_disableForeignKeyChecks@{\_disableForeignKeyChecks}}
+\index{\_disableForeignKeyChecks@{\_disableForeignKeyChecks}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_disableForeignKeyChecks()}{\_disableForeignKeyChecks()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a4e48db65b96de8d8b64d45fc82fdd593} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+disable\+Foreign\+Key\+Checks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns platform-\/specific SQL to disable foreign key checks.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a255cabee6040aa0f7e1dc73dcca4a0cc}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a911ad7abd31fd95ecfeec94bbe20e589}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_enableForeignKeyChecks@{\_enableForeignKeyChecks}}
+\index{\_enableForeignKeyChecks@{\_enableForeignKeyChecks}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_enableForeignKeyChecks()}{\_enableForeignKeyChecks()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a911ad7abd31fd95ecfeec94bbe20e589} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+enable\+Foreign\+Key\+Checks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns platform-\/specific SQL to enable foreign key checks.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_af2f5dba345afcaeb44c48c7ced11dcd2}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ab0184617e0e3dcc8bb388a88caa4d6a6}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_escapeString@{\_escapeString}}
+\index{\_escapeString@{\_escapeString}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_escapeString()}{\_escapeString()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ab0184617e0e3dcc8bb388a88caa4d6a6} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+escape\+String (\begin{DoxyParamCaption}\item[{string}]{\$str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Platform-\/dependant string escape 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ab5ff89d459ec05d5ccaa35581b29ad84}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a33ad97a00dc24c9f7f33ad8a972a7f84}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_fieldData@{\_fieldData}}
+\index{\_fieldData@{\_fieldData}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_fieldData()}{\_fieldData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a33ad97a00dc24c9f7f33ad8a972a7f84} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+field\+Data (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns an array of objects with field data
+
+\begin{DoxyReturn}{Returns}
+list$<$std\+Class$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a13d8be849c37da2d0539a7ce08b5153a}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a31d599d793c05c3dcc3e566de3877924}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_foreignKeyData@{\_foreignKeyData}}
+\index{\_foreignKeyData@{\_foreignKeyData}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_foreignKeyData()}{\_foreignKeyData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a31d599d793c05c3dcc3e566de3877924} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+foreign\+Key\+Data (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns an array of objects with Foreign key data
+
+\begin{DoxyReturn}{Returns}
+array$<$string, std\+Class$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_abe77bb70eacf568dce007099252cf218}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ae94f83d25311d160ee5851dda9eae924}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_indexData@{\_indexData}}
+\index{\_indexData@{\_indexData}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_indexData()}{\_indexData()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ae94f83d25311d160ee5851dda9eae924} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+index\+Data (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns an array of objects with index data
+
+\begin{DoxyReturn}{Returns}
+array$<$string, std\+Class$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a950bcd3a44e77f8bb6c7690d49c21b03}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a0808c628b08347c4987023ffc8d14d0a}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_listColumns@{\_listColumns}}
+\index{\_listColumns@{\_listColumns}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_listColumns()}{\_listColumns()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a0808c628b08347c4987023ffc8d14d0a} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+list\+Columns (\begin{DoxyParamCaption}\item[{string}]{\$table}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates a platform-\/specific query string so that the column names can be fetched. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a824278bd4bfa9b89566f49ecdfe4139d}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a3a2844add9c4365f9e494d0c93b0ff10}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_listTables@{\_listTables}}
+\index{\_listTables@{\_listTables}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_listTables()}{\_listTables()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a3a2844add9c4365f9e494d0c93b0ff10} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+list\+Tables (\begin{DoxyParamCaption}\item[{bool}]{\$prefix\+Limit}{ = {\ttfamily false}, }\item[{?string}]{\$table\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Generates the SQL for listing tables in a platform-\/dependent manner.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$table\+Name} & If \$table\+Name is provided will return only this table if exists. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a076c19c19adda30b299ff14fb698c92e}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ac2ff2c6580528ad320c15e43d94070e9}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_transBegin@{\_transBegin}}
+\index{\_transBegin@{\_transBegin}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_transBegin()}{\_transBegin()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_ac2ff2c6580528ad320c15e43d94070e9} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+trans\+Begin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Begin Transaction 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a6b6f0646534dc580690154ef644e3899}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_adf5438654e7b62c079d51fb5fbf148fa}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_transCommit@{\_transCommit}}
+\index{\_transCommit@{\_transCommit}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_transCommit()}{\_transCommit()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_adf5438654e7b62c079d51fb5fbf148fa} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+trans\+Commit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Commit Transaction 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a946bfe0fcf3f9eae85b962b5e8c44187}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a559ff6ccc27799e181ac626945c5b338}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!\_transRollback@{\_transRollback}}
+\index{\_transRollback@{\_transRollback}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_transRollback()}{\_transRollback()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a559ff6ccc27799e181ac626945c5b338} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::\+\_\+trans\+Rollback (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rollback Transaction 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a3719a7af4dfa13899d081aca6484cadd}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a2f9e8864c9ac678ec3d830575e7544e0}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!affectedRows@{affectedRows}}
+\index{affectedRows@{affectedRows}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{affectedRows()}{affectedRows()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a2f9e8864c9ac678ec3d830575e7544e0} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::affected\+Rows (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the total number of rows affected by this query. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_aa67533c767893e0f642aea72e46f82e2}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a1acf3a5a5471cb3b66d2bc79deb76855}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!connect@{connect}}
+\index{connect@{connect}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a1acf3a5a5471cb3b66d2bc79deb76855} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::connect (\begin{DoxyParamCaption}\item[{bool}]{\$persistent}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Connect to the database.
+
+\begin{DoxyReturn}{Returns}
+SQLite3
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_a261ebaae17b98497c435d0c0d2250511}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a4f1c6137cae26a7c7d56fe07b55d5a8c}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!error@{error}}
+\index{error@{error}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a4f1c6137cae26a7c7d56fe07b55d5a8c} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the last error code and message. Must return this format\+: \mbox{[}\textquotesingle{}code\textquotesingle{} =\texorpdfstring{$>$}{>} string\texorpdfstring{$\vert$}{|}int, \textquotesingle{}message\textquotesingle{} =\texorpdfstring{$>$}{>} string\mbox{]} intval(code) === 0 means "{}no error"{}.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7b5b52fd6364ae0d2f0d67e64b9ccf37}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_abfc52889460910e445d4922c8a805042}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!execute@{execute}}
+\index{execute@{execute}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_abfc52889460910e445d4922c8a805042} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::execute (\begin{DoxyParamCaption}\item[{string}]{\$sql}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Execute the query
+
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}\+SQLite3\+Result 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_adf9ef497d1330645b0ddcb8617eee8ab}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a07ab9d3457021b880da8010f4fa02bbf}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!getFieldNames@{getFieldNames}}
+\index{getFieldNames@{getFieldNames}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{getFieldNames()}{getFieldNames()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a07ab9d3457021b880da8010f4fa02bbf} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::get\+Field\+Names (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}list$<$string$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Database\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a7cca8e2be6fbf09396baa3c97146a15c}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a10c7d0ef12337879b7724bbc3fd0fa69}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!getVersion@{getVersion}}
+\index{getVersion@{getVersion}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{getVersion()}{getVersion()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a10c7d0ef12337879b7724bbc3fd0fa69} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::get\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a string containing the version of the database being used. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_abfc8cf244d7d82cff3424f48c91095e3}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_acc138c1fc7d272ad0e00b78a72811bd6}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!initialize@{initialize}}
+\index{initialize@{initialize}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_acc138c1fc7d272ad0e00b78a72811bd6} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_ab8d63d2677be0f490a2042d057250d35}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a3f59bec0ea96e7cb8a6ada02edafbfc4}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!insertID@{insertID}}
+\index{insertID@{insertID}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{insertID()}{insertID()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a3f59bec0ea96e7cb8a6ada02edafbfc4} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::insert\+ID (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Insert ID 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_database_1_1_base_connection_a2548b3062e488c28a2f3853b6eaeb7e1}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Base\+Connection}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a13578494afaded4c11d065a22547d822}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!reconnect@{reconnect}}
+\index{reconnect@{reconnect}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{reconnect()}{reconnect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a13578494afaded4c11d065a22547d822} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::reconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Keep or establish the connection if no queries have been sent for a length of time exceeding the server\textquotesingle{}s idle timeout.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_ad200a6acc07bb8dc90df6c0ea037d077}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a828a026f6798948f5763f327ec82695d}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!setDatabase@{setDatabase}}
+\index{setDatabase@{setDatabase}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{setDatabase()}{setDatabase()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_a828a026f6798948f5763f327ec82695d} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::set\+Database (\begin{DoxyParamCaption}\item[{string}]{\$database\+Name}{}\end{DoxyParamCaption})}
+
+Select a specific database table to use. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_database_1_1_connection_interface_a7d59df33c2fdc324a5a8de9257b8d38e}{Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_af2b3e6c13ba8283587cb6d66ae3f9229}\index{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}!supportsForeignKeys@{supportsForeignKeys}}
+\index{supportsForeignKeys@{supportsForeignKeys}!CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection@{CodeIgniter\textbackslash{}Database\textbackslash{}SQLite3\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{supportsForeignKeys()}{supportsForeignKeys()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_database_1_1_s_q_lite3_1_1_connection_af2b3e6c13ba8283587cb6d66ae3f9229} 
+Code\+Igniter\textbackslash{}\+Database\textbackslash{}\+SQLite3\textbackslash{}\+Connection\+::supports\+Foreign\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks to see if the current install supports Foreign Keys and has them enabled. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Database/\+SQLite3/Connection.\+php\end{DoxyCompactItemize}

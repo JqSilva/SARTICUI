@@ -1,0 +1,140 @@
+\doxysection{Code\+Igniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}Controller\+Generator Class Reference}
+\hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator}{}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}Controller\+Generator\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}Controller\+Generator\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a2d75073df3ba9345a65ab17924ce5dcd}{run}} (array \$params)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger, \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands}{Commands}} \$commands)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a8c1b91614e01907f8499addf7532e706}{show\+Help}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a85679c7b947025249f6b881e8d369f03}{set\+Pad}} (string \$item, int \$max, int \$extra=2, int \$indent=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a05b222369321bbf57a70be3c7b294b37}{get\+Pad}} (array \$array, int \$pad)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a5622df4c411832f7a5305be058355fdf}{\+\_\+\+\_\+get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a61d735707706e9b865c176930a5d617d}{\+\_\+\+\_\+isset}} (string \$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a3524b3c27ab976b5dd586ae329e1641f}{prepare}} (string \$class)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a171e6df6dfd095248ca564f8e7680dbd}{call}} (string \$command, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a866d1ea8c4143c9301e21b21b4021855}{show\+Error}} (Throwable \$e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a2398ebfd07cbdb4ca6df50e87d918ff9}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a2398ebfd07cbdb4ca6df50e87d918ff9} 
+{\bfseries \$group} = \textquotesingle{}\mbox{\hyperlink{class_config_1_1_generators}{Generators}}\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_ab03b8721a2399ff9a5b1cb3a3e6a9d22}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_ab03b8721a2399ff9a5b1cb3a3e6a9d22} 
+{\bfseries \$name} = \textquotesingle{}make\+:controller\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a51fecad7a4f91addc1b26c147517eb8d}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a51fecad7a4f91addc1b26c147517eb8d} 
+{\bfseries \$description} = \textquotesingle{}Generates a new controller file.\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a79ef4eb131a243e3d82b9ced02cc9d51}\label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a79ef4eb131a243e3d82b9ced02cc9d51} 
+{\bfseries \$usage} = \textquotesingle{}make\+:controller $<$name$>$ \mbox{[}options\mbox{]}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a36805b1bdb505a150326c396956a3d70}{\$arguments}}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a5b2204e0586c4f8edc14952d820d3ffa}{\$options}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$group}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$usage}
+\item 
+{\bfseries \$description}
+\item 
+{\bfseries \$options} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$arguments} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$logger}
+\item 
+{\bfseries \$commands}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generates a skeleton controller file. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a3524b3c27ab976b5dd586ae329e1641f}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}!prepare@{prepare}}
+\index{prepare@{prepare}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a3524b3c27ab976b5dd586ae329e1641f} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Controller\+Generator\+::prepare (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepare options and do the necessary replacements. \Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a2d75073df3ba9345a65ab17924ce5dcd}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a2d75073df3ba9345a65ab17924ce5dcd} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Controller\+Generator\+::run (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Actually execute a command. 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_ac43ba8f0bf1082f9b994bb86135e083e}{Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a36805b1bdb505a150326c396956a3d70}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}!\$arguments@{\$arguments}}
+\index{\$arguments@{\$arguments}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}}
+\doxysubsubsection{\texorpdfstring{\$arguments}{\$arguments}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a36805b1bdb505a150326c396956a3d70} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Controller\+Generator\+::\$arguments\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'name'}\ =>\ \textcolor{stringliteral}{'The\ controller\ class\ name.'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a5b2204e0586c4f8edc14952d820d3ffa}\index{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}!\$options@{\$options}}
+\index{\$options@{\$options}!CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator@{CodeIgniter\textbackslash{}Commands\textbackslash{}Generators\textbackslash{}ControllerGenerator}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a5b2204e0586c4f8edc14952d820d3ffa} 
+Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Controller\+Generator\+::\$options\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/bare'}\ \ \ \ \ \ =>\ \textcolor{stringliteral}{'Extends\ from\ CodeIgniter\(\backslash\)Controller\ instead\ of\ BaseController.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/restful'}\ \ \ =>\ \textcolor{stringliteral}{'Extends\ from\ a\ RESTful\ resource,\ Options:\ [controller,\ presenter].\ Default:\ "{}controller"{}.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/namespace'}\ =>\ \textcolor{stringliteral}{'Set\ root\ namespace.\ Default:\ "{}APP\_NAMESPACE"{}.'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/suffix'}\ \ \ \ =>\ \textcolor{stringliteral}{'Append\ the\ component\ title\ to\ the\ class\ name\ (e.g.\ User\ =>\ UserController).'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'-\/-\/force'}\ \ \ \ \ =>\ \textcolor{stringliteral}{'Force\ overwrite\ existing\ file.'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Commands/\+Generators/Controller\+Generator.\+php\end{DoxyCompactItemize}

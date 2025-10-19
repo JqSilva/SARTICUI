@@ -1,0 +1,166 @@
+\doxysection{Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Open\+SSLHandler Class Reference}
+\hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler}{}\label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Open\+SSLHandler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}Open\+SSLHandler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_acb49caa400a0d65b282241f132d30d00}{encrypt}} (\$data, \$params=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a193bdaf0093d074104990d017b630d9c}{decrypt}} (\$data, \$params=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ae51e5cc2a5903d44bd20b37678d85c1e}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{class_config_1_1_encryption}{Encryption}} \$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a543a765317bf0b0952d8ae6d0f647027}{\+\_\+\+\_\+get}} (\$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_ac2ea67fe3cf8d22b6488b930ff29b2c2}{\+\_\+\+\_\+isset}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a22d11b113b2928f964d0462d6d57cd0f}{\$encrypt\+Key\+Info}} = \textquotesingle{}\textquotesingle{}
+\item 
+string \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_aea9095eb7c7772e1cfbca573228e9c3c}{\$auth\+Key\+Info}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a679248223be0e9e26bea8bda3d7a2018}\label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a679248223be0e9e26bea8bda3d7a2018} 
+{\bfseries \$digest} = \textquotesingle{}SHA512\textquotesingle{}
+\item 
+array \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a170492c2710ea12aad8e72d09cdb263b}{\$digest\+Size}}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a37b89a624731c349b935ddc4bda04994}\label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a37b89a624731c349b935ddc4bda04994} 
+{\bfseries \$cipher} = \textquotesingle{}AES-\/256-\/CTR\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_aa3b55cbe39e6c9fee3ca7589e8419ed8}\label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_aa3b55cbe39e6c9fee3ca7589e8419ed8} 
+{\bfseries \$key} = \textquotesingle{}\textquotesingle{}
+\item 
+bool \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a8099ba2373de2bbd430c84b179fa98d3}{\$raw\+Data}} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_code_igniter_1_1_encryption_1_1_handlers_1_1_base_handler_a3f7794834de4dc3838a4b78290be80b1}{substr}} (\$str, \$start, \$length=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Encryption handling for Open\+SSL library
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Open\+SSLHandler\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a193bdaf0093d074104990d017b630d9c}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a193bdaf0093d074104990d017b630d9c} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Open\+SSLHandler\+::decrypt (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$params}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Decrypt -\/ convert ciphertext into plaintext
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & Encrypted data \\
+\hline
+array | string | null & {\em \$params} & Overridden parameters, specifically the key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_code_igniter_1_1_encryption_1_1_exceptions_1_1_encryption_exception}{Encryption\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_encryption_1_1_encrypter_interface_a746fe55db1edd6cda8a3e0ac46b44808}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encrypter\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_acb49caa400a0d65b282241f132d30d00}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_acb49caa400a0d65b282241f132d30d00} 
+Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Open\+SSLHandler\+::encrypt (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$params}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Encrypt -\/ convert plaintext into ciphertext
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & Input data \\
+\hline
+array | string | null & {\em \$params} & Overridden parameters, specifically the key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_code_igniter_1_1_encryption_1_1_exceptions_1_1_encryption_exception}{Encryption\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+ 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_encryption_1_1_encrypter_interface_aeea7d999efeb0ff5e6e7e32f7e1c07d4}{Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Encrypter\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_aea9095eb7c7772e1cfbca573228e9c3c}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}!\$authKeyInfo@{\$authKeyInfo}}
+\index{\$authKeyInfo@{\$authKeyInfo}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}}
+\doxysubsubsection{\texorpdfstring{\$authKeyInfo}{\$authKeyInfo}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_aea9095eb7c7772e1cfbca573228e9c3c} 
+string Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Open\+SSLHandler\+::\$auth\+Key\+Info = \textquotesingle{}\textquotesingle{}}
+
+Authentication key info. This setting is only used by Open\+SSLHandler.
+
+Set to \textquotesingle{}authentication\textquotesingle{} for CI3 Encryption compatibility. \Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a170492c2710ea12aad8e72d09cdb263b}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}!\$digestSize@{\$digestSize}}
+\index{\$digestSize@{\$digestSize}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}}
+\doxysubsubsection{\texorpdfstring{\$digestSize}{\$digestSize}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a170492c2710ea12aad8e72d09cdb263b} 
+array Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Open\+SSLHandler\+::\$digest\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'SHA224'}\ =>\ 28,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'SHA256'}\ =>\ 32,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'SHA384'}\ =>\ 48,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'SHA512'}\ =>\ 64,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a22d11b113b2928f964d0462d6d57cd0f}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}!\$encryptKeyInfo@{\$encryptKeyInfo}}
+\index{\$encryptKeyInfo@{\$encryptKeyInfo}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}}
+\doxysubsubsection{\texorpdfstring{\$encryptKeyInfo}{\$encryptKeyInfo}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a22d11b113b2928f964d0462d6d57cd0f} 
+string Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Open\+SSLHandler\+::\$encrypt\+Key\+Info = \textquotesingle{}\textquotesingle{}}
+
+Encryption key info. This setting is only used by Open\+SSLHandler.
+
+Set to \textquotesingle{}encryption\textquotesingle{} for CI3 Encryption compatibility. \Hypertarget{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a8099ba2373de2bbd430c84b179fa98d3}\index{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}!\$rawData@{\$rawData}}
+\index{\$rawData@{\$rawData}!CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler@{CodeIgniter\textbackslash{}Encryption\textbackslash{}Handlers\textbackslash{}OpenSSLHandler}}
+\doxysubsubsection{\texorpdfstring{\$rawData}{\$rawData}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_encryption_1_1_handlers_1_1_open_s_s_l_handler_a8099ba2373de2bbd430c84b179fa98d3} 
+bool Code\+Igniter\textbackslash{}\+Encryption\textbackslash{}\+Handlers\textbackslash{}\+Open\+SSLHandler\+::\$raw\+Data = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether the cipher-\/text should be raw. If set to false, then it will be base64 encoded. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Encryption/\+Handlers/Open\+SSLHandler.\+php\end{DoxyCompactItemize}

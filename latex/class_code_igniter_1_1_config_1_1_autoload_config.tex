@@ -1,0 +1,99 @@
+\doxysection{Code\+Igniter\textbackslash{}Config\textbackslash{}Autoload\+Config Class Reference}
+\hypertarget{class_code_igniter_1_1_config_1_1_autoload_config}{}\label{class_code_igniter_1_1_config_1_1_autoload_config}\index{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Config\textbackslash{}Autoload\+Config\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_autoload_config_addb61ea6dca9eb49b5d04663dc4d8983}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_autoload_config_aafd94ba20a503a297c61a6f6f72207f7}\label{class_code_igniter_1_1_config_1_1_autoload_config_aafd94ba20a503a297c61a6f6f72207f7} 
+{\bfseries \$psr4} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_autoload_config_ac1e77e9a75c4fe153bf963abf04b864e}\label{class_code_igniter_1_1_config_1_1_autoload_config_ac1e77e9a75c4fe153bf963abf04b864e} 
+{\bfseries \$classmap} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_autoload_config_ac62001f83c6499bd706241d84bb1a173}\label{class_code_igniter_1_1_config_1_1_autoload_config_ac62001f83c6499bd706241d84bb1a173} 
+{\bfseries \$files} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_autoload_config_a9daeedcb70c62f3972f6ab1d0dca5e94}{\$core\+Psr4}}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_config_1_1_autoload_config_a223fe85397b2586c1cc3af9680b7ce65}{\$core\+Classmap}}
+\item 
+\Hypertarget{class_code_igniter_1_1_config_1_1_autoload_config_a4ab719cbfbffdc2d060f1de19fc6c1bf}\label{class_code_igniter_1_1_config_1_1_autoload_config_a4ab719cbfbffdc2d060f1de19fc6c1bf} 
+{\bfseries \$core\+Files} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+AUTOLOADER CONFIGURATION
+
+This file defines the namespaces and class maps so the Autoloader can find the files as needed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_autoload_config_addb61ea6dca9eb49b5d04663dc4d8983}\index{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_autoload_config_addb61ea6dca9eb49b5d04663dc4d8983} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Autoload\+Config\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+Merge the built-\/in and developer-\/configured psr4 and classmap, with preference to the developer ones. 
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_autoload_ae04935b777b18fb4e59c319dacf4da7c}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Autoload}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_config_1_1_autoload_config_a223fe85397b2586c1cc3af9680b7ce65}\index{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig}!\$coreClassmap@{\$coreClassmap}}
+\index{\$coreClassmap@{\$coreClassmap}!CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig}}
+\doxysubsubsection{\texorpdfstring{\$coreClassmap}{\$coreClassmap}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_autoload_config_a223fe85397b2586c1cc3af9680b7ce65} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Autoload\+Config\+::\$core\+Classmap\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ AbstractLogger::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/PSR/Log/AbstractLogger.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ InvalidArgumentException::class\ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/PSR/Log/InvalidArgumentException.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ LoggerAwareInterface::class\ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/PSR/Log/LoggerAwareInterface.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ LoggerAwareTrait::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/PSR/Log/LoggerAwareTrait.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ LoggerInterface::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/PSR/Log/LoggerInterface.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ LoggerTrait::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/PSR/Log/LoggerTrait.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ LogLevel::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/PSR/Log/LogLevel.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ NullLogger::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/PSR/Log/NullLogger.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ExceptionInterface::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/Escaper/Exception/ExceptionInterface.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ EscaperInvalidArgumentException::class\ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/Escaper/Exception/InvalidArgumentException.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ RuntimeException::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/Escaper/Exception/RuntimeException.php'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Escaper::class\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =>\ SYSTEMPATH\ .\ \textcolor{stringliteral}{'ThirdParty/Escaper/Escaper.php'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_code_igniter_1_1_config_1_1_autoload_config_a9daeedcb70c62f3972f6ab1d0dca5e94}\index{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig}!\$corePsr4@{\$corePsr4}}
+\index{\$corePsr4@{\$corePsr4}!CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig@{CodeIgniter\textbackslash{}Config\textbackslash{}AutoloadConfig}}
+\doxysubsubsection{\texorpdfstring{\$corePsr4}{\$corePsr4}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_config_1_1_autoload_config_a9daeedcb70c62f3972f6ab1d0dca5e94} 
+Code\+Igniter\textbackslash{}\+Config\textbackslash{}\+Autoload\+Config\+::\$core\+Psr4\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'CodeIgniter'}\ =>\ SYSTEMPATH,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Config'}\ \ \ \ \ \ =>\ APPPATH\ .\ \textcolor{stringliteral}{'Config'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Config/Autoload\+Config.\+php\end{DoxyCompactItemize}

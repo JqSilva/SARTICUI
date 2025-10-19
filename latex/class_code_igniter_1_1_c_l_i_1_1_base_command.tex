@@ -1,0 +1,176 @@
+\doxysection{Code\+Igniter\textbackslash{}CLI\textbackslash{}Base\+Command Class Reference}
+\hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command}{}\label{class_code_igniter_1_1_c_l_i_1_1_base_command}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}CLI\textbackslash{}Base\+Command\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a18e5d44e64011bf4ab8474f260cce9c7}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_a18e5d44e64011bf4ab8474f260cce9c7} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger, \mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_commands}{Commands}} \$commands)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_ac43ba8f0bf1082f9b994bb86135e083e}{run}} (array \$params)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a8c1b91614e01907f8499addf7532e706}{show\+Help}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a85679c7b947025249f6b881e8d369f03}{set\+Pad}} (string \$item, int \$max, int \$extra=2, int \$indent=0)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a05b222369321bbf57a70be3c7b294b37}{get\+Pad}} (array \$array, int \$pad)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a5622df4c411832f7a5305be058355fdf}{\+\_\+\+\_\+get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a61d735707706e9b865c176930a5d617d}{\+\_\+\+\_\+isset}} (string \$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a171e6df6dfd095248ca564f8e7680dbd}{call}} (string \$command, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_c_l_i_1_1_base_command_a866d1ea8c4143c9301e21b21b4021855}{show\+Error}} (Throwable \$e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a1b5b4f0a3b45dd306b4ed817ad83d1f3}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_a1b5b4f0a3b45dd306b4ed817ad83d1f3} 
+{\bfseries \$group}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_ae74eedbde9c8de0184fc6d3fda4ce3bc}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_ae74eedbde9c8de0184fc6d3fda4ce3bc} 
+{\bfseries \$name}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a48f8e9f0ddfa81fd17c8cf61ae311210}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_a48f8e9f0ddfa81fd17c8cf61ae311210} 
+{\bfseries \$usage}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a22051670720843567faf3a264e2cce1f}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_a22051670720843567faf3a264e2cce1f} 
+{\bfseries \$description}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a828bd128705379dcec853bf9a5e801ec}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_a828bd128705379dcec853bf9a5e801ec} 
+{\bfseries \$options} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a3f02b1a2cb91fc1c7d2f454b2412e3f7}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_a3f02b1a2cb91fc1c7d2f454b2412e3f7} 
+{\bfseries \$arguments} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a8ac20c47e96eb995212000e0078673c1}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_a8ac20c47e96eb995212000e0078673c1} 
+{\bfseries \$logger}
+\item 
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a343de564732303a35fb6adac7a26f359}\label{class_code_igniter_1_1_c_l_i_1_1_base_command_a343de564732303a35fb6adac7a26f359} 
+{\bfseries \$commands}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a5622df4c411832f7a5305be058355fdf}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_base_command_a5622df4c411832f7a5305be058355fdf} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Makes it simple to access our protected properties.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$\texorpdfstring{$\vert$}{|}\+Commands\texorpdfstring{$\vert$}{|}\+Logger\+Interface\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a61d735707706e9b865c176930a5d617d}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}!\_\_isset@{\_\_isset}}
+\index{\_\_isset@{\_\_isset}!CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+\doxysubsubsection{\texorpdfstring{\_\_isset()}{\_\_isset()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_base_command_a61d735707706e9b865c176930a5d617d} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command\+::\+\_\+\+\_\+isset (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Makes it simple to check our protected properties. \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a171e6df6dfd095248ca564f8e7680dbd}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}!call@{call}}
+\index{call@{call}!CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_base_command_a171e6df6dfd095248ca564f8e7680dbd} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command\+::call (\begin{DoxyParamCaption}\item[{string}]{\$command}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Can be used by a command to run other commands.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int\texorpdfstring{$\vert$}{|}string,string\texorpdfstring{$\vert$}{|}null$>$} & \$params\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a05b222369321bbf57a70be3c7b294b37}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}!getPad@{getPad}}
+\index{getPad@{getPad}!CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+\doxysubsubsection{\texorpdfstring{getPad()}{getPad()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_base_command_a05b222369321bbf57a70be3c7b294b37} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command\+::get\+Pad (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{int}]{\$pad}{}\end{DoxyParamCaption})}
+
+Get pad for \$key =\texorpdfstring{$>$}{>} \$value array output
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,string$>$} & \$array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000011}{Deprecated}}]Use set\+Pad() instead.\end{DoxyRefDesc}
+
+
+@code\+Coverage\+Ignore \Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_ac43ba8f0bf1082f9b994bb86135e083e}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}!run@{run}}
+\index{run@{run}!CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_base_command_ac43ba8f0bf1082f9b994bb86135e083e} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command\+::run (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Actually execute a command.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int\texorpdfstring{$\vert$}{|}string,string\texorpdfstring{$\vert$}{|}null$>$} & \$params\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_cache_1_1_clear_cache_a20ea48954e0ec98928fd3f7c15108585}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Cache\textbackslash{}\+Clear\+Cache}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_cache_1_1_info_cache_ac157dad9a53cac2eaf4447b6cc495bd2}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Cache\textbackslash{}\+Info\+Cache}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_database_1_1_create_database_a7cebc7abdeb121335a7e886bd1d7cac4}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Database\textbackslash{}\+Create\+Database}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_a6478fb5079eaef1b3a518167b9fc3a1d}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Database\textbackslash{}\+Migrate}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_refresh_afdd7a49d827d624c5d5048ba872cd2f6}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Database\textbackslash{}\+Migrate\+Refresh}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_database_1_1_migrate_status_a1bde8e840f54f7f185680dac1ba35d85}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Database\textbackslash{}\+Migrate\+Status}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_database_1_1_seed_a7ff7bee05189f81c76ac419a8369290b}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Database\textbackslash{}\+Seed}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_encryption_1_1_generate_key_a51a5710cb909bf5064eddfe9cfdd3ff8}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Encryption\textbackslash{}\+Generate\+Key}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_cell_generator_ae25206bc35d36007202124b07a492635}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Cell\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_command_generator_a7e96afac4684c8bd3e0972dc072712d6}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Command\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_config_generator_a35e53526372c0bbc2585ac1b46c1fa31}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Config\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_controller_generator_a2d75073df3ba9345a65ab17924ce5dcd}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Controller\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_entity_generator_a644012ff14c313be81b236e03eb36aa3}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Entity\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_filter_generator_aca62f47869a1b62386d6298eb8e48a0f}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Filter\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_migration_generator_aee4ffcd365ced964841a0e2a5eac13c2}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Migration\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_model_generator_ae4f2389dc249460cda246c40de1a2578}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Model\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_scaffold_generator_a1213c7d46632f81170414006bc568031}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Scaffold\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_seeder_generator_ab3edb3089a2a864b30517c6fd2833d57}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Seeder\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_test_generator_a5dd4e3582e5e527e757e2074e94694f3}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Test\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_generators_1_1_validation_generator_afe7f014bb77741f008e5704f86716385}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Generators\textbackslash{}\+Validation\+Generator}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_help_a0402c3d54a5dbe9b6151fb97041e9bd6}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Help}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_housekeeping_1_1_clear_debugbar_af9f9eafaccf38bae7f247ffea6cb23af}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Housekeeping\textbackslash{}\+Clear\+Debugbar}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_housekeeping_1_1_clear_logs_a4763f509d200d898e9695a66e9a0cb6e}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Housekeeping\textbackslash{}\+Clear\+Logs}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_list_commands_aad18ddfbaeff135dd337e435bf121d35}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+List\+Commands}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_server_1_1_serve_a6f1d4be59b068239b758749d82daa808}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Server\textbackslash{}\+Serve}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_translation_1_1_localization_finder_a14c9c32ba1a56b1a51ff98a56551b282}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Translation\textbackslash{}\+Localization\+Finder}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_environment_acdd129b6a69b2430b16b8cd44b4e8a18}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Environment}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_filter_check_af80418d8a630573999c0d1a71eb795e0}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Filter\+Check}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_namespaces_a05676bec38a784ad0ffa7d7769db3d2d}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Namespaces}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_optimize_abc31eeee508fa6be16ef8a80e84be9ef}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Optimize}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_php_ini_check_a5733e709ecfc7fa860de632cc29de61a}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Php\+Ini\+Check}}, \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_publish_a8fa25128a6ccddb700a2d57bbd144a6a}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Publish}}, and \mbox{\hyperlink{class_code_igniter_1_1_commands_1_1_utilities_1_1_routes_a1261f0355aeba801346110ce9b459290}{Code\+Igniter\textbackslash{}\+Commands\textbackslash{}\+Utilities\textbackslash{}\+Routes}}.
+
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a85679c7b947025249f6b881e8d369f03}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}!setPad@{setPad}}
+\index{setPad@{setPad}!CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+\doxysubsubsection{\texorpdfstring{setPad()}{setPad()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_base_command_a85679c7b947025249f6b881e8d369f03} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command\+::set\+Pad (\begin{DoxyParamCaption}\item[{string}]{\$item}{, }\item[{int}]{\$max}{, }\item[{int}]{\$extra}{ = {\ttfamily 2}, }\item[{int}]{\$indent}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Pads our string out so that all titles are the same length to nicely line up descriptions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$extra} & How many extra spaces to add at the end \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a866d1ea8c4143c9301e21b21b4021855}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}!showError@{showError}}
+\index{showError@{showError}!CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+\doxysubsubsection{\texorpdfstring{showError()}{showError()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_base_command_a866d1ea8c4143c9301e21b21b4021855} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command\+::show\+Error (\begin{DoxyParamCaption}\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A simple method to display an error with line/file, in child commands.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_code_igniter_1_1_c_l_i_1_1_base_command_a8c1b91614e01907f8499addf7532e706}\index{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}!showHelp@{showHelp}}
+\index{showHelp@{showHelp}!CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand@{CodeIgniter\textbackslash{}CLI\textbackslash{}BaseCommand}}
+\doxysubsubsection{\texorpdfstring{showHelp()}{showHelp()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_c_l_i_1_1_base_command_a8c1b91614e01907f8499addf7532e706} 
+Code\+Igniter\textbackslash{}\+CLI\textbackslash{}\+Base\+Command\+::show\+Help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Show Help includes (Usage, Arguments, Description, Options).
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+CLI/Base\+Command.\+php\end{DoxyCompactItemize}

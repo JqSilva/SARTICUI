@@ -1,0 +1,308 @@
+\doxysection{Laminas\textbackslash{}Escaper\textbackslash{}Escaper Class Reference}
+\hypertarget{class_laminas_1_1_escaper_1_1_escaper}{}\label{class_laminas_1_1_escaper_1_1_escaper}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a5440dfaf0af64c556da4bd29f6c9169f}{\+\_\+\+\_\+construct}} (?string \$encoding=null)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_abdb3fec15064ecae865db156e85f099a}{get\+Encoding}} ()
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a1a64f662e3e146dc6ff0d1d9a9cc3ea5}{escape\+Html}} (string \$string)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_ab513496c6a1fce33ba2565abd748fde5}{escape\+Html\+Attr}} (string \$string)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_aa2199bf52e21c3af1db234b29ec06e4a}{escape\+Js}} (string \$string)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_aae9dabdb8cb8c8b20cc230b0fbd01402}{escape\+Url}} (string \$string)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a7991f2ab9a3bd35f575ab7c2791c936d}{escape\+Css}} (string \$string)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_aa9347292a99fc3f8360ec68e48a9c42d}{html\+Attr\+Matcher}} (\$matches)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_ab7b65193defba94d034306aaa4e30190}{js\+Matcher}} (\$matches)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a955ff4596e45121168fb81176b83d7f0}{css\+Matcher}} (\$matches)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a851a58917087a2b63e670a3bdea55702}{to\+Utf8}} (\$string)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a583e19dc28e118abe4df7552ce65bc0c}{from\+Utf8}} (\$string)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a63eb26467ba34974eb63c9a929f06497}{is\+Utf8}} (\$string)
+\item 
+\mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a8c475d9619360e25f685b52bc2363ad2}{convert\+Encoding}} (\$string, \$to, \$from)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a388403363170485478ede8cbbaeb19cc}\label{class_laminas_1_1_escaper_1_1_escaper_a388403363170485478ede8cbbaeb19cc} 
+{\bfseries \$encoding} = \textquotesingle{}utf-\/8\textquotesingle{}
+\item 
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_aae6d618af3fb867e05cd755895a90a2a}\label{class_laminas_1_1_escaper_1_1_escaper_aae6d618af3fb867e05cd755895a90a2a} 
+{\bfseries \$html\+Special\+Chars\+Flags}
+\item 
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a73fa75104a48fbdafb82cd27d031b237}\label{class_laminas_1_1_escaper_1_1_escaper_a73fa75104a48fbdafb82cd27d031b237} 
+{\bfseries \$html\+Attr\+Matcher}
+\item 
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a4f2d9d5b080029a0c8922b5fcc0068b8}\label{class_laminas_1_1_escaper_1_1_escaper_a4f2d9d5b080029a0c8922b5fcc0068b8} 
+{\bfseries \$js\+Matcher}
+\item 
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_af3f2b86e0b8e28367545160689750060}\label{class_laminas_1_1_escaper_1_1_escaper_af3f2b86e0b8e28367545160689750060} 
+{\bfseries \$css\+Matcher}
+\item 
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a70390bcce243fb67d2845936c5b94e5b}\label{class_laminas_1_1_escaper_1_1_escaper_a70390bcce243fb67d2845936c5b94e5b} 
+{\bfseries \$supported\+Encodings}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_laminas_1_1_escaper_1_1_escaper_a5b2635dc57a71f1970593bd9ae65bfe0}{\$html\+Named\+Entity\+Map}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Context specific methods for use in secure output escaping 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a5440dfaf0af64c556da4bd29f6c9169f}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a5440dfaf0af64c556da4bd29f6c9169f} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?string}]{\$encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor\+: Single parameter allows setting of global encoding for use by the current object.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception 
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,string$>$} & \$matches\\
+\hline
+{\em array$<$array-\/key,string$>$} & \$matches\\
+\hline
+{\em array$<$array-\/key,string$>$} & \$matches\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a8c475d9619360e25f685b52bc2363ad2}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!convertEncoding@{convertEncoding}}
+\index{convertEncoding@{convertEncoding}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{convertEncoding()}{convertEncoding()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a8c475d9619360e25f685b52bc2363ad2} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::convert\+Encoding (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{}]{\$to}{, }\item[{}]{\$from}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Encoding conversion helper which wraps mb\+\_\+convert\+\_\+encoding
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+string & {\em \$to} & \\
+\hline
+array | string & {\em \$from} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a955ff4596e45121168fb81176b83d7f0}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!cssMatcher@{cssMatcher}}
+\index{cssMatcher@{cssMatcher}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{cssMatcher()}{cssMatcher()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a955ff4596e45121168fb81176b83d7f0} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::css\+Matcher (\begin{DoxyParamCaption}\item[{}]{\$matches}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Callback function for preg\+\_\+replace\+\_\+callback that applies CSS escaping to all matches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,string$>$} & \$matches \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a7991f2ab9a3bd35f575ab7c2791c936d}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!escapeCss@{escapeCss}}
+\index{escapeCss@{escapeCss}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{escapeCss()}{escapeCss()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a7991f2ab9a3bd35f575ab7c2791c936d} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::escape\+Css (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})}
+
+Escape a string for the CSS context. CSS escaping can be applied to any string being inserted into CSS and escapes everything except alphanumerics.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a1a64f662e3e146dc6ff0d1d9a9cc3ea5}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!escapeHtml@{escapeHtml}}
+\index{escapeHtml@{escapeHtml}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{escapeHtml()}{escapeHtml()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a1a64f662e3e146dc6ff0d1d9a9cc3ea5} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::escape\+Html (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})}
+
+Escape a string for the HTML Body context where there are very few characters of special meaning. Internally this will use htmlspecialchars().
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_ab513496c6a1fce33ba2565abd748fde5}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!escapeHtmlAttr@{escapeHtmlAttr}}
+\index{escapeHtmlAttr@{escapeHtmlAttr}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{escapeHtmlAttr()}{escapeHtmlAttr()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_ab513496c6a1fce33ba2565abd748fde5} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::escape\+Html\+Attr (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})}
+
+Escape a string for the HTML Attribute context. We use an extended set of characters to escape that are not covered by htmlspecialchars() to cover cases where an attribute might be unquoted or quoted illegally (e.\+g. backticks are valid quotes for IE).
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_aa2199bf52e21c3af1db234b29ec06e4a}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!escapeJs@{escapeJs}}
+\index{escapeJs@{escapeJs}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{escapeJs()}{escapeJs()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_aa2199bf52e21c3af1db234b29ec06e4a} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::escape\+Js (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})}
+
+Escape a string for the Javascript context. This does not use json\+\_\+encode(). An extended set of characters are escaped beyond ECMAScript\textquotesingle{}s rules for Javascript literal string escaping in order to prevent misinterpretation of Javascript as HTML leading to the injection of special characters and entities. The escaping used should be tolerant of cases where HTML escaping was not applied on top of Javascript escaping correctly. Backslash escaping is not used as it still leaves the escaped character as-\/is and so is not useful in a HTML context.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_aae9dabdb8cb8c8b20cc230b0fbd01402}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!escapeUrl@{escapeUrl}}
+\index{escapeUrl@{escapeUrl}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{escapeUrl()}{escapeUrl()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_aae9dabdb8cb8c8b20cc230b0fbd01402} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::escape\+Url (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})}
+
+Escape a string for the URI or Parameter contexts. This should not be used to escape an entire URI -\/ only a subcomponent being inserted. The function is a simple proxy to rawurlencode() which now implements RFC 3986 since PHP 5.\+3 completely.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a583e19dc28e118abe4df7552ce65bc0c}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!fromUtf8@{fromUtf8}}
+\index{fromUtf8@{fromUtf8}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{fromUtf8()}{fromUtf8()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a583e19dc28e118abe4df7552ce65bc0c} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::from\+Utf8 (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts a string from UTF-\/8 to the base encoding. The base encoding is set via this
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_abdb3fec15064ecae865db156e85f099a}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!getEncoding@{getEncoding}}
+\index{getEncoding@{getEncoding}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{getEncoding()}{getEncoding()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_abdb3fec15064ecae865db156e85f099a} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::get\+Encoding (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the encoding that all output/input is expected to be encoded in.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_aa9347292a99fc3f8360ec68e48a9c42d}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!htmlAttrMatcher@{htmlAttrMatcher}}
+\index{htmlAttrMatcher@{htmlAttrMatcher}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{htmlAttrMatcher()}{htmlAttrMatcher()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_aa9347292a99fc3f8360ec68e48a9c42d} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::html\+Attr\+Matcher (\begin{DoxyParamCaption}\item[{}]{\$matches}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Callback function for preg\+\_\+replace\+\_\+callback that applies HTML Attribute escaping to all matches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,string$>$} & \$matches \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+The following replaces characters undefined in HTML with the hex entity for the Unicode replacement character.
+
+Check if the current character to escape has a name entity we should replace it with while grabbing the integer value of the character.
+
+Per OWASP recommendations, we\textquotesingle{}ll use upper hex entities for any other characters where a named entity does not exist.\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a63eb26467ba34974eb63c9a929f06497}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!isUtf8@{isUtf8}}
+\index{isUtf8@{isUtf8}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{isUtf8()}{isUtf8()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a63eb26467ba34974eb63c9a929f06497} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::is\+Utf8 (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if a given string appears to be valid UTF-\/8 or not.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_ab7b65193defba94d034306aaa4e30190}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!jsMatcher@{jsMatcher}}
+\index{jsMatcher@{jsMatcher}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{jsMatcher()}{jsMatcher()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_ab7b65193defba94d034306aaa4e30190} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::js\+Matcher (\begin{DoxyParamCaption}\item[{}]{\$matches}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Callback function for preg\+\_\+replace\+\_\+callback that applies Javascript escaping to all matches.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$array-\/key,string$>$} & \$matches \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a851a58917087a2b63e670a3bdea55702}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!toUtf8@{toUtf8}}
+\index{toUtf8@{toUtf8}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{toUtf8()}{toUtf8()}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a851a58917087a2b63e670a3bdea55702} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::to\+Utf8 (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts a string to UTF-\/8 from the base encoding. The base encoding is set via this
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_laminas_1_1_escaper_1_1_escaper_a5b2635dc57a71f1970593bd9ae65bfe0}\index{Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}!\$htmlNamedEntityMap@{\$htmlNamedEntityMap}}
+\index{\$htmlNamedEntityMap@{\$htmlNamedEntityMap}!Laminas\textbackslash{}Escaper\textbackslash{}Escaper@{Laminas\textbackslash{}Escaper\textbackslash{}Escaper}}
+\doxysubsubsection{\texorpdfstring{\$htmlNamedEntityMap}{\$htmlNamedEntityMap}}
+{\footnotesize\ttfamily \label{class_laminas_1_1_escaper_1_1_escaper_a5b2635dc57a71f1970593bd9ae65bfe0} 
+Laminas\textbackslash{}\+Escaper\textbackslash{}\+Escaper\+::\$html\+Named\+Entity\+Map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 34\ =>\ \textcolor{stringliteral}{'quot'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 38\ =>\ \textcolor{stringliteral}{'amp'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 60\ =>\ \textcolor{stringliteral}{'lt'},\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 62\ =>\ \textcolor{stringliteral}{'gt'},\ }
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Third\+Party/\+Escaper/Escaper.\+php\end{DoxyCompactItemize}

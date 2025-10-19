@@ -1,0 +1,80 @@
+\doxysection{Code\+Igniter\textbackslash{}Cache\textbackslash{}Response\+Cache Class Reference}
+\hypertarget{class_code_igniter_1_1_cache_1_1_response_cache}{}\label{class_code_igniter_1_1_cache_1_1_response_cache}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_cache_1_1_response_cache_a6ef2bd6b216fe4bc24b572542df8c335}\label{class_code_igniter_1_1_cache_1_1_response_cache_a6ef2bd6b216fe4bc24b572542df8c335} 
+{\bfseries \+\_\+\+\_\+construct} (Cache\+Config \$config, private readonly \mbox{\hyperlink{interface_code_igniter_1_1_cache_1_1_cache_interface}{Cache\+Interface}} \$cache)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_response_cache_a9a8d9d35a65ae78cc07a0873aae28a96}{set\+Ttl}} (int \$ttl)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_response_cache_a3ff28c0dc9c7bbca5b7c96e22ff3e0e2}{generate\+Cache\+Key}} (\$request)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_response_cache_a43201fcd7a842b3af61c4024f46dc967}{make}} (\$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_cache_1_1_response_cache_a4a88db9d4105fb7d74fda8415930155c}{get}} (\$request, \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}} \$response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Web Page Caching
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Response\+Cache\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_cache_1_1_response_cache_a3ff28c0dc9c7bbca5b7c96e22ff3e0e2}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}!generateCacheKey@{generateCacheKey}}
+\index{generateCacheKey@{generateCacheKey}!CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}}
+\doxysubsubsection{\texorpdfstring{generateCacheKey()}{generateCacheKey()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_response_cache_a3ff28c0dc9c7bbca5b7c96e22ff3e0e2} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Response\+Cache\+::generate\+Cache\+Key (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Generates the cache key to use from the current request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+CLIRequest | Incoming\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_cache_1_1_response_cache_a4a88db9d4105fb7d74fda8415930155c}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_response_cache_a4a88db9d4105fb7d74fda8415930155c} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Response\+Cache\+::get (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Gets the cached response for the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+CLIRequest | Incoming\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_cache_1_1_response_cache_a43201fcd7a842b3af61c4024f46dc967}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}!make@{make}}
+\index{make@{make}!CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_response_cache_a43201fcd7a842b3af61c4024f46dc967} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Response\+Cache\+::make (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_response_interface}{Response\+Interface}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Caches the response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+CLIRequest | Incoming\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_code_igniter_1_1_cache_1_1_response_cache_a9a8d9d35a65ae78cc07a0873aae28a96}\index{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}!setTtl@{setTtl}}
+\index{setTtl@{setTtl}!CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache@{CodeIgniter\textbackslash{}Cache\textbackslash{}ResponseCache}}
+\doxysubsubsection{\texorpdfstring{setTtl()}{setTtl()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_cache_1_1_response_cache_a9a8d9d35a65ae78cc07a0873aae28a96} 
+Code\+Igniter\textbackslash{}\+Cache\textbackslash{}\+Response\+Cache\+::set\+Ttl (\begin{DoxyParamCaption}\item[{int}]{\$ttl}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Cache/Response\+Cache.\+php\end{DoxyCompactItemize}

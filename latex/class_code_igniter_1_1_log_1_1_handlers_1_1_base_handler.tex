@@ -1,0 +1,77 @@
+\doxysection{Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Base\+Handler Class Reference}
+\hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler}{}\label{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Base\+Handler\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}Base\+Handler\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a4b0c021a3ee075b8d9bc11b0a28ecbd1}{\+\_\+\+\_\+construct}} (array \$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a00399835be424e54af0edf64d14fe90c}{can\+Handle}} (string \$level)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_ac1e40c030b4a48a0c7b160064301627f}{set\+Date\+Format}} (string \$format)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Handler\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_a79691a9e971d9279225acc91d9f84e93}{handle}} (\$level, \$message)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_ae20d8029a1d9d62952ed7a981d1ea5b0}\label{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_ae20d8029a1d9d62952ed7a981d1ea5b0} 
+{\bfseries \$handles}
+\item 
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a75c7bd86cffe06fc894dc0ba8208348f}\label{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a75c7bd86cffe06fc894dc0ba8208348f} 
+{\bfseries \$date\+Format} = \textquotesingle{}Y-\/m-\/d H\+:i\+:s\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for logging 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a4b0c021a3ee075b8d9bc11b0a28ecbd1}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a4b0c021a3ee075b8d9bc11b0a28ecbd1} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Constructor 
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_chrome_logger_handler_a0bc62b99c5e232d49dd35cde60cd189e}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Chrome\+Logger\+Handler}}, and \mbox{\hyperlink{class_code_igniter_1_1_log_1_1_handlers_1_1_errorlog_handler_a841457eed683e29022396c30308884cd}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Errorlog\+Handler}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a00399835be424e54af0edf64d14fe90c}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler}!canHandle@{canHandle}}
+\index{canHandle@{canHandle}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{canHandle()}{canHandle()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_a00399835be424e54af0edf64d14fe90c} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::can\+Handle (\begin{DoxyParamCaption}\item[{string}]{\$level}{}\end{DoxyParamCaption})}
+
+Checks whether the Handler will handle logging items of this log Level. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_ac057c8c646b95b9be9efb7e69fe0d115}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Handler\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_ac1e40c030b4a48a0c7b160064301627f}\index{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler}!setDateFormat@{setDateFormat}}
+\index{setDateFormat@{setDateFormat}!CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler@{CodeIgniter\textbackslash{}Log\textbackslash{}Handlers\textbackslash{}BaseHandler}}
+\doxysubsubsection{\texorpdfstring{setDateFormat()}{setDateFormat()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_log_1_1_handlers_1_1_base_handler_ac1e40c030b4a48a0c7b160064301627f} 
+Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Base\+Handler\+::set\+Date\+Format (\begin{DoxyParamCaption}\item[{string}]{\$format}{}\end{DoxyParamCaption})}
+
+Stores the date format to use while logging messages. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_log_1_1_handlers_1_1_handler_interface_ac65619dc049f96e4df63ee8fc7b6889a}{Code\+Igniter\textbackslash{}\+Log\textbackslash{}\+Handlers\textbackslash{}\+Handler\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Log/\+Handlers/Base\+Handler.\+php\end{DoxyCompactItemize}

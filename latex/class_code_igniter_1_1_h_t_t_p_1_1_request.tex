@@ -1,0 +1,178 @@
+\doxysection{Code\+Igniter\textbackslash{}HTTP\textbackslash{}Request Class Reference}
+\hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_request}{}\label{class_code_igniter_1_1_h_t_t_p_1_1_request}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Request\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}HTTP\textbackslash{}Request\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request_ae2485df518912121e981093f1b94a3aa}{\+\_\+\+\_\+construct}} (\$config=null)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request_a6f3a8de5e6f822d2a47851beae96c718}{set\+Method}} (string \$method)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request_a2c37ab0f56c12ef26400f12aeea9b7f9}{with\+Method}} (\$method)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_request_a86e4829d19cbfdbb95c2eebfd694582c}{get\+Uri}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Outgoing\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_a45e61e08e4309a6957128edb88effaf3}{\+\_\+\+\_\+construct}} (string \$method, ?\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_u_r_i}{URI}} \$uri=null, array \$\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0}{headers}}=\mbox{[}$\,$\mbox{]}, \$body=null, string \$version=\textquotesingle{}1.\+1\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_aa6d778173bc33d1ff9eb4c904bce7a38}{get\+Method}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_aa7f5bc23084e0efef134f86d85e91bc1}{with\+Uri}} (\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_u_r_i}{URI}} \$uri, \$preserve\+Host=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_afe4cc5b6d5bac8977cd43f674f3848f4}{get\+Body}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a7ac779bec32597d4367aa736bc5d2551}{get\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a94b9aea731f4906181b84374eb54b192}{get\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_ad5ab3a1b52182623349bf50019a05335}{has\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_ae9394625d43fc2608e509a398108b81d}{get\+Header\+Line}} (string \$name)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a3f581e06a1166651422dfab4c7f30b63}{get\+Protocol\+Version}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1404c237690d52896a1d7b0e93e191ed}{set\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a9a56354f94237570fd05a1f5d54d2599}{append\+Body}} (\$data)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a131427f3868bdf49f8bbeedc0d19090d}{populate\+Headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0ae876e8f9aea0ad068105fc50d738f0}{headers}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0b864465e53179641cd0e5683e20e624}{header}} (\$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_ad1bcf6ae6decb3c16cadb15ef1214002}{set\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a27f10d14218d4230df3a0819f09a8d8e}{remove\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a0630aad9e82c1eafa81d7fa35a9f8738}{append\+Header}} (string \$name, ?string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_a1972a71352cb4801abe4c1473e40b181}{prepend\+Header}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_message_interface_af6fbfa16a508383fb4adfb0fc9fdaf0e}{set\+Protocol\+Version}} (string \$version)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ace016a78647307a448c4b657338933df}{get\+IPAddress}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface_ade76e1ccb52bcbab29e6978fc7425d6d}{get\+Server}} (\$index=null, \$filter=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Outgoing\+Request}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$method}
+\item 
+{\bfseries \$uri}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Message}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$protocol\+Version}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_message_a77d40e242f8492f460971e952242ca6a}{\$valid\+Protocol\+Versions}}
+\item 
+{\bfseries \$body}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representation of an incoming, server-\/side HTTP request.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_request_ae2485df518912121e981093f1b94a3aa}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_request_ae2485df518912121e981093f1b94a3aa} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$config}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+App & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_request_a86e4829d19cbfdbb95c2eebfd694582c}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}!getUri@{getUri}}
+\index{getUri@{getUri}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{getUri()}{getUri()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_request_a86e4829d19cbfdbb95c2eebfd694582c} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+::get\+Uri (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the URI instance.
+
+\begin{DoxyReturn}{Returns}
+URI 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_ad38363996bcd6ee7d0f7026a209de487}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Outgoing\+Request}}.
+
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_request_a6f3a8de5e6f822d2a47851beae96c718}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}!setMethod@{setMethod}}
+\index{setMethod@{setMethod}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{setMethod()}{setMethod()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_request_a6f3a8de5e6f822d2a47851beae96c718} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+::set\+Method (\begin{DoxyParamCaption}\item[{string}]{\$method}{}\end{DoxyParamCaption})}
+
+Sets the request method. Used when spoofing the request.
+
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000078}{Deprecated}}]4.\+0.\+5 Use with\+Method() instead for immutability\end{DoxyRefDesc}
+
+
+@code\+Coverage\+Ignore 
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_ad42e98a4adc86d7ef6ba5a9543694ea1}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Outgoing\+Request}}.
+
+\Hypertarget{class_code_igniter_1_1_h_t_t_p_1_1_request_a2c37ab0f56c12ef26400f12aeea9b7f9}\index{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}!withMethod@{withMethod}}
+\index{withMethod@{withMethod}!CodeIgniter\textbackslash{}HTTP\textbackslash{}Request@{CodeIgniter\textbackslash{}HTTP\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{withMethod()}{withMethod()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_h_t_t_p_1_1_request_a2c37ab0f56c12ef26400f12aeea9b7f9} 
+Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Request\+::with\+Method (\begin{DoxyParamCaption}\item[{}]{\$method}{}\end{DoxyParamCaption})}
+
+Returns an instance with the specified method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_code_igniter_1_1_h_t_t_p_1_1_outgoing_request_aff3c47018e034c8e5024282c6f23ed3e}{Code\+Igniter\textbackslash{}\+HTTP\textbackslash{}\+Outgoing\+Request}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+HTTP/Request.\+php\end{DoxyCompactItemize}

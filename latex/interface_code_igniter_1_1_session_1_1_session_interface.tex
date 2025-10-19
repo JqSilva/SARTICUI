@@ -1,0 +1,385 @@
+\doxysection{Code\+Igniter\textbackslash{}Session\textbackslash{}Session\+Interface Interface Reference}
+\hypertarget{interface_code_igniter_1_1_session_1_1_session_interface}{}\label{interface_code_igniter_1_1_session_1_1_session_interface}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Session\textbackslash{}Session\+Interface\+:
+% FIG 0
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a1fb7805ae9d2eda35591fb7de69d3a95}{regenerate}} (bool \$\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a143f6d79a89b033bf54706416ab75ece}{destroy}}=false)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a143f6d79a89b033bf54706416ab75ece}{destroy}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a16091d96e60067e62d9d21b0c3b44337}{set}} (\$data, \$value=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_aeef6d11f06a225e80d40515d1a87fc8d}{get}} (?string \$key=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_ab61d32fe590c16ae3be1288899e6cd55}{has}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_aa033e974ca8bff89a34aaa1269aadaac}{remove}} (\$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a8aa20b4b3d9b98fd66ab3201b32322e4}{set\+Flashdata}} (\$data, \$value=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_adf487e2e9d5c028e9b7d0c38fa202709}{get\+Flashdata}} (?string \$key=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a84ba5179ef30fe81ee5fab61730f1ba3}{keep\+Flashdata}} (\$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_aa37e870da28eaba26680af361689cd2d}{mark\+As\+Flashdata}} (\$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_af7109ca2a4be1653a48607352e2b097a}{unmark\+Flashdata}} (\$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a4c76f89b8a53f5c642f8b986d9acfc84}{get\+Flash\+Keys}} ()
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a9493d7b25c9ccbaebbb252654364d688}{set\+Tempdata}} (\$data, \$value=null, int \$ttl=300)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a4f8f6fc88ab3dd335458906d9e359a77}{get\+Tempdata}} (?string \$key=null)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a919c5abf92f34df788d29ff4a1813438}{remove\+Tempdata}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_af20b46c351209d90b0ef39e2e39936e5}{mark\+As\+Tempdata}} (\$key, int \$ttl=300)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a718dcbbaa38046c3150c0e017c03db52}{unmark\+Tempdata}} (\$key)
+\item 
+\mbox{\hyperlink{interface_code_igniter_1_1_session_1_1_session_interface_a6af723ddaf77aa59e6267722b6a9c3b8}{get\+Temp\+Keys}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Expected behavior of a session container used with \doxylink{namespace_code_igniter}{Code\+Igniter}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a143f6d79a89b033bf54706416ab75ece}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!destroy@{destroy}}
+\index{destroy@{destroy}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a143f6d79a89b033bf54706416ab75ece} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Destroys the current session. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_ac159f11cf078c3f466eb3e4db1cf7b83}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_aeef6d11f06a225e80d40515d1a87fc8d}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!get@{get}}
+\index{get@{get}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_aeef6d11f06a225e80d40515d1a87fc8d} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::get (\begin{DoxyParamCaption}\item[{?string}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get user data that has been set in the session.
+
+If the property exists as "{}normal"{}, returns it. Otherwise, returns an array of any temp or flash data values with the property key.
+
+Replaces the legacy method \$session-\/\texorpdfstring{$>$}{>}userdata();
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string | null & {\em \$key} & Identifier of the session property to retrieve\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null The property value(s) 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a1080f91ade60d64f79ea92e723b637f9}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_adf487e2e9d5c028e9b7d0c38fa202709}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!getFlashdata@{getFlashdata}}
+\index{getFlashdata@{getFlashdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{getFlashdata()}{getFlashdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_adf487e2e9d5c028e9b7d0c38fa202709} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::get\+Flashdata (\begin{DoxyParamCaption}\item[{?string}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Retrieve one or more items of flash data from the session.
+
+If the item key is null, return all flashdata.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Property identifier\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null The requested property value, or an associative array of them 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_abbc370833d7300d653e9ca97f92fc2c7}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a4c76f89b8a53f5c642f8b986d9acfc84}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!getFlashKeys@{getFlashKeys}}
+\index{getFlashKeys@{getFlashKeys}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{getFlashKeys()}{getFlashKeys()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a4c76f89b8a53f5c642f8b986d9acfc84} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::get\+Flash\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve all of the keys for session data marked as flashdata.
+
+\begin{DoxyReturn}{Returns}
+array The property names of all flashdata 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_ad09d84141bc1d5244c1a2cf4804e7acb}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a4f8f6fc88ab3dd335458906d9e359a77}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!getTempdata@{getTempdata}}
+\index{getTempdata@{getTempdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{getTempdata()}{getTempdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a4f8f6fc88ab3dd335458906d9e359a77} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::get\+Tempdata (\begin{DoxyParamCaption}\item[{?string}]{\$key}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns either a single piece of tempdata, or all temp data currently in the session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Session data key\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null Session data value or null if not found. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a824756eaa45cd97d81f784ef91df8159}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a6af723ddaf77aa59e6267722b6a9c3b8}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!getTempKeys@{getTempKeys}}
+\index{getTempKeys@{getTempKeys}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{getTempKeys()}{getTempKeys()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a6af723ddaf77aa59e6267722b6a9c3b8} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::get\+Temp\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve the keys of all session data that have been marked as temporary data. 
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a2578357fa2dc0c80c94b305df8d42b6b}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_ab61d32fe590c16ae3be1288899e6cd55}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!has@{has}}
+\index{has@{has}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_ab61d32fe590c16ae3be1288899e6cd55} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::has (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns whether an index exists in the session array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Identifier of the session property we are interested in. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_af6278e221b6dfdf7bcca7db219e48062}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a84ba5179ef30fe81ee5fab61730f1ba3}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!keepFlashdata@{keepFlashdata}}
+\index{keepFlashdata@{keepFlashdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{keepFlashdata()}{keepFlashdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a84ba5179ef30fe81ee5fab61730f1ba3} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::keep\+Flashdata (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Keeps a single piece of flash data alive for one more request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$key} & Property identifier or array of them \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_aa2d42205994649699f8fe454cb821367}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_aa37e870da28eaba26680af361689cd2d}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!markAsFlashdata@{markAsFlashdata}}
+\index{markAsFlashdata@{markAsFlashdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{markAsFlashdata()}{markAsFlashdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_aa37e870da28eaba26680af361689cd2d} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::mark\+As\+Flashdata (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Mark a session property or properties as flashdata.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$key} & Property identifier or array of them\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if any of the properties are not already set 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a770468527ac24dabe2d5c9c9f5f8fa29}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_af20b46c351209d90b0ef39e2e39936e5}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!markAsTempdata@{markAsTempdata}}
+\index{markAsTempdata@{markAsTempdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{markAsTempdata()}{markAsTempdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_af20b46c351209d90b0ef39e2e39936e5} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::mark\+As\+Tempdata (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{int}]{\$ttl}{ = {\ttfamily 300}}\end{DoxyParamCaption})}
+
+Mark one of more pieces of data as being temporary, meaning that it has a set lifespan within the session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$key} & Property identifier or array of them \\
+\hline
+int & {\em \$ttl} & Time to live, in seconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool False if any of the properties were not set 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_aa6d27b7effe6ed8d50c608b9ac42a017}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a1fb7805ae9d2eda35591fb7de69d3a95}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!regenerate@{regenerate}}
+\index{regenerate@{regenerate}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{regenerate()}{regenerate()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a1fb7805ae9d2eda35591fb7de69d3a95} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::regenerate (\begin{DoxyParamCaption}\item[{bool}]{\$destroy}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Regenerates the session ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$destroy} & Should old session data be destroyed? \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a24dc29b64caa308a17bc47fa76f91ac3}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}, and \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_session_af12037be3a10fc61ed9b6eb41352e2b2}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_aa033e974ca8bff89a34aaa1269aadaac}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!remove@{remove}}
+\index{remove@{remove}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_aa033e974ca8bff89a34aaa1269aadaac} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::remove (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove one or more session properties.
+
+If \$key is an array, it is interpreted as an array of string property identifiers to remove. Otherwise, it is interpreted as the identifier of a specific session property to remove.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$key} & Identifier of the session property or properties to remove. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a58f2df7a7011666bfd60e3531714bd8c}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a919c5abf92f34df788d29ff4a1813438}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!removeTempdata@{removeTempdata}}
+\index{removeTempdata@{removeTempdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{removeTempdata()}{removeTempdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a919c5abf92f34df788d29ff4a1813438} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::remove\+Tempdata (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Removes a single piece of temporary data from the session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Session data key \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_acdfbe7b654a9bda8c6f0b3f392f3b84d}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a16091d96e60067e62d9d21b0c3b44337}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!set@{set}}
+\index{set@{set}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a16091d96e60067e62d9d21b0c3b44337} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::set (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets user data into the session.
+
+If \$data is a string, then it is interpreted as a session property key, and \$value is expected to be non-\/null.
+
+If \$data is an array, it is expected to be an array of key/value pairs to be set as session properties.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$data} & Property name or associative array of properties \\
+\hline
+array | bool | float | int | object | string | null & {\em \$value} & Property value if single key provided \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_ae975b357e958603e252d925588fed156}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a8aa20b4b3d9b98fd66ab3201b32322e4}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!setFlashdata@{setFlashdata}}
+\index{setFlashdata@{setFlashdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{setFlashdata()}{setFlashdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a8aa20b4b3d9b98fd66ab3201b32322e4} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::set\+Flashdata (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sets data into the session that will only last for a single request. Perfect for use with single-\/use status update messages.
+
+If \$data is an array, it is interpreted as an associative array of key/value pairs for flashdata properties. Otherwise, it is interpreted as the identifier of a specific flashdata property, with \$value containing the property value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$data} & Property identifier or associative array of properties \\
+\hline
+array | string & {\em \$value} & Property value if \$data is a scalar \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a3f91b3d47ca0361dfed82a1054964b49}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a9493d7b25c9ccbaebbb252654364d688}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!setTempdata@{setTempdata}}
+\index{setTempdata@{setTempdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{setTempdata()}{setTempdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a9493d7b25c9ccbaebbb252654364d688} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::set\+Tempdata (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{}]{\$value}{ = {\ttfamily null}, }\item[{int}]{\$ttl}{ = {\ttfamily 300}}\end{DoxyParamCaption})}
+
+Sets new data into the session, and marks it as temporary data with a set lifespan.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$data} & Session data key or associative array of items \\
+\hline
+array | bool | float | int | object | string | null & {\em \$value} & Value to store \\
+\hline
+int & {\em \$ttl} & Time-\/to-\/live in seconds \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a7936054fac01d4b7e81fd33867c8bed1}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_af7109ca2a4be1653a48607352e2b097a}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!unmarkFlashdata@{unmarkFlashdata}}
+\index{unmarkFlashdata@{unmarkFlashdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{unmarkFlashdata()}{unmarkFlashdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_af7109ca2a4be1653a48607352e2b097a} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::unmark\+Flashdata (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Unmark data in the session as flashdata.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$key} & Property identifier or array of them \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_ac9414d78b9f93bab735d9cfee1f733e8}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+\Hypertarget{interface_code_igniter_1_1_session_1_1_session_interface_a718dcbbaa38046c3150c0e017c03db52}\index{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}!unmarkTempdata@{unmarkTempdata}}
+\index{unmarkTempdata@{unmarkTempdata}!CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface@{CodeIgniter\textbackslash{}Session\textbackslash{}SessionInterface}}
+\doxysubsubsection{\texorpdfstring{unmarkTempdata()}{unmarkTempdata()}}
+{\footnotesize\ttfamily \label{interface_code_igniter_1_1_session_1_1_session_interface_a718dcbbaa38046c3150c0e017c03db52} 
+Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session\+Interface\+::unmark\+Tempdata (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Unmarks temporary data in the session, effectively removing its lifespan and allowing it to live as long as the session does.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$key} & Property identifier or array of them \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_code_igniter_1_1_session_1_1_session_a8e56ed693cb28b589b0c7e1ce570655e}{Code\+Igniter\textbackslash{}\+Session\textbackslash{}\+Session}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Session/Session\+Interface.\+php\end{DoxyCompactItemize}

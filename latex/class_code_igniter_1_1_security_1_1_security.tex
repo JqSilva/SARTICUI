@@ -1,0 +1,260 @@
+\doxysection{Code\+Igniter\textbackslash{}Security\textbackslash{}Security Class Reference}
+\hypertarget{class_code_igniter_1_1_security_1_1_security}{}\label{class_code_igniter_1_1_security_1_1_security}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+
+
+Inheritance diagram for Code\+Igniter\textbackslash{}Security\textbackslash{}Security\+:
+% FIG 0
+
+
+Collaboration diagram for Code\+Igniter\textbackslash{}Security\textbackslash{}Security\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_affa02dc60a53ecdc418eb9d18a3cc679}{\+\_\+\+\_\+construct}} (Security\+Config \$config)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_a04bd00e4daccb7acc53d9774ae945dab}{verify}} (\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}} \$request)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_a521026e41e4f7f1aa596c4def2a82ec1}{get\+Hash}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_a511aa9dc6ba5927572cbef2b960d8864}{get\+Token\+Name}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_adb78d9219e729a243aabc9eacda49f5b}{get\+Header\+Name}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_af699b07731f1c379578ff88b933f057c}{get\+Cookie\+Name}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_a11d0fbbed914d66c8490109899b920b2}{should\+Redirect}} ()
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_a675562b87dcacf28041267a5b98976f5}{sanitize\+Filename}} (string \$str, bool \$relative\+Path=false)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_a610bce8024a714a8c7d2827c938af65c}{generate\+Hash}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_ad724f3c4dc04ee7dd8ad7d948f1f441e}\label{class_code_igniter_1_1_security_1_1_security_ad724f3c4dc04ee7dd8ad7d948f1f441e} 
+const {\bfseries CSRF\+\_\+\+PROTECTION\+\_\+\+COOKIE} = \textquotesingle{}cookie\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_ae4ef9a568b477e5d9e49565c1461a1f6}\label{class_code_igniter_1_1_security_1_1_security_ae4ef9a568b477e5d9e49565c1461a1f6} 
+const {\bfseries CSRF\+\_\+\+PROTECTION\+\_\+\+SESSION} = \textquotesingle{}session\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_a4d0d12c2d4ecd05c6f7aa9622d90291f}{randomize}} (string \$hash)
+\item 
+\mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_ae95a3f7e8f2e804455cacfa4e9b78dcf}{derandomize}} (string \$token)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a76097b6ff4a332981550c9821edcf0a5}\label{class_code_igniter_1_1_security_1_1_security_a76097b6ff4a332981550c9821edcf0a5} 
+const {\bfseries CSRF\+\_\+\+HASH\+\_\+\+BYTES} = 16
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_abc05e77a0bc1fe0fddcdbcb7c0eb42a0}\label{class_code_igniter_1_1_security_1_1_security_abc05e77a0bc1fe0fddcdbcb7c0eb42a0} 
+{\bfseries \$csrf\+Protection} = self\+::\+CSRF\+\_\+\+PROTECTION\+\_\+\+COOKIE
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a1f92b0c300cad6d1fa07d12088003692}\label{class_code_igniter_1_1_security_1_1_security_a1f92b0c300cad6d1fa07d12088003692} 
+{\bfseries \$token\+Randomize} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a86b19130f7483e58f904244a71418fa7}\label{class_code_igniter_1_1_security_1_1_security_a86b19130f7483e58f904244a71418fa7} 
+{\bfseries \$hash}
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a08322ea5fc8324aa5e14a905c2ff1b48}\label{class_code_igniter_1_1_security_1_1_security_a08322ea5fc8324aa5e14a905c2ff1b48} 
+{\bfseries \$token\+Name} = \textquotesingle{}csrf\+\_\+token\+\_\+name\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a3aee53b05928cc98ec78bd48bead5acb}\label{class_code_igniter_1_1_security_1_1_security_a3aee53b05928cc98ec78bd48bead5acb} 
+{\bfseries \$header\+Name} = \textquotesingle{}X-\/CSRF-\/TOKEN\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a7598529f79585d1b99c875c246d49299}\label{class_code_igniter_1_1_security_1_1_security_a7598529f79585d1b99c875c246d49299} 
+{\bfseries \$cookie}
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a9b757d1d403c65a77ff46c9dc2c850c2}\label{class_code_igniter_1_1_security_1_1_security_a9b757d1d403c65a77ff46c9dc2c850c2} 
+{\bfseries \$cookie\+Name} = \textquotesingle{}csrf\+\_\+cookie\+\_\+name\textquotesingle{}
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_acce6a2233426a06862051566aaba70c1}\label{class_code_igniter_1_1_security_1_1_security_acce6a2233426a06862051566aaba70c1} 
+{\bfseries \$expires} = 7200
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a248a94611b675782c5944104f3d3cdea}\label{class_code_igniter_1_1_security_1_1_security_a248a94611b675782c5944104f3d3cdea} 
+{\bfseries \$regenerate} = true
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a5e1826300d6bb5265c324a4541dee6ab}\label{class_code_igniter_1_1_security_1_1_security_a5e1826300d6bb5265c324a4541dee6ab} 
+{\bfseries \$redirect} = false
+\item 
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a6bc834c37ae29d93aa1bfe26b2ca1f3a}\label{class_code_igniter_1_1_security_1_1_security_a6bc834c37ae29d93aa1bfe26b2ca1f3a} 
+{\bfseries \$samesite} = Cookie\+::\+SAMESITE\+\_\+\+LAX
+\item 
+Security\+Config \mbox{\hyperlink{class_code_igniter_1_1_security_1_1_security_a4c3fdf703b22a536d4a87e7c9f1c4744}{\$config}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Security
+
+Provides methods that help protect your site against Cross-\/\+Site Request Forgery attacks.
+
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+Test 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_affa02dc60a53ecdc418eb9d18a3cc679}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_affa02dc60a53ecdc418eb9d18a3cc679} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Security\+Config}]{\$config}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+Stores our configuration and fires off the init() method to setup initial state. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_ae95a3f7e8f2e804455cacfa4e9b78dcf}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!derandomize@{derandomize}}
+\index{derandomize@{derandomize}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{derandomize()}{derandomize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_ae95a3f7e8f2e804455cacfa4e9b78dcf} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::derandomize (\begin{DoxyParamCaption}\item[{string}]{\$token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Derandomize the token.
+
+@params string \$token CSRF token
+
+\begin{DoxyReturn}{Returns}
+string CSRF hash
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & "{}hex2bin()\+: Hexadecimal input string must have an even length"{} \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a610bce8024a714a8c7d2827c938af65c}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!generateHash@{generateHash}}
+\index{generateHash@{generateHash}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{generateHash()}{generateHash()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_a610bce8024a714a8c7d2827c938af65c} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::generate\+Hash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Generates (Regenerates) the CSRF Hash. \Hypertarget{class_code_igniter_1_1_security_1_1_security_af699b07731f1c379578ff88b933f057c}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!getCookieName@{getCookieName}}
+\index{getCookieName@{getCookieName}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{getCookieName()}{getCookieName()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_af699b07731f1c379578ff88b933f057c} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::get\+Cookie\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the CSRF Cookie Name. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_security_1_1_security_interface_a1fe23830627e47b0ec4ab63575b0cbdd}{Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a521026e41e4f7f1aa596c4def2a82ec1}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!getHash@{getHash}}
+\index{getHash@{getHash}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{getHash()}{getHash()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_a521026e41e4f7f1aa596c4def2a82ec1} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::get\+Hash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the CSRF Token. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_security_1_1_security_interface_a05e865caec751b705d79bf3cb1a11dd3}{Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_adb78d9219e729a243aabc9eacda49f5b}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!getHeaderName@{getHeaderName}}
+\index{getHeaderName@{getHeaderName}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{getHeaderName()}{getHeaderName()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_adb78d9219e729a243aabc9eacda49f5b} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::get\+Header\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the CSRF Header Name. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_security_1_1_security_interface_a78c218df16d9a97ad04c8bc65a2df837}{Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a511aa9dc6ba5927572cbef2b960d8864}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!getTokenName@{getTokenName}}
+\index{getTokenName@{getTokenName}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{getTokenName()}{getTokenName()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_a511aa9dc6ba5927572cbef2b960d8864} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::get\+Token\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the CSRF Token Name. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_security_1_1_security_interface_af465937cdbc647c855c9bd9b05b3f406}{Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a4d0d12c2d4ecd05c6f7aa9622d90291f}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!randomize@{randomize}}
+\index{randomize@{randomize}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{randomize()}{randomize()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_a4d0d12c2d4ecd05c6f7aa9622d90291f} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::randomize (\begin{DoxyParamCaption}\item[{string}]{\$hash}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Randomize hash to avoid BREACH attacks.
+
+@params string \$hash CSRF hash
+
+\begin{DoxyReturn}{Returns}
+string CSRF token 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_code_igniter_1_1_test_1_1_mock_1_1_mock_security_a80fd9054b786046af2bc358f6e001fc1}{Code\+Igniter\textbackslash{}\+Test\textbackslash{}\+Mock\textbackslash{}\+Mock\+Security}}.
+
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a675562b87dcacf28041267a5b98976f5}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!sanitizeFilename@{sanitizeFilename}}
+\index{sanitizeFilename@{sanitizeFilename}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{sanitizeFilename()}{sanitizeFilename()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_a675562b87dcacf28041267a5b98976f5} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::sanitize\+Filename (\begin{DoxyParamCaption}\item[{string}]{\$str}{, }\item[{bool}]{\$relative\+Path}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Sanitize Filename
+
+Tries to sanitize filenames in order to prevent directory traversal attempts and other security threats, which is particularly useful for files that were supplied via user input.
+
+If it is acceptable for the user input to include relative paths, e.\+g. file/in/some/approved/folder.\+txt, you can set the second optional parameter, \$relative\+Path to TRUE.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & Input file name \\
+\hline
+bool & {\em \$relative\+Path} & Whether to preserve paths \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_security_1_1_security_interface_a953e747d227ea042cf0d662ff870b149}{Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a11d0fbbed914d66c8490109899b920b2}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!shouldRedirect@{shouldRedirect}}
+\index{shouldRedirect@{shouldRedirect}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{shouldRedirect()}{shouldRedirect()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_a11d0fbbed914d66c8490109899b920b2} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::should\+Redirect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Check if request should be redirect on failure. 
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_security_1_1_security_interface_a6f3f86172fc44947215287626951ee11}{Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+Interface}}.
+
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a04bd00e4daccb7acc53d9774ae945dab}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!verify@{verify}}
+\index{verify@{verify}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_a04bd00e4daccb7acc53d9774ae945dab} 
+Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::verify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_code_igniter_1_1_h_t_t_p_1_1_request_interface}{Request\+Interface}}}]{\$request}{}\end{DoxyParamCaption})}
+
+CSRF verification.
+
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Security\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_code_igniter_1_1_security_1_1_security_interface_ae5b2ee842a2f84e7bb98d815038ce4d1}{Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_code_igniter_1_1_security_1_1_security_a4c3fdf703b22a536d4a87e7c9f1c4744}\index{CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}!\$config@{\$config}}
+\index{\$config@{\$config}!CodeIgniter\textbackslash{}Security\textbackslash{}Security@{CodeIgniter\textbackslash{}Security\textbackslash{}Security}}
+\doxysubsubsection{\texorpdfstring{\$config}{\$config}}
+{\footnotesize\ttfamily \label{class_code_igniter_1_1_security_1_1_security_a4c3fdf703b22a536d4a87e7c9f1c4744} 
+Security\+Config Code\+Igniter\textbackslash{}\+Security\textbackslash{}\+Security\+::\$config\hspace{0.3cm}{\ttfamily [protected]}}
+
+Security \doxylink{namespace_config}{Config} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/\+Security/Security.\+php\end{DoxyCompactItemize}
