@@ -9,7 +9,9 @@ use CodeIgniter\Router\RouteCollection;
 
 // Rutas de Controladores
 
-// Incio
+// Login
+$routes->get('/login', 'Auth::loginForm');
+
 $routes->get('/', 'Home::index');
 
 // Sub-Vistas
