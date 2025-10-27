@@ -1,10 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./app/Views/**/*.php",
-    "./public/**/*.html",
-    "./app/Controllers/**/*.php"
-  ],
-  prefix: "tw-",
-  corePlugins: { preflight: false }
-};
+  prefix: 'tw-',
+  content: ["./app/Views/**/*.php", "./public/**/*.js"],
+  theme: { extend: {} },
+  plugins: [],
+  // Si tenías esto, bórralo o ponlo en true:
+  // corePlugins: { preflight: true },
+}

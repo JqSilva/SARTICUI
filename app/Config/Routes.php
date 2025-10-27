@@ -10,9 +10,15 @@ use CodeIgniter\Router\RouteCollection;
 // Rutas de Controladores
 
 // Login
-$routes->get('/login', 'Auth::loginForm');
+$routes->get('/', 'Auth::showLogin');
 
-$routes->get('/', 'Home::index');
+$routes->get('login', 'Auth::showLogin');   
+$routes->post('login', 'Auth::doLogin');
+$routes->get('logout', 'Auth::logout');
+
+
+// Home
+$routes->get('dashboard', 'Home::index');
 
 // Sub-Vistas
 $routes->get('/catalogosistema', 'Home::catalogoSistema');
