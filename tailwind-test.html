@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Prueba Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+      .eye-icon {
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+      .eye-icon:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen flex items-center justify-center bg-[#9ab5d9]">
+
+    <div class="bg-white rounded-3xl w-[450px] px-10 pt-6 pb-10 shadow-lg border border-slate-100">
+      <div class="flex flex-col items-center">
+        <img src="logo.png" alt="Logo" class="w-[200px] mb-2"/>
+        <h1 class="text-2xl font-bold text-[#262626]">Bienvenido</h1>
+        <p class="text-slate-500 text-sm">Por favor ingresa tus credenciales</p>
+      </div>
+
+      <form class="mt-8">
+        <div>
+          <label for="rut" class="block text-sm font-semibold text-slate-700 px-4 py-2">RUT</label>
+          <input id="rut" type="text" placeholder="Ingresa tu RUT"
+                 class="w-full px-4 py-2.5 mb-4 rounded-xl border border-slate-300 text-slate-800
+                        focus:outline-none focus:ring-2 focus:ring-[#0f398b] focus:border-transparent" />
+        </div>
+
+        <div>
+            <label for="password" class="block text-sm font-semibold text-slate-700 px-4 py-2">Contraseña</label>
+            
+            <div class="flex items-center justify-between border border-slate-300 rounded-xl focus-within:ring-2 focus-within:ring-[#0f398b] focus-within:border-transparent">
+                <input id="password" type="password" placeholder="Ingresa tu contraseña"
+                    class="w-full px-4 py-2.5 rounded-xl text-slate-800 bg-transparent focus:outline-none" />
+                
+                <!-- Botón ojo -->
+                <button type="button" id="togglePassword"
+                        class="px-3 text-gray-500 hover:text-[#0f398b] focus:outline-none flex-shrink-0">
+                <!-- Ojo cerrado -->
+                <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" class="eye-icon h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3l18 18M9.88 9.88A3 3 0 0012 15a3 3 0 002.12-.88M15 12a3 3 0 00-3-3m0 0a3 3 0 00-2.12.88M2.458 12C3.732 7.943 7.522 5 12 5c4.478 0 8.268 2.943 9.542 7-.275.908-.664 1.77-1.152 2.558M15.536 15.536A8.969 8.969 0 0112 17c-4.478 0-8.268-2.943-9.542-7" />
+                </svg>
+                <!-- Ojo abierto -->
+                <svg id="eyeOpen" xmlns="http://www.w3.org/2000/svg" class="eye-icon h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.522 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.478 0-8.268-2.943-9.542-7z" />
+                </svg>
+                </button>
+            </div>
+        </div>
+
+        <a href="#" class="block text-center mt-4 mb-4 text-sm text-[#0f398b] hover:text-[#6D7CFD] ">¿Olvidaste tu contraseña?</a>
+
+        <button type="submit"
+                class="w-full py-2.5 mt-6 rounded-lg font-semibold text-white
+                       bg-[#0f398b] hover:bg-[#1347ae] transition-colors">
+          Ingresar
+        </button>
+      </form>
+    </div>
+
+    <!-- Script para alternar visibilidad -->
+    <script>
+      const togglePassword = document.getElementById("togglePassword");
+      const passwordInput = document.getElementById("password");
+      const eyeOpen = document.getElementById("eyeOpen");
+      const eyeClosed = document.getElementById("eyeClosed");
+
+      togglePassword.addEventListener("click", () => {
+        const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+        passwordInput.setAttribute("type", type);
+        eyeOpen.classList.toggle("hidden");
+        eyeClosed.classList.toggle("hidden");
+      });
+    </script>
+
+  </body>
+</html>
