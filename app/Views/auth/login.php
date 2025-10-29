@@ -8,12 +8,12 @@
     <p class="tw-text-slate-500 tw-text-sm">Por favor ingresa tus credenciales</p>
   </div>
 
-  <form class="tw-mt-8" method="post" action="<?= site_url('login') ?>">
+  <form class="tw-mt-8" method="post" action="<?= base_url('auth/doLogin') ?>">
 
 
     <div>
-      <label for="rut" class="tw-block tw-text-sm tw-font-semibold tw-text-slate-700 tw-px-4 tw-py-2">RUT</label>
-      <input id="rut" name="rut" type="text" placeholder="Ingresa tu RUT"
+      <label for="username" class="tw-block tw-text-sm tw-font-semibold tw-text-slate-700 tw-px-4 tw-py-2">Usuario</label>
+      <input id="username" name="username" type="text" placeholder="Nombre de usuario"
              class="tw-w-full tw-px-4 tw-py-2.5 tw-mb-4 tw-rounded-xl tw-border tw-border-slate-300 tw-text-slate-800
                     focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-[#0f398b] focus:tw-border-transparent" />
     </div>
