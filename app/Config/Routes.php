@@ -20,7 +20,40 @@ $routes->get('logout', 'Auth::logout');
 // Home
 $routes->get('dashboard', 'Home::index');
 
-// Sub-Vistas
+// Dashboards diferenciados por rol
+$routes->get('base', 'Base::dashboard');
+$routes->get('bodeguero', 'Bodeguero::dashboard');
+$routes->get('intervencionista', 'Intervencionista::dashboard');
+$routes->get('administrador', 'Administrador::dashboard');
+
+
+
+// Rutas de Insumos
+$routes->get('insumos', 'InsumoController::index'); // genérico (fallback)
+
+$routes->group('bodeguero', function($routes) {
+    $routes->get('insumos', 'InsumoController::indexBodeguero');
+});
+
+$routes->group('administrador', function($routes) {
+    $routes->get('insumos', 'InsumoController::indexAdmin');
+});
+
+
+
+
+$routes->get('bodeguero/insumos', 'InsumoController::index');
+$routes->get('bodeguero/insumos/create', 'InsumoController::create');
+$routes->post('bodeguero/insumos/store', 'InsumoController::store');
+$routes->get('bodeguero/insumos/edit/(:num)', 'InsumoController::edit/$1');
+$routes->post('bodeguero/insumos/update/(:num)', 'InsumoController::update/$1');
+$routes->get('bodeguero/insumos/delete/(:num)', 'InsumoController::delete/$1');
+
+
+
+
+
+
 $routes->get('/catalogosistema', 'Home::catalogoSistema');
 $routes->get('/relacioninsumos', 'Home::relacionInsumos');
 $routes->get('/relacionlotes', 'Home::relacionLotes');
