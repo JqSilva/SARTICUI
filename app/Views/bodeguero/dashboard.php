@@ -47,6 +47,7 @@
 </style>
 
 <body style="background-color: #9AB5D9;">
+<p>Bienvenido, <?= esc(session('nombre')) ?>.</p>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3 col-lg-2"></div>
@@ -88,3 +89,4 @@
 </body>
 
 <?= $this->endSection() ?>
+<a href="<?= base_url('logout') ?>" class="tw-text-red-500">Cerrar sesión</a>
