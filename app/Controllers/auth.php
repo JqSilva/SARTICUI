@@ -1,45 +1,49 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\UsuarioModel;
 
-use CodeIgniter\Controller;
-
-class Auth extends Controller
+class Auth extends BaseController
 {
-    public function showLogin()
+    public function login()
     {
-        // si ya está logeado, manda al dashboard
-        if (session('isLoggedIn')) {
-            return redirect()->to('dashboard');
-        }
-        return view('auth/login', ['title' => 'Ingreso']);
+        helper(['form']);
+        echo view('auth/login');
     }
 
     public function doLogin()
     {
-        // credenciales hardcode para pruebas
-        $validUsers = [
-            '11111111-1' => '1234',
-            '22222222-2' => 'abcd',
-        ];
+        $session = session();
+        $userModel = new UsuarioModel();
 
-        $rut  = trim((string) $this->request->getPost('rut'));
-        $pass = (string) $this->request->getPost('password');
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
 
-        if (isset($validUsers[$rut]) && $validUsers[$rut] === $pass) {
-            session()->set([
-                'isLoggedIn' => true,
-                'rut'        => $rut,
+        $user = $userModel
+            ->select('USUARIO.*, PERFIL.NOMBRE_PERFIL')
+            ->join('PERFIL', 'PERFIL.ID_PERFIL = USUARIO.ID_PERFIL_USUARIO')
+            ->where('NOMBRE_USUARIO', $username)
+            ->first();
+
+        if ($user && password_verify($password, $user['CONTRASENA_USUARIO'])) {
+            $session->set([
+                'id' => $user['ID_USUARIO'],
+                'nombre' => $user['NOMBRE_USUARIO'],
+                'rol' => strtolower($user['NOMBRE_PERFIL']),
+                'logged_in' => true
             ]);
-            return redirect()->to('dashboard');
-        }
 
-        return redirect()->back()->withInput()->with('error', 'Credenciales inválidas');
+            return redirect()->to(
+                strtolower($user['NOMBRE_PERFIL']) === 'administrador' ? '/admin' : '/bodeguero'
+            );
+        } else {
+            return redirect()->back()->with('error', 'Credenciales inválidas');
+        }
     }
 
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('login');
+        return redirect()->to('/login');
     }
 }

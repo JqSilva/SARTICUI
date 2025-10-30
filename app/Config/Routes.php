@@ -10,11 +10,20 @@ use CodeIgniter\Router\RouteCollection;
 // Rutas de Controladores
 
 // Login
-$routes->get('/', 'Auth::showLogin');
+$routes->get('/', 'Auth::login');
+$routes->get('/login', 'Auth::login');
+$routes->post('/auth/doLogin', 'Auth::doLogin');
+$routes->get('/logout', 'Auth::logout');
 
-$routes->get('login', 'Auth::showLogin');   
-$routes->post('login', 'Auth::doLogin');
-$routes->get('logout', 'Auth::logout');
+// Dashboards diferenciados por rol
+$routes->get('/admin', function() {
+    echo view('admin/dashboard');
+});
+
+
+$routes->get('/bodeguero', function() {
+    echo view('bodeguero/dashboard');
+});
 
 
 // Home
