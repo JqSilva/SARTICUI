@@ -34,7 +34,7 @@ class Auth extends BaseController
             ]);
 
             return redirect()->to(
-                strtolower($user['NOMBRE_PERFIL']) === 'administrador' ? '/admin' : '/bodeguero'
+                strtolower($user['NOMBRE_PERFIL']) === 'administrador' ? '/administrador' : '/bodeguero'
             );
         } else {
             return redirect()->back()->with('error', 'Credenciales inválidas');

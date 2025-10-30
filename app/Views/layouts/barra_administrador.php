@@ -7,6 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="<?= base_url('assets/css/tw.css') ?>" rel="stylesheet">
+
+
+
     <style>
         body {
             font-family: 'Poppins', sans-serif !important;
@@ -69,7 +74,7 @@
         </button>
     </nav>
 
-    <div class="d-flex">
+    <div class="d-flex tw-w-full">
         <!-- Barra lateral -->
         <nav class="sidebar" id="sidebar">
             <div class="text-center mb-3">
@@ -80,10 +85,10 @@
 
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('/') ?>'">🏠 Inicio</button>
+                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('/administrador') ?>'">🏠 Inicio</button>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('insumos') ?>'">📦 Catálogo de Insumos</button>
+                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('/administrador/insumos') ?>'">📦 Catálogo de Insumos</button>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('stock') ?>'">📊 Stock Disponible</button>
@@ -106,12 +111,15 @@
                 <li class="nav-item">
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('catalogosistema') ?>'">⚙️ Catálogo del Sistema</button>
                 </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('logout') ?>'">Cerrar sesión</button>
+                </li>
             </ul>
         </nav>
 
         <!-- Contenido principal -->
-        <main class="content-wrapper w-100">
-            <div class="container-fluid py-3">
+        <main class="content-wrapper tw-flex tw-items-center tw-justify-center tw-w-full tw-min-h-screen">
+            <div class="container-fluid py-3 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-w-full">
                 <?= $this->renderSection('content') ?>
             </div>
         </main>

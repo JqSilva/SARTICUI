@@ -1,4 +1,4 @@
-<?= $this->extend('layouts/barra_bodeguero') ?>
+<?= $this->extend('layouts/barra_administrador') ?>
 
 <?= $this->section('content') ?>
 
@@ -46,14 +46,16 @@
     }
 </style>
 
-<body style="background-color: #9AB5D9;">
-<p>Bienvenido, <?= esc(session('nombre')) ?>.</p>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-3 col-lg-2"></div>
+<body style="background-color: #9AB5D9;" class="tw-min-h-screen">
 
+    <div class="tw-py-6 tw-px-4 tw-mb-4">
+    <h1 class="tw-text-center tw-font-bold tw-text-2xl tw-mb-4">Panel de Bodeguero</h1>
+    <p class="tw-text-center tw-font-semibold tw-text-xl " >Bienvenido, <?= ucfirst(strtolower(esc(session('nombre')))) ?>.</p>
+    </div>
+
+    <div class="container-fluid tw-flex tw-items-center tw-justify-center">
+    <div class="tw-w-full">
         <div class="container mt-4 page-background custom-container">
-            <h1 class="text-center mb-4">vista perfil bodeguero</h1>
             <div class="row justify-content-center">
                 <?php
                 $cards = [
@@ -89,4 +91,3 @@
 </body>
 
 <?= $this->endSection() ?>
-<a href="<?= base_url('logout') ?>" class="tw-text-red-500">Cerrar sesión</a>
