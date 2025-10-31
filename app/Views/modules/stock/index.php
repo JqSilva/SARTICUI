@@ -2,9 +2,9 @@
 
 <!-- Visualizar el Stock Disponible -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
-<?= $this->section('content') ?>
+<?= $this->Section('content') ?>
 
 <div class="container mt-5">
 

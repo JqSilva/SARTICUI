@@ -2,7 +2,7 @@
 
 <!-- Visualizar el Catálogo del Sistema -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 

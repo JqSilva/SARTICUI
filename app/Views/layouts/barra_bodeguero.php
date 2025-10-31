@@ -82,7 +82,7 @@
 
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('/') ?>'">🏠 Inicio</button>
+                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('/bodeguero') ?>'">🏠 Inicio</button>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('insumos') ?>'">📦 Catálogo de Insumos</button>

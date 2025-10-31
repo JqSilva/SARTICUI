@@ -118,8 +118,8 @@
         </nav>
 
         <!-- Contenido principal -->
-        <main class="content-wrapper tw-flex tw-items-center tw-justify-center tw-w-full tw-min-h-screen">
-            <div class="container-fluid py-3 tw-flex tw-flex-col tw-items-center tw-justify-center tw-text-center tw-w-full">
+        <main class="content-wrapper tw-flex tw-justify-center tw-w-full tw-min-h-screen">
+            <div class="container-fluid py-3 ">
                 <?= $this->renderSection('content') ?>
             </div>
         </main>

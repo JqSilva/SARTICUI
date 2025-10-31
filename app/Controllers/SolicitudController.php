@@ -1,6 +1,6 @@
 <?php
 namespace App\Controllers;
-use CodeIgniter\RESTful\ResourceController;
+
 use App\Models\SolicitudModel;
 use App\Models\UsuarioModel;
 use App\Models\SalaModel;
@@ -8,231 +8,155 @@ use App\Models\EstadoSolicitudModel;
 use App\Models\DetalleSolicitudModel;
 use App\Models\InsumoModel;
 
-// Controlador de Solicitud
-
-class SolicitudController extends ResourceController
+class SolicitudController extends BaseController
 {
-    protected $modelName = 'App\Models\SolicitudModel';
-    protected $format = 'json';
+    protected $solicitudModel;
+    protected $usuarioModel;
+    protected $salaModel;
+    protected $estadoModel;
+    protected $detalleModel;
+    protected $insumoModel;
 
-    // GET /solicitudes - Obtener todas las solicitudes con filtro opcional por mes y año
+    public function __construct()
+    {
+        $this->solicitudModel = new SolicitudModel();
+        $this->usuarioModel = new UsuarioModel();
+        $this->salaModel = new SalaModel();
+        $this->estadoModel = new EstadoSolicitudModel();
+        $this->detalleModel = new DetalleSolicitudModel();
+        $this->insumoModel = new InsumoModel();
+    }
+
+    // Listado de solicitudes
     public function index()
     {
-        $solicitudModel = new SolicitudModel();
-
-        // Obtener los parámetros del filtro
         $mes = $this->request->getGet('mes');
         $anio = $this->request->getGet('anio');
 
-        // Construcción de la consulta con filtros
-        $query = $solicitudModel->select('*');
+        // Nombres de meses en español (para el selector)
+        $meses_es = [
+            1 => 'Enero', 2 => 'Febrero', 3 => 'Marzo', 4 => 'Abril',
+            5 => 'Mayo', 6 => 'Junio', 7 => 'Julio', 8 => 'Agosto',
+            9 => 'Septiembre', 10 => 'Octubre', 11 => 'Noviembre', 12 => 'Diciembre'
+        ];
 
+        // Construcción de la consulta con filtros opcionales
+        $query = $this->solicitudModel->select('*');
         if (!empty($mes)) {
             $query->where('MONTH(FECHA_SOLICITUD)', $mes);
         }
-
         if (!empty($anio)) {
             $query->where('YEAR(FECHA_SOLICITUD)', $anio);
         }
 
-        // Obtener solicitudes filtradas
         $solicitudes = $query->findAll();
 
-        // Modelos para obtener información relacionada
-        $usuarioModel = new UsuarioModel();
-        $salaModel = new SalaModel();
-        $estadosolicitudModel = new EstadoSolicitudModel();
-        $detalleSolicitudModel = new DetalleSolicitudModel();
-        $insumoModel = new InsumoModel();
+        $usuarios = $this->usuarioModel->findAll();
+        $salas = $this->salaModel->findAll();
+        $estados = $this->estadoModel->findAll();
 
-        $usuarios = $usuarioModel->findAll();
-        $salas = $salaModel->findAll();
-        $estadossolicitudes = $estadosolicitudModel->findAll();
-
-        foreach ($solicitudes as &$solicitud) {
-            // Obtener nombres de usuario, sala y estado
-            foreach ($usuarios as $usuario) {
-                if ($solicitud['ID_USUARIO_SOLICITUD'] == $usuario['ID_USUARIO']) {
-                    $solicitud['USUARIO_NOMBRE'] = $usuario['NOMBRE_USUARIO'];
-                    break;
-                }
-            }
-
-            foreach ($salas as $sala) {
-                if ($solicitud['ID_SALA_SOLICITUD'] == $sala['ID_SALA']) {
-                    $solicitud['SALA_NOMBRE'] = $sala['NOMBRE_SALA'];
-                    break;
-                }
-            }
-
-            foreach ($estadossolicitudes as $estadosolicitud) {
-                if ($solicitud['ID_ESTADO_SOLICITUD_INS'] == $estadosolicitud['ID_ESTADO_SOLICITUD']) {
-                    $solicitud['ESTADO_SOLICITUD_NOMBRE'] = $estadosolicitud['NOMBRE_ESTADO_SOLICITUD'];
-                    break;
-                }
-            }
-
-            // Obtener detalles de la solicitud
-            $detalles = $detalleSolicitudModel->where('ID_SOLICITUD_DE', $solicitud['ID_SOLICITUD'])->findAll();
-
-            // Agregar nombres de insumos
-            foreach ($detalles as &$detalle) {
-                $insumo = $insumoModel->find($detalle['ID_INSUMO_DE']);
-                $detalle['NOMBRE_INSUMO'] = $insumo ? $insumo['NOMBRE_INSUMO'] : 'Desconocido';
-            }
-
-            $solicitud['DETALLES'] = $detalles;
+        foreach ($solicitudes as &$s) {
+            $s['USUARIO_NOMBRE'] = $this->findValue($usuarios, 'ID_USUARIO', $s['ID_USUARIO_SOLICITUD'], 'NOMBRE_USUARIO');
+            $s['SALA_NOMBRE'] = $this->findValue($salas, 'ID_SALA', $s['ID_SALA_SOLICITUD'], 'NOMBRE_SALA');
+            $s['ESTADO_SOLICITUD_NOMBRE'] = $this->findValue($estados, 'ID_ESTADO_SOLICITUD', $s['ID_ESTADO_SOLICITUD_INS'], 'NOMBRE_ESTADO_SOLICITUD');
         }
 
-        // Pasar los datos a la vista
-        return view('solicitudes/index', [
+        $data = [
             'solicitudes' => $solicitudes,
             'usuarios' => $usuarios,
             'salas' => $salas,
-            'estadossolicitudes' => $estadossolicitudes,
-            'mes' => $mes,  // Para que el formulario recuerde la selección
-            'anio' => $anio
-        ]);
+            'estadossolicitudes' => $estados,
+            'mes' => $mes,
+            'anio' => $anio,
+            'meses_es' => $meses_es,
+            'titulo' => 'Gestión de Solicitudes'
+        ];
+
+        return $this->renderView('modules/solicitudes/index', $data);
     }
 
-    // GET /solicitudes/create - Mostrar el formulario para crear una solicitud
+
+    // Crear solicitud
     public function create()
     {
-        // Obtener datos de las tablas usuarios, salas y estado solicitud
-        $usuarioModel = new UsuarioModel();
-        $salaModel = new SalaModel();
-        $estadosolicitudModel = new EstadoSolicitudModel();
-        $insumoModel = new InsumoModel();
+        $data = [
+            'usuarios' => $this->usuarioModel->findAll(),
+            'salas' => $this->salaModel->findAll(),
+            'estadossolicitudes' => $this->estadoModel->findAll(),
+            'insumos' => $this->insumoModel->findAll(),
+            'titulo' => 'Nueva Solicitud'
+        ];
 
-        $usuarios = $usuarioModel->findAll();
-        $salas = $salaModel->findAll();
-        $estadossolicitudes = $estadosolicitudModel->findAll();
-        $insumos = $insumoModel->findAll();
-
-        // Pasar los datos a la vista
-        return view('solicitudes/create', [
-            'usuarios' => $usuarios,
-            'salas' => $salas,
-            'estadossolicitudes' => $estadossolicitudes,
-            'insumos' => $insumos
-        ]);
+        return $this->renderView('modules/solicitudes/create', $data);
     }
 
-    // POST /solicitudes - Crear una nueva solicitud
+    // Guardar solicitud
     public function store()
     {
         $data = $this->request->getPost();
 
-        // Validar los datos antes de insertarlos
-        // Crear los datos para la tabla SOLICITUD
         $solicitudData = [
             'ID_USUARIO_SOLICITUD' => $data['ID_USUARIO_SOLICITUD'],
             'ID_SALA_SOLICITUD' => $data['ID_SALA_SOLICITUD'],
             'ID_ESTADO_SOLICITUD_INS' => $data['ID_ESTADO_SOLICITUD_INS']
         ];
 
-        // Insertar la solicitud
-        if ($this->model->insert($solicitudData)) {
-            // Obtener el ID de la solicitud recién insertada
-            $solicitudId = $this->model->getInsertID();
-
-            // Ahora manejar los detalles (insumos y cantidades)
-            $detalleSolicitudModel = new DetalleSolicitudModel();
-            $insumos = $data['insumos'];  // Suponiendo que 'insumos' es un array de insumos con sus cantidades
-
-            // Preparar los datos para la tabla DETALLE_SOLICITUD
+        if ($this->solicitudModel->insert($solicitudData)) {
+            $solicitudId = $this->solicitudModel->getInsertID();
             $detalleData = [];
-            foreach ($insumos as $insumo) {
+
+            foreach ($data['insumos'] as $insumo) {
                 $detalleData[] = [
                     'ID_SOLICITUD_DE' => $solicitudId,
                     'ID_INSUMO_DE' => $insumo['ID_INSUMO_DE'],
-                    'CANTIDAD' => $insumo['CANTIDAD'],
+                    'CANTIDAD' => $insumo['CANTIDAD']
                 ];
             }
 
-            // Insertar los detalles de los insumos
-            if ($detalleSolicitudModel->insertBatch($detalleData)) {
-                // Redirigir con un mensaje de éxito
-                return redirect()->to(base_url('/solicitudes'))->with('message', 'Solicitud creada exitosamente');
-            } else {
-                // Si ocurre un error con los detalles
-                return redirect()->back()->withInput()->with('errors', $detalleSolicitudModel->errors());
-            }
+            $this->detalleModel->insertBatch($detalleData);
+            return redirect()->to('/solicitudes')->with('message', 'Solicitud creada exitosamente');
         }
 
-        // Si ocurre un error con la solicitud principal
-        return redirect()->back()->withInput()->with('errors', $this->model->errors());
+        return redirect()->back()->withInput()->with('error', 'Error al crear la solicitud');
     }
 
-    // GET /solicitudes/edit/{id} - Mostrar el formulario para editar una solicitud
+    // Editar solicitud
     public function edit($id = null)
     {
-        $solicitud = $this->model->find($id);
-
-        if ($solicitud) {
-            // Obtener datos de las tablas EstadoSolicitud, Salas y Usuarios
-            $usuarioModel = new UsuarioModel();
-            $salaModel = new SalaModel();
-            $estadosolicitudModel = new EstadoSolicitudModel();
-
-            $usuarios = $usuarioModel->findAll();
-            $salas = $salaModel->findAll();
-            $estadossolicitudes = $estadosolicitudModel->findAll();
-
-            // Pasar los datos a la vista
-            return view('solicitudes/edit', [
-                'solicitud' => $solicitud,
-                'usuarios' => $usuarios,
-                'salas' => $salas,
-                'estadossolicitudes' => $estadossolicitudes
-            ]);
+        $solicitud = $this->solicitudModel->find($id);
+        if (!$solicitud) {
+            return redirect()->to('/solicitudes')->with('error', 'No se encontró la solicitud.');
         }
-        return redirect()->to('/solicitudes')->with('error', 'No se encontró la solicitud con ID: ' . $id);
+
+        $data = [
+            'solicitud' => $solicitud,
+            'usuarios' => $this->usuarioModel->findAll(),
+            'salas' => $this->salaModel->findAll(),
+            'estadossolicitudes' => $this->estadoModel->findAll(),
+            'titulo' => 'Editar Solicitud'
+        ];
+
+        return $this->renderView('modules/solicitudes/edit', $data);
     }
 
-    // POST /solicitudes/update/{id} - Actualizar una solicitud
+    // Actualizar solicitud
     public function update($id = null)
     {
         $data = $this->request->getPost();
-
-        if ($this->model->find($id)) {
-            if ($this->model->update($id, $data)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Solicitud actualizada exitosamente'
-                ];
-                return redirect()->to('/solicitudes')->with('message', $response['message']);
-            }
-            return redirect()->back()->withInput()->with('errors', $this->model->errors());
+        if ($this->solicitudModel->update($id, $data)) {
+            return redirect()->to('/solicitudes')->with('message', 'Solicitud actualizada exitosamente');
         }
-
-        return redirect()->to('/solicitudes')->with('error', 'No se encontró la solicitud con ID: ' . $id);
+        return redirect()->back()->withInput()->with('error', 'Error al actualizar la solicitud');
     }
 
-    // DELETE /solicitudes/{id} - Eliminar una solicitud
-    public function delete($id = null)
+    // Auxiliar para nombres relacionados
+    private function findValue($array, $keyMatch, $valueMatch, $keyReturn)
     {
-        if ($this->model->find($id)) {
-            if ($this->model->delete($id)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Solicitud eliminada exitosamente'
-                ];
-                return redirect()->to('/solicitudes')->with('message', $response['message']);
+        foreach ($array as $row) {
+            if ($row[$keyMatch] == $valueMatch) {
+                return $row[$keyReturn];
             }
-            return redirect()->to('/solicitudes')->with('error', 'Error al eliminar la solicitud');
         }
-
-        return redirect()->to('/solicitudes')->with('error', 'No se encontró la solicitud con ID: ' . $id);
+        return null;
     }
-
 }
-
-/*
-Datos de Prueba
-{
-    "id_pedido_solicitud": 1,
-    "id_sala_solicitud": 1,
-    "responsable_solicitud": 12345678
-}
-*/

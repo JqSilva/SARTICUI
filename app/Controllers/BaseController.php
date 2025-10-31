@@ -55,4 +55,33 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = service('session');
     }
+
+
+    protected function renderView(string $view, array $data = []): string
+    {
+        $rol = strtolower(session('rol') ?? 'Invitado');
+
+
+        
+        // Selecciona el layout según el rol del usuario
+        switch ($rol) {
+            case 'administrador':
+                $layout = 'layouts/barra_administrador';
+                break;
+            case 'bodeguero':
+                $layout = 'layouts/barra_bodeguero';
+                break;
+            default:
+                $layout = 'layouts/base_publica'; // opcional, por si usas login u otra vista sin barra
+                break;
+        }
+
+        // Envia el layout dinámico a la vista
+        $data['layout'] = $layout;
+
+        // Retorna la vista lista
+        return view($view, $data);
+    }
+
+
 }

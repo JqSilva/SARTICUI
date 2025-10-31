@@ -2,7 +2,7 @@
 
 <!-- Visualizar el Inventario de Bodega -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 

@@ -1,4 +1,4 @@
-<?= $this->extend('layouts/barra_administrador') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 
@@ -59,13 +59,13 @@
             <div class="row justify-content-center">
                 <?php
                 $cards = [
-                    ['title' => 'Catálogo de Insumos', 'icon' => 'bi-bandaid', 'link' => 'bodeguero/insumos'],
+                    ['title' => 'Catálogo de Insumos', 'icon' => 'bi-bandaid', 'link' => 'insumos'],
                     //['title' => 'Stock Disponible', 'icon' => 'bi-archive', 'link' => 'stock'],
-                    ['title' => 'Solicitud de Insumos Interna', 'icon' => 'bi-basket', 'link' => 'bodeguero/solicitudes'],
-                    ['title' => 'Inventario', 'icon' => 'bi-card-checklist', 'link' => 'bodeguero/bodega'],
-                    ['title' => 'Ingresar Insumos', 'icon' => 'bi-ui-checks-grid', 'link' => 'bodeguero/lotes'],
-                    ['title' => 'Despacho a Sala', 'icon' => 'bi-arrow-left-right', 'link' => 'bodeguero/insumossalas'],
-                    ['title' => 'Generar Maestro', 'icon' => 'bi-arrow-left-right', 'link' => 'bodeguero/perfiles']
+                    ['title' => 'Solicitud de Insumos Interna', 'icon' => 'bi-basket', 'link' => 'solicitudes'],
+                    ['title' => 'Inventario', 'icon' => 'bi-card-checklist', 'link' => 'bodega'],
+                    ['title' => 'Ingresar Insumos', 'icon' => 'bi-ui-checks-grid', 'link' => 'lotes'],
+                    ['title' => 'Despacho a Sala', 'icon' => 'bi-arrow-left-right', 'link' => 'insumossalas'],
+                    ['title' => 'Generar Maestro', 'icon' => 'bi-arrow-left-right', 'link' => 'perfiles']
 
                     //['title' => 'Consumo de Insumos', 'icon' => 'bi-heart-pulse', 'link' => 'usospacientes'],
                     //['title' => 'Catálogo del Sistema', 'icon' => 'bi-file-medical', 'link' => 'catalogosistema']

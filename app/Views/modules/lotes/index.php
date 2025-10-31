@@ -2,7 +2,7 @@
 
 <!-- Visualizar los Lotes existentes -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 

@@ -2,7 +2,8 @@
 
 <!-- Visualización de Solicitudes Existentes -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
+
 
 <?= $this->section('content') ?>
 

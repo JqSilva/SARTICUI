@@ -1,16 +1,16 @@
 <?php
 namespace App\Controllers;
+
 use App\Models\BodegaModel;
-use CodeIgniter\Controller;
 
-// Controlador de Bodega
-
-class BodegaController extends Controller
+class BodegaController extends BaseController
 {
     public function index()
     {
         $model = new BodegaModel();
         $data['insumos'] = $model->obtenerInsumosEnBodega();
-        return view('bodega', $data);
+
+        // Renderiza la vista con el layout dinámico según el rol (ya lo maneja BaseController)
+        return $this->renderView('modules/bodega/index', $data);
     }
 }

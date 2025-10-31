@@ -1,16 +1,16 @@
 <?php
 namespace App\Controllers;
+
 use App\Models\BodegaModel;
-use CodeIgniter\Controller;
 
-// Controlador de Stock
-
-class StockController extends Controller
+class StockController extends BaseController
 {
     public function index()
     {
         $model = new BodegaModel();
         $data['insumos'] = $model->obtenerInsumosEnBodega();
-        return view('stock', $data);
+
+        // renderView() viene del BaseController
+        return $this->renderView('modules/stock/index', $data);
     }
 }

@@ -2,7 +2,7 @@
 
 <!-- Vista para la creación de un nuevo Loten de Insumos -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 
