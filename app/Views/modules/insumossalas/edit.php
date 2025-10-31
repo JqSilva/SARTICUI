@@ -2,7 +2,7 @@
 
 <!-- Vista para la edición de un Insumo en Sala -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 

@@ -1,57 +1,50 @@
-<!-- app/Views/insumos/index.php -->
+<!-- app/Views/insumossalas/index.php -->
 
-<!-- Visualización de Insumos Existentes -->
+<!-- Visualización de Insumos en Sala Existentes -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 
 <div class="container mt-5">
 
-    <!-- Botón para regresar a la vista anterior -->
-    <a href="<?= base_url('relacioninsumos') ?>" class="btn btn-light">
-        <i class="bi bi-arrow-left-circle"></i> Volver
-    </a>
+    <h1 class="text-center mb-4 text-dark">Despacho a Sala</h1>
 
-    <h1 class="text-center mb-4 text-dark">Catálogo de Insumos</h1>
-
-    <!-- Barra de búsqueda y botón para crear nuevo insumo -->
+    <!-- Barra de búsqueda y botón para crear nuevo Insumo en Sala -->
     <div class="mb-4 d-flex justify-content-between">
-        <input type="text" id="buscador" class="form-control w-50" placeholder="Buscar Insumos...">
-        <a href="<?= base_url('insumos/create') ?>" class="btn btn-success">
-            <i class="bi bi-plus-circle"></i> Crear Insumo
+        <input type="text" id="buscador" class="form-control w-50" placeholder="Buscar Movimiento...">
+        <a href="<?= base_url('insumossalas/create') ?>" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Crear Despacho
         </a>
     </div>
 
-    <!-- Tabla para visualizar los insumos -->
+    <!-- Tabla para visualizar los Insumos en Sala -->
     <div class="table-responsive">
-        <table class="table table-hover table-bordered text-center align-middle" id="tablaInsumos">
+        <table class="table table-hover table-bordered text-center align-middle" id="tablaInsumoSala">
             <thead class="table-dark text-light">
                 <tr>
-                    <th>Código ABAS</th>
-                    <th>Nombre</th>
-                    <th>Clasificación</th>
-                    <th>Disponibilidad</th>
-                    <th>Estado</th>
+                    <th>Cantidad a Sala</th>
+                    <th>Insumo</th>
+                    <th>Lote</th>
+                    <th>Sala</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody class="table-light">
-                <?php if (!empty($insumos)): ?>
-                    <?php foreach ($insumos as $insumo): ?>
+                <?php if (!empty($insumossalas)): ?>
+                    <?php foreach ($insumossalas as $insumosala): ?>
                         <tr>
-                            <td><?= $insumo['CODIGO_ABAS_INSUMO'] ?></td>
-                            <td><?= $insumo['NOMBRE_INSUMO'] ?></td>
-                            <td><?= $insumo['CLASIFICACION_NOMBRE'] ?></td>
-                            <td><?= $insumo['DISPONIBILIDAD_NOMBRE'] ?></td>
-                            <td><?= $insumo['ESTADO_INSUMO'] ?></td>
+                            <td><?= $insumosala['CANTIDAD_INSUMO_SALA'] ?></td>
+                            <td><?= $insumosala['NOMBRE_INSUMO'] ?? 'No disponible'?></td>
+                            <td><?= $insumosala['ID_LOTE_INSUMO_SALA'] ?></td>
+                            <td><?= $insumosala['SALA_NOMBRE'] ?></td>
                             <td>
                                 <!-- Botón de edición -->
-                                <a href="<?= base_url('insumos/edit/'.$insumo['ID_INSUMO']) ?>" class="btn btn-warning btn-sm">
+                                <a href="<?= base_url('insumossalas/edit/'.$insumosala['ID_INSUMO_SALA']) ?>" class="btn btn-warning btn-sm">
                                     <i class="bi bi-pencil-square"></i> Editar  <!-- Ícono de editar -->
                                 </a>
                                 <!-- Botón para abrir el modal de eliminación -->
-                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="<?= $insumo['ID_INSUMO'] ?>">
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="<?= $insumosala['ID_INSUMO_SALA'] ?>">
                                     <i class="bi bi-x-circle"></i> Eliminar  <!-- Ícono de borrar -->
                                 </button>
                             </td>
@@ -59,11 +52,34 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="7" class="text-center">No se encontraron insumos</td>
+                        <td colspan="7" class="text-center">No se encontraron movimientos</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
         </table>
+
+        <!-- Aviso de Cantidad Superada del Lote -->
+        <?php if (session()->getFlashdata('error')): ?>
+            <div id="error-message" class="alert alert-danger">
+                <?= session()->getFlashdata('error') ?>
+            </div>
+            <script>
+                setTimeout(function() {
+                    document.getElementById('error-message').style.display = 'none';
+                }, 3000); // Oculta el mensaje después de 3 segundos
+            </script>
+        <?php endif; ?>
+
+        <?php if (session()->getFlashdata('message')): ?>
+            <div id="success-message" class="alert alert-success">
+                <?= session()->getFlashdata('message') ?>
+            </div>
+            <script>
+                setTimeout(function() {
+                    document.getElementById('success-message').style.display = 'none';
+                }, 3000); // Oculta el mensaje después de 3 segundos
+            </script>
+        <?php endif; ?>
     </div>
 </div>
 
@@ -76,7 +92,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ¿Estás seguro de que deseas eliminar este insumo? Esta acción no se puede deshacer.
+                ¿Estás seguro de que deseas eliminar este movimiento? Esta acción no se puede deshacer.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -89,10 +105,10 @@
 <!-- Scripts -->
 <script>
 
-    //Filtrar Insumos en la Tabla
+    // Filtrar Insumo en Sala en la Tabla
     document.getElementById("buscador").addEventListener("keyup", function() {
         var filtro = this.value.toUpperCase();
-        var filas = document.querySelectorAll("#tablaInsumos tbody tr");
+        var filas = document.querySelectorAll("#tablaInsumoSala tbody tr");
 
         filas.forEach(function(fila) {
             var textoFila = fila.innerText.toUpperCase();
@@ -104,15 +120,15 @@
         });
     });
 
-    // Manejo de la eliminación de Insumo
+    // Manejo la eliminación de Insumos en Sala
     document.addEventListener("DOMContentLoaded", function() {
         var confirmDeleteModal = document.getElementById('confirmDeleteModal');
         var confirmDeleteButton = document.getElementById('confirmDeleteButton');
 
         confirmDeleteModal.addEventListener('show.bs.modal', function(event) {
             var button = event.relatedTarget;  // Botón que activó el modal
-            var insumoId = button.getAttribute('data-id');  // Obtener el ID del insumo
-            confirmDeleteButton.href = "<?= base_url('insumos/delete/') ?>" + insumoId;  // Actualizar el enlace de eliminación
+            var insumosalaId = button.getAttribute('data-id');  // Obtener el ID del Movimiento
+            confirmDeleteButton.href = "<?= base_url('insumossalas/delete/') ?>" + insumosalaId;  // Actualizar el enlace de eliminación
         });
     });
 </script>

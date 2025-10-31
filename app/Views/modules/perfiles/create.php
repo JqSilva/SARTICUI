@@ -2,7 +2,7 @@
 
 <!-- Vista para la creación de un nuevo Perfil -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 

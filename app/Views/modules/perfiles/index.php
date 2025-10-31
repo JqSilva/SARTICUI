@@ -1,50 +1,53 @@
-<!-- app/Views/insumossalas/index.php -->
+<!-- app/Views/perfiles/index.php -->
 
-<!-- Visualización de Insumos en Sala Existentes -->
+<!-- Visualización de Perfiles Existentes -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 
 <div class="container mt-5">
 
-    <h1 class="text-center mb-4 text-dark">Despacho a Sala</h1>
+    <!-- Botón para regresar a la vista anterior -->
+    <a href="<?= base_url('relacionusuarios') ?>" class="btn btn-light">
+        <i class="bi bi-arrow-left-circle"></i> Volver
+    </a>
 
-    <!-- Barra de búsqueda y botón para crear nuevo Insumo en Sala -->
+    <h1 class="text-center mb-4 text-dark">Listado de Perfiles</h1>
+
+    <!-- Barra de búsqueda y botón para crear nuevo perfil -->
     <div class="mb-4 d-flex justify-content-between">
-        <input type="text" id="buscador" class="form-control w-50" placeholder="Buscar Movimiento...">
-        <a href="<?= base_url('insumossalas/create') ?>" class="btn btn-success">
-            <i class="bi bi-plus-circle"></i> Crear Despacho
+        <input type="text" id="buscador" class="form-control w-50" placeholder="Buscar Perfil...">
+        <a href="<?= base_url('perfiles/create') ?>" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Crear Perfil
         </a>
     </div>
 
-    <!-- Tabla para visualizar los Insumos en Sala -->
+    <!-- Tabla para visualizar los perfiles -->
     <div class="table-responsive">
-        <table class="table table-hover table-bordered text-center align-middle" id="tablaInsumoSala">
+        <table class="table table-hover table-bordered text-center align-middle" id="tablaPerfiles">
             <thead class="table-dark text-light">
                 <tr>
-                    <th>Cantidad a Sala</th>
-                    <th>Insumo</th>
-                    <th>Lote</th>
-                    <th>Sala</th>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody class="table-light">
-                <?php if (!empty($insumossalas)): ?>
-                    <?php foreach ($insumossalas as $insumosala): ?>
+                <?php if (!empty($perfiles)): ?>
+                    <?php foreach ($perfiles as $perfil): ?>
                         <tr>
-                            <td><?= $insumosala['CANTIDAD_INSUMO_SALA'] ?></td>
-                            <td><?= $insumosala['NOMBRE_INSUMO'] ?? 'No disponible'?></td>
-                            <td><?= $insumosala['ID_LOTE_INSUMO_SALA'] ?></td>
-                            <td><?= $insumosala['SALA_NOMBRE'] ?></td>
+                            <td><?= $perfil['ID_PERFIL'] ?></td>
+                            <td><?= $perfil['NOMBRE_PERFIL'] ?></td>
+                            <td><?= $perfil['ESTADO_PERFIL'] ?></td>
                             <td>
                                 <!-- Botón de edición -->
-                                <a href="<?= base_url('insumossalas/edit/'.$insumosala['ID_INSUMO_SALA']) ?>" class="btn btn-warning btn-sm">
+                                <a href="<?= base_url('perfiles/edit/'.$perfil['ID_PERFIL']) ?>" class="btn btn-warning btn-sm">
                                     <i class="bi bi-pencil-square"></i> Editar  <!-- Ícono de editar -->
                                 </a>
                                 <!-- Botón para abrir el modal de eliminación -->
-                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="<?= $insumosala['ID_INSUMO_SALA'] ?>">
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="<?= $perfil['ID_PERFIL'] ?>">
                                     <i class="bi bi-x-circle"></i> Eliminar  <!-- Ícono de borrar -->
                                 </button>
                             </td>
@@ -52,34 +55,11 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="7" class="text-center">No se encontraron movimientos</td>
+                        <td colspan="7" class="text-center">No se encontraron perfiles</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
         </table>
-
-        <!-- Aviso de Cantidad Superada del Lote -->
-        <?php if (session()->getFlashdata('error')): ?>
-            <div id="error-message" class="alert alert-danger">
-                <?= session()->getFlashdata('error') ?>
-            </div>
-            <script>
-                setTimeout(function() {
-                    document.getElementById('error-message').style.display = 'none';
-                }, 3000); // Oculta el mensaje después de 3 segundos
-            </script>
-        <?php endif; ?>
-
-        <?php if (session()->getFlashdata('message')): ?>
-            <div id="success-message" class="alert alert-success">
-                <?= session()->getFlashdata('message') ?>
-            </div>
-            <script>
-                setTimeout(function() {
-                    document.getElementById('success-message').style.display = 'none';
-                }, 3000); // Oculta el mensaje después de 3 segundos
-            </script>
-        <?php endif; ?>
     </div>
 </div>
 
@@ -92,7 +72,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ¿Estás seguro de que deseas eliminar este movimiento? Esta acción no se puede deshacer.
+                ¿Estás seguro de que deseas eliminar este perfil? Esta acción no se puede deshacer.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -102,13 +82,13 @@
     </div>
 </div>
 
-<!-- Scripts -->
+<!-- Script -->
 <script>
 
-    // Filtrar Insumo en Sala en la Tabla
+    // Filtrar Perfiles en la Tabla
     document.getElementById("buscador").addEventListener("keyup", function() {
         var filtro = this.value.toUpperCase();
-        var filas = document.querySelectorAll("#tablaInsumoSala tbody tr");
+        var filas = document.querySelectorAll("#tablaPerfiles tbody tr");
 
         filas.forEach(function(fila) {
             var textoFila = fila.innerText.toUpperCase();
@@ -120,15 +100,15 @@
         });
     });
 
-    // Manejo la eliminación de Insumos en Sala
+    // Manejo de la eliminación de Perfiles
     document.addEventListener("DOMContentLoaded", function() {
         var confirmDeleteModal = document.getElementById('confirmDeleteModal');
         var confirmDeleteButton = document.getElementById('confirmDeleteButton');
 
         confirmDeleteModal.addEventListener('show.bs.modal', function(event) {
             var button = event.relatedTarget;  // Botón que activó el modal
-            var insumosalaId = button.getAttribute('data-id');  // Obtener el ID del Movimiento
-            confirmDeleteButton.href = "<?= base_url('insumossalas/delete/') ?>" + insumosalaId;  // Actualizar el enlace de eliminación
+            var perfilId = button.getAttribute('data-id');  // Obtener el ID del perfil
+            confirmDeleteButton.href = "<?= base_url('perfiles/delete/') ?>" + perfilId;  // Actualizar el enlace de eliminación
         });
     });
 </script>

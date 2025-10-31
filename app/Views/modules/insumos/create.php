@@ -2,7 +2,7 @@
 
 <!-- Vista para la creación de un nuevo Insumo -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 

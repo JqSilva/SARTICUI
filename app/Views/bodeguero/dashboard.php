@@ -65,10 +65,10 @@
                     ['title' => 'Inventario', 'icon' => 'bi-card-checklist', 'link' => 'bodega'],
                     ['title' => 'Ingresar Insumos', 'icon' => 'bi-ui-checks-grid', 'link' => 'lotes'],
                     ['title' => 'Despacho a Sala', 'icon' => 'bi-arrow-left-right', 'link' => 'insumossalas'],
-                    ['title' => 'Generar Maestro', 'icon' => 'bi-arrow-left-right', 'link' => 'perfiles']
+                    ['title' => 'Generar Maestro', 'icon' => 'bi-arrow-left-right', 'link' => 'perfiles'],
 
                     //['title' => 'Consumo de Insumos', 'icon' => 'bi-heart-pulse', 'link' => 'usospacientes'],
-                    //['title' => 'Catálogo del Sistema', 'icon' => 'bi-file-medical', 'link' => 'catalogosistema']
+                    ['title' => 'Catálogo del Sistema', 'icon' => 'bi-file-medical', 'link' => 'catalogosistema']
                 ];
                 ?>
 

@@ -1,53 +1,57 @@
-<!-- app/Views/perfiles/index.php -->
+<!-- app/Views/insumos/index.php -->
 
-<!-- Visualización de Perfiles Existentes -->
+<!-- Visualización de Insumos Existentes -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 
 <div class="container mt-5">
 
     <!-- Botón para regresar a la vista anterior -->
-    <a href="<?= base_url('relacionusuarios') ?>" class="btn btn-light">
+    <a href="<?= base_url('relacioninsumos') ?>" class="btn btn-light">
         <i class="bi bi-arrow-left-circle"></i> Volver
     </a>
 
-    <h1 class="text-center mb-4 text-dark">Listado de Perfiles</h1>
+    <h1 class="text-center mb-4 text-dark">Catálogo de Insumos</h1>
 
-    <!-- Barra de búsqueda y botón para crear nuevo perfil -->
+    <!-- Barra de búsqueda y botón para crear nuevo insumo -->
     <div class="mb-4 d-flex justify-content-between">
-        <input type="text" id="buscador" class="form-control w-50" placeholder="Buscar Perfil...">
-        <a href="<?= base_url('perfiles/create') ?>" class="btn btn-success">
-            <i class="bi bi-plus-circle"></i> Crear Perfil
+        <input type="text" id="buscador" class="form-control w-50" placeholder="Buscar Insumos...">
+        <a href="<?= base_url('insumos/create') ?>" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Crear Insumo
         </a>
     </div>
 
-    <!-- Tabla para visualizar los perfiles -->
+    <!-- Tabla para visualizar los insumos -->
     <div class="table-responsive">
-        <table class="table table-hover table-bordered text-center align-middle" id="tablaPerfiles">
+        <table class="table table-hover table-bordered text-center align-middle" id="tablaInsumos">
             <thead class="table-dark text-light">
                 <tr>
-                    <th>ID</th>
+                    <th>Código ABAS</th>
                     <th>Nombre</th>
+                    <th>Clasificación</th>
+                    <th>Disponibilidad</th>
                     <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody class="table-light">
-                <?php if (!empty($perfiles)): ?>
-                    <?php foreach ($perfiles as $perfil): ?>
+                <?php if (!empty($insumos)): ?>
+                    <?php foreach ($insumos as $insumo): ?>
                         <tr>
-                            <td><?= $perfil['ID_PERFIL'] ?></td>
-                            <td><?= $perfil['NOMBRE_PERFIL'] ?></td>
-                            <td><?= $perfil['ESTADO_PERFIL'] ?></td>
+                            <td><?= $insumo['CODIGO_ABAS_INSUMO'] ?></td>
+                            <td><?= $insumo['NOMBRE_INSUMO'] ?></td>
+                            <td><?= $insumo['CLASIFICACION_NOMBRE'] ?></td>
+                            <td><?= $insumo['DISPONIBILIDAD_NOMBRE'] ?></td>
+                            <td><?= $insumo['ESTADO_INSUMO'] ?></td>
                             <td>
                                 <!-- Botón de edición -->
-                                <a href="<?= base_url('perfiles/edit/'.$perfil['ID_PERFIL']) ?>" class="btn btn-warning btn-sm">
+                                <a href="<?= base_url('insumos/edit/'.$insumo['ID_INSUMO']) ?>" class="btn btn-warning btn-sm">
                                     <i class="bi bi-pencil-square"></i> Editar  <!-- Ícono de editar -->
                                 </a>
                                 <!-- Botón para abrir el modal de eliminación -->
-                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="<?= $perfil['ID_PERFIL'] ?>">
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="<?= $insumo['ID_INSUMO'] ?>">
                                     <i class="bi bi-x-circle"></i> Eliminar  <!-- Ícono de borrar -->
                                 </button>
                             </td>
@@ -55,7 +59,7 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="7" class="text-center">No se encontraron perfiles</td>
+                        <td colspan="7" class="text-center">No se encontraron insumos</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
@@ -72,7 +76,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ¿Estás seguro de que deseas eliminar este perfil? Esta acción no se puede deshacer.
+                ¿Estás seguro de que deseas eliminar este insumo? Esta acción no se puede deshacer.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
@@ -82,13 +86,13 @@
     </div>
 </div>
 
-<!-- Script -->
+<!-- Scripts -->
 <script>
 
-    // Filtrar Perfiles en la Tabla
+    //Filtrar Insumos en la Tabla
     document.getElementById("buscador").addEventListener("keyup", function() {
         var filtro = this.value.toUpperCase();
-        var filas = document.querySelectorAll("#tablaPerfiles tbody tr");
+        var filas = document.querySelectorAll("#tablaInsumos tbody tr");
 
         filas.forEach(function(fila) {
             var textoFila = fila.innerText.toUpperCase();
@@ -100,15 +104,15 @@
         });
     });
 
-    // Manejo de la eliminación de Perfiles
+    // Manejo de la eliminación de Insumo
     document.addEventListener("DOMContentLoaded", function() {
         var confirmDeleteModal = document.getElementById('confirmDeleteModal');
         var confirmDeleteButton = document.getElementById('confirmDeleteButton');
 
         confirmDeleteModal.addEventListener('show.bs.modal', function(event) {
             var button = event.relatedTarget;  // Botón que activó el modal
-            var perfilId = button.getAttribute('data-id');  // Obtener el ID del perfil
-            confirmDeleteButton.href = "<?= base_url('perfiles/delete/') ?>" + perfilId;  // Actualizar el enlace de eliminación
+            var insumoId = button.getAttribute('data-id');  // Obtener el ID del insumo
+            confirmDeleteButton.href = "<?= base_url('insumos/delete/') ?>" + insumoId;  // Actualizar el enlace de eliminación
         });
     });
 </script>

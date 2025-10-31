@@ -103,6 +103,9 @@
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('catalogosistema') ?>'">⚙️ Generar Maestro</button>
                 </li>
                 <li class="nav-item">
+                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('catalogosistema') ?>'">⚙️ Catálogo del Sistema</button>
+                </li>
+                <li class="nav-item">
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('logout') ?>'">Cerrar sesión</button>
                 </li>
             </ul>

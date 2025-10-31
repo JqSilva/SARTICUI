@@ -40,13 +40,23 @@ $routes->group('stock', function ($routes) {
 });
 
 // -- INSUMOS
-$routes->group('insumos', function ($routes) {
+$routes->group('insumos', function($routes) {
     $routes->get('/', 'InsumoController::index');
     $routes->get('create', 'InsumoController::create');
     $routes->post('store', 'InsumoController::store');
     $routes->get('edit/(:num)', 'InsumoController::edit/$1');
     $routes->post('update/(:num)', 'InsumoController::update/$1');
     $routes->get('delete/(:num)', 'InsumoController::delete/$1');
+});
+
+// -- INSUMOS A SALA
+$routes->group('insumossalas', function($routes) {
+    $routes->get('/', 'InsumoSalaController::index');
+    $routes->get('create', 'InsumoSalaController::create');
+    $routes->post('store', 'InsumoSalaController::store');
+    $routes->get('edit/(:num)', 'InsumoSalaController::edit/$1');
+    $routes->post('update/(:num)', 'InsumoSalaController::update/$1');
+    $routes->get('delete/(:num)', 'InsumoSalaController::delete/$1');
 });
 
 
@@ -73,6 +83,17 @@ $routes->group('lotes', function ($routes) {
     $routes->post('update/(:num)', 'LoteController::update/$1');
 });
 
+// -- perfiles
+$routes->group('perfiles', function($routes) {
+    $routes->get('/', 'PerfilesController::index');
+    $routes->get('create', 'PerfilesController::create');
+    $routes->post('store', 'PerfilesController::store');
+    $routes->get('edit/(:num)', 'PerfilesController::edit/$1');
+    $routes->post('update/(:num)', 'PerfilesController::update/$1');
+    $routes->get('delete/(:num)', 'PerfilesController::delete/$1');
+});
+
+
 // -- CATALOGO
 $routes->get('/catalogosistema', 'CatalogoController::index');
 
@@ -88,14 +109,7 @@ $routes->group('usuarios', function ($routes) {
     $routes->get('delete/(:num)', 'UsuarioController::delete/$1');
 });
 
-$routes->group('perfiles', function ($routes) {
-    $routes->get('/', 'PerfilController::index');
-    $routes->get('create', 'PerfilController::create');
-    $routes->post('store', 'PerfilController::store');
-    $routes->get('edit/(:num)', 'PerfilController::edit/$1');
-    $routes->post('update/(:num)', 'PerfilController::update/$1');
-    $routes->get('delete/(:num)', 'PerfilController::delete/$1');
-});
+
 
 // ==========================
 // 🧾 OTROS MÓDULOS 

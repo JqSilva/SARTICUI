@@ -1,100 +1,108 @@
 <?php
 namespace App\Controllers;
-use CodeIgniter\RESTful\ResourceController;
+
 use App\Models\InsumoSalaModel;
 use App\Models\LoteModel;
 use App\Models\SalaModel;
 use App\Models\InsumoModel;
 use App\Models\BodegaModel;
 
-// Controlador de Insumo en Sala
-
-class InsumoSalaController extends ResourceController
+class InsumoSalaController extends BaseController
 {
-    protected $modelName = 'App\Models\InsumoSalaModel';
-    protected $format = 'json';
+    protected $insumoSalaModel;
+    protected $loteModel;
+    protected $salaModel;
+    protected $insumoModel;
+    protected $bodegaModel;
 
-    // GET /insumossalas - Obtener todos los insumos en salas
-    public function index()
+    public function __construct()
     {
-        // Obtener solo los insumos con cantidad mayor a 0
-        $insumossalas = $this->model->where('CANTIDAD_INSUMO_SALA >', 0)->findAll();
+        $this->insumoSalaModel = new InsumoSalaModel();
+        $this->loteModel       = new LoteModel();
+        $this->salaModel       = new SalaModel();
+        $this->insumoModel     = new InsumoModel();
+        $this->bodegaModel     = new BodegaModel();
+    }
 
-        // Obtener los lotes, los insumos y las salas
-        $loteModel = new LoteModel();
-        $salaModel = new SalaModel();
-        $insumoModel = new InsumoModel();
+    /**
+     * Renderiza el listado de insumos en sala, con prefijo opcional de rol
+     * Ejemplo: 'bodeguero', 'administrador'
+     */
+    private function renderIndex(?string $rolePrefix = null)
+    {
+        $insumosSala = $this->insumoSalaModel
+            ->where('CANTIDAD_INSUMO_SALA >', 0)
+            ->findAll();
 
-        $lotes = $loteModel->findAll();
-        $salas = $salaModel->findAll();
-        $insumos = $insumoModel->findAll();
+        $lotes   = $this->loteModel->findAll();
+        $salas   = $this->salaModel->findAll();
+        $insumos = $this->insumoModel->findAll();
 
-        // Convertir estado_insumo a texto
-        foreach ($insumossalas as &$insumosala) {
-
-            // Obtener nombres de lote, insumo y sala
+        // Construcción de nombres legibles
+        foreach ($insumosSala as &$item) {
             foreach ($lotes as $lote) {
-                if ($insumosala['ID_LOTE_INSUMO_SALA'] == $lote['ID_LOTE']) {
-                    $insumosala['CODIGO_INSUMO'] = $lote['CODIGO_PRODUCTO_LOTE'];
-                    $insumosala['COD_INSUMO'] = $lote['ID_INSUMO_LOTE'];
+                if ($item['ID_LOTE_INSUMO_SALA'] == $lote['ID_LOTE']) {
+                    $item['CODIGO_INSUMO'] = $lote['CODIGO_PRODUCTO_LOTE'];
+                    $item['COD_INSUMO']    = $lote['ID_INSUMO_LOTE'];
                     break;
                 }
             }
-
             foreach ($insumos as $insumo) {
-                if (isset($insumosala['COD_INSUMO']) && $insumosala['COD_INSUMO'] == $insumo['ID_INSUMO']) {
-                    $insumosala['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
+                if (isset($item['COD_INSUMO']) && $item['COD_INSUMO'] == $insumo['ID_INSUMO']) {
+                    $item['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
                     break;
                 }
             }
-
             foreach ($salas as $sala) {
-                if ($insumosala['ID_SALA_INSUMO_SALA'] == $sala['ID_SALA']) {
-                    $insumosala['SALA_NOMBRE'] = $sala['NOMBRE_SALA'];
+                if ($item['ID_SALA_INSUMO_SALA'] == $sala['ID_SALA']) {
+                    $item['SALA_NOMBRE'] = $sala['NOMBRE_SALA'];
                     break;
                 }
             }
         }
+        unset($item);
 
-        // Pasar los datos a la vista
-        return view('insumossalas/index', [
-            'insumossalas' => $insumossalas,
-            'lotes' => $lotes,
-            'salas' => $salas
-        ]);
+        $data = [
+            'insumossalas' => $insumosSala,
+            'lotes'        => $lotes,
+            'salas'        => $salas,
+        ];
+
+        $view = $rolePrefix
+            ? "modules/insumossalas/{$rolePrefix}/index"
+            : "modules/insumossalas/index";
+
+        return $this->renderView($view, $data);
     }
 
-    // GET /insumossalas/create - Mostrar el formulario para crear un insumo en sala
+    // GET /insumossalas
+    public function index() { return $this->renderIndex(); }
+
+    // GET /bodeguero/insumossalas
+    public function indexBodeguero() { return $this->renderIndex('bodeguero'); }
+
+    // GET /administrador/insumossalas
+    public function indexAdmin() { return $this->renderIndex('administrador'); }
+
+    // GET /insumossalas/create
     public function create()
     {
-        // Obtener datos de las tablas lote, insumo y sala
-        $loteModel = new LoteModel();
-        $salaModel = new SalaModel();
-        $insumoModel = new InsumoModel();
-
-        $lotes = $loteModel->findAll();
-        $salas = $salaModel->findAll();
-        $insumos = $insumoModel->findAll();
-
-        // Pasar los datos a la vista
-        return view('insumossalas/create', [
-            'lotes' => $lotes,
-            'salas' => $salas,
-            'insumos' => $insumos
+        return $this->renderView('modules/insumossalas/create', [
+            'lotes'   => $this->loteModel->findAll(),
+            'salas'   => $this->salaModel->findAll(),
+            'insumos' => $this->insumoModel->findAll()
         ]);
     }
 
-    // POST /insumossalas - Crear un nuevo insumo en sala
+    // POST /insumossalas/store
     public function store()
     {
         $data = $this->request->getPost();
+        $cantidadSolicitada = (int) $data['CANTIDAD_INSUMO_SALA'];
 
-        // Obtener la cantidad disponible del lote seleccionado desde BodegaModel
-        $bodegaModel = new BodegaModel();
-        $insumosEnBodega = $bodegaModel->obtenerInsumosEnBodega();
-
-        // Buscar el lote específico
+        $insumosEnBodega = $this->bodegaModel->obtenerInsumosEnBodega();
         $cantidadDisponible = 0;
+
         foreach ($insumosEnBodega as $lote) {
             if ($lote['ID_LOTE'] == $data['ID_LOTE_INSUMO_SALA']) {
                 $cantidadDisponible = (int) $lote['CANTIDAD_DISPONIBLE'];
@@ -102,80 +110,48 @@ class InsumoSalaController extends ResourceController
             }
         }
 
-        $cantidadSolicitada = (int) $data['CANTIDAD_INSUMO_SALA'];
-
         if ($cantidadSolicitada > $cantidadDisponible) {
-            return redirect()->to(base_url('/insumossalas'))->with('error', 'Cantidad Ingresada supera la Disponible');
+            return redirect()->to('/insumossalas')->with('error', 'Cantidad ingresada supera la disponible.');
         }
 
-        // Si la cantidad es válida, registrar el insumo en sala
-        if ($this->model->insert($data)) {
-            return redirect()->to(base_url('/insumossalas'))->with('message', 'Insumo registrado correctamente.');
+        if ($this->insumoSalaModel->insert($data)) {
+            return redirect()->to('/insumossalas')->with('message', 'Insumo registrado correctamente.');
         }
 
-        return redirect()->to(base_url('/insumossalas'))->withInput()->with('errors', $this->model->errors());
+        return redirect()->back()->withInput()->with('errors', $this->insumoSalaModel->errors());
     }
 
-    // GET /insumossalas/edit/{id} - Mostrar el formulario para editar un insumo en sala
+    // GET /insumossalas/edit/{id}
     public function edit($id = null)
     {
-        $insumosala = $this->model->find($id);
+        $insumoSala = $this->insumoSalaModel->find($id);
+        if (!$insumoSala)
+            return redirect()->to('/insumossalas')->with('error', 'Insumo no encontrado.');
 
-        if ($insumosala) {
-            // Obtener datos de las tablas Lote, Insumo y Sala
-            $loteModel = new LoteModel();
-            $salaModel = new SalaModel();
-            $insumoModel = new InsumoModel();
-
-            $lotes = $loteModel->findAll();
-            $salas = $salaModel->findAll();
-            $insumos = $insumoModel->findAll();
-
-            // Pasar los datos a la vista
-            return view('insumossalas/edit', [
-                'insumosala' => $insumosala,
-                'lotes' => $lotes,
-                'salas' => $salas,
-                'insumos' => $insumos
-            ]);
-        }
-        return redirect()->to('/insumossalas')->with('error', 'No se encontró el insumo con ID: ' . $id);
+        return $this->renderView('modules/insumossalas/edit', [
+            'insumosala' => $insumoSala,
+            'lotes'      => $this->loteModel->findAll(),
+            'salas'      => $this->salaModel->findAll(),
+            'insumos'    => $this->insumoModel->findAll()
+        ]);
     }
 
-    // POST /insumossalas/update/{id} - Actualizar un insumo en sala
+    // POST /insumossalas/update/{id}
     public function update($id = null)
     {
         $data = $this->request->getPost();
-
-        if ($this->model->find($id)) {
-            if ($this->model->update($id, $data)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Insumo actualizado exitosamente'
-                ];
-                return redirect()->to('/insumossalas')->with('message', $response['message']);
-            }
-            return redirect()->back()->withInput()->with('errors', $this->model->errors());
+        if ($this->insumoSalaModel->update($id, $data)) {
+            return redirect()->to('/insumossalas')->with('message', 'Insumo actualizado exitosamente.');
         }
-
-        return redirect()->to('/insumossalas')->with('error', 'No se encontró la salida con ID: ' . $id);
+        return redirect()->back()->withInput()->with('errors', $this->insumoSalaModel->errors());
     }
 
-    // DELETE /insumossalas/{id} - Eliminar un insumo en sala
+    // GET /insumossalas/delete/{id}
     public function delete($id = null)
     {
-        if ($this->model->find($id)) {
-            if ($this->model->delete($id)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Salida de Bodega eliminada exitosamente'
-                ];
-                return redirect()->to('/insumossalas')->with('message', $response['message']);
-            }
-            return redirect()->to('/insumossalas')->with('error', 'Error al eliminar la salida');
+        if ($this->insumoSalaModel->delete($id)) {
+            return redirect()->to('/insumossalas')->with('message', 'Insumo eliminado correctamente.');
         }
-
-        return redirect()->to('/insumossalas')->with('error', 'No se encontró la salida con ID: ' . $id);
+        return redirect()->to('/insumossalas')->with('error', 'Error al eliminar el insumo.');
     }
-
 }
