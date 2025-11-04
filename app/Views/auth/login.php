@@ -46,7 +46,9 @@
     </button>
   </form>
   <?php if(session('error')): ?>
-    <p class="tw-text-center tw-text-red-600 tw-text-sm tw-mt-5"><?= esc(session('error')) ?></p>
+    <div class="tw-bg-red-50 tw-text-red-600 tw-border tw-border-red-200 tw-rounded-lg tw-py-2 tw-px-3 tw-mt-4 tw-text-center tw-text-sm">
+      <?= esc(session('error')) ?>
+    </div>
   <?php endif; ?>
 </div>
 
