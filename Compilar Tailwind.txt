@@ -1,0 +1,8 @@
+-- instalar NODE
+
+
+-- En consola: 
+
+npm install -D tailwindcss
+
+npx tailwindcss -i assets/src/tw.css -o public/assets/css/tw.css --watch
