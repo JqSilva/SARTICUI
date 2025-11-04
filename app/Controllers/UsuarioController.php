@@ -75,9 +75,15 @@ class UsuarioController extends ResourceController
     {
         $data = $this->request->getPost();
 
+        
+        if (!empty($data['CONTRASENA_USUARIO'])) {
+            $data['CONTRASENA_USUARIO'] = password_hash($data['CONTRASENA_USUARIO'], PASSWORD_DEFAULT);
+        }
+
         if ($this->model->insert($data)) {
             return redirect()->to(base_url('/usuarios'))->with('message', 'Usuario creado exitosamente');
         }
+
         return redirect()->back()->withInput()->with('errors', $this->model->errors());
     }
 
@@ -110,13 +116,16 @@ class UsuarioController extends ResourceController
     {
         $data = $this->request->getPost();
 
+        //  Solo hashea si el usuario ingresó una nueva contraseña
+        if (!empty($data['CONTRASENA_USUARIO'])) {
+            $data['CONTRASENA_USUARIO'] = password_hash($data['CONTRASENA_USUARIO'], PASSWORD_DEFAULT);
+        } else {
+            unset($data['CONTRASENA_USUARIO']);
+        }
+
         if ($this->model->find($id)) {
             if ($this->model->update($id, $data)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Usuario actualizado exitosamente'
-                ];
-                return redirect()->to('/usuarios')->with('message', $response['message']);
+                return redirect()->to('/usuarios')->with('message', 'Usuario actualizado exitosamente');
             }
             return redirect()->back()->withInput()->with('errors', $this->model->errors());
         }
