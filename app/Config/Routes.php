@@ -17,9 +17,16 @@ $routes->get('/logout', 'Auth::logout');
 // ==========================
 // 🏠 DASHBOARDS POR ROL
 // ==========================
+
+
 // Usan tus controladores para aplicar BaseController y layouts dinámicos
-$routes->get('/administrador', 'AdministradorController::index');
-$routes->get('/bodeguero', 'BodegueroController::index');
+$routes->group('administrador', ['filter' => 'role:administrador'], function($routes) {
+    $routes->get('/', 'AdministradorController::index');
+});
+
+$routes->group('bodeguero', ['filter' => 'role:bodeguero'], function($routes) {
+    $routes->get('/', 'BodegueroController::index');
+});
 
 
 // ==========================
@@ -123,7 +130,7 @@ $routes->get('/relacionsolicitudes', 'Home::relacionSolicitudes');
 $routes->get('/relacionmantenciones', 'Home::relacionMantenciones');
 $routes->get('/relacionprestaciones', 'Home::relacionPrestaciones');
 
-$routes->get('/bodega', 'BodegaController::index');
+
 $routes->get('/solicitudes', 'SolicitudController::index');
 
 // ==========================
