@@ -116,6 +116,11 @@ $routes->group('usospacientes', function($routes) {
 });
 
 
+// -- TRAZABILIDAD DE ACCIONES
+$routes->group('RegistroActividades', function($routes) {
+    $routes->get('/', 'TrazabilidadAccionController::index');
+});
+
 // ==========================
 // 👥 GESTIÓN DE USUARIOS / PERFILES
 // ==========================

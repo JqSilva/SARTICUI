@@ -73,7 +73,7 @@
           ['title' => 'Despacho a Sala', 'icon' => 'bi-arrow-left-right', 'link' => 'insumossalas'],
           ['title' => 'Consumo de Insumos', 'icon' => 'bi-heart-pulse', 'link' => 'usospacientes'],
           ['title' => 'Catálogo del Sistema', 'icon' => 'bi-file-medical', 'link' => 'catalogosistema'],
-          ['title' => 'Registro de Actividades', 'icon' => 'bi-clipboard-data', 'link' => 'trazabilidadacciones']
+          ['title' => 'Registro de Actividades', 'icon' => 'bi-clipboard-data', 'link' => 'RegistroActividades']
         ];
         ?>
 
