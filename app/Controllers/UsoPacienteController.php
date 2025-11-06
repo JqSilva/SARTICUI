@@ -1,6 +1,6 @@
 <?php
 namespace App\Controllers;
-use CodeIgniter\RESTful\ResourceController;
+
 use App\Models\UsoPacienteModel;
 use App\Models\InsumoSalaModel;
 use App\Models\PacienteModel;
@@ -9,48 +9,48 @@ use App\Models\InsumoModel;
 use App\Models\SalaModel;
 use App\Models\TipoRegistroModel;
 
-// Controlador de Uso en Paciente
-
-class UsoPacienteController extends ResourceController
+class UsoPacienteController extends BaseController
 {
-    protected $modelName = 'App\Models\UsoPacienteModel';
-    protected $format = 'json';
+    protected $usoPacienteModel;
+    protected $insumoSalaModel;
+    protected $pacienteModel;
+    protected $loteModel;
+    protected $insumoModel;
+    protected $salaModel;
+    protected $tipoRegistroModel;
 
-    // GET /usospacientes - Obtener todos los usos en pacientes
+    public function __construct()
+    {
+        $this->usoPacienteModel = new UsoPacienteModel();
+        $this->insumoSalaModel = new InsumoSalaModel();
+        $this->pacienteModel = new PacienteModel();
+        $this->loteModel = new LoteModel();
+        $this->insumoModel = new InsumoModel();
+        $this->salaModel = new SalaModel();
+        $this->tipoRegistroModel = new TipoRegistroModel();
+    }
+
+    // GET /usospacientes
     public function index()
     {
-        // Obtener todos los usos en pacientes
-        $usospacientes = $this->model->findAll();
+        $usospacientes = $this->usoPacienteModel->findAll();
 
-        // Obtener los insumos, pacientes, sala y tipo de registro
-        $insumosalaModel = new InsumoSalaModel();
-        $pacienteModel = new PacienteModel();
-        $insumoModel = new InsumoModel();
-        $salaModel = new SalaModel();
-        $tiporegistroModel = new TipoRegistroModel();
-        $loteModel = new LoteModel();
+        $insumossalas = $this->insumoSalaModel->findAll();
+        $pacientes = $this->pacienteModel->findAll();
+        $insumos = $this->insumoModel->findAll();
+        $salas = $this->salaModel->findAll();
+        $tiposregistros = $this->tipoRegistroModel->findAll();
+        $lotes = $this->loteModel->findAll();
 
-        $insumossalas = $insumosalaModel->findAll();
-        $pacientes = $pacienteModel->findAll();
-        $insumos = $insumoModel->findAll();
-        $salas = $salaModel->findAll();
-        $tiposregistros = $tiporegistroModel->findAll();
-        $lotes = $loteModel->findAll();
-
-        // Convertir estado_insumo a texto
         foreach ($usospacientes as &$usopaciente) {
-
-            // Obtener nombres de insumos, pacientes, sala y tipo de registro
             foreach ($insumossalas as $insumosala) {
                 if ($usopaciente['ID_INSUMO_SALA_USO'] == $insumosala['ID_INSUMO_SALA']) {
-                    $usopaciente['ID_LOTE_INSUMO_SALA'] = $insumosala['ID_LOTE_INSUMO_SALA']; // ID del lote asociado al insumo en sala
-
-                    // Obtener información del lote relacionado
+                    $usopaciente['ID_LOTE_INSUMO_SALA'] = $insumosala['ID_LOTE_INSUMO_SALA'];
                     foreach ($lotes as $lote) {
                         if ($lote['ID_LOTE'] == $insumosala['ID_LOTE_INSUMO_SALA']) {
                             $usopaciente['CODIGO_INSUMO'] = $lote['CODIGO_PRODUCTO_LOTE'];
                             $usopaciente['COD_INSUMO'] = $lote['ID_INSUMO_LOTE'];
-                            $usopaciente['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE']; // Agregamos el costo unitario
+                            $usopaciente['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
                             break;
                         }
                     }
@@ -79,16 +79,15 @@ class UsoPacienteController extends ResourceController
                 }
             }
 
-            foreach ($tiposregistros as $tiporegistro) {
-                if ($usopaciente['ID_TIPO_REGISTRO_USO'] == $tiporegistro['ID_TIPO_REGISTRO']) {
-                    $usopaciente['TIPO_REGISTRO_NOMBRE'] = $tiporegistro['NOMBRE_TIPO_REGISTRO'];
+            foreach ($tiposregistros as $tipo) {
+                if ($usopaciente['ID_TIPO_REGISTRO_USO'] == $tipo['ID_TIPO_REGISTRO']) {
+                    $usopaciente['TIPO_REGISTRO_NOMBRE'] = $tipo['NOMBRE_TIPO_REGISTRO'];
                     break;
                 }
             }
         }
 
-        // Pasar los datos a la vista
-        return view('usospacientes/index', [
+        return $this->renderView('modules/usospacientes/index', [
             'usospacientes' => $usospacientes,
             'insumossalas' => $insumossalas,
             'pacientes' => $pacientes,
@@ -96,30 +95,19 @@ class UsoPacienteController extends ResourceController
         ]);
     }
 
-    // GET /usospacientes/create - Mostrar el formulario para crear un insumo
+    // GET /usospacientes/create
     public function create()
     {
-        // Obtener datos de las tablas Lote, Sala e Insumo
-        $insumosalaModel = new InsumoSalaModel();
-        $pacienteModel = new PacienteModel();
-        $insumoModel = new InsumoModel();
-        $loteModel = new LoteModel();
-        $salaModel = new SalaModel();
-        $tiporegistroModel = new TipoRegistroModel();
+        $insumossalas = $this->insumoSalaModel->findAll();
+        $pacientes = $this->pacienteModel->findAll();
+        $insumos = $this->insumoModel->findAll();
+        $lotes = $this->loteModel->findAll();
+        $salas = $this->salaModel->findAll();
+        $tiposregistros = $this->tipoRegistroModel->findAll();
 
-        $insumossalas = $insumosalaModel->findAll();
-        $pacientes = $pacienteModel->findAll();
-        $insumos = $insumoModel->findAll();
-        $lotes = $loteModel->findAll();
-        $salas = $salaModel->findAll();
-        $tiposregistros = $tiporegistroModel->findAll();
-
-        // Asignar nombre del insumo a cada insumo_sala a través del lote
         foreach ($insumossalas as &$insumosala) {
-            // Buscar el lote correspondiente
             foreach ($lotes as $lote) {
                 if ($lote['ID_LOTE'] == $insumosala['ID_LOTE_INSUMO_SALA']) {
-                    // Buscar el insumo relacionado con el lote
                     foreach ($insumos as $insumo) {
                         if ($lote['ID_INSUMO_LOTE'] == $insumo['ID_INSUMO']) {
                             $insumosala['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
@@ -132,8 +120,7 @@ class UsoPacienteController extends ResourceController
             }
         }
 
-        // Pasar los datos a la vista
-        return view('usospacientes/create', [
+        return $this->renderView('modules/usospacientes/create', [
             'insumossalas' => $insumossalas,
             'lotes' => $lotes,
             'pacientes' => $pacientes,
@@ -143,126 +130,91 @@ class UsoPacienteController extends ResourceController
         ]);
     }
 
-    // POST /usospacientes - Crear un nuevo insumo
+    // POST /usospacientes/store
     public function store()
     {
         $data = $this->request->getPost();
 
-        // Obtener la cantidad disponible de insumo en sala
-        $insumoSalaModel = new InsumoSalaModel();
-        $insumoSala = $insumoSalaModel->find($data['ID_INSUMO_SALA_USO']); // Suponiendo que tienes un campo 'ID_INSUMO_SALA_USO'
-
+        $insumoSala = $this->insumoSalaModel->find($data['ID_INSUMO_SALA_USO']);
         if (!$insumoSala) {
-            return redirect()->to(base_url('/usospacientes'))->with('error', 'El insumo seleccionado no existe en sala.');
+            return redirect()->to('/usospacientes')->with('error', 'El insumo seleccionado no existe en sala.');
         }
 
-        // Comparar la cantidad utilizada con la cantidad disponible en insumo sala
         $cantidadDisponible = (int) $insumoSala['CANTIDAD_INSUMO_SALA'];
         $cantidadUtilizada = (int) $data['CANTIDAD_UTILIZADA_USO'];
 
         if ($cantidadUtilizada > $cantidadDisponible) {
-            return redirect()->to(base_url('/usospacientes'))->with('error', 'Cantidad Utilizada supera la Disponible.');
+            return redirect()->to('/usospacientes')->with('error', 'Cantidad utilizada supera la disponible.');
         }
 
-        // Si la cantidad es válida, registrar el uso en paciente
-        $this->model->insert($data);
+        $this->usoPacienteModel->insert($data);
 
-        // Actualizar la cantidad disponible en InsumoSala (restar la cantidad utilizada)
-        $newCantidadDisponible = $cantidadDisponible - $cantidadUtilizada;
-        $insumoSalaModel->update($data['ID_INSUMO_SALA_USO'], [
-            'CANTIDAD_INSUMO_SALA' => $newCantidadDisponible
+        $this->insumoSalaModel->update($data['ID_INSUMO_SALA_USO'], [
+            'CANTIDAD_INSUMO_SALA' => $cantidadDisponible - $cantidadUtilizada
         ]);
 
-        // No se debe agregar de nuevo al stock disponible, ya que se está usando en paciente
-
-        return redirect()->to(base_url('/usospacientes'))->with('message', 'Consumo Registrado Correctamente.');
+        return redirect()->to('/usospacientes')->with('message', 'Consumo registrado correctamente.');
     }
 
-    // GET /usospacientes/edit/{id} - Mostrar el formulario para editar un insumo
+    // GET /usospacientes/edit/{id}
     public function edit($id = null)
     {
-        $usopaciente = $this->model->find($id);
+        $usopaciente = $this->usoPacienteModel->find($id);
+        if (!$usopaciente) {
+            return redirect()->to('/usospacientes')->with('error', 'No se encontró el registro con ID: ' . $id);
+        }
 
-        if ($usopaciente) {
-            $insumosalaModel = new InsumoSalaModel();
-            $pacienteModel = new PacienteModel();
-            $insumoModel = new InsumoModel();
-            $loteModel = new LoteModel();
-            $salaModel = new SalaModel();
-            $tiporegistroModel = new TipoRegistroModel();
+        $insumossalas = $this->insumoSalaModel->findAll();
+        $pacientes = $this->pacienteModel->findAll();
+        $insumos = $this->insumoModel->findAll();
+        $lotes = $this->loteModel->findAll();
+        $salas = $this->salaModel->findAll();
+        $tiposregistros = $this->tipoRegistroModel->findAll();
 
-            $insumossalas = $insumosalaModel->findAll();
-            $pacientes = $pacienteModel->findAll();
-            $insumos = $insumoModel->findAll();
-            $lotes = $loteModel->findAll();
-            $salas = $salaModel->findAll();
-            $tiposregistros = $tiporegistroModel->findAll();
-
-            // Asignar nombre del insumo a cada insumo_sala a través del lote
-            foreach ($insumossalas as &$insumosala) {
-                // Buscar el lote correspondiente
-                foreach ($lotes as $lote) {
-                    if ($lote['ID_LOTE'] == $insumosala['ID_LOTE_INSUMO_SALA']) {
-                        // Buscar el insumo relacionado con el lote
-                        foreach ($insumos as $insumo) {
-                            if ($lote['ID_INSUMO_LOTE'] == $insumo['ID_INSUMO']) {
-                                $insumosala['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
-                                $insumosala['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
-                                break;
-                            }
+        foreach ($insumossalas as &$insumosala) {
+            foreach ($lotes as $lote) {
+                if ($lote['ID_LOTE'] == $insumosala['ID_LOTE_INSUMO_SALA']) {
+                    foreach ($insumos as $insumo) {
+                        if ($lote['ID_INSUMO_LOTE'] == $insumo['ID_INSUMO']) {
+                            $insumosala['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
+                            $insumosala['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
+                            break;
                         }
-                        break;
                     }
+                    break;
                 }
             }
-
-            // Pasar los datos a la vista
-            return view('usospacientes/edit', [
-                'usopaciente' => $usopaciente,
-                'insumossalas' => $insumossalas,
-                'lotes' => $lotes,
-                'pacientes' => $pacientes,
-                'insumos' => $insumos,
-                'salas' => $salas,
-                'tiposregistros' => $tiposregistros
-            ]);
         }
-        return redirect()->to('/usospacientes')->with('error', 'No se encontró el insumo con ID: ' . $id);
+
+        return $this->renderView('modules/usospacientes/edit', [
+            'usopaciente' => $usopaciente,
+            'insumossalas' => $insumossalas,
+            'lotes' => $lotes,
+            'pacientes' => $pacientes,
+            'insumos' => $insumos,
+            'salas' => $salas,
+            'tiposregistros' => $tiposregistros
+        ]);
     }
 
-    // POST /usospacientes/update/{id} - Actualizar un insumo
+    // POST /usospacientes/update/{id}
     public function update($id = null)
     {
         $data = $this->request->getPost();
 
-        if ($this->model->find($id)) {
-            if ($this->model->update($id, $data)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Salida de Bodega actualizada exitosamente'
-                ];
-                return redirect()->to('/usospacientes')->with('message', $response['message']);
-            }
-            return redirect()->back()->withInput()->with('errors', $this->model->errors());
+        if ($this->usoPacienteModel->update($id, $data)) {
+            return redirect()->to('/usospacientes')->with('message', 'Uso de paciente actualizado correctamente.');
         }
 
-        return redirect()->to('/usospacientes')->with('error', 'No se encontró la salida con ID: ' . $id);
+        return redirect()->back()->withInput()->with('errors', $this->usoPacienteModel->errors());
     }
 
-    // DELETE /usospacientes/{id} - Eliminar un insumo
+    // GET /usospacientes/delete/{id}
     public function delete($id = null)
     {
-        if ($this->model->find($id)) {
-            if ($this->model->delete($id)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Salida de Bodega eliminada exitosamente'
-                ];
-                return redirect()->to('/usospacientes')->with('message', $response['message']);
-            }
-            return redirect()->to('/usospacientes')->with('error', 'Error al eliminar la salida');
+        if ($this->usoPacienteModel->delete($id)) {
+            return redirect()->to('/usospacientes')->with('message', 'Registro eliminado correctamente.');
         }
-
-        return redirect()->to('/usospacientes')->with('error', 'No se encontró la salida con ID: ' . $id);
+        return redirect()->to('/usospacientes')->with('error', 'Error al eliminar el registro.');
     }
 }

@@ -2,7 +2,7 @@
 
 <!-- Visualización de Usos en Pacientes Existentes -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 

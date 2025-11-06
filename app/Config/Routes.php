@@ -104,6 +104,18 @@ $routes->group('perfiles', function($routes) {
 // -- CATALOGO
 $routes->get('/catalogosistema', 'CatalogoController::index');
 
+
+// -- USOS EN PACIENTES
+$routes->group('usospacientes', function($routes) {
+    $routes->get('/', 'UsoPacienteController::index');
+    $routes->get('create', 'UsoPacienteController::create');
+    $routes->post('store', 'UsoPacienteController::store');
+    $routes->get('edit/(:num)', 'UsoPacienteController::edit/$1');
+    $routes->post('update/(:num)', 'UsoPacienteController::update/$1');
+    $routes->get('delete/(:num)', 'UsoPacienteController::delete/$1');
+});
+
+
 // ==========================
 // 👥 GESTIÓN DE USUARIOS / PERFILES
 // ==========================

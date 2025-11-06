@@ -1,8 +1,8 @@
-<!-- app/Views/usospacientes/create.php -->
+<!-- app/Views/usospacientes/edit.php -->
 
-<!-- Vista para la creación de un nuevo Uso en Paciente -->
+<!-- Vista para la edición de un Uso en Paciente -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 
@@ -11,9 +11,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Consumo</title>
+    <title>Editar Consumo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Librería para alertas -->
 
     <style>
         /* Diseño de la cuadrícula para organizar los campos del formulario */
@@ -53,10 +52,10 @@
 </head>
 <body style="background-color: #9AB5D9;">
     <div class="container mt-5">
-        <h1>Crear Consumo</h1>
+        <h1>Editar Consumo</h1>
 
-        <!-- Formulario para crear un nuevo Uso de Pacientes -->
-        <form action="<?= base_url('usospacientes/store') ?>" method="POST">
+        <!-- Formulario para actualizar un uso de paciente existente -->
+        <form action="<?= base_url('usospacientes/update/'.$usopaciente['ID_USO_PACIENTE']) ?>" method="POST">
             <div class="parent">
                 <!-- Selección de la Sala -->
                 <div class="div1">
@@ -69,24 +68,28 @@
                     </select>
                 </div>
 
-                <!-- Selección del Insumo en Sala -->
+                <!-- Selección del Insumo  -->
                 <div class="div2">
                     <label for="ID_INSUMO_SALA_USO" class="form-label">Insumo</label>
                     <select class="form-control" id="ID_INSUMO_SALA_USO" name="ID_INSUMO_SALA_USO" required>
-                        <option value="">Seleccionar Insumo</option>
+                        <?php foreach ($insumossalas as $insumosala): ?>
+                            <option value="<?= $insumosala['ID_INSUMO_SALA'] ?>" <?= $usopaciente['ID_INSUMO_SALA_USO'] == $insumosala['ID_INSUMO_SALA'] ? 'selected' : '' ?>>
+                                <?= $insumosala['NOMBRE_INSUMO'] ?> <!-- Aquí mostramos el nombre del insumo -->
+                            </option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
 
-                <!-- Campo para la cantidad utilizada de los Insumos -->
+                <!-- Campo para la cantidad utilizada de Insumo -->
                 <div class="div3">
                     <label for="CANTIDAD_UTILIZADA_USO" class="form-label">Cantidad Utilizada</label>
-                    <input type="number" class="form-control" id="CANTIDAD_UTILIZADA_USO" name="CANTIDAD_UTILIZADA_USO" required>
+                    <input type="number" class="form-control" id="CANTIDAD_UTILIZADA_USO" name="CANTIDAD_UTILIZADA_USO" value="<?= $usopaciente['CANTIDAD_UTILIZADA_USO'] ?>" required>
                 </div>
 
                 <!-- Campo para la fecha de uso del Insumo -->
                 <div class="div4">
                     <label for="FECHA_USO" class="form-label">Fecha de Uso</label>
-                    <input type="date" class="form-control" id="FECHA_USO" name="FECHA_USO" required>
+                    <input type="date" class="form-control" id="FECHA_USO" name="FECHA_USO" value="<?= $usopaciente['FECHA_USO'] ?>" required>
                 </div>
 
                 <!-- Selección del Paciente -->
@@ -94,7 +97,9 @@
                     <label for="ID_PACIENTE_USO" class="form-label">Paciente</label>
                     <select class="form-control" id="ID_PACIENTE_USO" name="ID_PACIENTE_USO" required>
                         <?php foreach ($pacientes as $paciente): ?>
-                            <option value="<?= $paciente['ID_PACIENTE'] ?>"><?= $paciente['NOMBRE_PACIENTE'] ?></option>
+                            <option value="<?= $paciente['ID_PACIENTE'] ?>" <?= $usopaciente['ID_PACIENTE_USO'] == $paciente['ID_PACIENTE'] ? 'selected' : '' ?>>
+                                <?= $paciente['NOMBRE_PACIENTE'] ?>
+                            </option>
                         <?php endforeach; ?>
                     </select>
                 </div>
@@ -104,20 +109,19 @@
                     <label for="ID_TIPO_REGISTRO_USO" class="form-label">Tipo de Registro</label>
                     <select class="form-control" id="ID_TIPO_REGISTRO_USO" name="ID_TIPO_REGISTRO_USO" required>
                         <?php foreach ($tiposregistros as $tiporegistro): ?>
-                            <option value="<?= $tiporegistro['ID_TIPO_REGISTRO'] ?>"><?= $tiporegistro['NOMBRE_TIPO_REGISTRO'] ?></option>
+                            <option value="<?= $tiporegistro['ID_TIPO_REGISTRO'] ?>" <?= $usopaciente['ID_TIPO_REGISTRO_USO'] == $tiporegistro['ID_TIPO_REGISTRO'] ? 'selected' : '' ?>>
+                                <?= $tiporegistro['NOMBRE_TIPO_REGISTRO'] ?>
+                            </option>
                         <?php endforeach; ?>
                     </select>
                 </div>
             </div>
 
             <!-- Botones de acción -->
-            <button type="submit" class="btn btn-primary">Crear Consumo</button>
-            <button type="reset" class="btn btn-secondary">Limpiar Campos</button>
-            <button type="button" class="btn btn-danger" id="cancelar-btn">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Actualizar Consumo</button>
+            <button type="button" class="btn btn-danger" onclick="window.history.back();">Cancelar</button>
         </form>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         // Datos de insumos disponibles en cada sala (provienen del backend)
@@ -142,23 +146,9 @@
                 insumoSelect.appendChild(option);
             });
         }
-        // Confirmación antes de cancelar
-        document.getElementById('cancelar-btn').addEventListener('click', function () {
-            Swal.fire({
-                title: "¿Estás seguro?",
-                text: "Los cambios no se guardarán.",
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonText: "Sí",
-                cancelButtonText: "No"
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    window.location.href = "<?= base_url('usospacientes') ?>"; // Redirige a la lista de Consumos
-                }
-            });
-        });
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 

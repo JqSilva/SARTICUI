@@ -88,7 +88,7 @@
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('/administrador') ?>'">🏠 Inicio</button>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('/administrador/insumos') ?>'">📦 Catálogo de Insumos</button>
+                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('/insumos') ?>'">📦 Catálogo de Insumos</button>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('stock') ?>'">📊 Stock Disponible</button>

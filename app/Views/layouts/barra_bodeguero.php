@@ -100,7 +100,7 @@
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('insumossalas') ?>'">🏥 Despacho a Sala</button>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('catalogosistema') ?>'">⚙️ Generar Maestro</button>
+                    <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('catalogosistema') ?>'">➕ Generar Maestro</button>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-custom w-100 mb-2" onclick="window.location.href='<?= base_url('catalogosistema') ?>'">⚙️ Catálogo del Sistema</button>
