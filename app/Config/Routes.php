@@ -88,6 +88,7 @@ $routes->group('lotes', function ($routes) {
     $routes->post('store', 'LoteController::store');
     $routes->get('edit/(:num)', 'LoteController::edit/$1');
     $routes->post('update/(:num)', 'LoteController::update/$1');
+    $routes->get('delete/(:num)', 'LoteController::delete/$1');
 });
 
 // -- perfiles

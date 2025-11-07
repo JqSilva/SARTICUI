@@ -115,6 +115,7 @@ class InsumoSalaController extends BaseController
         }
 
         if ($this->insumoSalaModel->insert($data)) {
+            registrar_traza(session('id_usuario'), $data['ID_INSUMO'], $data['CANTIDAD_INSUMO_SALA'], 'Retiro');
             return redirect()->to('/insumossalas')->with('message', 'Insumo registrado correctamente.');
         }
 

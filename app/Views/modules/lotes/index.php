@@ -1,23 +1,21 @@
 <!-- app/Views/lotes/index.php -->
 
-<!-- Visualizar los Lotes existentes -->
-
 <?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 
 <div class="container mt-5">
 
-    <!-- Botón para regresar a la vista anterior -->
-    <a href="<?= base_url('relacionlotes') ?>" class="btn btn-light">
+    <!-- Botón para regresar -->
+    <a href="<?= base_url('relacionlotes') ?>" class="btn btn-light mb-3">
         <i class="bi bi-arrow-left-circle"></i> Volver
     </a>
 
     <h1 class="text-center mb-4 text-dark">Ingreso de Insumos</h1>
 
-    <!-- Filtro de ordenación por fecha de vencimiento -->
+    <!-- Filtro de ordenación -->
     <form method="GET" action="<?= base_url('lotes') ?>" class="mb-3 d-flex align-items-center">
-        <label for="orden" class="form-label">Ordenar por fecha de vencimiento:</label>
+        <label for="orden" class="form-label me-2">Ordenar por fecha de vencimiento:</label>
         <select name="orden" id="orden" class="form-select w-auto me-2">
             <option value="asc" <?= ($orden == 'asc') ? 'selected' : '' ?>>Más Próxima</option>
             <option value="desc" <?= ($orden == 'desc') ? 'selected' : '' ?>>Más Lejana</option>
@@ -25,14 +23,14 @@
         <button type="submit" class="btn btn-danger">Aplicar</button>
     </form>
 
-    <!-- Botón para crear nuevo lote -->
+    <!-- Botón Crear Lote -->
     <div class="d-flex justify-content-between align-items-center mb-4">
         <a href="<?= base_url('lotes/create') ?>" class="btn btn-success">
             <i class="bi bi-plus-circle"></i> Crear Lote
         </a>
     </div>
 
-    <!-- Tabla para visualizar los lotes -->
+    <!-- Tabla de Lotes -->
     <div class="table-responsive">
         <table class="table table-striped table-hover table-bordered text-center align-middle">
             <thead class="table-dark text-light">
@@ -69,13 +67,17 @@
                             <td><?= esc($lote['TIPO_COMPRA_NOMBRE']) ?></td>
                             <td><?= esc($lote['OBSERVACION_LOTE']) ?></td>
                             <td>
-                                <!-- Botón de edición -->
+                                <!-- Editar -->
                                 <a href="<?= base_url('lotes/edit/'.$lote['ID_LOTE']) ?>" class="btn btn-warning btn-sm">
-                                    <i class="bi bi-pencil-square"></i> Editar  <!-- Ícono de editar -->
+                                    <i class="bi bi-pencil-square"></i> Editar
                                 </a>
-                                <!-- Botón para abrir el modal de eliminación -->
-                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmDeleteModal" data-id="<?= $lote['ID_LOTE'] ?>">
-                                    <i class="bi bi-x-circle"></i> Eliminar  <!-- Ícono de borrar -->
+
+                                <!-- Eliminar -->
+                                <button class="btn btn-danger btn-sm"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#confirmDeleteModal"
+                                        data-id="<?= $lote['ID_LOTE'] ?>">
+                                    <i class="bi bi-x-circle"></i> Eliminar
                                 </button>
                             </td>
                         </tr>
@@ -109,23 +111,24 @@
     </div>
 </div>
 
-<!-- Script para manejar la eliminación de lotes -->
+<!-- Script para manejar la eliminación -->
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var confirmDeleteModal = document.getElementById('confirmDeleteModal');
-        var confirmDeleteButton = document.getElementById('confirmDeleteButton');
+document.addEventListener("DOMContentLoaded", function() {
+    var confirmDeleteModal = document.getElementById('confirmDeleteModal');
+    var confirmDeleteButton = document.getElementById('confirmDeleteButton');
 
-        confirmDeleteModal.addEventListener('show.bs.modal', function(event) {
-            var button = event.relatedTarget;  // Botón que activó el modal
-            var loteId = button.getAttribute('data-id');  // Obtener el ID del lote
-            confirmDeleteButton.href = "<?= base_url('lotes/delete/') ?>" + loteId;  // Actualizar el enlace de eliminación
-        });
+    confirmDeleteModal.addEventListener('show.bs.modal', function(event) {
+        var button = event.relatedTarget; // Botón que abrió el modal
+        var loteId = button.getAttribute('data-id'); // ID del lote
+        confirmDeleteButton.href = "<?= base_url('lotes/delete/') ?>" + loteId; // Actualiza el enlace
     });
+});
 </script>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- Estilos -->
 <style>
     body {
         background-color: #9AB5D9;
@@ -138,10 +141,6 @@
 
     .table tbody tr:hover {
         background-color: #f1f1f1;
-    }
-
-    .btn-outline-secondary {
-        border-radius: 8px;
     }
 
     .modal-content {

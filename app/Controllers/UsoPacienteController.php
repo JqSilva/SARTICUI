@@ -148,6 +148,7 @@ class UsoPacienteController extends BaseController
         }
 
         $this->usoPacienteModel->insert($data);
+        registrar_traza(session('id_usuario'), $data['ID_INSUMO'], $data['CANTIDAD_UTILIZADA_USO'], 'Uso');
 
         $this->insumoSalaModel->update($data['ID_INSUMO_SALA_USO'], [
             'CANTIDAD_INSUMO_SALA' => $cantidadDisponible - $cantidadUtilizada

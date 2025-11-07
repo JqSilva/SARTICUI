@@ -61,10 +61,16 @@ class LoteController extends BaseController
         $data = $this->request->getPost();
 
         if ($this->loteModel->insert($data)) {
+            // Usa directamente el método del controlador de trazabilidad
+            $trazabilidad = new TrazabilidadAccionController();
+            $trazabilidad->registrarAccion(session('id'), $data['ID_INSUMO_LOTE'], $data['CANTIDAD_TOTAL_LOTE'], 'Ingreso');
+
             return redirect()->to('/lotes')->with('message', 'Lote creado exitosamente');
         }
+
         return redirect()->back()->withInput()->with('errors', $this->loteModel->errors());
     }
+
 
     // GET /lotes/edit/{id}
     public function edit($id = null)

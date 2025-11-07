@@ -362,6 +362,21 @@ CREATE TABLE HISTORIAL_MOVIMIENTOS (
     FOREIGN KEY (ID_LOTE_HISTORIAL) REFERENCES LOTE(ID_LOTE)
 );
 
+
+CREATE TABLE IF NOT EXISTS TRAZABILIDAD_ACCION (
+    ID_TRAZABILIDAD INT AUTO_INCREMENT PRIMARY KEY,
+    ID_USUARIO INT NOT NULL,             -- Usuario que realizó la acción
+    ID_INSUMO INT NOT NULL,              -- Insumo afectado
+    CANTIDAD INT DEFAULT NULL,           -- Cantidad relacionada (puede ser NULL si no aplica)
+    ACCION VARCHAR(50) NOT NULL,         -- Ej: 'Ingreso', 'Retiro', 'Uso', etc.
+    FECHA_ACCION DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (ID_USUARIO) REFERENCES USUARIO(ID_USUARIO),
+    FOREIGN KEY (ID_INSUMO) REFERENCES INSUMO(ID_INSUMO)
+);
+
+
+
+
 ----------------- Triggers -----------------
 
 -- Calcular Horas Trabajadas
