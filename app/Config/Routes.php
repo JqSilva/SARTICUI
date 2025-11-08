@@ -6,162 +6,111 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-// ==========================
-// 🟢 LOGIN / LOGOUT
-// ==========================
+// Login y Logout
 $routes->get('/', 'Auth::login');
 $routes->get('/login', 'Auth::login');
 $routes->post('/auth/doLogin', 'Auth::doLogin');
 $routes->get('/logout', 'Auth::logout');
 
-// ==========================
-// 🏠 DASHBOARDS POR ROL
-// ==========================
+// Dashboards
+$routes->group('administrador', ['filter' => 'role:administrador'], fn($r) => $r->get('/', 'AdministradorController::index'));
+$routes->group('bodeguero', ['filter' => 'role:bodeguero'], fn($r) => $r->get('/', 'BodegueroController::index'));
 
+// Error sin permisos
+$routes->get('/unauthorized', fn() => view('errors/custom/unauthorized'));
 
-// Usan tus controladores para aplicar BaseController y layouts dinámicos
-$routes->group('administrador', ['filter' => 'role:administrador'], function($routes) {
-    $routes->get('/', 'AdministradorController::index');
+// Rutas solo para Administrador
+$routes->group('', ['filter' => 'role:administrador'], function ($routes) {
+    $routes->group('stock', fn($r) => [
+        $r->get('/', 'StockController::index'),
+        $r->get('(:segment)', 'StockController::detalle/$1')
+    ]);
+
+    $routes->group('perfiles', fn($r) => [
+        $r->get('/', 'PerfilesController::index'),
+        $r->get('create', 'PerfilesController::create'),
+        $r->post('store', 'PerfilesController::store'),
+        $r->get('edit/(:num)', 'PerfilesController::edit/$1'),
+        $r->post('update/(:num)', 'PerfilesController::update/$1'),
+        $r->get('delete/(:num)', 'PerfilesController::delete/$1')
+    ]);
+
+    $routes->group('usuarios', fn($r) => [
+        $r->get('/', 'UsuarioController::index'),
+        $r->get('create', 'UsuarioController::create'),
+        $r->post('store', 'UsuarioController::store'),
+        $r->get('edit/(:num)', 'UsuarioController::edit/$1'),
+        $r->post('update/(:num)', 'UsuarioController::update/$1'),
+        $r->get('delete/(:num)', 'UsuarioController::delete/$1')
+    ]);
+
+    $routes->group('usospacientes', fn($r) => [
+        $r->get('/', 'UsoPacienteController::index'),
+        $r->get('create', 'UsoPacienteController::create'),
+        $r->post('store', 'UsoPacienteController::store'),
+        $r->get('edit/(:num)', 'UsoPacienteController::edit/$1'),
+        $r->post('update/(:num)', 'UsoPacienteController::update/$1'),
+        $r->get('delete/(:num)', 'UsoPacienteController::delete/$1')
+    ]);
+
+    $routes->group('RegistroActividades', fn($r) => $r->get('/', 'TrazabilidadAccionController::index'));
 });
 
-$routes->group('bodeguero', ['filter' => 'role:bodeguero'], function($routes) {
-    $routes->get('/', 'BodegueroController::index');
+// Rutas compartidas (Administrador y Bodeguero)
+$routes->group('', ['filter' => 'role:administrador,bodeguero'], function ($routes) {
+
+    $routes->group('insumos', fn($r) => [
+        $r->get('/', 'InsumoController::index'),
+        $r->get('create', 'InsumoController::create'),
+        $r->post('store', 'InsumoController::store'),
+        $r->get('edit/(:num)', 'InsumoController::edit/$1'),
+        $r->post('update/(:num)', 'InsumoController::update/$1'),
+        $r->get('delete/(:num)', 'InsumoController::delete/$1')
+    ]);
+
+    $routes->group('insumossalas', fn($r) => [
+        $r->get('/', 'InsumoSalaController::index'),
+        $r->get('create', 'InsumoSalaController::create'),
+        $r->post('store', 'InsumoSalaController::store'),
+        $r->get('edit/(:num)', 'InsumoSalaController::edit/$1'),
+        $r->post('update/(:num)', 'InsumoSalaController::update/$1'),
+        $r->get('delete/(:num)', 'InsumoSalaController::delete/$1')
+    ]);
+
+    $routes->group('lotes', fn($r) => [
+        $r->get('/', 'LoteController::index'),
+        $r->get('create', 'LoteController::create'),
+        $r->post('store', 'LoteController::store'),
+        $r->get('edit/(:num)', 'LoteController::edit/$1'),
+        $r->post('update/(:num)', 'LoteController::update/$1'),
+        $r->get('delete/(:num)', 'LoteController::delete/$1')
+    ]);
+
+    $routes->group('solicitudes', fn($r) => [
+        $r->get('/', 'SolicitudController::index'),
+        $r->get('create', 'SolicitudController::create'),
+        $r->post('store', 'SolicitudController::store'),
+        $r->get('edit/(:num)', 'SolicitudController::edit/$1'),
+        $r->post('update/(:num)', 'SolicitudController::update/$1')
+    ]);
+
+    $routes->group('clasificaciones', fn($r) => [
+        $r->get('/', 'ClasificacionController::index'),
+        $r->get('create', 'ClasificacionController::create'),
+        $r->post('store', 'ClasificacionController::store'),
+        $r->get('edit/(:num)', 'ClasificacionController::edit/$1'),
+        $r->post('update/(:num)', 'ClasificacionController::update/$1'),
+        $r->get('delete/(:num)', 'ClasificacionController::delete/$1')
+    ]);
+
+    $routes->get('/catalogosistema', 'CatalogoController::index');
+    $routes->get('/bodega', 'BodegaController::index');
+
+    $routes->get('/relacioninsumos', 'Home::relacionInsumos');
+    $routes->get('/relacionlotes', 'Home::relacionLotes');
+    $routes->get('/relacionusuarios', 'Home::relacionUsuarios');
+    $routes->get('/relacionsubunidades', 'Home::relacionSubunidades');
+    $routes->get('/relacionsolicitudes', 'Home::relacionSolicitudes');
+    $routes->get('/relacionmantenciones', 'Home::relacionMantenciones');
+    $routes->get('/relacionprestaciones', 'Home::relacionPrestaciones');
 });
-
-
-// ==========================
-// 🔐 VISTA DE ERROR (SIN PERMISOS)
-// ==========================
-$routes->get('/unauthorized', function () {
-    echo view('errors/custom/unauthorized');
-});
-
-// ==========================
-// 📦 MÓDULOS PRINCIPALES
-// ==========================
-
-// -- STOCK
-$routes->group('stock', function ($routes) {
-    $routes->get('/', 'StockController::index');
-    $routes->get('(:segment)', 'StockController::detalle/$1');
-});
-
-// -- INSUMOS
-$routes->group('insumos', function($routes) {
-    $routes->get('/', 'InsumoController::index');
-    $routes->get('create', 'InsumoController::create');
-    $routes->post('store', 'InsumoController::store');
-    $routes->get('edit/(:num)', 'InsumoController::edit/$1');
-    $routes->post('update/(:num)', 'InsumoController::update/$1');
-    $routes->get('delete/(:num)', 'InsumoController::delete/$1');
-});
-
-// -- INSUMOS A SALA
-$routes->group('insumossalas', function($routes) {
-    $routes->get('/', 'InsumoSalaController::index');
-    $routes->get('create', 'InsumoSalaController::create');
-    $routes->post('store', 'InsumoSalaController::store');
-    $routes->get('edit/(:num)', 'InsumoSalaController::edit/$1');
-    $routes->post('update/(:num)', 'InsumoSalaController::update/$1');
-    $routes->get('delete/(:num)', 'InsumoSalaController::delete/$1');
-});
-
-
-// -- BODEGA
-$routes->get('/bodega', 'BodegaController::index');
-
-
-// -- SOLICITUDES
-$routes->group('solicitudes', function ($routes) {
-    $routes->get('/', 'SolicitudController::index');
-    $routes->get('create', 'SolicitudController::create');
-    $routes->post('store', 'SolicitudController::store');
-    $routes->get('edit/(:num)', 'SolicitudController::edit/$1');
-    $routes->post('update/(:num)', 'SolicitudController::update/$1');
-});
-
-// -- LOTES
-
-$routes->group('lotes', function ($routes) {
-    $routes->get('/', 'LoteController::index');
-    $routes->get('create', 'LoteController::create');
-    $routes->post('store', 'LoteController::store');
-    $routes->get('edit/(:num)', 'LoteController::edit/$1');
-    $routes->post('update/(:num)', 'LoteController::update/$1');
-    $routes->get('delete/(:num)', 'LoteController::delete/$1');
-});
-
-// -- perfiles
-$routes->group('perfiles', function($routes) {
-    $routes->get('/', 'PerfilesController::index');
-    $routes->get('create', 'PerfilesController::create');
-    $routes->post('store', 'PerfilesController::store');
-    $routes->get('edit/(:num)', 'PerfilesController::edit/$1');
-    $routes->post('update/(:num)', 'PerfilesController::update/$1');
-    $routes->get('delete/(:num)', 'PerfilesController::delete/$1');
-});
-
-
-// -- CATALOGO
-$routes->get('/catalogosistema', 'CatalogoController::index');
-
-
-// -- USOS EN PACIENTES
-$routes->group('usospacientes', function($routes) {
-    $routes->get('/', 'UsoPacienteController::index');
-    $routes->get('create', 'UsoPacienteController::create');
-    $routes->post('store', 'UsoPacienteController::store');
-    $routes->get('edit/(:num)', 'UsoPacienteController::edit/$1');
-    $routes->post('update/(:num)', 'UsoPacienteController::update/$1');
-    $routes->get('delete/(:num)', 'UsoPacienteController::delete/$1');
-});
-
-
-// -- TRAZABILIDAD DE ACCIONES
-$routes->group('RegistroActividades', function($routes) {
-    $routes->get('/', 'TrazabilidadAccionController::index');
-});
-
-// ==========================
-// 👥 GESTIÓN DE USUARIOS / PERFILES
-// ==========================
-$routes->group('usuarios', function ($routes) {
-    $routes->get('/', 'UsuarioController::index');
-    $routes->get('create', 'UsuarioController::create');
-    $routes->post('store', 'UsuarioController::store');
-    $routes->get('edit/(:num)', 'UsuarioController::edit/$1');
-    $routes->post('update/(:num)', 'UsuarioController::update/$1');
-    $routes->get('delete/(:num)', 'UsuarioController::delete/$1');
-});
-
-
-// -- Clasificaciones de Insumos
-$routes->group('clasificaciones', function ($routes) {
-    $routes->get('/', 'ClasificacionController::index');
-    $routes->get('create', 'ClasificacionController::create');
-    $routes->post('store', 'ClasificacionController::store');
-    $routes->get('edit/(:num)', 'ClasificacionController::edit/$1');
-    $routes->post('update/(:num)', 'ClasificacionController::update/$1');
-    $routes->get('delete/(:num)', 'ClasificacionController::delete/$1');
-});
-
-
-// ==========================
-// 🧾 OTROS MÓDULOS 
-// ==========================
-
-$routes->get('/relacioninsumos', 'Home::relacionInsumos');
-$routes->get('/relacionlotes', 'Home::relacionLotes');
-$routes->get('/relacionusuarios', 'Home::relacionUsuarios');
-$routes->get('/relacionsubunidades', 'Home::relacionSubunidades');
-$routes->get('/relacionsolicitudes', 'Home::relacionSolicitudes');
-$routes->get('/relacionmantenciones', 'Home::relacionMantenciones');
-$routes->get('/relacionprestaciones', 'Home::relacionPrestaciones');
-
-
-$routes->get('/solicitudes', 'SolicitudController::index');
-
-// ==========================
-// 🧩 Fallback genérico
-// ==========================
-$routes->get('/dashboard', 'Home::index');
