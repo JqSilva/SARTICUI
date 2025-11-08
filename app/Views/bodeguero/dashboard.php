@@ -1,102 +1,144 @@
 <?= $this->extend($layout) ?>
-
 <?= $this->section('content') ?>
 
 <style>
-    .custom-card {
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        border-radius: 12px;
-        height: 180px; /* Altura fija para todas las tarjetas */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  /* ==== Tarjetas ==== */
+  .custom-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
 
-    .custom-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-        background-color: #e0e7ff;
-    }
+  .custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    background-color: #e0e7ff;
+  }
 
-    .custom-card i {
-        color: #4a69bd;
-        font-size: 2rem;
-        transition: color 0.2s ease;
-    }
+  .custom-card i {
+    color: #1e40af;
+    font-size: 1.9rem;
+    transition: color 0.2s ease;
+  }
 
-    .custom-card:hover i {
-        color: #1e3799;
-    }
+  .custom-card:hover i {
+    color: #1c3faa;
+  }
 
-    .custom-container {
-        max-width: 1200px;
-    }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .card-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
+  .card-title {
+    font-size: 0.95rem;
+    margin-top: 6px;
+    color: #1e293b;
+    font-weight: 500;
+  }
 
-    .card-title {
-        font-size: 1rem; /* Tamaño uniforme para los títulos */
-        margin-top: 8px;
-    }
+  /* ==== Secciones ==== */
+  .section-title {
+    text-align: center;
+    width: fit-content;
+    margin: 1.5rem auto 1rem;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    padding-bottom: 4px;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 1rem;
+  }
+
+  /* ==== Fondo y estructura ==== */
+  body {
+    background-color: #9ab5d9;
+  }
 </style>
 
-<body class="tw-min-h-screen tw-bg-[#9ab5d9]">
+<body class="tw-min-h-screen tw-py-8">
 
-  <div class="tw-flex tw-flex-col tw-items-center tw-min-h-screen tw-px-6 tw-pt-16 tw-pb-10">
+  <div class="container tw-max-w-5xl tw-px-4">
 
     <!-- Encabezado -->
-    <div class="tw-text-center tw-mb-16">
-      <h1 class="tw-text-5xl md:tw-text-6xl tw-font-extrabold tw-text-[#0f172a] tw-tracking-tight tw-mb-3">
-        Panel de Bodeguero
-      </h1>
-      <p class="tw-text-2xl tw-font-semibold tw-text-[#334155]">
+    <div class="tw-text-center tw-mb-10">
+      <h1 class="tw-text-4xl md:tw-text-5xl tw-font-extrabold tw-text-[#0f172a]">Panel de Bodeguero</h1>
+      <p class="tw-text-xl tw-font-medium tw-text-[#334155]">
         Bienvenido, 
-        <span class="tw-font-bold tw-text-[#1d4ed8]">
+        <span class="tw-font-semibold tw-text-[#1d4ed8]">
           <?= ucfirst(strtolower(esc(session('nombre')))) ?>.
         </span>
       </p>
-      <div class="tw-w-32 tw-h-[4px] tw-bg-[#1d4ed8] tw-rounded-full tw-mx-auto tw-mt-6"></div>
+      <div class="tw-w-32 tw-h-[4px] tw-bg-[#1d4ed8] tw-rounded-full tw-mx-auto tw-mt-4"></div>
     </div>
 
-    <!-- Grid de tarjetas -->
-    <div class="container tw-max-w-6xl">
-      <div class="row justify-content-center">
-        <?php
-        $cards = [
-          ['title' => 'Catálogo de Insumos', 'icon' => 'bi-bandaid', 'link' => 'insumos'],
-          ['title' => 'Stock Disponible', 'icon' => 'bi-archive', 'link' => 'stock'],
-          ['title' => 'Solicitud de Insumos Interna', 'icon' => 'bi-basket', 'link' => 'solicitudes'],
-          ['title' => 'Inventario', 'icon' => 'bi-card-checklist', 'link' => 'bodega'],
-          ['title' => 'Ingresar Insumos', 'icon' => 'bi-ui-checks-grid', 'link' => 'lotes'],
-          ['title' => 'Despacho a Sala', 'icon' => 'bi-arrow-left-right', 'link' => 'insumossalas'],
-          ['title' => 'Consumo de Insumos', 'icon' => 'bi-heart-pulse', 'link' => 'usospacientes'],
-          ['title' => 'Catálogo del Sistema', 'icon' => 'bi-file-medical', 'link' => 'catalogosistema']
-        ];
-        ?>
-
-        <?php foreach ($cards as $card): ?>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="<?= base_url($card['link']) ?>" class="text-decoration-none">
-              <div class="card text-center shadow custom-card">
-                <div class="card-body">
-                  <i class="bi <?= $card['icon'] ?>"></i>
-                  <h5 class="card-title"><?= $card['title'] ?></h5>
-                </div>
+    <!-- === Gestión de Insumos === -->
+    <div class="section-title">🧰 Gestión de Insumos</div>
+    <div class="row justify-content-center text-center g-4 mb-4">
+      <?php
+      $gestionCards = [
+        ['title' => 'Catálogo de Insumos', 'icon' => 'bi-bandaid', 'link' => 'insumos'],
+        ['title' => 'Ingresar Clasificación', 'icon' => 'bi-box-seam', 'link' => 'clasificaciones'],
+        ['title' => 'Catálogo del Sistema', 'icon' => 'bi-file-medical', 'link' => 'catalogosistema']
+      ];
+      foreach ($gestionCards as $card): ?>
+        <div class="col-6 col-md-4 col-lg-3 mb-3">
+          <a href="<?= base_url($card['link']) ?>" class="text-decoration-none">
+            <div class="card text-center shadow custom-card">
+              <div class="card-body">
+                <i class="bi <?= $card['icon'] ?>"></i>
+                <h5 class="card-title"><?= $card['title'] ?></h5>
               </div>
-            </a>
+            </div>
+          </a>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <!-- === Operaciones Diarias === -->
+    <div class="section-title">🚚 Operaciones Diarias</div>
+    <div class="row justify-content-center text-center g-4 mb-4">
+      <?php
+      $opCards = [
+        ['title' => 'Ingresar Insumos', 'icon' => 'bi-ui-checks-grid', 'link' => 'lotes'],
+        ['title' => 'Despacho a Sala', 'icon' => 'bi-arrow-left-right', 'link' => 'insumossalas'],
+        ['title' => 'Solicitud Interna', 'icon' => 'bi-basket', 'link' => 'solicitudes']
+      ];
+      foreach ($opCards as $card): ?>
+        <div class="col-6 col-md-4 col-lg-3 mb-3">
+          <a href="<?= base_url($card['link']) ?>" class="text-decoration-none">
+            <div class="card text-center shadow custom-card">
+              <div class="card-body">
+                <i class="bi <?= $card['icon'] ?>"></i>
+                <h5 class="card-title"><?= $card['title'] ?></h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <!-- === Supervisión === -->
+    <div class="section-title">📦 Supervisión</div>
+    <div class="row justify-content-center text-center g-4">
+      <div class="col-6 col-md-4 col-lg-3 mb-3">
+        <a href="<?= base_url('bodega') ?>" class="text-decoration-none">
+          <div class="card text-center shadow custom-card">
+            <div class="card-body">
+              <i class="bi bi-card-checklist"></i>
+              <h5 class="card-title">Inventario</h5>
+            </div>
           </div>
-        <?php endforeach; ?>
+        </a>
       </div>
     </div>
 
   </div>
-
 </body>
 
 <?= $this->endSection() ?>

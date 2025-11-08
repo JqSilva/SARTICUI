@@ -78,9 +78,7 @@
         <!-- Barra lateral -->
         <nav class="sidebar" id="sidebar">
             <div class="text-center mb-3">
-                <a href="<?= base_url('/') ?>">
-                    <img src="https://vao.cl/wp-content/uploads/2018/07/hospital.png" alt="Inicio" class="img-fluid">
-                </a>
+                <img src="https://vao.cl/wp-content/uploads/2018/07/hospital.png" alt="Inicio" class="img-fluid">
             </div>
 
             <ul class="nav flex-column">
@@ -118,7 +116,7 @@
         </nav>
 
         <!-- Contenido principal -->
-        <main class="content-wrapper tw-flex tw-justify-center tw-w-full tw-min-h-screen">
+        <main class="content-wrapper tw-bg-[#9ab5d9] tw-flex tw-justify-center tw-w-full tw-min-h-screen">
             <div class="container-fluid py-3 ">
                 <?= $this->renderSection('content') ?>
             </div>

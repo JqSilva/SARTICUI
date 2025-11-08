@@ -1,3 +1,6 @@
+USE inventario_hrt;
+
+
 INSERT INTO PERFIL (NOMBRE_PERFIL, ESTADO_PERFIL)
 VALUES ('Administrador', 1), ('Bodeguero', 1);
 
@@ -16,12 +19,16 @@ VALUES (2, 'moa', 'bodega@demo.com',
 
 
 
-USE inventario_hrt;
-
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ==========================
 -- TABLAS BASE
+
+
+
+
+
+
 -- ==========================
 
 -- CLASIFICACIÓN

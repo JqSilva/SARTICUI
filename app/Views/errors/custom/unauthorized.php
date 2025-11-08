@@ -13,9 +13,9 @@
     <div class="tw-flex tw-justify-center tw-items-center tw-bg-white">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="2.75" r="2.25"/><circle cx="10.25" cy="10.25" r="3.25"/><path d="m7.95 12.55l4.6-4.6M6 6.61A4.49 4.49 0 0 0 .5 11v1.5h4"/></g></svg>
     </div>
-    <a href="<?= base_url('/') ?>" class="tw-inline-block tw-mt-4 tw-px-6 tw-py-2 tw-bg-[#0f398b] tw-text-white tw-rounded-lg hover:tw-bg-[#1347ae] tw-transition-colors">
-      Volver al inicio    
-    </a>
+    <button type="button" class="btn btn-light" onclick="window.history.back()">
+        <i class="bi bi-arrow-left-circle"></i> Volver
+    </button>
 
   </div>
 </body>

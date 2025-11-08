@@ -75,9 +75,7 @@
         <!-- Barra lateral -->
         <nav class="sidebar" id="sidebar">
             <div class="text-center mb-3">
-                <a href="<?= base_url('/') ?>">
-                    <img src="https://vao.cl/wp-content/uploads/2018/07/hospital.png" alt="Inicio" class="img-fluid">
-                </a>
+                <img src="https://vao.cl/wp-content/uploads/2018/07/hospital.png" alt="Inicio" class="img-fluid">
             </div>
 
             <ul class="nav flex-column">

@@ -1,31 +1,32 @@
 <?= $this->extend('layouts/barra_administrador') ?>
-
 <?= $this->section('content') ?>
 
 <style>
+  /* ==== Tarjetas ==== */
   .custom-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-radius: 12px;
-    height: 180px;
+    border-radius: 10px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
   }
 
   .custom-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
     background-color: #e0e7ff;
   }
 
   .custom-card i {
-    color: #4a69bd;
-    font-size: 2rem;
+    color: #1e40af;
+    font-size: 1.9rem;
     transition: color 0.2s ease;
   }
 
   .custom-card:hover i {
-    color: #1e3799;
+    color: #1c3faa;
   }
 
   .card-body {
@@ -33,67 +34,120 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
   }
 
   .card-title {
+    font-size: 0.95rem;
+    margin-top: 6px;
+    color: #1e293b;
+    font-weight: 500;
+  }
+
+  /* ==== Secciones ==== */
+  .section-title {
+    text-align: center;
+    width: fit-content;
+    margin: 1.5rem auto 1rem;
+    border-bottom: 2px solid rgba(0,0,0,0.15);
+    padding-bottom: 4px;
+    font-weight: 600;
+    color: #1e293b;
     font-size: 1rem;
-    margin-top: 8px;
+  }
+
+  /* ==== Fondo ==== */
+  body {
+    background-color: #9ab5d9;
   }
 </style>
 
-<body class="tw-min-h-screen tw-bg-[#9ab5d9]">
+<body class="tw-min-h-screen tw-py-8">
 
-  <div class="tw-flex tw-flex-col tw-items-center tw-min-h-screen tw-px-6 tw-pt-16 tw-pb-10">
+  <div class="container tw-max-w-6xl tw-px-4">
 
     <!-- Encabezado -->
-    <div class="tw-text-center tw-mb-16">
-      <h1 class="tw-text-5xl md:tw-text-6xl tw-font-extrabold tw-text-[#0f172a] tw-tracking-tight tw-mb-3">
-        Panel de Administrador
-      </h1>
-      <p class="tw-text-2xl tw-font-semibold tw-text-[#334155]">
+    <div class="tw-text-center tw-mb-10">
+      <h1 class="tw-text-4xl md:tw-text-5xl tw-font-extrabold tw-text-[#0f172a]">Panel de Administrador</h1>
+      <p class="tw-text-xl tw-font-medium tw-text-[#334155]">
         Bienvenido, 
-        <span class="tw-font-bold tw-text-[#1d4ed8]">
+        <span class="tw-font-semibold tw-text-[#1d4ed8]">
           <?= ucfirst(strtolower(esc(session('nombre')))) ?>.
         </span>
       </p>
-      <div class="tw-w-32 tw-h-[4px] tw-bg-[#1d4ed8] tw-rounded-full tw-mx-auto tw-mt-6"></div>
+      <div class="tw-w-32 tw-h-[4px] tw-bg-[#1d4ed8] tw-rounded-full tw-mx-auto tw-mt-4"></div>
     </div>
 
-    <!-- Grid de tarjetas -->
-    <div class="container tw-max-w-6xl">
-      <div class="row justify-content-center">
-        <?php
-        $cards = [
-          ['title' => 'Catálogo de Insumos', 'icon' => 'bi-bandaid', 'link' => 'insumos'],
-          ['title' => 'Stock Disponible', 'icon' => 'bi-archive', 'link' => 'stock'],
-          ['title' => 'Solicitud de Insumos Interna', 'icon' => 'bi-basket', 'link' => 'solicitudes'],
-          ['title' => 'Inventario', 'icon' => 'bi-card-checklist', 'link' => 'bodega'],
-          ['title' => 'Ingresar Insumos', 'icon' => 'bi-ui-checks-grid', 'link' => 'lotes'],
-          ['title' => 'Despacho a Sala', 'icon' => 'bi-arrow-left-right', 'link' => 'insumossalas'],
-          ['title' => 'Consumo de Insumos', 'icon' => 'bi-heart-pulse', 'link' => 'usospacientes'],
-          ['title' => 'Catálogo del Sistema', 'icon' => 'bi-file-medical', 'link' => 'catalogosistema'],
-          ['title' => 'Registro de Actividades', 'icon' => 'bi-clipboard-data', 'link' => 'RegistroActividades']
-        ];
-        ?>
-
-        <?php foreach ($cards as $card): ?>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="<?= base_url($card['link']) ?>" class="text-decoration-none">
-              <div class="card text-center shadow custom-card">
-                <div class="card-body">
-                  <i class="bi <?= $card['icon'] ?>"></i>
-                  <h5 class="card-title"><?= $card['title'] ?></h5>
-                </div>
+    <!-- === Gestión del Sistema === -->
+    <div class="section-title">⚙️ Gestión del Sistema</div>
+    <div class="row justify-content-center text-center g-4 mb-4">
+      <?php
+      $gestionCards = [
+        ['title' => 'Catálogo del Sistema', 'icon' => 'bi-file-medical', 'link' => 'catalogosistema'],
+        ['title' => 'Catálogo de Insumos', 'icon' => 'bi-bandaid', 'link' => 'insumos'],
+        ['title' => 'Clasificaciones', 'icon' => 'bi-box-seam', 'link' => 'clasificaciones']
+      ];
+      foreach ($gestionCards as $card): ?>
+        <div class="col-6 col-md-4 col-lg-3 mb-3">
+          <a href="<?= base_url($card['link']) ?>" class="text-decoration-none">
+            <div class="card text-center shadow custom-card">
+              <div class="card-body">
+                <i class="bi <?= $card['icon'] ?>"></i>
+                <h5 class="card-title"><?= $card['title'] ?></h5>
               </div>
-            </a>
-          </div>
-        <?php endforeach; ?>
-      </div>
+            </div>
+          </a>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <!-- === Operaciones de Bodega === -->
+    <div class="section-title">🏥 Operaciones de Bodega</div>
+    <div class="row justify-content-center text-center g-4 mb-4">
+      <?php
+      $operacionesCards = [
+        ['title' => 'Ingresar Insumos', 'icon' => 'bi-ui-checks-grid', 'link' => 'lotes'],
+        ['title' => 'Despacho a Sala', 'icon' => 'bi-arrow-left-right', 'link' => 'insumossalas'],
+        ['title' => 'Consumo de Insumos', 'icon' => 'bi-heart-pulse', 'link' => 'usospacientes']
+      ];
+      foreach ($operacionesCards as $card): ?>
+        <div class="col-6 col-md-4 col-lg-3 mb-3">
+          <a href="<?= base_url($card['link']) ?>" class="text-decoration-none">
+            <div class="card text-center shadow custom-card">
+              <div class="card-body">
+                <i class="bi <?= $card['icon'] ?>"></i>
+                <h5 class="card-title"><?= $card['title'] ?></h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <!-- === Supervisión y Control === -->
+    <div class="section-title">📊 Supervisión y Control</div>
+    <div class="row justify-content-center text-center g-4">
+      <?php
+      $controlCards = [
+        ['title' => 'Inventario', 'icon' => 'bi-card-checklist', 'link' => 'bodega'],
+        ['title' => 'Stock Disponible', 'icon' => 'bi-archive', 'link' => 'stock'],
+        ['title' => 'Solicitudes Internas', 'icon' => 'bi-basket', 'link' => 'solicitudes'],
+        ['title' => 'Registro de Actividades', 'icon' => 'bi-clipboard-data', 'link' => 'RegistroActividades']
+      ];
+      foreach ($controlCards as $card): ?>
+        <div class="col-6 col-md-4 col-lg-3 mb-3">
+          <a href="<?= base_url($card['link']) ?>" class="text-decoration-none">
+            <div class="card text-center shadow custom-card">
+              <div class="card-body">
+                <i class="bi <?= $card['icon'] ?>"></i>
+                <h5 class="card-title"><?= $card['title'] ?></h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      <?php endforeach; ?>
     </div>
 
   </div>
-
 </body>
 
 <?= $this->endSection() ?>

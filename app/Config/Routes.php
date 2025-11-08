@@ -135,6 +135,16 @@ $routes->group('usuarios', function ($routes) {
 });
 
 
+// -- Clasificaciones de Insumos
+$routes->group('clasificaciones', function ($routes) {
+    $routes->get('/', 'ClasificacionController::index');
+    $routes->get('create', 'ClasificacionController::create');
+    $routes->post('store', 'ClasificacionController::store');
+    $routes->get('edit/(:num)', 'ClasificacionController::edit/$1');
+    $routes->post('update/(:num)', 'ClasificacionController::update/$1');
+    $routes->get('delete/(:num)', 'ClasificacionController::delete/$1');
+});
+
 
 // ==========================
 // 🧾 OTROS MÓDULOS 

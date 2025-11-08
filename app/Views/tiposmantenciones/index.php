@@ -17,9 +17,9 @@
 </head>
 
 <!-- Botón para regresar a la vista anterior -->
-<a href="<?= base_url('relacionmantenciones') ?>" class="btn btn-light">
-    <i class="bi bi-arrow-left-circle"></i> Volver
-</a>
+    <button type="button" class="btn btn-light" onclick="window.history.back()">
+        <i class="bi bi-arrow-left-circle"></i> Volver
+    </button>
 
     <div class="container mt-5">
         <h1 class="mb-4">Listado de Tipos de Mantenciones</h1>

@@ -7,9 +7,9 @@
 <div class="container mt-5">
 
     <!-- Botón para regresar -->
-    <a href="<?= base_url('relacionlotes') ?>" class="btn btn-light mb-3">
+    <button type="button" class="btn btn-light" onclick="window.history.back()">
         <i class="bi bi-arrow-left-circle"></i> Volver
-    </a>
+    </button>
 
     <h1 class="text-center mb-4 text-dark">Ingreso de Insumos</h1>
 

@@ -18,9 +18,9 @@
 <body style="background-color: #9AB5D9;">
 
 <!-- Botón para regresar a la vista anterior -->
-<a href="<?= base_url('relacionprestaciones') ?>" class="btn btn-light">
-    <i class="bi bi-arrow-left-circle"></i> Volver
-</a>
+    <button type="button" class="btn btn-light" onclick="window.history.back()">
+        <i class="bi bi-arrow-left-circle"></i> Volver
+    </button>
 
     <div class="container mt-5">
         <h1 class="mb-4">Prestación</h1>

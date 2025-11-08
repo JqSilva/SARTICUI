@@ -2,7 +2,7 @@
 
 <!-- Vista para la edición de una Clasificación de Insumos -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 

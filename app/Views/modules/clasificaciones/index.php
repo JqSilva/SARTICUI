@@ -2,16 +2,16 @@
 
 <!-- Visualización de Clasificaciones Existentes -->
 
-<?= $this->extend('/main') ?>
+<?= $this->extend($layout) ?>
 
 <?= $this->section('content') ?>
 
 <div class="container mt-5">
 
     <!-- Botón para regresar a la vista anterior -->
-    <a href="<?= base_url('relacioninsumos') ?>" class="btn btn-light">
+    <button type="button" class="btn btn-light" onclick="window.history.back()">
         <i class="bi bi-arrow-left-circle"></i> Volver
-    </a>
+    </button>
 
     <h1 class="text-center mb-4 text-dark">Listado de Clasificaciones</h1>
 

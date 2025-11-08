@@ -1,106 +1,100 @@
 <?php
 namespace App\Controllers;
-use CodeIgniter\RESTful\ResourceController;
+
 use App\Models\ClasificacionModel;
 
-// Controlador de Clasificación
-
-class ClasificacionController extends ResourceController
+class ClasificacionController extends BaseController
 {
-    protected $modelName = 'App\Models\ClasificacionModel';
-    protected $format = 'json';
+    protected $clasificacionModel;
+
+    public function __construct()
+    {
+        $this->clasificacionModel = new ClasificacionModel();
+    }
 
     // GET /clasificaciones - Obtener todas las clasificaciones
     public function index()
     {
-        $clasificaciones = $this->model->findAll();
+        $clasificaciones = $this->clasificacionModel->findAll();
 
         // Convertir estado_clasificacion a texto
         foreach ($clasificaciones as &$clasificacion) {
             $clasificacion['ESTADO_CLASIFICACION'] = $clasificacion['ESTADO_CLASIFICACION'] == 1 ? 'Activa' : 'Inactiva';
         }
 
-        // Pasar los datos de las clasificaciones a la vista
-        return view('clasificaciones/index', ['clasificaciones' => $clasificaciones]);
+        return $this->renderView('modules/clasificaciones/index', [
+            'clasificaciones' => $clasificaciones
+        ]);
     }
 
-    // GET /clasificaciones/create - Mostrar el formulario para crear una clasificacion
+    // GET /clasificaciones/create - Mostrar formulario
     public function create()
     {
-        return view('clasificaciones/create');
+        return $this->renderView('modules/clasificaciones/create');
     }
 
-    // POST /clasificaciones - Crear una nueva clasificacion
+    // POST /clasificaciones - Crear nueva clasificación
     public function store()
     {
         $data = $this->request->getPost();
 
-        if ($this->model->insert($data)) {
-            return redirect()->to(base_url('/clasificaciones'))->with('message', 'Clasificación creada exitosamente');
+        if ($this->clasificacionModel->insert($data)) {
+            return redirect()->to(base_url('/clasificaciones'))
+                             ->with('message', 'Clasificación creada exitosamente');
         }
-        return redirect()->back()->withInput()->with('errors', $this->model->errors());
+
+        return redirect()->back()->withInput()
+                       ->with('errors', $this->clasificacionModel->errors());
     }
 
-    // GET /clasificaciones/edit/{id} - Mostrar el formulario para editar una clasificacion
+    // GET /clasificaciones/edit/{id} - Mostrar formulario para editar
     public function edit($id = null)
     {
-        $clasificacion = $this->model->find($id);
+        $clasificacion = $this->clasificacionModel->find($id);
+
         if ($clasificacion) {
-            return view('clasificaciones/edit', ['clasificacion' => $clasificacion]);
+            return $this->renderView('modules/clasificaciones/edit', [
+                'clasificacion' => $clasificacion
+            ]);
         }
-        return redirect()->to('/clasificaciones')->with('error', 'No se encontró la clasificación con ID: ' . $id);
+
+        return redirect()->to('/clasificaciones')
+                         ->with('error', 'No se encontró la clasificación con ID: ' . $id);
     }
 
-    // POST /clasificaciones/update/{id} - Actualizar una clasificacion
+    // POST /clasificaciones/update/{id} - Actualizar clasificación
     public function update($id = null)
     {
         $data = $this->request->getPost();
 
-        if ($this->model->find($id)) {
-            if ($this->model->update($id, $data)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Clasificación actualizada exitosamente'
-                ];
-                return redirect()->to('/clasificaciones')->with('message', $response['message']);
+        if ($this->clasificacionModel->find($id)) {
+            if ($this->clasificacionModel->update($id, $data)) {
+                return redirect()->to('/clasificaciones')
+                                 ->with('message', 'Clasificación actualizada exitosamente');
             }
-            return redirect()->back()->withInput()->with('errors', $this->model->errors());
+
+            return redirect()->back()->withInput()
+                           ->with('errors', $this->clasificacionModel->errors());
         }
 
-        return redirect()->to('/clasificaciones')->with('error', 'No se encontró la clasificación con ID: ' . $id);
+        return redirect()->to('/clasificaciones')
+                         ->with('error', 'No se encontró la clasificación con ID: ' . $id);
     }
 
-    // DELETE /clasificaciones/{id} - Eliminar una clasificacion
+    // DELETE /clasificaciones/{id} - Eliminar clasificación
     public function delete($id = null)
     {
-        if ($this->model->find($id)) {
-            if ($this->model->delete($id)) {
-                $response = [
-                    'status' => 200,
-                    'message' => 'Clasificación eliminada exitosamente'
-                ];
-                return redirect()->to('/clasificaciones')->with('message', $response['message']);
+        if ($this->clasificacionModel->find($id)) {
+            if ($this->clasificacionModel->delete($id)) {
+                return redirect()->to('/clasificaciones')
+                                 ->with('message', 'Clasificación eliminada exitosamente');
             }
-            return redirect()->to('/clasificaciones')->with('error', 'Error al eliminar la clasificación');
+
+            return redirect()->to('/clasificaciones')
+                             ->with('error', 'Error al eliminar la clasificación');
         }
 
-        return redirect()->to('/clasificaciones')->with('error', 'No se encontró la clasificación con ID: ' . $id);
+        return redirect()->to('/clasificaciones')
+                         ->with('error', 'No se encontró la clasificación con ID: ' . $id);
     }
 }
-
-/*
-Datos de Prueba
-{
-    "nombre_clasificacion": "Aguja",
-    "dias_postapertura_clasificacion": 0,
-    "contenido_base": "Unidad",
-    "estado_clasificacion": 1
-}
-
-{
-    "nombre_clasificacion": "Alcohol",
-    "dias_postapertura_clasificacion": 5,
-    "contenido_base": "Mililitros",
-    "estado_clasificacion": 1
-}
-*/

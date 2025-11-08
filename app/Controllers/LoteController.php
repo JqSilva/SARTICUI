@@ -95,6 +95,8 @@ class LoteController extends BaseController
         $data = $this->request->getPost();
 
         if ($this->loteModel->update($id, $data)) {
+            $trazabilidad = new TrazabilidadAccionController();
+            $trazabilidad->registrarAccion(session('id'), $data['ID_INSUMO_LOTE'], $data['CANTIDAD_TOTAL_LOTE'], 'Actualización');
             return redirect()->to('/lotes')->with('message', 'Lote actualizado exitosamente');
         }
         return redirect()->back()->withInput()->with('errors', $this->loteModel->errors());
@@ -103,9 +105,26 @@ class LoteController extends BaseController
     // GET /lotes/delete/{id}
     public function delete($id = null)
     {
+        // Buscar el lote antes de eliminar
+        $lote = $this->loteModel->find($id);
+
+        if (!$lote) {
+            return redirect()->to('/lotes')->with('error', 'No se encontró el lote con ID: ' . $id);
+        }
+
         if ($this->loteModel->delete($id)) {
+            // Registrar trazabilidad usando los datos del lote encontrado
+            $trazabilidad = new TrazabilidadAccionController();
+            $trazabilidad->registrarAccion(
+                session('id'),
+                $lote['ID_INSUMO_LOTE'],
+                $lote['CANTIDAD_TOTAL_LOTE'],
+                'Eliminación'
+            );
+
             return redirect()->to('/lotes')->with('message', 'Lote eliminado exitosamente');
         }
+
         return redirect()->to('/lotes')->with('error', 'Error al eliminar el lote');
     }
 
