@@ -63,7 +63,7 @@ class LoteController extends BaseController
         if ($this->loteModel->insert($data)) {
             // Usa directamente el método del controlador de trazabilidad
             $trazabilidad = new TrazabilidadAccionController();
-            $trazabilidad->registrarAccion(session('id'), $data['ID_INSUMO_LOTE'], $data['CANTIDAD_TOTAL_LOTE'], 'Ingreso');
+            $trazabilidad->registrarAccion(session('id'), $data['ID_INSUMO_LOTE'], $data['CANTIDAD_TOTAL_LOTE'], 'Ingreso de nuevo lote');
 
             return redirect()->to('/lotes')->with('message', 'Lote creado exitosamente');
         }
@@ -96,7 +96,7 @@ class LoteController extends BaseController
 
         if ($this->loteModel->update($id, $data)) {
             $trazabilidad = new TrazabilidadAccionController();
-            $trazabilidad->registrarAccion(session('id'), $data['ID_INSUMO_LOTE'], $data['CANTIDAD_TOTAL_LOTE'], 'Actualización');
+            $trazabilidad->registrarAccion(session('id'), $data['ID_INSUMO_LOTE'], $data['CANTIDAD_TOTAL_LOTE'], 'Actualización de lote');
             return redirect()->to('/lotes')->with('message', 'Lote actualizado exitosamente');
         }
         return redirect()->back()->withInput()->with('errors', $this->loteModel->errors());
@@ -119,7 +119,7 @@ class LoteController extends BaseController
                 session('id'),
                 $lote['ID_INSUMO_LOTE'],
                 $lote['CANTIDAD_TOTAL_LOTE'],
-                'Eliminación'
+                'Eliminación de lote'
             );
 
             return redirect()->to('/lotes')->with('message', 'Lote eliminado exitosamente');

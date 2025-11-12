@@ -43,15 +43,17 @@
                     $totalCosto = 0; // Variable para calcular el total
                     if (!empty($usospacientes)):
                         foreach ($usospacientes as $usopaciente):
-                            $costoTotal = $usopaciente['COSTO_UNITARIO'] * $usopaciente['CANTIDAD_UTILIZADA_USO']; // Costo por insumo
-                            $totalCosto += $costoTotal; // Sumar al total general
+                            $costoUnitario = isset($usopaciente['COSTO_UNITARIO']) ? $usopaciente['COSTO_UNITARIO'] : 0;
+                            $costoUtilizado = isset($usopaciente['CANTIDAD_UTILIZADA_USO']) ? $usopaciente['CANTIDAD_UTILIZADA_USO'] : 0;
+                            $costoTotal = $costoUnitario * $costoUtilizado;
+                            $totalCosto += $costoTotal;
                 ?>
                             <tr>
                                 <td><?= $usopaciente['SALA_NOMBRE'] ?></td>
                                 <td><?= $usopaciente['NOMBRE_INSUMO'] ?></td>
                                 <td class="cantidad-utilizada"><?= $usopaciente['CANTIDAD_UTILIZADA_USO'] ?></td>
-                                <td class="costo-unitario" data-costo="<?= $usopaciente['COSTO_UNITARIO'] ?>">
-                                    $<?= number_format($usopaciente['COSTO_UNITARIO']) ?>
+                                <td class="costo-unitario" data-costo="<?= $costoUnitario ?>">
+                                    $<?= number_format($costoUnitario, 0, ',', '.') ?>
                                 </td>
                                 <td class="costo-total" data-total="<?= $costoTotal ?>">
                                     $<?= number_format($costoTotal) ?>

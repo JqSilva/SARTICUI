@@ -114,6 +114,16 @@ class SolicitudController extends BaseController
             }
 
             $this->detalleModel->insertBatch($detalleData);
+
+            // Registrar trazabilidad (una entrada por solicitud)
+            $trazabilidad = new \App\Controllers\TrazabilidadAccionController();
+            $trazabilidad->registrarAccion(
+                session('id'),
+                $detalleData[0]['ID_INSUMO_DE'] ?? null,
+                array_sum(array_column($detalleData, 'CANTIDAD')),
+                'Creación de Solicitud Interna'
+            );
+
             return redirect()->to('/solicitudes')->with('message', 'Solicitud creada exitosamente');
         }
 
@@ -144,6 +154,13 @@ class SolicitudController extends BaseController
     {
         $data = $this->request->getPost();
         if ($this->solicitudModel->update($id, $data)) {
+            $trazabilidad = new \App\Controllers\TrazabilidadAccionController();
+            $trazabilidad->registrarAccion(
+                session('id'),
+                null,
+                0,
+                'Actualización de Solicitud'
+            );
             return redirect()->to('/solicitudes')->with('message', 'Solicitud actualizada exitosamente');
         }
         return redirect()->back()->withInput()->with('error', 'Error al actualizar la solicitud');

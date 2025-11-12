@@ -8,6 +8,7 @@ use App\Models\LoteModel;
 use App\Models\InsumoModel;
 use App\Models\SalaModel;
 use App\Models\TipoRegistroModel;
+use App\Controllers\TrazabilidadAccionController;
 
 class UsoPacienteController extends BaseController
 {
@@ -30,11 +31,9 @@ class UsoPacienteController extends BaseController
         $this->tipoRegistroModel = new TipoRegistroModel();
     }
 
-    // GET /usospacientes
     public function index()
     {
         $usospacientes = $this->usoPacienteModel->findAll();
-
         $insumossalas = $this->insumoSalaModel->findAll();
         $pacientes = $this->pacienteModel->findAll();
         $insumos = $this->insumoModel->findAll();
@@ -42,76 +41,43 @@ class UsoPacienteController extends BaseController
         $tiposregistros = $this->tipoRegistroModel->findAll();
         $lotes = $this->loteModel->findAll();
 
-        foreach ($usospacientes as &$usopaciente) {
+        foreach ($usospacientes as &$uso) {
             foreach ($insumossalas as $insumosala) {
-                if ($usopaciente['ID_INSUMO_SALA_USO'] == $insumosala['ID_INSUMO_SALA']) {
-                    $usopaciente['ID_LOTE_INSUMO_SALA'] = $insumosala['ID_LOTE_INSUMO_SALA'];
+                if ($uso['ID_INSUMO_SALA_USO'] == $insumosala['ID_INSUMO_SALA']) {
                     foreach ($lotes as $lote) {
                         if ($lote['ID_LOTE'] == $insumosala['ID_LOTE_INSUMO_SALA']) {
-                            $usopaciente['CODIGO_INSUMO'] = $lote['CODIGO_PRODUCTO_LOTE'];
-                            $usopaciente['COD_INSUMO'] = $lote['ID_INSUMO_LOTE'];
-                            $usopaciente['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
-                            break;
+                            $uso['NOMBRE_INSUMO'] = $this->findName($insumos, $lote['ID_INSUMO_LOTE']);
+                            $uso['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
+                            break 2;
                         }
                     }
-                    break;
                 }
             }
 
-            foreach ($insumos as $insumo) {
-                if (isset($usopaciente['COD_INSUMO']) && $usopaciente['COD_INSUMO'] == $insumo['ID_INSUMO']) {
-                    $usopaciente['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
-                    break;
-                }
-            }
-
-            foreach ($pacientes as $paciente) {
-                if ($usopaciente['ID_PACIENTE_USO'] == $paciente['ID_PACIENTE']) {
-                    $usopaciente['PACIENTE_NOMBRE'] = $paciente['NOMBRE_PACIENTE'] . ' ' . $paciente['APATERNO_PACIENTE'];
-                    break;
-                }
-            }
-
-            foreach ($salas as $sala) {
-                if ($usopaciente['ID_SALA_USO'] == $sala['ID_SALA']) {
-                    $usopaciente['SALA_NOMBRE'] = $sala['NOMBRE_SALA'];
-                    break;
-                }
-            }
-
-            foreach ($tiposregistros as $tipo) {
-                if ($usopaciente['ID_TIPO_REGISTRO_USO'] == $tipo['ID_TIPO_REGISTRO']) {
-                    $usopaciente['TIPO_REGISTRO_NOMBRE'] = $tipo['NOMBRE_TIPO_REGISTRO'];
-                    break;
-                }
-            }
+            $uso['PACIENTE_NOMBRE'] = $this->findFullName($pacientes, $uso['ID_PACIENTE_USO']);
+            $uso['SALA_NOMBRE'] = $this->findValue($salas, 'ID_SALA', $uso['ID_SALA_USO'], 'NOMBRE_SALA');
+            $uso['TIPO_REGISTRO_NOMBRE'] = $this->findValue($tiposregistros, 'ID_TIPO_REGISTRO', $uso['ID_TIPO_REGISTRO_USO'], 'NOMBRE_TIPO_REGISTRO');
         }
 
         return $this->renderView('modules/usospacientes/index', [
             'usospacientes' => $usospacientes,
-            'insumossalas' => $insumossalas,
-            'pacientes' => $pacientes,
-            'tiposregistros' => $tiposregistros
         ]);
     }
 
-    // GET /usospacientes/create
     public function create()
     {
+        // Agrega nombres de insumos y costos unitarios
         $insumossalas = $this->insumoSalaModel->findAll();
-        $pacientes = $this->pacienteModel->findAll();
         $insumos = $this->insumoModel->findAll();
         $lotes = $this->loteModel->findAll();
-        $salas = $this->salaModel->findAll();
-        $tiposregistros = $this->tipoRegistroModel->findAll();
 
-        foreach ($insumossalas as &$insumosala) {
+        foreach ($insumossalas as &$is) {
             foreach ($lotes as $lote) {
-                if ($lote['ID_LOTE'] == $insumosala['ID_LOTE_INSUMO_SALA']) {
+                if ($lote['ID_LOTE'] == $is['ID_LOTE_INSUMO_SALA']) {
                     foreach ($insumos as $insumo) {
                         if ($lote['ID_INSUMO_LOTE'] == $insumo['ID_INSUMO']) {
-                            $insumosala['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
-                            $insumosala['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
+                            $is['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
+                            $is['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
                             break;
                         }
                     }
@@ -122,63 +88,59 @@ class UsoPacienteController extends BaseController
 
         return $this->renderView('modules/usospacientes/create', [
             'insumossalas' => $insumossalas,
-            'lotes' => $lotes,
-            'pacientes' => $pacientes,
-            'insumos' => $insumos,
-            'salas' => $salas,
-            'tiposregistros' => $tiposregistros
+            'pacientes' => $this->pacienteModel->findAll(),
+            'salas' => $this->salaModel->findAll(),
+            'tiposregistros' => $this->tipoRegistroModel->findAll(),
         ]);
     }
 
-    // POST /usospacientes/store
     public function store()
     {
         $data = $this->request->getPost();
-
         $insumoSala = $this->insumoSalaModel->find($data['ID_INSUMO_SALA_USO']);
-        if (!$insumoSala) {
-            return redirect()->to('/usospacientes')->with('error', 'El insumo seleccionado no existe en sala.');
-        }
+
+        if (!$insumoSala)
+            return redirect()->to('/usospacientes')->with('error', 'El insumo seleccionado no existe.');
 
         $cantidadDisponible = (int) $insumoSala['CANTIDAD_INSUMO_SALA'];
         $cantidadUtilizada = (int) $data['CANTIDAD_UTILIZADA_USO'];
 
-        if ($cantidadUtilizada > $cantidadDisponible) {
+        if ($cantidadUtilizada > $cantidadDisponible)
             return redirect()->to('/usospacientes')->with('error', 'Cantidad utilizada supera la disponible.');
+
+        if ($this->usoPacienteModel->insert($data)) {
+            $this->insumoSalaModel->update($data['ID_INSUMO_SALA_USO'], [
+                'CANTIDAD_INSUMO_SALA' => $cantidadDisponible - $cantidadUtilizada
+            ]);
+
+            $idInsumo = $this->getInsumoFromSala($data['ID_INSUMO_SALA_USO']);
+            $traza = new TrazabilidadAccionController();
+            $traza->registrarAccion(session('id'), $idInsumo, $cantidadUtilizada, 'Registro de consumo');
+
+            return redirect()->to('/usospacientes')->with('message', 'Consumo registrado correctamente.');
         }
 
-        $this->usoPacienteModel->insert($data);
-        registrar_traza(session('id_usuario'), $data['ID_INSUMO'], $data['CANTIDAD_UTILIZADA_USO'], 'Uso');
-
-        $this->insumoSalaModel->update($data['ID_INSUMO_SALA_USO'], [
-            'CANTIDAD_INSUMO_SALA' => $cantidadDisponible - $cantidadUtilizada
-        ]);
-
-        return redirect()->to('/usospacientes')->with('message', 'Consumo registrado correctamente.');
+        return redirect()->back()->withInput()->with('errors', $this->usoPacienteModel->errors());
     }
 
-    // GET /usospacientes/edit/{id}
     public function edit($id = null)
     {
         $usopaciente = $this->usoPacienteModel->find($id);
-        if (!$usopaciente) {
-            return redirect()->to('/usospacientes')->with('error', 'No se encontró el registro con ID: ' . $id);
-        }
+        if (!$usopaciente)
+            return redirect()->to('/usospacientes')->with('error', 'No se encontró el registro.');
 
+        // Traer y enriquecer los insumos de sala con nombres y costos
         $insumossalas = $this->insumoSalaModel->findAll();
-        $pacientes = $this->pacienteModel->findAll();
         $insumos = $this->insumoModel->findAll();
         $lotes = $this->loteModel->findAll();
-        $salas = $this->salaModel->findAll();
-        $tiposregistros = $this->tipoRegistroModel->findAll();
 
-        foreach ($insumossalas as &$insumosala) {
+        foreach ($insumossalas as &$is) {
             foreach ($lotes as $lote) {
-                if ($lote['ID_LOTE'] == $insumosala['ID_LOTE_INSUMO_SALA']) {
+                if ($lote['ID_LOTE'] == $is['ID_LOTE_INSUMO_SALA']) {
                     foreach ($insumos as $insumo) {
                         if ($lote['ID_INSUMO_LOTE'] == $insumo['ID_INSUMO']) {
-                            $insumosala['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
-                            $insumosala['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
+                            $is['NOMBRE_INSUMO'] = $insumo['NOMBRE_INSUMO'];
+                            $is['COSTO_UNITARIO'] = $lote['COSTO_UNITARIO_LOTE'];
                             break;
                         }
                     }
@@ -190,32 +152,71 @@ class UsoPacienteController extends BaseController
         return $this->renderView('modules/usospacientes/edit', [
             'usopaciente' => $usopaciente,
             'insumossalas' => $insumossalas,
-            'lotes' => $lotes,
-            'pacientes' => $pacientes,
-            'insumos' => $insumos,
-            'salas' => $salas,
-            'tiposregistros' => $tiposregistros
+            'pacientes' => $this->pacienteModel->findAll(),
+            'salas' => $this->salaModel->findAll(),
+            'tiposregistros' => $this->tipoRegistroModel->findAll(),
         ]);
     }
 
-    // POST /usospacientes/update/{id}
     public function update($id = null)
     {
         $data = $this->request->getPost();
 
         if ($this->usoPacienteModel->update($id, $data)) {
-            return redirect()->to('/usospacientes')->with('message', 'Uso de paciente actualizado correctamente.');
+            $idInsumo = $this->getInsumoFromSala($data['ID_INSUMO_SALA_USO']);
+            $traza = new TrazabilidadAccionController();
+            $traza->registrarAccion(session('id'), $idInsumo, $data['CANTIDAD_UTILIZADA_USO'], 'Modificación de consumo');
+
+            return redirect()->to('/usospacientes')->with('message', 'Uso actualizado correctamente.');
         }
 
         return redirect()->back()->withInput()->with('errors', $this->usoPacienteModel->errors());
     }
 
-    // GET /usospacientes/delete/{id}
     public function delete($id = null)
     {
-        if ($this->usoPacienteModel->delete($id)) {
+        $uso = $this->usoPacienteModel->find($id);
+        if ($uso && $this->usoPacienteModel->delete($id)) {
+            $idInsumo = $this->getInsumoFromSala($uso['ID_INSUMO_SALA_USO']);
+            $traza = new TrazabilidadAccionController();
+            $traza->registrarAccion(session('id'), $idInsumo, $uso['CANTIDAD_UTILIZADA_USO'], 'Eliminación de consumo');
+
             return redirect()->to('/usospacientes')->with('message', 'Registro eliminado correctamente.');
         }
+
         return redirect()->to('/usospacientes')->with('error', 'Error al eliminar el registro.');
+    }
+
+    private function getInsumoFromSala($idInsumoSala)
+    {
+        $insumoSala = $this->insumoSalaModel->find($idInsumoSala);
+        if (!$insumoSala) return null;
+
+        $lote = $this->loteModel->find($insumoSala['ID_LOTE_INSUMO_SALA']);
+        return $lote ? $lote['ID_INSUMO_LOTE'] : null;
+    }
+
+    private function findName($insumos, $id)
+    {
+        foreach ($insumos as $i)
+            if ($i['ID_INSUMO'] == $id)
+                return $i['NOMBRE_INSUMO'];
+        return '';
+    }
+
+    private function findFullName($pacientes, $id)
+    {
+        foreach ($pacientes as $p)
+            if ($p['ID_PACIENTE'] == $id)
+                return $p['NOMBRE_PACIENTE'] . ' ' . $p['APATERNO_PACIENTE'];
+        return '';
+    }
+
+    private function findValue($array, $keyMatch, $valueMatch, $keyReturn)
+    {
+        foreach ($array as $row)
+            if ($row[$keyMatch] == $valueMatch)
+                return $row[$keyReturn];
+        return null;
     }
 }

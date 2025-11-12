@@ -100,6 +100,7 @@ class InsumoSalaController extends BaseController
         $data = $this->request->getPost();
         $cantidadSolicitada = (int) $data['CANTIDAD_INSUMO_SALA'];
 
+        // Verificar disponibilidad en bodega
         $insumosEnBodega = $this->bodegaModel->obtenerInsumosEnBodega();
         $cantidadDisponible = 0;
 
@@ -114,13 +115,33 @@ class InsumoSalaController extends BaseController
             return redirect()->to('/insumossalas')->with('error', 'Cantidad ingresada supera la disponible.');
         }
 
+        // Insertar registro
         if ($this->insumoSalaModel->insert($data)) {
-            registrar_traza(session('id_usuario'), $data['ID_INSUMO'], $data['CANTIDAD_INSUMO_SALA'], 'Retiro');
+
+            // ✅ Obtener el ID real del insumo
+            $idLote = $data['ID_LOTE_INSUMO_SALA'];
+            $lote = $this->loteModel->find($idLote);
+            $idInsumo = $lote ? $lote['ID_INSUMO_LOTE'] : null;
+
+            // Registrar trazabilidad solo si el insumo existe
+            if ($idInsumo && $this->insumoModel->find($idInsumo)) {
+                $trazabilidad = new \App\Controllers\TrazabilidadAccionController();
+                $trazabilidad->registrarAccion(
+                    session('id'),
+                    $idInsumo, // 👈 ID correcto del insumo real
+                    $data['CANTIDAD_INSUMO_SALA'],
+                    'Despacho de insumo a sala'
+                );
+            } else {
+                log_message('warning', 'No se registró trazabilidad: insumo inexistente o nulo.');
+            }
+
             return redirect()->to('/insumossalas')->with('message', 'Insumo registrado correctamente.');
         }
 
         return redirect()->back()->withInput()->with('errors', $this->insumoSalaModel->errors());
     }
+
 
     // GET /insumossalas/edit/{id}
     public function edit($id = null)
@@ -141,18 +162,54 @@ class InsumoSalaController extends BaseController
     public function update($id = null)
     {
         $data = $this->request->getPost();
+
         if ($this->insumoSalaModel->update($id, $data)) {
+            // ✅ Obtener el ID real del insumo
+            $insumoSala = $this->insumoSalaModel->find($id);
+            $lote = $this->loteModel->find($insumoSala['ID_LOTE_INSUMO_SALA']);
+            $idInsumo = $lote ? $lote['ID_INSUMO_LOTE'] : null;
+
+            if ($idInsumo && $this->insumoModel->find($idInsumo)) {
+                $trazabilidad = new \App\Controllers\TrazabilidadAccionController();
+                $trazabilidad->registrarAccion(
+                    session('id'),
+                    $idInsumo,
+                    $data['CANTIDAD_INSUMO_SALA'],
+                    'Modificación de despacho a sala'
+                );
+            }
+
             return redirect()->to('/insumossalas')->with('message', 'Insumo actualizado exitosamente.');
         }
+
         return redirect()->back()->withInput()->with('errors', $this->insumoSalaModel->errors());
     }
 
     // GET /insumossalas/delete/{id}
     public function delete($id = null)
     {
-        if ($this->insumoSalaModel->delete($id)) {
+        $insumoSala = $this->insumoSalaModel->find($id);
+
+        if ($insumoSala && $this->insumoSalaModel->delete($id)) {
+            // ✅ Obtener el ID real del insumo
+            $lote = $this->loteModel->find($insumoSala['ID_LOTE_INSUMO_SALA']);
+            $idInsumo = $lote ? $lote['ID_INSUMO_LOTE'] : null;
+
+            if ($idInsumo && $this->insumoModel->find($idInsumo)) {
+                $trazabilidad = new \App\Controllers\TrazabilidadAccionController();
+                $trazabilidad->registrarAccion(
+                    session('id'),
+                    $idInsumo,
+                    $insumoSala['CANTIDAD_INSUMO_SALA'],
+                    'Eliminación de despacho a sala'
+                );
+            }
+
             return redirect()->to('/insumossalas')->with('message', 'Insumo eliminado correctamente.');
         }
+
         return redirect()->to('/insumossalas')->with('error', 'Error al eliminar el insumo.');
     }
+
+
 }
