@@ -61,6 +61,10 @@
                       'actualización de solicitud' => 'tw-text-blue-600',
                       'eliminación de solicitud' => 'tw-text-red-600',
 
+                      // 🏨 Módulo: UsoPaciente
+                      'registro de consumo' => 'tw-text-green-600',
+                      'modificación de consumo' => 'tw-text-yellow-600',
+                      'eliminación de consumo' => 'tw-text-red-600',
                       default => 'tw-text-gray-600'
                   } ?>">
                   <?= esc($a['ACCION']) ?>
