@@ -26,6 +26,9 @@ pnpm-lock.yaml
 .env
 .env.*
 *.local
+tailwind-test.html
+testhash.php
+dbtest.php
 
 # Coverage & temp
 .phpunit.result.cache
