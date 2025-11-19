@@ -12,8 +12,8 @@
 
 
     <div>
-      <label for="username" class="tw-block tw-text-sm tw-font-semibold tw-text-slate-700 tw-px-4 tw-py-2">Usuario</label>
-      <input id="username" name="username" type="text" placeholder="Nombre de usuario"
+      <label for="rut" class="tw-block tw-text-sm tw-font-semibold tw-text-slate-700 tw-px-4 tw-py-2">Rut</label>
+      <input id="rut" name="rut" type="text" placeholder="Ingresa tu RUT"
              class="tw-w-full tw-px-4 tw-py-2.5 tw-mb-4 tw-rounded-xl tw-border tw-border-slate-300 tw-text-slate-800
                     focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-[#0f398b] focus:tw-border-transparent" />
     </div>
@@ -68,4 +68,34 @@
     eyeClosed.classList.toggle("tw-hidden");
   });
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const rutInput = document.getElementById('rut');
+
+    rutInput.addEventListener('input', function(e) {
+        let valor = e.target.value.replace(/[^0-9kK]/g, ''); 
+        
+        if (valor.length > 1) {
+            const cuerpo = valor.slice(0, -1);
+            const dv = valor.slice(-1).toUpperCase();
+            
+            
+            let cuerpoFormateado = "";
+            for (let i = cuerpo.length - 1, j = 1; i >= 0; i--, j++) {
+                cuerpoFormateado = cuerpo.charAt(i) + cuerpoFormateado;
+                if (j % 3 === 0 && i !== 0) {
+                    cuerpoFormateado = "." + cuerpoFormateado;
+                }
+            }
+            e.target.value = cuerpoFormateado + "-" + dv;
+        } else {
+            e.target.value = valor.toUpperCase();
+        }
+    });
+});
+</script>
+
+
+
 <?= $this->endSection() ?>

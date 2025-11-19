@@ -63,7 +63,7 @@
 
 <body class="tw-min-h-screen tw-py-8">
 
-  <div class="container tw-max-w-6xl tw-px-4">
+  <div class="container tw-max-w-6xl tw-px-4 ">
 
     <!-- Encabezado -->
     <div class="tw-text-center tw-mb-10">
