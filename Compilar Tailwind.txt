@@ -6,3 +6,5 @@
 npm install -D tailwindcss
 
 npx tailwindcss -i assets/src/tw.css -o public/assets/css/tw.css --watch
+
+$2y$10$VDLhKH7lBApdPMF17/hqMO0Jihd2epGLwL1V9KXxWfJnUilmBTLse

@@ -14,11 +14,11 @@ VALUES ('Técnico Paramédico', 9500, 1);
 -- USUARIOS
 -- =======================
 -- Contraseña: 1234 (bcrypt)
-INSERT INTO USUARIO (ID_USUARIO, NOMBRE_USUARIO, CORREO_USUARIO, CONTRASENA_USUARIO, ID_PERFIL_USUARIO, ID_ESTAMENTO_USUARIO)
+INSERT INTO USUARIO (ID_USUARIO, NOMBRE_USUARIO, RUT_USUARIO, CORREO_USUARIO, CONTRASENA_USUARIO, ID_PERFIL_USUARIO, ID_ESTAMENTO_USUARIO)
 VALUES
-(1, 'Rodrigo', 'rmorales@hrt.cl', '$2y$10$VDLhKH7lBApdPMF17/hqMO0Jihd2epGLwL1V9KXxWfJnUilmBTLse', 1, 1), -- Administrador
-(2, 'Camila', 'corellana@hrt.cl', '$2y$10$VDLhKH7lBApdPMF17/hqMO0Jihd2epGLwL1V9KXxWfJnUilmBTLse', 2, 1), -- Bodeguera
-(3, 'Daniel', 'dtorres@hrt.cl', '$2y$10$VDLhKH7lBApdPMF17/hqMO0Jihd2epGLwL1V9KXxWfJnUilmBTLse', 2, 1); -- Técnico Imagenología
+(1, 'Daniel', '11111111-1', 'rmorales@hrt.cl', '$2y$10$VDLhKH7lBApdPMF17/hqMO0Jihd2epGLwL1V9KXxWfJnUilmBTLse', 1, 1), -- Administrador
+(2, 'Camila', '22222222-2', 'corellana@hrt.cl', '$2y$10$VDLhKH7lBApdPMF17/hqMO0Jihd2epGLwL1V9KXxWfJnUilmBTLse', 2, 1), -- Bodeguera
+(3, 'Juan', '33333333-3', 'dtorres@hrt.cl', '$2y$10$VDLhKH7lBApdPMF17/hqMO0Jihd2epGLwL1V9KXxWfJnUilmBTLse', 2, 1); -- Bodeguero
 
 -- =======================
 -- CLASIFICACIONES
